@@ -36,7 +36,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "teste",
         "products": {
           "__resolveType": "shopify/loaders/ProductList.ts",
           "props": {
@@ -50,7 +49,8 @@
             "productVendors": [],
             "variantOptions": []
           }
-        }
+        },
+        "title": "teste 2"
       }
     },
     {
