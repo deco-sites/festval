@@ -20,7 +20,7 @@ export default function ProductDetails({ page }: Props) {
         <div class="flex flex-col items-center justify-center gap-6">
           <span class="font-medium text-2xl">Page not found</span>
           <a href="/" class="btn no-animation">
-            Go back to Home
+            teste
           </a>
         </div>
       </div>
