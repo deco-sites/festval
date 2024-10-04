@@ -2,6 +2,16 @@ import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
+
+export interface SingInProps {
+  /**
+   * @title Sing In properties
+   * @description Seleciona layout de SignIn
+   * @default	desktop
+   */
+  variant?: "mobile" | "desktop";
+}
+
 const onLoad = (containerID: string) => {
   window.STOREFRONT.USER.subscribe((sdk) => {
     const container = document.getElementById(containerID) as HTMLDivElement;
@@ -18,34 +28,30 @@ const onLoad = (containerID: string) => {
     }
   });
 };
-function SignIn({ variant }: {
-  variant: "mobile" | "desktop";
-}) {
+function SignIn({ variant }: SingInProps) {
   const id = useId();
   return (
     <div id={id}>
       <a
         class={clx(
           "btn btn-sm font-thin btn-ghost no-animation",
-          variant === "mobile" && "btn-square",
+          variant === "mobile" && "btn-square"
         )}
         href="/login"
         aria-label="Login"
       >
         <Icon id="account_circle" />
-        {variant === "desktop" && <span>Sign in</span>}
       </a>
       <a
         class={clx(
           "hidden",
           "btn btn-sm font-thin btn-ghost no-animation",
-          variant === "mobile" && "btn-square",
+          variant === "mobile" && "btn-square"
         )}
         href="/account"
         aria-label="Account"
       >
         <Icon id="account_circle" />
-        {variant === "desktop" && <span>My account</span>}
       </a>
       <script
         type="module"

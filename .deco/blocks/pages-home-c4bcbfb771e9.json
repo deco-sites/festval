@@ -4,7 +4,74 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "Header"
+        "__resolveType": "site/sections/Header/Header.tsx",
+        "searchbar": {
+          "loader": {
+            "__resolveType": "resolved",
+            "data": null
+          },
+          "placeholder": "Buscar produtos"
+        },
+        "alerts": [],
+        "logo": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6d5554d9-c892-49cc-b3b3-cd8a89137e95/logo.svg",
+          "width": 220,
+          "height": 35,
+          "alt": "Logo Festval"
+        },
+        "navItems": [
+          {
+            "children": [
+              {
+                "image": [],
+                "children": [],
+                "name": "Hello"
+              },
+              {
+                "image": [],
+                "children": [],
+                "name": "World"
+              }
+            ],
+            "@type": "SiteNavigationElement",
+            "url": "/deals",
+            "name": "Deals"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/valentines-day",
+            "name": "Valentine's Day",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/women",
+            "name": "Women",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/men",
+            "name": "Men",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/clearance",
+            "name": "Clearance",
+            "children": []
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/activities",
+            "name": "Activities",
+            "children": []
+          }
+        ],
+        "loading": "eager",
+        "variant": {
+          "variant": "desktop"
+        }
       }
     },
     {

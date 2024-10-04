@@ -4,7 +4,7 @@ import Image from "apps/website/components/Image.tsx";
 import { LoadingFallbackProps } from "deco/mod.ts";
 import Alert from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
-import SingIn from "../../components/header/SignIn.tsx";
+import SingIn, { SingInProps } from "../../components/header/SignIn.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
 import Searchbar, {
@@ -47,8 +47,11 @@ export interface SectionProps {
    * @description Usefull for lazy loading hidden elements, like hamburguer menus etc
    * @hide true */
   loading?: "eager" | "lazy";
-
-  variant?: "mobile" | "desktop";
+  /**
+   *@title Sign In
+   * @description Sign In configuration
+   */
+  variant?: SingInProps;
 }
 type Props = Omit<SectionProps, "alert">;
 const Desktop = ({ navItems, logo, searchbar, loading, variant }: Props) => (
