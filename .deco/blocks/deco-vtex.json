@@ -1,10 +1,10 @@
 {
   "__resolveType": "site/apps/deco/vtex.ts",
-  "salesChannel": "1",
   "defaultSegment": {
     "channelPrivacy": "public"
   },
   "platform": "vtex",
   "account": "meufestval",
-  "publicUrl": "https://www.festval.com/"
+  "publicUrl": "https://www.festval.com/",
+  "salesChannel": "1"
 }

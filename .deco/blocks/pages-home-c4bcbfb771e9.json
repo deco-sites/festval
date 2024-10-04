@@ -117,11 +117,18 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "Featured Products",
-        "cta": "/mono",
+        "title": "Leve 3 page 2",
         "products": {
-          "__resolveType": "Product List Loader"
-        }
+          "__resolveType": "Product List Loader",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1476",
+            "similars": true,
+            "count": 4,
+            "hideUnavailableItems": true
+          }
+        },
+        "cta": "https://www.festval.com/"
       }
     },
     {
