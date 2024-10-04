@@ -4,6 +4,7 @@ import Image from "apps/website/components/Image.tsx";
 import { LoadingFallbackProps } from "deco/mod.ts";
 import Alert from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
+import SingIn from "../../components/header/SignIn.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
 import Searchbar, {
@@ -46,9 +47,11 @@ export interface SectionProps {
    * @description Usefull for lazy loading hidden elements, like hamburguer menus etc
    * @hide true */
   loading?: "eager" | "lazy";
+
+  variant?: "mobile" | "desktop";
 }
 type Props = Omit<SectionProps, "alert">;
-const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
+const Desktop = ({ navItems, logo, searchbar, loading, variant }: Props) => (
   <>
     <Modal id={SEARCHBAR_POPUP_ID}>
       <div
@@ -66,8 +69,8 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
     </Modal>
 
     <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
-      <div class="grid grid-cols-3 place-items-center">
-        <div class="place-self-center">
+      <div class="flex justify-between items-center">
+        <div class="flex flex-1">
           <a href="/" aria-label="Store logo">
             <Image
               src={logo.src}
@@ -80,14 +83,15 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
 
         <label
           for={SEARCHBAR_POPUP_ID}
-          class="input input-bordered flex items-center gap-2 w-full"
+          class="input input-bordered flex flex-1 justify-between items-center gap-2 w-full"
           aria-label="search icon button"
         >
+          <span class="text-base-400 truncate">Buscar produtos</span>
           <Icon id="search" />
-          <span class="text-base-400 truncate">Search products, brands...</span>
         </label>
 
-        <div class="flex gap-4 place-self-end">
+        <div class="flex flex-1 justify-end">
+          <SingIn {...variant} />
           <Bag />
         </div>
       </div>
