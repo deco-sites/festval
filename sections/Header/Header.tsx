@@ -55,19 +55,19 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
         class="absolute top-0 bg-base-100 container"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
       >
-        {loading === "lazy"
-          ? (
-            <div class="flex justify-center items-center">
-              <span class="loading loading-spinner" />
-            </div>
-          )
-          : <Searchbar {...searchbar} />}
+        {loading === "lazy" ? (
+          <div class="flex justify-center items-center">
+            <span class="loading loading-spinner" />
+          </div>
+        ) : (
+          <Searchbar {...searchbar} />
+        )}
       </div>
     </Modal>
 
     <div class="flex flex-col gap-4 pt-5 container border-b border-gray-300">
       <div class="grid grid-cols-3 place-items-center">
-        <div class="place-self-start">
+        <div class="place-self-center">
           <a href="/" aria-label="Store logo">
             <Image
               src={logo.src}
@@ -84,9 +84,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           aria-label="search icon button"
         >
           <Icon id="search" />
-          <span class="text-base-400 truncate">
-            Search products, brands...
-          </span>
+          <span class="text-base-400 truncate">Search products, brands...</span>
         </label>
 
         <div class="flex gap-4 place-self-end">
@@ -96,11 +94,11 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
 
       <div class="flex justify-between items-center">
         <ul class="flex">
-          {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
+          {navItems?.slice(0, 10).map((item) => (
+            <NavItem item={item} />
+          ))}
         </ul>
-        <div>
-          {/* ship to */}
-        </div>
+        <div>{/* ship to */}</div>
       </div>
     </div>
   </>
@@ -112,13 +110,13 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       aside={
         <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
           <div class="w-screen overflow-y-auto">
-            {loading === "lazy"
-              ? (
-                <div class="h-full w-full flex items-center justify-center">
-                  <span class="loading loading-spinner" />
-                </div>
-              )
-              : <Searchbar {...searchbar} />}
+            {loading === "lazy" ? (
+              <div class="h-full w-full flex items-center justify-center">
+                <span class="loading loading-spinner" />
+              </div>
+            ) : (
+              <Searchbar {...searchbar} />
+            )}
           </div>
         </Drawer.Aside>
       }
@@ -127,17 +125,17 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       id={SIDEMENU_DRAWER_ID}
       aside={
         <Drawer.Aside title="Menu" drawer={SIDEMENU_DRAWER_ID}>
-          {loading === "lazy"
-            ? (
-              <div
-                id={SIDEMENU_CONTAINER_ID}
-                class="h-full flex items-center justify-center"
-                style={{ minWidth: "100vw" }}
-              >
-                <span class="loading loading-spinner" />
-              </div>
-            )
-            : <Menu navItems={navItems ?? []} />}
+          {loading === "lazy" ? (
+            <div
+              id={SIDEMENU_CONTAINER_ID}
+              class="h-full flex items-center justify-center"
+              style={{ minWidth: "100vw" }}
+            >
+              <span class="loading loading-spinner" />
+            </div>
+          ) : (
+            <Menu navItems={navItems ?? []} />
+          )}
         </Drawer.Aside>
       }
     />
@@ -188,8 +186,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
 function Header({
   alerts = [],
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -200,22 +197,23 @@ function Header({
   return (
     <header
       style={{
-        height: device === "desktop"
-          ? HEADER_HEIGHT_DESKTOP
-          : HEADER_HEIGHT_MOBILE,
+        height:
+          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
       }}
     >
       <div class="bg-base-100 fixed w-full z-40">
         {alerts.length > 0 && <Alert alerts={alerts} />}
-        {device === "desktop"
-          ? <Desktop logo={logo} {...props} />
-          : <Mobile logo={logo} {...props} />}
+        {device === "desktop" ? (
+          <Desktop logo={logo} {...props} />
+        ) : (
+          <Mobile logo={logo} {...props} />
+        )}
       </div>
     </header>
   );
 }
 export const LoadingFallback = (props: LoadingFallbackProps<Props>) => (
   // deno-lint-ignore no-explicit-any
-  <Header {...props as any} loading="lazy" />
+  <Header {...(props as any)} loading="lazy" />
 );
 export default Header;
