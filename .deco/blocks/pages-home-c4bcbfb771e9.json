@@ -123,9 +123,9 @@
           "props": {
             "sort": "price:desc",
             "collection": "1476",
-            "similars": true,
+            "similars": false,
             "count": 4,
-            "hideUnavailableItems": true
+            "hideUnavailableItems": false
           }
         },
         "cta": "https://www.festval.com/"
