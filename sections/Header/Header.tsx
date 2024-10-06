@@ -23,6 +23,9 @@ import {
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
 import { useDevice } from "@deco/deco/hooks";
+import WishListNav, {
+  WishListNavProps,
+} from "../../components/header/WishListNav.tsx";
 export interface Logo {
   src: ImageWidget;
   alt: string;
@@ -52,9 +55,21 @@ export interface SectionProps {
    * @description Sign In configuration
    */
   variant?: SingInProps;
+  /**
+   * @title Wish List
+   * @description Wish List configuration
+   */
+  icon: WishListNavProps;
 }
 type Props = Omit<SectionProps, "alert">;
-const Desktop = ({ navItems, logo, searchbar, loading, variant }: Props) => (
+const Desktop = ({
+  navItems,
+  logo,
+  searchbar,
+  loading,
+  variant,
+  icon,
+}: Props) => (
   <>
     <Modal id={SEARCHBAR_POPUP_ID}>
       <div
@@ -94,6 +109,7 @@ const Desktop = ({ navItems, logo, searchbar, loading, variant }: Props) => (
         </label>
 
         <div class="flex flex-1 justify-end">
+          <WishListNav {...icon} />
           <SingIn {...variant} />
           <Bag />
         </div>

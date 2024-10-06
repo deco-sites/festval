@@ -6,18 +6,18 @@
       "section": {
         "__resolveType": "site/sections/Header/Header.tsx",
         "searchbar": {
+          "placeholder": "Buscar produtos",
           "loader": {
             "__resolveType": "resolved",
             "data": null
-          },
-          "placeholder": "Buscar produtos"
+          }
         },
         "alerts": [],
         "logo": {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6d5554d9-c892-49cc-b3b3-cd8a89137e95/logo.svg",
+          "alt": "Logo Festval",
           "width": 220,
-          "height": 35,
-          "alt": "Logo Festval"
+          "height": 35
         },
         "navItems": [
           {
@@ -71,6 +71,12 @@
         "loading": "eager",
         "variant": {
           "variant": "desktop"
+        },
+        "icon": {
+          "icon": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b14cca9-f7fa-42d9-a2d1-47ee7a9dbde4/fav.svg",
+            "alt": "WishList icon"
+          }
         }
       }
     },
