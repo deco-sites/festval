@@ -26,6 +26,7 @@ import { useDevice } from "@deco/deco/hooks";
 import WishListNav, {
   WishListNavProps,
 } from "../../components/header/WishListNav.tsx";
+import MegaMenu from "../../components/header/MegaMenu.tsx";
 export interface Logo {
   src: ImageWidget;
   alt: string;
@@ -115,13 +116,17 @@ const Desktop = ({
         </div>
       </div>
 
-      <div class="flex justify-between items-center">
-        <ul class="flex">
-          {navItems?.slice(0, 10).map((item) => (
-            <NavItem item={item} />
+      <div class="flex items-center">
+        <ul className="flex">
+          {navItems && navItems.length > 0 && <MegaMenu item={navItems[0]} />}
+        </ul>
+        <ul className="flex">
+          {navItems?.slice(1).map((item, index) => (
+            <NavItem key={index} item={item} />
           ))}
         </ul>
-        <div>{/* ship to */}</div>
+
+        {/* <div> ship to </div> */}
       </div>
     </div>
   </>

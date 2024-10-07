@@ -1,11 +1,14 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import Image from "apps/website/components/Image.tsx";
 import {
   HEADER_HEIGHT_DESKTOP,
   NAVBAR_HEIGHT_DESKTOP,
 } from "../../constants.ts";
 
-function NavItem({ item }: { item: SiteNavigationElement }) {
+function MegaMenu({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
+
+  console.log(item);
 
   return (
     <li
@@ -25,14 +28,14 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             marginTop: HEADER_HEIGHT_DESKTOP,
           }}
         >
-          <ul class="flex items-start justify-start gap-6 container">
+          <ul class="flex items-start justify-start gap-6 container group">
             {children.map((node) => (
               <li class="p-6 pl-0">
                 <a class="hover:underline" href={node.url}>
                   <span>{node.name}</span>
                 </a>
 
-                <ul class="flex flex-col gap-1 mt-4">
+                <ul class="hidden hover:flex group-hover:flex flex-col gap-1 mt-4 ">
                   {node.children?.map((leaf) => (
                     <li>
                       <a class="hover:underline" href={leaf.url}>
@@ -50,4 +53,4 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
   );
 }
 
-export default NavItem;
+export default MegaMenu;
