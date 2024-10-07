@@ -6,5 +6,10 @@
   "platform": "vtex",
   "account": "meufestval",
   "publicUrl": "https://www.festval.com/",
-  "salesChannel": "1"
+  "salesChannel": "1",
+  "appKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "name": "vtexappkey-meufestval-GFTTHA",
+    "encrypted": "da07e8a1e0b21ea1bdb2dccef23506db8ba7585c120e2bf89ac6a01e7b307b6287df674efb6959af1d6cc7217d4e3d7f6f321526a3c2bb7d4e2cc5e2ab80336ba8c45a4b73a4ae628aec1049388ce10ab0087513f8cbb6d580c349aceb362d3f36ca1c404fbc7473c6ceaef3c0c3a3cdec40c3e9ec0c5b9434cd5c01e04a3c51aeca7110d04d9c7f1900b92be7b26738"
+  }
 }
