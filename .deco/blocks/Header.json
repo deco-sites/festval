@@ -26,5 +26,9 @@
       "alt": "Fav",
       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b14cca9-f7fa-42d9-a2d1-47ee7a9dbde4/fav.svg"
     }
-  }
+  },
+  "item": {
+    "children": []
+  },
+  "seeMoreText": "\"Ver mais\""
 }

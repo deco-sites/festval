@@ -1,56 +1,87 @@
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import Image from "apps/website/components/Image.tsx";
-import {
-  HEADER_HEIGHT_DESKTOP,
-  NAVBAR_HEIGHT_DESKTOP,
-} from "../../constants.ts";
+import type {
+  SiteNavigationElement,
+  SiteNavigationElementLeaf,
+} from "apps/commerce/types.ts";
+import { ImageWidget } from "apps/admin/widgets.ts";
 
-function MegaMenu({ item }: { item: SiteNavigationElement }) {
-  const { url, name, children } = item;
+interface Props {
+  item: SiteNavigationElement;
+  /**
+   * @description The URL for the promotional image
+   */
+  promoImageUrl?: ImageWidget;
+  /**
+   * @description The text for the "See more" link
+   * @default "Ver mais"
+   */
+  seeMoreText?: string;
+}
 
+function MegaMenu({
+  item,
+  promoImageUrl = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1818/6fe9404a-f69c-472a-b521-78f6c1f87326",
+  seeMoreText = "Ver mais",
+}: Props) {
   console.log(item);
+  const categories =
+    item.children?.filter(
+      (child): child is SiteNavigationElement => !("url" in child)
+    ) || [];
+  const brands =
+    item.children?.filter(
+      (child): child is SiteNavigationElementLeaf => "url" in child
+    ) || [];
 
   return (
-    <li
-      class="group flex items-center pr-5"
-      style={{ height: NAVBAR_HEIGHT_DESKTOP }}
-    >
-      <a href={url} class="group-hover:underline text-sm font-medium">
-        {name}
-      </a>
-
-      {children && children.length > 0 && (
-        <div
-          class="fixed hidden hover:flex group-hover:flex bg-base-100 z-40 items-start justify-center gap-6 border-t-2 border-b-2 border-base-200 w-screen"
-          style={{
-            top: "0px",
-            left: "0px",
-            marginTop: HEADER_HEIGHT_DESKTOP,
-          }}
-        >
-          <ul class="flex items-start justify-start gap-6 container group">
-            {children.map((node) => (
-              <li class="p-6 pl-0">
-                <a class="hover:underline" href={node.url}>
-                  <span>{node.name}</span>
-                </a>
-
-                <ul class="hidden hover:flex group-hover:flex flex-col gap-1 mt-4 ">
-                  {node.children?.map((leaf) => (
-                    <li>
-                      <a class="hover:underline" href={leaf.url}>
-                        <span class="text-xs">{leaf.name}</span>
-                      </a>
+    <div className="absolute left-0 w-full bg-white shadow-lg z-50">
+      <div className="container mx-auto flex p-6">
+        <div className="flex-1 pr-6">
+          <div className="grid grid-cols-3 gap-6">
+            {categories.map((category, index) => (
+              <div key={index}>
+                <h3 className="font-bold mb-2">{category.name}</h3>
+                <ul>
+                  {category.children?.map((subItem, subIndex) => (
+                    <li key={subIndex}>
+                      {"url" in subItem ? (
+                        <a
+                          href={subItem.url}
+                          className="text-gray-600 hover:text-gray-900"
+                        >
+                          {subItem.name}
+                        </a>
+                      ) : (
+                        <span className="text-gray-600">{subItem.name}</span>
+                      )}
                     </li>
                   ))}
                 </ul>
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
-      )}
-    </li>
+        <div className="w-64 flex flex-col">
+          <div className="mb-4">
+            <h3 className="font-bold mb-2">Marca</h3>
+            <ul>
+              {brands.map((brand, index) => (
+                <li key={index} className="flex justify-between text-gray-600">
+                  <a href={brand.url}>{brand.name}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <a href="#" className="text-blue-600 hover:underline mb-4">
+            {seeMoreText}
+          </a>
+          <img
+            src={promoImageUrl}
+            alt="Promotional Image"
+            className="w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
-
 export default MegaMenu;

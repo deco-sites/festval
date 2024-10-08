@@ -13,6 +13,7 @@ export interface Props extends SectionHeaderProps {
 }
 
 export default function ProductShelf({ products, title, cta }: Props) {
+  console.log(products);
   if (!products || products.length === 0) {
     return null;
   }
@@ -27,7 +28,7 @@ export default function ProductShelf({ products, title, cta }: Props) {
           mapProductToAnalyticsItem({
             index,
             product,
-            ...(useOffer(product.offers)),
+            ...useOffer(product.offers),
           })
         ),
       },
@@ -43,9 +44,10 @@ export default function ProductShelf({ products, title, cta }: Props) {
   );
 }
 
-export const LoadingFallback = (
-  { title, cta }: LoadingFallbackProps<Props>,
-) => (
+export const LoadingFallback = ({
+  title,
+  cta,
+}: LoadingFallbackProps<Props>) => (
   <Section.Container>
     <Section.Header title={title} cta={cta} />
     <Section.Placeholder height="471px" />;

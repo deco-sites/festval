@@ -182,29 +182,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "Product List Loader",
-          "props": {
-            "ids": [
-              "pão "
-            ],
-            "sort": "price:desc",
-            "fuzzy": "automatic",
-            "productIds": [
-              null
-            ],
-            "query": "pao",
-            "term": "pao"
-          }
-        },
-        "cta": "https://www.festval.com",
-        "title": "teste"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
         "title": "Departments",
         "cta": "/all",
