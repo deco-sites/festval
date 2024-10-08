@@ -1,1 +1,11 @@
-{"__resolveType":"site/apps/deco/vtex.ts"}
+{
+  "__resolveType": "site/apps/deco/vtex.ts",
+  "salesChannel": "2",
+  "defaultSegment": {
+    "channelPrivacy": "public"
+  },
+  "platform": "vtex",
+  "account": "meufestval",
+  "publicUrl": "https://www.festval.com",
+  "usePortalSitemap": true
+}
