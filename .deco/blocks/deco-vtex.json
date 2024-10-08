@@ -5,7 +5,7 @@
   },
   "platform": "vtex",
   "account": "meufestval",
-  "publicUrl": "https://www.festval.com/",
+  "publicUrl": "www.festval.com",
   "salesChannel": "1",
   "appKey": {
     "__resolveType": "website/loaders/secret.ts",
