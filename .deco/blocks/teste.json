@@ -1,0 +1,14 @@
+{
+  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+  "products": {
+    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+    "props": {
+      "ids": [
+        "25649",
+        "26212"
+      ]
+    }
+  },
+  "title": "teste",
+  "cta": "/"
+}

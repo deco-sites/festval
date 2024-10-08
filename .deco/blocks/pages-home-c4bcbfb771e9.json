@@ -183,18 +183,23 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "Leve 3 page 2",
         "products": {
           "__resolveType": "Product List Loader",
           "props": {
+            "ids": [
+              "pão "
+            ],
             "sort": "price:desc",
-            "collection": "1476",
-            "similars": false,
-            "count": 4,
-            "hideUnavailableItems": false
+            "fuzzy": "automatic",
+            "productIds": [
+              null
+            ],
+            "query": "pao",
+            "term": "pao"
           }
         },
-        "cta": "https://www.festval.com/"
+        "cta": "https://www.festval.com",
+        "title": "teste"
       }
     },
     {
@@ -259,7 +264,6 @@
               "__resolveType": "shopify/loaders/ProductList.ts",
               "props": {
                 "sort": "",
-                "query": "hat and bag",
                 "count": 10
               },
               "filters": {
@@ -332,6 +336,12 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "teste"
       }
     }
   ],
