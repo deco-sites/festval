@@ -36,7 +36,8 @@
     "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.3/",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
-    "daisyui": "npm:daisyui@4.6.0"
+    "daisyui": "npm:daisyui@4.6.0",
+    "C:UserslucjoDesktopapp-template/": "https:\\denopkg.com\\C:UserslucjoDesktopapp-template/"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
@@ -56,7 +57,9 @@
     "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
     "reload": "deno cache -r https://deco.cx/run"
   },
-  "githooks": { "pre-commit": "check" },
+  "githooks": {
+    "pre-commit": "check"
+  },
   "exclude": [
     "node_modules",
     "static/",
@@ -66,7 +69,15 @@
     ".deco"
   ],
   "lint": {
-    "rules": { "exclude": ["no-window"], "tags": ["fresh", "recommended"] }
+    "rules": {
+      "exclude": [
+        "no-window"
+      ],
+      "tags": [
+        "fresh",
+        "recommended"
+      ]
+    }
   },
   "nodeModulesDir": false,
   "compilerOptions": {

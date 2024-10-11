@@ -186,10 +186,9 @@
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "sort": "price:desc",
-            "hideUnavailableItems": false,
-            "collection": "1486",
-            "count": 19
+            "ids": [
+              "5029"
+            ]
           }
         }
       }
@@ -328,12 +327,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Footer"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "teste"
       }
     }
   ],

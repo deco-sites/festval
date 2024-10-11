@@ -7,5 +7,5 @@
   "platform": "vtex",
   "account": "meufestval",
   "publicUrl": "https://www.festval.com",
-  "usePortalSitemap": true
+  "usePortalSitemap": false
 }
