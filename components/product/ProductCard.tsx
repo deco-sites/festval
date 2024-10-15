@@ -117,7 +117,7 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
               inStock && "opacity-0"
             )}
           >
-            Notify me
+            Avise-me
           </span>
 
           {/* Discounts */}
@@ -137,13 +137,15 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
       </figure>
 
       <a href={relativeUrl} class="pt-5">
-        <span class="font-medium">{title}</span>
+        <span class="font-medium flex text-left">{title}</span>
 
-        <div class="flex gap-2 pt-2">
+        <div class="flex flex-col items-start  pt-2">
           {listPrice && (
-            <span class="line-through font-normal text-gray-400">{formatPrice(listPrice, offers?.priceCurrency)}</span>
+            <span class="line-through text-xs font-normal text-gray-400">
+              {formatPrice(listPrice, offers?.priceCurrency)}
+            </span>
           )}
-          <span class="font-medium text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
+          <span class="font-medium text-lg text-base-600">{formatPrice(price, offers?.priceCurrency)}</span>
         </div>
       </a>
 
