@@ -23,6 +23,16 @@
   }
 }
 
+@layer components {
+  .custom-container {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
 .group:disabled .group-disabled\:animate-progress {
   animation: progress-frame ease normal;
 }

@@ -77,38 +77,16 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           )}
         >
           <span class="text-7xl font-bold text-base-100">{action.title}</span>
-          <span class="font-normal text-base text-base-100 pt-4 pb-12">
-            {action.subTitle}
-          </span>
-          <button
-            class="btn btn-primary btn-outline border-0 bg-base-100 min-w-[180px]"
-            aria-label={action.label}
-          >
+          <span class="font-normal text-base text-base-100 pt-4 pb-12">{action.subTitle}</span>
+          <button class="btn btn-primary btn-outline border-0 bg-base-100 min-w-[180px]" aria-label={action.label}>
             {action.label}
           </button>
         </div>
       )}
       <Picture preload={lcp} {...viewPromotionEvent}>
-        <Source
-          media="(max-width: 767px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={mobile}
-          width={412}
-          height={660}
-        />
-        <Source
-          media="(min-width: 768px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={desktop}
-          width={1440}
-          height={600}
-        />
-        <img
-          class="object-cover w-full h-full rounded-[10px]"
-          loading={lcp ? "eager" : "lazy"}
-          src={desktop}
-          alt={alt}
-        />
+        <Source media="(max-width: 767px)" fetchPriority={lcp ? "high" : "auto"} src={mobile} width={412} height={660} />
+        <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1440} height={600} />
+        <img class="object-cover w-full h-full rounded-[10px]" loading={lcp ? "eager" : "lazy"} src={desktop} alt={alt} />
       </Picture>
     </a>
   );
@@ -119,7 +97,7 @@ function Carousel({ images = [], preload, interval }: Props) {
 
   return (
     <div class="bg-[#f8f8f8] w-full overflow-hidden">
-      <div class="relative container mx-auto">
+      <div class="relative custom-container mx-auto">
         <div
           id={id}
           class={clx(
@@ -141,29 +119,18 @@ function Carousel({ images = [], preload, interval }: Props) {
           </div>
 
           <div class="hidden sm:flex items-center justify-start z-10 col-start-1 row-start-2">
-            <Slider.PrevButton
-              class="btn btn-carousel no-animation btn-sm color-white absolute left-0"
-              disabled={false}
-            >
+            <Slider.PrevButton class="btn btn-carousel no-animation btn-sm color-white absolute left-0" disabled={false}>
               <Icon id="chevron-right" class="rotate-180" />
             </Slider.PrevButton>
           </div>
 
           <div class="hidden sm:flex items-center justify-end z-10 col-start-3 row-start-2">
-            <Slider.NextButton
-              class="btn btn-carousel no-animation btn-sm color-white absolute right-0"
-              disabled={false}
-            >
+            <Slider.NextButton class="btn btn-carousel no-animation btn-sm color-white absolute right-0" disabled={false}>
               <Icon id="chevron-right" />
             </Slider.NextButton>
           </div>
 
-          <ul
-            class={clx(
-              "col-span-full row-start-4 z-10",
-              "carousel justify-center gap-3"
-            )}
-          >
+          <ul class={clx("col-span-full row-start-4 z-10", "carousel justify-center gap-3")}>
             {images.map((_, index) => (
               <li class="carousel-item">
                 <Slider.Dot
@@ -177,11 +144,7 @@ function Carousel({ images = [], preload, interval }: Props) {
             ))}
           </ul>
 
-          <Slider.JS
-            rootId={id}
-            interval={interval && interval * 1e3}
-            infinite
-          />
+          <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
         </div>
       </div>
     </div>

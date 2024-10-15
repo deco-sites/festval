@@ -1,7 +1,10 @@
 import type { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useScript } from "@deco/deco/hooks";
-function Dot({ index, ...props }: {
+function Dot({
+  index,
+  ...props
+}: {
   index: number;
 } & JSX.IntrinsicElements["button"]) {
   return (
@@ -16,25 +19,19 @@ function Dot({ index, ...props }: {
 function Slider(props: JSX.IntrinsicElements["ul"]) {
   return <ul data-slider {...props} />;
 }
-function Item({ index, ...props }: JSX.IntrinsicElements["li"] & {
+function Item({
+  index,
+  ...props
+}: JSX.IntrinsicElements["li"] & {
   index: number;
 }) {
   return <li data-slider-item={index} {...props} />;
 }
 function NextButton(props: JSX.IntrinsicElements["button"]) {
-  return (
-    <button
-      disabled
-      data-slide="next"
-      aria-label="Next item"
-      {...props}
-    />
-  );
+  return <button data-slide="next" aria-label="Next item" {...props} />;
 }
 function PrevButton(props: JSX.IntrinsicElements["button"]) {
-  return (
-    <button disabled data-slide="prev" aria-label="Previous item" {...props} />
-  );
+  return <button data-slide="prev" aria-label="Previous item" {...props} />;
 }
 export interface Props {
   rootId: string;
@@ -74,10 +71,12 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     const next = root?.querySelector<HTMLElement>('[data-slide="next"]');
     const dots = root?.querySelectorAll<HTMLElement>("[data-dot]");
     if (!root || !slider || !items || items.length === 0) {
-      console.warn(
-        "Missing necessary slider attributes. It will not work as intended. Necessary elements:",
-        { root, slider, items, rootId },
-      );
+      console.warn("Missing necessary slider attributes. It will not work as intended. Necessary elements:", {
+        root,
+        slider,
+        items,
+        rootId,
+      });
       return;
     }
     const getElementsInsideContainer = () => {
@@ -96,9 +95,7 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     const goToItem = (to: number) => {
       const item = items.item(to);
       if (!isHTMLElement(item)) {
-        console.warn(
-          `Element at index ${to} is not an html element. Skipping carousel`,
-        );
+        console.warn(`Element at index ${to} is not an html element. Skipping carousel`);
         return;
       }
       slider.scrollTo({
@@ -114,9 +111,7 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
       const itemsPerPage = indices.length;
       const isShowingFirst = indices[0] === 0;
       const pageIndex = Math.floor(indices[indices.length - 1] / itemsPerPage);
-      goToItem(
-        isShowingFirst ? items.length - 1 : (pageIndex - 1) * itemsPerPage,
-      );
+      goToItem(isShowingFirst ? items.length - 1 : (pageIndex - 1) * itemsPerPage);
     };
     const onClickNext = () => {
       event?.stopPropagation();
@@ -155,7 +150,7 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
             }
           }
         }),
-      { threshold: THRESHOLD, root: slider },
+      { threshold: THRESHOLD, root: slider }
     );
     items.forEach((item) => observer.observe(item));
     for (let it = 0; it < (dots?.length ?? 0); it++) {

@@ -12,19 +12,25 @@
       {
         "variations": [
           {
-            "weight": "400"
+            "weight": "500"
           },
           {
-            "weight": "500"
+            "weight": "400"
           },
           {
             "weight": "600"
           },
           {
+            "weight": "900"
+          },
+          {
             "weight": "700"
+          },
+          {
+            "weight": "800"
           }
         ],
-        "family": "Inter"
+        "family": "Montserrat"
       }
     ]
   },

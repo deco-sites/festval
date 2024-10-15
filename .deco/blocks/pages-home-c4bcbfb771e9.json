@@ -198,7 +198,6 @@
       "section": {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
         "title": "Departments",
-        "cta": "/all",
         "items": [
           {
             "label": "Men",
@@ -221,11 +220,57 @@
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/92129655-fe40-4b29-8fdb-e7f71e67a5d1"
           },
           {
-            "href": "/home-and-living",
-            "label": "Home & Living",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d0433c00-cd26-4638-b519-0cb64b9f82e8"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/52ee0656-cc6a-43d7-8777-d5499fe7ee38/Pet-Shop.png",
+            "href": "/",
+            "label": "Pet  shop"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/792b3033-3e42-4621-8c16-4c07cd34ae06/Padaria.png",
+            "href": "/",
+            "label": "Padaria"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a18e3173-916b-4942-b718-59c464b8595e/Importados.png",
+            "href": "/",
+            "label": "Importados"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/12629561-ef4e-4969-a86d-348f90a032b8/bebidas.png",
+            "href": "/",
+            "label": "teste"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/46e581c1-9904-4ab7-891f-25f8c5cf0a91/Floricultura.png",
+            "href": "/",
+            "label": "teste"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e871466b-93ec-4461-9ef6-62abe4feeca0/Sorvetes.png",
+            "href": "/",
+            "label": "teste"
+          },
+          {
+            "href": "/",
+            "label": "teste",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9a9a710a-d819-4d97-b70e-eaddad5b03f5/Limpeza.png"
+          },
+          {
+            "href": "/",
+            "label": "teste",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0f0efe5f-0e15-4a44-8c81-ab8dbcb46996/Latici.png"
+          },
+          {
+            "href": "/",
+            "label": "teste",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c8443563-d5a9-48a6-9124-de709a56c4d6/Casa.png"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c8443563-d5a9-48a6-9124-de709a56c4d6/Casa.png",
+            "href": "/",
+            "label": "teste"
           }
-        ]
+        ],
+        "cta": "/"
       }
     },
     {
