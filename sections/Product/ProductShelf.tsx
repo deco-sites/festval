@@ -11,7 +11,6 @@ export interface Props extends SectionHeaderProps {
 }
 
 export default function ProductShelf({ products, title, cta }: Props) {
-  console.log(products);
   if (!products || products.length === 0) {
     return null;
   }

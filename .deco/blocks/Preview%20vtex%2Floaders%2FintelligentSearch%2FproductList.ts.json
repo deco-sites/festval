@@ -1,0 +1,6 @@
+{
+  "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+  "props": {
+    "sort": "price:desc"
+  }
+}

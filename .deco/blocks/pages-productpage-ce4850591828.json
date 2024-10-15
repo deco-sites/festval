@@ -1,26 +1,10 @@
 {
   "name": "Product Page",
-  "path": "/products/:slug",
+  "path": "/:slug/p",
   "default": {
     "possiblePaths": []
   },
   "sections": [
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "commerce/sections/Seo/SeoPDPV2.tsx",
-        "jsonLD": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
-          "slug": {
-            "__resolveType": "website/functions/requestToParam.ts",
-            "param": "slug"
-          }
-        },
-        "jsonLDs": [
-          {}
-        ]
-      }
-    },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
@@ -37,7 +21,7 @@
             "__resolveType": "website/functions/requestToParam.ts",
             "param": "slug"
           },
-          "indexingSkus": true
+          "similars": true
         }
       }
     },
@@ -51,6 +35,18 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc"
+          }
+        }
       }
     }
   ],

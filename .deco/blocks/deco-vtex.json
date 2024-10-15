@@ -2,7 +2,8 @@
   "__resolveType": "site/apps/deco/vtex.ts",
   "salesChannel": "2",
   "defaultSegment": {
-    "channelPrivacy": "public"
+    "channelPrivacy": "public",
+    "channel": "2"
   },
   "platform": "vtex",
   "account": "meufestval",

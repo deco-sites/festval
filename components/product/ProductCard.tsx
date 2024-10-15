@@ -44,7 +44,10 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
-  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
+  const percent =
+    listPrice && price
+      ? Math.round(((listPrice - price) / listPrice) * 100)
+      : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
@@ -69,14 +72,23 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
   return (
     <div {...event} class={clx("card card-compact group text-sm", _class)}>
       <figure
-        class={clx("relative bg-base-200", "rounded border border-transparent", "group-hover:border-primary")}
+        class={clx(
+          "relative bg-base-200",
+          "rounded border border-transparent",
+          "group-hover:border-primary"
+        )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
         {/* Product Images */}
         <a
           href={relativeUrl}
           aria-label="view product"
-          class={clx("absolute top-0 left-0", "grid grid-cols-1 grid-rows-1", "w-full", !inStock && "opacity-70")}
+          class={clx(
+            "absolute top-0 left-0",
+            "grid grid-cols-1 grid-rows-1",
+            "w-full",
+            !inStock && "opacity-70"
+          )}
         >
           <Image
             src={front.url!}
@@ -84,7 +96,11 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
             width={WIDTH}
             height={HEIGHT}
             style={{ aspectRatio: ASPECT_RATIO }}
-            class={clx("object-cover", "rounded w-full", "col-span-full row-span-full")}
+            class={clx(
+              "object-cover",
+              "rounded w-full",
+              "col-span-full row-span-full"
+            )}
             sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -137,7 +153,7 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
       </figure>
 
       <a href={relativeUrl} class="pt-5">
-        <span class="font-medium flex text-left">{title}</span>
+        <span class="font-medium">{title}</span>
 
         <div class="flex flex-col items-start  pt-2">
           {listPrice && (

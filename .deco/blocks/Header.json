@@ -14,21 +14,123 @@
     "width": 220,
     "height": 35
   },
-  "navItems": {
-    "__resolveType": "navbar"
-  },
+  "navItems": [
+    {
+      "children": [
+        {
+          "image": [
+            {
+              "image": [],
+              "video": [],
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a8762de7-945b-4479-8a14-850fa0348f3b/banner-menu.png"
+            }
+          ],
+          "children": [
+            {
+              "image": [],
+              "children": [
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Diversos"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Nestlé"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Dolce Gusto"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Ver mais"
+                }
+              ],
+              "name": "Marca"
+            },
+            {
+              "image": [],
+              "children": [
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Café"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Bombom e Chocolate"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Molho"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Ver mais"
+                }
+              ],
+              "name": "Categoria"
+            }
+          ],
+          "name": "Mercearia"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "World"
+        }
+      ],
+      "@type": "SiteNavigationElement",
+      "url": "/deals",
+      "name": "Departamentos",
+      "image": []
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/valentines-day",
+      "name": "Valentine's Day",
+      "children": []
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/women",
+      "name": "Women",
+      "children": []
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/men",
+      "name": "Men",
+      "children": []
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/clearance",
+      "name": "Clearance",
+      "children": []
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/activities",
+      "name": "Activities",
+      "children": []
+    }
+  ],
   "loading": "eager",
   "variant": {
     "variant": "desktop"
   },
   "icon": {
     "icon": {
-      "alt": "Fav",
+      "alt": "WishList icon",
       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b14cca9-f7fa-42d9-a2d1-47ee7a9dbde4/fav.svg"
     }
-  },
-  "item": {
-    "children": []
-  },
-  "seeMoreText": "\"Ver mais\""
+  }
 }

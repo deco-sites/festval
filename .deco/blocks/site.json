@@ -35,10 +35,13 @@
   ],
   "routes": [
     {
-      "__resolveType": "shopify/loaders/proxy.ts",
+      "__resolveType": "vtex/loaders/proxy.ts",
       "extraPathsToProxy": [],
       "includeSiteMap": [],
-      "excludePathsFromDecoSiteMap": []
+      "excludePathsFromDecoSiteMap": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
     },
     {
       "__resolveType": "website/loaders/pages.ts"
@@ -53,7 +56,7 @@
   "commerce": {
     "platform": "other"
   },
-  "platform": "shopify",
+  "platform": "vtex",
   "__resolveType": "site/apps/site.ts",
   "firstByteThresholdMS": false,
   "abTesting": {

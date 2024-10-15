@@ -7,8 +7,6 @@ import {
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
 
-  console.log(item);
-
   return (
     <li
       class="group flex items-center pr-5"
