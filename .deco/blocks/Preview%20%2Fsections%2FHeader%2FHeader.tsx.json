@@ -1,0 +1,21 @@
+{
+  "__resolveType": "site/sections/Header/Header.tsx",
+  "alerts": [],
+  "navItems": [],
+  "searchbar": {
+    "placeholder": "What are you looking for?",
+    "loader": {
+      "data": {
+        "searches": [],
+        "products": []
+      },
+      "__resolveType": "resolved"
+    }
+  },
+  "logo": {},
+  "loading": "eager",
+  "variant": {
+    "variant": "desktop"
+  },
+  "icon": {}
+}

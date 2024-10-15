@@ -1,1 +1,0 @@
-export { default } from "C:UserslucjoDesktopapp-template/mod.ts";

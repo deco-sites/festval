@@ -26,6 +26,7 @@ import { useDevice } from "@deco/deco/hooks";
 import WishListNav, {
   WishListNavProps,
 } from "../../components/header/WishListNav.tsx";
+import ModalSessionInit from "../ModalSessionInit.tsx";
 export interface Logo {
   src: ImageWidget;
   alt: string;
@@ -71,6 +72,7 @@ const Desktop = ({
   icon,
 }: Props) => (
   <>
+    <ModalSessionInit />
     <Modal id={SEARCHBAR_POPUP_ID}>
       <div
         class="absolute top-0 bg-base-100 container"

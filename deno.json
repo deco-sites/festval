@@ -37,7 +37,9 @@
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.6.0",
-    "C:UserslucjoDesktopapp-template/": "https:\\denopkg.com\\C:UserslucjoDesktopapp-template/"
+    "C:UserslucjoDesktopapp-template/": "https:\\denopkg.com\\C:UserslucjoDesktopapp-template/",
+    "vtex-session-init/": "https:\\denopkg.com\\vtex-session-init/",
+    "vtex-session-app/": "https:\\denopkg.com\\vtex-session-app/"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",

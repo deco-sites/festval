@@ -19,9 +19,7 @@ const onLoad = (formID: string) => {
   const form = document.getElementById(formID) as HTMLFormElement;
   window.STOREFRONT.WISHLIST.dispatch(form);
 };
-function WishlistProvider({ wishlist }: {
-  wishlist: Wishlist | null;
-}) {
+function WishlistProvider({ wishlist }: { wishlist: Wishlist | null }) {
   return (
     <form
       id={WISHLIST_FORM_ID}
