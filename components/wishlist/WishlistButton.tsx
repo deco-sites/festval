@@ -53,7 +53,9 @@ function WishlistButton({ item, variant = "full" }: Props) {
         hx-on:click={useScript(onClick, productID, productGroupID)}
         class={clx(
           "btn no-animation",
-          variant === "icon" ? "btn-circle btn-ghost btn-sm" : "btn-primary btn-outline gap-2 w-full"
+          variant === "icon"
+            ? "btn-circle hover:opacity-80 border-none btn-sm hover:bg-transparent hover:border-none"
+            : "btn-primary btn-outline border-none gap-2 w-full"
         )}
       >
         <Icon id="favorite" class="[.htmx-request_&]:hidden" fill="none" />

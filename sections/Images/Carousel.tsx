@@ -96,7 +96,7 @@ function Carousel({ images = [], preload, interval }: Props) {
   const id = useId();
 
   return (
-    <div class="bg-[#f8f8f8] w-full overflow-hidden">
+    <div class="bg-[#f8f8f8] w-full overflow-hidden relative">
       <div class="relative custom-container mx-auto">
         <div
           id={id}
@@ -130,14 +130,14 @@ function Carousel({ images = [], preload, interval }: Props) {
             </Slider.NextButton>
           </div>
 
-          <ul class={clx("col-span-full row-start-4 z-10", "carousel justify-center gap-3")}>
+          <ul class={clx("col-span-full absolute bottom-2 inset-x-0 z-10", "carousel justify-center gap-3")}>
             {images.map((_, index) => (
               <li class="carousel-item">
                 <Slider.Dot
                   index={index}
                   class={clx(
-                    "bg-black opacity-20 h-2 w-8 no-animation rounded-full",
-                    "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]"
+                    " bg-gray-400 h-2 w-6 no-animation rounded-full",
+                    "disabled:w-6 disabled:bg-black disabled:opacity-100 transition-[width]"
                   )}
                 ></Slider.Dot>
               </li>
