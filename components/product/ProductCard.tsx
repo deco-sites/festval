@@ -187,11 +187,11 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
           <a
             href={relativeUrl}
             class={clx(
-              "btn",
+              "btn btn-sm",
               "btn-outline justify-center mt-2 text-slate-200 border-none bg-gray-500 !text-sm  rounded  !font-medium px-0 no-animation w-full",
 
               "disabled:!bg-gray-500 disabled:!opacity-75",
-              " hover:!text-error disabled:!text-error"
+              " hover:!bg-gray-500 hover:!text-slate-200 disabled:!text-error"
             )}
           >
             Esgotado
