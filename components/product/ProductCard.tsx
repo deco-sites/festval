@@ -177,7 +177,7 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
             item={item}
             class={clx(
               "btn",
-              "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full",
+              "btn-outline justify-center border-none !text-sm !font-medium px-0 no-animation w-full",
               "hover:!bg-transparent",
               "disabled:!bg-transparent disabled:!opacity-50",
               "btn-primary hover:!text-primary disabled:!text-primary"
@@ -188,10 +188,10 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
             href={relativeUrl}
             class={clx(
               "btn",
-              "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full",
-              "hover:!bg-transparent",
-              "disabled:!bg-transparent disabled:!opacity-75",
-              "btn-error hover:!text-error disabled:!text-error"
+              "btn-outline justify-center mt-2 text-slate-200 border-none bg-gray-500 !text-sm  rounded  !font-medium px-0 no-animation w-full",
+
+              "disabled:!bg-gray-500 disabled:!opacity-75",
+              " hover:!text-error disabled:!text-error"
             )}
           >
             Esgotado

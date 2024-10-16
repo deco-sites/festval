@@ -32,6 +32,11 @@
     text-align: center;
   }
 }
+@layer product {
+  .bg-grey {
+    background-color: grey;
+  }
+}
 
 .group:disabled .group-disabled\:animate-progress {
   animation: progress-frame ease normal;
