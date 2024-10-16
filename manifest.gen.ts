@@ -40,6 +40,7 @@ import * as $$$$$$21 from "./sections/Product/ProductShelfTabbed.tsx";
 import * as $$$$$$22 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$23 from "./sections/Product/ShelfWithImage.tsx";
 import * as $$$$$$24 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$29 from "./sections/separator.tsx";
 import * as $$$$$$25 from "./sections/Session.tsx";
 import * as $$$$$$26 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$27 from "./sections/Social/WhatsApp.tsx";
@@ -79,6 +80,7 @@ const manifest = {
     "site/sections/Product/SearchResult.tsx": $$$$$$22,
     "site/sections/Product/ShelfWithImage.tsx": $$$$$$23,
     "site/sections/Product/Wishlist.tsx": $$$$$$24,
+    "site/sections/separator.tsx": $$$$$$29,
     "site/sections/Session.tsx": $$$$$$25,
     "site/sections/Social/InstagramPosts.tsx": $$$$$$26,
     "site/sections/Social/WhatsApp.tsx": $$$$$$27,

@@ -4,6 +4,7 @@ export interface IntroProps {
   alignment: "Left" | "Center" | "Right";
 }
 
+
 const ALIGNMENT_TEXT = {
   "Left": "items-start text-start",
   "Center": "items-center text-center",

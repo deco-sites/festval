@@ -73,7 +73,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
             "absolute h-full w-full top-0 left-0",
             "flex flex-col justify-center items-center",
             "px-5 sm:px-0",
-            "sm:left-40 sm:items-start sm:max-w-96"
+            "sm:left-40 sm:items-start sm:max-w-100"
           )}
         >
           <span class="text-7xl font-bold text-base-100">{action.title}</span>
@@ -98,16 +98,7 @@ function Carousel({ images = [], preload, interval }: Props) {
   return (
     <div class="bg-[#f8f8f8] w-full overflow-hidden relative">
       <div class="relative custom-container mx-auto">
-        <div
-          id={id}
-          class={clx(
-            "grid",
-            "grid-rows-[1fr_32px_1fr_64px]",
-            "grid-cols-[32px_1fr_32px] min-h-[660px]",
-            "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
-            "w-full"
-          )}
-        >
+        <div id={id} class={clx("w-full")}>
           <div class="col-span-full row-span-full">
             <Slider class="carousel carousel-center w-full gap-6">
               {images.map((image, index) => (
@@ -118,15 +109,21 @@ function Carousel({ images = [], preload, interval }: Props) {
             </Slider>
           </div>
 
-          <div class="hidden sm:flex items-center justify-start z-10 col-start-1 row-start-2">
-            <Slider.PrevButton class="btn btn-carousel no-animation btn-sm color-white absolute left-0" disabled={false}>
-              <Icon id="chevron-right" class="rotate-180" />
+          <div class="hidden sm:flex items-center justify-start z-10 absolute left-5 inset-y-0 row-start-2">
+            <Slider.PrevButton
+              class="btn btn-carousel border-none hover:!bg-transparent no-animation btn-sm color-white absolute left-0"
+              disabled={false}
+            >
+              <Icon id="arrow-white" class="rotate-180" />
             </Slider.PrevButton>
           </div>
 
-          <div class="hidden sm:flex items-center justify-end z-10 col-start-3 row-start-2">
-            <Slider.NextButton class="btn btn-carousel no-animation btn-sm color-white absolute right-0" disabled={false}>
-              <Icon id="chevron-right" />
+          <div class="hidden sm:flex items-center justify-end z-10 absolute right-5 inset-y-0 row-start-2">
+            <Slider.NextButton
+              class="btn btn-carousel border-none hover:!bg-transparent no-animation btn-sm color-white absolute right-0"
+              disabled={false}
+            >
+              <Icon id="arrow-white" />
             </Slider.NextButton>
           </div>
 
