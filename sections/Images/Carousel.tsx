@@ -84,9 +84,9 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
         </div>
       )}
       <Picture preload={lcp} {...viewPromotionEvent}>
-        <Source media="(max-width: 767px)" fetchPriority={lcp ? "high" : "auto"} src={mobile} width={412} height={660} />
-        <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1440} height={600} />
-        <img class="object-cover w-full h-full rounded-[10px]" loading={lcp ? "eager" : "lazy"} src={desktop} alt={alt} />
+        {/* <Source media="(max-width: 767px)" fetchPriority={lcp ? "high" : "auto"} src={mobile} width={412} height={660} /> */}
+        {/* <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1700} height={600} /> */}
+        <img class="object-contain w-full h-full rounded-[10px]" loading={lcp ? "eager" : "lazy"} src={desktop} alt={alt} />
       </Picture>
     </a>
   );

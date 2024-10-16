@@ -27,7 +27,7 @@ const onClick = (productID: string, productGroupID: string) => {
     button.classList.add("htmx-request");
     window.STOREFRONT.WISHLIST.toggle(productID, productGroupID);
   } else {
-    window.alert(`Please login to add the product to your wishlist`);
+    window.alert(`Por favor, faça login para adicionar o produto à sua lista de desejos.`);
   }
 };
 function WishlistButton({ item, variant = "full" }: Props) {
@@ -54,8 +54,8 @@ function WishlistButton({ item, variant = "full" }: Props) {
         class={clx(
           "btn no-animation",
           variant === "icon"
-            ? "btn-circle hover:opacity-80 border-none btn-sm hover:bg-transparent hover:border-none"
-            : "btn-primary btn-outline border-none gap-2 w-full"
+            ? "btn-circle hover:opacity-80 border-none shadow-inherit btn-sm bg-transparent hover:bg-transparent hover:border-none"
+            : "btn-primary btn-outline  border-none shadow-inherit gap-2 w-full"
         )}
       >
         <Icon id="favorite" class="[.htmx-request_&]:hidden" fill="none" />
