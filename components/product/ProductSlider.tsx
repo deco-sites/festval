@@ -22,11 +22,16 @@ function ProductSlider({ products, itemListName }: Props) {
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-start-1 col-span-3 row-start-1 row-span-1 px-2">
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 sm:gap-7 w-full">
-            {products?.map((product, index) => (
+        <div class="overflow-x-auto">
+          <Slider class="carousel carousel-center sm:carousel-end gap-2 w-full">
+            {products.map((product, index) => (
               <Slider.Item index={index} class={clx("carousel-item", "first:pl-5 first:sm:pl-0", "last:pr-5 last:sm:pr-0")}>
-                <ProductCard index={index} product={product} itemListName={itemListName} class="w-[230px] sm:w-[250px]" />
+                <ProductCard
+                  index={index}
+                  product={product}
+                  itemListName={itemListName}
+                  class="w-[150px] sm:w-[180px] md:w-[200px] lg:w-[180px] xl:w-[260px]"
+                />
               </Slider.Item>
             ))}
           </Slider>

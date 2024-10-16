@@ -30,13 +30,7 @@ const WIDTH = 287;
 const HEIGHT = 287;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
-function ProductCard({
-  product,
-  preload,
-  itemListName,
-  index,
-  class: _class,
-}: Props) {
+function ProductCard({ product, preload, itemListName, index, class: _class }: Props) {
   const id = useId();
 
   const { url, image: images, offers, isVariantOf } = product;
@@ -45,15 +39,13 @@ function ProductCard({
   const [front, back] = images ?? [];
 
   const { listPrice, price, seller = "1", availability } = useOffer(offers);
-  const inStock = availability === "https://schema.org/InStock";
+  // const inStock = availability === "https://schema.org/InStock";
+  const inStock = true;
   const possibilities = useVariantPossibilities(hasVariant, product);
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
@@ -82,12 +74,7 @@ function ProductCard({
         <a
           href={relativeUrl}
           aria-label="view product"
-          class={clx(
-            "absolute top-0 left-0",
-            "grid grid-cols-1 grid-rows-1",
-            "w-full",
-            !inStock && "opacity-70"
-          )}
+          class={clx("absolute top-0 left-0", "grid grid-cols-1 grid-rows-1", "w-full", !inStock && "opacity-70")}
         >
           <Image
             src={front.url!}
@@ -95,12 +82,8 @@ function ProductCard({
             width={WIDTH}
             height={HEIGHT}
             style={{ aspectRatio: ASPECT_RATIO }}
-            class={clx(
-              "object-cover",
-              "rounded w-full",
-              "col-span-full row-span-full"
-            )}
-            sizes="(max-width: 640px) 50vw, 20vw"
+            class={clx("object-cover", "rounded w-full", "col-span-full row-span-full")}
+            // sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
             loading={preload ? "eager" : "lazy"}
             decoding="async"
@@ -117,7 +100,7 @@ function ProductCard({
               "col-span-full row-span-full",
               "transition-opacity opacity-0 lg:group-hover:opacity-100"
             )}
-            sizes="(max-width: 640px) 50vw, 20vw"
+            // sizes="(max-width: 640px) 50vw, 20vw"
             loading="lazy"
             decoding="async"
           />
@@ -160,9 +143,7 @@ function ProductCard({
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-medium text-lg text-base-700">
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
+          <span class="font-medium text-lg text-base-700">{formatPrice(price, offers?.priceCurrency)}</span>
         </div>
       </a>
 

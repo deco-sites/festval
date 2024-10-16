@@ -88,6 +88,11 @@
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c8443563-d5a9-48a6-9124-de709a56c4d6/Casa.png",
             "href": "/",
             "label": "teste"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c8443563-d5a9-48a6-9124-de709a56c4d6/Casa.png",
+            "href": "/",
+            "label": "teste"
           }
         ],
         "cta": "/"
