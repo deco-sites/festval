@@ -2,7 +2,9 @@ import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { LoadingFallbackProps } from "deco/mod.ts";
 import ProductSlider from "../../components/product/ProductSlider.tsx";
-import Section, { Props as SectionHeaderProps } from "../../components/ui/Section.tsx";
+import Section, {
+  Props as SectionHeaderProps,
+} from "../../components/ui/Section.tsx";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 
@@ -14,6 +16,8 @@ export default function ProductShelf({ products, title, cta }: Props) {
   if (!products || products.length === 0) {
     return null;
   }
+
+  //console.log(products);
 
   const viewItemListEvent = useSendEvent({
     on: "view",
@@ -41,7 +45,10 @@ export default function ProductShelf({ products, title, cta }: Props) {
   );
 }
 
-export const LoadingFallback = ({ title, cta }: LoadingFallbackProps<Props>) => (
+export const LoadingFallback = ({
+  title,
+  cta,
+}: LoadingFallbackProps<Props>) => (
   <Section.Container>
     <Section.Header title={title} cta={cta} />
     <Section.Placeholder height="471px" />;

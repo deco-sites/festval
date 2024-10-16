@@ -132,51 +132,39 @@
         "title": "Hottest Deals",
         "tabs": [
           {
+            "title": "Accessories",
             "products": {
-              "__resolveType": "shopify/loaders/ProductList.ts",
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
               "props": {
-                "sort": "",
-                "count": 10
-              },
-              "filters": {
-                "tags": [],
-                "productTypes": [],
-                "productVendors": [],
-                "variantOptions": []
+                "sort": "price:desc",
+                "collection": "1478",
+                "count": 30
               }
-            },
-            "title": "Accessories"
+            }
+          },
+          {
+            "title": "Fashion",
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "price:desc",
+                "collection": "1476",
+                "count": 10
+              }
+            }
           },
           {
             "products": {
               "__resolveType": "shopify/loaders/ProductList.ts",
-              "props": {
-                "sort": "",
-                "query": "Shirts",
-                "count": 10
-              },
               "filters": {
                 "tags": [],
                 "productTypes": [],
                 "productVendors": [],
                 "variantOptions": []
-              }
-            },
-            "title": "Fashion"
-          },
-          {
-            "products": {
-              "__resolveType": "shopify/loaders/ProductList.ts",
-              "props": {
-                "sort": "",
-                "query": "stickers",
-                "count": 10
               },
-              "filters": {
-                "tags": [],
-                "productTypes": [],
-                "productVendors": [],
-                "variantOptions": []
+              "props": {
+                "collection": "1486",
+                "count": 10
               }
             },
             "title": "Stickers"

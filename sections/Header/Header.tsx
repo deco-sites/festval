@@ -26,7 +26,7 @@ import { useDevice } from "@deco/deco/hooks";
 import WishListNav, {
   WishListNavProps,
 } from "../../components/header/WishListNav.tsx";
-import ModalSessionInit from "../ModalSessionInit.tsx";
+import ModalSessionInit from "../../components/modalSessionInit/ModalSessionInit.tsx";
 export interface Logo {
   src: ImageWidget;
   alt: string;
