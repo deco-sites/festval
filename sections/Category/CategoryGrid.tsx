@@ -24,11 +24,11 @@ function Card({ image, href, label }: Item) {
     </a>
   );
 }
-function CategoryGrid({ title, cta, items }: Props) {
+function CategoryGrid({ title, items }: Props) {
   const device = useDevice();
   return (
     <Section.Container class="custom-container realtive">
-      <Section.Header title={title} cta={cta} />
+      <Section.Header title={title} />
 
       {device === "desktop" ? (
         <div class="grid grid-cols-12 gap-5">
@@ -49,9 +49,9 @@ function CategoryGrid({ title, cta, items }: Props) {
   );
 }
 
-export const LoadingFallback = ({ title, cta }: LoadingFallbackProps<Props>) => (
+export const LoadingFallback = ({ title }: LoadingFallbackProps<Props>) => (
   <Section.Container>
-    <Section.Header title={title} cta={cta} />
+    <Section.Header title={title} />
     <Section.Placeholder height="212px" />;
   </Section.Container>
 );

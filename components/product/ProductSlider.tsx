@@ -22,23 +22,23 @@ function ProductSlider({ products, itemListName }: Props) {
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-start-1 col-span-3 row-start-1 row-span-1">
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 sm:gap-10 w-full">
+        <div class="col-start-1 col-span-3 row-start-1 row-span-1 px-2">
+          <Slider class="carousel carousel-center sm:carousel-end gap-5 sm:gap-7 w-full">
             {products?.map((product, index) => (
               <Slider.Item index={index} class={clx("carousel-item", "first:pl-5 first:sm:pl-0", "last:pr-5 last:sm:pr-0")}>
-                <ProductCard index={index} product={product} itemListName={itemListName} class="w-[287px] sm:w-[300px]" />
+                <ProductCard index={index} product={product} itemListName={itemListName} class="w-[230px] sm:w-[250px]" />
               </Slider.Item>
             ))}
           </Slider>
         </div>
 
-        <div class="col-start-1 col-span-1 row-start-1 row-span-1 z-10 self-center p-2 relative bottom-[15%]">
+        <div class="col-start-1 col-span-1 row-start-1 row-span-1 z-10 self-center left-0 p-2 relative bottom-[15%]">
           <Slider.PrevButton class="hidden sm:flex disabled:invisible   no-animation">
             <Icon id="chevron-right" class="rotate-180" />
           </Slider.PrevButton>
         </div>
 
-        <div class="col-start-3 col-span-1 row-start-1 row-span-1 z-10 self-center p-2 relative bottom-[15%]">
+        <div class="col-start-3 col-span-1 row-start-1 row-span-1 z-10 self-center right-0 p-2 relative bottom-[15%]">
           <Slider.NextButton class="hidden sm:flex disabled:invisible no-animation">
             <Icon id="chevron-right" />
           </Slider.NextButton>
