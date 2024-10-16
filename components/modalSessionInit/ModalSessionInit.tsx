@@ -1,5 +1,4 @@
 import { AppContext } from "../../apps/site.ts";
-import Modal from "../ui/Modal.tsx";
 import Section from "../ui/Section.tsx";
 import {
   HEADER_HEIGHT_MOBILE,
@@ -72,11 +71,9 @@ function ModalSessionInit({
   submitButtonText = "Consultar",
   findCepText = "Não sei meu CEP",
 }: Props & SectionProps<typeof loader, typeof action>) {
-  // Verifica se o CEP está salvo no localStorage e abre o modal, se necessário
   const savedCep =
     typeof window !== "undefined" ? getCepFromLocalStorage() : null;
 
-  // O modal será aberto apenas se não houver um CEP salvo
   const modalOpenClass = !savedCep ? "modal-open" : "";
 
   return (
@@ -87,10 +84,10 @@ function ModalSessionInit({
       >
         <h3 class="font-bold text-lg">{modalTitle}</h3>
         <form
-          hx-post={useComponent(import.meta.url)} // Isso conecta o htmx ao endpoint correto para a ação
+          hx-post={useComponent(import.meta.url)}
           hx-trigger="submit"
           hx-swap="none"
-          hx-on="htmx:afterRequest: document.getElementById('MODAL_SESSION_INIT_ID').classList.remove('modal-open')" // Fecha o modal após o envio
+          hx-on="htmx:afterRequest: document.querySelector('#modal-session-init').classList.remove('modal-open')"
           class="flex flex-col sm:flex-row gap-4 w-full"
         >
           <input
