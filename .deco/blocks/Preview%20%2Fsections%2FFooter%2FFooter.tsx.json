@@ -1,3 +1,16 @@
 {
-  "__resolveType": "site/sections/Footer/Footer.tsx"
+  "__resolveType": "site/sections/Footer/Footer.tsx",
+  "links": [],
+  "infos": [
+    {
+      "children": [
+        {
+          "title": "festval"
+        }
+      ]
+    }
+  ],
+  "social": [],
+  "paymentMethods": [],
+  "policies": []
 }

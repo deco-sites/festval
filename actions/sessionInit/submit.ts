@@ -64,10 +64,6 @@ async function action(
   const { data } = props;
   const platform = usePlatform();
 
-  console.log("fez a action");
-  console.log(data);
-  console.log(platform);
-
   if (platform === "vtex") {
     const vtex = ctx as unknown as AppContextVTEX;
 
@@ -78,8 +74,6 @@ async function action(
           data: data,
         }
       );
-
-      console.log("ta chamando o app");
 
       return response;
     } catch (e) {

@@ -5,10 +5,10 @@
 import * as $$$$$$$$$0 from "./actions/minicart/submit.ts";
 import * as $$$$$$$$$1 from "./actions/sessionInit/submit.ts";
 import * as $$$$$$$$$2 from "./actions/wishlist/submit.ts";
-import * as $$$$$$$$$$$0 from "./apps/app-vtex-session.ts";
-import * as $$$$$$$$$$$1 from "./apps/deco/analytics.ts";
-import * as $$$$$$$$$$$2 from "./apps/deco/htmx.ts";
-import * as $$$$$$$$$$$3 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$0 from "./apps/deco/analytics.ts";
+import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
+import * as $$$$$$$$$$$2 from "./apps/deco/vtex.ts";
+import * as $$$$$$$$$$$3 from "./apps/local/app-vtex-session.ts";
 import * as $$$$$$$$$$$4 from "./apps/site.ts";
 import * as $$$0 from "./loaders/availableIcons.ts";
 import * as $$$1 from "./loaders/icons.ts";
@@ -94,10 +94,10 @@ const manifest = {
     "site/actions/wishlist/submit.ts": $$$$$$$$$2,
   },
   "apps": {
-    "site/apps/app-vtex-session.ts": $$$$$$$$$$$0,
-    "site/apps/deco/analytics.ts": $$$$$$$$$$$1,
-    "site/apps/deco/htmx.ts": $$$$$$$$$$$2,
-    "site/apps/deco/vtex.ts": $$$$$$$$$$$3,
+    "site/apps/deco/analytics.ts": $$$$$$$$$$$0,
+    "site/apps/deco/htmx.ts": $$$$$$$$$$$1,
+    "site/apps/deco/vtex.ts": $$$$$$$$$$$2,
+    "site/apps/local/app-vtex-session.ts": $$$$$$$$$$$3,
     "site/apps/site.ts": $$$$$$$$$$$4,
   },
   "name": "site",

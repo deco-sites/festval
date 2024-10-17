@@ -1,3 +1,6 @@
 {
-  "__resolveType": "decohub/apps/app-vtex-session.ts"
+  "__resolveType": "site/apps/local/app-vtex-session.ts",
+  "platform": "vtex",
+  "account": "meufestval",
+  "salesChannel": "2"
 }
