@@ -29,7 +29,7 @@ function Bag() {
 
         <span class="btn btn-square btn-sm btn-ghost no-animation">
           <Icon id="shopping_bag" />
-        </span>
+        </span> 
       </label>
       <script
         type="module"
