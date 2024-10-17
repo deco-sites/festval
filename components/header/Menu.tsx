@@ -13,7 +13,9 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
       <div class="collapse-content">
         <ul>
           <li>
-            <a class="underline text-sm" href={item.url}>Ver todos</a>
+            <a class="underline text-sm" href={item.url}>
+              Ver todos
+            </a>
           </li>
           {item.children?.map((node) => (
             <li>
@@ -28,13 +30,10 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
 
 function Menu({ navItems = [] }: Props) {
   return (
-    <div
-      class="flex flex-col h-full overflow-y-auto"
-      style={{ minWidth: "100vw" }}
-    >
+    <div class="flex flex-col h-full overflow-y-auto" style={{ minWidth: "100vw" }}>
       <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200 overflow-y-auto">
         {navItems.map((item) => (
-          <li>
+          <li class="text-slate-100">
             <MenuItem item={item} />
           </li>
         ))}
@@ -42,37 +41,25 @@ function Menu({ navItems = [] }: Props) {
 
       <ul class="flex flex-col py-2 bg-base-200">
         <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="/wishlist"
-          >
+          <a class="flex items-center gap-4 px-4 py-2" href="/wishlist">
             <Icon id="favorite" />
             <span class="text-sm">Lista de desejos</span>
           </a>
         </li>
         <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
+          <a class="flex items-center gap-4 px-4 py-2" href="https://www.deco.cx">
             <Icon id="home_pin" />
             <span class="text-sm">Nossas lojas</span>
           </a>
         </li>
         <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
+          <a class="flex items-center gap-4 px-4 py-2" href="https://www.deco.cx">
             <Icon id="call" />
             <span class="text-sm">Fale conosco</span>
           </a>
         </li>
         <li>
-          <a
-            class="flex items-center gap-4 px-4 py-2"
-            href="https://www.deco.cx"
-          >
+          <a class="flex items-center gap-4 px-4 py-2" href="https://www.deco.cx">
             <Icon id="account_circle" />
             <span class="text-sm">Minha conta</span>
           </a>

@@ -34,7 +34,7 @@ function SignIn({ variant }: SingInProps) {
     <div id={id}>
       <a
         class={clx(
-          "btn btn-sm font-thin btn-ghost no-animation",
+          "btn btn-sm bg-transparent font-thin hover:opacity-80 hover:bg-transparent shadow-inherit border-none no-animation",
           variant === "mobile" && "btn-square"
         )}
         href="/login"
@@ -45,7 +45,7 @@ function SignIn({ variant }: SingInProps) {
       <a
         class={clx(
           "hidden",
-          "btn btn-sm font-thin btn-ghost no-animation",
+          "btn btn-sm bg-transparent font-thin hover:bg-transparent border-none  shadow-inherit no-animation",
           variant === "mobile" && "btn-square"
         )}
         href="/account"
@@ -53,10 +53,7 @@ function SignIn({ variant }: SingInProps) {
       >
         <Icon id="account_circle" />
       </a>
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
-      />
+      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
     </div>
   );
 }

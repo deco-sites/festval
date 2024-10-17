@@ -37,6 +37,9 @@
       padding: 10px;
     }
   }
+  .has-submenu {
+    position: relative;
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {

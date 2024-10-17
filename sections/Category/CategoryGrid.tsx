@@ -35,12 +35,12 @@ function CategorySlider({ title, items }: Props) {
   const hasArrows = items.length > 12;
 
   return (
-    <Section.Container class="custom-container relative">
+    <Section.Container class="custom-container">
       <Section.Header title={title} />
 
       <div
         id={id}
-        class=""
+        class=" relative"
         style={{
           gridTemplateColumns: hasArrows ? "min-content 1fr min-content" : "1fr",
         }}
@@ -57,13 +57,13 @@ function CategorySlider({ title, items }: Props) {
 
         {hasArrows && (
           <>
-            <div class=" z-10 self-center -left-6 p-2 absolute inset-y-0  ">
+            <div class=" z-10 self-center -left-8 p-2 absolute inset-y-0  ">
               <Slider.PrevButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" class="rotate-180" />
               </Slider.PrevButton>
             </div>
 
-            <div class=" z-10 self-center -right-6 p-2 absolute inset-y-0 ">
+            <div class=" z-10 self-center -right-8 p-2 absolute inset-y-0 ">
               <Slider.NextButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" />
               </Slider.NextButton>

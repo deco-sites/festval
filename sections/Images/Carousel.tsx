@@ -127,7 +127,7 @@ function Carousel({ images = [], preload, interval }: Props) {
             </Slider.NextButton>
           </div>
 
-          <ul class={clx("col-span-full absolute bottom-2 inset-x-0 z-10", "carousel justify-center gap-3")}>
+          <ul class={clx("col-span-full absolute bottom-1 inset-x-0 z-10", "carousel justify-center gap-3")}>
             {images.map((_, index) => (
               <li class="carousel-item">
                 <Slider.Dot

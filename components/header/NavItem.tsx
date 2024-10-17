@@ -1,18 +1,15 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import {
-  HEADER_HEIGHT_DESKTOP,
-  NAVBAR_HEIGHT_DESKTOP,
-} from "../../constants.ts";
+import { HEADER_HEIGHT_DESKTOP, NAVBAR_HEIGHT_DESKTOP } from "../../constants.ts";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
 
   return (
     <li
-      class="group flex items-center pr-5"
+      class={["group flex items-center pr-5", children && children.length > 0 ? "has-submenu" : ""].join(" ")}
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
-      <a href={url} class="group-hover:underline text-sm font-medium">
+      <a href={url} class=" text-sm font-medium hover:opacity-80 ease-in-out duration-300 text-slate-50">
         {name}
       </a>
 
@@ -25,18 +22,18 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             marginTop: HEADER_HEIGHT_DESKTOP,
           }}
         >
-          <ul class="flex items-start justify-start gap-6 container">
+          <ul class="flex items-start justify-start gap-6 custom-container w-full">
             {children.map((node) => (
               <li class="p-6 pl-0">
-                <a class="hover:underline" href={node.url}>
+                <a class="hover:opacity-80" href={node.url}>
                   <span>{node.name}</span>
                 </a>
 
                 <ul class="flex flex-col gap-1 mt-4">
                   {node.children?.map((leaf) => (
                     <li>
-                      <a class="hover:underline" href={leaf.url}>
-                        <span class="text-xs">{leaf.name}</span>
+                      <a class="hover:opacity-80 " href={leaf.url}>
+                        <span class="text-xs ">{leaf.name}</span>
                       </a>
                     </li>
                   ))}

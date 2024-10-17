@@ -178,10 +178,8 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
             item={item}
             class={clx(
               "btn",
-              "btn-outline justify-center border-none !text-sm !font-medium px-0 no-animation w-full",
-              "hover:!bg-transparent",
-              "disabled:!bg-transparent disabled:!opacity-50",
-              "btn-primary hover:!text-primary disabled:!text-primary"
+              "btn-primary justify-center mt-2 text-slate-50 border-none !text-sm  rounded  !font-medium px-0 no-animation w-full",
+              "hover:opacity-80 ease-in-out duration-300"
             )}
           />
         ) : (
