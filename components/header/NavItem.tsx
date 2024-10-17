@@ -9,7 +9,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
       class={["group flex items-center pr-5", children && children.length > 0 ? "has-submenu" : ""].join(" ")}
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
-      <a href={url} class=" text-sm font-medium hover:opacity-80 ease-in-out duration-300 text-slate-50">
+      <a href={url} class=" text-sm font-medium hover:opacity-80 ease-in-out duration-300 text-white">
         {name}
       </a>
 

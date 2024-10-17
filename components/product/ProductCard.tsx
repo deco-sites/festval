@@ -177,8 +177,8 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
             seller={seller}
             item={item}
             class={clx(
-              "btn",
-              "btn-primary justify-center mt-2 text-slate-50 border-none !text-sm  rounded  !font-medium px-0 no-animation w-full",
+              "btn btn-md",
+              "btn-primary justify-center mt-2 text-white border-none !text-sm  rounded-md  !font-medium px-0 no-animation w-full",
               "hover:opacity-80 ease-in-out duration-300"
             )}
           />
@@ -186,8 +186,8 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
           <a
             href={relativeUrl}
             class={clx(
-              "btn btn-sm",
-              "btn-outline justify-center mt-2 text-slate-200 border-none bg-gray-500 !text-sm  rounded  !font-medium px-0 no-animation w-full",
+              "btn btn-md",
+              "btn-outline justify-center mt-2 text-slate-200 border-none bg-gray-500 !text-sm  rounded-md !font-medium px-0 no-animation w-full",
 
               "disabled:!bg-gray-500 disabled:!opacity-75",
               " hover:!bg-gray-500 hover:!text-slate-200 disabled:!text-error"
