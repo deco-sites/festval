@@ -88,17 +88,17 @@ function Footer({
       class="px-5 sm:px-0 mt-5 sm:mt-10"
       style={{ backgroundColor: "#FFFFFF", borderTop: "1px solid #D8D8D8" }}
     >
-      <div class="container flex flex-col gap-10 py-12">
-        <ul class="grid grid-cols-5 sm:grid-cols-5 gap-10">
+      <div class="container flex flex-col pt-12">
+        <ul class="grid grid-cols-5 sm:grid-cols-5 gap-10 mb-14">
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
-              <a class="text-base font-bold" href={href}>
+              <a class="text-lg font-bold" href={href}>
                 {title}
               </a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href }) => (
                   <li>
-                    <a class="text-sm font-normal text-base-400" href={href}>
+                    <a class="text-base font-normal text-base-400" href={href}>
                       {title}
                     </a>
                   </li>
@@ -109,26 +109,26 @@ function Footer({
 
           {infos.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
-              <a class="text-base font-bold" href={href}>
+              <a class="text-lg font-bold" href={href}>
                 {title}
               </a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, subItems }) => (
                   <li>
-                    <p>{title}</p>
+                    <p class="text-base font-bold text-base-400">{title}</p>
                     {subItems && subItems.length > 0 && (
                       <ul class="flex flex-col gap-2">
                         {subItems.map(({ href, text }) => (
                           <li>
                             {href ? (
                               <a
-                                class="text-sm font-bold text-base-400"
+                                class="text-base font-normal text-base-400 underline"
                                 href={href}
                               >
                                 {text}
                               </a>
                             ) : (
-                              <span class="text-sm font-normal text-base-400">
+                              <span class="text-base font-normal text-base-400">
                                 {text}
                               </span>
                             )}
@@ -143,12 +143,12 @@ function Footer({
           ))}
         </ul>
 
-        <div class="flex flex-col sm:flex-row gap-8 justify-between items-start">
+        <div class="flex flex-col sm:flex-row gap-10 justify-between items-start">
           {paymentMethods &&
             paymentMethods.socialItens &&
             paymentMethods.socialItens.length > 0 && (
               <div class="flex flex-col items-center sm:items-start">
-                <h2 class="text-center sm:text-left font-bold">
+                <h2 class="text-center sm:text-left font-bold text-lg	">
                   {paymentMethods.title}
                 </h2>
                 <ul class="flex gap-4 mt-4">
@@ -173,10 +173,10 @@ function Footer({
             security.socialItens &&
             security.socialItens.length > 0 && (
               <div class="flex flex-col items-center sm:items-start">
-                <h2 class="text-center sm:text-left font-bold">
+                <h2 class="text-center sm:text-left font-bold text-lg	">
                   {security.title}
                 </h2>
-                <ul class="flex gap-4 mt-4 items-center">
+                <ul class="flex gap-4 items-center">
                   {security.socialItens.map(({ image, href, alt }) => (
                     <li>
                       <a href={href}>
@@ -196,7 +196,9 @@ function Footer({
 
           {social && social.socialItens && social.socialItens.length > 0 && (
             <div class="flex flex-col items-center sm:items-start">
-              <h2 class="text-center sm:text-left font-bold">{social.title}</h2>
+              <h2 class="text-center sm:text-left font-bold text-lg	">
+                {social.title}
+              </h2>
               <ul class="flex gap-4 mt-4">
                 {social.socialItens.map(({ image, href, alt }) => (
                   <li>
@@ -221,39 +223,42 @@ function Footer({
                 src={underEighteen}
                 alt="18 Anos de Segurança"
                 loading="lazy"
-                width={250}
-                height={140}
+                width={316}
+                height={58}
                 class="mt-4"
               />
             </div>
           )}
         </div>
 
-        <hr class="w-full text-base-400 mt-10" />
-
         {policies && (
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
+          <div class="grid grid-cols-1 sm:grid-cols-1 mb-12">
             <div>
-              <h2 class="font-bold">{policies.title}</h2>
-              <p class="mt-2">{policies.text}</p>
+              <h2 class="text-lg font-bold">{policies.title}</h2>
+              <p class="mt-2 text-sm" style={{ maxWidth: 556 }}>
+                {policies.text}
+              </p>
             </div>
           </div>
         )}
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-          <div>
-            <span>{copyright?.copy}</span>
+      </div>
+      <div class="py-2.5" style={{ backgroundColor: "#3B3B3B" }}>
+        <div class="container flex justify-between items-center">
+          <div style={{ color: "#FFF" }}>
+            <span class="text-sm">{copyright?.copy}</span>
           </div>
           <div class="flex items-center gap-2">
-            <span>Desenvolvido por:</span>
+            <span class="self-end text-xs" style={{ color: "#FFF" }}>
+              Desenvolvido por
+            </span>
             {copyright?.developer && (
               <a href={copyright.developer.href}>
                 <Image
                   src={copyright.developer.image}
                   alt={copyright.developer.alt ?? "Developer"}
                   loading="lazy"
-                  width={41}
-                  height={28}
+                  width={52}
+                  height={38}
                 />
               </a>
             )}
