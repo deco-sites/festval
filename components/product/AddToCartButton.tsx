@@ -101,10 +101,14 @@ function AddToCartButton(props: Props) {
     >
       <input type="checkbox" class="hidden peer" />
 
-      <button disabled class={clx("flex-grow peer-checked:hidden", _class?.toString())} hx-on:click={useScript(onClick)}>
-        <Icon id="shopping_bag" />
-        Adicionar ao carrinho
-      </button> 
+      <button
+        disabled
+        class={clx("flex-grow items-center peer-checked:hidden", _class?.toString())}
+        hx-on:click={useScript(onClick)}
+      >
+        <Icon id="cart-white" />
+        Adicionar
+      </button>
 
       {/* Quantity Input */}
       <div class="flex-grow hidden peer-checked:flex">

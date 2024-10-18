@@ -24,6 +24,17 @@
 	</symbol>
 
 
+	<svg id="cart-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.141 15.913">
+		<g id="Grupo_15" data-name="Grupo 15" transform="translate(-15.25 -23.25)">
+			<path id="Caminho_17" data-name="Caminho 17" d="M27.459,34.913H19.669l-1.9-10.463a.546.546,0,0,0-.532-.45H16" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+			<circle id="Elipse_4" data-name="Elipse 4" cx="0.603" cy="0.603" r="0.603" transform="translate(19.299 37.207)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+			<circle id="Elipse_5" data-name="Elipse 5" cx="0.603" cy="0.603" r="0.603" transform="translate(25.91 37.207)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+			<path id="Caminho_18" data-name="Caminho 18" d="M48.989,69.456h8.567a1.084,1.084,0,0,0,1.071-.894L59.459,64H48" transform="translate(-29.817 -37.272)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+		</g>
+	</svg>
+
+
+
 
 	<symbol id="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="currentColor"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></symbol>
 	<symbol id="account_circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 32 32">

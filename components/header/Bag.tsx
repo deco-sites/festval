@@ -22,19 +22,13 @@ function Bag() {
   return (
     <>
       <label class="indicator" for={MINICART_DRAWER_ID} aria-label="open cart">
-        <span
-          id={id}
-          class="hidden indicator-item badge badge-primary badge-sm font-thin"
-        />
+        <span id={id} class="hidden indicator-item badge badge-primary badge-sm font-thin" />
 
-        <span class="btn btn-square btn-sm btn-ghost no-animation">
+        <span class="btn btn-square btn-sm border-none hover:bg-transparent hover:opacity-80 bg-transparent no-animation">
           <Icon id="shopping_bag" />
-        </span> 
+        </span>
       </label>
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
-      />
+      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
     </>
   );
 }
