@@ -15,12 +15,17 @@ const onClick = () => {
   event?.stopPropagation();
   const button = event?.currentTarget as HTMLButtonElement | null;
   const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
-  const { item, platformProps } = JSON.parse(decodeURIComponent(container.getAttribute("data-cart-item")!));
+  const { item, platformProps } = JSON.parse(
+    decodeURIComponent(container.getAttribute("data-cart-item")!)
+  );
+  console.log("Add cart:", item, platformProps);
   window.STOREFRONT.CART.addToCart(item, platformProps);
 };
 const onChange = () => {
   const input = event!.currentTarget as HTMLInputElement;
-  const productID = input!.closest("div[data-cart-item]")!.getAttribute("data-item-id")!;
+  const productID = input!
+    .closest("div[data-cart-item]")!
+    .getAttribute("data-item-id")!;
   const quantity = Number(input.value);
   if (!input.validity.valid) {
     return;
@@ -31,8 +36,12 @@ const onChange = () => {
 const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const container = document.getElementById(id);
-    const checkbox = container?.querySelector<HTMLInputElement>('input[type="checkbox"]');
-    const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
+    const checkbox = container?.querySelector<HTMLInputElement>(
+      'input[type="checkbox"]'
+    );
+    const input = container?.querySelector<HTMLInputElement>(
+      'input[type="number"]'
+    );
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 0;
     if (!input || !checkbox) {
@@ -41,8 +50,12 @@ const onLoad = (id: string) => {
     input.value = quantity.toString();
     checkbox.checked = quantity > 0;
     // enable interactivity
-    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
-    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("button")
+      .forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("input")
+      .forEach((node) => (node.disabled = false));
   });
 };
 const useAddToCart = ({ product, seller }: Props) => {
@@ -62,7 +75,9 @@ const useAddToCart = ({ product, seller }: Props) => {
     return {
       quantity: 1,
       itemId: productID,
-      attributes: Object.fromEntries(additionalProperty.map(({ name, value }) => [name, value])),
+      attributes: Object.fromEntries(
+        additionalProperty.map(({ name, value }) => [name, value])
+      ),
     };
   }
   if (platform === "wake") {
@@ -76,7 +91,9 @@ const useAddToCart = ({ product, seller }: Props) => {
       quantity: 1,
       itemId: Number(productGroupID),
       add_to_cart_enhanced: "1",
-      attributes: Object.fromEntries(additionalProperty.map(({ name, value }) => [name, value])),
+      attributes: Object.fromEntries(
+        additionalProperty.map(({ name, value }) => [name, value])
+      ),
     };
   }
   if (platform === "linx") {
@@ -97,25 +114,35 @@ function AddToCartButton(props: Props) {
       id={id}
       class="flex"
       data-item-id={product.productID}
-      data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
+      data-cart-item={encodeURIComponent(
+        JSON.stringify({ item, platformProps })
+      )}
     >
       <input type="checkbox" class="hidden peer" />
 
       <button
         disabled
-        class={clx("flex-grow items-center peer-checked:hidden", _class?.toString())}
+        class={clx("flex-grow peer-checked:hidden", _class?.toString())}
         hx-on:click={useScript(onClick)}
       >
-        <Icon id="cart-white" />
-        Adicionar
+        <Icon id="shopping_bag" />
+        Adicionar ao carrinho
       </button>
 
       {/* Quantity Input */}
       <div class="flex-grow hidden peer-checked:flex">
-        <QuantitySelector disabled min={0} max={100} hx-on:change={useScript(onChange)} />
+        <QuantitySelector
+          disabled
+          min={0}
+          max={100}
+          hx-on:change={useScript(onChange)}
+        />
       </div>
 
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+      />
     </div>
   );
 }

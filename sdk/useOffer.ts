@@ -57,7 +57,7 @@ export const useOffer = (aggregateOffer?: AggregateOffer) => {
     (spec) => spec.priceType === "https://schema.org/ListPrice"
   );
   const installment = offer?.priceSpecification.reduce(bestInstallment, null);
-  const seller = 2;
+  const seller = offer?.seller;
   const price = offer?.price;
   const availability = offer?.availability;
 

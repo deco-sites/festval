@@ -107,9 +107,12 @@ function Footer({
             </li>
           ))}
 
-          {infos.map(({ title, href, children }) => (
+          {infos.map(({ title, href, children }, index) => (
             <li class="flex flex-col gap-4">
-              <a class="text-lg font-bold" href={href}>
+              <a
+                class={`text-lg font-bold ${index === 1 ? "opacity-0" : ""}`}
+                href={href}
+              >
                 {title}
               </a>
               <ul class="flex flex-col gap-2">
