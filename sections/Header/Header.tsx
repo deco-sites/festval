@@ -6,7 +6,9 @@ import Bag from "../../components/header/Bag.tsx";
 import SingIn, { SingInProps } from "../../components/header/SignIn.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
-import Searchbar, { type SearchbarProps } from "../../components/search/Searchbar/Form.tsx";
+import Searchbar, {
+  type SearchbarProps,
+} from "../../components/search/Searchbar/Form.tsx";
 import Drawer from "../../components/ui/Drawer.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import Modal from "../../components/ui/Modal.tsx";
@@ -20,8 +22,12 @@ import {
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
 import { useDevice } from "@deco/deco/hooks";
-import WishListNav, { WishListNavProps } from "../../components/header/WishListNav.tsx";
-import ModalSessionInit from "../../components/modalSessionInit/ModalSessionInit.tsx";
+import WishListNav, {
+  WishListNavProps,
+} from "../../components/header/WishListNav.tsx";
+import ModalSessionInit, {
+  type ModalInitProps,
+} from "../../components/modalSessionInit/ModalSessionInit.tsx";
 import { type LoadingFallbackProps } from "@deco/deco";
 export interface Logo {
   src: ImageWidget;
@@ -57,13 +63,29 @@ export interface SectionProps {
    * @description Wish List configuration
    */
   icon: WishListNavProps;
+  /**
+   * @title Modal Cep
+   * @description Modal Cep configuration
+   */
+  modalInitProps: ModalInitProps;
 }
 type Props = Omit<SectionProps, "alert">;
-const Desktop = ({ navItems, logo, searchbar, loading, variant, icon }: Props) => (
+const Desktop = ({
+  navItems,
+  logo,
+  searchbar,
+  loading,
+  variant,
+  icon,
+  modalInitProps,
+}: Props) => (
   <>
-    <ModalSessionInit />
+    <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
     <Modal id={SEARCHBAR_POPUP_ID}>
-      <div class="absolute top-0 bg-base-100 container" style={{ marginTop: HEADER_HEIGHT_MOBILE }}>
+      <div
+        class="absolute top-0 bg-base-100 container"
+        style={{ marginTop: HEADER_HEIGHT_MOBILE }}
+      >
         {loading === "lazy" ? (
           <div class="flex justify-center items-center">
             <span class="loading loading-spinner" />
@@ -78,7 +100,12 @@ const Desktop = ({ navItems, logo, searchbar, loading, variant, icon }: Props) =
       <div class="custom-container flex justify-between items-center w-full">
         <div class="flex flex-1">
           <a href="/" aria-label="Store logo">
-            <Image src={logo.src} alt={logo.alt} width={logo.width || 100} height={logo.height || 23} />
+            <Image
+              src={logo.src}
+              alt={logo.alt}
+              width={logo.width || 100}
+              height={logo.height || 23}
+            />
           </a>
         </div>
 
@@ -112,8 +139,15 @@ const Desktop = ({ navItems, logo, searchbar, loading, variant, icon }: Props) =
     </div>
   </>
 );
-const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
+const Mobile = ({
+  logo,
+  searchbar,
+  navItems,
+  modalInitProps,
+  loading,
+}: Props) => (
   <>
+    <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
     <Drawer
       id={SEARCHBAR_DRAWER_ID}
       aside={
@@ -135,7 +169,11 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       aside={
         <Drawer.Aside title="Menu" drawer={SIDEMENU_DRAWER_ID}>
           {loading === "lazy" ? (
-            <div id={SIDEMENU_CONTAINER_ID} class="h-full flex items-center justify-center" style={{ minWidth: "100vw" }}>
+            <div
+              id={SIDEMENU_CONTAINER_ID}
+              class="h-full flex items-center justify-center"
+              style={{ minWidth: "100vw" }}
+            >
               <span class="loading loading-spinner" />
             </div>
           ) : (
@@ -149,10 +187,15 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       class="grid place-items-center w-screen px-5 gap-4"
       style={{
         height: NAVBAR_HEIGHT_MOBILE,
-        gridTemplateColumns: "min-content auto min-content min-content min-content",
+        gridTemplateColumns:
+          "min-content auto min-content min-content min-content",
       }}
     >
-      <label for={SIDEMENU_DRAWER_ID} class="btn btn-square btn-sm btn-ghost" aria-label="open menu">
+      <label
+        for={SIDEMENU_DRAWER_ID}
+        class="btn btn-square btn-sm btn-ghost"
+        aria-label="open menu"
+      >
         <Icon id="menu" />
       </label>
 
@@ -163,11 +206,20 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
           style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
           aria-label="Store logo"
         >
-          <Image src={logo.src} alt={logo.alt} width={logo.width || 100} height={logo.height || 13} />
+          <Image
+            src={logo.src}
+            alt={logo.alt}
+            width={logo.width || 100}
+            height={logo.height || 13}
+          />
         </a>
       )}
 
-      <label for={SEARCHBAR_DRAWER_ID} class="btn btn-square btn-sm btn-ghost" aria-label="search icon button">
+      <label
+        for={SEARCHBAR_DRAWER_ID}
+        class="btn btn-square btn-sm btn-ghost"
+        aria-label="search icon button"
+      >
         <Icon id="search" />
       </label>
       <Bag />
@@ -188,12 +240,17 @@ function Header({
   return (
     <header
       style={{
-        height: device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
+        height:
+          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
       }}
     >
       <div class="bg-base-100 fixed w-full z-40">
         {alerts.length > 0 && <Alert alerts={alerts} />}
-        {device === "desktop" ? <Desktop logo={logo} {...props} /> : <Mobile logo={logo} {...props} />}
+        {device === "desktop" ? (
+          <Desktop logo={logo} {...props} />
+        ) : (
+          <Mobile logo={logo} {...props} />
+        )}
       </div>
     </header>
   );

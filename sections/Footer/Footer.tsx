@@ -89,7 +89,7 @@ function Footer({
       style={{ backgroundColor: "#FFFFFF", borderTop: "1px solid #D8D8D8" }}
     >
       <div class="container flex flex-col pt-12">
-        <ul class="grid grid-cols-5 sm:grid-cols-5 gap-10 mb-14">
+        <ul class="grid grid-cols-1 sm:grid-cols-5 gap-10 mb-14">
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
               <a class="text-lg font-bold" href={href}>
