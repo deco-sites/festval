@@ -125,9 +125,10 @@ const Desktop = ({
         </div>
       </div>
 
-      <div class="flex items-center bg-black ">
+      <div class="flex items-center bg-[#282828] ">
         <div class="custom-container w-full">
-          <ul class="flex">
+          <ul class="flex gap-2 items-center">
+            <Icon id="burguer-white" />
             {navItems?.slice(0, 10).map((item, index) => (
               <NavItem key={index} item={item} />
             ))}

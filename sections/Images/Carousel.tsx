@@ -96,7 +96,7 @@ function Carousel({ images = [], preload, interval }: Props) {
   const id = useId();
 
   return (
-    <div class="bg-[#f8f8f8] w-full overflow-hidden relative">
+    <div class="bg-[#f8f8f8] w-full overflow-hidden relative mt-5 py-2">
       <div class="relative custom-container mx-auto">
         <div id={id} class={clx("w-full")}>
           <div class="col-span-full row-span-full">

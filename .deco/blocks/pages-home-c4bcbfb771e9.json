@@ -288,17 +288,109 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Images/Banner.tsx",
-        "title": "Register and Save Big!",
-        "cta": {
-          "label": "Sign Up",
-          "href": "#"
-        },
-        "description": "<p><span style=\"color: rgb(45, 194, 107);\" data-mce-style=\"color: rgb(45, 194, 107);\">Sign up now to get up to 50% off on your first order. Limited time offer!</span></p>",
-        "images": {
-          "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/cf96d47f-564f-40da-ad94-7acac5f39327",
-          "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4d5c3212-3f75-4d50-89f3-970815748b43"
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
+            "alt": "banner 1700",
+            "href": "/"
+          },
+          {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "alt": "840",
+            "href": "/"
+          },
+          {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "alt": "840",
+            "href": "/"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "Frios",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1486",
+            "count": 30,
+            "hideUnavailableItems": false
+          }
         }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx",
+        "color": "#F8F8F8"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "Frios",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1486",
+            "count": 30,
+            "hideUnavailableItems": false
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "alt": "840",
+            "href": "/"
+          },
+          {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "alt": "840",
+            "href": "/"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "Frios",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1486",
+            "count": 30,
+            "hideUnavailableItems": false
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx",
+        "color": "#F8F8F8"
       }
     },
     {
