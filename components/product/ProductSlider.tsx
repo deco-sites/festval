@@ -37,13 +37,13 @@ function ProductSlider({ products, itemListName }: Props) {
           </Slider>
         </div>
 
-        <div class="col-start-1 col-span-1 row-start-1 row-span-1 z-10 self-center -left-6 p-2 relative bottom-[15%]">
+        <div class="col-start-1 col-span-1 row-start-1 row-span-1 z-10 self-center lg:-left-8 md:left-0 p-2 relative bottom-[15%]">
           <Slider.PrevButton class="hidden sm:flex disabled:opacity-75   no-animation">
             <Icon id="chevron-right" class="rotate-180" />
           </Slider.PrevButton>
         </div>
 
-        <div class="col-start-3 col-span-1 row-start-1 row-span-1 z-10 self-center -right-6 p-2 relative bottom-[15%]">
+        <div class="col-start-3 col-span-1 row-start-1 row-span-1 z-10 self-center lg:-right-8 md:right-0  p-2 relative bottom-[15%]">
           <Slider.NextButton class="hidden sm:flex disabled:opacity-75 no-animation">
             <Icon id="chevron-right" />
           </Slider.NextButton>

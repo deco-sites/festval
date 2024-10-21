@@ -20,9 +20,12 @@ export interface Props extends SectionHeaderProps {
 }
 
 function Card({ image, href, label }: Item) {
+  const device = useDevice(); // Detecta se é mobile ou desktop
+
+  const size = device === "mobile" ? 90 : 121; // Tamanhos dinâmicos
   return (
     <a href={href} class="flex flex-col items-center justify-center gap-2">
-      <Image class="rounded-xl" src={image} alt={label} width={121} height={121} loading="lazy" />
+      <Image class="rounded-xl" src={image} alt={label} width={size} height={size} loading="lazy" />
       <span class="font-medium text-sm">{label}</span>
     </a>
   );
@@ -35,7 +38,7 @@ function CategorySlider({ title, items }: Props) {
   const hasArrows = items.length > 12;
 
   return (
-    <Section.Container class="custom-container">
+    <Section.Container class="custom-container pr-0 md:p-2">
       <Section.Header title={title} />
 
       <div
@@ -57,13 +60,13 @@ function CategorySlider({ title, items }: Props) {
 
         {hasArrows && (
           <>
-            <div class=" z-10 self-center -left-8 p-2 absolute inset-y-0  ">
+            <div class=" z-10 self-center lg:-left-8 md:left-0  p-2 absolute inset-y-0  ">
               <Slider.PrevButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" class="rotate-180" />
               </Slider.PrevButton>
             </div>
 
-            <div class=" z-10 self-center -right-8 p-2 absolute inset-y-0 ">
+            <div class=" z-10 self-center lg:-right-8 sm:right-0   p-2 absolute inset-y-0 ">
               <Slider.NextButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" />
               </Slider.NextButton>

@@ -3581,6 +3581,14 @@ details.collapse summary::-webkit-details-marker {
       padding: 10px;
     }
   }
+@media only screen and (max-width: 768px) {
+    .custom-container {
+      padding: 10px;
+    }
+    .pr-0 {
+      padding-right: 0 !important;
+    }
+  }
 .has-submenu {
     position: relative;
     margin-right: 10px;
@@ -3638,18 +3646,6 @@ details.collapse summary::-webkit-details-marker {
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
-}
-.-left-6 {
-  left: -1.5rem;
-}
-.-left-8 {
-  left: -2rem;
-}
-.-right-6 {
-  right: -1.5rem;
-}
-.-right-8 {
-  right: -2rem;
 }
 .bottom-0 {
   bottom: 0px;
@@ -3851,6 +3847,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-7 {
+  margin-top: 1.75rem;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -4468,6 +4467,10 @@ details.collapse summary::-webkit-details-marker {
 .border-transparent {
   border-color: transparent;
 }
+.\!bg-\[\#F8F8F8\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity)) !important;
+}
 .bg-\[\#0D1717\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
@@ -4483,6 +4486,10 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[\#C9CFCF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(201 207 207 / var(--tw-bg-opacity));
+}
+.bg-\[\#F8F8F8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
 }
 .bg-\[\#f8f8f8\] {
   --tw-bg-opacity: 1;
@@ -4713,6 +4720,9 @@ details.collapse summary::-webkit-details-marker {
 .pl-3 {
   padding-left: 0.75rem;
 }
+.pr-0 {
+  padding-right: 0px;
+}
 .pr-2 {
   padding-right: 0.5rem;
 }
@@ -4925,6 +4935,10 @@ details.collapse summary::-webkit-details-marker {
 .text-\[\#616B6B\] {
   --tw-text-opacity: 1;
   color: rgb(97 107 107 / var(--tw-text-opacity));
+}
+.text-\[\#646072\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 96 114 / var(--tw-text-opacity));
 }
 .text-\[\#667781\] {
   --tw-text-opacity: 1;
@@ -5278,6 +5292,11 @@ details.collapse summary::-webkit-details-marker {
   .sm\:carousel-end .carousel-item {
     scroll-snap-align: end;
   }
+  @media only screen and (max-width: 768px) {
+    .last\:sm\:pr-0:last-child {
+      padding-right: 0 !important;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -5431,14 +5450,14 @@ details.collapse summary::-webkit-details-marker {
   background-color: transparent !important;
 }
 
+.hover\:bg-\[\#F8F8F8\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-base-200:hover {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
-}
-
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
@@ -5554,6 +5573,10 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:left-40 {
     left: 10rem;
+  }
+
+  .sm\:right-0 {
+    right: 0px;
   }
 
   .sm\:col-span-2 {
@@ -5791,6 +5814,14 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 768px) {
 
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:right-0 {
+    right: 0px;
+  }
+
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -5824,6 +5855,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:gap-20 {
     gap: 5rem;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:px-\[60px\] {
@@ -5871,6 +5906,14 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:-left-8 {
+    left: -2rem;
+  }
+
+  .lg\:-right-8 {
+    right: -2rem;
+  }
 
   .lg\:mx-auto {
     margin-left: auto;

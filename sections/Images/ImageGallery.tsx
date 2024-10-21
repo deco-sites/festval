@@ -69,7 +69,7 @@ function Gallery({
   ],
 }: Props) {
   return (
-    <Section.Container class="custom-container ">
+    <Section.Container class="custom-container md:p-2">
       {banners.length === 2 ? (
         <div class="grid grid-cols-2 gap-3">
           {banners.map((banner, index) => (

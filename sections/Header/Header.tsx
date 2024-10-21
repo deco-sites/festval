@@ -87,7 +87,7 @@ const Desktop = ({ navItems, logo, searchbar, loading, variant, icon, modalInitP
           </a>
         </div>
 
-        <div class="flex flex-1 mx-4">
+        <div class="flex flex-1">
           <Searchbar {...searchbar} />
         </div>
 
@@ -142,7 +142,7 @@ const Mobile = ({ logo, searchbar, navItems, modalInitProps, loading }: Props) =
     />
 
     <div
-      class="grid place-items-center w-screen px-2 gap-3"
+      class="grid w-full px-2 gap-3"
       style={{
         height: HEADER_HEIGHT_MOBILE,
       }}
@@ -156,7 +156,7 @@ const Mobile = ({ logo, searchbar, navItems, modalInitProps, loading }: Props) =
           <a
             href="/"
             class="flex-grow inline-flex items-center justify-center"
-            style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
+            // style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
             aria-label="Store logo"
           >
             <Image src={logo.src} alt={logo.alt} width={logo.width || 100} height={logo.height || 13} />
@@ -166,7 +166,7 @@ const Mobile = ({ logo, searchbar, navItems, modalInitProps, loading }: Props) =
         <Bag />
       </div>
 
-      <div class="flex  w-full">
+      <div class="flex place-items-center w-full">
         <Searchbar {...searchbar} />
       </div>
     </div>
@@ -189,7 +189,7 @@ function Header({
         height: device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
       }}
     >
-      <div class="bg-base-100 fixed w-full z-40">
+      <div class="bg-base-100 fixed w-screen z-40">
         {alerts.length > 0 && <Alert alerts={alerts} />}
         {device === "desktop" ? <Desktop logo={logo} {...props} /> : <Mobile logo={logo} {...props} />}
       </div>

@@ -37,6 +37,14 @@
       padding: 10px;
     }
   }
+  @media only screen and (max-width: 768px) {
+    .custom-container {
+      padding: 10px;
+    }
+    .pr-0 {
+      padding-right: 0 !important;
+    }
+  }
   .has-submenu {
     position: relative;
     margin-right: 10px;

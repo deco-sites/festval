@@ -57,7 +57,7 @@ const script = (formId: string, name: string, popupId: string) => {
   });
 };
 const Suggestions = import.meta.resolve("./Suggestions.tsx");
-export default function Searchbar({ placeholder = "What are you looking for?", loader }: SearchbarProps) {
+export default function Searchbar({ placeholder = "Buscar produtos", loader }: SearchbarProps) {
   const slot = useId();
   return (
     <div class="w-full grid">
@@ -65,7 +65,7 @@ export default function Searchbar({ placeholder = "What are you looking for?", l
         <input
           autoFocus
           tabIndex={0}
-          class="input bg-gray-100 border-none outline-none shadow-inherit rounded-l flex-grow justify-between items-center gap-2 w-full join-item focus:outline-none "
+          class="input !bg-[#F8F8F8] text-[#646072] border-none outline-none shadow-inherit rounded-l flex-grow justify-between items-center gap-2 w-full join-item focus:outline-none "
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"
@@ -85,7 +85,7 @@ export default function Searchbar({ placeholder = "What are you looking for?", l
         </label> */}
         <button
           type="submit"
-          class="btn bg-gray-100 shadow-inherit border-none rounded-r join-item no-animation hover:bg-gray-100"
+          class="btn bg-[#F8F8F8] shadow-inherit border-none rounded-r join-item no-animation hover:bg-[#F8F8F8]"
           aria-label="Search"
           for={SEARCHBAR_INPUT_FORM_ID}
           tabIndex={-1}

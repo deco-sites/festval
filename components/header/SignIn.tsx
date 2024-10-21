@@ -45,7 +45,7 @@ function SignIn({ variant }: SingInProps) {
       <a
         class={clx(
           "hidden",
-          "btn btn-sm bg-transparent font-thin hover:bg-transparent border-none  shadow-inherit no-animation",
+          "btn btn-sm  bg-transparent font-thin hover:bg-transparent border-none  shadow-inherit no-animation",
           variant === "mobile" && "btn-square"
         )}
         href="/account"
