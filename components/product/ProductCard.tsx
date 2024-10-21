@@ -158,20 +158,28 @@ function ProductCard({
         </div>
       </figure>
 
-      <a href={relativeUrl} class="pt-5">
-        <span class="font-medium flex text-left">{title}</span>
+      <div>
+        <a href={relativeUrl} class="pt-5">
+          <span class="font-medium flex text-left">{title}</span>
 
-        <div class="flex flex-col items-start  pt-2">
-          {listPrice && (
-            <span class="line-through text-xs font-normal text-gray-400">
-              {formatPrice(listPrice, offers?.priceCurrency)}
+          <div class="flex flex-col items-start  pt-2">
+            {listPrice && (
+              <span class="line-through text-xs font-normal text-gray-400">
+                {formatPrice(listPrice, offers?.priceCurrency)}
+              </span>
+            )}
+            <span class="font-medium text-lg text-base-700">
+              {formatPrice(price, offers?.priceCurrency)}
             </span>
-          )}
-          <span class="font-medium text-lg text-base-700">
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
+          </div>
+        </a>
+
+        <div>
+          <button class="btn" hx-on:click={useScript(onClick)}>
+            Pré-visualizar
+          </button>
         </div>
-      </a>
+      </div>
 
       {/* SKU Selector */}
       {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
@@ -198,27 +206,16 @@ function ProductCard({
 
       <div>
         {inStock ? (
-          // <AddToCartButton
-          //   product={product}
-          //   seller={seller}
-          //   item={item}
-          //   class={clx(
-          //     "btn btn-md",
-          //     "btn-primary justify-center mt-2 text-white border-none !text-sm  rounded-md  !font-medium px-0 no-animation w-full",
-          //     "hover:opacity-80 ease-in-out duration-300"
-          //   )}
-          // />
-          <button
-            type="button"
+          <AddToCartButton
+            product={product}
+            seller={seller}
+            item={item}
             class={clx(
               "btn btn-md",
               "btn-primary justify-center mt-2 text-white border-none !text-sm  rounded-md  !font-medium px-0 no-animation w-full",
               "hover:opacity-80 ease-in-out duration-300"
             )}
-            hx-on:click={useScript(onClick)}
-          >
-            <Icon id="shopping_bag" /> Adicionar ao carrinho
-          </button>
+          />
         ) : (
           <a
             href={relativeUrl}
