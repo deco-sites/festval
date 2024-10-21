@@ -100,7 +100,7 @@ const Desktop = ({ navItems, logo, searchbar, loading, variant, icon, modalInitP
           <Icon id="search" />
         </label> */}
 
-        <div class="flex flex-1 justify-end gap-2">
+        <div class="flex flex-1 justify-end gap-4">
           <WishListNav {...icon} />
           <SingIn {...variant} />
           <Bag />
@@ -125,22 +125,7 @@ const Desktop = ({ navItems, logo, searchbar, loading, variant, icon, modalInitP
 const Mobile = ({ logo, searchbar, navItems, modalInitProps, loading }: Props) => (
   <>
     <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
-    <Drawer
-      id={SEARCHBAR_DRAWER_ID}
-      aside={
-        <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
-          <div class="w-screen overflow-y-auto">
-            {loading === "lazy" ? (
-              <div class="h-full w-full flex items-center justify-center">
-                <span class="loading loading-spinner" />
-              </div>
-            ) : (
-              <Searchbar {...searchbar} />
-            )}
-          </div>
-        </Drawer.Aside>
-      }
-    />
+
     <Drawer
       id={SIDEMENU_DRAWER_ID}
       aside={
@@ -157,38 +142,33 @@ const Mobile = ({ logo, searchbar, navItems, modalInitProps, loading }: Props) =
     />
 
     <div
-      class="grid place-items-center w-screen px-4 gap-4"
+      class="grid place-items-center w-screen px-2 gap-3"
       style={{
-        height: NAVBAR_HEIGHT_MOBILE,
-        gridTemplateColumns: "min-content auto min-content min-content min-content",
+        height: HEADER_HEIGHT_MOBILE,
       }}
     >
-      <label for={SIDEMENU_DRAWER_ID} class="btn btn-square btn-sm btn-ghost" aria-label="open menu">
-        <Icon id="menu" />
-      </label>
+      <div className="flex w-full place-items-center">
+        <label for={SIDEMENU_DRAWER_ID} class="btn btn-square btn-sm btn-ghost" aria-label="open menu">
+          <Icon id="menu" />
+        </label>
 
-      {logo && (
-        <a
-          href="/"
-          class="flex-grow inline-flex items-center justify-center"
-          style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
-          aria-label="Store logo"
-        >
-          <Image src={logo.src} alt={logo.alt} width={logo.width || 100} height={logo.height || 13} />
-        </a>
-      )}
+        {logo && (
+          <a
+            href="/"
+            class="flex-grow inline-flex items-center justify-center"
+            style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
+            aria-label="Store logo"
+          >
+            <Image src={logo.src} alt={logo.alt} width={logo.width || 100} height={logo.height || 13} />
+          </a>
+        )}
 
-      <Bag />
-    </div>
-    <div class="flex px-4">
-      <label
-        for={SEARCHBAR_POPUP_ID}
-        class="input input-bordered bg-gray-100 border-none rounded flex flex-1 justify-between items-center gap-2 w-screen"
-        aria-label="search icon button"
-      >
-        <span class="text-[#646072] truncate">Buscar produtos</span>
-        <Icon id="search" />
-      </label>
+        <Bag />
+      </div>
+
+      <div class="flex  w-full">
+        <Searchbar {...searchbar} />
+      </div>
     </div>
   </>
 );

@@ -71,7 +71,7 @@ function Gallery({
   return (
     <Section.Container class="custom-container ">
       {banners.length === 2 ? (
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div class="grid grid-cols-2 gap-3">
           {banners.map((banner, index) => (
             <div key={index}>
               <Banner {...banner} />
@@ -84,7 +84,7 @@ function Gallery({
             <Banner {...banners[0]} />
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="grid grid-cols-2 gap-3">
             {banners.slice(1).map((banner, index) => (
               <div key={index}>
                 <Banner {...banner} />
