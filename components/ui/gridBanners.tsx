@@ -63,7 +63,7 @@ function BannerGrid(props: SectionProps<ReturnType<typeof loader>>) {
   }
 
   return (
-    <div class="custom-container grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div class="custom-container grid grid-cols-2 gap-5">
       {activeBanners.map((banner, index) => (
         <Picture preload key={index} class="col-span-1 row-span-1">
           <Source src={banner.image.mobile} width={840} height={320} media="(max-width: 767px)" />

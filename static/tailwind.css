@@ -4403,6 +4403,10 @@ details.collapse summary::-webkit-details-marker {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
 }
+.rounded-r {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
 .rounded-r-lg {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
@@ -4682,10 +4686,6 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -4926,6 +4926,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: rgb(97 107 107 / var(--tw-text-opacity));
 }
+.text-\[\#646072\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 96 114 / var(--tw-text-opacity));
+}
 .text-\[\#667781\] {
   --tw-text-opacity: 1;
   color: rgb(102 119 129 / var(--tw-text-opacity));
@@ -5032,6 +5036,10 @@ details.collapse summary::-webkit-details-marker {
 .shadow-inherit {
   --tw-shadow-color: inherit;
   --tw-shadow: var(--tw-shadow-colored);
+}
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 .outline {
   outline-style: solid;
@@ -5430,6 +5438,11 @@ details.collapse summary::-webkit-details-marker {
 .hover\:bg-base-200:hover {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-bg-opacity)));
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
