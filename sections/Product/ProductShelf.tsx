@@ -6,32 +6,36 @@ import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import { type LoadingFallbackProps } from "@deco/deco";
 export interface Props extends SectionHeaderProps {
-    products: Product[] | null;
+  products: Product[] | null;
 }
 export default function ProductShelf({ products, title, cta }: Props) {
-    if (!products || products.length === 0) {
-        return null;
-    }
-    //console.log(products);
-    const viewItemListEvent = useSendEvent({
-        on: "view",
-        event: {
-            name: "view_item_list",
-            params: {
-                item_list_name: title,
-                items: products.map((product, index) => mapProductToAnalyticsItem({
-                    index,
-                    product,
-                    ...useOffer(product.offers),
-                })),
-            },
-        },
-    });
-    return (<Section.Container class="custom-container" {...viewItemListEvent}>
-      <Section.Header title={title} cta={cta}/>
+  if (!products || products.length === 0) {
+    return null;
+  }
+  //console.log(products);
+  const viewItemListEvent = useSendEvent({
+    on: "view",
+    event: {
+      name: "view_item_list",
+      params: {
+        item_list_name: title,
+        items: products.map((product, index) =>
+          mapProductToAnalyticsItem({
+            index,
+            product,
+            ...useOffer(product.offers),
+          })
+        ),
+      },
+    },
+  });
+  return (
+    <Section.Container class="custom-container relative" {...viewItemListEvent}>
+      <Section.Header title={title} cta={cta} />
 
-      <ProductSlider products={products} itemListName={title}/>
-    </Section.Container>);
+      <ProductSlider products={products} itemListName={title} />
+    </Section.Container>
+  );
 }
 
 export const LoadingFallback = ({ title, cta }: LoadingFallbackProps<Props>) => (

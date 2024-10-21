@@ -38,7 +38,7 @@ function CategorySlider({ title, items }: Props) {
   const hasArrows = items.length > 12;
 
   return (
-    <Section.Container class="custom-container pr-0 md:p-2">
+    <Section.Container class="custom-container lg:!p-2 md:!py-0">
       <Section.Header title={title} />
 
       <div
@@ -60,13 +60,13 @@ function CategorySlider({ title, items }: Props) {
 
         {hasArrows && (
           <>
-            <div class=" z-10 self-center lg:-left-8 md:left-0  p-2 absolute inset-y-0  ">
+            <div class=" z-10 self-center xl:-left-8 lg:left-0  p-2 absolute inset-y-0  ">
               <Slider.PrevButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" class="rotate-180" />
               </Slider.PrevButton>
             </div>
 
-            <div class=" z-10 self-center lg:-right-8 sm:right-0   p-2 absolute inset-y-0 ">
+            <div class=" z-10 self-center xl:-right-8 lg:right-0   p-2 absolute inset-y-0 ">
               <Slider.NextButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" />
               </Slider.NextButton>

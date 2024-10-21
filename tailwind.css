@@ -31,18 +31,25 @@
     padding: 10px;
     /* text-align: center; */
   }
-  @media only screen and (max-width: 1800px) and (min-width: 1200px) {
+  @media only screen and (max-width: 1800px) and (min-width: 1360px) {
     .custom-container {
       max-width: 1300px;
       padding: 10px;
     }
   }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1360px) and (min-width: 1220px) {
     .custom-container {
+      max-width: 1200px;
       padding: 10px;
     }
-    .pr-0 {
+  }
+  @media only screen and (max-width: 768px) {
+    .custom-container {
+      padding: 0px;
+    }
+    .py-0 {
       padding-right: 0 !important;
+      padding-left: 0 !important;
     }
   }
   .has-submenu {

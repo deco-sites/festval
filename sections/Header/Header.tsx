@@ -142,7 +142,7 @@ const Mobile = ({ logo, searchbar, navItems, modalInitProps, loading }: Props) =
     />
 
     <div
-      class="grid w-full px-2 gap-3"
+      class="grid w-full p-2 gap-2"
       style={{
         height: HEADER_HEIGHT_MOBILE,
       }}

@@ -29,7 +29,7 @@ function Banner({ mobile, desktop, alt, href }: Banner) {
       <Picture>
         <img
           width={1700}
-          class="w-full h-full object-cover rounded-lg"
+          class="w-full h-full object-cover"
           src={desktop || mobile}
           alt={alt}
           decoding="async"

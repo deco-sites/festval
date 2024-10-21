@@ -3575,18 +3575,25 @@ details.collapse summary::-webkit-details-marker {
     padding: 10px;
     /* text-align: center; */
   }
-@media only screen and (max-width: 1800px) and (min-width: 1200px) {
+@media only screen and (max-width: 1800px) and (min-width: 1360px) {
     .custom-container {
       max-width: 1300px;
       padding: 10px;
     }
   }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1360px) and (min-width: 1220px) {
     .custom-container {
+      max-width: 1200px;
       padding: 10px;
     }
-    .pr-0 {
+  }
+@media only screen and (max-width: 768px) {
+    .custom-container {
+      padding: 0px;
+    }
+    .py-0 {
       padding-right: 0 !important;
+      padding-left: 0 !important;
     }
   }
 .has-submenu {
@@ -3655,9 +3662,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .bottom-6 {
   bottom: 1.5rem;
-}
-.bottom-\[15\%\] {
-  bottom: 15%;
 }
 .left-0 {
   left: 0px;
@@ -3847,9 +3851,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-6 {
   margin-top: 1.5rem;
-}
-.mt-7 {
-  margin-top: 1.75rem;
 }
 .mt-8 {
   margin-top: 2rem;
@@ -4354,9 +4355,6 @@ details.collapse summary::-webkit-details-marker {
 .rounded-2xl {
   border-radius: 1rem;
 }
-.rounded-\[10px\] {
-  border-radius: 10px;
-}
 .rounded-\[16px\] {
   border-radius: 16px;
 }
@@ -4719,9 +4717,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .pl-3 {
   padding-left: 0.75rem;
-}
-.pr-0 {
-  padding-right: 0px;
 }
 .pr-2 {
   padding-right: 0.5rem;
@@ -5292,11 +5287,6 @@ details.collapse summary::-webkit-details-marker {
   .sm\:carousel-end .carousel-item {
     scroll-snap-align: end;
   }
-  @media only screen and (max-width: 768px) {
-    .last\:sm\:pr-0:last-child {
-      padding-right: 0 !important;
-    }
-  }
 }
 
 @media (min-width: 768px) {
@@ -5320,6 +5310,12 @@ details.collapse summary::-webkit-details-marker {
     width: 2rem;
     border-radius: 9999px;
     padding: 0px;
+  }
+  @media only screen and (max-width: 768px) {
+    .md\:\!py-0 {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
   }
 }
 
@@ -5575,10 +5571,6 @@ details.collapse summary::-webkit-details-marker {
     left: 10rem;
   }
 
-  .sm\:right-0 {
-    right: 0px;
-  }
-
   .sm\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -5827,6 +5819,10 @@ details.collapse summary::-webkit-details-marker {
     margin-right: 2.5rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:w-\[200px\] {
     width: 200px;
   }
@@ -5859,6 +5855,11 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:p-2 {
     padding: 0.5rem;
+  }
+
+  .md\:\!py-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
 
   .md\:px-\[60px\] {
@@ -5907,17 +5908,21 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 1024px) {
 
-  .lg\:-left-8 {
-    left: -2rem;
+  .lg\:left-0 {
+    left: 0px;
   }
 
-  .lg\:-right-8 {
-    right: -2rem;
+  .lg\:right-0 {
+    right: 0px;
   }
 
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:mt-7 {
+    margin-top: 1.75rem;
   }
 
   .lg\:grid {
@@ -5992,6 +5997,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 4rem;
   }
 
+  .lg\:\!p-2 {
+    padding: 0.5rem !important;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -6037,13 +6046,21 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 1280px) {
 
+  .xl\:-left-8 {
+    left: -2rem;
+  }
+
+  .xl\:-right-8 {
+    right: -2rem;
+  }
+
   .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .xl\:w-\[260px\] {
-    width: 260px;
+  .xl\:w-\[320px\] {
+    width: 320px;
   }
 }
 

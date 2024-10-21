@@ -293,7 +293,7 @@
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
         "banners": [
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b22828e-a245-415b-9457-692994c93225/Grupo-3924.png",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
             "alt": "banner 1700",
             "href": "/"
@@ -525,26 +525,6 @@
           }
         ],
         "cta": "/"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
-        "label": "Sign up",
-        "placeholder": "Email address",
-        "empty": {
-          "title": "Get top deals, latest trends, and more.",
-          "description": "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here."
-        },
-        "success": {
-          "title": "Thank you for subscribing!",
-          "description": "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!"
-        },
-        "failed": {
-          "title": "Oops!. Something went wrong!",
-          "description": "Something went wrong. Please try again. If the problem persists, please contact us."
-        }
       }
     },
     {
