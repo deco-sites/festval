@@ -84,8 +84,8 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
         </div>
       )}
       <Picture preload={lcp} {...viewPromotionEvent}>
-        {/* <Source media="(max-width: 767px)" fetchPriority={lcp ? "high" : "auto"} src={mobile} width={412} height={660} /> */}
-        {/* <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1700} height={600} /> */}
+        <Source media="(max-width: 767px)" fetchPriority={lcp ? "high" : "auto"} src={mobile} width={1080} height={1500} />
+        <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1700} height={490} />
         <img class="object-contain w-full h-full " loading={lcp ? "eager" : "lazy"} src={desktop} alt={alt} />
       </Picture>
     </a>
@@ -96,7 +96,7 @@ function Carousel({ images = [], preload, interval }: Props) {
   const id = useId();
 
   return (
-    <div class="bg-[#f8f8f8] w-full overflow-hidden relative lg:mt-7 md:mt-0 py-2">
+    <div class="bg-[#f8f8f8] w-full overflow-hidden relative lg:mt-7 md:mt-0 py-4">
       <div class="relative custom-container mx-auto">
         <div id={id} class={clx("w-full")}>
           <div class="col-span-full row-span-full">
@@ -127,7 +127,7 @@ function Carousel({ images = [], preload, interval }: Props) {
             </Slider.NextButton>
           </div>
 
-          <ul class={clx("col-span-full absolute bottom-1 inset-x-0 z-10", "carousel justify-center gap-3")}>
+          <ul class={clx("col-span-full absolute lg:bottom-0 md:-bottom-1 inset-x-0 z-10", "carousel justify-center gap-3")}>
             {images.map((_, index) => (
               <li class="carousel-item">
                 <Slider.Dot

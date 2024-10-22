@@ -23,13 +23,30 @@ interface Props {
   banners?: Banner[];
 }
 
-function Banner({ mobile, desktop, alt, href }: Banner) {
+function Banner({ mobile, desktop, alt, href, index }: Banner & { index: number }) {
   return (
-    <a href={href} class="overflow-hidden">
+    <a href={href} className="overflow-hidden">
       <Picture>
+        {/* Mobile Source */}
+        {index === 0 ? (
+          // Primeiro banner com tamanho diferente no mobile
+          <>
+            <Source width={1080} height={465} media="(max-width: 767px)" src={mobile} />
+            <Source width={1700} height={400} media="(min-width: 768px)" src={desktop || mobile} />
+          </>
+        ) : (
+          // Demais banners no mobile
+          <>
+            <Source width={528} height={465} media="(max-width: 767px)" src={mobile} />
+            <Source width={840} height={320} media="(min-width: 768px)" src={desktop || mobile} />
+          </>
+        )}
+
+        {/* Fallback para o caso de <img> */}
         <img
-          width={1700}
-          class="w-full h-full object-cover"
+          width={index === 0 ? 1700 : 840}
+          height={index === 0 ? 400 : 320}
+          className="w-full h-full object-cover"
           src={desktop || mobile}
           alt={alt}
           decoding="async"
@@ -40,60 +57,37 @@ function Banner({ mobile, desktop, alt, href }: Banner) {
   );
 }
 
-function Gallery({
-  banners = [
-    {
-      mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/b531631b-8523-4feb-ac37-5112873abad2",
-      desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/b531631b-8523-4feb-ac37-5112873abad2",
-      alt: "Fashion",
-      href: "/",
-    },
-    {
-      alt: "Fashion",
-      href: "/",
-      mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1125d938-89ff-4aae-a354-63d4241394a6",
-      desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/1125d938-89ff-4aae-a354-63d4241394a6",
-    },
-    {
-      mobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/dd1e2acb-ff80-49f9-8f56-1deac3b7a42d",
-      desktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/dd1e2acb-ff80-49f9-8f56-1deac3b7a42d",
-      href: "/",
-      alt: "Fashion",
-    },
-  ],
-}: Props) {
+function Gallery({ banners = [] }: Props) {
   return (
-    <Section.Container class="custom-container md:p-2">
-      {banners.length === 2 ? (
-        <div class="grid grid-cols-2 gap-3">
-          {banners.map((banner, index) => (
-            <div key={index}>
-              <Banner {...banner} />
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div class="flex flex-col gap-3">
-          <div class="w-full">
-            <Banner {...banners[0]} />
-          </div>
-
-          <div class="grid grid-cols-2 gap-3">
-            {banners.slice(1).map((banner, index) => (
+    <div className="bg-[#f8f8f8] py-4">
+      <Section.Container className="custom-container md:p-2">
+        {banners.length === 2 ? (
+          <div className="grid grid-cols-2 gap-3">
+            {banners.map((banner, index) => (
               <div key={index}>
-                <Banner {...banner} />
+                <Banner {...banner} index={index} />
               </div>
             ))}
           </div>
-        </div>
-      )}
-    </Section.Container>
+        ) : (
+          <div className="flex flex-col gap-3">
+            {/* Banner grande no topo */}
+            <div className="w-full">
+              <Banner {...banners[0]} index={0} />
+            </div>
+
+            {/* Dois banners menores embaixo */}
+            <div className="grid grid-cols-2 gap-3">
+              {banners.slice(1).map((banner, index) => (
+                <div key={index}>
+                  <Banner {...banner} index={index + 1} />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </Section.Container>
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@ export interface Props {
 function Coupon({ coupon }: Props) {
   return (
     <div class="flex justify-between items-center px-4">
-      <span class="text-sm">Discount coupon</span>
+      <span class="text-sm">Cupom de desconto</span>
 
       <button
         type="button"
@@ -31,12 +31,7 @@ function Coupon({ coupon }: Props) {
           value={coupon ?? ""}
           placeholder={"Cupom"}
         />
-        <button
-          form={MINICART_FORM_ID}
-          class="btn join-item"
-          name="action"
-          value="set-coupon"
-        >
+        <button form={MINICART_FORM_ID} class="btn join-item" name="action" value="set-coupon">
           Ok
         </button>
       </div>

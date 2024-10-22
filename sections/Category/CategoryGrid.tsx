@@ -38,7 +38,7 @@ function CategorySlider({ title, items }: Props) {
   const hasArrows = items.length > 12;
 
   return (
-    <Section.Container class="custom-container lg:!p-2 md:!py-0">
+    <Section.Container class="custom-container my-3 lg:!p-2 md:!py-0">
       <Section.Header title={title} />
 
       <div

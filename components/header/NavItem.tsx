@@ -22,7 +22,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             marginTop: HEADER_HEIGHT_DESKTOP,
           }}
         >
-          <ul class="flex items-start justify-start gap-6 custom-container w-full">
+          <ul class="flex items-start justify-start gap-7 custom-container w-full">
             {children.map((node) => (
               <li class="p-6 pl-0">
                 <a class="hover:opacity-80" href={node.url}>

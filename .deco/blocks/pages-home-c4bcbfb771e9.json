@@ -160,13 +160,13 @@
       "images": [
         {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b43bb2c7-023b-4fb1-80dc-381f44c4a41e/Grupo-7.png",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b43bb2c7-023b-4fb1-80dc-381f44c4a41e/Grupo-7.png",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8dfa4a2b-a79f-4cec-8faf-4e021291e30d/mobilegg-(2).png",
           "alt": "/"
         },
         {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b43bb2c7-023b-4fb1-80dc-381f44c4a41e/Grupo-7.png",
           "alt": "/",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b43bb2c7-023b-4fb1-80dc-381f44c4a41e/Grupo-7.png"
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8dfa4a2b-a79f-4cec-8faf-4e021291e30d/mobilegg-(2).png"
         }
       ],
       "preload": true
@@ -175,7 +175,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-        "title": "Categorias",
         "items": [
           {
             "label": "Pet  shop",
@@ -242,8 +241,14 @@
             "href": "/",
             "label": "teste"
           }
-        ],
-        "cta": "/"
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx",
+        "color": "#F8F8F8"
       }
     },
     {
@@ -294,7 +299,7 @@
         "banners": [
           {
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b22828e-a245-415b-9457-692994c93225/Grupo-3924.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b22828e-a245-415b-9457-692994c93225/Grupo-3924.png",
             "alt": "banner 1700",
             "href": "/"
           },
@@ -440,6 +445,7 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "title": "Importados",
+        "cta": "/",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
@@ -448,8 +454,7 @@
             "count": 30,
             "hideUnavailableItems": false
           }
-        },
-        "cta": "/"
+        }
       }
     },
     {

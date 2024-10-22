@@ -18,21 +18,13 @@ function FreeShippingProgressBar({ target, total, currency, locale }: Props) {
     <div class="flex flex-col w-full gap-2">
       <div class="flex justify-center items-center gap-2 text-primary">
         <Icon id="local_shipping" size={24} />
-        {remaining > 0
-          ? (
-            <label for={id}>
-              Just {formatPrice(remaining, currency, locale)}{" "}
-              left to get free shipping!
-            </label>
-          )
-          : <label for={id}>Você ganhou frete grátis!</label>}
+        {remaining > 0 ? (
+          <label for={id}>Falta {formatPrice(remaining, currency, locale)} para ganhar frete grátis!</label>
+        ) : (
+          <label for={id}>Você ganhou frete grátis!</label>
+        )}
       </div>
-      <progress
-        id={id}
-        class="progress progress-primary w-full"
-        value={percent}
-        max={100}
-      />
+      <progress id={id} class="progress progress-primary w-full" value={percent} max={100} />
     </div>
   );
 }

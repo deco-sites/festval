@@ -1,4 +1,5 @@
 import { JSX } from "preact";
+import Icon from "./Icon.tsx";
 import { clx } from "../../sdk/clx.ts";
 
 export interface Props {
@@ -16,10 +17,11 @@ function Header({ title, cta }: Props) {
 
   return (
     <div class={clx("flex justify-between items-center gap-2", "px-5 sm:px-0")}>
-      <span class="text-2xl sm:text-3xl font-semibold">{title}</span>
+      <span class="text-xl sm:text-xl font-semibold">{title}</span>
       {cta && (
-        <a class="text-sm font-medium text-primary" href={cta}>
+        <a class="text-sm flex gap-2 items-center font-medium text-[#282828]" href={cta}>
           Veja mais
+          <Icon class="w-2 " id="chevron-right" />
         </a>
       )}
     </div>
