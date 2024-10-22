@@ -106,7 +106,7 @@ const sdk = () => {
         }
         window.DECO.events.dispatch({
           name: "add_to_cart",
-          params: { items: { item } },
+          params: { items: [item] },
         });
         input.value = encodeURIComponent(JSON.stringify(platformProps));
         button.click();

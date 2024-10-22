@@ -1,5 +1,5 @@
 import { AppContext } from "../../apps/site.ts";
-import Section from "../ui/Section.tsx";
+import { setCookie, getCookies } from "@std/http/cookie";
 import {
   HEADER_HEIGHT_MOBILE,
   MODAL_SESSION_INIT_ID,
@@ -9,6 +9,8 @@ import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { type SectionProps } from "@deco/deco";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import { useScript } from "@deco/deco/hooks";
+import { useId } from "../../sdk/useId.ts";
 
 export interface Props {
   /**
@@ -46,28 +48,30 @@ export interface ModalInitProps {
   modalInitProps: Props;
 }
 
-const saveCepToLocalStorage = (cep: string, expirationHours = 24) => {
+const saveCepToCookies = (
+  ctx: AppContext,
+  cep: string,
+  expirationHours = 24
+) => {
   const now = new Date();
   const expirationTime = now.getTime() + expirationHours * 60 * 60 * 1000;
-  const data = { cep, expirationTime };
-  localStorage.setItem("userCep", JSON.stringify(data));
+  const encodedCep = encodeURIComponent(cep);
+  setCookie(ctx.response.headers, {
+    value: encodedCep,
+    name: "vtex_last_session_cep",
+    path: "/",
+    expires: new Date(expirationTime),
+    secure: true,
+  });
 };
 
-const getCepFromLocalStorage = () => {
-  const storedData = localStorage.getItem("userCep");
-
-  if (storedData) {
-    const { cep, expirationTime } = JSON.parse(storedData);
-    const now = new Date().getTime();
-
-    if (now < expirationTime) {
-      return cep;
-    } else {
-      localStorage.removeItem("userCep");
-    }
-  }
-
-  return null;
+const saveSegmentToCookie = (ctx: AppContext, segment: string) => {
+  setCookie(ctx.response.headers, {
+    value: segment,
+    name: "vtex_last_segment",
+    path: "/",
+    secure: true,
+  });
 };
 
 export async function action(
@@ -81,20 +85,77 @@ export async function action(
 
   if (platform === "vtex") {
     // deno-lint-ignore no-explicit-any
-    await (ctx as any).invoke("site/actions/sessionInit/submit.ts", {
-      data: {
-        public: {
-          country: { value: "BR" },
-          postalCode: { value: cep },
+    const response = await (ctx as any).invoke(
+      "site/actions/sessionInit/submit.ts",
+      {
+        data: {
+          public: {
+            country: { value: "BRA" },
+            postalCode: { value: cep },
+          },
         },
-      },
+      }
+    );
+
+    setCookie(ctx.response.headers, {
+      value: response.segmentToken,
+      name: "vtex_segment",
+      path: "/",
+      secure: true,
     });
+
+    setCookie(ctx.response.headers, {
+      value: response.sessionToken,
+      name: "vtex_session",
+      path: "/",
+      secure: true,
+    });
+
+    saveSegmentToCookie(ctx, response.segmentToken);
+
+    const cookies = getCookies(req.headers);
+
+    console.log(cookies);
   }
 
-  saveCepToLocalStorage(cep);
+  saveCepToCookies(ctx, cep);
 
   return true;
 }
+
+const onLoad = (id: string) => {
+  function getCookie(name: string): string | null {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+
+    if (parts.length === 2) {
+      const lastPart = parts.pop();
+      if (lastPart) {
+        const splitPart = lastPart.split(";");
+        if (splitPart.length > 0) {
+          return splitPart.shift() || null;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  const cep = getCookie("vtex_last_session_cep");
+  const vtex_segment_cookie = getCookie("vtex_last_segment");
+
+  const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
+
+  const modal = document.getElementById(id);
+
+  const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
+
+  if (cep && regionId) {
+    modal?.classList.remove("modal-open");
+  } else {
+    modal?.classList.add("modal-open");
+  }
+};
 
 export function loader(props: ModalInitProps) {
   return { ...props };
@@ -103,15 +164,11 @@ export function loader(props: ModalInitProps) {
 function ModalSessionInit({
   modalInitProps,
 }: ModalInitProps & SectionProps<typeof loader, typeof action>) {
-  const savedCep =
-    typeof window !== "undefined" ? getCepFromLocalStorage() : null;
-
-  const modalOpenClass = !savedCep ? "modal-open" : "";
-
+  const id = useId();
   return (
-    <div className={`modal ${modalOpenClass}`} id={MODAL_SESSION_INIT_ID}>
+    <div className={`modal modal-open`} id={id}>
       <div
-        class="bg-base-100 absolute top-0 pt-5 pb-20 px-[30px] sm:px-[40px] modal-box rounded-lg flex flex-col gap-2.5"
+        class="bg-base-100 absolute top-0 pt-5 pb-5 px-[30px] sm:px-[40px] modal-box rounded-lg flex flex-col gap-2.5"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
       >
         {modalInitProps.welcomeMessage && (
@@ -165,7 +222,7 @@ function ModalSessionInit({
           href="https://buscacepinter.correios.com.br/app/endereco/index.php"
           target="_blank"
           rel="noopener noreferrer"
-          class="link block text-xs underline"
+          class="link block text-xs underline text-center"
           style={{
             color: "#6495ed",
           }}
@@ -173,6 +230,10 @@ function ModalSessionInit({
           {modalInitProps.findCepText}
         </a>
       </div>
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+      />
     </div>
   );
 }

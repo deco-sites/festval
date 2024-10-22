@@ -13,6 +13,8 @@ import { Ring } from "./ProductVariantSelector.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import Icon from "../ui/Icon.tsx";
+import QuantitySelector from "../ui/QuantitySelector.tsx";
+import { usePlatform } from "../../sdk/usePlatform.tsx";
 
 interface Props {
   product: Product;
@@ -26,14 +28,63 @@ interface Props {
   index?: number;
 
   class?: string;
+
+  seller?: string;
 }
 
 const WIDTH = 287;
 const HEIGHT = 287;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
+const onLoad = (id: string) => {
+  window.STOREFRONT.CART.subscribe((sdk) => {
+    const container = document.getElementById(id);
+    const input = container?.querySelector<HTMLInputElement>(
+      'input[type="number"]'
+    );
+    const itemID = container?.getAttribute("data-item-id")!;
+    const quantity = sdk.getQuantity(itemID) || 1;
+    if (!input) {
+      return;
+    }
+    input.value = quantity.toString();
+    // enable interactivity
+    container
+      ?.querySelectorAll<HTMLButtonElement>("button")
+      .forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("input")
+      .forEach((node) => (node.disabled = false));
+  });
+};
+
 const onClick = () => {
   console.log("onClick");
+};
+
+// const onChange = () => {
+//   const input = event!.currentTarget as HTMLInputElement;
+//   const productID = input!
+//     .closest("div[data-cart-item]")!
+//     .getAttribute("data-item-id")!;
+//   const quantity = Number(input.value);
+//   if (!input.validity.valid) {
+//     return;
+//   }
+//   window.STOREFRONT.CART.setQuantity(productID, quantity);
+// };
+
+const useAddToCart = ({ product, seller }: Props) => {
+  const platform = usePlatform();
+  const { additionalProperty = [], isVariantOf, productID } = product;
+  const productGroupID = isVariantOf?.productGroupID;
+  if (platform === "vtex") {
+    return {
+      allowedOutdatedData: ["paymentData"],
+      orderItems: [{ quantity: 1, seller: seller, id: productID }],
+    };
+  }
+  return null;
 };
 
 function ProductCard({
@@ -51,8 +102,7 @@ function ProductCard({
   const [front, back] = images ?? [];
 
   const { listPrice, price, seller = "1", availability } = useOffer(offers);
-  // const inStock = availability === "https://schema.org/InStock";
-  const inStock = true;
+  const inStock = availability === "https://schema.org/InStock";
   const possibilities = useVariantPossibilities(hasVariant, product);
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
@@ -63,6 +113,7 @@ function ProductCard({
       : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
+  const platformProps = useAddToCart({ product, seller });
 
   {
     /* Add click event to dataLayer */
@@ -203,6 +254,21 @@ function ProductCard({
       )}
 
       <div class="flex-grow" />
+      {/* Quantity Input */}
+      <div
+        id={id}
+        class="flex-grow flex"
+        data-item-id={product.productID}
+        data-cart-item={encodeURIComponent(
+          JSON.stringify({ item, platformProps })
+        )}
+      >
+        <QuantitySelector
+          min={1}
+          max={100}
+          // hx-on:change={useScript(onChange)}
+        />
+      </div>
 
       <div>
         {inStock ? (
@@ -210,6 +276,7 @@ function ProductCard({
             product={product}
             seller={seller}
             item={item}
+            inputId={id}
             class={clx(
               "btn btn-md",
               "btn-primary justify-center mt-2 text-white border-none !text-sm  rounded-md  !font-medium px-0 no-animation w-full",
@@ -231,6 +298,10 @@ function ProductCard({
           </a>
         )}
       </div>
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+      />
     </div>
   );
 }

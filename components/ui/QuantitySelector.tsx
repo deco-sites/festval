@@ -6,16 +6,23 @@ const onClick = (delta: number) => {
   // doidera!
   event!.stopPropagation();
   const button = event!.currentTarget as HTMLButtonElement;
-  const input = button.parentElement
-    ?.querySelector<HTMLInputElement>('input[type="number"]')!;
+  const input = button.parentElement?.querySelector<HTMLInputElement>(
+    'input[type="number"]'
+  )!;
   const min = Number(input.min) || -Infinity;
   const max = Number(input.max) || Infinity;
   input.value = `${Math.min(Math.max(input.valueAsNumber + delta, min), max)}`;
-  input.dispatchEvent(new Event("change", { bubbles: true }));
+  const productId = input!
+    .closest("div[data-cart-item]")!
+    .getAttribute("data-item-id")!;
+  window.STOREFRONT.CART.setQuantity(productId, Number(input.value));
+  //input.dispatchEvent(new Event("change", { bubbles: true }));
 };
-function QuantitySelector(
-  { id = useId(), disabled, ...props }: JSX.IntrinsicElements["input"],
-) {
+function QuantitySelector({
+  id = useId(),
+  disabled,
+  ...props
+}: JSX.IntrinsicElements["input"]) {
   return (
     <div class="join border rounded w-full">
       <button
@@ -31,14 +38,14 @@ function QuantitySelector(
         class={clx(
           "flex-grow join-item",
           "flex justify-center items-center",
-          "has-[:invalid]:tooltip has-[:invalid]:tooltip-error has-[:invalid]:tooltip-open has-[:invalid]:tooltip-bottom",
+          "has-[:invalid]:tooltip has-[:invalid]:tooltip-error has-[:invalid]:tooltip-open has-[:invalid]:tooltip-bottom"
         )}
       >
         <input
           id={id}
           class={clx(
             "input text-center flex-grow [appearance:textfield]",
-            "invalid:input-error",
+            "invalid:input-error"
           )}
           disabled={disabled}
           inputMode="numeric"

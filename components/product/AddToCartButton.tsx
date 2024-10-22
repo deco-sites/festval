@@ -10,45 +10,44 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
   seller: string;
   item: AnalyticsItem;
+  inputId: string;
 }
-const onClick = () => {
+const onClick = (inputId: string) => {
   event?.stopPropagation();
-  const button = event?.currentTarget as HTMLButtonElement | null;
-  const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
+  // const button = event?.currentTarget as HTMLButtonElement | null;
+  // const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
+
+  const input = document.getElementById(inputId);
+  const inputValue =
+    input!.querySelector<HTMLInputElement>("input[type=number]");
+  const container = input!.closest<HTMLDivElement>("div[data-cart-item]")!;
+
   const { item, platformProps } = JSON.parse(
     decodeURIComponent(container.getAttribute("data-cart-item")!)
   );
-  console.log("Add cart:", item, platformProps);
-  window.STOREFRONT.CART.addToCart(item, platformProps);
-};
-const onChange = () => {
-  const input = event!.currentTarget as HTMLInputElement;
-  const productID = input!
+  if (!inputValue) return;
+  item.quantity = Number(inputValue.value);
+  console.log("Add to cart", item, item.quantity);
+  const productId = inputValue!
     .closest("div[data-cart-item]")!
     .getAttribute("data-item-id")!;
-  const quantity = Number(input.value);
-  if (!input.validity.valid) {
-    return;
-  }
-  window.STOREFRONT.CART.setQuantity(productID, quantity);
+  window.STOREFRONT.CART.addToCart(item, platformProps);
+  window.STOREFRONT.CART.setQuantity(item.item_id, item.quantity);
 };
+
 // Copy cart form values into AddToCartButton
 const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const container = document.getElementById(id);
-    const checkbox = container?.querySelector<HTMLInputElement>(
-      'input[type="checkbox"]'
-    );
-    const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]'
-    );
-    const itemID = container?.getAttribute("data-item-id")!;
-    const quantity = sdk.getQuantity(itemID) || 0;
-    if (!input || !checkbox) {
-      return;
-    }
-    input.value = quantity.toString();
-    checkbox.checked = quantity > 0;
+    // const checkbox = container?.querySelector<HTMLInputElement>(
+    //   'input[type="checkbox"]'
+    // );
+    //const itemID = container?.getAttribute("data-item-id")!;
+    // const quantity = sdk.getQuantity(itemID) || 0;
+    // if (!checkbox) {
+    //   return;
+    // }
+    // checkbox.checked = quantity > 0;
     // enable interactivity
     container
       ?.querySelectorAll<HTMLButtonElement>("button")
@@ -106,7 +105,7 @@ const useAddToCart = ({ product, seller }: Props) => {
   return null;
 };
 function AddToCartButton(props: Props) {
-  const { product, item, class: _class } = props;
+  const { product, item, class: _class, inputId } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
   return (
@@ -118,27 +117,16 @@ function AddToCartButton(props: Props) {
         JSON.stringify({ item, platformProps })
       )}
     >
-      <input type="checkbox" class="hidden peer" />
+      {/* <input type="checkbox" class="hidden peer" /> */}
 
       <button
         disabled
-        class={clx("flex-grow peer-checked:hidden", _class?.toString())}
-        hx-on:click={useScript(onClick)}
+        class={clx("flex-grow", _class?.toString())}
+        hx-on:click={useScript(onClick, inputId)}
       >
         <Icon id="shopping_bag" />
         Adicionar ao carrinho
       </button>
-
-      {/* Quantity Input */}
-      <div class="flex-grow hidden peer-checked:flex">
-        <QuantitySelector
-          disabled
-          min={0}
-          max={100}
-          hx-on:change={useScript(onChange)}
-        />
-      </div>
-
       <script
         type="module"
         dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}

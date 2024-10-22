@@ -4700,11 +4700,11 @@ details.collapse summary::-webkit-details-marker {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
-.pb-20 {
-  padding-bottom: 5rem;
-}
 .pb-4 {
   padding-bottom: 1rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 .pb-\[15px\] {
   padding-bottom: 15px;
@@ -5551,14 +5551,6 @@ details.collapse summary::-webkit-details-marker {
 .group:disabled .group-disabled\:bg-\[\#0D1717\] {
   --tw-bg-opacity: 1;
   background-color: rgb(13 23 23 / var(--tw-bg-opacity));
-}
-
-.peer:checked ~ .peer-checked\:flex {
-  display: flex;
-}
-
-.peer:checked ~ .peer-checked\:hidden {
-  display: none;
 }
 
 @media (min-width: 640px) {
