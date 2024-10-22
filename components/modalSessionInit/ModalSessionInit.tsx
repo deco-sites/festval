@@ -157,6 +157,52 @@ const onLoad = (id: string) => {
   }
 };
 
+const onSubmit = (id: string) => {
+  setTimeout(() => {
+    function getCookie(name: string): string | null {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+
+      if (parts.length === 2) {
+        const lastPart = parts.pop();
+        if (lastPart) {
+          const splitPart = lastPart.split(";");
+          if (splitPart.length > 0) {
+            return splitPart.shift() || null;
+          }
+        }
+      }
+
+      return null;
+    }
+
+    const cep = getCookie("vtex_last_session_cep");
+    const vtex_segment_cookie = getCookie("vtex_last_segment");
+
+    const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
+
+    const modal = document.getElementById(id);
+
+    const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
+
+    const limeText = modal!.querySelector(".text-lime-600");
+    const redText = modal!.querySelector(".text-red-700");
+
+    console.log(limeText, redText);
+
+    if (cep && regionId) {
+      limeText?.classList.remove("hidden");
+      setTimeout(() => {
+        modal?.classList.remove("modal-open");
+        window.location.reload();
+      }, 1000);
+    } else {
+      redText?.classList.remove("hidden");
+      modal?.classList.add("modal-open");
+    }
+  }, 3000);
+};
+
 export function loader(props: ModalInitProps) {
   return { ...props };
 }
@@ -166,7 +212,7 @@ function ModalSessionInit({
 }: ModalInitProps & SectionProps<typeof loader, typeof action>) {
   const id = useId();
   return (
-    <div className={`modal modal-open`} id={id}>
+    <div className={`modal`} id={id}>
       <div
         class="bg-base-100 absolute top-0 pt-5 pb-5 px-[30px] sm:px-[40px] modal-box rounded-lg flex flex-col gap-2.5"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
@@ -190,7 +236,8 @@ function ModalSessionInit({
           hx-post={useComponent(import.meta.url)}
           hx-trigger="submit"
           hx-swap="none"
-          hx-on="htmx:afterRequest: document.querySelector('#modal-session-init').classList.remove('modal-open')"
+          //hx-on={`htmx:afterRequest: document.querySelector(${id}).classList.remove('modal-open')`, useScript(onSubmit)}
+          hx-on:submit={useScript(onSubmit, id)}
           class="flex flex-col gap-2.5 w-full"
         >
           <input
@@ -199,6 +246,14 @@ function ModalSessionInit({
             type="text"
             placeholder={modalInitProps.cepPlaceholder}
           />
+
+          <span class="text-lime-600 text-center hidden">
+            Você será redirecionado
+          </span>
+
+          <span class="text-red-700 text-center hidden">
+            Infelizmente o festval ainda não atende sua região
+          </span>
 
           <button
             class="flex justify-center items-center text-base rounded-[5px] w-full transition duration-300 ease-in-out cursor-pointer hover:opacity-80"
