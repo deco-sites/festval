@@ -27,6 +27,7 @@ function CartItem({ item, index, locale, currency }: Props) {
   const isGift = price < 0.01;
   // deno-lint-ignore no-explicit-any
   const name = (item as any).item_name;
+
   return (
     <fieldset
       // deno-lint-ignore no-explicit-any
@@ -57,7 +58,9 @@ function CartItem({ item, index, locale, currency }: Props) {
 
         {/* Price Block */}
         <div class="flex items-start gap-1 flex-col">
-          <span class="line-through text-sm">{formatPrice(listPrice, currency, locale)}</span>
+          {listPrice && price && listPrice > price && (
+            <span class="line-through text-sm">{formatPrice(listPrice, currency, locale)}</span>
+          )}
           <span class="text-lg font-medium text-[#282828]">{isGift ? "Grátis" : formatPrice(price, currency, locale)}</span>
         </div>
 
