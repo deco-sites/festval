@@ -6,19 +6,50 @@ import Image from "apps/website/components/Image.tsx";
 const onClick = (delta: number) => {
   // doidera!
   event!.stopPropagation();
+
   const button = event!.currentTarget as HTMLButtonElement;
   const input = button.parentElement?.querySelector<HTMLInputElement>(
     'input[type="number"]'
   )!;
+
   const min = Number(input.min) || -Infinity;
   const max = Number(input.max) || Infinity;
+
   input.value = `${Math.min(Math.max(input.valueAsNumber + delta, min), max)}`;
-  const productId = input!
-    .closest("div[data-cart-item]")!
-    .getAttribute("data-item-id")!;
-  window.STOREFRONT.CART.setQuantity(productId, Number(input.value));
+
+  const dataCartItem = input.closest("div[data-cart-item]");
+  const dataFieldset = input.closest("fieldset");
+
+  let productId = "";
+
+  if (dataCartItem?.getAttribute("data-item-id")) {
+    productId = dataCartItem.getAttribute("data-item-id")!;
+  } else if (dataFieldset?.getAttribute("data-item-id")) {
+    productId = dataFieldset.getAttribute("data-item-id")!;
+  }
+
+  if (productId) {
+    window.STOREFRONT.CART.setQuantity(productId, Number(input.value));
+  }
+
   input.dispatchEvent(new Event("change", { bubbles: true }));
 };
+
+// const onChange = () => {
+//   const input = event!.currentTarget as HTMLInputElement;
+//   console.log("Product Card:", input);
+//   // // doidera!
+//   // const input = event!.currentTarget as HTMLInputElement;
+//   // const productId = input!
+//   //   .closest("div[data-cart-item]")!
+//   //   .getAttribute("data-item-id")!;
+//   // const quantity = Number(input.value);
+//   // if (!input.validity.valid) {
+//   //   return;
+//   // }
+//   // window.STOREFRONT.CART.setQuantity(productId, quantity);
+// };
+
 function QuantitySelector({
   id = useId(),
   disabled,

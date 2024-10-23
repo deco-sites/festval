@@ -17,11 +17,37 @@ export interface Props {
 }
 const QUANTITY_MAX_VALUE = 100;
 const removeItemHandler = () => {
-  const itemID = (event?.currentTarget as HTMLButtonElement | null)?.closest("fieldset")?.getAttribute("data-item-id");
+  const itemID = (event?.currentTarget as HTMLButtonElement | null)
+    ?.closest("fieldset")
+    ?.getAttribute("data-item-id");
+
   if (typeof itemID === "string") {
+    // Define a quantidade como 0 no carrinho
     window.STOREFRONT.CART.setQuantity(itemID, 0);
+
+    // Seleciona todos os botões que têm o atributo data-attribute="add-to-cart"
+    const buttonsAddToCart = document.querySelectorAll<HTMLButtonElement>(
+      'button[data-attribute="add-to-cart"]'
+    );
+
+    // Filtra os botões que possuem o mesmo data-item-id
+    const matchingButtons = Array.from(buttonsAddToCart).filter(
+      (button) => button.getAttribute("data-item-id") === itemID
+    );
+
+    // Agora você pode desabilitar os botões ou aplicar outro comportamento
+    matchingButtons.forEach((button) => {
+      button.style.backgroundColor = "#5D7F3A";
+      button.style.color = "#fff";
+      button.style.border = "1px solid  #5D7F3A";
+      button.innerText = "Adicionar";
+
+      button.disabled = true;
+      console.log("Button disabled:", button);
+    });
   }
 };
+
 function CartItem({ item, index, locale, currency }: Props) {
   const { image, listPrice, price = Infinity, quantity } = item;
   const isGift = price < 0.01;
@@ -49,7 +75,10 @@ function CartItem({ item, index, locale, currency }: Props) {
         <div class="flex justify-between items-center">
           <legend class="font-semibold">{name}</legend>
           <button
-            class={clx(isGift && "hidden", "btn btn-ghost hover:bg-transparent hover:opacity-80 btn-square no-animation")}
+            class={clx(
+              isGift && "hidden",
+              "btn btn-ghost hover:bg-transparent hover:opacity-80 btn-square no-animation"
+            )}
             hx-on:click={useScript(removeItemHandler)}
           >
             <Icon id="trash" size={24} />
@@ -59,14 +88,23 @@ function CartItem({ item, index, locale, currency }: Props) {
         {/* Price Block */}
         <div class="flex items-start gap-1 flex-col">
           {listPrice && price && listPrice > price && (
-            <span class="line-through text-sm">{formatPrice(listPrice, currency, locale)}</span>
+            <span class="line-through text-sm">
+              {formatPrice(listPrice, currency, locale)}
+            </span>
           )}
-          <span class="text-lg font-medium text-[#282828]">{isGift ? "Grátis" : formatPrice(price, currency, locale)}</span>
+          <span class="text-lg font-medium text-[#282828]">
+            {isGift ? "Grátis" : formatPrice(price, currency, locale)}
+          </span>
         </div>
 
         {/* Quantity Selector */}
         <div class={clx(isGift && "hidden")}>
-          <QuantitySelector min={0} max={QUANTITY_MAX_VALUE} value={quantity} name={`item::${index}`} />
+          <QuantitySelector
+            min={0}
+            max={QUANTITY_MAX_VALUE}
+            value={quantity}
+            name={`item::${index}`}
+          />
         </div>
       </div>
     </fieldset>

@@ -62,14 +62,11 @@ const onLoad = (id: string) => {
       const item = cart.items.find((i) => (i as any).item_id === itemID);
 
       if (item) {
-        console.log(container);
-        console.log("Item", item);
         const buttonAddToCart = container!.querySelector<HTMLButtonElement>(
           'button[data-attribute="add-to-cart"]'
         );
 
         if (buttonAddToCart) {
-          console.log(buttonAddToCart);
           buttonAddToCart.style.backgroundColor = "#fff";
           buttonAddToCart.style.color = "#3E3D41";
           buttonAddToCart.style.border = "1px solid  #989898";
@@ -88,21 +85,21 @@ const onLoad = (id: string) => {
 
 // const onChange = () => {
 //   const input = event!.currentTarget as HTMLInputElement;
-//   const productID = input!
-//     .closest("div[data-cart-item]")!
-//     .getAttribute("data-item-id")!;
-//   const quantity = Number(input.value);
-//   if (!input.validity.valid) {
-//     return;
-//   }
-//   window.STOREFRONT.CART.setQuantity(productID, quantity);
+//   console.log("Product Card:", input);
+//   // const productID = input!
+//   //   .closest("div[data-cart-item]")!
+//   //   .getAttribute("data-item-id")!;
+//   // const quantity = Number(input.value);
+//   // if (!input.validity.valid) {
+//   //   return;
+//   // }
+//   // window.STOREFRONT.CART.setQuantity(productID, quantity);
 // };
 
 const useAddToCart = ({ product, seller }: Props) => {
   const platform = usePlatform();
   // deno-lint-ignore no-unused-vars
   const { additionalProperty = [], isVariantOf, productID } = product;
-  // const productGroupID = isVariantOf?.productGroupID;
   if (platform === "vtex") {
     return {
       allowedOutdatedData: ["paymentData"],

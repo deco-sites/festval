@@ -14,8 +14,6 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
 const onClick = (inputId: string) => {
   event?.stopPropagation();
 
-  // const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
-
   const input = document.getElementById(inputId);
   const inputValue =
     input!.querySelector<HTMLInputElement>("input[type=number]");
@@ -127,6 +125,7 @@ function AddToCartButton(props: Props) {
 
       <button
         disabled
+        data-item-id={product.productID}
         data-attribute="add-to-cart"
         class={clx("flex-grow", _class?.toString())}
         hx-on:click={useScript(onClick, inputId)}
