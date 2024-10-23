@@ -385,7 +385,264 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "Footer"
+        "__resolveType": "site/sections/Footer/Footer.tsx",
+        "links": [
+          {
+            "title": "Minha conta",
+            "children": [
+              {
+                "title": "Meus pedidos",
+                "href": "#"
+              },
+              {
+                "title": "Lista de compras",
+                "href": "#"
+              },
+              {
+                "title": "Meus dados",
+                "href": "#"
+              }
+            ],
+            "href": "#"
+          },
+          {
+            "title": "Meu Festval",
+            "href": "#",
+            "children": [
+              {
+                "title": "Sobre nós",
+                "href": "#"
+              },
+              {
+                "title": "Nossas lojas",
+                "href": "#"
+              },
+              {
+                "title": "Política de privacidade",
+                "href": "#"
+              },
+              {
+                "title": "Sobre os cookies",
+                "href": "#"
+              },
+              {
+                "title": "DPO",
+                "href": "#"
+              }
+            ]
+          },
+          {
+            "title": "Mais informações",
+            "href": "#",
+            "children": [
+              {
+                "title": "Entrega e Retirada",
+                "href": "#"
+              },
+              {
+                "title": "Trocas de devoluções",
+                "href": "#"
+              }
+            ]
+          }
+        ],
+        "social": {
+          "0": {
+            "alt": "facebook",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/66137259-6bdb-4322-bed1-a2593560934c"
+          },
+          "1": {
+            "alt": "Instagram",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e71ae7f3-0f51-4185-af0a-fca08ebe4451"
+          },
+          "2": {
+            "alt": "Pinterest",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4becba39-fc08-4df2-bb5d-5e843f375deb"
+          },
+          "3": {
+            "alt": "X",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
+          },
+          "title": "Conecte-se",
+          "socialItens": [
+            {
+              "alt": "Instagram",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/70248092-5c22-4eca-9048-1b20282fdc97/Grupo-243.svg"
+            },
+            {
+              "alt": "Facebook",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8f558b5f-43d6-4fae-8820-b306e60dcfd7/Grupo-244.svg"
+            }
+          ]
+        },
+        "paymentMethods": {
+          "0": {
+            "alt": "Paypal",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/7d858621-469e-4528-91b5-8c79fc413162"
+          },
+          "1": {
+            "alt": "Mastercard",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88ab870c-4256-44b4-8da3-3cefe0436e87"
+          },
+          "2": {
+            "alt": "Maestro",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb"
+          },
+          "3": {
+            "alt": "Google Pay",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/ccddc66e-baa8-4b44-a52c-ea48d8e111b5"
+          },
+          "4": {
+            "alt": "Elo",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb"
+          },
+          "5": {
+            "alt": "Diners",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/20bb8e66-5495-4f92-a6d0-4967a66f3a44"
+          },
+          "6": {
+            "alt": "Apple Pay",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d4227ed7-333d-49b8-b3e2-35719f606640"
+          },
+          "7": {
+            "alt": "Amex",
+            "href": "#",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/023472cf-782d-4a22-82d9-ecdf18466d96"
+          },
+          "8": {
+            "alt": "Visa",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/2d213fd6-2754-4e92-a6f1-03825f71c7af"
+          },
+          "title": "Pagamento",
+          "socialItens": [
+            {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/62e53c7c-92ce-45ba-ab96-8c2790d9e0b5/Grupo-1839.svg",
+              "alt": "mastercard"
+            }
+          ]
+        },
+        "policies": {
+          "0": {
+            "title": "Privacy Policy",
+            "href": "#"
+          },
+          "1": {
+            "title": "Terms and Conditions",
+            "href": "#"
+          },
+          "2": {
+            "title": "Cookies Policy",
+            "href": "#"
+          },
+          "text": "Os preços e condições exibidas nessa loja online são válidos exclusivamente para compras pela internet e válidos para o dia de hoje, sujeito a disponibilidade de estoque e alteração do preço sem aviso prévio. Imagens dos produtos são meramente ilustrativas. Promoções e ofertas estão limitadas a 12 unidades por CPF. Promoções exclusivas do e-commerce não são válidas para compras em lojas físicas.",
+          "title": "POLÍTICA"
+        },
+        "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
+        "security": {
+          "title": "Segurança",
+          "socialItens": [
+            {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/403da7f5-7d85-4c39-bce3-533476adb304/letsencrypt.svg",
+              "alt": "encrypt"
+            },
+            {
+              "alt": "vtex",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/10036e03-2f29-418e-b7db-545e736e61ef/Imagem-6.svg"
+            }
+          ]
+        },
+        "copyright": {
+          "copy": "© 2020 - Razão Social: Cia Beal de Alimentos - Supermercados Festval - Todos os direitos reservados",
+          "developer": {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d6dfa3c9-adc9-4224-bcd4-19ff6a553d77/Camada-1.svg"
+          }
+        },
+        "underEighteen": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/acef9ac8-04b2-41a2-a349-ec978971048e/Bebidas-alcoolicas.svg",
+        "infos": [
+          {
+            "children": [
+              {
+                "subItems": [
+                  {
+                    "text": "De segunda à sexta das 08h às 18h"
+                  }
+                ],
+                "title": "Atendimento ao cliente: Lojas físicas"
+              },
+              {
+                "subItems": [
+                  {
+                    "text": "(41) 3148-6507",
+                    "href": "#"
+                  },
+                  {
+                    "href": "#",
+                    "text": "sac@superfestval.com.br"
+                  }
+                ],
+                "title": "SAC Curitiba"
+              },
+              {
+                "subItems": [
+                  {
+                    "text": "(45) 3225-0017",
+                    "href": "#"
+                  }
+                ],
+                "title": "SAC Cascavel"
+              }
+            ],
+            "title": "Fale com o Festval"
+          },
+          {
+            "children": [
+              {
+                "subItems": [],
+                "title": "Atendimento ao cliente: Festval.com"
+              },
+              {
+                "subItems": [
+                  {
+                    "text": "(41) 99846-0016",
+                    "href": "#"
+                  }
+                ],
+                "title": "De segunda à sexta das 07h às 17h"
+              },
+              {
+                "subItems": [
+                  {
+                    "href": "#",
+                    "text": "(45) 99846-0023"
+                  }
+                ],
+                "title": "Atendimento após as 17h"
+              },
+              {
+                "subItems": [
+                  {
+                    "text": "Segunda à Sábado das 08h às 22:00"
+                  },
+                  {
+                    "text": "Domingo das 08h às 20h"
+                  }
+                ],
+                "title": "RETIRADA DE MERCADORIAS"
+              }
+            ],
+            "title": "Fale com o Festval"
+          }
+        ],
+        "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b72d9145-8890-47f3-b213-158ba616ccb4/Grupo-4083.svg"
       }
     }
   ],

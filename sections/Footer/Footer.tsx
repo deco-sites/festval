@@ -70,6 +70,7 @@ interface Props {
   policies?: Police;
   copyright?: Copyright;
   underEighteen?: ImageWidget;
+  underEighteenMobile?: ImageWidget;
   trademark?: string;
 }
 
@@ -110,6 +111,7 @@ function Footer({
   paymentMethods,
   copyright,
   underEighteen,
+  underEighteenMobile,
 }: Props) {
   const device = useDevice();
 
@@ -428,14 +430,14 @@ function Footer({
                 </div>
               )}
 
-              {underEighteen && (
+              {underEighteenMobile && (
                 <div class="flex flex-col items-center mb-[34px]">
                   <Image
-                    src={underEighteen}
+                    src={underEighteenMobile}
                     alt="18 Anos de Segurança"
                     loading="lazy"
-                    width={316}
-                    height={58}
+                    width={323}
+                    height={22}
                     class="mt-4"
                   />
                 </div>
