@@ -64,26 +64,21 @@ function ProductInfo({ page }: Props) {
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
-      {/* Price tag */}
-      <span
-        class={clx(
-          "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
-          percent < 1 && "opacity-0",
-          "w-fit"
-        )}
-      >
-        {percent} % off
-      </span>
-
       {/* Product Name */}
-      <span class={clx("text-3xl font-semibold", "pt-4")}>{title}</span>
+      <span class={clx("text-xl font-bold text-[#373737]", "pt-4")}>{title}</span>
 
       {/* Prices */}
       <div class="flex flex-col items-start gap-1 pt-2">
-        {listPrice && price && listPrice > price && (
-          <span class="line-through text-sm font-medium text-gray-400">{formatPrice(listPrice, offers?.priceCurrency)}</span>
-        )}
-        <span class="text-3xl font-semibold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
+        <div className="flex flex-row gap-3 items-center">
+          {listPrice && price && listPrice > price && (
+            <span class="line-through text-sm font-medium text-gray-400">
+              {formatPrice(listPrice, offers?.priceCurrency)}
+            </span>
+          )}
+          <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34]  text-center rounded px-3 py-1">-{percent}% OFF</span>
+        </div>
+
+        <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
       </div>
 
       {/* Sku Selector */}

@@ -3677,9 +3677,6 @@ details.collapse summary::-webkit-details-marker {
 .top-1\/2 {
   top: 50%;
 }
-.top-2 {
-  top: 0.5rem;
-}
 .top-4 {
   top: 1rem;
 }
@@ -3900,9 +3897,6 @@ details.collapse summary::-webkit-details-marker {
 .h-12 {
   height: 3rem;
 }
-.h-16 {
-  height: 4rem;
-}
 .h-2 {
   height: 0.5rem;
 }
@@ -4005,9 +3999,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-12 {
   width: 3rem;
-}
-.w-16 {
-  width: 4rem;
 }
 .w-4 {
   width: 1rem;
@@ -4620,10 +4611,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-nc,oklch(var(--nc)/var(--tw-bg-opacity)));
 }
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
-}
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-s,oklch(var(--s)/var(--tw-bg-opacity)));
@@ -4646,9 +4633,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-opacity-15 {
-  --tw-bg-opacity: 0.15;
 }
 .bg-cover {
   background-size: cover;
@@ -4712,6 +4696,10 @@ details.collapse summary::-webkit-details-marker {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -5048,6 +5036,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: rgb(40 40 40 / var(--tw-text-opacity));
 }
+.text-\[\#373737\] {
+  --tw-text-opacity: 1;
+  color: rgb(55 55 55 / var(--tw-text-opacity));
+}
 .text-\[\#5F5F5F\] {
   --tw-text-opacity: 1;
   color: rgb(95 95 95 / var(--tw-text-opacity));
@@ -5063,6 +5055,10 @@ details.collapse summary::-webkit-details-marker {
 .text-\[\#667781\] {
   --tw-text-opacity: 1;
   color: rgb(102 119 129 / var(--tw-text-opacity));
+}
+.text-\[\#F8F8F8\] {
+  --tw-text-opacity: 1;
+  color: rgb(248 248 248 / var(--tw-text-opacity));
 }
 .text-\[\#\] {
   color: #;
@@ -5466,12 +5462,6 @@ details.collapse summary::-webkit-details-marker {
     }
   }
 
-  .sm\:carousel-vertical {
-    flex-direction: column;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-
   .sm\:carousel-end .carousel-item {
     scroll-snap-align: end;
   }
@@ -5797,6 +5787,10 @@ details.collapse summary::-webkit-details-marker {
     width: 552px;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:max-w-\[33\%\] {
     max-width: 33%;
   }
@@ -5891,10 +5885,6 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:gap-\[12\.8px\] {
     gap: 12.8px;
-  }
-
-  .sm\:overflow-y-auto {
-    overflow-y: auto;
   }
 
   .sm\:p-0 {
@@ -6013,6 +6003,10 @@ details.collapse summary::-webkit-details-marker {
     bottom: -0.25rem;
   }
 
+  .md\:-bottom-2 {
+    bottom: -0.5rem;
+  }
+
   .md\:left-0 {
     left: 0px;
   }
@@ -6028,6 +6022,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:w-4\/5 {
+    width: 80%;
   }
 
   .md\:w-\[200px\] {
