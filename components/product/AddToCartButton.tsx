@@ -2,9 +2,8 @@ import { AnalyticsItem, Product } from "apps/commerce/types.ts";
 import { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
-import Icon from "../ui/Icon.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import QuantitySelector from "../ui/QuantitySelector.tsx";
 import { useScript } from "@deco/deco/hooks";
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
@@ -27,12 +26,8 @@ const onClick = (inputId: string) => {
   );
   if (!inputValue) return;
   item.quantity = Number(inputValue.value);
-  console.log("Add to cart", item, item.quantity);
-  const productId = inputValue!
-    .closest("div[data-cart-item]")!
-    .getAttribute("data-item-id")!;
-  window.STOREFRONT.CART.addToCart(item, platformProps);
-  window.STOREFRONT.CART.setQuantity(item.item_id, item.quantity);
+  console.log("Add to cart", item, platformProps, item.quantity);
+  window.STOREFRONT.CART.addToCart(item, platformProps, item.quantity);
 };
 
 // Copy cart form values into AddToCartButton
@@ -124,8 +119,14 @@ function AddToCartButton(props: Props) {
         class={clx("flex-grow", _class?.toString())}
         hx-on:click={useScript(onClick, inputId)}
       >
-        <Icon id="shopping_bag" />
-        Adicionar ao carrinho
+        <Image
+          src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d4f85472-4e59-4bc7-a533-792824538320/Repeticao-de-grade-2.svg"
+          alt="carrinho"
+          width={13}
+          height={14}
+          class="mt-[-3px]"
+        />
+        Adicionar
       </button>
       <script
         type="module"

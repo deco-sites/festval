@@ -11,7 +11,7 @@ import WishlistButton from "../wishlist/WishlistButton.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import { Ring } from "./ProductVariantSelector.tsx";
 import { useId } from "../../sdk/useId.ts";
-import { useScript } from "@deco/deco/hooks";
+import { useDevice, useScript } from "@deco/deco/hooks";
 import Icon from "../ui/Icon.tsx";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
@@ -58,9 +58,9 @@ const onLoad = (id: string) => {
   });
 };
 
-const onClick = () => {
-  console.log("onClick");
-};
+// const onClick = () => {
+//   console.log("onClick");
+// };
 
 // const onChange = () => {
 //   const input = event!.currentTarget as HTMLInputElement;
@@ -87,6 +87,78 @@ const useAddToCart = ({ product, seller }: Props) => {
   return null;
 };
 
+function expandPromoText(text: string): string | null {
+  const promoMap: { [key: string]: string } = {
+    L12P8: "Leve 12 Pague 8",
+    L12P10: "Leve 12 Pague 10",
+    L10P8: "Leve 10 Pague 8",
+    L10P6: "Leve 10 Pague 6",
+    L10P5: "Leve 10 Pague 5",
+    L8P6: "Leve 8 Pague 6",
+    L6P5: "Leve 6 Pague 5",
+    L6P4: "Leve 6 Pague 4",
+    L5P4: "Leve 5 Pague 4",
+    L4P3: "Leve 4 Pague 3",
+    L4P2: "Leve 4 Pague 2",
+    L3P2: "Leve 3 Pague 2",
+    L2P1: "Leve 2 Pague 1",
+    // Promoções de 50% off
+    "50off na 3": "50% Off na 3ª unidade",
+    "50off na 3°": "50% Off na 3ª unidade",
+    "50off Na 3": "50% Off na 3ª unidade",
+    "50off Na 3°": "50% Off na 3ª unidade",
+    "50%Off na 2": "50% Off na 2ª unidade",
+    "50%Off na 2°": "50% Off na 2ª unidade",
+    "50%Off Na 2°": "50% Off na 2ª unidade",
+    "50%Off Na 2": "50% Off na 2ª unidade",
+
+    // Promoções de 40% off
+    "40off na 2": "40% Off na 2ª unidade",
+    "40off na 2°": "40% Off na 2ª unidade",
+    "40off Na 2": "40% Off na 2ª unidade",
+    "40off Na 2°": "40% Off na 2ª unidade",
+
+    // Promoções de 30% off
+    "30off na 2": "30% Off na 2ª unidade",
+    "30off na 2°": "30% Off na 2ª unidade",
+    "30off Na 2": "30% Off na 2ª unidade",
+    "30off Na 2°": "30% Off na 2ª unidade",
+
+    // Promoções de 25% off
+    "25off na 3": "25% Off na 3ª unidade",
+    "25off na 3°": "25% Off na 3ª unidade",
+    "25off Na 3": "25% Off na 3ª unidade",
+    "25off Na 3°": "25% Off na 3ª unidade",
+
+    // Promoções de 20% off
+    "20off na 2": "20% Off na 2ª unidade",
+    "20off na 2°": "20% Off na 2ª unidade",
+    "20off Na 2": "20% Off na 2ª unidade",
+    "20off Na 2°": "20% Off na 2ª unidade",
+
+    // Promoções de 15% off
+    "15off na 2": "15% Off na 2ª unidade",
+    "15off na 2°": "15% Off na 2ª unidade",
+    "15off Na 2": "15% Off na 2ª unidade",
+    "15off Na 2°": "15% Off na 2ª unidade",
+
+    // Promoções de 10% off
+    "10off na 2": "10% Off na 2ª unidade",
+    "10off na 2°": "10% Off na 2ª unidade",
+    "10off Na 2": "10% Off na 2ª unidade",
+    "10off Na 2°": "10% Off na 2ª unidade",
+  };
+
+  // Procurar cada padrão no texto e substituí-lo pela frase correspondente
+  for (const [promoCode, promoText] of Object.entries(promoMap)) {
+    if (text.includes(promoCode)) {
+      return (text = promoText);
+    }
+  }
+
+  return null;
+}
+
 function ProductCard({
   product,
   preload,
@@ -95,6 +167,7 @@ function ProductCard({
   class: _class,
 }: Props) {
   const id = useId();
+  const device = useDevice();
 
   const { url, image: images, offers, isVariantOf } = product;
   const hasVariant = isVariantOf?.hasVariant ?? [];
@@ -129,12 +202,39 @@ function ProductCard({
     },
   });
 
+  if (!inStock) {
+    return null;
+  }
+
   //Added it to check the variant name in the SKU Selector later, so it doesn't render the SKU to "shoes size" in the Product Card
   const firstVariantName = firstSkuVariations?.[0]?.toLowerCase();
   const shoeSizeVariant = "shoe size";
 
+  if (product.productID == "1429" || product.productID == "1434") {
+    console.log("Product", product.offers?.offers[0].teasers);
+    //console.log("Item", item);
+  }
+
+  const textTag: string[] = [];
+
+  if (product.offers?.offers[0].teasers) {
+    product.offers?.offers[0].teasers.forEach((promo) => {
+      const expandedPromo = expandPromoText(promo.name);
+
+      if (expandedPromo !== null) {
+        textTag.push(expandedPromo);
+      }
+    });
+  }
+
   return (
-    <div {...event} class={clx("card card-compact group text-sm", _class)}>
+    <div
+      {...event}
+      class={clx(
+        "card gap-[19px] card-compact rounded-none group text-sm",
+        _class
+      )}
+    >
       <figure class={clx("relative")} style={{ aspectRatio: ASPECT_RATIO }}>
         {/* Product Images */}
         <a
@@ -183,25 +283,29 @@ function ProductCard({
 
         {/* Wishlist button */}
         <div class="absolute top-0 left-0 w-full flex items-center justify-between">
-          {/* Notify Me */}
-          <span
-            class={clx(
-              "text-sm/4 font-normal text-black bg-error bg-opacity-15 text-center rounded-badge px-2 py-1",
-              inStock && "opacity-0"
-            )}
-          >
-            Avise-me
-          </span>
-
           {/* Discounts */}
           <span
             class={clx(
-              "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
+              "text-[10px] sm:text-xs font-normal text-white bg-[#E60201] text-center rounded-[4px] p-[5px]",
               (percent < 1 || !inStock) && "opacity-0"
             )}
           >
-            {percent} % off
+            {percent}%
           </span>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full flex items-center justify-between">
+          {/* Discounts */}
+          {textTag &&
+            textTag.length > 0 &&
+            textTag.map((text, index) => (
+              <span
+                key={index}
+                class="text-[10px] sm:text-xs font-normal text-white bg-[#966D34] text-center rounded-[4px] p-[4px] sm:py-[5px] sm:px-[12px]"
+              >
+                {text}
+              </span>
+            ))}
         </div>
 
         <div class="absolute top-0 right-0">
@@ -211,25 +315,16 @@ function ProductCard({
 
       <div>
         <a href={relativeUrl} class="pt-5">
-          <span class="font-medium flex text-left">{title}</span>
-
-          <div class="flex flex-col items-start  pt-2">
-            {listPrice && (
-              <span class="line-through text-xs font-normal text-gray-400">
-                {formatPrice(listPrice, offers?.priceCurrency)}
-              </span>
-            )}
-            <span class="font-medium text-lg text-base-700">
-              {formatPrice(price, offers?.priceCurrency)}
-            </span>
-          </div>
+          <span class="text-xs sm:text-sm font-normal flex text-left">
+            {title}
+          </span>
         </a>
 
-        <div>
+        {/* <div>
           <button class="btn" hx-on:click={useScript(onClick)}>
             Pré-visualizar
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* SKU Selector */}
@@ -253,51 +348,42 @@ function ProductCard({
         </ul>
       )}
 
-      <div class="flex-grow" />
       {/* Quantity Input */}
       <div
         id={id}
-        class="flex-grow flex"
+        class="flex-grow flex flex-col justify-end gap-[15px]"
         data-item-id={product.productID}
         data-cart-item={encodeURIComponent(
           JSON.stringify({ item, platformProps })
         )}
       >
-        <QuantitySelector
-          min={1}
-          max={100}
-          // hx-on:change={useScript(onChange)}
-        />
-      </div>
+        <div class="flex flex-col items-start  pt-2">
+          {listPrice && price && listPrice > price && (
+            <span class="line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
+              {formatPrice(listPrice, offers?.priceCurrency)}
+            </span>
+          )}
+          <span class="font-bold text-base sm:text-lg text-[#1A1A1A]">
+            {formatPrice(price, offers?.priceCurrency)}
+          </span>
+        </div>
 
-      <div>
-        {inStock ? (
+        {device != "mobile" && <QuantitySelector min={1} max={100} />}
+
+        <div>
           <AddToCartButton
             product={product}
             seller={seller}
             item={item}
             inputId={id}
             class={clx(
-              "btn btn-md",
-              "btn-primary justify-center mt-2 text-white border-none !text-sm  rounded-md  !font-medium px-0 no-animation w-full",
+              "bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full",
               "hover:opacity-80 ease-in-out duration-300"
             )}
           />
-        ) : (
-          <a
-            href={relativeUrl}
-            class={clx(
-              "btn btn-md",
-              "btn-outline justify-center mt-2 text-slate-200 border-none bg-gray-500 !text-sm  rounded-md !font-medium px-0 no-animation w-full",
-
-              "disabled:!bg-gray-500 disabled:!opacity-75",
-              " hover:!bg-gray-500 hover:!text-slate-200 disabled:!text-error"
-            )}
-          >
-            Esgotado
-          </a>
-        )}
+        </div>
       </div>
+
       <script
         type="module"
         dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}

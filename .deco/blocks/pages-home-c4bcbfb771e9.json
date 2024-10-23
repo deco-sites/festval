@@ -449,10 +449,10 @@
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "sort": "price:desc",
-            "collection": "1486",
-            "count": 30,
-            "hideUnavailableItems": false
+            "ids": [
+              "1429",
+              "1434"
+            ]
           }
         }
       }

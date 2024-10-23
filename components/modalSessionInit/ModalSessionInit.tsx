@@ -236,7 +236,6 @@ function ModalSessionInit({
           hx-post={useComponent(import.meta.url)}
           hx-trigger="submit"
           hx-swap="none"
-          //hx-on={`htmx:afterRequest: document.querySelector(${id}).classList.remove('modal-open')`, useScript(onSubmit)}
           hx-on:submit={useScript(onSubmit, id)}
           class="flex flex-col gap-2.5 w-full"
         >

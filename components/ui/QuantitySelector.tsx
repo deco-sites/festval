@@ -16,7 +16,7 @@ const onClick = (delta: number) => {
     .closest("div[data-cart-item]")!
     .getAttribute("data-item-id")!;
   window.STOREFRONT.CART.setQuantity(productId, Number(input.value));
-  //input.dispatchEvent(new Event("change", { bubbles: true }));
+  input.dispatchEvent(new Event("change", { bubbles: true }));
 };
 function QuantitySelector({
   id = useId(),
@@ -24,10 +24,10 @@ function QuantitySelector({
   ...props
 }: JSX.IntrinsicElements["input"]) {
   return (
-    <div class="join border rounded w-full">
+    <div class="join w-full h-[40px] flex gap-[7px]">
       <button
         type="button"
-        class="btn btn-square btn-ghost no-animation"
+        class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg	"
         hx-on:click={useScript(onClick, -1)}
         disabled={disabled}
       >
@@ -44,7 +44,7 @@ function QuantitySelector({
         <input
           id={id}
           class={clx(
-            "input text-center flex-grow [appearance:textfield]",
+            "input text-center flex-grow [appearance:textfield] border border-[#E3E3E3] rounded-[6px] text-[17px] font-bold",
             "invalid:input-error"
           )}
           disabled={disabled}
@@ -55,7 +55,7 @@ function QuantitySelector({
       </div>
       <button
         type="button"
-        class="btn btn-square btn-ghost no-animation"
+        class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg	"
         hx-on:click={useScript(onClick, 1)}
         disabled={disabled}
       >

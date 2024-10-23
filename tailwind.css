@@ -28,19 +28,19 @@
     max-width: 1700px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px;
+    padding: 0.625rem;
     /* text-align: center; */
   }
   @media only screen and (max-width: 1800px) and (min-width: 1360px) {
     .custom-container {
       max-width: 1300px;
-      padding: 10px;
+      padding: 0.625rem;
     }
   }
   @media only screen and (max-width: 1360px) and (min-width: 1220px) {
     .custom-container {
       max-width: 1200px;
-      padding: 10px;
+      padding: 0.625rem;
     }
   }
   @media only screen and (max-width: 768px) {

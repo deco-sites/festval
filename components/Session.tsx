@@ -26,8 +26,15 @@ export interface SDK {
     getCart: () => Cart | null;
     getQuantity: (itemId: string) => number | undefined;
     setQuantity: (itemId: string, quantity: number) => boolean;
-    addToCart: (item: Item, platformProps: unknown) => boolean;
-    subscribe: (cb: (sdk: SDK["CART"]) => void, opts?: boolean | AddEventListenerOptions) => void;
+    addToCart: (
+      item: Item,
+      platformProps: unknown,
+      quantity: number
+    ) => boolean;
+    subscribe: (
+      cb: (sdk: SDK["CART"]) => void,
+      opts?: boolean | AddEventListenerOptions
+    ) => void;
     dispatch: (form: HTMLFormElement) => void;
   };
   USER: {
@@ -73,19 +80,38 @@ const sdk = () => {
         }
         return true;
       },
-      addToCart: (item, platformProps) => {
-        const input = form?.querySelector<HTMLInputElement>('input[name="add-to-cart"]');
-        const button = form?.querySelector<HTMLButtonElement>(`button[name="action"][value="add-to-cart"]`);
+      addToCart: (item, platformProps, quantity) => {
+        const input = form?.querySelector<HTMLInputElement>(
+          'input[name="add-to-cart"]'
+        );
+        const button = form?.querySelector<HTMLButtonElement>(
+          `button[name="action"][value="add-to-cart"]`
+        );
         if (!input || !button) {
           return false;
         }
-        window.DECO.events.dispatch({
-          name: "add_to_cart",
-          params: { items: [item] },
-        });
-        input.value = encodeURIComponent(JSON.stringify(platformProps));
-        button.click();
-        return true;
+        if (
+          typeof platformProps === "object" &&
+          platformProps !== null &&
+          "orderItems" in platformProps
+        ) {
+          const props = platformProps as {
+            orderItems: Array<{ quantity: number }>;
+          };
+          props.orderItems[0].quantity = quantity;
+
+          window.DECO.events.dispatch({
+            name: "add_to_cart",
+            params: { items: [{ ...item, quantity }] },
+          });
+
+          input.value = encodeURIComponent(JSON.stringify(props));
+          button.click();
+
+          return true;
+        }
+
+        return false;
       },
       subscribe: (cb, opts) => {
         target.addEventListener("cart", () => cb(sdk), opts);
