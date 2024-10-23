@@ -23,9 +23,7 @@ const script = (id: string) => {
   };
   addEventListener("keydown", handler);
 };
-function Drawer(
-  { children, aside, open, class: _class = "", id = useId() }: Props,
-) {
+function Drawer({ children, aside, open, class: _class = "", id = useId() }: Props) {
   return (
     <>
       <div class={clx("drawer", _class)}>
@@ -38,44 +36,25 @@ function Drawer(
           aria-label={open ? "open drawer" : "closed drawer"}
         />
 
-        <div class="drawer-content">
-          {children}
-        </div>
+        <div class="drawer-content">{children}</div>
 
-        <aside
-          data-aside
-          class={clx(
-            "drawer-side h-full z-40 overflow-hidden",
-            "[[data-aside]&_section]:contents",
-          )}
-        >
+        <aside data-aside class={clx("drawer-side h-full z-40 overflow-hidden", "[[data-aside]&_section]:contents")}>
           <label for={id} class="drawer-overlay" />
           {aside}
         </aside>
       </div>
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(script, id) }}
-      />
+      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(script, id) }} />
     </>
   );
 }
-function Aside({ title, drawer, children }: {
-  title: string;
-  drawer: string;
-  children: ComponentChildren;
-}) {
+function Aside({ title, drawer, children }: { title: string; drawer: string; children: ComponentChildren }) {
   return (
-    <div
-      data-aside
-      class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y"
-      style={{ maxWidth: "100vw" }}
-    >
+    <div data-aside class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y" style={{ maxWidth: "100vw" }}>
       <div class="flex justify-between items-center">
         <h1 class="px-4 py-3">
           <span class="font-medium text-2xl">{title}</span>
         </h1>
-        <label for={drawer} aria-label="X" class="btn btn-ghost">
+        <label for={drawer} aria-label="X" class="btn btn-ghost hover:opacity-80 hover:bg-transparent">
           <Icon id="close" />
         </label>
       </div>

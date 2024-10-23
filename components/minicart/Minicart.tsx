@@ -3,7 +3,7 @@ import { MINICART_DRAWER_ID, MINICART_FORM_ID } from "../../constants.ts";
 import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useComponent } from "../../sections/Component.tsx";
-import Coupon from "./Coupon.tsx";
+import Icon from "../ui/Icon.tsx";
 import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
 import CartItem, { Item } from "./Item.tsx";
 import { useScript } from "@deco/deco/hooks";
@@ -16,10 +16,10 @@ export interface Minicart {
     total: number;
     subtotal: number;
     discounts: number;
-    coupon?: string;
+
     locale: string;
     currency: string;
-    enableCoupon?: boolean;
+
     freeShippingTarget: number;
     checkoutHref: string;
   };
@@ -87,11 +87,11 @@ export default function Cart({
       items,
       total,
       subtotal,
-      coupon,
+
       discounts,
       locale,
       currency,
-      enableCoupon = true,
+
       freeShippingTarget,
       checkoutHref,
     },
@@ -100,6 +100,7 @@ export default function Cart({
   cart: Minicart;
 }) {
   const count = items.length;
+
   return (
     <>
       <form
@@ -124,7 +125,7 @@ export default function Cart({
         <input
           type="hidden"
           name="storefront-cart"
-          value={encodeURIComponent(JSON.stringify({ coupon, currency, value: total, items }))}
+          value={encodeURIComponent(JSON.stringify({ currency, value: total, items }))}
         />
 
         {/* This contains the platformCart cart from the commerce platform. Integrations usually use this value, like GTM, pixels etc */}
@@ -146,7 +147,7 @@ export default function Cart({
           ) : (
             <>
               {/* Free Shipping Bar */}
-              <div class="px-2 py-4 w-full">
+              <div class="p-4 w-full">
                 <FreeShippingProgressBar total={total} locale={locale} currency={currency} target={freeShippingTarget} />
               </div>
 
@@ -173,27 +174,28 @@ export default function Cart({
                     <span>Subtotal</span>
                     <output form={MINICART_FORM_ID}>{formatPrice(subtotal, currency, locale)}</output>
                   </div>
-                  {enableCoupon && <Coupon coupon={coupon} />}
                 </div>
 
                 {/* Total */}
-                <div class="border-t border-base-200 pt-4 flex flex-col justify-end items-end gap-2 mx-4">
-                  <div class="flex justify-between items-center w-full">
-                    <span>Total</span>
-                    <output form={MINICART_FORM_ID} class="font-medium text-xl">
-                      {formatPrice(total, currency, locale)}
-                    </output>
-                  </div>
-                  <span class="text-sm text-base-300">Taxas e frete serão calculados na finalização da compra</span>
+                <div class="border border-[#d8d8d8] p-2 flex flex-row justify-end  items-center gap-3 mx-4">
+                  <Icon id="info" class="w-5" />
+                  <span class="text-sm text-base-300 w-11/12">
+                    A troca de CEP ou forma de entraga pode alterar os preços e disponibulidade dos produtos
+                  </span>
                 </div>
 
                 <div class="p-4">
                   <a
-                    class="btn btn-primary w-full no-animation"
+                    class="btn btn-primary rounded  items-center  px-2 w-full no-animation"
                     href={checkoutHref}
                     hx-on:click={useScript(sendBeginCheckoutEvent)}
                   >
-                    <span class="[.htmx-request_&]:hidden">Ir para o Checkout</span>
+                    <span class="[.htmx-request_&]:hidden font-medium flex justify-between w-full items-center">
+                      Fechar pedido
+                      <output form={MINICART_FORM_ID} class="font-medium">
+                        {formatPrice(total, currency, locale)}
+                      </output>
+                    </span>
                     <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
                   </a>
                 </div>

@@ -22,31 +22,26 @@ const labels: Record<string, string> = {
   "discount:desc": "Maior desconto",
 };
 function Sort({ sortOptions, url }: Props) {
-  const current = getUrl(
-    url,
-    new URL(url).searchParams.get(SORT_QUERY_PARAM) ?? "",
-  );
+  const current = getUrl(url, new URL(url).searchParams.get(SORT_QUERY_PARAM) ?? "");
   const options = sortOptions?.map(({ value, label }) => ({
     value: getUrl(url, value),
     label,
   }));
   return (
     <>
-      <label for="sort" class="sr-only">Sort by</label>
+      <label for="sort" class="sr-only">
+        Sort by
+      </label>
       <select
         name="sort"
-        class="select w-full max-w-sm rounded-lg"
+        class="select w-full focus:outline-none max-w-sm rounded-lg"
         hx-on:change={useScript(() => {
           const select = event!.currentTarget as HTMLSelectElement;
           window.location.href = select.value;
         })}
       >
         {options.map(({ value, label }) => (
-          <option
-            label={labels[label] ?? label}
-            value={value}
-            selected={value === current}
-          >
+          <option label={labels[label] ?? label} value={value} selected={value === current}>
             {label}
           </option>
         ))}

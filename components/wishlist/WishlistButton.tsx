@@ -17,7 +17,7 @@ const onLoad = (id: string, productID: string) =>
     button.querySelector("svg")?.setAttribute("fill", inWishlist ? "black" : "none");
     const span = button.querySelector("span");
     if (span) {
-      span.innerHTML = inWishlist ? "Remove from wishlist" : "Add to wishlist";
+      span.innerHTML = inWishlist ? "Remover dos favoritos" : "Tornar Favorito";
     }
   });
 const onClick = (productID: string, productGroupID: string) => {
@@ -49,17 +49,17 @@ function WishlistButton({ item, variant = "full" }: Props) {
         data-wishlist-button
         disabled
         {...addToWishlistEvent}
-        aria-label="Add to wishlist"
+        aria-label="Tornar Favorito"
         hx-on:click={useScript(onClick, productID, productGroupID)}
         class={clx(
           "btn no-animation",
           variant === "icon"
             ? "btn-circle hover:opacity-80 border-none shadow-inherit btn-sm bg-transparent hover:bg-transparent hover:border-none"
-            : "btn-primary btn-outline  border-none shadow-inherit gap-2 w-full"
+            : "rounded btn-primary hover:opacity-80 border-none shadow-inherit gap-2 w-full text-[#]"
         )}
       >
         <Icon id="favorite" class="[.htmx-request_&]:hidden" fill="none" />
-        {variant === "full" && <span class="[.htmx-request_&]:hidden">Add to wishlist</span>}
+        {variant === "full" && <span class="[.htmx-request_&]:hidden">Tornar Favorito</span>}
         <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
       </button>
       <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, productID) }} />

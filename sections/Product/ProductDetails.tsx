@@ -20,7 +20,7 @@ export default function ProductDetails({ page }: Props) {
         <div class="flex flex-col items-center justify-center gap-6">
           <span class="font-medium text-2xl">Page not found</span>
           <a href="/" class="btn no-animation">
-            teste
+            Home
           </a>
         </div>
       </div>
@@ -31,13 +31,7 @@ export default function ProductDetails({ page }: Props) {
     <div class="container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0">
       <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
 
-      <div
-        class={clx(
-          "container grid",
-          "grid-cols-1 gap-2 py-0",
-          "sm:grid-cols-5 sm:gap-6",
-        )}
-      >
+      <div class={clx("container grid", "grid-cols-1 gap-2 py-0", "sm:grid-cols-5 sm:gap-6")}>
         <div class="sm:col-span-3">
           <ImageGallerySlider page={page} />
         </div>

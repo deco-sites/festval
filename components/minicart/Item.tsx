@@ -17,9 +17,7 @@ export interface Props {
 }
 const QUANTITY_MAX_VALUE = 100;
 const removeItemHandler = () => {
-  const itemID = (event?.currentTarget as HTMLButtonElement | null)
-    ?.closest("fieldset")
-    ?.getAttribute("data-item-id");
+  const itemID = (event?.currentTarget as HTMLButtonElement | null)?.closest("fieldset")?.getAttribute("data-item-id");
   if (typeof itemID === "string") {
     window.STOREFRONT.CART.setQuantity(itemID, 0);
   }
@@ -38,23 +36,19 @@ function CartItem({ item, index, locale, currency }: Props) {
     >
       <Image
         alt={name}
-        src={image}
-        style={{ aspectRatio: "108 / 150" }}
-        width={108}
-        height={150}
-        class="h-full object-contain"
+        src={image.replace("55-55", "100-100")}
+        width={100}
+        height={100}
+        class="object-center object-contain lg:w-[107px] lg:h-[107px] mix-blend-multiply"
       />
 
       {/* Info */}
       <div class="flex flex-col gap-2">
         {/* Name and Remove button */}
         <div class="flex justify-between items-center">
-          <legend>{name}</legend>
+          <legend class="font-semibold">{name}</legend>
           <button
-            class={clx(
-              isGift && "hidden",
-              "btn btn-ghost btn-square no-animation",
-            )}
+            class={clx(isGift && "hidden", "btn btn-ghost hover:bg-transparent hover:opacity-80 btn-square no-animation")}
             hx-on:click={useScript(removeItemHandler)}
           >
             <Icon id="trash" size={24} />
@@ -62,23 +56,14 @@ function CartItem({ item, index, locale, currency }: Props) {
         </div>
 
         {/* Price Block */}
-        <div class="flex items-center gap-2">
-          <span class="line-through text-sm">
-            {formatPrice(listPrice, currency, locale)}
-          </span>
-          <span class="text-sm text-secondary">
-            {isGift ? "Grátis" : formatPrice(price, currency, locale)}
-          </span>
+        <div class="flex items-start gap-1 flex-col">
+          <span class="line-through text-sm">{formatPrice(listPrice, currency, locale)}</span>
+          <span class="text-lg font-medium text-[#282828]">{isGift ? "Grátis" : formatPrice(price, currency, locale)}</span>
         </div>
 
         {/* Quantity Selector */}
         <div class={clx(isGift && "hidden")}>
-          <QuantitySelector
-            min={0}
-            max={QUANTITY_MAX_VALUE}
-            value={quantity}
-            name={`item::${index}`}
-          />
+          <QuantitySelector min={0} max={QUANTITY_MAX_VALUE} value={quantity} name={`item::${index}`} />
         </div>
       </div>
     </fieldset>

@@ -11,8 +11,8 @@ export interface Props {
   page: ProductDetailsPage | null;
 }
 
-const WIDTH = 820;
-const HEIGHT = 615;
+const WIDTH = 800;
+const HEIGHT = 800;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 /**
@@ -52,8 +52,8 @@ export default function GallerySlider(props: Props) {
                 <Slider.Item index={index} class="carousel-item w-full">
                   <Image
                     class="w-full"
-                    //sizes="(max-width: 640px) 100vw, 100vw"
-                    style={{ aspectRatio: ASPECT_RATIO }}
+                    sizes="(max-width: 640px) 100vw, 100vw"
+                    fit="contain"
                     src={img.url!}
                     alt={img.alternateName}
                     width={WIDTH}
@@ -67,14 +67,14 @@ export default function GallerySlider(props: Props) {
             </Slider>
 
             <Slider.PrevButton
-              class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
+              class="no-animation absolute left-2 top-1/2 btn btn-circle hover:bg-transparent hover:opacity-80 bg-transparent disabled:invisible"
               disabled
             >
               <Icon id="chevron-right" class="rotate-180" />
             </Slider.PrevButton>
 
             <Slider.NextButton
-              class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
+              class="no-animation absolute right-2 top-1/2 btn btn-circle hover:bg-transparent hover:opacity-80 bg-transparent disabled:invisible"
               disabled={images.length < 2}
             >
               <Icon id="chevron-right" />

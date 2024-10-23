@@ -27,16 +27,9 @@ function ProductInfo({ page }: Props) {
   const description = product.description || isVariantOf?.description;
   const title = isVariantOf?.name ?? product.name;
 
-  const {
-    price = 0,
-    listPrice,
-    seller = "1",
-    availability,
-  } = useOffer(offers);
+  const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
 
-  const percent = listPrice && price
-    ? Math.round(((listPrice - price) / listPrice) * 100)
-    : 0;
+  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
 
   const breadcrumb = {
     ...breadcrumbList,
@@ -64,11 +57,10 @@ function ProductInfo({ page }: Props) {
   });
 
   //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
-  const hasValidVariants = isVariantOf?.hasVariant?.some(
-    (variant) =>
-      variant?.name?.toLowerCase() !== "title" &&
-      variant?.name?.toLowerCase() !== "default title",
-  ) ?? false;
+  const hasValidVariants =
+    isVariantOf?.hasVariant?.some(
+      (variant) => variant?.name?.toLowerCase() !== "title" && variant?.name?.toLowerCase() !== "default title"
+    ) ?? false;
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
@@ -77,25 +69,19 @@ function ProductInfo({ page }: Props) {
         class={clx(
           "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
           percent < 1 && "opacity-0",
-          "w-fit",
+          "w-fit"
         )}
       >
         {percent} % off
       </span>
 
       {/* Product Name */}
-      <span class={clx("text-3xl font-semibold", "pt-4")}>
-        {title}
-      </span>
+      <span class={clx("text-3xl font-semibold", "pt-4")}>{title}</span>
 
       {/* Prices */}
-      <div class="flex gap-3 pt-1">
-        <span class="text-3xl font-semibold text-base-400">
-          {formatPrice(price, offers?.priceCurrency)}
-        </span>
-        <span class="line-through text-sm font-medium text-gray-400">
-          {formatPrice(listPrice, offers?.priceCurrency)}
-        </span>
+      <div class="flex flex-col items-start gap-1 pt-2">
+        <span class="line-through text-sm font-medium text-gray-400">{formatPrice(listPrice, offers?.priceCurrency)}</span>
+        <span class="text-3xl font-semibold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
       </div>
 
       {/* Sku Selector */}
@@ -107,42 +93,28 @@ function ProductInfo({ page }: Props) {
 
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
-        {availability === "https://schema.org/InStock"
-          ? (
-            <>
-              <AddToCartButton
-                item={item}
-                seller={seller}
-                product={product}
-                class="btn btn-primary no-animation"
-                disabled={false}
-              />
-              <WishlistButton item={item} />
-            </>
-          )
-          : <OutOfStock productID={productID} />}
+        {availability === "https://schema.org/InStock" ? (
+          <>
+            <AddToCartButton
+              item={item}
+              seller={seller}
+              product={product}
+              class="btn btn-primary no-animation rounded"
+              disabled={false}
+            />
+            <WishlistButton item={item} />
+          </>
+        ) : (
+          <OutOfStock productID={productID} />
+        )}
       </div>
 
       {/* Shipping Simulation */}
-      <div class="mt-8">
-        <ShippingSimulationForm
-          items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
-        />
-      </div>
 
       {/* Description card */}
       <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Description</summary>
-              <div
-                class="ml-2 mt-2"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            </details>
-          )}
-        </span>
+        <span className="text-lg font-medium text-[#282828]">Descrição</span>
+        <span class="text-sm">{description && <div class="mt-2" dangerouslySetInnerHTML={{ __html: description }} />}</span>
       </div>
     </div>
   );

@@ -28,25 +28,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "Footer"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc"
-          }
-        }
       }
     }
   ],

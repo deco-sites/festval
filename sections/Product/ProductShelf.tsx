@@ -30,7 +30,7 @@ export default function ProductShelf({ products, title, cta }: Props) {
     },
   });
   return (
-    <Section.Container class="custom-container relative" {...viewItemListEvent}>
+    <Section.Container class="custom-container relative sm:!py-12" {...viewItemListEvent}>
       <Section.Header title={title} cta={cta} />
 
       <ProductSlider products={products} itemListName={title} />

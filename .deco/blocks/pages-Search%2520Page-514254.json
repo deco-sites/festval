@@ -20,18 +20,6 @@
           "selectedFacets": []
         }
       }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Footer"
-      }
     }
   ],
   "seo": {
