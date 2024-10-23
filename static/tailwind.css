@@ -3807,6 +3807,24 @@ details.collapse summary::-webkit-details-marker {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mb-\[20px\] {
+  margin-bottom: 20px;
+}
+.mb-\[23px\] {
+  margin-bottom: 23px;
+}
+.mb-\[26px\] {
+  margin-bottom: 26px;
+}
+.mb-\[33px\] {
+  margin-bottom: 33px;
+}
+.mb-\[34px\] {
+  margin-bottom: 34px;
+}
+.mb-\[38px\] {
+  margin-bottom: 38px;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -3834,11 +3852,11 @@ details.collapse summary::-webkit-details-marker {
 .mt-4 {
   margin-top: 1rem;
 }
-.mt-5 {
-  margin-top: 1.25rem;
-}
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-\[-3px\] {
+  margin-top: -3px;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -3934,6 +3952,9 @@ details.collapse summary::-webkit-details-marker {
 .h-px {
   height: 1px;
 }
+.max-h-0 {
+  max-height: 0px;
+}
 .max-h-64 {
   max-height: 16rem;
 }
@@ -4008,6 +4029,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[150px\] {
   width: 150px;
+}
+.w-\[290px\] {
+  width: 290px;
 }
 .w-\[316px\] {
   width: 316px;
@@ -4181,6 +4205,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .rotate-180 {
   --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-\[-180deg\] {
+  --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .transform {
@@ -4486,6 +4514,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-border-opacity: 1;
   border-color: rgb(201 207 207 / var(--tw-border-opacity));
 }
+.border-\[\#D8D8D8\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(216 216 216 / var(--tw-border-opacity));
+}
 .border-\[\#E3E3E3\] {
   --tw-border-opacity: 1;
   border-color: rgb(227 227 227 / var(--tw-border-opacity));
@@ -4705,6 +4737,14 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 12px;
   padding-right: 12px;
 }
+.px-\[15px\] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.px-\[16px\] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
 .px-\[30px\] {
   padding-left: 30px;
   padding-right: 30px;
@@ -4771,6 +4811,12 @@ details.collapse summary::-webkit-details-marker {
 .pb-\[15px\] {
   padding-bottom: 15px;
 }
+.pb-\[16px\] {
+  padding-bottom: 16px;
+}
+.pb-\[17px\] {
+  padding-bottom: 17px;
+}
 .pl-0 {
   padding-left: 0px;
 }
@@ -4789,9 +4835,6 @@ details.collapse summary::-webkit-details-marker {
 .pr-5 {
   padding-right: 1.25rem;
 }
-.pt-12 {
-  padding-top: 3rem;
-}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -4809,6 +4852,18 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-6 {
   padding-top: 1.5rem;
+}
+.pt-\[11px\] {
+  padding-top: 11px;
+}
+.pt-\[15px\] {
+  padding-top: 15px;
+}
+.pt-\[16px\] {
+  padding-top: 16px;
+}
+.pt-\[30px\] {
+  padding-top: 30px;
 }
 .text-left {
   text-align: left;
@@ -5096,6 +5151,9 @@ details.collapse summary::-webkit-details-marker {
 .opacity-10 {
   opacity: 0.1;
 }
+.opacity-100 {
+  opacity: 1;
+}
 .opacity-70 {
   opacity: 0.7;
 }
@@ -5179,6 +5237,11 @@ details.collapse summary::-webkit-details-marker {
 }
 .transition-opacity {
   transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.transition-transform {
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -5361,6 +5424,47 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 640px) {
+
+  .sm\:container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 640px) {
+
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+
+    .sm\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+
+    .sm\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+
+    .sm\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+
+    .sm\:container {
+      max-width: 1536px;
+    }
+  }
 
   .sm\:carousel-vertical {
     flex-direction: column;
@@ -5847,6 +5951,10 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:pt-12 {
+    padding-top: 3rem;
   }
 
   .sm\:text-left {

@@ -5,7 +5,7 @@ import { useId } from "../../sdk/useId.ts";
 import Icon from "../ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import { useScript } from "@deco/deco/hooks";
+import { useDevice, useScript } from "@deco/deco/hooks";
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
   seller: string;
@@ -95,6 +95,7 @@ function AddToCartButton(props: Props) {
   const { product, item, class: _class, inputId } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
+  const device = useDevice();
   return (
     <div
       id={id}
@@ -104,8 +105,18 @@ function AddToCartButton(props: Props) {
     >
       {/* <input type="checkbox" class="hidden peer" /> */}
 
-      <button disabled class={clx("flex-grow", _class?.toString())} hx-on:click={useScript(onClick, inputId)}>
-        <Icon id="cart-white" />
+      <button
+        disabled
+        class={clx("flex-grow", _class?.toString())}
+        hx-on:click={useScript(onClick, inputId)}
+      >
+        <Image
+          src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d4f85472-4e59-4bc7-a533-792824538320/Repeticao-de-grade-2.svg"
+          alt="carrinho"
+          width={device !== "mobile" ? 35 : 16}
+          height={device !== "mobile" ? 35 : 16}
+          //class="mt-[-3px]"
+        />
         Adicionar
       </button>
       <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
