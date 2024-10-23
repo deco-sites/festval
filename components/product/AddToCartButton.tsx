@@ -13,7 +13,7 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
 }
 const onClick = (inputId: string) => {
   event?.stopPropagation();
-  // const button = event?.currentTarget as HTMLButtonElement | null;
+
   // const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
 
   const input = document.getElementById(inputId);
@@ -27,6 +27,17 @@ const onClick = (inputId: string) => {
   if (!inputValue) return;
   item.quantity = Number(inputValue.value);
   window.STOREFRONT.CART.addToCart(item, platformProps, item.quantity);
+
+  const button = event?.currentTarget as HTMLButtonElement | null;
+
+  if (button) {
+    button.style.backgroundColor = "#fff";
+    button.style.color = "#3E3D41";
+    button.style.border = "1px solid  #989898";
+    button.innerText = "Adicionado ao carrinho";
+
+    button.disabled = true;
+  }
 };
 
 // Copy cart form values into AddToCartButton
@@ -116,6 +127,7 @@ function AddToCartButton(props: Props) {
 
       <button
         disabled
+        data-attribute="add-to-cart"
         class={clx("flex-grow", _class?.toString())}
         hx-on:click={useScript(onClick, inputId)}
       >

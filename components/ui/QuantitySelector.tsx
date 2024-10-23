@@ -35,6 +35,7 @@ function QuantitySelector({
         <Image
           src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ebdd17e3-35f9-42a7-80ec-6489fae4aa14/menos.svg"
           width={20}
+          height={20}
         />
       </button>
       <div
@@ -66,6 +67,7 @@ function QuantitySelector({
         <Image
           src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/dbd42389-3ec3-4160-946e-2370117e9b95/mais.svg"
           width={20}
+          height={20}
         />
       </button>
     </div>

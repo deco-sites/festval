@@ -55,9 +55,31 @@ const onLoad = (id: string) => {
     container
       ?.querySelectorAll<HTMLButtonElement>("input")
       .forEach((node) => (node.disabled = false));
-  });
 
-  console.log(window.STOREFRONT.CART.getCart());
+    const cart = window.STOREFRONT.CART.getCart();
+    if (cart) {
+      // deno-lint-ignore no-explicit-any
+      const item = cart.items.find((i) => (i as any).item_id === itemID);
+
+      if (item) {
+        console.log(container);
+        console.log("Item", item);
+        const buttonAddToCart = container!.querySelector<HTMLButtonElement>(
+          'button[data-attribute="add-to-cart"]'
+        );
+
+        if (buttonAddToCart) {
+          console.log(buttonAddToCart);
+          buttonAddToCart.style.backgroundColor = "#fff";
+          buttonAddToCart.style.color = "#3E3D41";
+          buttonAddToCart.style.border = "1px solid  #989898";
+          buttonAddToCart.innerText = "Adicionado ao carrinho";
+
+          buttonAddToCart.disabled = true;
+        }
+      }
+    }
+  });
 };
 
 // const onClick = () => {
@@ -374,7 +396,7 @@ function ProductCard({
             item={item}
             inputId={id}
             class={clx(
-              "bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full",
+              " bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full",
               "hover:opacity-80 ease-in-out duration-300"
             )}
           />
