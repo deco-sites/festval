@@ -313,7 +313,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-        "title": "Categorias",
         "items": [
           {
             "label": "Pet  shop",
@@ -380,8 +379,7 @@
             "href": "/",
             "label": "teste"
           }
-        ],
-        "cta": "/"
+        ]
       }
     },
     {
