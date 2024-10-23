@@ -2,10 +2,9 @@ import { AnalyticsItem, Product } from "apps/commerce/types.ts";
 import { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
-import Icon from "../ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import { useDevice, useScript } from "@deco/deco/hooks";
+import { useScript } from "@deco/deco/hooks";
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   product: Product;
   seller: string;
@@ -28,11 +27,7 @@ const onClick = (inputId: string) => {
   if (!inputValue) return;
   item.quantity = Number(inputValue.value);
   console.log("Add to cart", item, item.quantity);
-  const productId = inputValue!
-    .closest("div[data-cart-item]")!
-    .getAttribute("data-item-id")!;
-  window.STOREFRONT.CART.addToCart(item, platformProps);
-  window.STOREFRONT.CART.setQuantity(item.item_id, item.quantity);
+  window.STOREFRONT.CART.addToCart(item, platformProps, item.quantity);
 };
 
 // Copy cart form values into AddToCartButton
@@ -108,7 +103,7 @@ function AddToCartButton(props: Props) {
   const { product, item, class: _class, inputId } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
-  const device = useDevice();
+
   return (
     <div
       id={id}
