@@ -106,7 +106,7 @@ function AddToCartButton(props: Props) {
 
       <button disabled class={clx("flex-grow", _class?.toString())} hx-on:click={useScript(onClick, inputId)}>
         <Icon id="cart-white" />
-        Adicionar ao carrinho
+        Adicionar
       </button>
       <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
     </div>
