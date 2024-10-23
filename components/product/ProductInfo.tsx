@@ -5,6 +5,7 @@ import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import QuantitySelector from "../ui/QuantitySelector.tsx";
 import ShippingSimulationForm from "../shipping/Form.tsx";
 import WishlistButton from "../wishlist/WishlistButton.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
@@ -68,17 +69,26 @@ function ProductInfo({ page }: Props) {
       <span class={clx("text-xl font-bold text-[#373737]", "pt-4")}>{title}</span>
 
       {/* Prices */}
-      <div class="flex flex-col items-start gap-1 pt-2">
-        <div className="flex flex-row gap-3 items-center">
-          {listPrice && price && listPrice > price && (
-            <span class="line-through text-sm font-medium text-gray-400">
-              {formatPrice(listPrice, offers?.priceCurrency)}
-            </span>
-          )}
-          <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34] text-center rounded px-3 py-1">-{percent}% OFF</span>
-        </div>
+      <div class="flex flex-col items-start gap-1 pt-4">
+        <div className="flex flex-row w-full justify-between">
+          <div className="flex flex-col">
+            <div className="flex flex-row gap-3 items-center">
+              {listPrice && price && listPrice > price && (
+                <span class="line-through text-sm font-medium text-gray-400">
+                  {formatPrice(listPrice, offers?.priceCurrency)}
+                </span>
+              )}
+              {listPrice && price && listPrice > price && percent > 0 && (
+                <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34] text-center rounded px-3 py-1">
+                  -{percent}% OFF
+                </span>
+              )}
+            </div>
+            <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
+          </div>
 
-        <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
+          <div class="w-2/4">{/* <QuantitySelector min={1} max={100} /> */}</div>
+        </div>
       </div>
 
       {/* Sku Selector */}
@@ -96,7 +106,7 @@ function ProductInfo({ page }: Props) {
               item={item}
               seller={seller}
               product={product}
-              class="btn btn-primary no-animation rounded"
+              class="btn btn-primary no-animation rounded-[11px]"
               disabled={false}
             />
             {/* <WishlistButton item={item} /> */}
@@ -110,7 +120,7 @@ function ProductInfo({ page }: Props) {
 
       {/* Description card */}
       <div class="mt-4 sm:mt-6">
-        <span className="text-lg font-medium text-[#282828]">Descrição</span>
+        <span className="text-lg font-bold text-[##373737]">Detalhes do produto</span>
         <span class="text-sm">{description && <div class="mt-2" dangerouslySetInnerHTML={{ __html: description }} />}</span>
       </div>
     </div>
