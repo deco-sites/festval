@@ -2,6 +2,7 @@ import { type JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
+import Image from "apps/website/components/Image.tsx";
 const onClick = (delta: number) => {
   // doidera!
   event!.stopPropagation();
@@ -27,11 +28,14 @@ function QuantitySelector({
     <div class="join w-full h-[40px] flex gap-[7px]">
       <button
         type="button"
-        class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg	"
+        class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg	flex justify-center items-center hover:opacity-80 ease-in-out duration-300"
         hx-on:click={useScript(onClick, -1)}
         disabled={disabled}
       >
-        -
+        <Image
+          src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ebdd17e3-35f9-42a7-80ec-6489fae4aa14/menos.svg"
+          width={20}
+        />
       </button>
       <div
         data-tip={`Quantity must be between ${props.min} and ${props.max}`}
@@ -55,11 +59,14 @@ function QuantitySelector({
       </div>
       <button
         type="button"
-        class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg	"
+        class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg flex justify-center items-center hover:opacity-80 ease-in-out duration-300"
         hx-on:click={useScript(onClick, 1)}
         disabled={disabled}
       >
-        +
+        <Image
+          src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/dbd42389-3ec3-4160-946e-2370117e9b95/mais.svg"
+          width={20}
+        />
       </button>
     </div>
   );

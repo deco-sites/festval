@@ -56,6 +56,8 @@ const onLoad = (id: string) => {
       ?.querySelectorAll<HTMLButtonElement>("input")
       .forEach((node) => (node.disabled = false));
   });
+
+  console.log(window.STOREFRONT.CART.getCart());
 };
 
 // const onClick = () => {
@@ -76,8 +78,9 @@ const onLoad = (id: string) => {
 
 const useAddToCart = ({ product, seller }: Props) => {
   const platform = usePlatform();
+  // deno-lint-ignore no-unused-vars
   const { additionalProperty = [], isVariantOf, productID } = product;
-  const productGroupID = isVariantOf?.productGroupID;
+  // const productGroupID = isVariantOf?.productGroupID;
   if (platform === "vtex") {
     return {
       allowedOutdatedData: ["paymentData"],
@@ -149,7 +152,6 @@ function expandPromoText(text: string): string | null {
     "10off Na 2°": "10% Off na 2ª unidade",
   };
 
-  // Procurar cada padrão no texto e substituí-lo pela frase correspondente
   for (const [promoCode, promoText] of Object.entries(promoMap)) {
     if (text.includes(promoCode)) {
       return (text = promoText);
@@ -209,11 +211,6 @@ function ProductCard({
   //Added it to check the variant name in the SKU Selector later, so it doesn't render the SKU to "shoes size" in the Product Card
   const firstVariantName = firstSkuVariations?.[0]?.toLowerCase();
   const shoeSizeVariant = "shoe size";
-
-  if (product.productID == "1429" || product.productID == "1434") {
-    console.log("Product", product.offers?.offers[0].teasers);
-    //console.log("Item", item);
-  }
 
   const textTag: string[] = [];
 

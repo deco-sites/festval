@@ -26,7 +26,6 @@ const onClick = (inputId: string) => {
   );
   if (!inputValue) return;
   item.quantity = Number(inputValue.value);
-  console.log("Add to cart", item, item.quantity);
   window.STOREFRONT.CART.addToCart(item, platformProps, item.quantity);
 };
 
