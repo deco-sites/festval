@@ -75,7 +75,7 @@ function ProductInfo({ page }: Props) {
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34]  text-center rounded px-3 py-1">-{percent}% OFF</span>
+          <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34] text-center rounded px-3 py-1">-{percent}% OFF</span>
         </div>
 
         <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
