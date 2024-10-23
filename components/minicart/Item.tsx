@@ -22,20 +22,16 @@ const removeItemHandler = () => {
     ?.getAttribute("data-item-id");
 
   if (typeof itemID === "string") {
-    // Define a quantidade como 0 no carrinho
     window.STOREFRONT.CART.setQuantity(itemID, 0);
 
-    // Seleciona todos os botões que têm o atributo data-attribute="add-to-cart"
     const buttonsAddToCart = document.querySelectorAll<HTMLButtonElement>(
       'button[data-attribute="add-to-cart"]'
     );
 
-    // Filtra os botões que possuem o mesmo data-item-id
     const matchingButtons = Array.from(buttonsAddToCart).filter(
       (button) => button.getAttribute("data-item-id") === itemID
     );
 
-    // Agora você pode desabilitar os botões ou aplicar outro comportamento
     matchingButtons.forEach((button) => {
       button.style.backgroundColor = "#5D7F3A";
       button.style.color = "#fff";
@@ -43,7 +39,6 @@ const removeItemHandler = () => {
       button.innerText = "Adicionar";
 
       button.disabled = true;
-      console.log("Button disabled:", button);
     });
   }
 };

@@ -112,10 +112,6 @@ export async function action(
     });
 
     saveSegmentToCookie(ctx, response.segmentToken);
-
-    const cookies = getCookies(req.headers);
-
-    console.log(cookies);
   }
 
   saveCepToCookies(ctx, cep);
@@ -187,8 +183,6 @@ const onSubmit = (id: string) => {
 
     const limeText = modal!.querySelector(".text-lime-600");
     const redText = modal!.querySelector(".text-red-700");
-
-    console.log(limeText, redText);
 
     if (cep && regionId) {
       limeText?.classList.remove("hidden");
