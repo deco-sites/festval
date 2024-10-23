@@ -102,7 +102,7 @@ function ProductInfo({ page }: Props) {
               class="btn btn-primary no-animation rounded"
               disabled={false}
             />
-            <WishlistButton item={item} />
+            {/* <WishlistButton item={item} /> */}
           </>
         ) : (
           <OutOfStock productID={productID} />
