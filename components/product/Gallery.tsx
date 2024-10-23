@@ -77,7 +77,7 @@ export default function GallerySlider(props: Props) {
               <Icon id="chevron-right" />
             </Slider.NextButton>
 
-            <ul class={clx("col-span-full absolute  md:-bottom-2 inset-x-0 z-10", "carousel justify-center gap-3")}>
+            <ul class={clx("col-span-full absolute -bottom-2  inset-x-0 z-10", "carousel justify-center gap-3")}>
               {images.map((_, index) => (
                 <li class="carousel-item">
                   <Slider.Dot
