@@ -39,9 +39,7 @@ const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const container = document.getElementById(id);
-    const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]'
-    );
+    const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 1;
     if (!input) {
@@ -49,12 +47,8 @@ const onLoad = (id: string) => {
     }
     input.value = quantity.toString();
     // enable interactivity
-    container
-      ?.querySelectorAll<HTMLButtonElement>("button")
-      .forEach((node) => (node.disabled = false));
-    container
-      ?.querySelectorAll<HTMLButtonElement>("input")
-      .forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -62,9 +56,7 @@ const onLoad = (id: string) => {
       const item = cart.items.find((i) => (i as any).item_id === itemID);
 
       if (item) {
-        const buttonAddToCart = container!.querySelector<HTMLButtonElement>(
-          'button[data-attribute="add-to-cart"]'
-        );
+        const buttonAddToCart = container!.querySelector<HTMLButtonElement>('button[data-attribute="add-to-cart"]');
 
         if (buttonAddToCart) {
           buttonAddToCart.style.backgroundColor = "#fff";
@@ -180,13 +172,7 @@ function expandPromoText(text: string): string | null {
   return null;
 }
 
-function ProductCard({
-  product,
-  preload,
-  itemListName,
-  index,
-  class: _class,
-}: Props) {
+function ProductCard({ product, preload, itemListName, index, class: _class }: Props) {
   const id = useId();
   const device = useDevice();
 
@@ -201,10 +187,7 @@ function ProductCard({
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
   const platformProps = useAddToCart({ product, seller });
@@ -244,24 +227,13 @@ function ProductCard({
   }
 
   return (
-    <div
-      {...event}
-      class={clx(
-        "card gap-[19px] card-compact rounded-none group text-sm",
-        _class
-      )}
-    >
+    <div {...event} class={clx("card gap-[19px] card-compact rounded-none group text-sm", _class)}>
       <figure class={clx("relative")} style={{ aspectRatio: ASPECT_RATIO }}>
         {/* Product Images */}
         <a
           href={relativeUrl}
           aria-label="view product"
-          class={clx(
-            "absolute top-0 left-0",
-            "grid grid-cols-1 grid-rows-1",
-            "w-full",
-            !inStock && "opacity-70"
-          )}
+          class={clx("absolute top-0 left-0", "grid grid-cols-1 grid-rows-1", "w-full", !inStock && "opacity-70")}
         >
           <Image
             src={front.url!}
@@ -269,11 +241,7 @@ function ProductCard({
             width={WIDTH}
             height={HEIGHT}
             style={{ aspectRatio: ASPECT_RATIO }}
-            class={clx(
-              "object-cover",
-              "rounded w-full",
-              "col-span-full row-span-full"
-            )}
+            class={clx("object-cover", "rounded w-full", "col-span-full row-span-full")}
             // sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -298,15 +266,15 @@ function ProductCard({
         </a>
 
         {/* Wishlist button */}
-        <div class="absolute top-0 left-0 w-full flex items-center justify-between">
+        <div class="absolute top-1 left-0 w-full flex items-center justify-between">
           {/* Discounts */}
           <span
             class={clx(
-              "text-[10px] sm:text-xs font-normal text-white bg-[#E60201] text-center rounded-[4px] p-[5px]",
+              "text-[10px] sm:text-xs font-normal text-white bg-[#E60201] text-center rounded-[4px] py-[3px] px-[5px]",
               (percent < 1 || !inStock) && "opacity-0"
             )}
           >
-            {percent}%
+            -{percent}%
           </span>
         </div>
 
@@ -317,7 +285,7 @@ function ProductCard({
             textTag.map((text, index) => (
               <span
                 key={index}
-                class="text-[10px] sm:text-xs font-normal text-white bg-[#966D34] text-center rounded-[4px] p-[4px] sm:py-[5px] sm:px-[12px]"
+                class="text-[10px] sm:text-xs font-normal text-white bg-[#6279e8] text-center rounded-[4px] p-[4px] sm:py-[5px] sm:px-[12px]"
               >
                 {text}
               </span>
@@ -331,9 +299,7 @@ function ProductCard({
 
       <div>
         <a href={relativeUrl} class="pt-5">
-          <span class="text-xs sm:text-sm font-normal flex text-left">
-            {title}
-          </span>
+          <span class="text-xs sm:text-sm font-normal flex text-left">{title}</span>
         </a>
 
         {/* <div>
@@ -369,9 +335,7 @@ function ProductCard({
         id={id}
         class="flex-grow flex flex-col justify-end gap-[15px]"
         data-item-id={product.productID}
-        data-cart-item={encodeURIComponent(
-          JSON.stringify({ item, platformProps })
-        )}
+        data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
       >
         <div class="flex flex-col items-start  pt-2">
           {listPrice && price && listPrice > price && (
@@ -379,9 +343,7 @@ function ProductCard({
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-bold text-base sm:text-lg text-[#1A1A1A]">
-            {formatPrice(price, offers?.priceCurrency)}
-          </span>
+          <span class="font-bold text-base sm:text-lg text-[#1A1A1A]">{formatPrice(price, offers?.priceCurrency)}</span>
         </div>
 
         {device != "mobile" && <QuantitySelector min={1} max={100} />}
@@ -400,10 +362,7 @@ function ProductCard({
         </div>
       </div>
 
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
-      />
+      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
     </div>
   );
 }
