@@ -23,19 +23,32 @@ interface Props {
   banners?: Banner[];
 }
 
-function Banner({ mobile, desktop, alt, href, index }: Banner & { index: number }) {
+function Banner({
+  mobile,
+  desktop,
+  alt,
+  href,
+  index,
+  isSingleBanner,
+}: Banner & { index: number; isSingleBanner?: boolean }) {
   return (
     <a href={href} className="overflow-hidden">
       <Picture>
         {/* Mobile Source */}
-        {index === 0 ? (
-          // Primeiro banner com tamanho diferente no mobile
+        {isSingleBanner ? (
+          // Banner único, sem tamanhos fixos
+          <>
+            <Source width={528} height={465} media="(max-width: 767px)" src={mobile} />
+            <Source width={840} height={320} media="(min-width: 768px)" src={desktop || mobile} />
+          </>
+        ) : index === 0 ? (
+          // Primeiro banner (grande) com tamanhos diferentes
           <>
             <Source width={1080} height={465} media="(max-width: 767px)" src={mobile} />
             <Source width={1700} height={400} media="(min-width: 768px)" src={desktop || mobile} />
           </>
         ) : (
-          // Demais banners no mobile
+          // Demais banners
           <>
             <Source width={528} height={465} media="(max-width: 767px)" src={mobile} />
             <Source width={840} height={320} media="(min-width: 768px)" src={desktop || mobile} />
@@ -43,15 +56,7 @@ function Banner({ mobile, desktop, alt, href, index }: Banner & { index: number 
         )}
 
         {/* Fallback para o caso de <img> */}
-        <img
-          width={index === 0 ? 1700 : 840}
-          height={index === 0 ? 400 : 320}
-          className="w-full h-full object-cover"
-          src={desktop || mobile}
-          alt={alt}
-          decoding="async"
-          loading="lazy"
-        />
+        <img className="w-full h-full object-cover" src={desktop || mobile} alt={alt} decoding="async" loading="lazy" />
       </Picture>
     </a>
   );
@@ -65,7 +70,7 @@ function Gallery({ banners = [] }: Props) {
           <div className="grid grid-cols-2 gap-3">
             {banners.map((banner, index) => (
               <div key={index}>
-                <Banner {...banner} index={index} />
+                <Banner {...banner} index={index} isSingleBanner={banners.length === 2} />
               </div>
             ))}
           </div>

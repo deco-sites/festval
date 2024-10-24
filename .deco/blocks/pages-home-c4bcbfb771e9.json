@@ -11,14 +11,14 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b43bb2c7-023b-4fb1-80dc-381f44c4a41e/Grupo-7.png",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8dfa4a2b-a79f-4cec-8faf-4e021291e30d/mobilegg-(2).png",
-          "alt": "/"
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/68591f1a-e736-4477-99c1-b1d4f20ce479/BANNER-OFERTAS-FDS.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/99bb398d-1091-4b31-a8d4-04f4d03e0d31/mobilegg.png",
+          "alt": "carnes"
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b43bb2c7-023b-4fb1-80dc-381f44c4a41e/Grupo-7.png",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/68591f1a-e736-4477-99c1-b1d4f20ce479/BANNER-OFERTAS-FDS.jpg",
           "alt": "/",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8dfa4a2b-a79f-4cec-8faf-4e021291e30d/mobilegg-(2).png"
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/99bb398d-1091-4b31-a8d4-04f4d03e0d31/mobilegg.png"
         }
       ],
       "preload": true
@@ -150,20 +150,20 @@
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
         "banners": [
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b22828e-a245-415b-9457-692994c93225/Grupo-3924.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b22828e-a245-415b-9457-692994c93225/Grupo-3924.png",
-            "alt": "banner 1700",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/392f56e0-4138-4e09-ba0e-3678e4daf9ba/BANNER-OFERTAS-SEGTER.jpg",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/392f56e0-4138-4e09-ba0e-3678e4daf9ba/BANNER-OFERTAS-SEGTER.jpg",
+            "alt": "Segunda ",
             "href": "/"
           },
           {
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "alt": "840",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cb23208f-2b92-4d47-8e1e-ba5d9127ea87/ADEGA.jpg",
+            "alt": "Adega",
             "href": "/"
           },
           {
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/37e0d270-825d-47da-8457-06ed6ae469ca/ACOUGUE.jpg",
             "alt": "840",
             "href": "/"
           }
@@ -217,16 +217,22 @@
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
         "banners": [
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "alt": "840",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6eafaf5b-8992-4b52-8ded-7e170e19c715/BANNER-OFERTAS-QUAQUI.jpg",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6eafaf5b-8992-4b52-8ded-7e170e19c715/BANNER-OFERTAS-QUAQUI.jpg",
+            "alt": "hosrtifruti",
             "href": "/"
           },
           {
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "alt": "840",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b813584e-46c3-4a3d-b5a3-48aaa6b4c083/BANNER-DE-OFERTAS-M-ALCATRA.jpg",
+            "alt": "alcatra",
             "href": "/"
+          },
+          {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f35df778-d64f-44df-9e08-489def7b5e89/BANNER-DE-OFERTAS-M-MELLITA.jpg",
+            "href": "/",
+            "alt": "Leve 3 pague 2"
           }
         ]
       }
@@ -278,15 +284,21 @@
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
         "banners": [
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "alt": "840",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f334b839-2f3e-4e43-b040-d39934858842/MAMMA-BIA.jpg",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f334b839-2f3e-4e43-b040-d39934858842/MAMMA-BIA.jpg",
+            "alt": "mamma bia",
             "href": "/"
           },
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
-            "alt": "840",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/337523ed-8844-413e-9c62-5b21e9a3a13a/Ninho-visibilidade.jpg",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/337523ed-8844-413e-9c62-5b21e9a3a13a/Ninho-visibilidade.jpg",
+            "alt": "Ninho",
+            "href": "/"
+          },
+          {
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f2558c62-e2ed-4012-a410-5371739f4240/Fanta-visibilidade.jpg",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f2558c62-e2ed-4012-a410-5371739f4240/Fanta-visibilidade.jpg",
+            "alt": "Fanta",
             "href": "/"
           }
         ]
