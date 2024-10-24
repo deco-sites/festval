@@ -120,7 +120,7 @@ function Footer({
       class="sm:px-0 sm:mt-10"
       style={{ backgroundColor: "#FFFFFF", borderTop: "1px solid #D8D8D8" }}
     >
-      <div class="sm:container flex flex-col pt-[30px] sm:pt-12">
+      <div class="sm:custom-container flex flex-col pt-[30px] sm:pt-12">
         {device === "mobile" ? (
           <>
             {social && social.socialItens && social.socialItens.length > 0 && (
