@@ -5,14 +5,16 @@ import Icon from "../ui/Icon.tsx";
 import Slider from "../ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
+import WishlistButton from "../wishlist/WishlistButton.tsx";
+import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 
 export interface Props {
   /** @title Integration */
   page: ProductDetailsPage | null;
 }
 
-const WIDTH = 800;
-const HEIGHT = 800;
+const WIDTH = 400;
+const HEIGHT = 400;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 /**
@@ -31,7 +33,7 @@ export default function GallerySlider(props: Props) {
 
   const {
     page: {
-      product: { name, isVariantOf, image: pImages },
+      product: { name, isVariantOf, image: pImages, productID },
     },
   } = props;
 
@@ -39,12 +41,21 @@ export default function GallerySlider(props: Props) {
   const filtered = groupImages.filter((img) => name?.includes(img.alternateName || ""));
   const images = filtered.length > 0 ? filtered : groupImages;
 
+  // Criar o item usando mapProductToAnalyticsItem
+  const item = mapProductToAnalyticsItem({
+    product: props.page.product,
+  });
+
   return (
     <>
-      <div id={id} class="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-[min-content_1fr] gap-5">
+      <div id={id} class="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-[min-content_1fr] ">
         {/* Image Slider */}
         <div class="col-start-1 col-span-1 sm:col-start-2">
           <div class="relative  h-min flex-grow">
+            <div className="absolute top-1 lg:right-[5rem] right-1">
+              <WishlistButton item={item} />
+            </div>
+
             <Slider class="carousel carousel-center gap-6 w-full">
               {images.map((img, index) => (
                 <Slider.Item index={index} class="carousel-item justify-center w-full">
@@ -64,14 +75,14 @@ export default function GallerySlider(props: Props) {
             </Slider>
 
             <Slider.PrevButton
-              class="no-animation absolute -left-2 md:left-0 top-1/2 btn btn-circle hover:bg-transparent border-none shadow-inherit hover:opacity-80 hover:border-none bg-transparent disabled:invisible"
+              class="no-animation absolute  left-1 lg:left-0 top-1/2 btn btn-circle hover:bg-transparent border-none shadow-inherit hover:opacity-80 hover:border-none bg-transparent disabled:invisible"
               disabled
             >
               <Icon id="chevron-right" class="rotate-180" />
             </Slider.PrevButton>
 
             <Slider.NextButton
-              class="no-animation absolute lg:-right-2 md:right-0 top-1/2 btn btn-circle hover:bg-transparent border-none shadow-inherit hover:opacity-80 hover:border-none bg-transparent disabled:invisible"
+              class="no-animation absolute right-1 lg:right-0 top-1/2 btn btn-circle hover:bg-transparent border-none shadow-inherit hover:opacity-80 hover:border-none bg-transparent disabled:invisible"
               disabled={images.length < 2}
             >
               <Icon id="chevron-right" />

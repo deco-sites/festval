@@ -17,7 +17,7 @@ function Header({ title, cta }: Props) {
 
   return (
     <div class={clx("flex justify-between items-center gap-2", "px-5 sm:px-0")}>
-      <span class="text-xl sm:text-xl font-semibold">{title}</span>
+      <span class="lg:text-xl text-base font-semibold">{title}</span>
       {cta && (
         <a class="text-sm flex gap-2 items-center hover:opacity-80 font-medium text-[#282828]" href={cta}>
           Veja mais

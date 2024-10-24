@@ -7,7 +7,7 @@ import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
 import ShippingSimulationForm from "../shipping/Form.tsx";
-import WishlistButton from "../wishlist/WishlistButton.tsx";
+
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
@@ -24,7 +24,7 @@ function ProductInfo({ page }: Props) {
   }
 
   const { breadcrumbList, product } = page;
-  const { productID, offers, isVariantOf } = product;
+  const { productID, offers, isVariantOf, gtin } = product;
   const description = product.description || isVariantOf?.description;
   const title = isVariantOf?.name ?? product.name;
 
@@ -66,7 +66,8 @@ function ProductInfo({ page }: Props) {
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
       {/* Product Name */}
-      <span class={clx("text-xl font-bold text-[#373737]", "pt-4")}>{title}</span>
+      <span class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4")}>{title}</span>
+      <div className="pt-1 text-[#646072] lg:text-lg text-sm">Ref.{gtin}</div>
 
       {/* Prices */}
       <div class="flex flex-col items-start gap-1 pt-4">
@@ -87,16 +88,18 @@ function ProductInfo({ page }: Props) {
             <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
           </div>
 
-          <div class="w-2/4">{/* <QuantitySelector min={1} max={100} /> */}</div>
+          <div class="lg:w-2/4 lg:block hidden">
+            <QuantitySelector min={1} max={100} />
+          </div>
         </div>
       </div>
 
-      {/* Sku Selector */}
-      {hasValidVariants && (
+      {/* Sku Selector
+      {hasValidVariants && ( 
         <div className="mt-4 sm:mt-8">
           <ProductSelector product={product} />
         </div>
-      )}
+      )} */}
 
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
@@ -109,7 +112,6 @@ function ProductInfo({ page }: Props) {
               class="btn btn-primary no-animation rounded-[11px]"
               disabled={false}
             />
-            {/* <WishlistButton item={item} /> */}
           </>
         ) : (
           <OutOfStock productID={productID} />
@@ -120,7 +122,7 @@ function ProductInfo({ page }: Props) {
 
       {/* Description card */}
       <div class="mt-4 sm:mt-6">
-        <span className="text-lg font-bold text-[##373737]">Detalhes do produto</span>
+        <span className="lg:text-lg text-base font-bold text-[##373737]">Detalhes do produto</span>
         <span class="text-sm">{description && <div class="mt-2" dangerouslySetInnerHTML={{ __html: description }} />}</span>
       </div>
     </div>
