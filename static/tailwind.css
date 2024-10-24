@@ -4516,6 +4516,9 @@ details.collapse summary::-webkit-details-marker {
   --tw-border-opacity: 1;
   border-color: rgb(227 227 227 / var(--tw-border-opacity));
 }
+.border-\[\#d8d8d886\] {
+  border-color: #d8d8d886;
+}
 .border-\[\#d8d8d8\] {
   --tw-border-opacity: 1;
   border-color: rgb(216 216 216 / var(--tw-border-opacity));
@@ -5166,6 +5169,9 @@ details.collapse summary::-webkit-details-marker {
 .opacity-70 {
   opacity: 0.7;
 }
+.opacity-90 {
+  opacity: 0.9;
+}
 .mix-blend-multiply {
   mix-blend-mode: multiply;
 }
@@ -5641,6 +5647,10 @@ details.collapse summary::-webkit-details-marker {
 .hover\:text-accent-content:hover {
   --tw-text-opacity: 1;
   color: var(--fallback-ac,oklch(var(--ac)/var(--tw-text-opacity)));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
 }
 
 .hover\:opacity-80:hover {

@@ -54,8 +54,8 @@ function WishlistButton({ item, variant = "full" }: Props) {
         class={clx(
           "btn no-animation",
           variant === "icon"
-            ? "btn-circle hover:opacity-80 border-none shadow-inherit btn-sm bg-white hover:bg-white hover:border-none"
-            : "rounded btn-accent bg-white hover:opacity-80 hover:bg-white  border-none shadow-inherit font-normal gap-2 w-full text-[#9F9F9F]"
+            ? "btn-circle border-none shadow-inherit btn-sm bg-white opacity-90 hover:opacity-100 hover:bg-white hover:border-none"
+            : "rounded btn-accent bg-white opacity-90 hover:opacity-100 hover:bg-white  border-none shadow-inherit font-normal gap-2 w-full text-[#9F9F9F]"
         )}
       >
         {variant === "full" && <span class="[.htmx-request_&]:hidden">Tornar Favorito</span>}

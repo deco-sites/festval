@@ -79,7 +79,7 @@ const Desktop = ({ navItems, logo, searchbar, loading, variant, icon, modalInitP
       </div>
     </Modal> */}
 
-    <div class="flex flex-col gap-2 pt-5 border-b shadow">
+    <div class="flex flex-col gap-2 pt-2 border-b shadow">
       <div class="custom-container flex justify-between items-center w-full">
         <div class="flex flex-1">
           <a href="/" aria-label="Store logo">
@@ -159,7 +159,7 @@ const Mobile = ({ logo, searchbar, navItems, modalInitProps, loading }: Props) =
             // style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} width={logo.width || 100} height={logo.height || 13} />
+            <Image class="!m-w-[120px]" src={logo.src} alt={logo.alt} width={120} height={logo.height || 13} />
           </a>
         )}
 
