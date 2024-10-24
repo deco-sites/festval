@@ -82,8 +82,67 @@
           "name": "Mercearia"
         },
         {
-          "image": [],
-          "children": [],
+          "image": [
+            {
+              "image": [],
+              "video": [],
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a8762de7-945b-4479-8a14-850fa0348f3b/banner-menu.png"
+            }
+          ],
+          "children": [
+            {
+              "image": [],
+              "children": [
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Diversos"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Nestlé"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Dolce Gusto"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Ver mais"
+                }
+              ],
+              "name": "Marca"
+            },
+            {
+              "image": [],
+              "children": [
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Café"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Bombom e Chocolate"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Molho"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "name": "Ver mais"
+                }
+              ],
+              "name": "Categoria"
+            }
+          ],
           "name": "World"
         }
       ],
