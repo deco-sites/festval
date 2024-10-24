@@ -5117,6 +5117,10 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.py-\[3px\] {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 .pb-1 {
   padding-bottom: 0.25rem;
 }
