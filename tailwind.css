@@ -24,6 +24,17 @@
 }
 
 @layer components {
+  .custom-select {
+    -webkit-appearance: none; /* Safari e Chrome */
+    -moz-appearance: none; /* Firefox */
+    appearance: none;
+    background-color: white; /* Definir a cor de fundo */
+  }
+
+  .custom-select::-ms-expand {
+    display: none; /* Remover seta para o Internet Explorer */
+  }
+
   .custom-container {
     max-width: 1700px;
     margin-left: auto;

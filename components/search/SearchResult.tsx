@@ -27,6 +27,8 @@ export interface Props {
   startingPage?: 0 | 1;
   /** @hidden */
   partial?: "hideMore" | "hideLess";
+  /** @description Termo de busca */
+  searchTerm?: string;
 }
 function NotFound() {
   return (
@@ -149,7 +151,7 @@ function Result(props: SectionProps<typeof loader>) {
   const container = useId();
   const controls = useId();
   const device = useDevice();
-  const { startingPage = 0, url, partial } = props;
+  const { startingPage = 0, url, partial, searchTerm } = props;
   const page = props.page!;
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo?.recordPerPage || products.length;
@@ -182,12 +184,14 @@ function Result(props: SectionProps<typeof loader>) {
   const sortBy = sortOptions.length > 0 && <Sort sortOptions={sortOptions} url={url} />;
   return (
     <>
-      <div id={container} {...viewItemListEvent} class="w-full custom-container">
+      <div id={container} {...viewItemListEvent} class="w-full ">
         {partial ? (
           <PageResult {...props} />
         ) : (
-          <div class="container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0">
-            <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+          <div class="container  custom-container  flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0">
+            <div class="flex md:gap-10 items-center">
+              <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+            </div>
 
             {device === "mobile" && (
               <Drawer
@@ -221,7 +225,7 @@ function Result(props: SectionProps<typeof loader>) {
               </Drawer>
             )}
 
-            <div class="grid place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
+            <div class="grid md:gap-4 place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
               {device === "desktop" && (
                 <aside class="place-self-start flex flex-col gap-9">
                   <span class="text-base font-semibold h-12 flex items-center">Filtros</span>
@@ -230,7 +234,12 @@ function Result(props: SectionProps<typeof loader>) {
                 </aside>
               )}
 
-              <div class="flex flex-col gap-9">
+              <div class="flex flex-col gap-5">
+                {searchTerm && (
+                  <div class="text-sm text-gray-600 flex flex-col">
+                    Você buscou por <span class="font-semibold text-[#282828] md:text-lg">{searchTerm}</span>
+                  </div>
+                )}
                 {device === "desktop" && (
                   <div class="flex justify-between items-center">
                     {results}
@@ -260,9 +269,14 @@ function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
   return <Result {...props} page={page} />;
 }
 export const loader = (props: Props, req: Request) => {
+  const url = new URL(req.url);
+  const searchTerm = url.searchParams.get("q") || ""; // Extrai o termo de busca da URL
+
   return {
     ...props,
     url: req.url,
+    searchTerm,
   };
 };
+
 export default SearchResult;

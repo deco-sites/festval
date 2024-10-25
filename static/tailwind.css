@@ -4301,6 +4301,9 @@ details.collapse summary::-webkit-details-marker {
 .w-12 {
   width: 3rem;
 }
+.w-2 {
+  width: 0.5rem;
+}
 .w-4 {
   width: 1rem;
 }
@@ -4510,6 +4513,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .rotate-180 {
   --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.rotate-90 {
+  --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .rotate-\[-180deg\] {
@@ -4930,6 +4937,9 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[\#f8f8f8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+}
+.bg-\[\] {
+  background-color: ;
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
@@ -5418,6 +5428,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[22px\] {
   line-height: 22px;
 }
+.leading-normal {
+  line-height: 1.5;
+}
 .tracking-\[-2\.4px\] {
   letter-spacing: -2.4px;
 }
@@ -5835,6 +5848,7 @@ details.collapse summary::-webkit-details-marker {
   .sm\:carousel-end .carousel-item {
     scroll-snap-align: end;
   }
+
   .sm\:custom-container {
     max-width: 1700px;
     margin-left: auto;
@@ -6460,6 +6474,10 @@ details.collapse summary::-webkit-details-marker {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:gap-20 {
     gap: 5rem;
   }
@@ -6511,6 +6529,11 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1.5rem;
   }
 
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -6533,6 +6556,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:right-\[5rem\] {
     right: 5rem;
+  }
+
+  .lg\:m-2 {
+    margin: 0.5rem;
   }
 
   .lg\:mx-auto {
@@ -6640,6 +6667,11 @@ details.collapse summary::-webkit-details-marker {
     padding: 0.5rem !important;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -6681,6 +6713,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .group:hover .lg\:group-hover\:opacity-100 {
