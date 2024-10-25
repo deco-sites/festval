@@ -6482,6 +6482,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 5rem;
   }
 
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
   .md\:p-2 {
     padding: 0.5rem;
   }
@@ -6579,8 +6583,16 @@ details.collapse summary::-webkit-details-marker {
     display: block;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:h-\[107px\] {

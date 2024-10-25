@@ -192,6 +192,11 @@ function Result(props: SectionProps<typeof loader>) {
             <div class="flex md:gap-10 items-center">
               <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
             </div>
+            {searchTerm && (
+              <div class="text-sm text-gray-600 flex flex-col  lg:hidden">
+                Você buscou por <span class="font-semibold text-[#282828] md:text-lg">{searchTerm}</span>
+              </div>
+            )}
 
             {device === "mobile" && (
               <Drawer
@@ -236,7 +241,7 @@ function Result(props: SectionProps<typeof loader>) {
 
               <div class="flex flex-col gap-5">
                 {searchTerm && (
-                  <div class="text-sm text-gray-600 flex flex-col">
+                  <div class="text-sm text-gray-600 flex-col hidden lg:flex">
                     Você buscou por <span class="font-semibold text-[#282828] md:text-lg">{searchTerm}</span>
                   </div>
                 )}
