@@ -7,7 +7,11 @@
       "section": {
         "__resolveType": "commerce/sections/Seo/SeoPLPV2.tsx",
         "jsonLD": {
-          "__resolveType": "PLP Loader"
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "sort": "price:desc",
+          "fuzzy": "automatic",
+          "selectedFacets": [],
+          "count": 12
         }
       }
     },
@@ -28,6 +32,34 @@
           "selectedFacets": [],
           "count": 12
         }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "Oportunidades",
+        "cta": "/",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "count": 30,
+            "collection": "1486"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx"
       }
     },
     {
