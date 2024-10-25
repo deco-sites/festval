@@ -3,6 +3,7 @@ import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 import Image from "apps/website/components/Image.tsx";
+
 const onClick = (delta: number) => {
   // doidera!
   event!.stopPropagation();
@@ -11,6 +12,8 @@ const onClick = (delta: number) => {
   const input = button.parentElement?.querySelector<HTMLInputElement>(
     'input[type="number"]'
   )!;
+
+  console.log(input);
 
   const min = Number(input.min) || -Infinity;
   const max = Number(input.max) || Infinity;
@@ -27,6 +30,8 @@ const onClick = (delta: number) => {
   } else if (dataFieldset?.getAttribute("data-item-id")) {
     productId = dataFieldset.getAttribute("data-item-id")!;
   }
+
+  console.log(productId, input.value);
 
   if (productId) {
     window.STOREFRONT.CART.setQuantity(productId, Number(input.value));
