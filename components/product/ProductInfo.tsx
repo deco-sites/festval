@@ -13,7 +13,9 @@ import OutOfStock from "./OutOfStock.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import type { Product } from "apps/commerce/types.ts";
-import { useScript } from "@deco/deco/hooks";
+import { useDevice, useScript } from "@deco/deco/hooks";
+import AddToCartMobileButton from "./AddToCartMobileButton.tsx";
+import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
 
 interface Props {
   page: ProductDetailsPage | null;
@@ -94,6 +96,9 @@ const onLoad = (id: string) => {
 
 function ProductInfo({ page }: Props) {
   const id = useId();
+  const modalPreviewId = `modal-${useId()}`;
+
+  const device = useDevice();
 
   if (page === null) {
     throw new Error("Missing Product Details Page Info");
@@ -201,19 +206,34 @@ function ProductInfo({ page }: Props) {
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
         {availability === "https://schema.org/InStock" ? (
           <div class="add-cart-button-pdp">
-            <AddToCartButton
-              item={item}
-              seller={seller}
-              product={product}
-              inputId={`input-${id}`}
-              class="btn btn-primary no-animation rounded-[11px]"
-              disabled={false}
-            />
+            {device === "mobile" ? (
+              <AddToCartMobileButton
+                modalPreviewId={modalPreviewId}
+                class="btn btn-primary no-animation rounded-[11px]"
+                disabled={false}
+              />
+            ) : (
+              <AddToCartButton
+                item={item}
+                seller={seller}
+                product={product}
+                inputId={`input-${id}`}
+                class="btn btn-primary no-animation rounded-[11px]"
+                disabled={false}
+              />
+            )}
           </div>
         ) : (
           <OutOfStock productID={productID} />
         )}
       </div>
+
+      <ModalAddToCartMobile
+        id={modalPreviewId}
+        product={product}
+        seller={seller}
+        item={item}
+      />
 
       {/* Shipping Simulation */}
 
