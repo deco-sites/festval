@@ -1,5 +1,8 @@
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import type {
+  ImageObject,
+  SiteNavigationElement,
+} from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import Alert from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
@@ -40,9 +43,18 @@ export interface SectionProps {
   alerts?: HTMLWidget[];
   /**
    * @title Navigation items
-   * @description Navigation items used both on mobile and desktop menus
+   * @description Navigation items used desktop menus
    */
   navItems?: SiteNavigationElement[] | null;
+  /**
+   * @title Navigation items Mobile
+   * @description Navigation items used mobile menus
+   */
+  navItemsMobile?: SiteNavigationElement[] | null;
+  /**
+   * @title Navigation image mobile
+   */
+  imageBannerMobile?: ImageObject | null;
   /**
    * @title Searchbar
    * @description Searchbar configuration

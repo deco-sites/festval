@@ -7,6 +7,7 @@ import Icon from "../../components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 const onClick = (menuId: string) => {
   event!.stopPropagation();
@@ -20,6 +21,8 @@ const onClick = (menuId: string) => {
 const onClickSubMenu = (subMenuId: string | null) => {
   event!.stopPropagation();
 
+  const megaMenuItem = event!.currentTarget as HTMLButtonElement;
+
   if (subMenuId) {
     const megamenu = document.querySelector<HTMLDivElement>(".megamenu");
     const megaMenuItems =
@@ -27,6 +30,15 @@ const onClickSubMenu = (subMenuId: string | null) => {
 
     if (megamenu && megaMenuItems) {
       const subMenuWidth = megamenu.offsetWidth - megaMenuItems.offsetWidth;
+
+      const megaMenuItemsBgRemove =
+        megaMenuItems.querySelectorAll<HTMLButtonElement>("button");
+
+      megaMenuItemsBgRemove.forEach((button) => {
+        button.style.backgroundColor = "#FFF";
+      });
+
+      megaMenuItem.style.backgroundColor = "#D8D8D8";
 
       const allSubMenus = document.querySelectorAll<HTMLDivElement>(".submenu");
       allSubMenus.forEach((menu) => {
@@ -67,46 +79,65 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
       {children && children.length > 0 && (
         <div
           id={menuId}
-          class="megamenu custom-container p-0 fixed hidden flex bg-base-100 z-40 gap-6 border-t-2 border-b-2 border-base-200 w-screen h-full max-h-[607px]"
+          class="megamenu custom-container p-0 fixed hidden flex bg-base-100 z-40 gap-6 border-t-2 border-b-2 border-base-200 w-screen h-full max-h-[507px]  2xl:max-h-[607px]"
           style={{
             top: "10px",
-            marginTop: "131px",
+            marginTop: "118px",
           }}
         >
-          <ul class="megamenu-items item border-r border-[#707070] w-[413px]">
+          <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px]  max-h-[507px]  2xl:max-h-[607px] overflow-y-scroll">
             {children.map((node) => (
-              <li class="px-[13px] py-[15px]">
+              <li>
                 <button
                   hx-on:click={useScript(onClickSubMenu, node!.name || null)}
-                  class="hover:opacity-80 bg-none border-none flex justify-between items-center"
+                  class="text-base font-normal bg-none flex justify-between items-center w-full px-[13px] py-[15px] border-b border-[#d8d8d8]"
                   href={node.url}
                 >
                   <span>{node.name}</span>
-                  <span>{">"}</span>
+                  <span>
+                    <Image
+                      src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c9248193-966b-4090-b793-af09d677027a/arrow-right.svg"
+                      width={7}
+                      height={13}
+                    />
+                  </span>
                 </button>
 
                 <div
                   id={node.name}
-                  class="submenu absolute top-[10px] right-0 hidden flex justify-between p-[44px] pt-[30px]"
+                  class="submenu absolute top-[10px] right-0 hidden flex justify-between p-[44px] pt-[30px] "
                 >
-                  <ul class="flex gap-36 flex-wrap max-h-[532px] overflow-y-scroll">
+                  <ul class="grid grid-cols-2 gap-36 flex-wrap max-h-[407px] 2xl:max-h-[532px] overflow-y-scroll">
                     {node.children?.map((leaf) => (
                       <>
                         <li>
-                          <a class="hover:opacity-80" href={leaf.url}>
-                            <span class="text-xs">{leaf.name}</span>
-                          </a>
+                          <h2 class="text-lg font-bold">{leaf.name}</h2>
 
                           {leaf.children &&
-                            leaf.children.map((subleaf) => (
+                            leaf.children.map((subleaf, index) => (
                               <ul>
                                 <li>
-                                  <a
-                                    class="hover:opacity-80"
-                                    href={subleaf.url}
-                                  >
-                                    <span class="text-xs">{subleaf.name}</span>
-                                  </a>
+                                  {leaf.children &&
+                                  index !== leaf.children.length - 1 &&
+                                  subleaf.name !== "Ver mais" ? (
+                                    <a
+                                      class="text-base font-normal"
+                                      href={subleaf.url}
+                                    >
+                                      <span class="text-xs">
+                                        {subleaf.name}
+                                      </span>
+                                    </a>
+                                  ) : (
+                                    <a
+                                      class="text-base font-normal underline text-[#827E8F]"
+                                      href={subleaf.url}
+                                    >
+                                      <span class="text-xs">
+                                        {subleaf.name}
+                                      </span>
+                                    </a>
+                                  )}
                                 </li>
                               </ul>
                             ))}
@@ -118,7 +149,12 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                     node.image &&
                     node.image.length > 0 &&
                     typeof node.image[0].url === "string" && (
-                      <Image src={node.image[0].url} width={347} />
+                      <a href={node.image[0].contentUrl}>
+                        <img
+                          src={node.image[0].url}
+                          class="w-full max-h-[407px] 2xl:max-h-[532px]"
+                        />
+                      </a>
                     )}
                 </div>
               </li>
