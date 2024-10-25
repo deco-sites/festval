@@ -12,7 +12,7 @@ import { useId } from "../../sdk/useId.ts";
 export interface Item {
   image: ImageWidget;
   href: string;
-  label: string;
+  label?: string;
 }
 
 export interface Props extends SectionHeaderProps {
@@ -22,11 +22,11 @@ export interface Props extends SectionHeaderProps {
 function Card({ image, href, label }: Item) {
   const device = useDevice(); // Detecta se é mobile ou desktop
 
-  const size = device === "mobile" ? 90 : 121; // Tamanhos dinâmicos
+  const size = device === "mobile" ? 90 : 122; // Tamanhos dinâmicos
   return (
     <a href={href} class="flex flex-col items-center justify-center gap-2">
       <Image class="rounded-xl" src={image} alt={label} width={size} height={size} loading="lazy" />
-      <span class="font-medium text-sm">{label}</span>
+      {label && <span class="font-medium text-sm">{label}</span>}
     </a>
   );
 }
@@ -48,8 +48,12 @@ function CategorySlider({ title, items }: Props) {
           gridTemplateColumns: hasArrows ? "min-content 1fr min-content" : "1fr",
         }}
       >
-        <div class="overflow-x-auto">
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 w-full">
+        <div class={`overflow-x-auto `}>
+          <Slider
+            class={`carousel carousel-center sm:carousel-end gap-5 w-full ${
+              items.length < 12 ? "lg:justify-center justify-start" : ""
+            } `}
+          >
             {items.map((item, index) => (
               <Slider.Item index={index} class={clx("carousel-item", "first:pl-5 first:sm:pl-0", "last:pr-5 last:sm:pr-0")}>
                 <Card {...item} />
