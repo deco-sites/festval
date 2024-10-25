@@ -1358,19 +1358,13 @@
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
         "banners": [
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/392f56e0-4138-4e09-ba0e-3678e4daf9ba/BANNER-OFERTAS-SEGTER.jpg",
-            "alt": "Segunda ",
-            "href": "/"
-          },
-          {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3701f449-96c4-47d1-bea2-95ea99dde75c/FESTVAL-NOVO-APP-BANNER-528x465-ADEGA.png",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cb23208f-2b92-4d47-8e1e-ba5d9127ea87/ADEGA.jpg",
             "alt": "Adega",
             "href": "/"
           },
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c551c33b-00e2-4c80-83d2-0194dc3a070e/FESTVAL-NOVO-APP-BANNER-528x465-AC_OUGUE.png",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/37e0d270-825d-47da-8457-06ed6ae469ca/ACOUGUE.jpg",
             "alt": "840",
             "href": "/"
@@ -1425,19 +1419,19 @@
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
         "banners": [
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6eafaf5b-8992-4b52-8ded-7e170e19c715/BANNER-OFERTAS-QUAQUI.jpg",
             "alt": "hortifruti",
-            "href": "/"
+            "href": "/",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6ee68382-ebd5-4551-ae82-b19203fa1d25/churras.jpg"
           },
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/62700074-7f98-4cfb-902b-f7324906b6f6/pepsi.jpg",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b813584e-46c3-4a3d-b5a3-48aaa6b4c083/BANNER-DE-OFERTAS-M-ALCATRA.jpg",
             "alt": "alcatra",
             "href": "/"
           },
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/be59160c-48b7-48a7-be85-25af10cdf3a2/barril_heineken.jpg",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f35df778-d64f-44df-9e08-489def7b5e89/BANNER-DE-OFERTAS-M-MELLITA.jpg",
             "href": "/",
             "alt": "Leve 3 pague 2"
@@ -1492,13 +1486,13 @@
         "__resolveType": "site/sections/Images/ImageGallery.tsx",
         "banners": [
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee5276ef-8026-4eb5-b142-2396a0c0ce79/Grupo-3924.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/039fd766-52f0-4590-8781-13070cc1b090/FESTVAL-NOVO-APP-BANNER-1080x465-MAMMA_BIA.png",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f334b839-2f3e-4e43-b040-d39934858842/MAMMA-BIA.jpg",
             "alt": "mamma bia",
             "href": "/"
           },
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bba26047-5316-4767-8b82-b42327d3c307/BANNER_M_NINHO.jpg",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/337523ed-8844-413e-9c62-5b21e9a3a13a/Ninho-visibilidade.jpg",
             "alt": "Ninho",
             "href": "/"
@@ -1509,7 +1503,8 @@
             "alt": "Fanta",
             "href": "/"
           }
-        ]
+        ],
+        "inverted": true
       }
     },
     {

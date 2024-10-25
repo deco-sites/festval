@@ -11,8 +11,10 @@ interface Banner {
   desktop?: ImageWidget;
   /** @description Image alt texts */
   alt: string;
-  /** @description Adicione um link */
+  /** @description Adicione um link para o banner desktop */
   href: string;
+  /** @description Adicione um link para o banner mobile */
+  hrefMobile?: string;
 }
 
 interface Props {
@@ -21,6 +23,8 @@ interface Props {
    * @minItems 2
    */
   banners?: Banner[];
+  /** @description Inverter o layout para mostrar o banner grande abaixo dos dois menores */
+  inverted?: boolean;
 }
 
 function Banner({
@@ -28,11 +32,15 @@ function Banner({
   desktop,
   alt,
   href,
+  hrefMobile,
   index,
   isSingleBanner,
 }: Banner & { index: number; isSingleBanner?: boolean }) {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const bannerHref = isMobile && hrefMobile ? hrefMobile : href;
+
   return (
-    <a href={href} className="overflow-hidden">
+    <a href={bannerHref} className="overflow-hidden">
       <Picture>
         {/* Mobile Source */}
         {isSingleBanner ? (
@@ -62,7 +70,7 @@ function Banner({
   );
 }
 
-function Gallery({ banners = [] }: Props) {
+function Gallery({ banners = [], inverted = false }: Props) {
   return (
     <div className="bg-[#f8f8f8] py-4">
       <Section.Container className="custom-container md:p-2">
@@ -75,13 +83,13 @@ function Gallery({ banners = [] }: Props) {
             ))}
           </div>
         ) : (
-          <div className="flex flex-col gap-3">
-            {/* Banner grande no topo */}
+          <div className={`flex flex-col gap-3 ${inverted ? "flex-col-reverse" : ""}`}>
+            {/* Banner grande (inverter caso inverted esteja true) */}
             <div className="w-full">
               <Banner {...banners[0]} index={0} />
             </div>
 
-            {/* Dois banners menores embaixo */}
+            {/* Dois banners menores */}
             <div className="grid grid-cols-2 gap-3">
               {banners.slice(1).map((banner, index) => (
                 <div key={index}>
