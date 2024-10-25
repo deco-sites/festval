@@ -72,15 +72,31 @@ const onLoad = (id: string) => {
 };
 
 const onClick = () => {
-  event?.preventDefault();
+  event?.stopPropagation();
 
   const button = event?.currentTarget as HTMLButtonElement;
   const modal = button?.closest(".modal");
   const children = modal?.querySelector<HTMLDivElement>("div");
 
-  if (modal && children && modal.classList.contains("modal-open")) {
+  if (children && !children.classList.contains("translate-y-[100%]")) {
+    children.classList.add("translate-y-[100%]");
+  }
+
+  if (modal && modal.classList.contains("modal-open")) {
     modal.classList.remove("modal-open");
-    children.classList.toggle("translate-y-[100%]");
+  }
+};
+
+const onClickOverlay = (id: string) => {
+  event?.stopPropagation();
+
+  const modal = document.getElementById(id);
+  const children = modal?.querySelector<HTMLDivElement>("div");
+  if (children && !children.classList.contains("translate-y-[100%]")) {
+    children.classList.add("translate-y-[100%]");
+  }
+  if (modal && modal.classList.contains("modal-open")) {
+    modal.classList.remove("modal-open");
   }
 };
 
@@ -117,6 +133,7 @@ function ModalAddToCartMobile(props: Props) {
     <div
       id={id}
       class="modal fixed bottom inset-0 z-50 flex justify-center items-end"
+      hx-on:click={useScript(onClickOverlay, id)}
     >
       <div
         class={clx(
@@ -125,11 +142,8 @@ function ModalAddToCartMobile(props: Props) {
           "translate-y-[100%]"
         )}
       >
-        <div
-          class="flex justify-center pt-[9px] pb-[33px]"
-          hx-on:click={useScript(onClick)}
-        >
-          <button type="button p-2">
+        <div class="flex justify-center pt-[9px] pb-[33px]">
+          <button type="button p-2" hx-on:click={useScript(onClick)}>
             <Image
               src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a6c84a7f-c6b5-452d-b2bc-53aa91ee5efd/arrow-down.svg"
               width={13}
@@ -216,6 +230,7 @@ function ModalAddToCartMobile(props: Props) {
                   seller={seller}
                   product={product}
                   inputId={`input-${id}`}
+                  modalPreviewMobile={id}
                   class="btn btn-primary no-animation rounded-[11px]"
                   disabled={false}
                 />

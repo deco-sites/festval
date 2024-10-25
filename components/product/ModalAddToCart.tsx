@@ -73,7 +73,7 @@ const onLoad = (id: string) => {
 };
 
 const onClick = () => {
-  event?.preventDefault();
+  event?.stopPropagation();
 
   const button = event?.currentTarget as HTMLButtonElement;
   const modal = button?.closest(".modal");
@@ -119,10 +119,16 @@ function ModalAddToCart(props: Props) {
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
       >
         <div
-          class="absolute top-[10px] right-[10px]"
+          class="absolute top-[11px] right-[11px]"
           hx-on:click={useScript(onClick)}
         >
-          <button type="button">X</button>
+          <button type="button">
+            <Image
+              src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2a8a1f1a-e676-44e1-b918-eb3c22226498/close-modal.svg"
+              width={21}
+              height={21}
+            />
+          </button>
         </div>
         <div>
           <figure class={clx("relative")} style={{ aspectRatio: ASPECT_RATIO }}>

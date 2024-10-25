@@ -10,8 +10,9 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   seller: string;
   item: AnalyticsItem;
   inputId: string;
+  modalPreviewMobile?: string;
 }
-const onClick = (inputId: string) => {
+const onClick = (inputId: string, modalPreviewMobile?: string) => {
   event?.stopPropagation();
 
   const input = document.getElementById(inputId);
@@ -35,6 +36,17 @@ const onClick = (inputId: string) => {
     button.innerText = "Adicionado ao carrinho";
 
     button.disabled = true;
+  }
+
+  if (modalPreviewMobile) {
+    const modal = document.getElementById(modalPreviewMobile);
+    const children = modal?.querySelector<HTMLDivElement>("div");
+    if (children && !children.classList.contains("translate-y-[100%]")) {
+      children.classList.add("translate-y-[100%]");
+    }
+    if (modal && modal.classList.contains("modal-open")) {
+      modal.classList.remove("modal-open");
+    }
   }
 };
 
@@ -108,7 +120,7 @@ const useAddToCart = ({ product, seller }: Props) => {
   return null;
 };
 function AddToCartButton(props: Props) {
-  const { product, item, class: _class, inputId } = props;
+  const { product, item, class: _class, inputId, modalPreviewMobile } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
 
@@ -128,7 +140,7 @@ function AddToCartButton(props: Props) {
         data-item-id={product.productID}
         data-attribute="add-to-cart"
         class={clx("flex-grow", _class?.toString())}
-        hx-on:click={useScript(onClick, inputId)}
+        hx-on:click={useScript(onClick, inputId, modalPreviewMobile)}
       >
         <Image
           src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d4f85472-4e59-4bc7-a533-792824538320/Repeticao-de-grade-2.svg"

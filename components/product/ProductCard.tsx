@@ -377,7 +377,7 @@ function ProductCard({
           JSON.stringify({ item, platformProps })
         )}
       >
-        <div class="flex justify-between">
+        <div class="flex justify-between items-end">
           <div class="flex flex-col items-start  pt-2">
             {listPrice && price && listPrice > price && (
               <span class="line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
@@ -389,12 +389,19 @@ function ProductCard({
             </span>
           </div>
 
-          <div class="hidden sm:group-hover:flex">
+          <div class="opacity-0 sm:group-hover:opacity-100">
             <button
-              class="btn"
+              class="flex items-center gap-[5.2px] pl-[7px] pr-[12px] py-[12.8px]  border border-[#A3A3A3] border-dashed rounded-[9px] text-xs font-normal text-[#55535D]"
               hx-on:click={useScript(onClick, modalPreviewId)}
             >
-              Pré-visualizar
+              <span>
+                <Image
+                  src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ad838ede-6496-44de-8f52-2414c9b82028/preview.svg"
+                  width={18}
+                  height={10}
+                />
+              </span>
+              <span>Pré-visualizar</span>
             </button>
           </div>
         </div>
