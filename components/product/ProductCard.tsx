@@ -15,6 +15,9 @@ import { useDevice, useScript } from "@deco/deco/hooks";
 import Icon from "../ui/Icon.tsx";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
+import ModalAddToCart from "./ModalAddToCart.tsx";
+import AddToCartMobileButton from "./AddToCartMobileButton.tsx";
+import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
 
 interface Props {
   product: Product;
@@ -39,7 +42,9 @@ const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const container = document.getElementById(id);
-    const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
+    const input = container?.querySelector<HTMLInputElement>(
+      'input[type="number"]'
+    );
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 1;
     if (!input) {
@@ -47,8 +52,12 @@ const onLoad = (id: string) => {
     }
     input.value = quantity.toString();
     // enable interactivity
-    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
-    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("button")
+      .forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("input")
+      .forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -56,7 +65,9 @@ const onLoad = (id: string) => {
       const item = cart.items.find((i) => (i as any).item_id === itemID);
 
       if (item) {
-        const buttonAddToCart = container!.querySelector<HTMLButtonElement>('button[data-attribute="add-to-cart"]');
+        const buttonAddToCart = container!.querySelector<HTMLButtonElement>(
+          'button[data-attribute="add-to-cart"]'
+        );
 
         if (buttonAddToCart) {
           buttonAddToCart.style.backgroundColor = "#fff";
@@ -71,9 +82,15 @@ const onLoad = (id: string) => {
   });
 };
 
-// const onClick = () => {
-//   console.log("onClick");
-// };
+const onClick = (id: string) => {
+  const modalPreview = document.getElementById(id);
+
+  if (modalPreview) {
+    if (!modalPreview.classList.contains("modal-open")) {
+      modalPreview.classList.add("modal-open");
+    }
+  }
+};
 
 // const onChange = () => {
 //   const input = event!.currentTarget as HTMLInputElement;
@@ -172,8 +189,15 @@ function expandPromoText(text: string): string | null {
   return null;
 }
 
-function ProductCard({ product, preload, itemListName, index, class: _class }: Props) {
+function ProductCard({
+  product,
+  preload,
+  itemListName,
+  index,
+  class: _class,
+}: Props) {
   const id = useId();
+  const modalPreviewId = `modal-${useId()}`;
   const device = useDevice();
 
   const { url, image: images, offers, isVariantOf } = product;
@@ -187,7 +211,10 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
-  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
+  const percent =
+    listPrice && price
+      ? Math.round(((listPrice - price) / listPrice) * 100)
+      : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
   const platformProps = useAddToCart({ product, seller });
@@ -227,13 +254,24 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
   }
 
   return (
-    <div {...event} class={clx("card gap-[19px] card-compact rounded-none group text-sm", _class)}>
+    <div
+      {...event}
+      class={clx(
+        "card gap-[19px] card-compact rounded-none group text-sm",
+        _class
+      )}
+    >
       <figure class={clx("relative")} style={{ aspectRatio: ASPECT_RATIO }}>
         {/* Product Images */}
         <a
           href={relativeUrl}
           aria-label="view product"
-          class={clx("absolute top-0 left-0", "grid grid-cols-1 grid-rows-1", "w-full", !inStock && "opacity-70")}
+          class={clx(
+            "absolute top-0 left-0",
+            "grid grid-cols-1 grid-rows-1",
+            "w-full",
+            !inStock && "opacity-70"
+          )}
         >
           <Image
             src={front.url!}
@@ -241,7 +279,11 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
             width={WIDTH}
             height={HEIGHT}
             style={{ aspectRatio: ASPECT_RATIO }}
-            class={clx("object-cover", "rounded w-full", "col-span-full row-span-full")}
+            class={clx(
+              "object-cover",
+              "rounded w-full",
+              "col-span-full row-span-full"
+            )}
             // sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -299,14 +341,10 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
 
       <div>
         <a href={relativeUrl} class="pt-5">
-          <span class="text-xs sm:text-sm font-normal flex text-left">{title}</span>
+          <span class="text-xs sm:text-sm font-normal flex text-left">
+            {title}
+          </span>
         </a>
-
-        {/* <div>
-          <button class="btn" hx-on:click={useScript(onClick)}>
-            Pré-visualizar
-          </button>
-        </div> */}
       </div>
 
       {/* SKU Selector */}
@@ -335,34 +373,78 @@ function ProductCard({ product, preload, itemListName, index, class: _class }: P
         id={id}
         class="flex-grow flex flex-col justify-end gap-[15px]"
         data-item-id={product.productID}
-        data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
+        data-cart-item={encodeURIComponent(
+          JSON.stringify({ item, platformProps })
+        )}
       >
-        <div class="flex flex-col items-start  pt-2">
-          {listPrice && price && listPrice > price && (
-            <span class="line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
-              {formatPrice(listPrice, offers?.priceCurrency)}
+        <div class="flex justify-between">
+          <div class="flex flex-col items-start  pt-2">
+            {listPrice && price && listPrice > price && (
+              <span class="line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
+                {formatPrice(listPrice, offers?.priceCurrency)}
+              </span>
+            )}
+            <span class="font-bold text-base sm:text-lg text-[#1A1A1A]">
+              {formatPrice(price, offers?.priceCurrency)}
             </span>
-          )}
-          <span class="font-bold text-base sm:text-lg text-[#1A1A1A]">{formatPrice(price, offers?.priceCurrency)}</span>
+          </div>
+
+          <div class="hidden sm:group-hover:flex">
+            <button
+              class="btn"
+              hx-on:click={useScript(onClick, modalPreviewId)}
+            >
+              Pré-visualizar
+            </button>
+          </div>
         </div>
 
         {device != "mobile" && <QuantitySelector min={1} max={100} />}
 
         <div>
-          <AddToCartButton
-            product={product}
-            seller={seller}
-            item={item}
-            inputId={id}
-            class={clx(
-              " bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full",
-              "hover:opacity-80 ease-in-out duration-300"
-            )}
-          />
+          {device === "mobile" ? (
+            <AddToCartMobileButton
+              modalPreviewId={modalPreviewId}
+              class={clx(
+                " bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full",
+                "hover:opacity-80 ease-in-out duration-300"
+              )}
+            />
+          ) : (
+            <AddToCartButton
+              product={product}
+              seller={seller}
+              item={item}
+              inputId={id}
+              class={clx(
+                " bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full",
+                "hover:opacity-80 ease-in-out duration-300"
+              )}
+            />
+          )}
         </div>
       </div>
 
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
+      {device === "mobile" ? (
+        <ModalAddToCartMobile
+          id={modalPreviewId}
+          product={product}
+          seller={seller}
+          item={item}
+        />
+      ) : (
+        <ModalAddToCart
+          id={modalPreviewId}
+          product={product}
+          seller={seller}
+          item={item}
+        />
+      )}
+
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+      />
     </div>
   );
 }

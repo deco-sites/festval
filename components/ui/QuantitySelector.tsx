@@ -13,8 +13,6 @@ const onClick = (delta: number) => {
     'input[type="number"]'
   )!;
 
-  console.log(input);
-
   const min = Number(input.min) || -Infinity;
   const max = Number(input.max) || Infinity;
 

@@ -24,9 +24,8 @@ interface AddToCartProps {
   seller: string;
 }
 
-const WIDTH = 326;
-const HEIGHT = 326;
-const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
+const WIDTH = 150;
+const HEIGHT = 150;
 
 const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
@@ -77,9 +76,11 @@ const onClick = () => {
 
   const button = event?.currentTarget as HTMLButtonElement;
   const modal = button?.closest(".modal");
+  const children = modal?.querySelector<HTMLDivElement>("div");
 
-  if (modal && modal.classList.contains("modal-open")) {
+  if (modal && children && modal.classList.contains("modal-open")) {
     modal.classList.remove("modal-open");
+    children.classList.toggle("translate-y-[100%]");
   }
 };
 
@@ -96,7 +97,7 @@ const useAddToCart = ({ product, seller }: AddToCartProps) => {
   return null;
 };
 
-function ModalAddToCart(props: Props) {
+function ModalAddToCartMobile(props: Props) {
   const { id, product, seller, item } = props;
   const { productID, url, image: images, offers, isVariantOf, gtin } = product;
   const description = product.description || isVariantOf?.description;
@@ -113,85 +114,90 @@ function ModalAddToCart(props: Props) {
   const platformProps = useAddToCart({ product, seller });
 
   return (
-    <div id={id} class="modal">
+    <div
+      id={id}
+      class="modal fixed bottom inset-0 z-50 flex justify-center items-end"
+    >
       <div
-        class="bg-base-100 absolute top-0 px-[85px] py-[60px] modal-box max-w-[1088px] rounded-lg flex gap-[70px]"
-        style={{ marginTop: HEADER_HEIGHT_MOBILE }}
+        class={clx(
+          "bg-[#FAFAFA] rounded-none w-full max-w-lg",
+          "transform transition-transform duration-300 ease-in-out",
+          "translate-y-[100%]"
+        )}
       >
         <div
-          class="absolute top-[10px] right-[10px]"
+          class="flex justify-center pt-[9px] pb-[33px]"
           hx-on:click={useScript(onClick)}
         >
-          <button type="button">X</button>
+          <button type="button p-2">
+            <Image
+              src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a6c84a7f-c6b5-452d-b2bc-53aa91ee5efd/arrow-down.svg"
+              width={13}
+              height={7}
+            />
+          </button>
         </div>
-        <div>
-          <figure class={clx("relative")} style={{ aspectRatio: ASPECT_RATIO }}>
+        <div class="bg-white p-[16px] flex gap-[8px]">
+          <figure class={clx("relative")}>
             {/* Product Images */}
             <a
               href={relativeUrl}
               aria-label="view product"
-              class={clx(
-                "grid grid-cols-1 grid-rows-1",
-                "w-full",
-                !inStock && "opacity-70"
-              )}
+              class={clx("w-full", !inStock && "opacity-70")}
             >
               <Image
                 src={front.url!}
                 alt={front.alternateName}
                 width={WIDTH}
                 height={HEIGHT}
-                style={{ aspectRatio: ASPECT_RATIO }}
-                class={clx(
-                  "object-cover",
-                  "rounded w-full",
-                  "col-span-full row-span-full"
-                )}
+                class={clx("rounded")}
                 // sizes="(max-width: 640px) 50vw, 20vw"
               />
             </a>
           </figure>
-        </div>
 
-        <div class="flex flex-col">
-          {/* Product Name */}
-          <div>
-            <span
-              class={clx(
-                "lg:text-xl sm:text-base font-bold text-[#373737]",
-                "pt-4"
-              )}
-            >
-              {title}
-            </span>
-            <div className="pt-1 text-[#646072] lg:text-lg text-sm">
-              Ref.{gtin}
+          <div class="flex flex-col justify-between">
+            {/* Product Name */}
+            <div>
+              <span
+                class={clx(
+                  "lg:text-xl sm:text-base font-bold text-[#373737]",
+                  "pt-4"
+                )}
+              >
+                {title}
+              </span>
+              <div className="pt-1 text-[#646072] lg:text-lg text-sm">
+                Ref.{gtin}
+              </div>
+            </div>
+            {/* Prices */}
+            <div className="flex flex-col border-t border-[#D9D9D9] pt-[8px]">
+              <div className="flex flex-row gap-3 items-center">
+                {listPrice && price && listPrice > price && (
+                  <span class="line-through text-[10px] font-normal text-gray-400">
+                    {formatPrice(listPrice, offers?.priceCurrency)}
+                  </span>
+                )}
+                {/* {listPrice && price && listPrice > price && percent > 0 && (
+                  <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34] text-center rounded px-3 py-1">
+                    -{percent}% OFF
+                  </span>
+                )} */}
+              </div>
+              <span class="text-xs font-bold text-base-400">
+                {formatPrice(price, offers?.priceCurrency)}
+              </span>
             </div>
           </div>
-          {/* Prices */}
-          <div class="flex flex-col items-start gap-1 pt-4">
-            <div className="flex flex-row w-full justify-between">
-              <div className="flex flex-col">
-                <div className="flex flex-row gap-3 items-center">
-                  {listPrice && price && listPrice > price && (
-                    <span class="line-through text-sm font-medium text-gray-400">
-                      {formatPrice(listPrice, offers?.priceCurrency)}
-                    </span>
-                  )}
-                  {listPrice && price && listPrice > price && percent > 0 && (
-                    <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34] text-center rounded px-3 py-1">
-                      -{percent}% OFF
-                    </span>
-                  )}
-                </div>
-                <span class="text-xl font-bold text-base-400">
-                  {formatPrice(price, offers?.priceCurrency)}
-                </span>
-              </div>
+        </div>
 
+        <div class="flex flex-col gap-[24px] px-[16px] py-[24px]">
+          {/* Quantity Selector */}
+          <div class="flex flex-col items-start gap-1 pt-4">
+            <div className="flex flex-row w-full justify-center">
               <div
                 id={`input-${id}`}
-                class="lg:w-2/4 lg:block hidden"
                 data-item-id={product.productID}
                 data-cart-item={encodeURIComponent(
                   JSON.stringify({ item, platformProps })
@@ -218,20 +224,6 @@ function ModalAddToCart(props: Props) {
               <OutOfStock productID={productID} />
             )}
           </div>
-          {/* Description card */}
-          <div class="mt-4 sm:mt-6">
-            <span className="lg:text-lg text-base font-bold text-[#373737]">
-              Detalhes do produto
-            </span>
-            <span class="text-sm">
-              {description && (
-                <div
-                  class="mt-2"
-                  dangerouslySetInnerHTML={{ __html: description }}
-                />
-              )}
-            </span>
-          </div>
         </div>
       </div>
       <script
@@ -242,4 +234,4 @@ function ModalAddToCart(props: Props) {
   );
 }
 
-export default ModalAddToCart;
+export default ModalAddToCartMobile;
