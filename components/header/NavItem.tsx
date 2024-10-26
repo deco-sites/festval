@@ -1,15 +1,23 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import { HEADER_HEIGHT_DESKTOP, NAVBAR_HEIGHT_DESKTOP } from "../../constants.ts";
+import {
+  HEADER_HEIGHT_DESKTOP,
+  NAVBAR_HEIGHT_DESKTOP,
+} from "../../constants.ts";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
 
   return (
     <li
-      class={["group flex items-center pr-5", children && children.length > 0 ? "has-submenu" : ""].join(" ")}
-      style={{ height: NAVBAR_HEIGHT_DESKTOP }}
+      class={[
+        "group flex items-center p-[0.625rem] pr-5",
+        children && children.length > 0 ? "has-submenu" : "",
+      ].join(" ")}
     >
-      <a href={url} class=" text-sm font-medium hover:opacity-80 ease-in-out duration-300 text-white">
+      <a
+        href={url}
+        class=" text-sm font-medium hover:opacity-80 ease-in-out duration-300 text-white"
+      >
         {name}
       </a>
 

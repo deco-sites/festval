@@ -1,8 +1,10 @@
 import { type ComponentChildren } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
-import Icon from "./Icon.tsx";
 import { useScript } from "@deco/deco/hooks";
+import type { ImageObject } from "apps/commerce/types.ts";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
+import Image from "apps/website/components/Image.tsx";
 export interface Props {
   open?: boolean;
   class?: string;
@@ -23,7 +25,13 @@ const script = (id: string) => {
   };
   addEventListener("keydown", handler);
 };
-function Drawer({ children, aside, open, class: _class = "", id = useId() }: Props) {
+function Drawer({
+  children,
+  aside,
+  open,
+  class: _class = "",
+  id = useId(),
+}: Props) {
   return (
     <>
       <div class={clx("drawer", _class)}>
@@ -38,29 +46,92 @@ function Drawer({ children, aside, open, class: _class = "", id = useId() }: Pro
 
         <div class="drawer-content">{children}</div>
 
-        <aside data-aside class={clx("drawer-side h-full z-40 overflow-hidden", "[[data-aside]&_section]:contents")}>
+        <aside
+          data-aside
+          class={clx(
+            "drawer-side h-full z-40 overflow-hidden",
+            "[[data-aside]&_section]:contents"
+          )}
+        >
           <label for={id} class="drawer-overlay" />
           {aside}
         </aside>
       </div>
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(script, id) }} />
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(script, id) }}
+      />
     </>
   );
 }
-function Aside({ title, drawer, children }: { title: string; drawer: string; children: ComponentChildren }) {
+
+function Aside({
+  banner,
+  drawer,
+  children,
+}: {
+  banner?: ImageObject | null;
+  drawer: string;
+  children: ComponentChildren;
+}) {
   return (
-    <div data-aside class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y" style={{ maxWidth: "100vw" }}>
-      <div class="flex justify-between items-center">
-        <h1 class="px-4 py-3">
-          <span class="font-medium text-2xl">{title}</span>
-        </h1>
-        <label for={drawer} aria-label="X" class="btn btn-ghost hover:opacity-80 hover:bg-transparent">
-          <Icon id="close" />
+    <div data-aside class="bg-base-100 h-full" style={{ maxWidth: "100vw" }}>
+      <div class="bg-[#F6F6F6] flex justify-between items-center relative p-[15px] h-[209px]">
+        {banner && banner.url && (
+          <div class="absolute bottom-0 right-0 z-10">
+            <Picture preload>
+              <Source
+                src={banner?.url}
+                width={154}
+                height={209}
+                media="(max-width: 767px)"
+              />
+              <img src={banner?.url} width={154} height={209} />
+            </Picture>
+          </div>
+        )}
+
+        <div class="z-30 flex flex-col gap-[33px]">
+          <div>
+            <h1>
+              <span class="font-bold text-[20px]">Olá, Vinicius</span>
+            </h1>
+            <span class="text-xs text-black">
+              Pronto para aproveitar nossa loja ?
+            </span>
+          </div>
+
+          <div>
+            <a href="#" class="flex gap[16px] items-center">
+              <span class="text-xs font-bold text-black">Minha conta</span>
+              <span>
+                <Image
+                  src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/20d08bc3-5426-43f6-a32c-57ff89678d22/Caminho-15.svg"
+                  width={6}
+                  height={10}
+                />
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <label
+          for={drawer}
+          aria-label="X"
+          class="absolute top-[10.9px] right-[9.6px] z-50 hover:opacity-80 hover:bg-transparent"
+        >
+          <Image
+            src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6a112ec7-7e9f-4271-a8fd-c0af27b3b934/close.svg"
+            width={25}
+            height={25}
+          />
         </label>
       </div>
       {children}
     </div>
   );
 }
+
 Drawer.Aside = Aside;
+
 export default Drawer;

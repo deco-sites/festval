@@ -1,69 +1,102 @@
-import Icon from "../../components/ui/Icon.tsx";
-import type { SiteNavigationElement } from "apps/commerce/types.ts";
+import type {
+  SiteNavigationElement,
+  SiteNavigationElementLeaf,
+} from "apps/commerce/types.ts";
+import SubDrawer from "../ui/SubDrawer.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   navItems?: SiteNavigationElement[];
 }
 
+function SubMenuItem({ item }: { item: SiteNavigationElementLeaf }) {
+  return (
+    <div>
+      <a
+        href={item.url}
+        class="flex justify-between items-center px-[15px] py-[16px] border-b border-[#D8D8D8]"
+      >
+        <div class="flex items-center gap-[5px]">
+          {item.image && item.image.length > 0 && item.image[0].url && (
+            <span>
+              <Image src={item.image[0].url} width={25} />
+            </span>
+          )}
+          <span>{item.name}</span>
+        </div>
+        <div>
+          <Image
+            src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6367b27c-92b8-4ff7-a9f9-689de3ff4f20/arrow-right-mobile.svg"
+            width={9}
+            height={13}
+          />
+        </div>
+      </a>
+    </div>
+  );
+}
+
 function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
-    <div class="collapse collapse-plus">
-      <input type="checkbox" />
-      <div class="collapse-title">{item.name}</div>
-      <div class="collapse-content">
-        <ul>
-          <li>
-            <a class="underline text-sm" href={item.url}>
-              Ver todos
-            </a>
-          </li>
-          {item.children?.map((node) => (
-            <li>
-              <MenuItem item={node} />
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div class="">
+      {item.children && item.children.length > 0 ? (
+        <>
+          {item.name && (
+            <SubDrawer
+              id={item.name}
+              aside={
+                <SubDrawer.SubAside drawer={item.name} id={item.name}>
+                  {item.children?.map((child) => (
+                    <SubMenuItem item={child} />
+                  ))}
+                </SubDrawer.SubAside>
+              }
+            />
+          )}
+
+          <div class="title">
+            <label
+              for={item.name}
+              class="flex justify-between items-center px-[15px] py-[16px] border-b border-[#D8D8D8]"
+              aria-label="open menu"
+            >
+              <div class="flex items-center gap-[5px]">
+                {item.image && item.image.length > 0 && item.image[0].url && (
+                  <span>
+                    <Image src={item.image[0].url} width={25} />
+                  </span>
+                )}
+                <span>{item.name}</span>
+              </div>
+              <div>
+                <Image
+                  src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6367b27c-92b8-4ff7-a9f9-689de3ff4f20/arrow-right-mobile.svg"
+                  width={9}
+                  height={13}
+                />
+              </div>
+            </label>
+          </div>
+        </>
+      ) : (
+        <SubMenuItem item={item} />
+      )}
     </div>
   );
 }
 
 function Menu({ navItems = [] }: Props) {
   return (
-    <div class="flex flex-col h-full overflow-y-auto" style={{ minWidth: "100vw" }}>
-      <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200 overflow-y-auto">
+    <div
+      class="flex flex-col h-full overflow-y-auto"
+      style={{ minWidth: "100vw" }}
+    >
+      <ul class="flex-grow flex flex-col divide-y divide-base-200 overflow-y-auto">
         {navItems.map((item) => (
-          <li class="text-slate-100">
+          <li>
             <MenuItem item={item} />
           </li>
         ))}
-      </ul>
-
-      <ul class="flex flex-col py-2 bg-base-200">
-        <li>
-          <a class="flex items-center gap-4 px-4 py-2" href="/wishlist">
-            <Icon id="favorite" />
-            <span class="text-sm">Lista de desejos</span>
-          </a>
-        </li>
-        <li>
-          <a class="flex items-center gap-4 px-4 py-2" href="https://www.deco.cx">
-            <Icon id="home_pin" />
-            <span class="text-sm">Nossas lojas</span>
-          </a>
-        </li>
-        <li>
-          <a class="flex items-center gap-4 px-4 py-2" href="https://www.deco.cx">
-            <Icon id="call" />
-            <span class="text-sm">Fale conosco</span>
-          </a>
-        </li>
-        <li>
-          <a class="flex items-center gap-4 px-4 py-2" href="https://www.deco.cx">
-            <Icon id="account_circle" />
-            <span class="text-sm">Minha conta</span>
-          </a>
-        </li>
       </ul>
     </div>
   );

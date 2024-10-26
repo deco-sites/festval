@@ -1,13 +1,9 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import {
-  HEADER_HEIGHT_DESKTOP,
-  NAVBAR_HEIGHT_DESKTOP,
-} from "../../constants.ts";
+import { NAVBAR_HEIGHT_DESKTOP } from "../../constants.ts";
 import Icon from "../../components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 const onClick = (menuId: string) => {
   event!.stopPropagation();
@@ -24,8 +20,6 @@ const onClick = (menuId: string) => {
 
 const onClickSubMenu = (subMenuId: string | null) => {
   event!.stopPropagation();
-
-  console.log("ta funfando", subMenuId);
 
   const megaMenuItem = event!.currentTarget as HTMLButtonElement;
 
@@ -69,15 +63,11 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
   return (
     <li
       class={[
-        "flex items-center pr-5 relative",
+        "flex items-center p-[0.625rem] pr-5 relative group",
         children && children.length > 0 ? "has-submenu" : "",
       ].join(" ")}
-      style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
-      <button
-        hx-on:click={useScript(onClick, menuId)}
-        class="flex gap-[13px] bg-none border-none text-sm font-medium hover:opacity-80 ease-in-out duration-300 text-white cursor-pointer"
-      >
+      <button class="flex gap-[13px] bg-none border-none text-sm font-medium hover:opacity-80 ease-in-out duration-300 text-white cursor-pointer ">
         <Icon id="burguer-white" />
         {name}
       </button>
@@ -86,19 +76,19 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
         <div>
           <div
             id={`overlay-${menuId}`}
-            class="fixed left-0 w-full h-full bg-[#646072] opacity-30 z-30 hidden"
+            class="fixed left-0 w-full h-full bg-[#646072] opacity-30 z-30 hidden group-hover:flex"
             style={{
               top: "10px",
-              marginTop: "118px",
+              marginTop: "114px",
             }}
           ></div>
           <div
             id={menuId}
-            class="megamenu custom-container p-0 fixed left-[4.5rem] 2xl:left-[6.25rem] xd hidden flex bg-base-100 z-40 gap-6 w-screen h-full max-h-[507px] 2xl:max-h-[607px]"
+            class="megamenu custom-container p-0 fixed left-[4.5rem] 2xl:left-[6.25rem] xd hidden group-hover:flex flex bg-base-100 z-40 gap-6 w-screen h-full max-h-[507px] 2xl:max-h-[607px]"
             style={{
               top: "10px",
               left: "51%",
-              marginTop: "118px",
+              marginTop: "114px",
               transform: "translateX(-50%)",
             }}
           >

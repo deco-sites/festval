@@ -83,6 +83,15 @@ const onClick = () => {
   }
 };
 
+const onClickOverlay = (id: string) => {
+  event?.stopPropagation();
+
+  const modal = document.getElementById(id);
+  if (modal && modal.classList.contains("modal-open")) {
+    modal.classList.remove("modal-open");
+  }
+};
+
 const useAddToCart = ({ product, seller }: AddToCartProps) => {
   const platform = usePlatform();
   // deno-lint-ignore no-unused-vars
@@ -113,7 +122,7 @@ function ModalAddToCart(props: Props) {
   const platformProps = useAddToCart({ product, seller });
 
   return (
-    <div id={id} class="modal">
+    <div id={id} hx-on:click={useScript(onClickOverlay, id)} class="modal">
       <div
         class="bg-base-100 absolute top-0 px-[85px] py-[60px] modal-box max-w-[1088px] rounded-lg flex gap-[70px]"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
