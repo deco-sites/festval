@@ -2,7 +2,7 @@ import type {
   SiteNavigationElement,
   SiteNavigationElementLeaf,
 } from "apps/commerce/types.ts";
-import SubDrawer from "../ui/SubDrawer.tsx";
+import SubDrawer from "../ui/MenuMobileSubDrawer.tsx";
 import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
@@ -19,7 +19,7 @@ function SubMenuItem({ item }: { item: SiteNavigationElementLeaf }) {
         <div class="flex items-center gap-[5px]">
           {item.image && item.image.length > 0 && item.image[0].url && (
             <span>
-              <Image src={item.image[0].url} width={25} />
+              <Image src={item.image[0].url} width={25} height={25} />
             </span>
           )}
           <span>{item.name}</span>

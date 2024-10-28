@@ -12,7 +12,7 @@ import NavItem from "../../components/header/NavItem.tsx";
 import Searchbar, {
   type SearchbarProps,
 } from "../../components/search/Searchbar/Form.tsx";
-import Drawer from "../../components/ui/Drawer.tsx";
+import MenuMobileDrawer from "../../components/ui/MenuMobileDrawer.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import {
   HEADER_HEIGHT_DESKTOP,
@@ -165,10 +165,10 @@ const Mobile = ({
   <>
     <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
 
-    <Drawer
+    <MenuMobileDrawer
       id={SIDEMENU_DRAWER_ID}
       aside={
-        <Drawer.Aside
+        <MenuMobileDrawer.Aside
           drawer={SIDEMENU_DRAWER_ID}
           banner={imageBannerMobile ?? null}
         >
@@ -183,7 +183,7 @@ const Mobile = ({
           ) : (
             <Menu navItems={navItemsMobile ?? []} />
           )}
-        </Drawer.Aside>
+        </MenuMobileDrawer.Aside>
       }
     />
 

@@ -4586,6 +4586,9 @@ details.collapse summary::-webkit-details-marker {
 .grid-rows-1 {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
+.grid-rows-\[auto_1fr\] {
+  grid-template-rows: auto 1fr;
+}
 .flex-row {
   flex-direction: row;
 }
