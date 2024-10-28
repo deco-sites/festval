@@ -5,56 +5,56 @@ import Image from "apps/website/components/Image.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
 
-const onClick = (menuId: string) => {
-  event!.stopPropagation();
+// const onClick = (menuId: string) => {
+//   event!.stopPropagation();
 
-  const menu = document.getElementById(menuId);
-  if (menu) {
-    menu.classList.toggle("hidden");
-  }
-  const overlay = document.getElementById(`overlay-${menuId}`);
-  if (overlay) {
-    overlay.classList.toggle("hidden");
-  }
-};
+//   const menu = document.getElementById(menuId);
+//   if (menu) {
+//     menu.classList.toggle("hidden");
+//   }
+//   const overlay = document.getElementById(`overlay-${menuId}`);
+//   if (overlay) {
+//     overlay.classList.toggle("hidden");
+//   }
+// };
 
-const onClickSubMenu = (subMenuId: string | null) => {
-  event!.stopPropagation();
+// const onClickSubMenu = (subMenuId: string | null) => {
+//   event!.stopPropagation();
 
-  const megaMenuItem = event!.currentTarget as HTMLButtonElement;
+//   const megaMenuItem = event!.currentTarget as HTMLButtonElement;
 
-  if (subMenuId) {
-    const megamenu = document.querySelector<HTMLDivElement>(".megamenu");
-    const megaMenuItems =
-      document.querySelector<HTMLUListElement>(".megamenu-items");
+//   if (subMenuId) {
+//     const megamenu = document.querySelector<HTMLDivElement>(".megamenu");
+//     const megaMenuItems =
+//       document.querySelector<HTMLUListElement>(".megamenu-items");
 
-    if (megamenu && megaMenuItems) {
-      const subMenuWidth = megamenu.offsetWidth - megaMenuItems.offsetWidth;
+//     if (megamenu && megaMenuItems) {
+//       const subMenuWidth = megamenu.offsetWidth - megaMenuItems.offsetWidth;
 
-      const megaMenuItemsBgRemove =
-        megaMenuItems.querySelectorAll<HTMLButtonElement>("button");
+//       const megaMenuItemsBgRemove =
+//         megaMenuItems.querySelectorAll<HTMLButtonElement>("button");
 
-      megaMenuItemsBgRemove.forEach((button) => {
-        button.style.backgroundColor = "#FFF";
-      });
+//       megaMenuItemsBgRemove.forEach((button) => {
+//         button.style.backgroundColor = "#FFF";
+//       });
 
-      megaMenuItem.style.backgroundColor = "#D8D8D8";
+//       megaMenuItem.style.backgroundColor = "#D8D8D8";
 
-      const allSubMenus = document.querySelectorAll<HTMLDivElement>(".submenu");
-      allSubMenus.forEach((menu) => {
-        if (!menu.classList.contains("hidden")) {
-          menu.classList.add("hidden");
-        }
-      });
+//       const allSubMenus = document.querySelectorAll<HTMLDivElement>(".submenu");
+//       allSubMenus.forEach((menu) => {
+//         if (!menu.classList.contains("hidden")) {
+//           menu.classList.add("hidden");
+//         }
+//       });
 
-      const subMenu = document.getElementById(subMenuId);
-      if (subMenu) {
-        subMenu.style.width = subMenuWidth + "px";
-        subMenu.classList.toggle("hidden");
-      }
-    }
-  }
-};
+//       const subMenu = document.getElementById(subMenuId);
+//       if (subMenu) {
+//         subMenu.style.width = subMenuWidth + "px";
+//         subMenu.classList.toggle("hidden");
+//       }
+//     }
+//   }
+// };
 
 function MegaMenu({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
@@ -73,10 +73,10 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
       </button>
 
       {children && children.length > 0 && (
-        <div>
+        <div class="hidden group-hover:flex">
           <div
             id={`overlay-${menuId}`}
-            class="fixed left-0 w-full h-full bg-[#646072] opacity-30 z-30 hidden group-hover:flex"
+            class="fixed left-0 w-full h-full bg-[#646072] opacity-30 z-30 pointer-events-none"
             style={{
               top: "10px",
               marginTop: "114px",
@@ -84,7 +84,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
           ></div>
           <div
             id={menuId}
-            class="megamenu custom-container p-0 fixed left-[4.5rem] 2xl:left-[6.25rem] xd hidden group-hover:flex flex bg-base-100 z-40 gap-6 w-screen h-full max-h-[507px] 2xl:max-h-[607px]"
+            class="megamenu custom-container p-0 fixed left-[4.5rem] 2xl:left-[6.25rem] xd  flex bg-base-100 z-40 gap-6 w-screen h-full max-h-[457px] 2xl:max-h-[607px]"
             style={{
               top: "10px",
               left: "51%",
@@ -92,12 +92,12 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
               transform: "translateX(-50%)",
             }}
           >
-            <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px]  max-h-[507px]  2xl:max-h-[607px] overflow-y-scroll">
+            <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px] max-h-[457px] 2xl:max-h-[607px] overflow-y-scroll">
               {children.map((node) => (
-                <li>
+                <li class="group-1">
                   <button
-                    hx-on:click={useScript(onClickSubMenu, node!.name || null)}
-                    class="text-base font-normal bg-none flex justify-between items-center w-full px-[13px] py-[15px] border-b border-[#d8d8d8]"
+                    //hx-on:click={useScript(onClickSubMenu, node!.name || null)}
+                    class="text-sm font-normal bg-none group-1-hover:bg-[#D8D8D8] flex justify-between items-center w-full px-[10px] py-[10px] border-b border-[#d8d8d8]"
                     href={node.url}
                   >
                     <span>{node.name}</span>
@@ -112,9 +112,9 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
 
                   <div
                     id={node.name}
-                    class="submenu absolute top-[10px] right-0 hidden flex justify-between p-[44px] pt-[30px] "
+                    class="submenu container-submenu absolute top-[10px] right-0 hidden flex justify-between p-[44px] pt-[30px] group-1-hover:flex"
                   >
-                    <ul class="grid grid-cols-2 gap-36 flex-wrap max-h-[407px] 2xl:max-h-[532px] overflow-y-scroll">
+                    <ul class="grid grid-cols-2 flex gap-36 flex-wrap max-h-[377px] 2xl:max-h-[532px] overflow-y-scroll">
                       {node.children?.map((leaf) => (
                         <>
                           <li>
@@ -159,7 +159,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                         <a href={node.image[0].contentUrl}>
                           <img
                             src={node.image[0].url}
-                            class="w-full max-h-[407px] 2xl:max-h-[532px]"
+                            class="w-full max-h-[377px] 2xl:max-h-[532px]"
                           />
                         </a>
                       )}

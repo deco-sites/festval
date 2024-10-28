@@ -1,7 +1,16 @@
 import daisyui from "daisyui";
 
 export default {
-  plugins: [daisyui],
+  plugins: [
+    daisyui,
+    function ({
+      addVariant,
+    }: {
+      addVariant: (name: string, css: string) => void;
+    }) {
+      addVariant("group-1-hover", ".group-1:hover &");
+    },
+  ],
   daisyui: { themes: [], logs: false },
   content: ["./**/*.tsx"],
   theme: {

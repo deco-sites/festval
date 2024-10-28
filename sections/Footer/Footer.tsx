@@ -116,18 +116,29 @@ function Footer({
   const device = useDevice();
 
   return (
-    <footer class="sm:px-0 sm:mt-10" style={{ backgroundColor: "#FFFFFF", borderTop: "1px solid #D8D8D8" }}>
+    <footer
+      class="sm:px-0 sm:mt-10"
+      style={{ backgroundColor: "#FFFFFF", borderTop: "1px solid #D8D8D8" }}
+    >
       <div class="sm:custom-container flex flex-col pt-[30px] sm:pt-12">
         {device === "mobile" ? (
           <>
             {social && social.socialItens && social.socialItens.length > 0 && (
               <div class="flex flex-col items-end px-[15px] mb-[38px]">
-                <h2 class="text-center sm:text-left font-bold text-sm	">{social.title}</h2>
+                <h2 class="text-center sm:text-left font-bold text-sm	">
+                  {social.title}
+                </h2>
                 <ul class="flex gap-4 mt-2">
                   {social.socialItens.map(({ image, href, alt }) => (
                     <li>
                       <a href={href}>
-                        <Image src={image} alt={alt} loading="lazy" width={36} height={36} />
+                        <Image
+                          src={image}
+                          alt={alt}
+                          loading="lazy"
+                          width={36}
+                          height={36}
+                        />
                       </a>
                     </li>
                   ))}
@@ -147,7 +158,10 @@ function Footer({
                   <ul class="flex flex-col gap-2">
                     {children.map(({ title, href }) => (
                       <li>
-                        <a class="lg:text-sm text-xs font-normal text-base-400" href={href}>
+                        <a
+                          class="lg:text-sm text-xs font-normal text-base-400"
+                          href={href}
+                        >
                           {title}
                         </a>
                       </li>
@@ -178,7 +192,10 @@ function Footer({
                   <ul class="flex flex-col gap-2 max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
                     {children.map(({ title, href }) => (
                       <li>
-                        <a class="lg:text-sm text-xs font-normal text-base-400" href={href}>
+                        <a
+                          class="lg:text-sm text-xs font-normal text-base-400"
+                          href={href}
+                        >
                           {title}
                         </a>
                       </li>
@@ -189,37 +206,48 @@ function Footer({
 
           {infos.map(({ title, href, children }, index) => (
             <li
-              class={`px-[16px] sm:p-0 ${device === "mobile" ? "bg-[#F8F8F8]" : ""} ${
+              class={`px-[16px] sm:p-0 ${
+                device === "mobile" ? "bg-[#F8F8F8]" : ""
+              } ${
                 index === 0 && device === "mobile" ? "pt-[16px]" : "pb-[16px]"
               }`}
             >
               <div class="flex flex-col gap-4">
                 <a
-                  class={`lg:text-base text-sm font-bold ${index === 1 ? "opacity-0" : ""} ${
-                    device === "mobile" ? "hidden" : ""
-                  }`}
+                  class={`lg:text-base text-sm font-bold ${
+                    index === 1 ? "opacity-0" : ""
+                  } ${device === "mobile" ? "hidden" : ""}`}
                   href={href}
                 >
                   {title}
                 </a>
                 <ul
                   class={`flex flex-col gap-2 ${
-                    index === 0 && device === "mobile" ? "border-b border-[#D8D8D8] pb-[15px]" : "pt-[15px]"
+                    index === 0 && device === "mobile"
+                      ? "border-b border-[#D8D8D8] pb-[15px]"
+                      : "pt-[15px]"
                   }`}
                 >
                   {children.map(({ title, subItems }) => (
                     <li>
-                      <p class="lg:text-base text-sm  font-bold text-base-400">{title}</p>
+                      <p class="lg:text-base text-sm  font-bold text-base-400">
+                        {title}
+                      </p>
                       {subItems && subItems.length > 0 && (
                         <ul class="flex flex-col gap-2">
                           {subItems.map(({ href, text }) => (
                             <li>
                               {href ? (
-                                <a class="lg:text-sm text-xs font-normal text-base-400 underline" href={href}>
+                                <a
+                                  class="lg:text-sm text-xs font-normal text-base-400 underline"
+                                  href={href}
+                                >
                                   {text}
                                 </a>
                               ) : (
-                                <span class="lg:text-sm text-xs font-normal text-base-400">{text}</span>
+                                <span class="lg:text-sm text-xs font-normal text-base-400">
+                                  {text}
+                                </span>
                               )}
                             </li>
                           ))}
@@ -236,50 +264,82 @@ function Footer({
         {device !== "mobile" ? (
           <>
             <div class="flex flex-col sm:flex-row gap-10 justify-between items-start">
-              {paymentMethods && paymentMethods.socialItens && paymentMethods.socialItens.length > 0 && (
-                <div class="flex flex-col items-center sm:items-start">
-                  <h2 class="text-center sm:text-left font-bold text-base ">{paymentMethods.title}</h2>
-                  <ul class="flex gap-4 mt-4">
-                    {paymentMethods.socialItens.map(({ image, href, alt }) => (
-                      <li>
-                        <a href={href}>
-                          <Image src={image} alt={alt} loading="lazy" width={41} height={28} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              {paymentMethods &&
+                paymentMethods.socialItens &&
+                paymentMethods.socialItens.length > 0 && (
+                  <div class="flex flex-col items-center sm:items-start">
+                    <h2 class="text-center sm:text-left font-bold text-base ">
+                      {paymentMethods.title}
+                    </h2>
+                    <ul class="flex gap-4 mt-4">
+                      {paymentMethods.socialItens.map(
+                        ({ image, href, alt }) => (
+                          <li>
+                            <a href={href}>
+                              <Image
+                                src={image}
+                                alt={alt}
+                                loading="lazy"
+                                width={41}
+                                height={28}
+                              />
+                            </a>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                )}
 
-              {security && security.socialItens && security.socialItens.length > 0 && (
-                <div class="flex flex-col items-center sm:items-start">
-                  <h2 class="text-center sm:text-left font-bold text-sm	">{security.title}</h2>
-                  <ul class="flex gap-4 items-center">
-                    {security.socialItens.map(({ image, href, alt }) => (
-                      <li>
-                        <a href={href}>
-                          <Image src={image} alt={alt} loading="lazy" width={83} height={48} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              {security &&
+                security.socialItens &&
+                security.socialItens.length > 0 && (
+                  <div class="flex flex-col items-center sm:items-start">
+                    <h2 class="text-center sm:text-left font-bold text-sm	">
+                      {security.title}
+                    </h2>
+                    <ul class="flex gap-4 items-center">
+                      {security.socialItens.map(({ image, href, alt }) => (
+                        <li>
+                          <a href={href}>
+                            <Image
+                              src={image}
+                              alt={alt}
+                              loading="lazy"
+                              width={83}
+                              height={48}
+                            />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
-              {social && social.socialItens && social.socialItens.length > 0 && (
-                <div class="flex flex-col items-center sm:items-start">
-                  <h2 class="text-center sm:text-left font-bold text-sm	">{social.title}</h2>
-                  <ul class="flex gap-4 mt-4">
-                    {social.socialItens.map(({ image, href, alt }) => (
-                      <li>
-                        <a href={href}>
-                          <Image src={image} alt={alt} loading="lazy" width={36} height={36} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              {social &&
+                social.socialItens &&
+                social.socialItens.length > 0 && (
+                  <div class="flex flex-col items-center sm:items-start">
+                    <h2 class="text-center sm:text-left font-bold text-sm	">
+                      {social.title}
+                    </h2>
+                    <ul class="flex gap-4 mt-4">
+                      {social.socialItens.map(({ image, href, alt }) => (
+                        <li>
+                          <a href={href}>
+                            <Image
+                              src={image}
+                              alt={alt}
+                              loading="lazy"
+                              width={36}
+                              height={36}
+                            />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
               {underEighteen && (
                 <div class="flex flex-col items-center">
@@ -309,41 +369,66 @@ function Footer({
         ) : (
           <>
             <div class="px-[15px] flex flex-col sm:flex-row justify-between items-start">
-              {paymentMethods && paymentMethods.socialItens && paymentMethods.socialItens.length > 0 && (
-                <div class="flex flex-col items-start mb-[33px]">
-                  <h2 class="text-center sm:text-left font-bold text-sm	">{paymentMethods.title}</h2>
-                  <ul class="flex gap-4 mt-4">
-                    {paymentMethods.socialItens.map(({ image, href, alt }) => (
-                      <li>
-                        <a href={href}>
-                          <Image src={image} alt={alt} loading="lazy" width={41} height={28} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              {paymentMethods &&
+                paymentMethods.socialItens &&
+                paymentMethods.socialItens.length > 0 && (
+                  <div class="flex flex-col items-start mb-[33px]">
+                    <h2 class="text-center sm:text-left font-bold text-sm	">
+                      {paymentMethods.title}
+                    </h2>
+                    <ul class="flex gap-4 mt-4">
+                      {paymentMethods.socialItens.map(
+                        ({ image, href, alt }) => (
+                          <li>
+                            <a href={href}>
+                              <Image
+                                src={image}
+                                alt={alt}
+                                loading="lazy"
+                                width={41}
+                                height={28}
+                              />
+                            </a>
+                          </li>
+                        )
+                      )}
+                    </ul>
+                  </div>
+                )}
 
-              {security && security.socialItens && security.socialItens.length > 0 && (
-                <div class="flex flex-col items-start mb-[26px]">
-                  <h2 class="text-left font-bold text-sm	">{security.title}</h2>
-                  <ul class="flex gap-4 items-center">
-                    {security.socialItens.map(({ image, href, alt }) => (
-                      <li>
-                        <a href={href}>
-                          <Image src={image} alt={alt} loading="lazy" width={83} height={48} />
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              {security &&
+                security.socialItens &&
+                security.socialItens.length > 0 && (
+                  <div class="flex flex-col items-start mb-[26px]">
+                    <h2 class="text-left font-bold text-sm	">
+                      {security.title}
+                    </h2>
+                    <ul class="flex gap-4 items-center">
+                      {security.socialItens.map(({ image, href, alt }) => (
+                        <li>
+                          <a href={href}>
+                            <Image
+                              src={image}
+                              alt={alt}
+                              loading="lazy"
+                              width={83}
+                              height={48}
+                            />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
 
               {policies && (
                 <div class="grid grid-cols-1 sm:grid-cols-1 mb-[23px]">
                   <div>
                     <h2 class="text-sm font-bold">{policies.title}</h2>
-                    <p class="mt-2 lg:text-sm text-xs" style={{ maxWidth: 556 }}>
+                    <p
+                      class="mt-2 lg:text-sm text-xs"
+                      style={{ maxWidth: 556 }}
+                    >
                       {policies.text}
                     </p>
                   </div>
@@ -368,8 +453,8 @@ function Footer({
       </div>
 
       {device !== "mobile" ? (
-        <div class="py-2.5" style={{ backgroundColor: "#3B3B3B" }}>
-          <div class="container flex justify-between items-center">
+        <div class=" py-2.5 " style={{ backgroundColor: "#3B3B3B" }}>
+          <div class="custom-container p-0 flex justify-between items-center">
             <div style={{ color: "#FFF" }}>
               <span class="text-sm">{copyright?.copy}</span>
             </div>
@@ -395,7 +480,9 @@ function Footer({
         <div class="pt-[11px] pb-[17px]" style={{ backgroundColor: "#3B3B3B" }}>
           <div class="container flex flex-col gap-[15px] items-center">
             <div class="flex justify-center" style={{ color: "#FFF" }}>
-              <span class="text-xs text-center w-[290px]">{copyright?.copy}</span>
+              <span class="text-xs text-center w-[290px]">
+                {copyright?.copy}
+              </span>
             </div>
             <div class="flex flex-col items-center gap-2">
               <span class="self-end text-[10px]" style={{ color: "#FFF" }}>

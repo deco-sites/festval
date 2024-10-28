@@ -105,3 +105,9 @@
     border: none;
   }
 }
+
+@layer comonents {
+  .container-submenu {
+    width: calc(100% - 413px);
+  }
+}

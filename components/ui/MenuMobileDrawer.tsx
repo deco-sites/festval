@@ -28,11 +28,8 @@ const script = (id: string) => {
 
 const onLoad = () => {
   const user = window.STOREFRONT.USER.getUser();
-  const loginAcess = document.getElementById("login-link");
   const loginMessage = document.getElementById("login-message");
   if (user) {
-    loginAcess?.classList.add("hidden");
-
     if (loginMessage) {
       const loginWelcome =
         loginMessage?.querySelector<HTMLSpanElement>("h1 span");
@@ -113,17 +110,9 @@ function Aside({
         )}
 
         <div class="z-30 flex flex-col gap-[33px]">
-          <div id="login-link">
-            <a href="/login">
-              <span class="font-bold text-[20px]">Acessar conta</span>
-            </a>
-            {/* <span class="text-xs text-black">
-              Pronto para aproveitar nossa loja ?
-            </span> */}
-          </div>
-          <div id="login-message" class="hidden">
+          <div id="login-message">
             <h1>
-              <span class="font-bold text-[20px]">Olá, user</span>
+              <span class="font-bold text-[20px]">Olá!</span>
             </h1>
             <span class="text-xs text-black">
               Pronto para aproveitar nossa loja ?
