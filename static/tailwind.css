@@ -4568,11 +4568,6 @@ details.collapse summary::-webkit-details-marker {
 .list-disc {
   list-style-type: disc;
 }
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
 .auto-cols-max {
   grid-auto-columns: max-content;
 }
@@ -5009,9 +5004,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[\#f8f8f8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(248 248 248 / var(--tw-bg-opacity));
-}
-.bg-\[\] {
-  background-color: ;
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
