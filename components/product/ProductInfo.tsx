@@ -7,7 +7,7 @@ import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
 import ShippingSimulationForm from "../shipping/Form.tsx";
-
+import WishlistButton from "../wishlist/WishlistButton.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
@@ -54,9 +54,7 @@ const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const inputId = `input-${id}`;
     const container = document.getElementById(inputId);
-    const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]'
-    );
+    const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 1;
     if (!input) {
@@ -64,12 +62,8 @@ const onLoad = (id: string) => {
     }
     input.value = quantity.toString();
     // enable interactivity
-    container
-      ?.querySelectorAll<HTMLButtonElement>("button")
-      .forEach((node) => (node.disabled = false));
-    container
-      ?.querySelectorAll<HTMLButtonElement>("input")
-      .forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -111,10 +105,7 @@ function ProductInfo({ page }: Props) {
 
   const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
 
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
 
   const breadcrumb = {
     ...breadcrumbList,
@@ -146,23 +137,20 @@ function ProductInfo({ page }: Props) {
   //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
   const hasValidVariants =
     isVariantOf?.hasVariant?.some(
-      (variant) =>
-        variant?.name?.toLowerCase() !== "title" &&
-        variant?.name?.toLowerCase() !== "default title"
+      (variant) => variant?.name?.toLowerCase() !== "title" && variant?.name?.toLowerCase() !== "default title"
     ) ?? false;
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
       {/* Product Name */}
-      <span
-        class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4")}
-      >
-        {title}
-      </span>
+      <span class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4")}>{title}</span>
       <div className="pt-1 text-[#646072] lg:text-lg text-sm">Ref.{gtin}</div>
+      <div className="relative w-fit">
+        <WishlistButton item={item} />
+      </div>
 
       {/* Prices */}
-      <div class="flex flex-col items-start gap-1 pt-4">
+      <div class="flex flex-col items-start gap-1 ">
         <div className="flex flex-row w-full justify-between">
           <div className="flex flex-col">
             <div className="flex flex-row gap-3 items-center">
@@ -177,18 +165,14 @@ function ProductInfo({ page }: Props) {
                 </span>
               )}
             </div>
-            <span class="text-xl font-bold text-base-400">
-              {formatPrice(price, offers?.priceCurrency)}
-            </span>
+            <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
           </div>
 
           <div
             id={`input-${id}`}
             class="lg:w-2/4 lg:block hidden"
             data-item-id={product.productID}
-            data-cart-item={encodeURIComponent(
-              JSON.stringify({ item, platformProps })
-            )}
+            data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
           >
             <QuantitySelector min={1} max={100} />
           </div>
@@ -203,7 +187,7 @@ function ProductInfo({ page }: Props) {
       )} */}
 
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-10 flex flex-col gap-2">
+      <div class="mt-4 sm:mt-6 flex flex-col gap-2">
         {availability === "https://schema.org/InStock" ? (
           <div class="add-cart-button-pdp">
             {device === "mobile" ? (
@@ -228,33 +212,16 @@ function ProductInfo({ page }: Props) {
         )}
       </div>
 
-      <ModalAddToCartMobile
-        id={modalPreviewId}
-        product={product}
-        seller={seller}
-        item={item}
-      />
+      <ModalAddToCartMobile id={modalPreviewId} product={product} seller={seller} item={item} />
 
       {/* Shipping Simulation */}
 
       {/* Description card */}
       <div class="mt-4 sm:mt-6">
-        <span className="lg:text-lg text-base font-bold text-[#373737]">
-          Detalhes do produto
-        </span>
-        <span class="text-sm">
-          {description && (
-            <div
-              class="mt-2"
-              dangerouslySetInnerHTML={{ __html: description }}
-            />
-          )}
-        </span>
+        <span className="lg:text-lg text-base font-bold text-[#373737]">Detalhes do produto</span>
+        <span class="text-sm">{description && <div class="mt-0" dangerouslySetInnerHTML={{ __html: description }} />}</span>
       </div>
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
-      />
+      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
     </div>
   );
 }

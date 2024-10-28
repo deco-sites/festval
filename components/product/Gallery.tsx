@@ -52,10 +52,6 @@ export default function GallerySlider(props: Props) {
         {/* Image Slider */}
         <div class="col-start-1 col-span-1 sm:col-start-2">
           <div class="relative  h-min flex-grow">
-            <div className="absolute top-1 lg:right-[5rem] right-1">
-              <WishlistButton item={item} />
-            </div>
-
             <Slider class="carousel carousel-center gap-6 w-full">
               {images.map((img, index) => (
                 <Slider.Item index={index} class="carousel-item justify-center w-full">

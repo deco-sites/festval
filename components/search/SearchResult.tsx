@@ -218,16 +218,15 @@ function Result(props: SectionProps<typeof loader>) {
         {partial ? (
           <PageResult {...props} />
         ) : (
-          <div class="container  custom-container  flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0">
-            <div class="flex md:gap-10 items-center">
-              <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
-            </div>
+          <div class="container  custom-container  flex flex-col gap-4 sm:gap-5 w-full py-2 sm:py-2 px-2 sm:px-0">
+            {!searchTerm && (
+              <div class="flex md:gap-10 items-center">
+                <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+              </div>
+            )}
             {searchTerm && (
-              <div class="text-sm text-gray-600 flex flex-col  lg:hidden">
-                Você buscou por{" "}
-                <span class="font-semibold text-[#282828] md:text-lg">
-                  {searchTerm}
-                </span>
+              <div class="text-sm text-[#646072] flex flex-col  lg:hidden">
+                Você buscou por <span class="font-normal capitalize text-[#282828] md:text-lg text-3xl">{searchTerm}</span>
               </div>
             )}
 
@@ -256,12 +255,11 @@ function Result(props: SectionProps<typeof loader>) {
                 <div class="flex sm:hidden justify-between items-end">
                   <div class="flex flex-col">
                     {results}
-                    {sortBy}
+                    <label class="btn btn-ghost p-0 justify-start" for={controls}>
+                      Filtros
+                    </label>
                   </div>
-
-                  <label class="btn btn-ghost" for={controls}>
-                    Filtros
-                  </label>
+                  <div className="w-fit">{sortBy}</div>
                 </div>
               </Drawer>
             )}
@@ -279,11 +277,9 @@ function Result(props: SectionProps<typeof loader>) {
 
               <div class="flex flex-col gap-5">
                 {searchTerm && (
-                  <div class="text-sm text-gray-600 flex-col hidden lg:flex">
-                    Você buscou por{" "}
-                    <span class="font-semibold text-[#282828] md:text-lg">
-                      {searchTerm}
-                    </span>
+                  <div class="text-sm text-[#646072] flex-col hidden lg:flex">
+                    Você buscou por
+                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">{searchTerm}</span>
                   </div>
                 )}
                 {device === "desktop" && (

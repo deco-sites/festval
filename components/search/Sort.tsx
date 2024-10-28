@@ -36,7 +36,7 @@ function Sort({ sortOptions, url }: Props) {
         </label>
         <select
           name="sort"
-          class=" w-fit  text-base py-2 rounded-none flex items-center justify-center  lg:m-2  cursor-pointer outline-none text-[#282828] bg-[] border-none lg:text-xs leading-normal tracking-one  lg:px-2"
+          class=" w-fit appearance-none  text-base py-2 rounded-none flex items-center justify-center  lg:m-2  cursor-pointer outline-none text-[#282828] bg-[] border-none lg:text-xs leading-normal tracking-one  lg:px-2"
           hx-on:change={useScript(() => {
             const select = event!.currentTarget as HTMLSelectElement;
             window.location.href = select.value;

@@ -55,11 +55,11 @@ function WishlistButton({ item, variant = "full" }: Props) {
           "btn no-animation",
           variant === "icon"
             ? "btn-circle border-none shadow-inherit btn-sm bg-white opacity-90 hover:opacity-100 hover:bg-white hover:border-none"
-            : "rounded btn-accent bg-white opacity-90 hover:opacity-100 hover:bg-white  border-none shadow-inherit font-normal gap-2 w-full text-[#9F9F9F]"
+            : "rounded btn-accent p-0 bg-transparent opacity-100 hover:opacity-90 hover:bg-transparent  border-none shadow-inherit font-normal gap-2 w-full text-[#646072]"
         )}
       >
-        {variant === "full" && <span class="[.htmx-request_&]:hidden">Tornar Favorito</span>}
         <Icon id="favorite" class="[.htmx-request_&]:hidden" fill="none" />
+        {variant === "full" && <span class="[.htmx-request_&]:hidden">Tornar Favorito</span>}
 
         <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
       </button>

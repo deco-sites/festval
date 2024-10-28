@@ -51,7 +51,7 @@ function CategorySlider({ title, items }: Props) {
         <div class={`overflow-x-auto `}>
           <Slider
             class={`carousel carousel-center sm:carousel-end gap-5 w-full ${
-              items.length < 12 ? "lg:justify-center justify-start" : ""
+              items.length < 12 ? "justify-start lg:justify-between" : ""
             } `}
           >
             {items.map((item, index) => (
