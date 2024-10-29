@@ -92,7 +92,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
               transform: "translateX(-50%)",
             }}
           >
-            <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px] max-h-[457px] 2xl:max-h-[607px] overflow-y-scroll">
+            <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px] max-h-[457px] 2xl:max-h-[607px] overflow-y-auto">
               {children.map((node) => (
                 <li class="group-1">
                   <button
@@ -114,12 +114,11 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                     id={node.name}
                     class="submenu container-submenu absolute top-0 right-0 hidden flex justify-between p-[44px] pt-[30px] group-1-hover:flex"
                   >
-                    <ul class="grid grid-cols-2 flex gap-36 flex-wrap max-h-[377px] 2xl:max-h-[532px] overflow-y-scroll">
+                    <ul class="grid grid-cols-2 flex gap-36 flex-wrap max-h-[377px] 2xl:max-h-[532px] overflow-y-auto">
                       {node.children?.map((leaf) => (
                         <>
-                          <li>
+                          <li class="mr-4">
                             <h2 class="text-lg font-bold">{leaf.name}</h2>
-
                             {leaf.children &&
                               leaf.children.map((subleaf, index) => (
                                 <ul>
