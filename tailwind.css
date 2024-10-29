@@ -106,8 +106,8 @@
   }
 }
 
-@layer comonents {
+@layer components {
   .container-submenu {
-    width: calc(100% - 413px);
+    width: calc(100% - 405px);
   }
 }

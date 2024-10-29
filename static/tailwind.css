@@ -3890,6 +3890,9 @@ details.collapse summary::-webkit-details-marker {
     background: none;
     border: none;
 }
+.container-submenu {
+    width: calc(100% - 405px);
+  }
 .sr-only {
   position: absolute;
   width: 1px;
@@ -3989,9 +3992,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .top-\[10\.9px\] {
   top: 10.9px;
-}
-.top-\[10px\] {
-  top: 10px;
 }
 .top-\[11px\] {
   top: 11px;
@@ -4363,6 +4363,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[316px\] {
   width: 316px;
+}
+.w-\[326px\] {
+  width: 326px;
 }
 .w-\[330px\] {
   width: 330px;
@@ -5778,12 +5781,6 @@ details.collapse summary::-webkit-details-marker {
 
   to {
     --dot-progress: 100%;
-  }
-}
-
-@layer comonents {
-  .container-submenu {
-    width: calc(100% - 413px);
   }
 }
 

@@ -125,7 +125,7 @@ function ModalAddToCart(props: Props) {
     <div id={id} hx-on:click={useScript(onClickOverlay, id)} class="modal">
       <div
         class="bg-base-100 absolute top-0 px-[85px] py-[60px] modal-box max-w-[1088px] rounded-lg flex gap-[70px]"
-        style={{ marginTop: HEADER_HEIGHT_MOBILE }}
+        style={{ top: "50%", transform: "translateY(-50%)" }}
       >
         <div
           class="absolute top-[11px] right-[11px]"
@@ -140,28 +140,14 @@ function ModalAddToCart(props: Props) {
           </button>
         </div>
         <div>
-          <figure class={clx("relative")} style={{ aspectRatio: ASPECT_RATIO }}>
+          <figure class="w-[326px]">
             {/* Product Images */}
-            <a
-              href={relativeUrl}
-              aria-label="view product"
-              class={clx(
-                "grid grid-cols-1 grid-rows-1",
-                "w-full",
-                !inStock && "opacity-70"
-              )}
-            >
+            <a href={relativeUrl} aria-label="view product" class="w-full">
               <Image
                 src={front.url!}
                 alt={front.alternateName}
                 width={WIDTH}
                 height={HEIGHT}
-                style={{ aspectRatio: ASPECT_RATIO }}
-                class={clx(
-                  "object-cover",
-                  "rounded w-full",
-                  "col-span-full row-span-full"
-                )}
                 // sizes="(max-width: 640px) 50vw, 20vw"
               />
             </a>
