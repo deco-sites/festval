@@ -10,7 +10,7 @@ type TextArea = string;
 
 interface Question {
   question: string;
-  answer: string;
+  answer: RichText;
 }
 
 interface NavItem {
@@ -48,8 +48,8 @@ function FAQ({ questions }: { questions: Question[] }) {
         {questions.map((question, index) => (
           <li key={index} id={`faq-${index}`} class="mb-3">
             <details class="collapse collapse-arrow border-none bg-base-100 rounded-md">
-              <summary class="collapse-title min-h-fit text-lg font-medium">{question.question}</summary>
-              <div class="collapse-content" dangerouslySetInnerHTML={{ __html: question.answer }} />
+              <summary class="collapse-title min-h-fit text-base font-medium">{question.question}</summary>
+              <div class="collapse-content list-style" dangerouslySetInnerHTML={{ __html: question.answer }} />
             </details>
           </li>
         ))}
@@ -70,7 +70,7 @@ export default function DynamicInstitutionalLayout({
   return (
     <div class="w-full flex flex-col bg-base-100">
       {/* Seção de introdução */}
-      <section class="mb-8 w-full custom-container md:px-[10px] px-2">
+      <section class="mb-8 mt-2 w-full custom-container md:px-[10px] px-2">
         <div class="flex flex-col md:flex-row gap-12 ">
           <div class="wrapper w-full md:w-4/6">
             <p class="font-bold text-base-content lg:text-3xl sm:text-lg mb-3">{introText}</p>
@@ -92,7 +92,7 @@ export default function DynamicInstitutionalLayout({
             <ul>
               <li class="mb-0">
                 <div class="flex items-center cursor-default justify-between w-full px-4 py-4 rounded bg-[#282828] text-primary-content">
-                  <span class="font-semibold text-lg">{navItemPrinciapl.title}</span>
+                  <span class="font-semibold text-base">{navItemPrinciapl.title}</span>
                 </div>
               </li>
               <div className="wrapper py-4 px-3 shadow-md rounded-b-lg bg-base-100 mb-3">
@@ -101,9 +101,9 @@ export default function DynamicInstitutionalLayout({
                     <a
                       href={`#faq-${index}`}
                       hx-on:click={useScript(smoothScrollTo, index)}
-                      class=" flex items-center justify-between w-full  hover:opacity-90"
+                      class=" flex items-center justify-between capitalize w-full text-sm  hover:opacity-90"
                     >
-                      <span>{question.question}</span>
+                      <span class="capitalize">{question.question}</span>
                     </a>
                   </li>
                 ))}
@@ -115,7 +115,7 @@ export default function DynamicInstitutionalLayout({
                     href={item.href}
                     class="flex items-center hover:opacity-90 justify-between w-full px-4 py-4 rounded bg-[#282828] text-primary-content"
                   >
-                    <span class="text-primary-content font-semibold text-lg">{item.title}</span>
+                    <span class="text-primary-content font-semibold text-base">{item.title}</span>
                   </a>
                 </li>
               ))}

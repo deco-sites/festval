@@ -1,0 +1,78 @@
+{
+  "name": "Entrega e Retirada",
+  "path": "/entrega-e-retirada",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Institucional/institutional-layout.tsx",
+        "introText": "Entrega e Retirada",
+        "introImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a3ed4f64-3973-4712-a41d-1bd49dc341df/Entrega-e-Rastreio.svg",
+        "navItemPrinciapl": {
+          "questions": [
+            {
+              "question": "Entrega",
+              "answer": "<p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Após a confirmação do pagamento, seu pedido será encaminhado para o endereço informado no pedido. Esse serviço permite que o cliente selecione a data e o período de entrega no momento de finalização da compra.</span></p>"
+            },
+            {
+              "question": "Retirada",
+              "answer": "<p>Retire suas compras feitas no <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\">Festval.com</a> na loja localizada na <strong><span style=\"color: rgb(0, 0, 0)\">Alameda Doutor Carlos de Carvalho, 1652 - Bigorrilho.</span></strong> O agendamento é feito pelo cliente ao fechar seu pedido.</p><ul><li><p>Quais documentos devo apresentar para retirar meu pedido?<br>Apresente um documento pessoal e o número do pedido.</p></li></ul><ul><li><p>Outra pessoa pode retirar meu pedido?<br>Não. Somente o titular da compra pode retirar o pedido, no horário agendado. Abrimos exceções caso o titular do pedido entre em contato com nossa Central de Atendimento autorizando a entrega do pedido para terceiros.</p></li></ul><ul><li><p>Quais os horários de retirada?<br>O atendimento na expedição fica disponível de segunda à sábado das 8h às 21:30h, e domingo das 8h às 19:30h.</p></li></ul><ul><li><p>O que acontece com os pedidos que não forem retirados no agendamento?<br>Os pedidos não retirados no momento do agendamento, após 07 dias serão cancelados pelo <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\">Festval.com</a> e realizado o estorno no cartão de crédito utilizado para a compra no valor do pedido.</p></li></ul><ul><li><p>Minha entrega está atrasada, o que faço?<br>O atraso de entrega de uma compra pode acontecer por vários motivos. É importante conferir todas as situações possíveis para identificar o motivo dessa falha. Confira, primeiramente, se a sua possível data de entrega já expirou; Verifique o endereço de entrega informado, para avaliar possíveis falhas de comunicação;Veja se seu pagamento foi aprovado. O prazo de aprovação de pagamento pode variar de acordo com a forma escolhida; Verifique o status de pedido para entender em qual etapa se encontra a sua compra; confira se alguém recebeu ou recusou o recebimento da compra que foi entregue. Verifique se o pedido não se encontra na sua portaria (no caso de entrega em apartamentos) ou se alguém foi comunicado da entrega e se recusou a recebê-la. Caso nenhuma das etapas acima tenha lhe ajudado a entender o motivo do atraso da entrega da sua compra, entre em contato com a nossa central de atendimento para informar o ocorrido.<br>Central de Atendimento:<br>Curitiba: (41) 3148-6507 ou (41) 9 9846-0016<br>Cascavel: (45) 3225-0017 ou (45) 99861-0211</p></li><li><p>Como posso conferir o status do meu pedido?<br>Após realizar um pedido no site do <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\">Festval.com</a>, você automaticamente será informado sobre a mudança de status do seu pedido por e-mail (no endereço utilizado para login). Você também sempre pode se informar sobre o status do seu pedido ao logar-se no site do <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\">Festval.com</a> e clicar em “Meus Pedidos”.</p></li><li><p>Como posso cancelar o meu pedido?<br>Seu pedido no <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\">Festval.com</a> pode ser cancelado em até 5 minutos após a compra sem passar pela nossa central de atendimento, após esse período nossos analistas estarão a sua disposição para o cancelamento, seja ele por desistência ou inconformidades.<br>Central de Atendimento:<br>Curitiba: (41) 3148-6507 ou (41) 9 9846-0016<br>Cascavel: (45) 3225-0017 ou (45) 99861-0211</p></li></ul>"
+            },
+            {
+              "question": "Prazo de Entrega",
+              "answer": "<p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Em qualquer circunstância, o prazo de entrega começa a valer somente após a confirmação do pagamento ou a finalização do pedido de compra. Caso a compra seja entregue fora do prazo máximo acordado, o cliente poderá recusar a entrega ou devolver toda a compra. Nesse caso, o valor integral do pedido será estornado no cartão de crédito utilizado para a compra.Caso seja realizado o cancelamento, nossa Central de Atendimento entrará em contato informando a respeito.</span></p>"
+            },
+            {
+              "question": "Pedido entregue fora do prazo",
+              "answer": "<p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Caso a compra seja entregue fora do prazo máximo acordado, o cliente poderá recusar a entrega ou devolver toda a compra. Nesse caso, o valor integral do pedido será estornado no cartão de crédito utilizado para a compra ou mediante depósito em conta bancária. Entre em contato com nossa Central de Atendimento para agendamento da retirada da compra.</span><br><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Central de Atendimento:</span><br><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Curitiba: (41) 3148-6507 ou (41) 9 9846-0016</span><br><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Cascavel: (45) 3225-0017 ou (45) 99861-0211</span></p>"
+            },
+            {
+              "question": "Pedido entregue errado",
+              "answer": "<p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Caso você tenha recebido uma compra que não seja sua ou não corresponda com o pedido que você realizou, entre em contato com nossa Central de Atendimento para que seja feita a retirada do pedido errado e envio do seu pedido correto.</span><br><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Central de Atendimento:</span><br><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Curitiba: (41) 3148-6507 ou (41) 9 9846-0016</span><br><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Cascavel: (45) 3225-0017 ou (45) 99861-0211</span></p>"
+            },
+            {
+              "question": "Regiões atendidas e Taxas de serviço",
+              "answer": "<p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">No momento, nosso serviço de delivery atende a região de Curitiba (exceto regiões metropolitanas). A taxa de entrega é única para qualquer localidade, de R$13,99. Para Cascavel, taxa única de R$14,90.</span></p>"
+            }
+          ],
+          "title": "Entrega e Retirada"
+        },
+        "navItems": [
+          {
+            "title": "Política de privacidade",
+            "href": "/conheca-nossa-politica-de-privacidade"
+          },
+          {
+            "title": "Sobre os cookies",
+            "href": "/sobre-os-cookies"
+          },
+          {
+            "title": "Formas de pagamento",
+            "href": "/formas-de-pagamento"
+          },
+          {
+            "title": "Troca/Devolução",
+            "href": "/troca-e-devolucao"
+          }
+        ],
+        "introContent": "<p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Após a confirmação do pagamento, seu pedido será encaminhado para o endereço informado no pedido. Esse serviço permite que o cliente selecione a data e o período de entrega no momento de finalização da compra</span></p><p></p><p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Retire suas compras feitas no </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\"><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Festval.com</span></a><span style=\"color: rgb(0, 0, 0); font-size: 16px\"> na loja localizada na </span><strong><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Alameda Doutor Carlos de Carvalho, 1652 - Bigorrilho.</span></strong><span style=\"color: rgb(0, 0, 0); font-size: 16px\"> O agendamento é feito pelo cliente ao fechar seu pedido.</span></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

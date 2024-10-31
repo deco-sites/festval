@@ -48,7 +48,7 @@ function ShoppableBanner(props: Props) {
   const { title, text, image, reverseOrder } = { ...DEFAULT_PROPS, ...props };
 
   return (
-    <div class="custom-container mb-5">
+    <div class="custom-container mb-5 mt-3">
       <div
         class={`card lg:card-side rounded grid grid-cols-1 lg:grid-cols-2 ${
           reverseOrder ? "lg:flex-row-reverse" : "lg:flex-row"

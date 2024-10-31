@@ -1,0 +1,66 @@
+{
+  "name": "Sobre os cookies",
+  "path": "/sobre-os-cookies",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Institucional/institutional-layout.tsx",
+        "introText": "Sobre os cookies",
+        "introContent": "<p>Este website utiliza cookies para o melhor funcionamento e fornecimento de produtos e serviços que sejam relevantes aos nossos clientes. Em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/18), nós pedimos o seu consentimento para a utilização dos cookies (exceto os cookies estritamente necessários).</p><p></p><p>A presente Política especifica o que são cookies, como, e quais, o FESTVAL utiliza.</p>",
+        "introImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/da4618ae-8efe-450c-8af2-01de07a8f286/Politica-de-Cookies.svg",
+        "navItemPrinciapl": {
+          "title": "Política de Cookies",
+          "questions": [
+            {
+              "question": "Política de Cookies",
+              "answer": "<p>Este website utiliza cookies para o melhor funcionamento e fornecimento de produtos e serviços que sejam relevantes aos nossos clientes. Em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/18), nós pedimos o seu consentimento para a utilização dos cookies (exceto os cookies estritamente necessários).</p><p></p><p>A presente Política especifica o que são cookies, como, e quais, o FESTVAL utiliza.</p>"
+            },
+            {
+              "question": "Como utilizamos cookies",
+              "answer": "<p><em><span>Cookies são arquivos ou informações que podem ser armazenadas em seu dispositivo, quando você visita as páginas da plataforma. Geralmente, um cookie contém o nome do site que o originou, seu tempo de vida e um valor, que é gerado aleatoriamente.</span></em></p><p>Utilizamos cookies para facilitar o uso e melhor adaptar as páginas aos seus interesses e necessidades, bem como para compilarmos informações sobre a utilização de nossos sites e serviços, auxiliando a melhorar suas estruturas e seus conteúdos. Os cookies também podem ser utilizados para acelerar suas atividades e experiências futuras nas páginas. Para saber mais sobre quais cookies utilizamos, acesse nossa Política de Cookies Clicando aqui.</p><p><strong><span>Por fim, lembramos que, caso o usuário não aceite alguns cookies da plataforma, certos serviços da plataforma poderão não ter o funcionamento correto.</span></strong></p>"
+            },
+            {
+              "question": "Cookies",
+              "answer": "<p><span style=\"color: rgb(63, 63, 64); font-size: 16px\">são pequenos arquivos que são armazenados no dispositivo de um navegador da internet, quando ele acessa um site pela primeira vez. Eles são responsáveis por coletar e armazenar informações sobre a navegação dentro desse ambiente, permitindo que elas sejam usadas posteriormente.</span></p><p></p>"
+            }
+          ]
+        },
+        "navItems": [
+          {
+            "title": "Política de privacidade",
+            "href": "/conheca-nossa-politica-de-privacidade"
+          },
+          {
+            "title": "Formas de pagamento",
+            "href": "/formas-de-pagamento"
+          },
+          {
+            "title": "Troca/Devolução",
+            "href": "/troca-e-devolucao"
+          },
+          {
+            "href": "/entrega-e-retirada",
+            "title": "Entrega e Retirada"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

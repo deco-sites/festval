@@ -25,92 +25,92 @@
         "items": [
           {
             "label": "Açougue",
-            "href": "/",
+            "href": "/acogue",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8337b62e-8baf-445e-bc78-416dec655192/teste.png"
           },
           {
-            "href": "/",
+            "href": "/hortifruti",
             "label": "Hortifruti",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1460b27b-3ab4-4907-8a4e-4587d8450faa/tomate.png"
           },
           {
-            "href": "/",
+            "href": "/mercearia",
             "label": "Mercearia",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/732568e4-b9b9-4f58-a834-450b923e8697/Mercearia.png"
           },
           {
-            "href": "/",
+            "href": "/padaria",
             "label": "Padaria",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/792b3033-3e42-4621-8c16-4c07cd34ae06/Padaria.png"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/12629561-ef4e-4969-a86d-348f90a032b8/bebidas.png",
-            "href": "/",
+            "href": "/bebidas",
             "label": "Bebidas"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5adb7dfa-715a-475b-b58e-53382e1c8036/Casa.png",
-            "href": "/",
+            "href": "/casa-e-utilidades",
             "label": "Casa & Utilidades"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a18e3173-916b-4942-b718-59c464b8595e/Importados.png",
-            "href": "/",
+            "href": "/importados",
             "label": "Importados"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5cbbd1f8-a585-4081-93db-d88a914ba36c/Latici.png",
-            "href": "/",
+            "href": "/laticinios",
             "label": "Laticínios"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9a9a710a-d819-4d97-b70e-eaddad5b03f5/Limpeza.png",
-            "href": "/",
+            "href": "/limpeza",
             "label": "Limpeza"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/46e581c1-9904-4ab7-891f-25f8c5cf0a91/Floricultura.png",
-            "href": "/",
+            "href": "/floricultura",
             "label": "Floricultura"
           },
           {
-            "href": "/",
+            "href": "/diet-light",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/84b19b7c-d2b5-4376-8dc9-fddacf705a05/Diet--Light.png",
             "label": "Diet & Light"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e871466b-93ec-4461-9ef6-62abe4feeca0/Sorvetes.png",
-            "href": "/",
+            "href": "/sorvetes",
             "label": "Sorvetes"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bec5a09-d334-4d28-957f-4ec75b296610/Perfumaria.png",
-            "href": "/",
+            "href": "/perfumaria",
             "label": "Perfumaria"
           },
           {
-            "href": "/",
+            "href": "/petshop",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/52ee0656-cc6a-43d7-8777-d5499fe7ee38/Pet-Shop.png",
             "label": "Pet Shop"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96e49984-1396-41b3-8ba6-e17e8887565e/Sucos.png",
-            "href": "/",
+            "href": "/sucos",
             "label": "Sucos"
           },
           {
             "label": "Frios & Congelados",
-            "href": "/",
+            "href": "/frios-e-laticinio",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/41374f07-3988-45b5-aa66-511341fa5d7a/Frios-Congelados.png"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/401937a6-8419-4aac-9f9b-f207666b75f9/Adega.png",
-            "href": "/",
+            "href": "/adega",
             "label": "Adega"
           },
           {
             "label": "Bebidas Alcoólicas",
-            "href": "/",
+            "href": "/bebidas-alcoolicas",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a70bfb93-1d78-48d1-a76d-a60f7fb61c88/Bebidas-Alcooulicas.png"
           }
         ]
@@ -131,13 +131,13 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "1486",
-            "count": 30,
+            "collection": "142",
+            "count": 21,
             "hideUnavailableItems": false
           }
         },
         "title": "Mais vendidos",
-        "cta": "/"
+        "cta": "/142?map=productClusterIds"
       }
     },
     {
@@ -155,13 +155,13 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "1486",
+            "collection": "1072",
             "count": 30,
             "hideUnavailableItems": false
           }
         },
         "title": "Oportunidades",
-        "cta": "/"
+        "cta": "/1072?map=productClusterIds"
       }
     },
     {
@@ -188,17 +188,17 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "Vinhos",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "1486",
+            "collection": "1359",
             "count": 30,
             "hideUnavailableItems": false
           }
         },
-        "cta": "/"
+        "cta": "/1359?map=productClusterIds",
+        "title": "Vinhos"
       }
     },
     {
@@ -217,12 +217,12 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "1486",
             "count": 30,
-            "hideUnavailableItems": false
+            "fuzzy": "automatic",
+            "query": "Açougue"
           }
         },
-        "cta": "/"
+        "cta": "/acougue"
       }
     },
     {
@@ -259,13 +259,13 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "1486",
+            "collection": "163",
             "count": 30,
             "hideUnavailableItems": false
           }
         },
-        "title": "Nestlé",
-        "cta": "/"
+        "cta": "/163?map=productClusterIds",
+        "title": "Nestlé"
       }
     },
     {
@@ -283,13 +283,14 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "1486",
+            "collection": "172",
             "count": 30,
-            "hideUnavailableItems": false
+            "hideUnavailableItems": false,
+            "similars": false
           }
         },
         "title": "Unilever",
-        "cta": "/"
+        "cta": "/172?map=productClusterIds"
       }
     },
     {
@@ -324,14 +325,13 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "title": "Importados",
-        "cta": "/",
+        "cta": "/importados",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "ids": [
-              "1429",
-              "1434"
-            ]
+            "sort": "price:desc",
+            "collection": "1067",
+            "count": 12
           }
         }
       }
@@ -342,28 +342,44 @@
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
         "items": [
           {
-            "href": "/",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6ddec739-5517-497a-9bce-43ba8b91ef48/1953-6-sub-menu-corrigido.png"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6ddec739-5517-497a-9bce-43ba8b91ef48/1953-6-sub-menu-corrigido.png",
+            "href": "/1227?map=productClusterIds"
           },
           {
             "href": "/",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6a2183b0-6988-44ae-a4cd-86fbe8115e29/ambev-4-sub-menu.png"
           },
           {
-            "href": "/",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ad6dd3c0-22b6-4871-bf55-cc26e6f274a9/lindt-5-sub-menu.png"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ad6dd3c0-22b6-4871-bf55-cc26e6f274a9/lindt-5-sub-menu.png",
+            "href": "/377?map=productClusterIds"
           },
           {
-            "href": "/",
+            "href": "/1358?map=productClusterIds",
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a8435437-f97c-4f23-af2f-048373d43690/mamma-bia-1-sub-menu-corrigido.png"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/deb09522-114f-4e11-92e2-40fbca7696f2/nestle-2-sub-menu.png",
-            "href": "/"
+            "href": "/163?map=productClusterIds"
           },
           {
             "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c7f119f-73ad-4065-a0aa-a8487c15b1cb/unilever-2-sub-menu.png",
-            "href": "/"
+            "href": "/172?map=productClusterIds"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/30cbfd5b-2ab3-4dcf-9a42-49a00c8d677a/g7-2-(1).png",
+            "href": "/1533?map=productClusterIds"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5bfd34af-6f52-4eb3-90f1-3c782dd002ef/valsierra-sub-menu-(1).png",
+            "href": "/1532?map=productClusterIds"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/947f0b41-a4eb-432c-98ae-ab4864a95713/diaadia-festval-menu-4-(1).png",
+            "href": "/1529?map=productClusterIds"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3accdfc6-3b8a-4f90-9761-14443299ca88/Natural-festval-menu-(1).png",
+            "href": "/1534?map=productClusterIds"
           }
         ]
       }

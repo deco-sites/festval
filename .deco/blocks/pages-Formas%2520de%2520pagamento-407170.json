@@ -1,0 +1,62 @@
+{
+  "name": "Formas de pagamento",
+  "path": "/formas-de-pagamento",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Institucional/institutional-layout.tsx",
+        "introText": "Formas de pagamento",
+        "introContent": "<p><span style=\"color: rgb(0, 0, 0); font-size: 16px\">No </span><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\"><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Festval.com</span></a><span style=\"color: rgb(0, 0, 0); font-size: 16px\"> você pode realizar suas compras com PIX ou cartão de crédito: MasterCard, Diners, Visa, American Express, Hipercard e Elo, cujo pagamento pode ser somente à vista.</span><br><span style=\"color: rgb(0, 0, 0); font-size: 16px\">Não trabalhamos com pagamento por cartões alimentação / refeição em nossa loja online.</span></p>",
+        "introImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1fb314b3-1ab8-4878-a4f9-689e186066ec/Metodo-de-Pagamento.svg",
+        "navItemPrinciapl": {
+          "title": "Formas de pagamento",
+          "questions": [
+            {
+              "question": "Formas de pagamento",
+              "answer": "<p>No <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://Festval.com\">Festval.com</a> você pode realizar suas compras com PIX ou cartão de crédito: MasterCard, Diners, Visa, American Express, Hipercard e Elo, cujo pagamento pode ser somente à vista.<br>Não trabalhamos com pagamento por cartões alimentação / refeição em nossa loja online.</p><p><strong><span style=\"color: rgb(0, 0, 0)\">Importante:</span></strong> Para segurança de nossos clientes, conferimos a veracidade dos dados cadastrados antes da aprovação do pedido. Para que o pedido seja aprovado, é necessário que exista limite disponível no cartão.<br>Os pedidos serão entregues após a aprovação do cadastro e pagamento.</p>"
+            },
+            {
+              "question": "ESTORNO E REEMBOLSO",
+              "answer": "<p>Cartão de credito: O valor a ser estornado, será de 3 a 5 dias úteis.</p><p>Pix: O reembolso do valor ocorrerá em até 7 dias úteis após a solicitação ser feita por meio de nossos canais de atendimento.<br>Para solicitar o reembolso do PIX, por favor, forneça as seguintes informações:</p><ul><li><p>Nome do titular da conta:</p></li><li><p>CPF:</p></li><li><p>Agência:</p></li><li><p>Conta:</p></li><li><p>Nome do banco:</p></li><li><p>Número do pedido:</p></li></ul><p>Certifique-se de que todos os dados estão corretos para facilitar o processo. Se tiver dúvidas, entre em contato com nossa equipe de atendimento. Através dos contatos:<br>Curitiba: (41) 3148-6507 ou (41) 9 9846-0016<br>Cascavel: (45) 3225-0017 ou (45) 99861-0211</p>"
+            }
+          ]
+        },
+        "navItems": [
+          {
+            "title": "Troca/Devolução",
+            "href": "/troca-e-devolucao"
+          },
+          {
+            "title": "Sobre os cookies",
+            "href": "/sobre-os-cookies"
+          },
+          {
+            "title": "Entrega e Retirada",
+            "href": "/entrega-e-retirada"
+          },
+          {
+            "href": "/conheca-nossa-politica-de-privacidade",
+            "title": "Política de privacidade"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
