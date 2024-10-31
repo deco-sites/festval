@@ -219,6 +219,16 @@ function ProductCard({
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
   const platformProps = useAddToCart({ product, seller });
 
+  // if (product.productID === "5339") {
+  //   console.log("Produto", product);
+  //   console.log(
+  //     "additionalProperty",
+  //     product.isVariantOf.hasVariant[0].additionalProperty
+  //   );
+  //   console.log("Offers", offers);
+  //   console.log("Item", item);
+  // }
+
   {
     /* Add click event to dataLayer */
   }

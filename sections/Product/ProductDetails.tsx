@@ -29,11 +29,19 @@ export default function ProductDetails({ page }: Props) {
 
   return (
     <div className="bg-[#F8F8F8] pb-6">
-      <div class="container custom-container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 ">
-        <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
+      <div class="container custom-container flex flex-col gap-4 sm:gap-5 w-full sm:py-4 sm:py-5">
+        <div class="px-4 sm:px-0">
+          <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
+        </div>
 
-        <div class={clx("container custom-conatiner grid", "grid-cols-1 gap-2 py-0", "sm:grid-cols-12 sm:gap-8")}>
-          <div class="sm:col-span-6">
+        <div
+          class={clx(
+            "container custom-conatiner grid",
+            "grid-cols-1 gap-2 py-0",
+            "sm:grid-cols-12 sm:gap-8"
+          )}
+        >
+          <div class="sm:col-span-6 px-4 sm:px-0">
             <ImageGallerySlider page={page} />
           </div>
           <div class="sm:col-span-4 lg:ml-7 ">

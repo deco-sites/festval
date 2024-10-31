@@ -84,12 +84,11 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
           ></div>
           <div
             id={menuId}
-            class="megamenu custom-container p-0 fixed left-[4.5rem] 2xl:left-[6.25rem] xd  flex bg-base-100 z-40 gap-6 w-screen h-full max-h-[457px] 2xl:max-h-[607px]"
+            class="megamenu custom-container p-0 absolute flex bg-base-100 z-40 gap-6 w-[940px]  h-[457px] 2xl:h-[607px]"
             style={{
-              top: "10px",
-              left: "51%",
-              marginTop: "114px",
-              transform: "translateX(-50%)",
+              top: "40px",
+              left: "9px",
+              //transform: "translateX(-50%)",
             }}
           >
             <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px] max-h-[457px] 2xl:max-h-[607px] overflow-y-auto">
@@ -151,7 +150,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                         </>
                       ))}
                     </ul>
-                    {node.children &&
+                    {/* {node.children &&
                       node.image &&
                       node.image.length > 0 &&
                       typeof node.image[0].url === "string" && (
@@ -161,7 +160,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                             class="w-full max-h-[377px] 2xl:max-h-[532px]"
                           />
                         </a>
-                      )}
+                      )} */}
                   </div>
                 </li>
               ))}

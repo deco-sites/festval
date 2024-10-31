@@ -16,7 +16,8 @@ import type { Product } from "apps/commerce/types.ts";
 import { useDevice, useScript } from "@deco/deco/hooks";
 import AddToCartMobileButton from "./AddToCartMobileButton.tsx";
 import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
-
+import Drawer from "../ui/Drawer.tsx";
+import Image from "apps/website/components/Image.tsx";
 interface Props {
   page: ProductDetailsPage | null;
 }
@@ -54,7 +55,9 @@ const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const inputId = `input-${id}`;
     const container = document.getElementById(inputId);
-    const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
+    const input = container?.querySelector<HTMLInputElement>(
+      'input[type="number"]'
+    );
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 1;
     if (!input) {
@@ -62,8 +65,12 @@ const onLoad = (id: string) => {
     }
     input.value = quantity.toString();
     // enable interactivity
-    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
-    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("button")
+      .forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("input")
+      .forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -105,7 +112,10 @@ function ProductInfo({ page }: Props) {
 
   const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
 
-  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
+  const percent =
+    listPrice && price
+      ? Math.round(((listPrice - price) / listPrice) * 100)
+      : 0;
 
   const breadcrumb = {
     ...breadcrumbList,
@@ -137,20 +147,32 @@ function ProductInfo({ page }: Props) {
   //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
   const hasValidVariants =
     isVariantOf?.hasVariant?.some(
-      (variant) => variant?.name?.toLowerCase() !== "title" && variant?.name?.toLowerCase() !== "default title"
+      (variant) =>
+        variant?.name?.toLowerCase() !== "title" &&
+        variant?.name?.toLowerCase() !== "default title"
     ) ?? false;
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
       {/* Product Name */}
-      <span class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4")}>{title}</span>
-      <div className="pt-1 text-[#646072] lg:text-lg text-sm">Ref.{gtin}</div>
-      <div className="relative w-fit">
+      <span
+        class={clx(
+          "lg:text-xl sm:text-base font-bold text-[#373737]",
+          "pt-4",
+          "px-4 sm:px-0"
+        )}
+      >
+        {title}
+      </span>
+      <div className="pt-1 text-[#646072] lg:text-lg text-sm px-4 sm:px-0">
+        Ref.{gtin}
+      </div>
+      <div className="relative w-fit px-4 sm:px-0">
         <WishlistButton item={item} />
       </div>
 
       {/* Prices */}
-      <div class="flex flex-col items-start gap-1 ">
+      <div class="flex flex-col items-start gap-1 px-4 sm:px-0">
         <div className="flex flex-row w-full justify-between">
           <div className="flex flex-col">
             <div className="flex flex-row gap-3 items-center">
@@ -165,14 +187,18 @@ function ProductInfo({ page }: Props) {
                 </span>
               )}
             </div>
-            <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
+            <span class="text-xl font-bold text-base-400">
+              {formatPrice(price, offers?.priceCurrency)}
+            </span>
           </div>
 
           <div
             id={`input-${id}`}
             class="lg:w-2/4 lg:block hidden"
             data-item-id={product.productID}
-            data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
+            data-cart-item={encodeURIComponent(
+              JSON.stringify({ item, platformProps })
+            )}
           >
             <QuantitySelector min={1} max={100} />
           </div>
@@ -187,7 +213,7 @@ function ProductInfo({ page }: Props) {
       )} */}
 
       {/* Add to Cart and Favorites button */}
-      <div class="mt-4 sm:mt-6 flex flex-col gap-2">
+      <div class="mt-4 sm:mt-6 flex flex-col gap-2 px-4 sm:px-0">
         {availability === "https://schema.org/InStock" ? (
           <div class="add-cart-button-pdp">
             {device === "mobile" ? (
@@ -212,16 +238,80 @@ function ProductInfo({ page }: Props) {
         )}
       </div>
 
-      <ModalAddToCartMobile id={modalPreviewId} product={product} seller={seller} item={item} />
+      <ModalAddToCartMobile
+        id={modalPreviewId}
+        product={product}
+        seller={seller}
+        item={item}
+      />
 
       {/* Shipping Simulation */}
 
       {/* Description card */}
-      <div class="mt-4 sm:mt-6">
-        <span className="lg:text-lg text-base font-bold text-[#373737]">Detalhes do produto</span>
-        <span class="text-sm">{description && <div class="mt-0" dangerouslySetInnerHTML={{ __html: description }} />}</span>
-      </div>
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
+      {device !== "mobile" ? (
+        <div class="mt-4 sm:mt-6">
+          <span className="lg:text-lg text-base font-bold text-[#373737]">
+            Detalhes do produto
+          </span>
+          <span class="text-sm">
+            {description && (
+              <div
+                class="mt-0"
+                dangerouslySetInnerHTML={{ __html: description }}
+              />
+            )}
+          </span>
+        </div>
+      ) : (
+        <>
+          <Drawer
+            id={`detalhes-produto`}
+            class="drawer-end z-50"
+            aside={
+              <Drawer.Aside
+                title="Detalhes do produto"
+                drawer={`detalhes-produto`}
+              >
+                <div class="h-full px-4 flex flex-col bg-base-100 overflow-auto">
+                  <div class="mt-4 sm:mt-6">
+                    <span class="text-sm">
+                      {description && (
+                        <div
+                          class="mt-0"
+                          dangerouslySetInnerHTML={{ __html: description }}
+                        />
+                      )}
+                    </span>
+                  </div>
+                </div>
+              </Drawer.Aside>
+            }
+          />
+
+          <div className="flex w-full mt-3 bg-white">
+            <label
+              for={`detalhes-produto`}
+              class="w-full flex justify-between items-center p-4"
+              aria-label="open menu"
+            >
+              <span>Detalhes do produto</span>
+
+              <span>
+                <Image
+                  src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6367b27c-92b8-4ff7-a9f9-689de3ff4f20/arrow-right-mobile.svg"
+                  width={9}
+                  height={13}
+                />
+              </span>
+            </label>
+          </div>
+        </>
+      )}
+
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+      />
     </div>
   );
 }
