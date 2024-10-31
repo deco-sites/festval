@@ -226,9 +226,7 @@ function ModalSessionInit({
       >
         {welcomeMessage && (
           <div>
-            <h3 class="font-bold text-base text-center">
-              {welcomeMessage} {feedback.toString()}
-            </h3>
+            <h3 class="font-bold text-base text-center">{welcomeMessage}</h3>
           </div>
         )}
         {logo && (
