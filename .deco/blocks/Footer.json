@@ -25,23 +25,23 @@
       "children": [
         {
           "title": "Sobre nós",
-          "href": "#"
+          "href": "/sobre-nos"
         },
         {
           "title": "Nossas lojas",
-          "href": "#"
+          "href": "https://superfestval.com.br/lojas"
         },
         {
           "title": "Política de privacidade",
-          "href": "#"
+          "href": "/conheca-nossa-politica-de-privacidade"
         },
         {
           "title": "Sobre os cookies",
-          "href": "#"
+          "href": "/sobre-os-cookies"
         },
         {
           "title": "DPO",
-          "href": "#"
+          "href": "https://superfestval.com.br/dpo"
         }
       ]
     },
@@ -51,11 +51,11 @@
       "children": [
         {
           "title": "Entrega e Retirada",
-          "href": "#"
+          "href": "/entrega-e-retirada"
         },
         {
           "title": "Trocas de devoluções",
-          "href": "#"
+          "href": "/troca-e-devolucao"
         }
       ]
     }
