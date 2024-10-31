@@ -31,13 +31,9 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "count": 30,
-            "collection": "1486",
-            "similars": true
-          }
+          "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts",
+          "crossSelling": "similars",
+          "hideUnavailableItems": true
         },
         "title": "Quem comprou esse comprou também"
       }
@@ -57,9 +53,9 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "count": 30,
             "collection": "1486",
-            "similars": true
+            "count": 30,
+            "similars": false
           }
         },
         "title": "Mais vendidos"
