@@ -1,32 +1,18 @@
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
-import type {
-  ImageObject,
-  SiteNavigationElement,
-} from "apps/commerce/types.ts";
+import type { ImageObject, SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import Alert from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
 import SingIn, { SingInProps } from "../../components/header/SignIn.tsx";
 import Menu from "../../components/header/Menu.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
-import Searchbar, {
-  type SearchbarProps,
-} from "../../components/search/Searchbar/Form.tsx";
+import Searchbar, { type SearchbarProps } from "../../components/search/Searchbar/Form.tsx";
 import MenuMobileDrawer from "../../components/ui/MenuMobileDrawer.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import {
-  HEADER_HEIGHT_DESKTOP,
-  HEADER_HEIGHT_MOBILE,
-  SIDEMENU_CONTAINER_ID,
-  SIDEMENU_DRAWER_ID,
-} from "../../constants.ts";
+import { HEADER_HEIGHT_DESKTOP, HEADER_HEIGHT_MOBILE, SIDEMENU_CONTAINER_ID, SIDEMENU_DRAWER_ID } from "../../constants.ts";
 import { useDevice } from "@deco/deco/hooks";
-import WishListNav, {
-  WishListNavProps,
-} from "../../components/header/WishListNav.tsx";
-import ModalSessionInit, {
-  type ModalInitProps,
-} from "../../components/modalSessionInit/ModalSessionInit.tsx";
+import WishListNav, { WishListNavProps } from "../../components/header/WishListNav.tsx";
+import ModalSessionInit, { type ModalInitProps } from "../../components/modalSessionInit/ModalSessionInit.tsx";
 import { type LoadingFallbackProps } from "@deco/deco";
 import MegaMenu from "../../components/header/MegaMenu.tsx";
 export interface Logo {
@@ -79,14 +65,7 @@ export interface SectionProps {
   modalInitProps: ModalInitProps;
 }
 type Props = Omit<SectionProps, "alert">;
-const Desktop = ({
-  navItems,
-  logo,
-  searchbar,
-  variant,
-  icon,
-  modalInitProps,
-}: Props) => (
+const Desktop = ({ navItems, logo, searchbar, variant, icon, modalInitProps }: Props) => (
   <>
     <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
     {/* <Modal id={SEARCHBAR_POPUP_ID}>
@@ -101,20 +80,15 @@ const Desktop = ({
       </div>
     </Modal> */}
 
-    <div class="flex flex-col gap-2 pt-2 border-b shadow">
+    <div class="flex flex-col gap-2 pt-2  shadow">
       <div class="custom-container flex justify-between items-center w-full">
         <div class="flex flex-1">
           <a href="/" aria-label="Store logo">
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width || 100}
-              height={logo.height || 23}
-            />
+            <Image src={logo.src} alt={logo.alt} width={logo.width || 100} height={logo.height || 23} />
           </a>
         </div>
 
-        <div class="flex flex-1">
+        <div class="flex flex-auto">
           <Searchbar {...searchbar} />
         </div>
 
@@ -140,11 +114,7 @@ const Desktop = ({
             {navItems
               ?.slice(0, 10)
               .map((item, index) =>
-                index === 0 ? (
-                  <MegaMenu key={index} item={item} />
-                ) : (
-                  <NavItem key={index} item={item} />
-                )
+                index === 0 ? <MegaMenu key={index} item={item} /> : <NavItem key={index} item={item} />
               )}
           </ul>
         </div>
@@ -154,30 +124,16 @@ const Desktop = ({
     </div>
   </>
 );
-const Mobile = ({
-  logo,
-  searchbar,
-  navItemsMobile,
-  imageBannerMobile,
-  modalInitProps,
-  loading,
-}: Props) => (
+const Mobile = ({ logo, searchbar, navItemsMobile, imageBannerMobile, modalInitProps, loading }: Props) => (
   <>
     <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
 
     <MenuMobileDrawer
       id={SIDEMENU_DRAWER_ID}
       aside={
-        <MenuMobileDrawer.Aside
-          drawer={SIDEMENU_DRAWER_ID}
-          banner={imageBannerMobile ?? null}
-        >
+        <MenuMobileDrawer.Aside drawer={SIDEMENU_DRAWER_ID} banner={imageBannerMobile ?? null}>
           {loading === "lazy" ? (
-            <div
-              id={SIDEMENU_CONTAINER_ID}
-              class="h-full flex items-center justify-center"
-              style={{ minWidth: "100vw" }}
-            >
+            <div id={SIDEMENU_CONTAINER_ID} class="h-full flex items-center justify-center" style={{ minWidth: "100vw" }}>
               <span class="loading loading-spinner" />
             </div>
           ) : (
@@ -194,11 +150,7 @@ const Mobile = ({
       }}
     >
       <div className="flex w-full place-items-center">
-        <label
-          for={SIDEMENU_DRAWER_ID}
-          class="btn btn-square btn-sm btn-ghost"
-          aria-label="open menu"
-        >
+        <label for={SIDEMENU_DRAWER_ID} class="btn btn-square btn-sm btn-ghost" aria-label="open menu">
           <Icon id="menu" />
         </label>
 
@@ -209,12 +161,7 @@ const Mobile = ({
             // style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
             aria-label="Store logo"
           >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={120}
-              height={logo.height || 13}
-            />
+            <Image src={logo.src} alt={logo.alt} width={120} height={logo.height || 13} />
           </a>
         )}
 
@@ -241,17 +188,12 @@ function Header({
   return (
     <header
       style={{
-        height:
-          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
+        height: device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
       }}
     >
       <div class="bg-base-100 fixed w-screen z-40">
         {alerts.length > 0 && <Alert alerts={alerts} />}
-        {device === "desktop" ? (
-          <Desktop logo={logo} {...props} />
-        ) : (
-          <Mobile logo={logo} {...props} />
-        )}
+        {device === "desktop" ? <Desktop logo={logo} {...props} /> : <Mobile logo={logo} {...props} />}
       </div>
     </header>
   );

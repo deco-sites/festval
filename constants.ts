@@ -14,8 +14,8 @@ export const WISHLIST_FORM_ID = "wishlist-form";
 
 export const HEADER_HEIGHT_MOBILE = "120px";
 export const NAVBAR_HEIGHT_MOBILE = "120px";
-export const HEADER_HEIGHT_DESKTOP = "141px";
-export const NAVBAR_HEIGHT_DESKTOP = "24px";
+export const HEADER_HEIGHT_DESKTOP = "124px";
+export const NAVBAR_HEIGHT_DESKTOP = "25px";
 
 export const MODAL_SESSION_INIT_ID = "modal-session-init";
 export const MODAL_ADD_TO_CART_ID = "modal-add-to-cart";

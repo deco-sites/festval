@@ -1,0 +1,70 @@
+{
+  "name": "Sobre nós",
+  "path": "/sobre-nos",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ShoppableBanner.tsx",
+        "image": {
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a1d0fb44-7f12-4339-bade-1fd25342ba0b/fachada-2.webp",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a1d0fb44-7f12-4339-bade-1fd25342ba0b/fachada-2.webp",
+          "altText": "fesval"
+        },
+        "text": {
+          "layout": {
+            "position": "text-start"
+          },
+          "content": "O Festval é uma rede de supermercados que, no total, possui 24 lojas, sendo 5 em Cascavel e 19 em Curitiba e Pinhais, além de um e-commerce. Todas as lojas são padronizadas, seguindo uma arquitetura moderna e acessível. A rede também oferece marcas e linhas de produtos especiais, como a Mamma Bia, que se concentra em artigos tradicionalmente italianos, a linha Natural Festval, que se concentra em alimentos naturais e sem conservantes, e a linha dia a dia, que inclui produtos para consumo diário. Além disso, possui sua própria rede de importação, com uma lista de mais de 1.000 itens de diversos países, facilitando o acesso do consumidor a produtos importados de qualidade. Com inovação e responsabilidade, a Rede Festval trabalha para oferecer ambientes e momentos agradáveis aos seus clientes, com diferenciais que tornam o atendimento em suas lojas mais humano, personalizado e exclusivo."
+        },
+        "title": {
+          "content": "O Festval",
+          "layout": {
+            "position": "justify-start"
+          }
+        },
+        "reverseOrder": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ShoppableBanner.tsx",
+        "image": {
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/808df218-e19c-4260-b522-1404866f939b/fachada-1.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/808df218-e19c-4260-b522-1404866f939b/fachada-1.jpg",
+          "altText": "fesval"
+        },
+        "text": {
+          "layout": {
+            "position": "text-start"
+          },
+          "content": "Somos uma família. Todos os que fazem o Festval acontecer são parte dela. Se hoje, o Festval é referência de qualidade e bom atendimento em todo o Paraná, é porque não desviou de sua conduta ética, cordial e amigável, valores estabelecidos há 50 anos por seus, visionários, fundadores. Há 5 décadas a Família Beal cumpre o propósito de encantar os clientes e proporcionar as melhores experiências. Entrar em uma loja Festval é um momento único no dia, um lugar para se sentir bem, acolhido, percebendo que há carinho em atenção em cada detalhe. Por isso, somos uma família e com amor, assim como o de mãe, mostramos aos nossos clientes que na nossa forma de atender, sempre cabe mais um."
+        },
+        "title": {
+          "content": "Quem somos",
+          "layout": {
+            "position": "justify-start"
+          }
+        },
+        "reverseOrder": false
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -86,7 +86,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
       <Picture preload={lcp} {...viewPromotionEvent}>
         <Source media="(max-width: 767px)" fetchPriority={lcp ? "high" : "auto"} src={mobile} width={1080} height={1500} />
         <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1700} height={490} />
-        <img class="object-contain rounded w-full h-full " loading={lcp ? "eager" : "lazy"} src={desktop} alt={alt} />
+        <img class="object-contain w-full h-full " loading={lcp ? "eager" : "lazy"} src={desktop} alt={alt} />
       </Picture>
     </a>
   );
@@ -96,8 +96,8 @@ function Carousel({ images = [], preload, interval }: Props) {
   const id = useId();
 
   return (
-    <div class="bg-[#f8f8f8] w-full overflow-hidden relative lg:mt-7 md:mt-0 py-4">
-      <div class="relative custom-container mx-auto">
+    <div class=" w-full overflow-hidden relative pb-2">
+      <div class="relative max-w-[1920px] mx-auto">
         <div id={id} class={clx("w-full")}>
           <div class="col-span-full row-span-full">
             <Slider class="carousel carousel-center w-full gap-6">
@@ -127,7 +127,9 @@ function Carousel({ images = [], preload, interval }: Props) {
             </Slider.NextButton>
           </div>
 
-          <ul class={clx("col-span-full absolute lg:bottom-0 md:-bottom-1 inset-x-0 z-10", "carousel justify-center gap-3")}>
+          <ul
+            class={clx("col-span-full absolute lg:-bottom-1 md:-bottom-1 inset-x-0 z-10", "carousel justify-center gap-3")}
+          >
             {images.map((_, index) => (
               <li class="carousel-item">
                 <Slider.Dot

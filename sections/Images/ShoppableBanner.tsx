@@ -8,41 +8,19 @@ export interface Props {
     desktop?: ImageWidget;
     altText: string;
   };
-
-  pins?: Pin[];
-
+  text?: {
+    content?: string;
+    layout?: {
+      position?: "text-center" | "text-left" | "text-right" | "text-start";
+    };
+  };
   title?: {
     content?: string;
     layout?: {
       position?: "justify-start" | "justify-center" | "justify-end";
     };
   };
-  text?: {
-    content?: string;
-    layout?: {
-      position?: "text-center" | "text-left" | "text-right";
-    };
-  };
-  link?: {
-    layout?: {
-      position?: "justify-start" | "justify-center" | "justify-end";
-    };
-    text: string;
-    href: string;
-  };
-}
-
-export interface Pin {
-  mobile: {
-    x: number;
-    y: number;
-  };
-  desktop?: {
-    x: number;
-    y: number;
-  };
-  link: string;
-  label: string;
+  reverseOrder?: boolean;
 }
 
 const DEFAULT_PROPS: Props = {
@@ -54,90 +32,48 @@ const DEFAULT_PROPS: Props = {
   },
   text: {
     layout: {
-      position: "text-center",
+      position: "text-start",
     },
     content: "Your text",
   },
-  link: {
-    layout: {
-      position: "justify-center",
-    },
-    href: "#",
-    text: "Text link",
-  },
-  pins: [],
   image: {
     mobile:
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/cac2dc1c-48ac-4274-ad42-4016b0bbe947",
     altText: "Fashion",
   },
+  reverseOrder: false,
 };
 
 function ShoppableBanner(props: Props) {
-  const { link, text, title, image, pins } = { ...DEFAULT_PROPS, ...props };
+  const { title, text, image, reverseOrder } = { ...DEFAULT_PROPS, ...props };
 
   return (
-    <div class="container">
-      <div class="card lg:card-side rounded grid grid-cols-1 lg:grid-cols-2">
-        <figure class="relative">
+    <div class="custom-container mb-5">
+      <div
+        class={`card lg:card-side rounded grid grid-cols-1 lg:grid-cols-2 ${
+          reverseOrder ? "lg:flex-row-reverse" : "lg:flex-row"
+        }`}
+      >
+        <div
+          class={`flex flex-col justify-center gap-0 md:gap-3  md:px-8 px-2 ${reverseOrder ? "lg:order-2" : "lg:order-1"}`}
+        >
+          <p class={`md:text-3xl text-lg flex mb-1 lg:mb-3 font-semibold ${title?.layout?.position}`}>{title?.content}</p>
+          <p className={`md:text-base mb-3 lg:mb-0 text-xs ${text?.layout?.position}`}>{text?.content}</p>
+        </div>
+        <figure class={`flex w-full h-auto relative ${reverseOrder ? "lg:order-1" : "lg:order-2"}`}>
           <Picture>
-            <Source
-              media="(max-width: 767px)"
-              src={image?.mobile}
-              width={150}
-              height={150}
-            />
-            <Source
-              media="(min-width: 768px)"
-              src={image?.desktop ? image?.desktop : image?.mobile}
-              width={384}
-              height={227}
-            />
+            <Source media="(max-width: 767px)" src={image.mobile} width={768} height={400} />
+            <Source media="(min-width: 768px)" src={image.desktop || image.mobile} width={768} height={400} />
             <img
-              class="w-full h-full object-cover"
-              sizes="(max-width: 640px) 100vw, 30vw"
-              src={image?.mobile}
-              alt={image?.altText}
+              class="rounded-[20px] w-full max-w-[800px] md:px-0 px-2"
+              sizes="(max-width: 640px) 100vw, 100vw"
+              src={image.mobile}
+              alt={image.altText}
               decoding="async"
               loading="lazy"
             />
           </Picture>
-          {pins?.map(({ mobile, desktop, link, label }) => (
-            <>
-              <a
-                href={link}
-                class="absolute w-min btn btn-accent rounded-full hover:rounded text-accent no-animation md:scale-[30%] hover:text-accent-content hover:scale-125 sm:hidden"
-                style={{
-                  left: `${mobile.x}%`,
-                  top: `${mobile.y}%`,
-                }}
-              >
-                <span>{label}</span>
-              </a>
-              <a
-                href={link}
-                class="absolute w-min btn btn-accent rounded-full hover:rounded text-accent no-animation md:scale-[30%] hover:text-accent-content hover:scale-125 hidden sm:inline-flex"
-                style={{
-                  left: `${desktop?.x ?? mobile.x}%`,
-                  top: `${desktop?.y ?? mobile.y}%`,
-                }}
-              >
-                <span>{label}</span>
-              </a>
-            </>
-          ))}
         </figure>
-        <div class="flex flex-col justify-center gap-6 py-20 px-8 bg-neutral-content">
-          <h2 class={`card-title flex ${title?.layout?.position}`}>
-            {title?.content}
-          </h2>
-          <p class={`text-base-content ${text?.layout?.position}`}>
-            {text?.content}
-          </p>
-          <div class={`card-actions ${link?.layout?.position}`}>
-            <a class="underline" href={link?.href}>{link?.text}</a>
-          </div>
-        </div>
       </div>
     </div>
   );

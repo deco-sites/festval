@@ -47,9 +47,28 @@
             "question": "TEstee"
           }
         ],
-        "introContent": "<p>teste</p>",
-        "introText": "TEste",
-        "introImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/496eadfd-f88b-4cc2-8ea3-9bfe8d42919e/Metodo-de-Pagamento.svg"
+        "introContent": "<p><span style=\"font-size: 10pt\">Nós do FESTVAL temos um compromisso com a proteção dos dados pessoais utilizados em nossas atividades. Esta Política de Privacidade e Proteção de Dados Pessoais foi desenvolvida cuidadosamente para que você, usuário dos nossos serviços, possa entender nossas políticas de uso e práticas sobre seus dados pessoais e como o tratamento destes dados são realizados.</span></p><p><span style=\"font-size: 10pt\">Esta Política abrange nossas atividades de coleta de dados no site acessível no endereço https://www.festval.com/, disponibilizado e mantido pelo FESTVAL, que se aplica ao titular que interage com nossos produtos e serviços. Esta Política explica as regras sobre a obtenção, uso dos dados coletados, tratamento, armazenamento, proteção dos dados, transferência, enriquecimento dos dados coletados dos usuários, além dos seus direitos em relação a esses dados, de acordo com a lei em vigor no Brasil.</span></p><p><span style=\"font-size: 10pt\">A Política esclarece as condições de coleta, uso, armazenamento, tratamento e proteção dos dados na plataforma, em conformidade com a Lei Geral de Proteção de dados nº 13.709 de 14 de agosto de 2018.</span></p>",
+        "introText": "Teste",
+        "introImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/496eadfd-f88b-4cc2-8ea3-9bfe8d42919e/Metodo-de-Pagamento.svg",
+        "navItemPrinciapl": {
+          "questions": [
+            {
+              "question": "testes de conteudo",
+              "answer": "conteudo"
+            },
+            {
+              "question": "Teste de conteudo 2",
+              "answer": "conteúdo"
+            }
+          ],
+          "title": "Teste de conteúdo"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
       }
     }
   ],
