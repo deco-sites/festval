@@ -43,10 +43,6 @@ export interface Props {
 
 export interface ModalInitProps {
   modalInitProps: Props;
-  /**
-   * @hidden
-   */
-  actionResult: Resolved<boolean | null>;
 }
 
 const saveCepToCookies = (
@@ -117,12 +113,12 @@ export const action = async (
 
       saveSegmentToCookie(ctx, response.segmentToken);
       saveCepToCookies(ctx, cep);
-      return { actionResult: true };
+      return true;
     }
-    return { actionResult: false };
+    return false;
   }
 
-  return { actionResult: false };
+  return false;
 };
 
 const onLoad = (id: string) => {
@@ -212,7 +208,6 @@ export function loader(props: ModalInitProps) {
 
 function ModalSessionInit({
   modalInitProps,
-  actionResult,
 }: ModalInitProps & SectionProps<typeof loader, typeof action>) {
   const id = useId();
   const {
@@ -223,7 +218,6 @@ function ModalSessionInit({
     submitButtonText,
     findCepText,
   } = modalInitProps;
-  const feedback = actionResult ?? false;
   return (
     <div className={`modal`} id={id}>
       <div
