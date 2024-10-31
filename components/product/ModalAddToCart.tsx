@@ -32,9 +32,7 @@ const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const inputId = `input-${id}`;
     const container = document.getElementById(inputId);
-    const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]'
-    );
+    const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 1;
     if (!input) {
@@ -42,12 +40,8 @@ const onLoad = (id: string) => {
     }
     input.value = quantity.toString();
     // enable interactivity
-    container
-      ?.querySelectorAll<HTMLButtonElement>("button")
-      .forEach((node) => (node.disabled = false));
-    container
-      ?.querySelectorAll<HTMLButtonElement>("input")
-      .forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -114,10 +108,7 @@ function ModalAddToCart(props: Props) {
   const { listPrice, price, availability } = useOffer(offers);
   const inStock = availability === "https://schema.org/InStock";
   const relativeUrl = relative(url);
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
 
   const platformProps = useAddToCart({ product, seller });
 
@@ -127,10 +118,7 @@ function ModalAddToCart(props: Props) {
         class="bg-base-100 absolute top-0 px-[85px] py-[60px] modal-box max-w-[1088px] rounded-lg flex gap-[70px]"
         style={{ top: "50%", transform: "translateY(-50%)" }}
       >
-        <div
-          class="absolute top-[11px] right-[11px]"
-          hx-on:click={useScript(onClick)}
-        >
+        <div class="absolute top-[11px] right-[11px]" hx-on:click={useScript(onClick)}>
           <button type="button">
             <Image
               src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2a8a1f1a-e676-44e1-b918-eb3c22226498/close-modal.svg"
@@ -157,17 +145,8 @@ function ModalAddToCart(props: Props) {
         <div class="flex flex-col">
           {/* Product Name */}
           <div>
-            <span
-              class={clx(
-                "lg:text-xl sm:text-base font-bold text-[#373737]",
-                "pt-4"
-              )}
-            >
-              {title}
-            </span>
-            <div className="pt-1 text-[#646072] lg:text-lg text-sm">
-              Ref.{gtin}
-            </div>
+            <span class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4")}>{title}</span>
+            <div className="pt-1 text-[#646072] lg:text-lg text-sm">Ref.{gtin}</div>
           </div>
           {/* Prices */}
           <div class="flex flex-col items-start gap-1 pt-4">
@@ -185,18 +164,14 @@ function ModalAddToCart(props: Props) {
                     </span>
                   )}
                 </div>
-                <span class="text-xl font-bold text-base-400">
-                  {formatPrice(price, offers?.priceCurrency)}
-                </span>
+                <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
               </div>
 
               <div
                 id={`input-${id}`}
                 class="lg:w-2/4 lg:block hidden"
                 data-item-id={product.productID}
-                data-cart-item={encodeURIComponent(
-                  JSON.stringify({ item, platformProps })
-                )}
+                data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
               >
                 <QuantitySelector min={1} max={100} />
               </div>
@@ -220,25 +195,17 @@ function ModalAddToCart(props: Props) {
             )}
           </div>
           {/* Description card */}
-          <div class="mt-4 sm:mt-6">
-            <span className="lg:text-lg text-base font-bold text-[#373737]">
-              Detalhes do produto
-            </span>
-            <span class="text-sm">
+          <div class="mt-4  sm:mt-6">
+            <span className="lg:text-lg text-base font-bold text-[#373737]">Detalhes do produto</span>
+            <span class="text-sm ">
               {description && (
-                <div
-                  class="mt-2"
-                  dangerouslySetInnerHTML={{ __html: description }}
-                />
+                <div class="mt-2 max-h-[290px] overflow-y-auto" dangerouslySetInnerHTML={{ __html: description }} />
               )}
             </span>
           </div>
         </div>
       </div>
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
-      />
+      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
     </div>
   );
 }

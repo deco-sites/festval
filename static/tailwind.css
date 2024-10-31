@@ -4298,6 +4298,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[250px\] {
   max-height: 250px;
 }
+.max-h-\[290px\] {
+  max-height: 290px;
+}
 .max-h-\[300px\] {
   max-height: 300px;
 }

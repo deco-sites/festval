@@ -85,7 +85,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
       )}
       <Picture preload={lcp} {...viewPromotionEvent}>
         <Source media="(max-width: 767px)" fetchPriority={lcp ? "high" : "auto"} src={mobile} width={1080} height={1500} />
-        <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1700} height={490} />
+        <Source media="(min-width: 768px)" fetchPriority={lcp ? "high" : "auto"} src={desktop} width={1920} height={490} />
         <img class="object-contain w-full h-full " loading={lcp ? "eager" : "lazy"} src={desktop} alt={alt} />
       </Picture>
     </a>
@@ -94,6 +94,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
 
 function Carousel({ images = [], preload, interval }: Props) {
   const id = useId();
+  const showNavigation = images.length > 1;
 
   return (
     <div class=" w-full overflow-hidden relative pb-2">
@@ -109,39 +110,42 @@ function Carousel({ images = [], preload, interval }: Props) {
             </Slider>
           </div>
 
-          <div class="hidden sm:flex items-center justify-start z-10 absolute left-5 inset-y-0 row-start-2">
-            <Slider.PrevButton
-              class="btn btn-carousel border-none hover:!bg-transparent no-animation btn-sm color-white absolute left-0"
-              disabled={false}
-            >
-              <Icon id="arrow-white" class="rotate-180" />
-            </Slider.PrevButton>
-          </div>
+          {showNavigation && (
+            <>
+              <div className="hidden sm:flex items-center justify-start z-10 absolute left-5 inset-y-0 row-start-2">
+                <Slider.PrevButton className="btn btn-carousel border-none hover:!bg-transparent no-animation btn-sm color-white absolute left-0">
+                  <Icon id="arrow-white" className="rotate-180" />
+                </Slider.PrevButton>
+              </div>
 
-          <div class="hidden sm:flex items-center justify-end z-10 absolute right-5 inset-y-0 row-start-2">
-            <Slider.NextButton
-              class="btn btn-carousel border-none hover:!bg-transparent no-animation btn-sm color-white absolute right-0"
-              disabled={false}
-            >
-              <Icon id="arrow-white" />
-            </Slider.NextButton>
-          </div>
+              <div className="hidden sm:flex items-center justify-end z-10 absolute right-5 inset-y-0 row-start-2">
+                <Slider.NextButton className="btn btn-carousel border-none hover:!bg-transparent no-animation btn-sm color-white absolute right-0">
+                  <Icon id="arrow-white" />
+                </Slider.NextButton>
+              </div>
+            </>
+          )}
 
-          <ul
-            class={clx("col-span-full absolute lg:-bottom-1 md:-bottom-1 inset-x-0 z-10", "carousel justify-center gap-3")}
-          >
-            {images.map((_, index) => (
-              <li class="carousel-item">
-                <Slider.Dot
-                  index={index}
-                  class={clx(
-                    " bg-gray-400 h-2 w-6 no-animation rounded-full",
-                    "disabled:w-6 disabled:bg-black disabled:opacity-100 transition-[width]"
-                  )}
-                ></Slider.Dot>
-              </li>
-            ))}
-          </ul>
+          {showNavigation && (
+            <ul
+              className={clx(
+                "col-span-full absolute lg:-bottom-1 md:-bottom-1 inset-x-0 z-10",
+                "carousel justify-center gap-3"
+              )}
+            >
+              {images.map((_, index) => (
+                <li key={index} className="carousel-item">
+                  <Slider.Dot
+                    index={index}
+                    className={clx(
+                      "bg-gray-400 h-2 w-6 no-animation rounded-full",
+                      "disabled:w-6 disabled:bg-black disabled:opacity-100 transition-[width]"
+                    )}
+                  />
+                </li>
+              ))}
+            </ul>
+          )}
 
           <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
         </div>

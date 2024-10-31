@@ -11,14 +11,9 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/68591f1a-e736-4477-99c1-b1d4f20ce479/BANNER-OFERTAS-FDS.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/99bb398d-1091-4b31-a8d4-04f4d03e0d31/mobilegg.png",
-          "alt": "carnes"
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/68591f1a-e736-4477-99c1-b1d4f20ce479/BANNER-OFERTAS-FDS.jpg",
-          "alt": "/",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/99bb398d-1091-4b31-a8d4-04f4d03e0d31/mobilegg.png"
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9a56fcb8-1bd2-4c7f-8e55-ba0b4bf0a7ea/BANNER-HOME-SITE-1920X490-2.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/722af1cd-727e-4814-82a4-b7d195eaa2a3/BANNER-HOME-MBL-1080X1500.jpg",
+          "alt": "site"
         }
       ],
       "preload": true
