@@ -1,16 +1,13 @@
 import { AppContext } from "../../apps/site.ts";
-import { setCookie, getCookies } from "@std/http/cookie";
-import {
-  HEADER_HEIGHT_MOBILE,
-  MODAL_SESSION_INIT_ID,
-} from "../../constants.ts";
+import { setCookie } from "@std/http/cookie";
+import { HEADER_HEIGHT_MOBILE } from "../../constants.ts";
 import { useComponent } from "../../sections/Component.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import { type SectionProps } from "@deco/deco";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { useId } from "../../sdk/useId.ts";
+import { type SectionProps, type Resolved } from "@deco/deco";
 
 export interface Props {
   /**
@@ -46,6 +43,10 @@ export interface Props {
 
 export interface ModalInitProps {
   modalInitProps: Props;
+  /**
+   * @hidden
+   */
+  actionResult: Resolved<boolean | null>;
 }
 
 const saveCepToCookies = (
@@ -74,14 +75,16 @@ const saveSegmentToCookie = (ctx: AppContext, segment: string) => {
   });
 };
 
-export async function action(
+export const action = async (
   _props: ModalInitProps,
   req: Request,
   ctx: AppContext
-) {
+) => {
   const platform = usePlatform();
   const form = await req.formData();
-  const cep = `${form.get("email") ?? ""}`;
+  const cep = `${form.get("cep") ?? ""}`;
+  if (!cep) return { actionResult: false };
+  const cepFormatted = cep.replace("-", "").trim();
 
   if (platform === "vtex") {
     // deno-lint-ignore no-explicit-any
@@ -91,61 +94,51 @@ export async function action(
         data: {
           public: {
             country: { value: "BRA" },
-            postalCode: { value: cep },
+            postalCode: { value: cepFormatted },
           },
         },
       }
     );
 
-    setCookie(ctx.response.headers, {
-      value: response.segmentToken,
-      name: "vtex_segment",
-      path: "/",
-      secure: true,
-    });
+    if (response) {
+      setCookie(ctx.response.headers, {
+        value: response.segmentToken,
+        name: "vtex_segment",
+        path: "/",
+        secure: true,
+      });
 
-    setCookie(ctx.response.headers, {
-      value: response.sessionToken,
-      name: "vtex_session",
-      path: "/",
-      secure: true,
-    });
+      setCookie(ctx.response.headers, {
+        value: response.sessionToken,
+        name: "vtex_session",
+        path: "/",
+        secure: true,
+      });
 
-    saveSegmentToCookie(ctx, response.segmentToken);
+      saveSegmentToCookie(ctx, response.segmentToken);
+      saveCepToCookies(ctx, cep);
+      return { actionResult: true };
+    }
+    return { actionResult: false };
   }
 
-  saveCepToCookies(ctx, cep);
-
-  return true;
-}
+  return { actionResult: false };
+};
 
 const onLoad = (id: string) => {
   function getCookie(name: string): string | null {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
-
     if (parts.length === 2) {
-      const lastPart = parts.pop();
-      if (lastPart) {
-        const splitPart = lastPart.split(";");
-        if (splitPart.length > 0) {
-          return splitPart.shift() || null;
-        }
-      }
+      return parts.pop()?.split(";").shift() || null;
     }
-
     return null;
   }
-
   const cep = getCookie("vtex_last_session_cep");
   const vtex_segment_cookie = getCookie("vtex_last_segment");
-
   const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
-
   const modal = document.getElementById(id);
-
   const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
-
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
   } else {
@@ -153,48 +146,64 @@ const onLoad = (id: string) => {
   }
 };
 
-const onSubmit = (id: string) => {
-  setTimeout(() => {
-    function getCookie(name: string): string | null {
-      const value = `; ${document.cookie}`;
-      const parts = value.split(`; ${name}=`);
+const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
+  let attempts = 0;
 
-      if (parts.length === 2) {
-        const lastPart = parts.pop();
-        if (lastPart) {
-          const splitPart = lastPart.split(";");
-          if (splitPart.length > 0) {
-            return splitPart.shift() || null;
-          }
-        }
-      }
-
-      return null;
+  function getCookie(name: string): string | null {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) {
+      return parts.pop()?.split(";").shift() || null;
     }
+    return null;
+  }
+
+  function attemptSubmit() {
+    const modal = document.getElementById(id);
+    const limeText = modal?.querySelector(".text-lime-600");
+    const redText = modal?.querySelector(".text-red-700");
+    const btnSubmit = modal?.querySelector(".btn-submit");
+    const loading = modal?.querySelector(".loading");
+
+    btnSubmit?.classList.add("hidden");
+    loading?.classList.remove("hidden");
 
     const cep = getCookie("vtex_last_session_cep");
     const vtex_segment_cookie = getCookie("vtex_last_segment");
-
     const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
-
-    const modal = document.getElementById(id);
-
     const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
-
-    const limeText = modal!.querySelector(".text-lime-600");
-    const redText = modal!.querySelector(".text-red-700");
 
     if (cep && regionId) {
       limeText?.classList.remove("hidden");
+      redText?.classList.add("hidden");
+
       setTimeout(() => {
         modal?.classList.remove("modal-open");
         window.location.reload();
       }, 1000);
+    } else if (attempts < maxAttempts) {
+      attempts += 1;
+      console.log(
+        `Tentativa ${attempts} de ${maxAttempts} falhou. Reexecutando...`
+      );
+      setTimeout(attemptSubmit, delay);
     } else {
       redText?.classList.remove("hidden");
-      modal?.classList.add("modal-open");
+      limeText?.classList.add("hidden");
+      btnSubmit?.classList.remove("hidden");
+      loading?.classList.add("hidden");
     }
-  }, 3000);
+  }
+
+  attemptSubmit();
+};
+
+const applyCepMask = () => {
+  const cepInput = event?.currentTarget as HTMLInputElement;
+  cepInput.value = cepInput.value
+    .replace(/\D/g, "")
+    .replace(/^(\d{5})(\d)/, "$1-$2")
+    .slice(0, 9);
 };
 
 export function loader(props: ModalInitProps) {
@@ -203,29 +212,40 @@ export function loader(props: ModalInitProps) {
 
 function ModalSessionInit({
   modalInitProps,
+  actionResult,
 }: ModalInitProps & SectionProps<typeof loader, typeof action>) {
   const id = useId();
+  const {
+    welcomeMessage,
+    logo,
+    modalTitle,
+    cepPlaceholder,
+    submitButtonText,
+    findCepText,
+  } = modalInitProps;
+  const feedback = actionResult ?? false;
   return (
     <div className={`modal`} id={id}>
       <div
         class="bg-base-100 absolute top-0 pt-5 pb-5 px-[30px] sm:px-[40px] modal-box rounded-lg flex flex-col gap-2.5"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
       >
-        {modalInitProps.welcomeMessage && (
+        {welcomeMessage && (
           <div>
             <h3 class="font-bold text-base text-center">
-              {modalInitProps.welcomeMessage}
+              {welcomeMessage} {feedback.toString()}
             </h3>
           </div>
         )}
-        {modalInitProps.logo && (
+        {logo && (
           <div class="flex justify-center">
-            <Image width={250} height={40} src={modalInitProps.logo} />
+            <Image width={250} height={40} src={logo} />
           </div>
         )}
-        <h3 class="font-normal text-center text-[12.8px]">
-          {modalInitProps.modalTitle}
-        </h3>
+        {modalTitle && (
+          <h3 class="font-normal text-center text-[12.8px]">{modalTitle}</h3>
+        )}
+
         <form
           hx-post={useComponent(import.meta.url)}
           hx-trigger="submit"
@@ -233,12 +253,15 @@ function ModalSessionInit({
           hx-on:submit={useScript(onSubmit, id)}
           class="flex flex-col gap-2.5 w-full"
         >
-          <input
-            name="email"
-            class="input input-bordered flex-grow text-center rounded-[5px]"
-            type="text"
-            placeholder={modalInitProps.cepPlaceholder}
-          />
+          {cepPlaceholder && (
+            <input
+              name="cep"
+              class="input input-bordered flex-grow text-center rounded-[5px]"
+              type="text"
+              placeholder={cepPlaceholder}
+              hx-on:input={useScript(applyCepMask)}
+            />
+          )}
 
           <span class="text-lime-600 text-center hidden">
             Você será redirecionado
@@ -260,23 +283,26 @@ function ModalSessionInit({
             }}
             type="submit"
           >
-            <span class="[.htmx-request_&]:hidden inline">
-              {modalInitProps.submitButtonText}
-            </span>
-            <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
+            {submitButtonText && (
+              <span class="btn-submit inline">{submitButtonText}</span>
+            )}
+
+            <span class="inline hidden loading loading-spinner" />
           </button>
         </form>
-        <a
-          href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="link block text-xs underline text-center"
-          style={{
-            color: "#6495ed",
-          }}
-        >
-          {modalInitProps.findCepText}
-        </a>
+        {findCepText && (
+          <a
+            href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link block text-xs underline text-center"
+            style={{
+              color: "#6495ed",
+            }}
+          >
+            {findCepText}
+          </a>
+        )}
       </div>
       <script
         type="module"
