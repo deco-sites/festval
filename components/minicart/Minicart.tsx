@@ -50,8 +50,12 @@ const onLoad = (formID: string) => {
       }
       // Disable addToCart button interactivity
       document.querySelectorAll("div[data-cart-item]").forEach((container) => {
-        container?.querySelectorAll("button").forEach((node) => (node.disabled = true));
-        container?.querySelectorAll("input").forEach((node) => (node.disabled = true));
+        container
+          ?.querySelectorAll("button")
+          .forEach((node) => (node.disabled = true));
+        container
+          ?.querySelectorAll("input")
+          .forEach((node) => (node.disabled = true));
       });
     }
   );
@@ -71,10 +75,17 @@ export function ErrorFallback() {
     <div class="flex flex-col flex-grow justify-center items-center overflow-hidden w-full gap-2">
       <div class="flex flex-col gap-1 p-6 justify-center items-center">
         <span class="font-semibold">Erro ao atualizar carrinho</span>
-        <span class="text-sm text-center">Clique no botão abaixo para tentar novamente ou atualizar a página</span>
+        <span class="text-sm text-center">
+          Clique no botão abaixo para tentar novamente ou atualizar a página
+        </span>
       </div>
 
-      <button class="btn btn-primary" hx-patch={useComponent(import.meta.url)} hx-swap="outerHTML" hx-target="closest div">
+      <button
+        class="btn btn-primary"
+        hx-patch={useComponent(import.meta.url)}
+        hx-swap="outerHTML"
+        hx-target="closest div"
+      >
         Tentar novamente
       </button>
     </div>
@@ -125,11 +136,17 @@ export default function Cart({
         <input
           type="hidden"
           name="storefront-cart"
-          value={encodeURIComponent(JSON.stringify({ currency, value: total, items }))}
+          value={encodeURIComponent(
+            JSON.stringify({ currency, value: total, items })
+          )}
         />
 
         {/* This contains the platformCart cart from the commerce platform. Integrations usually use this value, like GTM, pixels etc */}
-        <input type="hidden" name="platform-cart" value={encodeURIComponent(JSON.stringify(platformCart))} />
+        <input
+          type="hidden"
+          name="platform-cart"
+          value={encodeURIComponent(JSON.stringify(platformCart))}
+        />
 
         <div
           class={clx(
@@ -140,7 +157,10 @@ export default function Cart({
           {count === 0 ? (
             <div class="flex flex-col gap-6">
               <span class="font-medium text-2xl">Seu carrinho está vazio</span>
-              <label for={MINICART_DRAWER_ID} class="btn btn-outline no-animation">
+              <label
+                for={MINICART_DRAWER_ID}
+                class="btn btn-outline no-animation"
+              >
                 Escolha produtos
               </label>
             </div>
@@ -157,10 +177,18 @@ export default function Cart({
               </div> */}
 
               {/* Cart Items */}
-              <ul role="list" class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full">
+              <ul
+                role="list"
+                class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
+              >
                 {items.map((item, index) => (
                   <li>
-                    <CartItem item={item} index={index} locale={locale} currency={currency} />
+                    <CartItem
+                      item={item}
+                      index={index}
+                      locale={locale}
+                      currency={currency}
+                    />
                   </li>
                 ))}
               </ul>
@@ -168,26 +196,36 @@ export default function Cart({
               {/* Cart Footer */}
               <footer class="w-full border-t border-[#d8d8d886]">
                 {/* Subtotal */}
-                <div class="border-t border-base-200 py-2 flex flex-col">
+                <div class="border-t border-base-200 py-2 flex flex-col gap-3">
                   {discounts > 0 && (
                     <div class="flex justify-between items-center px-4">
                       <span class="text-sm">Descontos</span>
-                      <span class="text-sm">{formatPrice(discounts, currency, locale)}</span>
+                      <span class="text-sm">
+                        {formatPrice(discounts, currency, locale)}
+                      </span>
                     </div>
                   )}
-                  <div class="w-full flex justify-between px-4 text-sm">
-                    <span>Subtotal</span>
-                    <output form={MINICART_FORM_ID}>{formatPrice(subtotal, currency, locale)}</output>
+                  <div class="w-full flex justify-between px-4 text-sm sm:text-base">
+                    <span class="font-semibold">Subtotal</span>
+                    <output form={MINICART_FORM_ID}>
+                      {formatPrice(subtotal, currency, locale)}
+                    </output>
+                  </div>
+                  <div class="w-full flex justify-between px-4 text-base font-semibold text-lg sm:text-xl">
+                    <span>Total</span>
+                    <output form={MINICART_FORM_ID}>
+                      {formatPrice(total, currency, locale)}
+                    </output>
                   </div>
                 </div>
 
                 {/* Total */}
-                <div class="border border-[#d8d8d8] p-2 flex flex-row justify-end  items-center gap-3 mx-4">
+                {/* <div class="border border-[#d8d8d8] p-2 flex flex-row justify-end  items-center gap-3 mx-4">
                   <Icon id="info" class="w-5" />
                   <span class="text-sm text-base-300 w-11/12">
                     A troca de CEP ou forma de entraga pode alterar os preços e disponibulidade dos produtos
                   </span>
-                </div>
+                </div> */}
 
                 <div class="p-4">
                   <a
@@ -197,9 +235,6 @@ export default function Cart({
                   >
                     <span class="[.htmx-request_&]:hidden font-medium flex justify-between w-full items-center">
                       Fechar pedido
-                      <output form={MINICART_FORM_ID} class="font-medium">
-                        {formatPrice(total, currency, locale)}
-                      </output>
                     </span>
                     <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
                   </a>
