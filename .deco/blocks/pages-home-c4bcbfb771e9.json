@@ -1992,7 +1992,7 @@
                         "url": "/padaria/sonho-e-doce"
                       }
                     ],
-                    "name": "/padaria",
+                    "name": "Padaria",
                     "url": "/padaria"
                   }
                 ],
@@ -2017,21 +2017,33 @@
                 "children": [
                   {
                     "image": [],
-                    "children": [],
-                    "name": "Cão",
-                    "url": "/petshop/cao"
-                  },
-                  {
-                    "image": [],
-                    "children": [],
-                    "name": "Gato",
-                    "url": "/petshop/gato"
-                  },
-                  {
-                    "image": [],
-                    "children": [],
-                    "name": "Higiene e Limpeza",
-                    "url": "/petshop/higiene-e-limpeza"
+                    "children": [
+                      {
+                        "image": [],
+                        "children": [
+                          {
+                            "image": [],
+                            "children": [],
+                            "name": "Cão",
+                            "url": "petshop/cao"
+                          },
+                          {
+                            "image": [],
+                            "children": [],
+                            "name": "Gato",
+                            "url": "/petshop/gato"
+                          },
+                          {
+                            "image": [],
+                            "children": [],
+                            "name": "Higiene e Limpeza",
+                            "url": "/petshop/higiene-e-limpeza"
+                          }
+                        ]
+                      }
+                    ],
+                    "name": "Petshop",
+                    "url": "/petshop"
                   }
                 ],
                 "name": "Petshop",
