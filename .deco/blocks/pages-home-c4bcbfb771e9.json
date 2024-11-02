@@ -2186,7 +2186,13 @@
                     "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5d391f65-7da1-4d04-9460-bb0854b22405/acogue.svg"
                   }
                 ],
-                "children": [],
+                "children": [
+                  {
+                    "image": [],
+                    "children": [],
+                    "name": "teste"
+                  }
+                ],
                 "name": "Açougue"
               },
               {
@@ -2572,7 +2578,7 @@
             "href": "/"
           },
           {
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/11f0b1fc-386f-4357-b8de-6e1d85ac7dff/Grupo-65.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/902ac340-ced2-4f71-a5a4-2d65c5d4f9de/BANNER_M_FANTA_MIST.jpg",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f2558c62-e2ed-4012-a410-5371739f4240/Fanta-visibilidade.jpg",
             "alt": "Fanta",
             "href": "/"

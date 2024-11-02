@@ -14,7 +14,7 @@
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-          "sort": "price:desc",
+          "sort": "",
           "count": 12,
           "fuzzy": "automatic",
           "selectedFacets": []
