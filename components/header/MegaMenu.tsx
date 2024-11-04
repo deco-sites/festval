@@ -60,7 +60,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
 
                   <div
                     id={node.name}
-                    class="submenu container-submenu absolute top-0 right-0 hidden flex justify-between p-[44px] pt-[30px] group-1-hover:flex"
+                    class="submenu container-submenu absolute h-full top-0 right-0 hidden flex justify-between p-[44px] pt-[30px] group-1-hover:flex"
                   >
                     <ul class="grid grid-cols-2 flex gap-14 flex-wrap max-h-[377px] 2xl:max-h-[532px] overflow-y-auto">
                       {node.children?.map((leaf) => (
