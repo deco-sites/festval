@@ -2110,8 +2110,8 @@
             ],
             "@type": "SiteNavigationElement",
             "url": "/deals",
-            "name": "Departamentos",
-            "image": []
+            "image": [],
+            "name": "Departamentos"
           },
           {
             "@type": "SiteNavigationElement",
@@ -2452,7 +2452,7 @@
                 "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2b444712-bd3c-4713-af96-817fe03b74f5/categorias.svg"
               }
             ],
-            "name": "Categorias"
+            "name": "Departamentos"
           },
           {
             "children": [],
@@ -2463,7 +2463,8 @@
                 "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6c1ce25b-72b5-4b82-98f6-177ab1a41152/descontos.svg"
               }
             ],
-            "name": "Descontos"
+            "name": "Oportunidades",
+            "url": "/1072?map=productClusterIds"
           },
           {
             "children": [],
@@ -2474,7 +2475,8 @@
                 "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bca2f972-822a-4cdc-92c4-596d3038bdfc/especiais.svg"
               }
             ],
-            "name": "Especiais"
+            "name": "Comprar novamente",
+            "url": "/account#/orders"
           },
           {
             "children": [],
@@ -2485,7 +2487,8 @@
                 "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58314246-439b-4a83-b1f7-cca28d8e157f/servicos.svg"
               }
             ],
-            "name": "Serviços"
+            "name": "Meus pedidos",
+            "url": "/account#/orders"
           },
           {
             "children": [],
@@ -2496,7 +2499,13 @@
                 "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c7a31006-541b-4b70-9595-d41abea447cb/contato.svg"
               }
             ],
-            "name": "Contato"
+            "name": "Nossas lojas",
+            "url": "https://superfestval.com.br/lojas"
+          },
+          {
+            "children": [],
+            "image": [],
+            "name": "Atendimento"
           }
         ]
       }
