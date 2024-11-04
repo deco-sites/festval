@@ -138,12 +138,6 @@
                   "children": [],
                   "name": "Uruguaio",
                   "url": "/adega/vinho-branco/uruguaio"
-                },
-                {
-                  "image": [],
-                  "children": [],
-                  "name": "Uruguaio",
-                  "url": "/adega/vinho-branco/uruguaio"
                 }
               ],
               "name": "Vinho Branco",
@@ -2111,37 +2105,37 @@
     {
       "@type": "SiteNavigationElement",
       "url": "/178?map=productClusterIds",
-      "name": "SOU FESTVAL",
+      "name": "Sou Festval",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
       "url": "/142?map=productClusterIds",
-      "name": "MAIS VENDIDOS",
+      "name": "Mais vendidos",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
       "url": "/159?map=productClusterIds",
-      "name": "CHURRASCO",
+      "name": "Churrasco",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
       "url": "/1358?map=productClusterIds",
-      "name": "MAMMA BIA",
+      "name": "Mamma Bia",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
       "url": "/adega",
-      "name": "ADEGA",
+      "name": "Adega",
       "children": []
     },
     {
       "children": [],
       "image": [],
-      "name": "IMPORTADOS",
+      "name": "Importados",
       "url": "/importados"
     }
   ],
