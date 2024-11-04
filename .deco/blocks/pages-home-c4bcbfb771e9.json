@@ -132,7 +132,7 @@
           "props": {
             "sort": "price:desc",
             "collection": "142",
-            "count": 21,
+            "count": 12,
             "hideUnavailableItems": false
           }
         },
@@ -156,7 +156,7 @@
           "props": {
             "sort": "price:desc",
             "collection": "1072",
-            "count": 30,
+            "count": 12,
             "hideUnavailableItems": false
           }
         },
@@ -192,7 +192,7 @@
           "props": {
             "sort": "price:desc",
             "collection": "1359",
-            "count": 30,
+            "count": 12,
             "hideUnavailableItems": false
           }
         },
@@ -216,7 +216,7 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "count": 30,
+            "count": 12,
             "fuzzy": "automatic",
             "query": "Açougue"
           }
@@ -257,7 +257,7 @@
           "props": {
             "sort": "price:desc",
             "collection": "163",
-            "count": 30,
+            "count": 12,
             "hideUnavailableItems": false
           }
         },
@@ -281,7 +281,7 @@
           "props": {
             "sort": "price:desc",
             "collection": "172",
-            "count": 30,
+            "count": 12,
             "hideUnavailableItems": false,
             "similars": false
           }
