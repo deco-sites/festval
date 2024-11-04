@@ -44,7 +44,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                 <li class="group-1">
                   <a href={node.url}>
                     <button
-                      class="text-sm font-normal bg-none group-1-hover:bg-[#D8D8D8] flex justify-between items-center w-full px-[10px] py-[10px] border-b border-[#d8d8d8]"
+                      class="text-sm font-normal bg-none group-1-hover:bg-[#D8D8D8] flex justify-between items-center w-full px-[10px] py-[10px] border-b border-r border-[#d8d8d8]"
                       href={node.url}
                     >
                       <span>{node.name}</span>

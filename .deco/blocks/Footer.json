@@ -6,15 +6,15 @@
       "children": [
         {
           "title": "Meus pedidos",
-          "href": "#"
+          "href": "/account#/orders"
         },
         {
           "title": "Lista de compras",
-          "href": "#"
+          "href": "/account#/orders"
         },
         {
           "title": "Meus dados",
-          "href": "#"
+          "href": "/account#"
         }
       ],
       "href": "#"
@@ -255,5 +255,6 @@
       ],
       "title": "Fale com o Festval"
     }
-  ]
+  ],
+  "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b72d9145-8890-47f3-b213-158ba616ccb4/Grupo-4083.svg"
 }

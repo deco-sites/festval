@@ -2447,7 +2447,7 @@
           "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2b444712-bd3c-4713-af96-817fe03b74f5/categorias.svg"
         }
       ],
-      "name": "Categorias"
+      "name": "Departamentos"
     },
     {
       "children": [],
@@ -2458,7 +2458,8 @@
           "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6c1ce25b-72b5-4b82-98f6-177ab1a41152/descontos.svg"
         }
       ],
-      "name": "Descontos"
+      "name": "Oportunidades",
+      "url": "/1072?map=productClusterIds"
     },
     {
       "children": [],
@@ -2466,10 +2467,11 @@
         {
           "image": [],
           "video": [],
-          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bca2f972-822a-4cdc-92c4-596d3038bdfc/especiais.svg"
+          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0d68fcdf-ea46-45b4-a919-967594940ce5/comprar-novamente.svg"
         }
       ],
-      "name": "Especiais"
+      "name": "Comprar novamente",
+      "url": "/account#/orders"
     },
     {
       "children": [],
@@ -2477,10 +2479,11 @@
         {
           "image": [],
           "video": [],
-          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58314246-439b-4a83-b1f7-cca28d8e157f/servicos.svg"
+          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ea3ae829-1c66-4ebc-bd63-d6a09442f216/pedidos.svg"
         }
       ],
-      "name": "Serviços"
+      "name": "Meus pedidos",
+      "url": "/account#/orders"
     },
     {
       "children": [],
@@ -2488,10 +2491,23 @@
         {
           "image": [],
           "video": [],
-          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c7a31006-541b-4b70-9595-d41abea447cb/contato.svg"
+          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4a257b8b-c55f-494a-8949-3b21a32f3fae/lojas.svg"
         }
       ],
-      "name": "Contato"
+      "name": "Nossas lojas",
+      "url": "https://superfestval.com.br/lojas"
+    },
+    {
+      "children": [],
+      "image": [
+        {
+          "image": [],
+          "video": [],
+          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c0e1c6b8-6f54-4446-8f43-e2c32fc38556/atendimento.svg"
+        }
+      ],
+      "name": "Atendimento",
+      "url": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
     }
   ]
 }
