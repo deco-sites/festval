@@ -250,6 +250,8 @@ function ModalSessionInit({
               name="cep"
               class="input input-bordered flex-grow text-center rounded-[5px]"
               type="text"
+              inputmode="numeric"
+              pattern="[0-9]*"
               placeholder={cepPlaceholder}
               hx-on:input={useScript(applyCepMask)}
             />
