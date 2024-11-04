@@ -39,22 +39,24 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
               left: "9px",
             }}
           >
-            <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px] max-h-[457px] 2xl:max-h-[607px] overflow-y-auto">
+            <ul class="megamenu-items item border-r border-[#FBFBFB] w-[413px] max-h-[457px] 2xl:max-h-[607px] overflow-y-auto scrollbar-hidden">
               {children.map((node) => (
                 <li class="group-1">
-                  <button
-                    class="text-sm font-normal bg-none group-1-hover:bg-[#D8D8D8] flex justify-between items-center w-full px-[10px] py-[10px] border-b border-[#d8d8d8]"
-                    href={node.url}
-                  >
-                    <span>{node.name}</span>
-                    <span>
-                      <Image
-                        src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c9248193-966b-4090-b793-af09d677027a/arrow-right.svg"
-                        width={7}
-                        height={13}
-                      />
-                    </span>
-                  </button>
+                  <a href={node.url}>
+                    <button
+                      class="text-sm font-normal bg-none group-1-hover:bg-[#D8D8D8] flex justify-between items-center w-full px-[10px] py-[10px] border-b border-[#d8d8d8]"
+                      href={node.url}
+                    >
+                      <span>{node.name}</span>
+                      <span>
+                        <Image
+                          src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c9248193-966b-4090-b793-af09d677027a/arrow-right.svg"
+                          width={7}
+                          height={13}
+                        />
+                      </span>
+                    </button>
+                  </a>
 
                   <div
                     id={node.name}

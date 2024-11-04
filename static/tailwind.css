@@ -5521,6 +5521,15 @@ details.collapse summary::-webkit-details-marker {
      -moz-appearance: textfield;
           appearance: textfield;
 }
+/* Adiciona a classe no CSS global */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 .group:disabled .group-disabled\:animate-progress {
   animation: progress-frame ease normal;

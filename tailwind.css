@@ -22,6 +22,15 @@
     height: 100vh;
   }
 }
+/* Adiciona a classe no CSS global */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 @layer components {
   .custom-select {
