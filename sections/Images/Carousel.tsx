@@ -23,11 +23,11 @@ export interface Banner {
     /** @description when user clicks on the image, go to this link */
     href: string;
     /** @description Image text title */
-    title: string;
+    title?: string;
     /** @description Image text subtitle */
-    subTitle: string;
+    subTitle?: string;
     /** @description Button label */
-    label: string;
+    label?: string;
   };
 }
 
@@ -65,7 +65,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="relative block overflow-y-hidden w-full"
+      class="relative flex overflow-hidden w-full"
     >
       {action && (
         <div
@@ -78,7 +78,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
         >
           <span class="text-7xl font-bold text-base-100">{action.title}</span>
           <span class="font-normal text-base text-base-100 pt-4 pb-12">{action.subTitle}</span>
-          <button class="btn btn-primary btn-outline border-0 bg-base-100 min-w-[180px]" aria-label={action.label}>
+          <button class="btn hidden btn-primary btn-outline border-0 bg-base-100 min-w-[180px]" aria-label={action.label}>
             {action.label}
           </button>
         </div>
