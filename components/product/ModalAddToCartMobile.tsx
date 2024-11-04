@@ -129,13 +129,17 @@ const onLoad = async (id: string, itemId: string) => {
   const quantityNormal = container?.querySelector<HTMLDivElement>(
     `.quantity-modal-normal`
   );
+  const measurementUnit =
+    container?.querySelector<HTMLSpanElement>(`#measurement-unit`);
 
   if (productData && productData.MeasurementUnit == "kg") {
     quantityKg?.classList.remove("hidden");
+    measurementUnit?.classList.remove("hidden");
     quantityNormal?.classList.add("hidden");
     quantityNormal?.remove();
   } else {
     quantityNormal?.classList.remove("hidden");
+    measurementUnit?.classList.add("hidden");
     quantityKg?.classList.add("hidden");
     quantityKg?.remove();
   }
@@ -335,6 +339,9 @@ function ModalAddToCartMobile(props: Props) {
               </div>
               <span class="text-xs font-bold text-base-400">
                 {formatPrice(price, offers?.priceCurrency)}
+                <span id="measurement-unit" class="hidden">
+                  /Kg
+                </span>
               </span>
             </div>
           </div>

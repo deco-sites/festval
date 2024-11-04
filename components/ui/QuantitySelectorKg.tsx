@@ -38,7 +38,7 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
   function attemptLoad() {
     if (!id) return;
 
-    const input = document.getElementById(id) as HTMLInputElement;
+    const input = document.getElementById(id);
 
     const productData: ProductData = JSON.parse(
       input?.getAttribute("data-product-data") ?? "{}"
@@ -47,25 +47,44 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
     if (Object.keys(productData).length === 0 && attempts < maxAttempts) {
       attempts += 1;
       setTimeout(attemptLoad, delay);
-    } else if (Object.keys(productData).length > 0) {
-      // const unitMultiplierMsg = document.querySelector<HTMLSpanElement>(
-      //   "#unit-multiplier-msg"
-      // );
-      // if (unitMultiplierMsg) {
-      //   unitMultiplierMsg.classList.remove("hidden");
-      //   unitMultiplierMsg.innerHTML = `Aprox. ${
-      //     productData.UnitMultiplier >= 1
-      //       ? (
-      //           (productData.UnitMultiplier || 1) * (input.valueAsNumber || 1)
-      //         ).toFixed(3) + " Kg/unidade"
-      //       : (
-      //           (productData.UnitMultiplier || 1) *
-      //           (input.valueAsNumber || 1) *
-      //           1000
-      //         ).toFixed(3) + " g/unidade"
-      //   }`;
-      // }
-    } else {
+    } else if (
+      Object.keys(productData).length > 0 &&
+      productData.MeasurementUnit === "kg"
+    ) {
+      if (input instanceof HTMLInputElement) {
+        const unitMultiplierMsg = input!.nextSibling as HTMLSpanElement;
+        const unitQuantityMsg = unitMultiplierMsg!
+          .nextSibling as HTMLSpanElement;
+        const quantity = input.getAttribute("data-quantity-number");
+        if (unitMultiplierMsg) {
+          unitMultiplierMsg.classList.remove("hidden");
+          unitQuantityMsg.classList.remove("hidden");
+          unitMultiplierMsg.innerHTML = `Aprox. ${productData.UnitMultiplier.toFixed(
+            3
+          )} Kg/unidade`;
+          unitQuantityMsg.innerHTML = `Aprox. ${quantity} unidade(s) selecionada(s)`;
+        }
+      } else if (input instanceof HTMLDivElement) {
+        const inputElement = input!.querySelector<HTMLInputElement>(
+          'input[type="text"].input-kg'
+        );
+        const unitMultiplierMsg = inputElement!.nextSibling as HTMLSpanElement;
+        const unitQuantityMsg = unitMultiplierMsg!
+          .nextSibling as HTMLSpanElement;
+        const quantity = inputElement!.getAttribute("data-quantity-number");
+        if (unitMultiplierMsg) {
+          unitMultiplierMsg.classList.remove("hidden");
+          unitQuantityMsg.classList.remove("hidden");
+          unitMultiplierMsg.innerHTML = `Aprox. ${productData.UnitMultiplier.toFixed(
+            3
+          )} Kg/unidade`;
+          unitQuantityMsg.innerHTML = `Aprox. ${quantity} unidade(s) selecionada(s)`;
+        }
+      }
+    } else if (
+      attempts == maxAttempts &&
+      productData.MeasurementUnit === "kg"
+    ) {
       console.error(
         "Erro: Limite máximo de tentativas atingido. Falha ao carregar productData."
       );
@@ -84,10 +103,6 @@ const onClick = (delta: number) => {
       'input[type="text"]'
     )!;
 
-  const unitMultiplierMsg = document.querySelector<HTMLSpanElement>(
-    "#unit-multiplier-msg"
-  );
-
   const productData: ProductData = JSON.parse(
     input.getAttribute("data-product-data") ?? "{}"
   );
@@ -99,8 +114,6 @@ const onClick = (delta: number) => {
 
   const min = productData.UnitMultiplier * Number(input.min) || -Infinity;
   const max = productData.UnitMultiplier * Number(input.max) || Infinity;
-
-  console.log(productQuantityHandler, productQuantityHandler + delta);
 
   const inputValueAsNumber = parseFloat(productData.UnitMultiplier.toFixed(3));
 
@@ -116,19 +129,12 @@ const onClick = (delta: number) => {
     (productQuantityHandler + delta).toString()
   );
 
-  if (unitMultiplierMsg) {
-    unitMultiplierMsg.innerHTML = `Aprox. ${
-      productData.UnitMultiplier >= 1
-        ? (
-            (productData.UnitMultiplier || 1) * (input.valueAsNumber || 1)
-          ).toFixed(3) + " Kg/unidade"
-        : (
-            (productData.UnitMultiplier || 1) *
-            (input.valueAsNumber || 1) *
-            1000
-          ).toFixed(3) + " g/unidade"
-    }`;
-  }
+  console.log();
+
+  const unitQuantityMsg = input!.nextSibling?.nextSibling as HTMLSpanElement;
+  unitQuantityMsg!.innerHTML = `Aprox. ${
+    productQuantityHandler + delta
+  } unidade(s) selecionada(s)`;
 
   const dataCartItem = input.closest("div[data-cart-item]");
   const dataFieldset = input.closest("fieldset");
@@ -172,7 +178,7 @@ function QuantitySelectorKg({
   ...props
 }: JSX.IntrinsicElements["input"]) {
   return (
-    <div class="join w-full h-[40px] flex gap-[7px]">
+    <div class="join w-full flex gap-[7px]">
       <button
         type="button"
         class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg	flex justify-center items-center hover:opacity-80 ease-in-out duration-300"
@@ -196,8 +202,9 @@ function QuantitySelectorKg({
         <input
           id={id}
           class={clx(
-            "input w-[100%] p-0 text-center flex-grow [appearance:textfield] border border-[#E3E3E3] rounded-[6px] text-[17px] font-bold",
-            "invalid:input-error"
+            "input w-[100%] h-[40px] p-0 text-center flex-grow [appearance:textfield] border border-[#E3E3E3] rounded-[6px] text-[17px] font-bold",
+            "invalid:input-error",
+            "input-kg"
           )}
           disabled={disabled}
           type="text"
@@ -206,6 +213,9 @@ function QuantitySelectorKg({
         />
         <span id="unit-multiplier-msg" class="hidden">
           Aprox. 800g/unidade
+        </span>
+        <span id="unit-quantity-msg" class="hidden">
+          Aprox. 1 unidade(s) selecionada(s)
         </span>
       </div>
       <button

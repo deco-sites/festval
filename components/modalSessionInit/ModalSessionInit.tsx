@@ -82,6 +82,8 @@ export const action = async (
   if (!cep) return { actionResult: false };
   const cepFormatted = cep.replace("-", "").trim();
 
+  console.log(cepFormatted);
+
   if (platform === "vtex") {
     // deno-lint-ignore no-explicit-any
     const response = await (ctx as any).invoke(

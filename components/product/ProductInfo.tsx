@@ -107,13 +107,17 @@ const onLoad = async (id: string, itemId: string) => {
   const quantityKg = document.querySelector<HTMLDivElement>(".quantity-kg");
   const quantityNormal =
     document.querySelector<HTMLDivElement>(".quantity-normal");
+  const measurementUnit =
+    document?.querySelector<HTMLSpanElement>(`#measurement-unit`);
 
   if (productData && productData.MeasurementUnit == "kg") {
     quantityKg?.classList.remove("hidden");
+    measurementUnit?.classList.remove("hidden");
     quantityNormal?.classList.add("hidden");
     quantityNormal?.remove();
   } else {
     quantityNormal?.classList.remove("hidden");
+    measurementUnit?.classList.add("hidden");
     quantityKg?.classList.add("hidden");
     quantityKg?.remove();
   }
@@ -277,6 +281,9 @@ function ProductInfo({ page }: Props) {
             </div>
             <span class="text-xl font-bold text-base-400">
               {formatPrice(price, offers?.priceCurrency)}
+              <span id="measurement-unit" class="hidden">
+                /Kg
+              </span>
             </span>
           </div>
 

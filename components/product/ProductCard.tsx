@@ -97,13 +97,17 @@ const onLoad = async (id: string, itemId: string) => {
   const quantityNormal = container?.querySelector<HTMLDivElement>(
     `.quantity-card-normal`
   );
+  const measurementUnit =
+    container?.querySelector<HTMLSpanElement>(`#measurement-unit`);
 
   if (productData && productData.MeasurementUnit == "kg") {
     quantityKg?.classList.remove("hidden");
+    measurementUnit?.classList.remove("hidden");
     quantityNormal?.classList.add("hidden");
     quantityNormal?.remove();
   } else {
     quantityNormal?.classList.remove("hidden");
+    measurementUnit?.classList.add("hidden");
     quantityKg?.classList.add("hidden");
     quantityKg?.remove();
   }
@@ -528,6 +532,9 @@ function ProductCard({
             )}
             <span class="font-bold text-base sm:text-lg text-[#1A1A1A]">
               {formatPrice(price, offers?.priceCurrency)}
+              <span id="measurement-unit" class="hidden">
+                /Kg
+              </span>
             </span>
           </div>
 
