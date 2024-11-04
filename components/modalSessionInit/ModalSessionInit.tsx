@@ -251,7 +251,7 @@ function ModalSessionInit({
               class="input input-bordered flex-grow text-center rounded-[5px]"
               type="text"
               inputmode="numeric"
-              pattern="[0-9]*"
+              pattern="\d{5}-?\d{3}"
               placeholder={cepPlaceholder}
               hx-on:input={useScript(applyCepMask)}
             />
