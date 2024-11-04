@@ -2706,23 +2706,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "1359",
-            "count": 12,
-            "hideUnavailableItems": false
-          }
-        },
-        "cta": "/1359?map=productClusterIds",
-        "title": "Vinhos"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/separator.tsx",
         "color": "#F8F8F8"
       }
@@ -2767,23 +2750,6 @@
           "alt": "Leve 3 pague 2"
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "163",
-            "count": 12,
-            "hideUnavailableItems": false
-          }
-        },
-        "cta": "/163?map=productClusterIds",
-        "title": "Nestlé"
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -2835,22 +2801,6 @@
         }
       ],
       "inverted": true
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "Importados",
-        "cta": "/importados",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "1067",
-            "count": 12
-          }
-        }
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
