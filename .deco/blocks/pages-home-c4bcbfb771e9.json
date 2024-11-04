@@ -2115,33 +2115,39 @@
           },
           {
             "@type": "SiteNavigationElement",
-            "url": "/valentines-day",
-            "name": "Valentine's Day",
+            "url": "/178?map=productClusterIds",
+            "children": [],
+            "name": "SOU FESTVAL"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "MAIS VENDIDOS",
+            "children": [],
+            "url": "/142?map=productClusterIds"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "name": "CHURRASCO",
+            "children": [],
+            "url": "/159?map=productClusterIds"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "url": "/1358?map=productClusterIds",
+            "name": "MAMMA BIA",
             "children": []
           },
           {
             "@type": "SiteNavigationElement",
-            "url": "/women",
-            "name": "Women",
+            "url": "/adega",
+            "name": "ADEGA",
             "children": []
           },
           {
-            "@type": "SiteNavigationElement",
-            "url": "/men",
-            "name": "Men",
-            "children": []
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "url": "/clearance",
-            "name": "Clearance",
-            "children": []
-          },
-          {
-            "@type": "SiteNavigationElement",
-            "url": "/activities",
-            "name": "Activities",
-            "children": []
+            "children": [],
+            "image": [],
+            "name": "IMPORTADOS",
+            "url": "/importados"
           }
         ],
         "loading": "eager",
@@ -2186,14 +2192,9 @@
                     "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5d391f65-7da1-4d04-9460-bb0854b22405/acogue.svg"
                   }
                 ],
-                "children": [
-                  {
-                    "image": [],
-                    "children": [],
-                    "name": "teste"
-                  }
-                ],
-                "name": "Açougue"
+                "children": [],
+                "name": "Açougue",
+                "url": "/acougue"
               },
               {
                 "image": [
@@ -2204,7 +2205,8 @@
                   }
                 ],
                 "children": [],
-                "name": "Adega"
+                "name": "Adega",
+                "url": "/adega"
               },
               {
                 "image": [
@@ -2215,7 +2217,232 @@
                   }
                 ],
                 "children": [],
-                "name": "Bebidas"
+                "name": "Bebidas",
+                "url": "/bebidas"
+              },
+              {
+                "image": [
+                  {
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a5a5d3a5-645d-4feb-b1be-bcaba49ae33b/6.svg"
+                  }
+                ],
+                "children": [],
+                "url": "/bebidas-alcoolicas",
+                "name": "Bebidas Alcoólicas"
+              },
+              {
+                "image": [
+                  {
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a0f9fff0-168a-438c-864f-9afb6119a48e/3.svg",
+                    "image": [],
+                    "video": []
+                  }
+                ],
+                "children": [],
+                "url": "/casa-e-utilidades",
+                "name": "Casa e Utilidades"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8ba7e401-8641-4a29-aa4b-7b1fd3eb31e5/Grupo-4066.svg"
+                  }
+                ],
+                "children": [],
+                "url": "/diet-light",
+                "name": "Diet Light"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1141ab89-77f7-48b8-858a-b0953a55c469/comida-japonesa.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Comida japonesa",
+                "url": "/comida-japonesa"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/664ac9f3-aa8d-413c-9a11-2a45d79ed981/especial.svg"
+                  }
+                ],
+                "children": [],
+                "url": "/especiais",
+                "name": "Especiais"
+              },
+              {
+                "image": [
+                  {
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/211e62db-9ad2-48b2-accd-3cb8baed478c/11.svg",
+                    "image": [],
+                    "video": []
+                  }
+                ],
+                "children": [],
+                "name": "Floricultura",
+                "url": "/floricultura"
+              },
+              {
+                "image": [
+                  {
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/31475836-0735-4d1c-bd90-e9a38baf4cc5/8.svg",
+                    "image": [],
+                    "video": []
+                  }
+                ],
+                "children": [],
+                "url": "/frios-e-laticinios",
+                "name": "Frios e Laticínios"
+              },
+              {
+                "image": [
+                  {
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cd6846df-603d-475d-b335-da88808e360a/vegano.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Vegano",
+                "url": "/vegano"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/72703202-ead8-4ff0-b44e-757382d0a7e5/5.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Higiene e Perfumaria",
+                "url": "/higiene-e-perfumaria"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/753de231-96c1-4358-bb41-b1ae2fc37146/2.svg"
+                  }
+                ],
+                "children": [],
+                "url": "/hortifruti",
+                "name": "Hortifrúti"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8444d1b7-0f7b-4116-a389-b0b2e16cc58f/Grupo-4027.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Importados",
+                "url": "/importados"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/334a4fe4-1d38-4403-8589-e92b64300838/10.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Limpeza",
+                "url": "/limpeza"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/378ebd8a-7323-4481-8cb6-062ea9dd2dee/7.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Mercearia",
+                "url": "/mercearia"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1db36f33-060b-4078-a59f-8d2135813f3e/natal.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Natal",
+                "url": "/natal"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ec870429-7807-4aec-b560-99cc0991f242/restaurante-grill.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Restaurante e Grill",
+                "url": "/restaurante-e-grill"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a21705e1-6a6a-4020-aeb3-5e932c7bb32c/4.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Padaria",
+                "url": "/padaria"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/db6d8c0b-2361-433c-9588-7327fa9b96de/1.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Petshop",
+                "url": "/petshop"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a9f64728-106b-45dc-ac93-41c6eabb4648/pascoa.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Páscoa  ",
+                "url": "/pascoa"
+              },
+              {
+                "image": [
+                  {
+                    "image": [],
+                    "video": [],
+                    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/759d0a46-b2fb-4b03-9973-e2996b04b9da/Grupo-4027.svg"
+                  }
+                ],
+                "children": [],
+                "name": "Sorvete",
+                "url": "/sorvete"
               }
             ],
             "image": [
