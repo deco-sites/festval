@@ -11,6 +11,7 @@ import QuantitySelector from "../ui/QuantitySelector.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
 import { useScript } from "@deco/deco/hooks";
+import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
 
 export interface Props {
   id: string;
@@ -24,22 +25,153 @@ interface AddToCartProps {
   seller: string;
 }
 
+interface ProductData {
+  ActivateIfPossible: boolean;
+  CommercialConditionId: number;
+  CreationDate: string;
+  CubicWeight: number;
+  EstimatedDateArrival: string | null;
+  Height: number | null;
+  Id: number;
+  IsActive: boolean;
+  IsKit: boolean;
+  KitItensSellApart: boolean;
+  Length: number | null;
+  ManufacturerCode: string;
+  MeasurementUnit: string;
+  ModalType: string | null;
+  Name: string;
+  PackagedHeight: number;
+  PackagedLength: number;
+  PackagedWeightKg: number;
+  PackagedWidth: number;
+  ProductId: number;
+  RefId: string;
+  RewardValue: number | null;
+  UnitMultiplier: number;
+  Videos: Array<unknown>;
+  WeightKg: number | null;
+  Width: number | null;
+}
+
 const WIDTH = 150;
 const HEIGHT = 150;
 
-const onLoad = (id: string) => {
+// const onLoad = (id: string) => {
+//   window.STOREFRONT.CART.subscribe((sdk) => {
+//     const inputId = `input-${id}`;
+//     const container = document.getElementById(inputId);
+//     const input = container?.querySelector<HTMLInputElement>(
+//       'input[type="number"]'
+//     );
+//     const itemID = container?.getAttribute("data-item-id")!;
+//     const quantity = sdk.getQuantity(itemID) || 1;
+//     if (!input) {
+//       return;
+//     }
+//     input.value = quantity.toString();
+//     // enable interactivity
+//     container
+//       ?.querySelectorAll<HTMLButtonElement>("button")
+//       .forEach((node) => (node.disabled = false));
+//     container
+//       ?.querySelectorAll<HTMLButtonElement>("input")
+//       .forEach((node) => (node.disabled = false));
+
+//     const cart = window.STOREFRONT.CART.getCart();
+//     if (cart) {
+//       // deno-lint-ignore no-explicit-any
+//       const item = cart.items.find((i) => (i as any).item_id === itemID);
+
+//       if (item) {
+//         const buttonAddToCart = document.querySelector<HTMLButtonElement>(
+//           `.add-cart-button-modal-${id} button[data-attribute="add-to-cart"]`
+//         );
+
+//         if (buttonAddToCart) {
+//           buttonAddToCart.style.backgroundColor = "#fff";
+//           buttonAddToCart.style.color = "#3E3D41";
+//           buttonAddToCart.style.border = "1px solid  #989898";
+//           buttonAddToCart.innerText = "Adicionado ao carrinho";
+
+//           buttonAddToCart.disabled = true;
+//         }
+//       }
+//     }
+//   });
+// };
+
+const onLoad = async (id: string, itemId: string) => {
+  async function getProductData(itemId: string): Promise<ProductData | null> {
+    const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
+
+    try {
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error(`Erro ao buscar o SKU: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Erro ao buscar os dados:", error);
+      return null;
+    }
+  }
+
+  const productData = await getProductData(itemId);
+
+  const container = document.getElementById(`modal-${id}`);
+
+  const quantityKg =
+    container?.querySelector<HTMLDivElement>(`.quantity-modal-kg`);
+  const quantityNormal = container?.querySelector<HTMLDivElement>(
+    `.quantity-modal-normal`
+  );
+
+  if (productData && productData.MeasurementUnit == "kg") {
+    quantityKg?.classList.remove("hidden");
+    quantityNormal?.classList.add("hidden");
+    quantityNormal?.remove();
+  } else {
+    quantityNormal?.classList.remove("hidden");
+    quantityKg?.classList.add("hidden");
+    quantityKg?.remove();
+  }
+
   window.STOREFRONT.CART.subscribe((sdk) => {
-    const inputId = `input-${id}`;
-    const container = document.getElementById(inputId);
-    const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]'
-    );
+    const container = document.getElementById(`input-${id}`);
+    container?.setAttribute("data-product-data", JSON.stringify(productData));
+    const input =
+      productData?.MeasurementUnit == "kg"
+        ? container?.querySelector<HTMLInputElement>('input[type="text"]')
+        : container?.querySelector<HTMLInputElement>('input[type="number"]');
+    input?.setAttribute("data-product-data", JSON.stringify(productData));
+
     const itemID = container?.getAttribute("data-item-id")!;
-    const quantity = sdk.getQuantity(itemID) || 1;
+    const quantity =
+      productData?.MeasurementUnit == "kg"
+        ? (
+            productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)
+          ).toFixed(3)
+        : sdk.getQuantity(itemID) || 1;
+
     if (!input) {
       return;
     }
-    input.value = quantity.toString();
+    input.value =
+      productData?.MeasurementUnit == "kg"
+        ? `${quantity.toString()} Kg`
+        : quantity.toString();
+
+    if (productData?.MeasurementUnit == "kg") {
+      input.setAttribute(
+        "data-quantity-number",
+        `${sdk.getQuantity(itemID) || 1}`
+      );
+    }
+
     // enable interactivity
     container
       ?.querySelectorAll<HTMLButtonElement>("button")
@@ -54,7 +186,7 @@ const onLoad = (id: string) => {
       const item = cart.items.find((i) => (i as any).item_id === itemID);
 
       if (item) {
-        const buttonAddToCart = document.querySelector<HTMLButtonElement>(
+        const buttonAddToCart = container!.querySelector<HTMLButtonElement>(
           `.add-cart-button-modal-${id} button[data-attribute="add-to-cart"]`
         );
 
@@ -128,6 +260,8 @@ function ModalAddToCartMobile(props: Props) {
       : 0;
 
   const platformProps = useAddToCart({ product, seller });
+
+  const idQuantity = id.replace("modal-", "").trim();
 
   return (
     <div
@@ -211,7 +345,23 @@ function ModalAddToCartMobile(props: Props) {
           <div class="flex flex-col items-start gap-1 pt-4">
             <div className="flex flex-row w-full justify-center">
               <div
-                id={`input-${id}`}
+                id={`input-${idQuantity}`}
+                class="hidden quantity-modal-kg"
+                data-item-id={product.productID}
+                data-cart-item={encodeURIComponent(
+                  JSON.stringify({ item, platformProps })
+                )}
+              >
+                <QuantitySelectorKg
+                  id={`input-${idQuantity}`}
+                  min={1}
+                  max={100}
+                />
+              </div>
+
+              <div
+                id={`input-${idQuantity}`}
+                class="lg:w-2/4 hidden quantity-modal-normal"
                 data-item-id={product.productID}
                 data-cart-item={encodeURIComponent(
                   JSON.stringify({ item, platformProps })
@@ -229,7 +379,7 @@ function ModalAddToCartMobile(props: Props) {
                   item={item}
                   seller={seller}
                   product={product}
-                  inputId={`input-${id}`}
+                  inputId={`input-${idQuantity}`}
                   modalPreviewMobile={id}
                   class="btn btn-primary no-animation rounded-[11px]"
                   disabled={false}
@@ -243,7 +393,9 @@ function ModalAddToCartMobile(props: Props) {
       </div>
       <script
         type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+        dangerouslySetInnerHTML={{
+          __html: useScript(onLoad, idQuantity, product.productID),
+        }}
       />
     </div>
   );

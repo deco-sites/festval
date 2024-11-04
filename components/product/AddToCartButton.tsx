@@ -12,19 +12,62 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   inputId: string;
   modalPreviewMobile?: string;
 }
+interface ProductData {
+  ActivateIfPossible: boolean;
+  CommercialConditionId: number;
+  CreationDate: string;
+  CubicWeight: number;
+  EstimatedDateArrival: string | null;
+  Height: number | null;
+  Id: number;
+  IsActive: boolean;
+  IsKit: boolean;
+  KitItensSellApart: boolean;
+  Length: number | null;
+  ManufacturerCode: string;
+  MeasurementUnit: string;
+  ModalType: string | null;
+  Name: string;
+  PackagedHeight: number;
+  PackagedLength: number;
+  PackagedWeightKg: number;
+  PackagedWidth: number;
+  ProductId: number;
+  RefId: string;
+  RewardValue: number | null;
+  UnitMultiplier: number;
+  Videos: Array<unknown>;
+  WeightKg: number | null;
+  Width: number | null;
+}
 const onClick = (inputId: string, modalPreviewMobile?: string) => {
   event?.stopPropagation();
 
   const input = document.getElementById(inputId);
+  console.log(inputId);
+  console.log(input);
+  const productData: ProductData = JSON.parse(
+    input!.getAttribute("data-product-data") ?? "{}"
+  );
   const inputValue =
-    input!.querySelector<HTMLInputElement>("input[type=number]");
+    productData.MeasurementUnit == "kg"
+      ? input!.querySelector<HTMLInputElement>("input[type=text]")
+      : input!.querySelector<HTMLInputElement>("input[type=number]");
   const container = input!.closest<HTMLDivElement>("div[data-cart-item]")!;
+
+  console.log(inputId);
+  console.log(input);
+  console.log(inputValue);
 
   const { item, platformProps } = JSON.parse(
     decodeURIComponent(container.getAttribute("data-cart-item")!)
   );
+
   if (!inputValue) return;
-  item.quantity = Number(inputValue.value);
+  item.quantity =
+    productData.MeasurementUnit == "kg"
+      ? Number(inputValue.getAttribute("data-quantity-number"))
+      : Number(inputValue.value);
   window.STOREFRONT.CART.addToCart(item, platformProps, item.quantity);
 
   const button = event?.currentTarget as HTMLButtonElement | null;

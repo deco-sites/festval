@@ -11,6 +11,7 @@ import QuantitySelector from "../ui/QuantitySelector.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
 import { useScript } from "@deco/deco/hooks";
+import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
 
 export interface Props {
   id: string;
@@ -28,20 +29,113 @@ const WIDTH = 326;
 const HEIGHT = 326;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
-const onLoad = (id: string) => {
+interface ProductData {
+  ActivateIfPossible: boolean;
+  CommercialConditionId: number;
+  CreationDate: string;
+  CubicWeight: number;
+  EstimatedDateArrival: string | null;
+  Height: number | null;
+  Id: number;
+  IsActive: boolean;
+  IsKit: boolean;
+  KitItensSellApart: boolean;
+  Length: number | null;
+  ManufacturerCode: string;
+  MeasurementUnit: string;
+  ModalType: string | null;
+  Name: string;
+  PackagedHeight: number;
+  PackagedLength: number;
+  PackagedWeightKg: number;
+  PackagedWidth: number;
+  ProductId: number;
+  RefId: string;
+  RewardValue: number | null;
+  UnitMultiplier: number;
+  Videos: Array<unknown>;
+  WeightKg: number | null;
+  Width: number | null;
+}
+
+const onLoad = async (id: string, itemId: string) => {
+  async function getProductData(itemId: string): Promise<ProductData | null> {
+    const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
+
+    try {
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error(`Erro ao buscar o SKU: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Erro ao buscar os dados:", error);
+      return null;
+    }
+  }
+
+  const productData = await getProductData(itemId);
+
+  const container = document.getElementById(`modal-${id}`);
+
+  const quantityKg =
+    container?.querySelector<HTMLDivElement>(`.quantity-modal-kg`);
+  const quantityNormal = container?.querySelector<HTMLDivElement>(
+    `.quantity-modal-normal`
+  );
+
+  if (productData && productData.MeasurementUnit == "kg") {
+    quantityKg?.classList.remove("hidden");
+    quantityNormal?.classList.add("hidden");
+    quantityNormal?.remove();
+  } else {
+    quantityNormal?.classList.remove("hidden");
+    quantityKg?.classList.add("hidden");
+    quantityKg?.remove();
+  }
+
   window.STOREFRONT.CART.subscribe((sdk) => {
-    const inputId = `input-${id}`;
-    const container = document.getElementById(inputId);
-    const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
+    const container = document.getElementById(`input-${id}`);
+    container?.setAttribute("data-product-data", JSON.stringify(productData));
+    const input =
+      productData?.MeasurementUnit == "kg"
+        ? container?.querySelector<HTMLInputElement>('input[type="text"]')
+        : container?.querySelector<HTMLInputElement>('input[type="number"]');
+    input?.setAttribute("data-product-data", JSON.stringify(productData));
+
     const itemID = container?.getAttribute("data-item-id")!;
-    const quantity = sdk.getQuantity(itemID) || 1;
+    const quantity =
+      productData?.MeasurementUnit == "kg"
+        ? (
+            productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)
+          ).toFixed(3)
+        : sdk.getQuantity(itemID) || 1;
+
     if (!input) {
       return;
     }
-    input.value = quantity.toString();
+    input.value =
+      productData?.MeasurementUnit == "kg"
+        ? `${quantity.toString()} Kg`
+        : quantity.toString();
+
+    if (productData?.MeasurementUnit == "kg") {
+      input.setAttribute(
+        "data-quantity-number",
+        `${sdk.getQuantity(itemID) || 1}`
+      );
+    }
+
     // enable interactivity
-    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
-    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("button")
+      .forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("input")
+      .forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -49,7 +143,7 @@ const onLoad = (id: string) => {
       const item = cart.items.find((i) => (i as any).item_id === itemID);
 
       if (item) {
-        const buttonAddToCart = document.querySelector<HTMLButtonElement>(
+        const buttonAddToCart = container!.querySelector<HTMLButtonElement>(
           `.add-cart-button-modal-${id} button[data-attribute="add-to-cart"]`
         );
 
@@ -65,6 +159,44 @@ const onLoad = (id: string) => {
     }
   });
 };
+
+// const onLoad = (id: string) => {
+//   window.STOREFRONT.CART.subscribe((sdk) => {
+//     const inputId = `input-${id}`;
+//     const container = document.getElementById(inputId);
+//     const input = container?.querySelector<HTMLInputElement>('input[type="number"]');
+//     const itemID = container?.getAttribute("data-item-id")!;
+//     const quantity = sdk.getQuantity(itemID) || 1;
+//     if (!input) {
+//       return;
+//     }
+//     input.value = quantity.toString();
+//     // enable interactivity
+//     container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
+//     container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
+
+//     const cart = window.STOREFRONT.CART.getCart();
+//     if (cart) {
+//       // deno-lint-ignore no-explicit-any
+//       const item = cart.items.find((i) => (i as any).item_id === itemID);
+
+//       if (item) {
+//         const buttonAddToCart = document.querySelector<HTMLButtonElement>(
+//           `.add-cart-button-modal-${id} button[data-attribute="add-to-cart"]`
+//         );
+
+//         if (buttonAddToCart) {
+//           buttonAddToCart.style.backgroundColor = "#fff";
+//           buttonAddToCart.style.color = "#3E3D41";
+//           buttonAddToCart.style.border = "1px solid  #989898";
+//           buttonAddToCart.innerText = "Adicionado ao carrinho";
+
+//           buttonAddToCart.disabled = true;
+//         }
+//       }
+//     }
+//   });
+// };
 
 const onClick = () => {
   event?.stopPropagation();
@@ -108,9 +240,14 @@ function ModalAddToCart(props: Props) {
   const { listPrice, price, availability } = useOffer(offers);
   const inStock = availability === "https://schema.org/InStock";
   const relativeUrl = relative(url);
-  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
+  const percent =
+    listPrice && price
+      ? Math.round(((listPrice - price) / listPrice) * 100)
+      : 0;
 
   const platformProps = useAddToCart({ product, seller });
+
+  const idQuantity = id.replace("modal-", "").trim();
 
   return (
     <div id={id} hx-on:click={useScript(onClickOverlay, id)} class="modal">
@@ -118,7 +255,10 @@ function ModalAddToCart(props: Props) {
         class="bg-base-100 absolute top-0 px-[85px] py-[60px] modal-box max-w-[1088px] rounded-lg flex gap-[70px]"
         style={{ top: "50%", transform: "translateY(-50%)" }}
       >
-        <div class="absolute top-[11px] right-[11px]" hx-on:click={useScript(onClick)}>
+        <div
+          class="absolute top-[11px] right-[11px]"
+          hx-on:click={useScript(onClick)}
+        >
           <button type="button">
             <Image
               src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2a8a1f1a-e676-44e1-b918-eb3c22226498/close-modal.svg"
@@ -145,8 +285,17 @@ function ModalAddToCart(props: Props) {
         <div class="flex flex-col">
           {/* Product Name */}
           <div>
-            <span class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4")}>{title}</span>
-            <div className="pt-1 text-[#646072] lg:text-lg text-sm">Ref.{gtin}</div>
+            <span
+              class={clx(
+                "lg:text-xl sm:text-base font-bold text-[#373737]",
+                "pt-4"
+              )}
+            >
+              {title}
+            </span>
+            <div className="pt-1 text-[#646072] lg:text-lg text-sm">
+              Ref.{gtin}
+            </div>
           </div>
           {/* Prices */}
           <div class="flex flex-col items-start gap-1 pt-4">
@@ -164,14 +313,33 @@ function ModalAddToCart(props: Props) {
                     </span>
                   )}
                 </div>
-                <span class="text-xl font-bold text-base-400">{formatPrice(price, offers?.priceCurrency)}</span>
+                <span class="text-xl font-bold text-base-400">
+                  {formatPrice(price, offers?.priceCurrency)}
+                </span>
               </div>
 
               <div
-                id={`input-${id}`}
-                class="lg:w-2/4 lg:block hidden"
+                id={`input-${idQuantity}`}
+                class="hidden quantity-modal-kg"
                 data-item-id={product.productID}
-                data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
+                data-cart-item={encodeURIComponent(
+                  JSON.stringify({ item, platformProps })
+                )}
+              >
+                <QuantitySelectorKg
+                  id={`input-${idQuantity}`}
+                  min={1}
+                  max={100}
+                />
+              </div>
+
+              <div
+                id={`input-${idQuantity}`}
+                class="lg:w-2/4 hidden quantity-modal-normal"
+                data-item-id={product.productID}
+                data-cart-item={encodeURIComponent(
+                  JSON.stringify({ item, platformProps })
+                )}
               >
                 <QuantitySelector min={1} max={100} />
               </div>
@@ -185,7 +353,7 @@ function ModalAddToCart(props: Props) {
                   item={item}
                   seller={seller}
                   product={product}
-                  inputId={`input-${id}`}
+                  inputId={`input-${idQuantity}`}
                   class="btn btn-primary no-animation rounded-[11px]"
                   disabled={false}
                 />
@@ -196,16 +364,26 @@ function ModalAddToCart(props: Props) {
           </div>
           {/* Description card */}
           <div class="mt-4  sm:mt-6">
-            <span className="lg:text-lg text-base font-bold text-[#373737]">Detalhes do produto</span>
+            <span className="lg:text-lg text-base font-bold text-[#373737]">
+              Detalhes do produto
+            </span>
             <span class="text-sm ">
               {description && (
-                <div class="mt-2 max-h-[290px] overflow-y-auto" dangerouslySetInnerHTML={{ __html: description }} />
+                <div
+                  class="mt-2 max-h-[290px] overflow-y-auto"
+                  dangerouslySetInnerHTML={{ __html: description }}
+                />
               )}
             </span>
           </div>
         </div>
       </div>
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(onLoad, idQuantity, product.productID),
+        }}
+      />
     </div>
   );
 }

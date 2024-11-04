@@ -18,6 +18,7 @@ import AddToCartMobileButton from "./AddToCartMobileButton.tsx";
 import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
 import Drawer from "../ui/Drawer.tsx";
 import Image from "apps/website/components/Image.tsx";
+import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
 interface Props {
   page: ProductDetailsPage | null;
 }
@@ -38,6 +39,35 @@ interface AddToCartProps {
   seller?: string;
 }
 
+interface ProductData {
+  ActivateIfPossible: boolean;
+  CommercialConditionId: number;
+  CreationDate: string;
+  CubicWeight: number;
+  EstimatedDateArrival: string | null;
+  Height: number | null;
+  Id: number;
+  IsActive: boolean;
+  IsKit: boolean;
+  KitItensSellApart: boolean;
+  Length: number | null;
+  ManufacturerCode: string;
+  MeasurementUnit: string;
+  ModalType: string | null;
+  Name: string;
+  PackagedHeight: number;
+  PackagedLength: number;
+  PackagedWeightKg: number;
+  PackagedWidth: number;
+  ProductId: number;
+  RefId: string;
+  RewardValue: number | null;
+  UnitMultiplier: number;
+  Videos: Array<unknown>;
+  WeightKg: number | null;
+  Width: number | null;
+}
+
 const useAddToCart = ({ product, seller }: AddToCartProps) => {
   const platform = usePlatform();
   // deno-lint-ignore no-unused-vars
@@ -51,19 +81,77 @@ const useAddToCart = ({ product, seller }: AddToCartProps) => {
   return null;
 };
 
-const onLoad = (id: string) => {
+const onLoad = async (id: string, itemId: string) => {
+  async function getProductData(itemId: string): Promise<ProductData | null> {
+    const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
+
+    try {
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error(`Erro ao buscar o SKU: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Erro ao buscar os dados:", error);
+      return null;
+    }
+  }
+
+  const productData = await getProductData(itemId);
+
+  console.log(productData);
+
+  const quantityKg = document.querySelector<HTMLDivElement>(".quantity-kg");
+  const quantityNormal =
+    document.querySelector<HTMLDivElement>(".quantity-normal");
+
+  if (productData && productData.MeasurementUnit == "kg") {
+    quantityKg?.classList.remove("hidden");
+    quantityNormal?.classList.add("hidden");
+    quantityNormal?.remove();
+  } else {
+    quantityNormal?.classList.remove("hidden");
+    quantityKg?.classList.add("hidden");
+    quantityKg?.remove();
+  }
+
   window.STOREFRONT.CART.subscribe((sdk) => {
     const inputId = `input-${id}`;
+
     const container = document.getElementById(inputId);
-    const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]'
-    );
+    container?.setAttribute("data-product-data", JSON.stringify(productData));
+    const input =
+      productData?.MeasurementUnit == "kg"
+        ? container?.querySelector<HTMLInputElement>('input[type="text"]')
+        : container?.querySelector<HTMLInputElement>('input[type="number"]');
+    input?.setAttribute("data-product-data", JSON.stringify(productData));
+
     const itemID = container?.getAttribute("data-item-id")!;
-    const quantity = sdk.getQuantity(itemID) || 1;
+    const quantity =
+      productData?.MeasurementUnit == "kg"
+        ? (
+            productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)
+          ).toFixed(3)
+        : sdk.getQuantity(itemID) || 1;
+
     if (!input) {
       return;
     }
-    input.value = quantity.toString();
+    input.value =
+      productData?.MeasurementUnit == "kg"
+        ? `${quantity.toString()} Kg`
+        : quantity.toString();
+
+    if (productData?.MeasurementUnit == "kg") {
+      input.setAttribute(
+        "data-quantity-number",
+        `${sdk.getQuantity(itemID) || 1}`
+      );
+    }
+
     // enable interactivity
     container
       ?.querySelectorAll<HTMLButtonElement>("button")
@@ -145,12 +233,12 @@ function ProductInfo({ page }: Props) {
   });
 
   //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
-  const hasValidVariants =
-    isVariantOf?.hasVariant?.some(
-      (variant) =>
-        variant?.name?.toLowerCase() !== "title" &&
-        variant?.name?.toLowerCase() !== "default title"
-    ) ?? false;
+  // const hasValidVariants =
+  //   isVariantOf?.hasVariant?.some(
+  //     (variant) =>
+  //       variant?.name?.toLowerCase() !== "title" &&
+  //       variant?.name?.toLowerCase() !== "default title"
+  //   ) ?? false;
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
@@ -194,7 +282,18 @@ function ProductInfo({ page }: Props) {
 
           <div
             id={`input-${id}`}
-            class="lg:w-2/4 lg:block hidden"
+            class="hidden quantity-kg"
+            data-item-id={product.productID}
+            data-cart-item={encodeURIComponent(
+              JSON.stringify({ item, platformProps })
+            )}
+          >
+            <QuantitySelectorKg id={`input-${id}`} min={1} max={100} />
+          </div>
+
+          <div
+            id={`input-${id}`}
+            class="lg:w-2/4 hidden quantity-normal"
             data-item-id={product.productID}
             data-cart-item={encodeURIComponent(
               JSON.stringify({ item, platformProps })
@@ -310,7 +409,9 @@ function ProductInfo({ page }: Props) {
 
       <script
         type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+        dangerouslySetInnerHTML={{
+          __html: useScript(onLoad, id, productID),
+        }}
       />
     </div>
   );
