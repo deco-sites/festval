@@ -85,11 +85,13 @@
     "socialItens": [
       {
         "alt": "Instagram",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/70248092-5c22-4eca-9048-1b20282fdc97/Grupo-243.svg"
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/70248092-5c22-4eca-9048-1b20282fdc97/Grupo-243.svg",
+        "href": "https://www.instagram.com/festvalcuritiba/"
       },
       {
         "alt": "Facebook",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8f558b5f-43d6-4fae-8820-b306e60dcfd7/Grupo-244.svg"
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8f558b5f-43d6-4fae-8820-b306e60dcfd7/Grupo-244.svg",
+        "href": "https://www.facebook.com/festvalcuritiba/?locale=pt_BR"
       }
     ]
   },
@@ -196,10 +198,10 @@
           "subItems": [
             {
               "text": "(41) 3148-6507",
-              "href": "#"
+              "href": "tel:(41) 3148-6507"
             },
             {
-              "href": "#",
+              "href": "mailto:sac@superfestval.com.br",
               "text": "sac@superfestval.com.br"
             }
           ],
@@ -209,7 +211,7 @@
           "subItems": [
             {
               "text": "(45) 3225-0017",
-              "href": "#"
+              "href": "tel:(45) 3225-0017"
             }
           ],
           "title": "SAC Cascavel"
@@ -227,7 +229,7 @@
           "subItems": [
             {
               "text": "(41) 99846-0016",
-              "href": "#"
+              "href": "tel:(41) 99846-0016"
             }
           ],
           "title": "De segunda à sexta das 07h às 17h"
@@ -235,7 +237,7 @@
         {
           "subItems": [
             {
-              "href": "#",
+              "href": "tel:(45) 99846-0023",
               "text": "(45) 99846-0023"
             }
           ],
