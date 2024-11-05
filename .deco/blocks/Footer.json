@@ -141,8 +141,23 @@
     "title": "Pagamento",
     "socialItens": [
       {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/62e53c7c-92ce-45ba-ab96-8c2790d9e0b5/Grupo-1839.svg",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/595ed01b-fb3b-40e1-8558-5329b26e564a/master-(1).svg",
         "alt": "mastercard"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/41e31f5e-3397-43f2-93dd-6256a1927f47/visa-(1).svg"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/75923990-d456-4fdb-a45f-cdbc0f297f9a/elo-(1).svg"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e2a8b8f8-9585-4412-b65c-aa14afc1961a/amex.svg"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f71a8833-263f-4fe2-8ee0-4b8694d4fb4a/hiper-(1).svg"
+      },
+      {
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/15ec4ca0-d9ec-4a25-9300-90034bd5296d/dinners.svg"
       }
     ]
   },
@@ -182,14 +197,17 @@
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d6dfa3c9-adc9-4224-bcd4-19ff6a553d77/Camada-1.svg"
     }
   },
-  "underEighteen": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/acef9ac8-04b2-41a2-a349-ec978971048e/Bebidas-alcoolicas.svg",
+  "underEighteen": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3be740a8-51a3-44d9-9a0d-b4998c65d204/18.svg",
   "infos": [
     {
       "children": [
         {
           "subItems": [
             {
-              "text": "De segunda à sexta das 08h às 18h"
+              "text": "seg a sab 08h às 22h"
+            },
+            {
+              "text": "dom 08h às 20h"
             }
           ],
           "title": "Atendimento ao cliente: Lojas físicas"
@@ -226,37 +244,13 @@
           "title": "Atendimento ao cliente: Festval.com"
         },
         {
-          "subItems": [
-            {
-              "text": "(41) 99846-0016",
-              "href": "tel:(41) 99846-0016"
-            }
-          ],
-          "title": "De segunda à sexta das 07h às 17h"
-        },
-        {
-          "subItems": [
-            {
-              "href": "tel:(45) 99846-0023",
-              "text": "(45) 99846-0023"
-            }
-          ],
-          "title": "Atendimento após as 17h"
-        },
-        {
-          "subItems": [
-            {
-              "text": "Segunda à Sábado das 08h às 22:00"
-            },
-            {
-              "text": "Domingo das 08h às 20h"
-            }
-          ],
-          "title": "RETIRADA DE MERCADORIAS"
+          "subItems": [],
+          "textoBtn": "(41) 99846-0016",
+          "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
         }
       ],
       "title": "Fale com o Festval"
     }
   ],
-  "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b72d9145-8890-47f3-b213-158ba616ccb4/Grupo-4083.svg"
+  "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c2b441e-db01-459f-a25a-0ab59d7b2c15/18-mb.svg"
 }

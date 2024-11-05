@@ -16,11 +16,11 @@ import * as $$$2 from "./loaders/minicart.ts";
 import * as $$$3 from "./loaders/user.ts";
 import * as $$$4 from "./loaders/wishlist.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
-import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$2 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$3 from "./sections/Category/gridBanners.tsx";
-import * as $$$$$$4 from "./sections/CategoryGridExtended.tsx";
-import * as $$$$$$5 from "./sections/CategoryGridWithNavigation.tsx";
+import * as $$$$$$3 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$4 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$5 from "./sections/Category/gridBanners.tsx";
+import * as $$$$$$1 from "./sections/CategoryGridExtended.tsx";
+import * as $$$$$$2 from "./sections/CategoryGridWithNavigation.tsx";
 import * as $$$$$$6 from "./sections/Component.tsx";
 import * as $$$$$$7 from "./sections/Content/Faq.tsx";
 import * as $$$$$$8 from "./sections/Content/Hero.tsx";
@@ -59,11 +59,11 @@ const manifest = {
   },
   "sections": {
     "site/sections/Animation/Animation.tsx": $$$$$$0,
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$1,
-    "site/sections/Category/CategoryGrid.tsx": $$$$$$2,
-    "site/sections/Category/gridBanners.tsx": $$$$$$3,
-    "site/sections/CategoryGridExtended.tsx": $$$$$$4,
-    "site/sections/CategoryGridWithNavigation.tsx": $$$$$$5,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$3,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$4,
+    "site/sections/Category/gridBanners.tsx": $$$$$$5,
+    "site/sections/CategoryGridExtended.tsx": $$$$$$1,
+    "site/sections/CategoryGridWithNavigation.tsx": $$$$$$2,
     "site/sections/Component.tsx": $$$$$$6,
     "site/sections/Content/Faq.tsx": $$$$$$7,
     "site/sections/Content/Hero.tsx": $$$$$$8,
