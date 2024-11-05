@@ -22,14 +22,6 @@
           "action": {
             "href": "https://www.festval.com/s?q=colorado+lata+350ml&page=1&utm_source=BannerHome&utm_campaign=Colorado30%25na2%C2%BA"
           }
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ad3774cf-11de-451f-9c19-7d7288a830fa/20241007_td_ecom_zaffari_lanchinho_mucilon-1920x490-(2).jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/28c182cb-f092-4d54-b010-de5894a68692/20241007_td_ecom_zaffari_lanchinho_mucilon-1080x1500-(1).jpg",
-          "alt": "mucilon",
-          "action": {
-            "href": "https://www.festval.com/s?q=mucilon&page=1&utm_source=BannerHome&utm_campaign=MucilonVisibilidade"
-          }
         }
       ],
       "preload": true
@@ -156,7 +148,7 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "price:desc",
+          "sort": "orders:desc",
           "collection": "1072",
           "count": 12,
           "hideUnavailableItems": false
@@ -238,7 +230,7 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "price:desc",
+          "sort": "orders:desc",
           "collection": "172",
           "count": 12,
           "hideUnavailableItems": false,
