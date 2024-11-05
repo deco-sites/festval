@@ -77,7 +77,7 @@
             }
           ],
           "name": "Açougue",
-          "url": "/acougue"
+          "url": "/acougue?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -261,7 +261,7 @@
             }
           ],
           "name": "Adega",
-          "url": "/adega"
+          "url": "/adega?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -335,7 +335,7 @@
             }
           ],
           "name": "Bebidas ",
-          "url": "/bebidas"
+          "url": "/bebidas?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -397,7 +397,7 @@
             }
           ],
           "name": "Bebidas Alcoólicas ",
-          "url": "/bebidas-alcoolicas"
+          "url": "/bebidas-alcoolicas?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -453,7 +453,7 @@
             }
           ],
           "name": "Casa e Utilidades",
-          "url": "/casa-e-utilidades"
+          "url": "/casa-e-utilidades?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -472,7 +472,7 @@
             }
           ],
           "name": "Comida Japonesa",
-          "url": "/comida-japonesa"
+          "url": "/comida-japonesa?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -637,7 +637,7 @@
             }
           ],
           "name": "Diet Light ",
-          "url": "/diet-light"
+          "url": "/diet-light?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -656,7 +656,7 @@
             }
           ],
           "name": "Especiais",
-          "url": "/especiais"
+          "url": "/especiais?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -675,7 +675,7 @@
             }
           ],
           "name": "Floricultura",
-          "url": "/floricultura"
+          "url": "/floricultura?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -930,7 +930,7 @@
             }
           ],
           "name": "Frios e Laticínios",
-          "url": "/frios-e-laticinios"
+          "url": "/frios-e-laticinios?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -1124,7 +1124,7 @@
             }
           ],
           "name": "Higiene e Perfumaria",
-          "url": "/higiene-e-perfumaria"
+          "url": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -1187,7 +1187,7 @@
             }
           ],
           "name": "Hortifrúti",
-          "url": "/hortifruti"
+          "url": "/hortifruti?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -1353,7 +1353,7 @@
             }
           ],
           "name": "Importados",
-          "url": "/importados"
+          "url": "/importados?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -1593,7 +1593,7 @@
             }
           ],
           "name": "Limpeza",
-          "url": "/limpeza"
+          "url": "/limpeza?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -1892,7 +1892,7 @@
             }
           ],
           "name": "Mercearia ",
-          "url": "/mercearia"
+          "url": "/mercearia?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -1924,7 +1924,7 @@
             }
           ],
           "name": "Natal",
-          "url": "/natal"
+          "url": "/natal?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -1986,7 +1986,7 @@
             }
           ],
           "name": "Padaria",
-          "url": "/padaria"
+          "url": "/padaria?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -1999,7 +1999,7 @@
             }
           ],
           "name": "Páscoa",
-          "url": "/pascoa"
+          "url": "/pascoa?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -2036,7 +2036,7 @@
             }
           ],
           "name": "Petshop",
-          "url": "/petshop"
+          "url": "/petshop?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -2062,7 +2062,7 @@
             }
           ],
           "name": "Restaurante e Grill",
-          "url": "/restaurante-e-grill"
+          "url": "/restaurante-e-grill?sort=orders%3Adesc&page=1"
         },
         {
           "image": [],
@@ -2094,7 +2094,7 @@
             }
           ],
           "name": "Sorvete",
-          "url": "/sorvete"
+          "url": "/sorvete?sort=orders%3Adesc&page=1"
         }
       ],
       "@type": "SiteNavigationElement",
