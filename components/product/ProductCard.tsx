@@ -69,7 +69,7 @@ interface ProductData {
   Width: number | null;
 }
 
-const onLoad = async (id: string, itemId: string, price?: number) => {
+const onLoad = async (id: string, itemId: string, product: Product) => {
   async function getProductData(itemId: string): Promise<ProductData | null> {
     const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
 
@@ -109,34 +109,69 @@ const onLoad = async (id: string, itemId: string, price?: number) => {
     );
 
   if (productData && productData.MeasurementUnit == "kg") {
+    const listPrice = product.offers?.offers[0].priceSpecification[0].price;
+    const price = product.offers?.offers[0].priceSpecification[1].price;
+    const percent =
+      listPrice && price
+        ? Math.round(((listPrice - price) / listPrice) * 100)
+        : 0;
     if (productData.UnitMultiplier < 1) {
-      if (price) {
-        const priceForUnit = price / productData.UnitMultiplier;
-
-        const priceFormatted = new Intl.NumberFormat("pt-BR", {
-          style: "currency",
-          currency: "BRL",
-        }).format(priceForUnit);
-
-        if (currentPriceElement) {
-          currentPriceElement.innerHTML = `${priceFormatted}`;
-          currentPriceElement.classList.remove("hidden");
-        }
-      }
-    } else {
-      if (price) {
+      if (price && listPrice) {
         const priceFormatted = new Intl.NumberFormat("pt-BR", {
           style: "currency",
           currency: "BRL",
         }).format(price);
-        if (currentPriceElement) {
-          currentPriceElement.innerHTML = `${priceFormatted}`;
-          currentPriceElement.classList.remove("hidden");
+        const listPriceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(listPrice);
+
+        if (currentPriceElement && listPriceElement) {
+          if (price < listPrice) {
+            listPriceElement.innerHTML = `${listPriceFormatted}`;
+            listPriceElement.classList.remove("hidden");
+            discountElement && (discountElement.innerHTML = `-${percent}% OFF`);
+            discountElement?.classList.remove("hidden");
+            currentPriceElement.innerHTML = `${priceFormatted}`;
+            currentPriceElement.classList.remove("hidden");
+          } else {
+            discountElement?.classList.add("hidden");
+            listPriceElement.classList.add("hidden");
+            currentPriceElement.innerHTML = `${priceFormatted}`;
+            currentPriceElement.classList.remove("hidden");
+          }
+        }
+      }
+    } else {
+      const listPrice = product.offers?.offers[0].priceSpecification[0].price;
+      const price = product.offers?.offers[0].priceSpecification[1].price;
+      if (price && listPrice) {
+        const priceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(price);
+        const listPriceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(listPrice);
+
+        if (currentPriceElement && listPriceElement) {
+          if (price < listPrice) {
+            listPriceElement.innerHTML = `${listPriceFormatted}`;
+            listPriceElement.classList.remove("hidden");
+            discountElement && (discountElement.innerHTML = `-${percent}% OFF`);
+            discountElement?.classList.remove("hidden");
+            currentPriceElement.innerHTML = `${priceFormatted}`;
+            currentPriceElement.classList.remove("hidden");
+          } else {
+            discountElement?.classList.add("hidden");
+            listPriceElement.classList.add("hidden");
+            currentPriceElement.innerHTML = `${priceFormatted}`;
+            currentPriceElement.classList.remove("hidden");
+          }
         }
       }
     }
-    discountElement?.classList.add("hidden");
-    listPriceElement?.classList.add("hidden");
     quantityKg?.classList.remove("hidden");
     measurementUnit?.classList.remove("hidden");
     quantityNormal?.classList.add("hidden");
@@ -661,7 +696,7 @@ function ProductCard({
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(onLoad, id, product.productID, price),
+          __html: useScript(onLoad, id, product.productID, product),
         }}
       />
     </div>
