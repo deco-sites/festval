@@ -139,10 +139,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
   if (productData && productData.MeasurementUnit == "kg") {
     const listPrice = product.offers?.offers[0].priceSpecification[0].price;
     const price = product.offers?.offers[0].priceSpecification[1].price;
-    const percent =
-      listPrice && price
-        ? Math.round(((listPrice - price) / listPrice) * 100)
-        : 0;
+
     if (productData.UnitMultiplier < 1) {
       if (price && listPrice) {
         const priceFormatted = new Intl.NumberFormat("pt-BR", {
@@ -228,7 +225,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     }
     input.value =
       productData?.MeasurementUnit == "kg"
-        ? `${quantity.toString()} Kg`
+        ? `${quantity.toString()} kg`
         : quantity.toString();
 
     if (productData?.MeasurementUnit == "kg") {
@@ -320,10 +317,6 @@ function ModalAddToCartMobile(props: Props) {
   const { listPrice, price, availability } = useOffer(offers);
   const inStock = availability === "https://schema.org/InStock";
   const relativeUrl = relative(url);
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
 
   const platformProps = useAddToCart({ product, seller });
 
@@ -407,7 +400,7 @@ function ModalAddToCartMobile(props: Props) {
                   id="measurement-unit"
                   class="hidden font-bold text-[10px] text-[#9f9f9f] ml-[2px]"
                 >
-                  /Kg
+                  /kg
                 </span>
               </div>
             </div>

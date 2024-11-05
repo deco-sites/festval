@@ -198,7 +198,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     }
     input.value =
       productData?.MeasurementUnit == "kg"
-        ? `${quantity.toString()} Kg`
+        ? `${quantity.toString()} kg`
         : quantity.toString();
 
     if (productData?.MeasurementUnit == "kg") {
@@ -397,7 +397,7 @@ function ModalAddToCart(props: Props) {
                     {formatPrice(price, offers?.priceCurrency)}
                   </span>
                   <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">
-                    /Kg
+                    /kg
                   </span>
                 </div>
               </div>

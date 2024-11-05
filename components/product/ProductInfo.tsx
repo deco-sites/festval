@@ -202,7 +202,10 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     if (!input) {
       return;
     }
-    input.value = productData?.MeasurementUnit == "kg" ? `${quantity.toString()} Kg` : quantity.toString();
+    input.value =
+      productData?.MeasurementUnit == "kg"
+        ? `${quantity.toString()} kg`
+        : quantity.toString();
 
     if (productData?.MeasurementUnit == "kg") {
       input.setAttribute("data-quantity-number", `${sdk.getQuantity(itemID) || 1}`);
@@ -318,7 +321,9 @@ function ProductInfo({ page }: Props) {
               <span class="current-price text-xl font-bold text-base-400 hidden">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
-              <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">/Kg</span>
+              <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">
+                /kg
+              </span>
             </div>
           </div>
 

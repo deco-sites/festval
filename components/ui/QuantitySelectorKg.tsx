@@ -61,7 +61,7 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
           unitQuantityMsg.classList.remove("hidden");
           unitMultiplierMsg.innerHTML = `Aprox. ${productData.UnitMultiplier.toFixed(
             3
-          )} Kg/unidade`;
+          )} kg/unidade`;
           unitQuantityMsg.innerHTML = `Aprox. ${quantity} unidade(s) selecionada(s)`;
         }
       } else if (input instanceof HTMLDivElement) {
@@ -77,7 +77,7 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
           unitQuantityMsg.classList.remove("hidden");
           unitMultiplierMsg.innerHTML = `Aprox. ${productData.UnitMultiplier.toFixed(
             3
-          )} Kg/unidade`;
+          )} kg/unidade`;
           unitQuantityMsg.innerHTML = `Aprox. ${quantity} unidade(s) selecionada(s)`;
         }
       }
@@ -120,7 +120,7 @@ const onClick = (delta: number) => {
   input.value = `${Math.min(
     Math.max(inputValueAsNumber * (productQuantityHandler + delta), min),
     max
-  ).toFixed(3)} Kg`;
+  ).toFixed(3)} kg`;
 
   if (productQuantityHandler + delta <= 0) return;
 
