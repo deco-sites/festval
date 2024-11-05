@@ -103,10 +103,13 @@ const onLoad = async (id: string, itemId: string, price?: number) => {
     container?.querySelector<HTMLSpanElement>(`.current-price`);
   const listPriceElement =
     container?.querySelector<HTMLSpanElement>(`.list-price`);
+  const discountElement =
+    container?.parentElement?.querySelector<HTMLSpanElement>(
+      `.discount-percent`
+    );
 
   if (productData && productData.MeasurementUnit == "kg") {
     if (productData.UnitMultiplier < 1) {
-      //console.log(price);
       if (price) {
         const priceForUnit = price / productData.UnitMultiplier;
 
@@ -132,6 +135,7 @@ const onLoad = async (id: string, itemId: string, price?: number) => {
         }
       }
     }
+    discountElement?.classList.add("hidden");
     listPriceElement?.classList.add("hidden");
     quantityKg?.classList.remove("hidden");
     measurementUnit?.classList.remove("hidden");
@@ -491,7 +495,7 @@ function ProductCard({
           {/* Discounts */}
           <span
             class={clx(
-              "text-[10px] sm:text-xs font-normal text-white bg-[#E60201] text-center rounded-[4px] py-[3px] px-[5px]",
+              "discount-percent text-[10px] sm:text-xs font-normal text-white bg-[#E60201] text-center rounded-[4px] py-[3px] px-[5px]",
               (percent < 1 || !inStock) && "opacity-0"
             )}
           >
