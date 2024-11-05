@@ -2773,6 +2773,21 @@
       "inverted": true
     },
     {
+      "__resolveType": "site/sections/Product/ProductShelf.tsx",
+      "products": {
+        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+        "props": {
+          "sort": "orders:desc",
+          "collection": "1067",
+          "count": 12,
+          "hideUnavailableItems": true,
+          "similars": false
+        }
+      },
+      "title": "Importados",
+      "cta": "/1067?map=productClusterIds"
+    },
+    {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
       "items": [
         {
