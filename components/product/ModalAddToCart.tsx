@@ -141,7 +141,6 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           style: "currency",
           currency: "BRL",
         }).format(listPrice);
-
         if (currentPriceElement && listPriceElement) {
           if (price < listPrice) {
             listPriceElement.innerHTML = `${listPriceFormatted}`;
@@ -153,6 +152,12 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           } else {
             discountElement?.classList.add("hidden");
             listPriceElement.classList.add("hidden");
+            currentPriceElement.innerHTML = `${priceFormatted}`;
+            currentPriceElement.classList.remove("hidden");
+          }
+        } else {
+          if (currentPriceElement) {
+            discountElement?.classList.add("hidden");
             currentPriceElement.innerHTML = `${priceFormatted}`;
             currentPriceElement.classList.remove("hidden");
           }
@@ -377,7 +382,7 @@ function ModalAddToCart(props: Props) {
               <div className="flex flex-col">
                 <div className="flex flex-row gap-3 items-center">
                   {listPrice && price && listPrice > price && (
-                    <span class="list-price  line-through text-sm font-medium text-gray-400">
+                    <span class="list-price line-through text-sm font-medium text-gray-400">
                       {formatPrice(listPrice, offers?.priceCurrency)}
                     </span>
                   )}
@@ -391,7 +396,9 @@ function ModalAddToCart(props: Props) {
                   <span class="current-price text-xl font-bold text-base-400 hidden">
                     {formatPrice(price, offers?.priceCurrency)}
                   </span>
-                  <span class="measurement-unit hidden">/Kg</span>
+                  <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">
+                    /Kg
+                  </span>
                 </div>
               </div>
 

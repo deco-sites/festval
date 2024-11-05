@@ -3864,6 +3864,9 @@ details.collapse summary::-webkit-details-marker {
 .ml-2 {
   margin-left: 0.5rem;
 }
+.ml-\[2px\] {
+  margin-left: 2px;
+}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -3881,6 +3884,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-0 {
   margin-top: 0px;
+}
+.mt-1 {
+  margin-top: 0.25rem;
 }
 .mt-10 {
   margin-top: 2.5rem;
@@ -5319,6 +5325,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: rgb(102 119 129 / var(--tw-text-opacity));
 }
+.text-\[\#9f9f9f\] {
+  --tw-text-opacity: 1;
+  color: rgb(159 159 159 / var(--tw-text-opacity));
+}
 .text-\[\#F8F8F8\] {
   --tw-text-opacity: 1;
   color: rgb(248 248 248 / var(--tw-text-opacity));
@@ -5988,8 +5998,8 @@ details.collapse summary::-webkit-details-marker {
     left: 10rem;
   }
 
-  .sm\:col-span-4 {
-    grid-column: span 4 / span 4;
+  .sm\:col-span-5 {
+    grid-column: span 5 / span 5;
   }
 
   .sm\:col-span-6 {

@@ -351,7 +351,9 @@ function ProductInfo({ page }: Props) {
               <span class="current-price text-xl font-bold text-base-400 hidden">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
-              <span class="measurement-unit hidden">/Kg</span>
+              <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">
+                /Kg
+              </span>
             </div>
           </div>
 

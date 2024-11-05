@@ -44,7 +44,7 @@ export default function ProductDetails({ page }: Props) {
           <div class="sm:col-span-6 px-4 sm:px-0">
             <ImageGallerySlider page={page} />
           </div>
-          <div class="sm:col-span-4 lg:ml-7 ">
+          <div class="sm:col-span-5 lg:ml-7 ">
             <ProductInfo page={page} />
           </div>
         </div>

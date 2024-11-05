@@ -211,10 +211,16 @@ function QuantitySelectorKg({
           readonly
           {...props}
         />
-        <span id="unit-multiplier-msg" class="hidden">
+        <span
+          id="unit-multiplier-msg"
+          class="hidden text-xs text-[#646072] mt-1 text-center"
+        >
           Aprox. 800g/unidade
         </span>
-        <span id="unit-quantity-msg" class="hidden">
+        <span
+          id="unit-quantity-msg"
+          class="hidden text-xs text-[#646072] text-center"
+        >
           Aprox. 1 unidade(s) selecionada(s)
         </span>
       </div>

@@ -130,7 +130,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           if (price < listPrice) {
             listPriceElement.innerHTML = `${listPriceFormatted}`;
             listPriceElement.classList.remove("hidden");
-            discountElement && (discountElement.innerHTML = `-${percent}% OFF`);
+            discountElement && (discountElement.innerHTML = `-${percent}%`);
             discountElement?.classList.remove("hidden");
             currentPriceElement.innerHTML = `${priceFormatted}`;
             currentPriceElement.classList.remove("hidden");
@@ -159,7 +159,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           if (price < listPrice) {
             listPriceElement.innerHTML = `${listPriceFormatted}`;
             listPriceElement.classList.remove("hidden");
-            discountElement && (discountElement.innerHTML = `-${percent}% OFF`);
+            discountElement && (discountElement.innerHTML = `-${percent}%`);
             discountElement?.classList.remove("hidden");
             currentPriceElement.innerHTML = `${priceFormatted}`;
             currentPriceElement.classList.remove("hidden");
@@ -606,7 +606,10 @@ function ProductCard({
               <span class="current-price font-bold text-base sm:text-lg text-[#1A1A1A]">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
-              <span id="measurement-unit" class="hidden">
+              <span
+                id="measurement-unit"
+                class="hidden font-bold text-sm text-[#9f9f9f] ml-[2px]"
+              >
                 /Kg
               </span>
             </div>

@@ -403,7 +403,10 @@ function ModalAddToCartMobile(props: Props) {
                 <span class="current-price text-xs font-bold text-base-400">
                   {formatPrice(price, offers?.priceCurrency)}
                 </span>
-                <span id="measurement-unit" class="hidden">
+                <span
+                  id="measurement-unit"
+                  class="hidden font-bold text-[10px] text-[#9f9f9f] ml-[2px]"
+                >
                   /Kg
                 </span>
               </div>
