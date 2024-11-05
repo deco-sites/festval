@@ -362,6 +362,7 @@ function expandPromoText(text: string): string | null {
     "30off na 2°": "30% Off na 2ª unidade",
     "30off Na 2": "30% Off na 2ª unidade",
     "30off Na 2°": "30% Off na 2ª unidade",
+    "30%Off na 2": "30% Off na 2ª unidade",
 
     // Promoções de 25% off
     "25off na 3": "25% Off na 3ª unidade",
