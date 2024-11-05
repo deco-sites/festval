@@ -11,7 +11,7 @@ export interface Props {
 }
 
 function Alert({ alerts = [], interval = 5 }: Props) {
-  const id = useId();
+  const id = useId(); 
 
   return (
     <div id={id}>

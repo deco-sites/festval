@@ -138,14 +138,14 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "price:desc",
-          "collection": "142",
+          "sort": "orders:desc",
+          "collection": "1073",
           "count": 12,
           "hideUnavailableItems": false
         }
       },
-      "title": "Mais vendidos",
-      "cta": "/142?map=productClusterIds"
+      "title": "Mais Vendidos",
+      "cta": "/1073?map=productClusterIds"
     },
     {
       "__resolveType": "site/sections/separator.tsx",
