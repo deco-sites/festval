@@ -17,7 +17,8 @@
           "sort": "",
           "count": 12,
           "fuzzy": "automatic",
-          "selectedFacets": []
+          "selectedFacets": [],
+          "hideUnavailableItems": true
         }
       }
     },
