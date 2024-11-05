@@ -101,7 +101,7 @@ const HEIGHT = 150;
 //   });
 // };
 
-const onLoad = async (id: string, itemId: string) => {
+const onLoad = async (id: string, itemId: string, price?: number) => {
   async function getProductData(itemId: string): Promise<ProductData | null> {
     const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
 
@@ -131,14 +131,46 @@ const onLoad = async (id: string, itemId: string) => {
   );
   const measurementUnit =
     container?.querySelector<HTMLSpanElement>(`#measurement-unit`);
+  const currentPriceElement =
+    container?.querySelector<HTMLSpanElement>(`.current-price`);
+  const listPriceElement =
+    container?.querySelector<HTMLSpanElement>(`.list-price`);
 
   if (productData && productData.MeasurementUnit == "kg") {
+    if (productData.UnitMultiplier < 1) {
+      if (price) {
+        const priceForUnit = price / productData.UnitMultiplier;
+
+        const priceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(priceForUnit);
+
+        if (currentPriceElement) {
+          currentPriceElement.innerHTML = `${priceFormatted}`;
+          currentPriceElement.classList.remove("hidden");
+        }
+      }
+    } else {
+      if (price) {
+        const priceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(price);
+        if (currentPriceElement) {
+          currentPriceElement.innerHTML = `${priceFormatted}`;
+          currentPriceElement.classList.remove("hidden");
+        }
+      }
+    }
+    listPriceElement?.classList.add("hidden");
     quantityKg?.classList.remove("hidden");
     measurementUnit?.classList.remove("hidden");
     quantityNormal?.classList.add("hidden");
     quantityNormal?.remove();
   } else {
     quantityNormal?.classList.remove("hidden");
+    currentPriceElement?.classList.remove("hidden");
     measurementUnit?.classList.add("hidden");
     quantityKg?.classList.add("hidden");
     quantityKg?.remove();
@@ -327,7 +359,7 @@ function ModalAddToCartMobile(props: Props) {
             <div className="flex flex-col border-t border-[#D9D9D9] pt-[8px]">
               <div className="flex flex-row gap-3 items-center">
                 {listPrice && price && listPrice > price && (
-                  <span class="line-through text-[10px] font-normal text-gray-400">
+                  <span class="list-price line-through text-[10px] font-normal text-gray-400">
                     {formatPrice(listPrice, offers?.priceCurrency)}
                   </span>
                 )}
@@ -337,12 +369,14 @@ function ModalAddToCartMobile(props: Props) {
                   </span>
                 )} */}
               </div>
-              <span class="text-xs font-bold text-base-400">
-                {formatPrice(price, offers?.priceCurrency)}
+              <div>
+                <span class="current-price text-xs font-bold text-base-400">
+                  {formatPrice(price, offers?.priceCurrency)}
+                </span>
                 <span id="measurement-unit" class="hidden">
                   /Kg
                 </span>
-              </span>
+              </div>
             </div>
           </div>
         </div>
@@ -401,7 +435,7 @@ function ModalAddToCartMobile(props: Props) {
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(onLoad, idQuantity, product.productID),
+          __html: useScript(onLoad, idQuantity, product.productID, price),
         }}
       />
     </div>

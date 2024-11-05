@@ -29,6 +29,9 @@ const script = (id: string) => {
 const onLoad = () => {
   const user = window.STOREFRONT.USER.getUser();
   const loginMessage = document.getElementById("login-message");
+  const myAccount = document.getElementById(
+    "my-account-mobile"
+  ) as HTMLAnchorElement;
   if (user) {
     if (loginMessage) {
       const loginWelcome =
@@ -39,6 +42,9 @@ const onLoad = () => {
       }
 
       loginMessage?.classList.remove("hidden");
+    }
+    if (myAccount) {
+      myAccount.href = "/account#/profile";
     }
   }
 };
@@ -120,7 +126,11 @@ function Aside({
           </div>
 
           <div>
-            <a href="#" class="flex gap[16px] items-center">
+            <a
+              id="my-account-mobile"
+              href="/login"
+              class="flex gap[16px] items-center"
+            >
               <span class="text-xs font-bold text-black">Minha conta</span>
               <span>
                 <Image

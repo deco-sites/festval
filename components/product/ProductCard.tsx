@@ -69,7 +69,7 @@ interface ProductData {
   Width: number | null;
 }
 
-const onLoad = async (id: string, itemId: string) => {
+const onLoad = async (id: string, itemId: string, price?: number) => {
   async function getProductData(itemId: string): Promise<ProductData | null> {
     const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
 
@@ -99,14 +99,47 @@ const onLoad = async (id: string, itemId: string) => {
   );
   const measurementUnit =
     container?.querySelector<HTMLSpanElement>(`#measurement-unit`);
+  const currentPriceElement =
+    container?.querySelector<HTMLSpanElement>(`.current-price`);
+  const listPriceElement =
+    container?.querySelector<HTMLSpanElement>(`.list-price`);
 
   if (productData && productData.MeasurementUnit == "kg") {
+    if (productData.UnitMultiplier < 1) {
+      //console.log(price);
+      if (price) {
+        const priceForUnit = price / productData.UnitMultiplier;
+
+        const priceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(priceForUnit);
+
+        if (currentPriceElement) {
+          currentPriceElement.innerHTML = `${priceFormatted}`;
+          currentPriceElement.classList.remove("hidden");
+        }
+      }
+    } else {
+      if (price) {
+        const priceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(price);
+        if (currentPriceElement) {
+          currentPriceElement.innerHTML = `${priceFormatted}`;
+          currentPriceElement.classList.remove("hidden");
+        }
+      }
+    }
+    listPriceElement?.classList.add("hidden");
     quantityKg?.classList.remove("hidden");
     measurementUnit?.classList.remove("hidden");
     quantityNormal?.classList.add("hidden");
     quantityNormal?.remove();
   } else {
     quantityNormal?.classList.remove("hidden");
+    currentPriceElement?.classList.remove("hidden");
     measurementUnit?.classList.add("hidden");
     quantityKg?.classList.add("hidden");
     quantityKg?.remove();
@@ -379,9 +412,9 @@ function ProductCard({
     },
   });
 
-  if (!inStock) {
-    return null;
-  }
+  // if (!inStock) {
+  //   return null;
+  // }
 
   //Added it to check the variant name in the SKU Selector later, so it doesn't render the SKU to "shoes size" in the Product Card
   const firstVariantName = firstSkuVariations?.[0]?.toLowerCase();
@@ -526,16 +559,18 @@ function ProductCard({
         <div class="flex justify-between items-end">
           <div class="flex flex-col items-start  pt-2">
             {listPrice && price && listPrice > price && (
-              <span class="line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
+              <span class="list-price line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
                 {formatPrice(listPrice, offers?.priceCurrency)}
               </span>
             )}
-            <span class="font-bold text-base sm:text-lg text-[#1A1A1A]">
-              {formatPrice(price, offers?.priceCurrency)}
+            <div>
+              <span class="current-price font-bold text-base sm:text-lg text-[#1A1A1A]">
+                {formatPrice(price, offers?.priceCurrency)}
+              </span>
               <span id="measurement-unit" class="hidden">
                 /Kg
               </span>
-            </span>
+            </div>
           </div>
 
           <div class="opacity-0 sm:group-hover:opacity-100">
@@ -622,7 +657,7 @@ function ProductCard({
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(onLoad, id, product.productID),
+          __html: useScript(onLoad, id, product.productID, price),
         }}
       />
     </div>

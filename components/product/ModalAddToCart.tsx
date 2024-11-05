@@ -58,7 +58,7 @@ interface ProductData {
   Width: number | null;
 }
 
-const onLoad = async (id: string, itemId: string) => {
+const onLoad = async (id: string, itemId: string, price?: number) => {
   async function getProductData(itemId: string): Promise<ProductData | null> {
     const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
 
@@ -87,15 +87,51 @@ const onLoad = async (id: string, itemId: string) => {
     `.quantity-modal-normal`
   );
   const measurementUnit =
-    container?.querySelector<HTMLSpanElement>(`#measurement-unit`);
+    container?.querySelector<HTMLSpanElement>(`.measurement-unit`);
+  const currentPriceElement =
+    container?.querySelector<HTMLSpanElement>(`.current-price`);
+  const listPriceElement =
+    container?.querySelector<HTMLSpanElement>(`.list-price`);
+  const discountElement =
+    container?.querySelector<HTMLSpanElement>(`.discount-percent`);
 
   if (productData && productData.MeasurementUnit == "kg") {
+    if (productData.UnitMultiplier < 1) {
+      //console.log(price);
+      if (price) {
+        const priceForUnit = price / productData.UnitMultiplier;
+
+        const priceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(priceForUnit);
+
+        if (currentPriceElement) {
+          currentPriceElement.innerHTML = `${priceFormatted}`;
+          currentPriceElement.classList.remove("hidden");
+        }
+      }
+    } else {
+      if (price) {
+        const priceFormatted = new Intl.NumberFormat("pt-BR", {
+          style: "currency",
+          currency: "BRL",
+        }).format(price);
+        if (currentPriceElement) {
+          currentPriceElement.innerHTML = `${priceFormatted}`;
+          currentPriceElement.classList.remove("hidden");
+        }
+      }
+    }
+    discountElement?.classList.add("hidden");
+    listPriceElement?.classList.add("hidden");
     quantityKg?.classList.remove("hidden");
     measurementUnit?.classList.remove("hidden");
     quantityNormal?.classList.add("hidden");
     quantityNormal?.remove();
   } else {
     quantityNormal?.classList.remove("hidden");
+    currentPriceElement?.classList.remove("hidden");
     measurementUnit?.classList.add("hidden");
     quantityKg?.classList.add("hidden");
     quantityKg?.remove();
@@ -307,22 +343,22 @@ function ModalAddToCart(props: Props) {
               <div className="flex flex-col">
                 <div className="flex flex-row gap-3 items-center">
                   {listPrice && price && listPrice > price && (
-                    <span class="line-through text-sm font-medium text-gray-400">
+                    <span class="list-price  line-through text-sm font-medium text-gray-400">
                       {formatPrice(listPrice, offers?.priceCurrency)}
                     </span>
                   )}
                   {listPrice && price && listPrice > price && percent > 0 && (
-                    <span class="text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34] text-center rounded px-3 py-1">
+                    <span class="discount-percent text-sm/4 font-bold text-[#F8F8F8] bg-[#966D34] text-center rounded px-3 py-1">
                       -{percent}% OFF
                     </span>
                   )}
                 </div>
-                <span class="text-xl font-bold text-base-400">
-                  {formatPrice(price, offers?.priceCurrency)}
-                  <span id="measurement-unit" class="hidden">
-                    /Kg
+                <div>
+                  <span class="current-price text-xl font-bold text-base-400 hidden">
+                    {formatPrice(price, offers?.priceCurrency)}
                   </span>
-                </span>
+                  <span class="measurement-unit hidden">/Kg</span>
+                </div>
               </div>
 
               <div
@@ -388,7 +424,7 @@ function ModalAddToCart(props: Props) {
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(onLoad, idQuantity, product.productID),
+          __html: useScript(onLoad, idQuantity, product.productID, price),
         }}
       />
     </div>
