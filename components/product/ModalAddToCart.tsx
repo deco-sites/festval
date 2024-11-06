@@ -81,27 +81,17 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
 
   const container = document.getElementById(`modal-${id}`);
 
-  const quantityKg =
-    container?.querySelector<HTMLDivElement>(`.quantity-modal-kg`);
-  const quantityNormal = container?.querySelector<HTMLDivElement>(
-    `.quantity-modal-normal`
-  );
-  const measurementUnit =
-    container?.querySelector<HTMLSpanElement>(`.measurement-unit`);
-  const currentPriceElement =
-    container?.querySelector<HTMLSpanElement>(`.current-price`);
-  const listPriceElement =
-    container?.querySelector<HTMLSpanElement>(`.list-price`);
-  const discountElement =
-    container?.querySelector<HTMLSpanElement>(`.discount-percent`);
+  const quantityKg = container?.querySelector<HTMLDivElement>(`.quantity-modal-kg`);
+  const quantityNormal = container?.querySelector<HTMLDivElement>(`.quantity-modal-normal`);
+  const measurementUnit = container?.querySelector<HTMLSpanElement>(`.measurement-unit`);
+  const currentPriceElement = container?.querySelector<HTMLSpanElement>(`.current-price`);
+  const listPriceElement = container?.querySelector<HTMLSpanElement>(`.list-price`);
+  const discountElement = container?.querySelector<HTMLSpanElement>(`.discount-percent`);
 
   if (productData && productData.MeasurementUnit == "kg") {
     const listPrice = product.offers?.offers[0].priceSpecification[0].price;
     const price = product.offers?.offers[0].priceSpecification[1].price;
-    const percent =
-      listPrice && price
-        ? Math.round(((listPrice - price) / listPrice) * 100)
-        : 0;
+    const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
     if (productData.UnitMultiplier < 1) {
       if (price && listPrice) {
         const priceFormatted = new Intl.NumberFormat("pt-BR", {
@@ -188,33 +178,21 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity =
       productData?.MeasurementUnit == "kg"
-        ? (
-            productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)
-          ).toFixed(3)
+        ? (productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)).toFixed(3)
         : sdk.getQuantity(itemID) || 1;
 
     if (!input) {
       return;
     }
-    input.value =
-      productData?.MeasurementUnit == "kg"
-        ? `${quantity.toString()} kg`
-        : quantity.toString();
+    input.value = productData?.MeasurementUnit == "kg" ? `${quantity.toString()} kg` : quantity.toString();
 
     if (productData?.MeasurementUnit == "kg") {
-      input.setAttribute(
-        "data-quantity-number",
-        `${sdk.getQuantity(itemID) || 1}`
-      );
+      input.setAttribute("data-quantity-number", `${sdk.getQuantity(itemID) || 1}`);
     }
 
     // enable interactivity
-    container
-      ?.querySelectorAll<HTMLButtonElement>("button")
-      .forEach((node) => (node.disabled = false));
-    container
-      ?.querySelectorAll<HTMLButtonElement>("input")
-      .forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -319,10 +297,7 @@ function ModalAddToCart(props: Props) {
   const { listPrice, price, availability } = useOffer(offers);
   const inStock = availability === "https://schema.org/InStock";
   const relativeUrl = relative(url);
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
 
   const platformProps = useAddToCart({ product, seller });
 
@@ -334,10 +309,7 @@ function ModalAddToCart(props: Props) {
         class="bg-base-100 absolute top-0 px-[85px] py-[60px] modal-box max-w-[1088px] rounded-lg flex gap-[70px]"
         style={{ top: "50%", transform: "translateY(-50%)" }}
       >
-        <div
-          class="absolute top-[11px] right-[11px]"
-          hx-on:click={useScript(onClick)}
-        >
+        <div class="absolute top-[11px] right-[11px]" hx-on:click={useScript(onClick)}>
           <button type="button">
             <Image
               src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2a8a1f1a-e676-44e1-b918-eb3c22226498/close-modal.svg"
@@ -364,17 +336,8 @@ function ModalAddToCart(props: Props) {
         <div class="flex flex-col">
           {/* Product Name */}
           <div>
-            <span
-              class={clx(
-                "lg:text-xl sm:text-base font-bold text-[#373737]",
-                "pt-4"
-              )}
-            >
-              {title}
-            </span>
-            <div className="pt-1 text-[#646072] lg:text-lg text-sm">
-              Ref.{gtin}
-            </div>
+            <span class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4")}>{title}</span>
+            <div className="pt-1 text-[#646072] lg:text-lg text-sm">Ref.{gtin}</div>
           </div>
           {/* Prices */}
           <div class="flex flex-col items-start gap-1 pt-4">
@@ -396,9 +359,7 @@ function ModalAddToCart(props: Props) {
                   <span class="current-price text-xl font-bold text-base-400 hidden">
                     {formatPrice(price, offers?.priceCurrency)}
                   </span>
-                  <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">
-                    /kg
-                  </span>
+                  <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">/kg</span>
                 </div>
               </div>
 
@@ -406,24 +367,16 @@ function ModalAddToCart(props: Props) {
                 id={`input-${idQuantity}`}
                 class="hidden quantity-modal-kg"
                 data-item-id={product.productID}
-                data-cart-item={encodeURIComponent(
-                  JSON.stringify({ item, platformProps })
-                )}
+                data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
               >
-                <QuantitySelectorKg
-                  id={`input-${idQuantity}`}
-                  min={1}
-                  max={100}
-                />
+                <QuantitySelectorKg id={`input-${idQuantity}`} min={1} max={100} />
               </div>
 
               <div
                 id={`input-${idQuantity}`}
                 class="lg:w-2/4 hidden quantity-modal-normal"
                 data-item-id={product.productID}
-                data-cart-item={encodeURIComponent(
-                  JSON.stringify({ item, platformProps })
-                )}
+                data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
               >
                 <QuantitySelector min={1} max={100} />
               </div>
@@ -448,15 +401,10 @@ function ModalAddToCart(props: Props) {
           </div>
           {/* Description card */}
           <div class="mt-4  sm:mt-6">
-            <span className="lg:text-lg text-base font-bold text-[#373737]">
-              Detalhes do produto
-            </span>
+            <span className="lg:text-lg text-base font-bold text-[#373737]">Detalhes do produto</span>
             <span class="text-sm ">
               {description && (
-                <div
-                  class="mt-2 max-h-[290px] overflow-y-auto"
-                  dangerouslySetInnerHTML={{ __html: description }}
-                />
+                <div class="mt-2 max-h-[80px] overflow-y-auto" dangerouslySetInnerHTML={{ __html: description }} />
               )}
             </span>
           </div>
