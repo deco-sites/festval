@@ -11,8 +11,8 @@
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9a56fcb8-1bd2-4c7f-8e55-ba0b4bf0a7ea/BANNER-HOME-SITE-1920X490-2.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/722af1cd-727e-4814-82a4-b7d195eaa2a3/BANNER-HOME-MBL-1080X1500.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
           "alt": "site"
         },
         {
