@@ -107,6 +107,8 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     container?.parentElement?.querySelector<HTMLSpanElement>(
       `.discount-percent`
     );
+  const loadingElement =
+    container?.querySelector<HTMLSpanElement>(`.loading-spinner`);
 
   if (productData && productData.MeasurementUnit == "kg") {
     const listPrice = product.offers?.offers[0].priceSpecification[0].price;
@@ -128,6 +130,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
 
         if (currentPriceElement && listPriceElement) {
           if (price < listPrice) {
+            loadingElement?.classList.add("hidden");
             listPriceElement.innerHTML = `${listPriceFormatted}`;
             listPriceElement.classList.remove("hidden");
             discountElement && (discountElement.innerHTML = `-${percent}%`);
@@ -135,6 +138,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
             currentPriceElement.innerHTML = `${priceFormatted}`;
             currentPriceElement.classList.remove("hidden");
           } else {
+            loadingElement?.classList.add("hidden");
             discountElement?.classList.add("hidden");
             listPriceElement.classList.add("hidden");
             currentPriceElement.innerHTML = `${priceFormatted}`;
@@ -157,6 +161,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
 
         if (currentPriceElement && listPriceElement) {
           if (price < listPrice) {
+            loadingElement?.classList.add("hidden");
             listPriceElement.innerHTML = `${listPriceFormatted}`;
             listPriceElement.classList.remove("hidden");
             discountElement && (discountElement.innerHTML = `-${percent}%`);
@@ -164,11 +169,18 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
             currentPriceElement.innerHTML = `${priceFormatted}`;
             currentPriceElement.classList.remove("hidden");
           } else {
+            loadingElement?.classList.add("hidden");
             discountElement?.classList.add("hidden");
             listPriceElement.classList.add("hidden");
             currentPriceElement.innerHTML = `${priceFormatted}`;
             currentPriceElement.classList.remove("hidden");
           }
+        } else if (currentPriceElement) {
+          loadingElement?.classList.add("hidden");
+          discountElement?.classList.add("hidden");
+          listPriceElement?.classList.add("hidden");
+          currentPriceElement.innerHTML = `${priceFormatted}`;
+          currentPriceElement.classList.remove("hidden");
         }
       }
     }
@@ -177,6 +189,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     quantityNormal?.classList.add("hidden");
     quantityNormal?.remove();
   } else {
+    loadingElement?.classList.add("hidden");
     quantityNormal?.classList.remove("hidden");
     currentPriceElement?.classList.remove("hidden");
     measurementUnit?.classList.add("hidden");
@@ -599,12 +612,13 @@ function ProductCard({
         <div class="flex justify-between items-end">
           <div class="flex flex-col items-start  pt-2">
             {listPrice && price && listPrice > price && (
-              <span class="list-price line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
+              <span class="list-price hidden line-through text-[10px] sm:text-xs font-bold text-[#5F5F5F]">
                 {formatPrice(listPrice, offers?.priceCurrency)}
               </span>
             )}
             <div>
-              <span class="current-price font-bold text-base sm:text-lg text-[#1A1A1A]">
+              <span class="block loading loading-spinner" />
+              <span class="current-price hidden font-bold text-base sm:text-lg text-[#1A1A1A]">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
               <span
