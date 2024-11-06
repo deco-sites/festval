@@ -3,9 +3,13 @@ import { defineApp } from "$fresh/server.ts";
 import { useScript } from "@deco/deco/hooks";
 import { Context } from "@deco/deco";
 const serviceWorkerScript = () =>
-  addEventListener("load", () =>
-    navigator && navigator.serviceWorker &&
-    navigator.serviceWorker.register("/sw.js"));
+  addEventListener(
+    "load",
+    () =>
+      navigator &&
+      navigator.serviceWorker &&
+      navigator.serviceWorker.register("/sw.js")
+  );
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
   return (
@@ -27,6 +31,13 @@ export default defineApp(async (_req, ctx) => {
 
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
+
+        {/* Iphone top color */}
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta name="theme-color" content="#FFFFFF" />
       </Head>
 
       {/* Rest of Preact tree */}
