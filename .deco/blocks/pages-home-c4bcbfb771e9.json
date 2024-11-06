@@ -30,34 +30,29 @@
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
       "items": [
         {
-          "label": "Açougue",
-          "href": "/acougue",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8337b62e-8baf-445e-bc78-416dec655192/teste.png"
-        },
-        {
-          "href": "/hortifruti",
           "label": "Hortifruti",
+          "href": "/hortifruti",
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1460b27b-3ab4-4907-8a4e-4587d8450faa/tomate.png"
         },
         {
+          "href": "/adega",
+          "label": "Adega",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/401937a6-8419-4aac-9f9b-f207666b75f9/Adega.png"
+        },
+        {
+          "href": "/bebidas-alcoolicas",
+          "label": "Bebidas Alcoólicas",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a70bfb93-1d78-48d1-a76d-a60f7fb61c88/Bebidas-Alcooulicas.png"
+        },
+        {
+          "href": "/acougue",
+          "label": "Açougue",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8337b62e-8baf-445e-bc78-416dec655192/teste.png"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/732568e4-b9b9-4f58-a834-450b923e8697/Mercearia.png",
           "href": "/mercearia",
-          "label": "Mercearia",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/732568e4-b9b9-4f58-a834-450b923e8697/Mercearia.png"
-        },
-        {
-          "href": "/padaria",
-          "label": "Padaria",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/792b3033-3e42-4621-8c16-4c07cd34ae06/Padaria.png"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/12629561-ef4e-4969-a86d-348f90a032b8/bebidas.png",
-          "href": "/bebidas",
-          "label": "Bebidas"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5adb7dfa-715a-475b-b58e-53382e1c8036/Casa.png",
-          "href": "/casa-e-utilidades",
-          "label": "Casa & Utilidades"
+          "label": "Mercearia"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a18e3173-916b-4942-b718-59c464b8595e/Importados.png",
@@ -65,14 +60,44 @@
           "label": "Importados"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5cbbd1f8-a585-4081-93db-d88a914ba36c/Latici.png",
-          "href": "/laticinios",
-          "label": "Laticínios"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96e49984-1396-41b3-8ba6-e17e8887565e/Sucos.png",
+          "href": "/bebidas/suco?sort=orders%3Adesc&page=1",
+          "label": "Sucos"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9a9a710a-d819-4d97-b70e-eaddad5b03f5/Limpeza.png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/12629561-ef4e-4969-a86d-348f90a032b8/bebidas.png",
+          "href": "/bebidas",
+          "label": "Bebidas"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/792b3033-3e42-4621-8c16-4c07cd34ae06/Padaria.png",
+          "href": "/padaria",
+          "label": "Padaria"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5cbbd1f8-a585-4081-93db-d88a914ba36c/Latici.png",
+          "href": "/frios-e-laticinios?sort=orders%3Adesc&page=1",
+          "label": "Frios e Laticínios"
+        },
+        {
           "href": "/limpeza",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9a9a710a-d819-4d97-b70e-eaddad5b03f5/Limpeza.png",
           "label": "Limpeza"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bec5a09-d334-4d28-957f-4ec75b296610/Perfumaria.png",
+          "href": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1",
+          "label": "Higiene e Perfumaria"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/84b19b7c-d2b5-4376-8dc9-fddacf705a05/Diet--Light.png",
+          "href": "/diet-light",
+          "label": "Diet & Light"
+        },
+        {
+          "href": "/sorvete?sort=discount%3Adesc&page=1",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e871466b-93ec-4461-9ef6-62abe4feeca0/Sorvetes.png",
+          "label": "Sorvetes"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/46e581c1-9904-4ab7-891f-25f8c5cf0a91/Floricultura.png",
@@ -80,44 +105,14 @@
           "label": "Floricultura"
         },
         {
-          "href": "/diet-light",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/84b19b7c-d2b5-4376-8dc9-fddacf705a05/Diet--Light.png",
-          "label": "Diet & Light"
+          "label": "Casa & Utilidades",
+          "href": "/casa-e-utilidades",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5adb7dfa-715a-475b-b58e-53382e1c8036/Casa.png"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e871466b-93ec-4461-9ef6-62abe4feeca0/Sorvetes.png",
-          "href": "/sorvetes",
-          "label": "Sorvetes"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bec5a09-d334-4d28-957f-4ec75b296610/Perfumaria.png",
-          "href": "/perfumaria",
-          "label": "Perfumaria"
-        },
-        {
-          "href": "/petshop",
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/52ee0656-cc6a-43d7-8777-d5499fe7ee38/Pet-Shop.png",
+          "href": "/petshop",
           "label": "Pet Shop"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96e49984-1396-41b3-8ba6-e17e8887565e/Sucos.png",
-          "href": "/sucos",
-          "label": "Sucos"
-        },
-        {
-          "label": "Frios & Congelados",
-          "href": "/frios-e-laticinio",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/41374f07-3988-45b5-aa66-511341fa5d7a/Frios-Congelados.png"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/401937a6-8419-4aac-9f9b-f207666b75f9/Adega.png",
-          "href": "/adega",
-          "label": "Adega"
-        },
-        {
-          "label": "Bebidas Alcoólicas",
-          "href": "/bebidas-alcoolicas",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a70bfb93-1d78-48d1-a76d-a60f7fb61c88/Bebidas-Alcooulicas.png"
         }
       ]
     },

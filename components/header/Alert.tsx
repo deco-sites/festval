@@ -7,7 +7,7 @@ export interface Props {
    * @title Autoplay interval
    * @description time (in seconds) to start the carousel autoplay
    */ 
-  interval?: number;
+  interval?: number; 
 }
 
 function Alert({ alerts = [], interval = 5 }: Props) {
