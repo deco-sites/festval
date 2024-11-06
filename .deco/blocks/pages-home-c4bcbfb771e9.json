@@ -205,11 +205,11 @@
           "hrefMobile": "/hortifruti"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/02412a2a-d3e1-46d0-95e2-6fdd7d2bf5ef/passata-mamma.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/afbb0919-5be3-451c-9053-e2a3db57e651/BANNER-DE-OFERTAS-M-PASSATA.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7d266bd-6140-4157-b0ac-db5f1cb9d1aa/AXE.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c289b79c-f0d7-4c90-9d09-4684a54090d7/BANNER-DE-OFERTAS-M-AXE.jpg",
           "alt": "OFERTA-1",
-          "href": "/passata-italiana-mamma-bia-pomodoro-690g/p?skuId=1193",
-          "hrefMobile": "/passata-italiana-mamma-bia-pomodoro-690g/p?skuId=1193"
+          "href": "/s?q=axe+152ml&page=1",
+          "hrefMobile": "/s?q=axe+152ml&page=1"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2c64dfdb-d0c6-4393-99ae-37fdb5b9da24/Corona.jpg",
@@ -260,10 +260,11 @@
           "hrefMobile": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/902ac340-ced2-4f71-a5a4-2d65c5d4f9de/BANNER_M_FANTA_MIST.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f2558c62-e2ed-4012-a410-5371739f4240/Fanta-visibilidade.jpg",
-          "alt": "Fanta",
-          "href": "#"
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee25d1dd-a872-4e07-826c-cff57605b9bc/BANNER-M-visibilidade-lindor.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97a300f4-4866-4b3f-8187-e92546112f13/BANNER-M-VISUALIZACAO-LINDOR.jpg",
+          "alt": "Lindor",
+          "href": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "hrefMobile": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1"
         }
       ],
       "inverted": true
