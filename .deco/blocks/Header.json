@@ -647,7 +647,7 @@
               "image": [],
               "children": [],
               "name": "Especiais",
-              "url": "/especiais"
+              "url": "/especiais?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Especiais",
@@ -666,7 +666,7 @@
               "image": [],
               "children": [],
               "name": "Floricultura",
-              "url": "/floricultura"
+              "url": "/floricultura?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Floricultura",
@@ -688,47 +688,47 @@
                   "image": [],
                   "children": [],
                   "name": "Gelo",
-                  "url": "/frios-e-laticinios/gelo"
+                  "url": "/frios-e-laticinios/gelo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Lanche e Aperitivo",
-                  "url": "/frios-e-laticinios/lanche-e-aperitivo"
+                  "url": "/frios-e-laticinios/lanche-e-aperitivo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pizza",
-                  "url": "frios-e-laticinios/pizza"
+                  "url": "frios-e-laticinios/pizza?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Prato Pronto",
-                  "url": "/frios-e-laticinios/prato-pronto"
+                  "url": "/frios-e-laticinios/prato-pronto?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Requeijão",
-                  "url": "/frios-e-laticinios/requeijao"
+                  "url": "/frios-e-laticinios/requeijao?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Suco",
-                  "url": "/frios-e-laticinios/suco"
+                  "url": "/frios-e-laticinios/suco?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Suco Natural",
-                  "url": "/frios-e-laticinios/suco-natural"
+                  "url": "/frios-e-laticinios/suco-natural?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": " Frios e Laticínios",
-              "url": "/frios-e-laticinios"
+              "url": "/frios-e-laticinios?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -737,11 +737,11 @@
                   "image": [],
                   "children": [],
                   "name": "Fruta, Verdura e Legume",
-                  "url": "/frios-e-laticinios/congelados-saudaveis/fruta-verdura-e-legume"
+                  "url": "/frios-e-laticinios/congelados-saudaveis/fruta-verdura-e-legume?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Congelados Saudáveis",
-              "url": "/frios-e-laticinios/congelados-saudaveis"
+              "url": "/frios-e-laticinios/congelados-saudaveis?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -750,23 +750,23 @@
                   "image": [],
                   "children": [],
                   "name": "Embutidos",
-                  "url": "/frios-e-laticinios/fiambreria/embutidos"
+                  "url": "/frios-e-laticinios/fiambreria/embutidos?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Queijo",
-                  "url": "/frios-e-laticinios/fiambreria/queijo"
+                  "url": "/frios-e-laticinios/fiambreria/queijo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Queijo Zero Lactose",
-                  "url": "/frios-e-laticinios/fiambreria/queijo-zero-lactose"
+                  "url": "/frios-e-laticinios/fiambreria/queijo-zero-lactose?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Fiambreria",
-              "url": "/frios-e-laticinios/fiambreria"
+              "url": "/frios-e-laticinios/fiambreria?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -775,41 +775,41 @@
                   "image": [],
                   "children": [],
                   "name": "Iogurte",
-                  "url": "/frios-e-laticinios/iogurte/iogurte"
+                  "url": "/frios-e-laticinios/iogurte/iogurte?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Iogurte Grego",
-                  "url": "/frios-e-laticinios/iogurte/iogurte-grego"
+                  "url": "/frios-e-laticinios/iogurte/iogurte-grego?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Iogurte Integral Natural",
-                  "url": "/frios-e-laticinios/iogurte/iogurte-integral-natural"
+                  "url": "/frios-e-laticinios/iogurte/iogurte-integral-natural?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Iogurte sem Lactose",
-                  "url": "/frios-e-laticinios/iogurte/iogurte-sem-lactose"
+                  "url": "/frios-e-laticinios/iogurte/iogurte-sem-lactose?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Leite Fermentado",
-                  "url": "/frios-e-laticinios/iogurte/leite-fermentado"
+                  "url": "/frios-e-laticinios/iogurte/leite-fermentado?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Probiótico",
-                  "url": "/frios-e-laticinios/iogurte/probiotico"
+                  "url": "/frios-e-laticinios/iogurte/probiotico?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Iogurte",
-              "url": "/frios-e-laticinios/iogurte"
+              "url": "/frios-e-laticinios/iogurte?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -818,53 +818,53 @@
                   "image": [],
                   "children": [],
                   "name": "Bebida Láctea",
-                  "url": "/frios-e-laticinios/leite/bebida-lactea"
+                  "url": "/frios-e-laticinios/leite/bebida-lactea?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Leite",
-                  "url": "/frios-e-laticinios/leite/leite"
+                  "url": "/frios-e-laticinios/leite/leite?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Leite Vegetal ",
-                  "url": "/frios-e-laticinios/leite/leite-vegetal"
+                  "url": "/frios-e-laticinios/leite/leite-vegetal?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Leite Zero Lactose",
-                  "url": "/frios-e-laticinios/leite/leite-zero-lactose"
+                  "url": "/frios-e-laticinios/leite/leite-zero-lactose?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Manteiga e Margarina",
-                  "url": "/frios-e-laticinios/leite/manteiga-e-margarina"
+                  "url": "/frios-e-laticinios/leite/manteiga-e-margarina?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Massa",
-                  "url": "/frios-e-laticinios/massa"
+                  "url": "/frios-e-laticinios/massa?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Molho",
-                  "url": "/frios-e-laticinios/molho"
+                  "url": "/frios-e-laticinios/molho?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Nata e Creme de Leite Fresco",
-                  "url": "/frios-e-laticinios/nata-e-creme-de-leite-fresco"
+                  "url": "/frios-e-laticinios/nata-e-creme-de-leite-fresco?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Leite",
-              "url": "/frios-e-laticinios/leite"
+              "url": "/frios-e-laticinios/leite?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -873,17 +873,17 @@
                   "image": [],
                   "children": [],
                   "name": "Pão de Queijo",
-                  "url": "/frios-e-laticinios/pao/pao-de-queijo"
+                  "url": "/frios-e-laticinios/pao/pao-de-queijo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pão de Alho",
-                  "url": "/frios-e-laticinios/pao/pao-de-alho"
+                  "url": "/frios-e-laticinios/pao/pao-de-alho?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Pão",
-              "url": "/frios-e-laticinios/pao"
+              "url": "/frios-e-laticinios/pao?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -892,17 +892,17 @@
                   "image": [],
                   "children": [],
                   "name": "Frutos do Mar",
-                  "url": "/frios-e-laticinios/peixe-e-fruto-do-mar/frutos-do-mar"
+                  "url": "/frios-e-laticinios/peixe-e-fruto-do-mar/frutos-do-mar?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Peixe",
-                  "url": "/frios-e-laticinios/peixe-e-fruto-do-mar/peixe"
+                  "url": "/frios-e-laticinios/peixe-e-fruto-do-mar/peixe?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Peixe e Fruto do Mar ",
-              "url": "/frios-e-laticinios/peixe-e-fruto-do-mar"
+              "url": "/frios-e-laticinios/peixe-e-fruto-do-mar?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -911,16 +911,16 @@
                   "image": [],
                   "children": [],
                   "name": "Manteiga e Cremes",
-                  "url": "/frios-e-laticinios/vegano/manteiga-e-cremes"
+                  "url": "/frios-e-laticinios/vegano/manteiga-e-cremes?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pratos Pronto e Proteína",
-                  "url": "/frios-e-laticinios/vegano/pratos-pronto-e-proteina"
+                  "url": "/frios-e-laticinios/vegano/pratos-pronto-e-proteina?sort=orders%3Adesc&page=1"
                 }
               ],
-              "url": "/frios-e-laticinios/vegano",
+              "url": "/frios-e-laticinios/vegano?sort=orders%3Adesc&page=1",
               "name": "Vegano"
             }
           ],
@@ -943,41 +943,41 @@
                   "image": [],
                   "children": [],
                   "name": "Acessório para Cabelo",
-                  "url": "/higiene-e-perfumaria/acessorio-para-cabelo"
+                  "url": "/higiene-e-perfumaria/acessorio-para-cabelo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Creme para o Corpo",
-                  "url": "/higiene-e-perfumaria/creme-para-o-corpo"
+                  "url": "/higiene-e-perfumaria/creme-para-o-corpo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Cuidado com a Mão e Pé",
-                  "url": "/higiene-e-perfumaria/cuidado-com-a-mao-e-pe"
+                  "url": "/higiene-e-perfumaria/cuidado-com-a-mao-e-pe?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Depilação",
-                  "url": " /higiene-e-perfumaria/depilacao"
+                  "url": " /higiene-e-perfumaria/depilacao?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Farmácia",
-                  "url": "/higiene-e-perfumaria/farmacia"
+                  "url": "/higiene-e-perfumaria/farmacia?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Perfume",
-                  "url": "higiene-e-perfumaria/perfume"
+                  "url": "higiene-e-perfumaria/perfume?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Higiene e Perfumaria",
-              "url": "/higiene-e-perfumaria"
+              "url": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -986,23 +986,23 @@
                   "image": [],
                   "children": [],
                   "name": "Creme Dental",
-                  "url": "/higiene-e-perfumaria/cuidado-bucal/creme-dental"
+                  "url": "/higiene-e-perfumaria/cuidado-bucal/creme-dental?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Enxágue e Fio Dental",
-                  "url": "/higiene-e-perfumaria/cuidado-bucal/enxague-e-fio-dental"
+                  "url": "/higiene-e-perfumaria/cuidado-bucal/enxague-e-fio-dental?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Escova Dental",
-                  "url": "/higiene-e-perfumaria/cuidado-bucal/escova-dental"
+                  "url": "/higiene-e-perfumaria/cuidado-bucal/escova-dental?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidado Bucal ",
-              "url": "/higiene-e-perfumaria/cuidado-bucal"
+              "url": "/higiene-e-perfumaria/cuidado-bucal?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1011,17 +1011,17 @@
                   "image": [],
                   "children": [],
                   "name": "Aparelho de Barbear",
-                  "url": "/higiene-e-perfumaria/cuidado-com-a-barba/aparelho-de-barbear"
+                  "url": "/higiene-e-perfumaria/cuidado-com-a-barba/aparelho-de-barbear?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bálsamo e Espuma",
-                  "url": "/higiene-e-perfumaria/cuidado-com-a-barba/balsamo-e-espuma"
+                  "url": "/higiene-e-perfumaria/cuidado-com-a-barba/balsamo-e-espuma?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidado com a Barba",
-              "url": "/higiene-e-perfumaria/cuidado-com-a-barba"
+              "url": "/higiene-e-perfumaria/cuidado-com-a-barba?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1030,23 +1030,23 @@
                   "image": [],
                   "children": [],
                   "name": "Condicionador ",
-                  "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo/condicionador"
+                  "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo/condicionador?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Shampoo",
-                  "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo/shampoo"
+                  "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo/shampoo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Tratamento",
-                  "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo/tratamento"
+                  "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo/tratamento?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidado com o Cabelo",
-              "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo"
+              "url": "/higiene-e-perfumaria/cuidado-com-o-cabelo?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1055,29 +1055,29 @@
                   "image": [],
                   "children": [],
                   "name": "Fralda",
-                  "url": "/higiene-e-perfumaria/cuidado-infantil/fralda"
+                  "url": "/higiene-e-perfumaria/cuidado-infantil/fralda?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Lenço Umedecido",
-                  "url": "/higiene-e-perfumaria/cuidado-infantil/lenco-umedecido"
+                  "url": "/higiene-e-perfumaria/cuidado-infantil/lenco-umedecido?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sabonete",
-                  "url": "/higiene-e-perfumaria/cuidado-infantil/sabonete"
+                  "url": "/higiene-e-perfumaria/cuidado-infantil/sabonete?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Shampoo e Condicionador",
-                  "url": "/higiene-e-perfumaria/cuidado-infantil/shampoo-e-condicionador"
+                  "url": "/higiene-e-perfumaria/cuidado-infantil/shampoo-e-condicionador?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidado Infantil",
-              "url": "/higiene-e-perfumaria/cuidado-infantil"
+              "url": "/higiene-e-perfumaria/cuidado-infantil?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1086,17 +1086,17 @@
                   "image": [],
                   "children": [],
                   "name": "Desodorante Feminino",
-                  "url": "/higiene-e-perfumaria/desodorante/desodorante-feminino"
+                  "url": "/higiene-e-perfumaria/desodorante/desodorante-feminino?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Desodorante Masculino",
-                  "url": "/higiene-e-perfumaria/desodorante/desodorante-masculino"
+                  "url": "/higiene-e-perfumaria/desodorante/desodorante-masculino?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Desodorante",
-              "url": "/higiene-e-perfumaria/desodorante"
+              "url": "/higiene-e-perfumaria/desodorante?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1105,17 +1105,17 @@
                   "image": [],
                   "children": [],
                   "name": "Sabonete em Barra",
-                  "url": "/higiene-e-perfumaria/sabonete/sabonete-em-barra"
+                  "url": "/higiene-e-perfumaria/sabonete/sabonete-em-barra?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sabonete Líquido",
-                  "url": "/higiene-e-perfumaria/sabonete/sabonete-liquido"
+                  "url": "/higiene-e-perfumaria/sabonete/sabonete-liquido?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Sabonete",
-              "url": "/higiene-e-perfumaria/sabonete"
+              "url": "/higiene-e-perfumaria/sabonete?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Higiene e Perfumaria",
@@ -1131,41 +1131,41 @@
                   "image": [],
                   "children": [],
                   "name": "Fruta",
-                  "url": "/hortifruti/fruta"
+                  "url": "/hortifruti/fruta?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Fruta Seca",
-                  "url": "/hortifruti/fruta-seca"
+                  "url": "/hortifruti/fruta-seca?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Hortifrúti Festval",
-                  "url": "/hortifruti/hortifrut-festval"
+                  "url": "/hortifruti/hortifrut-festval?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Ovo",
-                  "url": "/hortifruti/ovo"
+                  "url": "/hortifruti/ovo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Tempero",
-                  "url": "/hortifruti/tempero"
+                  "url": "/hortifruti/tempero?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Verdura",
-                  "url": "/hortifruti/verdura"
+                  "url": "/hortifruti/verdura?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Hortifrúti",
-              "url": "/hortifruti"
+              "url": "/hortifruti?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1174,11 +1174,11 @@
                   "image": [],
                   "children": [],
                   "name": "Processado",
-                  "url": "/hortifruti/legume/processado"
+                  "url": "/hortifruti/legume/processado?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Legume",
-              "url": "/hortifruti/legume"
+              "url": "/hortifruti/legume?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Hortifrúti",
@@ -1194,125 +1194,125 @@
                   "image": [],
                   "children": [],
                   "name": " Aceto e Vinagre",
-                  "url": "/importados/aceto-e-vinagre"
+                  "url": "/importados/aceto-e-vinagre?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Arroz",
-                  "url": "/importados/arroz"
+                  "url": "/importados/arroz?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Azeite e Óleo",
-                  "url": "/importados/azeite-e-oleo"
+                  "url": "/importados/azeite-e-oleo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bala e Doce",
-                  "url": "/importados/bala-e-doce"
+                  "url": "/importados/bala-e-doce?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bebidas",
-                  "url": "/importados/bebidas"
+                  "url": "/importados/bebidas?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Biscoito",
-                  "url": "/importados/biscoito"
+                  "url": "/importados/biscoito?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bombom e Chocolate",
-                  "url": "/importados/bombom-e-chocolate"
+                  "url": "/importados/bombom-e-chocolate?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Chá",
-                  "url": "/importados/cha"
+                  "url": "/importados/cha?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Conserva",
-                  "url": "/importados/conserva"
+                  "url": "/importados/conserva?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Embutido",
-                  "url": "/importados/embutido"
+                  "url": "/importados/embutido?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Farináceos",
-                  "url": "/importados/farinaceos"
+                  "url": "/importados/farinaceos?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Granola",
-                  "url": "/importados/granola"
+                  "url": "/importados/granola?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Manteiga",
-                  "url": "/importados/manteiga"
+                  "url": "/importados/manteiga?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Massa",
-                  "url": "/importados/massa"
+                  "url": "/importados/massa?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Pão e Torrada",
-                  "url": "/importados/pao-e-torrada"
+                  "url": "/importados/pao-e-torrada?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Peixe",
-                  "url": "/importados/peixe"
+                  "url": "/importados/peixe?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pratos Semi Prontos",
-                  "url": "/importados/pratos-semi-prontos"
+                  "url": "/importados/pratos-semi-prontos?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Queijo",
-                  "url": "/importados/queijo"
+                  "url": "/importados/queijo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Salgadinho e Aperitivo",
-                  "url": "/importados/salgadinho-e-apetitivo"
+                  "url": "/importados/salgadinho-e-apetitivo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Vegetais",
-                  "url": "/importados/vegetais"
+                  "url": "/importados/vegetais?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Importados",
-              "url": "/importados"
+              "url": "/importados?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1321,11 +1321,11 @@
                   "image": [],
                   "children": [],
                   "name": "Doce em Pasta",
-                  "url": "/importados/doce-e-geleia/doce-em-pasta"
+                  "url": "/importados/doce-e-geleia/doce-em-pasta?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Doce e Geleia",
-              "url": "/importados/doce-e-geleia"
+              "url": "/importados/doce-e-geleia?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1334,17 +1334,17 @@
                   "image": [],
                   "children": [],
                   "name": "Molho de Tomate",
-                  "url": "/importados/molho/molho-de-tomate"
+                  "url": "/importados/molho/molho-de-tomate?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Molhos Diversos",
-                  "url": "/importados/molho/molhos-diversos"
+                  "url": "/importados/molho/molhos-diversos?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Molho",
-              "url": "/importados/molho"
+              "url": "/importados/molho?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Importados",
@@ -1360,23 +1360,23 @@
                   "image": [],
                   "children": [],
                   "name": " Inseticida",
-                  "url": "/limpeza/inseticida"
+                  "url": "/limpeza/inseticida?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Limpa Calçados",
-                  "url": "/limpeza/limpa-calcados"
+                  "url": "/limpeza/limpa-calcados?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Papel Higiênico",
-                  "url": "/limpeza/papel-higienico"
+                  "url": "/limpeza/papel-higienico?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Limpeza",
-              "url": "/limpeza"
+              "url": "/limpeza?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1385,71 +1385,71 @@
                   "image": [],
                   "children": [],
                   "name": "Água Sanitária",
-                  "url": "/limpeza/cuidados-com-a-casa/agua-sanitaria"
+                  "url": "/limpeza/cuidados-com-a-casa/agua-sanitaria?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Álcool",
-                  "url": "/limpeza/cuidados-com-a-casa/alcool"
+                  "url": "/limpeza/cuidados-com-a-casa/alcool?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Anti Mofo",
-                  "url": "/limpeza/cuidados-com-a-casa/anti-mofo"
+                  "url": "/limpeza/cuidados-com-a-casa/anti-mofo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Aromatizador de Ambiente",
-                  "url": "/limpeza/cuidados-com-a-casa/aromatizador-de-ambiente"
+                  "url": "/limpeza/cuidados-com-a-casa/aromatizador-de-ambiente?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Desentupidor",
-                  "url": "/limpeza/cuidados-com-a-casa/desentupidor"
+                  "url": "/limpeza/cuidados-com-a-casa/desentupidor?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Desinfetante",
-                  "url": "/limpeza/cuidados-com-a-casa/desinfetante"
+                  "url": "/limpeza/cuidados-com-a-casa/desinfetante?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Lava Hortifruti",
-                  "url": "/limpeza/cuidados-com-a-casa/lava-hortifruti"
+                  "url": "/limpeza/cuidados-com-a-casa/lava-hortifruti?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Limpa Vidro",
-                  "url": "/limpeza/cuidados-com-a-casa/limpa-vidro"
+                  "url": "/limpeza/cuidados-com-a-casa/limpa-vidro?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Limpador",
-                  "url": "/limpeza/cuidados-com-a-casa/limpador"
+                  "url": "/limpeza/cuidados-com-a-casa/limpador?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Lustra Móveis",
-                  "url": "/limpeza/cuidados-com-a-casa/lustra-moveis"
+                  "url": "/limpeza/cuidados-com-a-casa/lustra-moveis?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Piso",
-                  "url": "/limpeza/cuidados-com-a-casa/piso"
+                  "url": "/limpeza/cuidados-com-a-casa/piso?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidados com a Casa",
-              "url": "/limpeza/cuidados-com-a-casa"
+              "url": "/limpeza/cuidados-com-a-casa?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1458,47 +1458,47 @@
                   "image": [],
                   "children": [],
                   "name": "Desengordurante",
-                  "url": "/limpeza/cuidados-com-a-cozinha/desengordurante"
+                  "url": "/limpeza/cuidados-com-a-cozinha/desengordurante?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Detergente",
-                  "url": "/limpeza/cuidados-com-a-cozinha/detergente"
+                  "url": "/limpeza/cuidados-com-a-cozinha/detergente?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Esponja",
-                  "url": "/limpeza/cuidados-com-a-cozinha/esponja"
+                  "url": "/limpeza/cuidados-com-a-cozinha/esponja?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Limpador",
-                  "url": "/limpeza/cuidados-com-a-cozinha/limpador"
+                  "url": "/limpeza/cuidados-com-a-cozinha/limpador?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Máquina de Lavar Louça",
-                  "url": "/limpeza/cuidados-com-a-cozinha/maquina-de-lavar-louca"
+                  "url": "/limpeza/cuidados-com-a-cozinha/maquina-de-lavar-louca?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Polidor",
-                  "url": "/limpeza/cuidados-com-a-cozinha/polidor"
+                  "url": "/limpeza/cuidados-com-a-cozinha/polidor?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Saponáceo",
-                  "url": "/limpeza/cuidados-com-a-cozinha/saponaceo"
+                  "url": "/limpeza/cuidados-com-a-cozinha/saponaceo?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidados com a Cozinha",
-              "url": "/limpeza/cuidados-com-a-cozinha"
+              "url": "/limpeza/cuidados-com-a-cozinha?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1507,47 +1507,47 @@
                   "image": [],
                   "children": [],
                   "name": "Alvejante",
-                  "url": "/limpeza/cuidados-com-a-roupa/alvejante"
+                  "url": "/limpeza/cuidados-com-a-roupa/alvejante?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Amaciante",
-                  "url": "/limpeza/cuidados-com-a-roupa/amaciante"
+                  "url": "/limpeza/cuidados-com-a-roupa/amaciante?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Facilitador",
-                  "url": "/limpeza/cuidados-com-a-roupa/facilitador"
+                  "url": "/limpeza/cuidados-com-a-roupa/facilitador?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Lava Roupa em Pó",
-                  "url": "/limpeza/cuidados-com-a-roupa/lava-roupa-em-po"
+                  "url": "/limpeza/cuidados-com-a-roupa/lava-roupa-em-po?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Lava Roupa Líquido",
-                  "url": "/limpeza/cuidados-com-a-roupa/lava-roupa-liquido"
+                  "url": "/limpeza/cuidados-com-a-roupa/lava-roupa-liquido?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sabão em Barra",
-                  "url": "/limpeza/cuidados-com-a-roupa/sabao-em-barra"
+                  "url": "/limpeza/cuidados-com-a-roupa/sabao-em-barra?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Tira Mancha",
-                  "url": "/limpeza/cuidados-com-a-roupa/tira-manchas"
+                  "url": "/limpeza/cuidados-com-a-roupa/tira-manchas?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidados com a Roupa",
-              "url": "/limpeza/cuidados-com-a-roupa"
+              "url": "/limpeza/cuidados-com-a-roupa?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1556,35 +1556,35 @@
                   "image": [],
                   "children": [],
                   "name": "Alvejante",
-                  "url": "/limpeza/cuidados-com-o-banheiro/alvejante"
+                  "url": "/limpeza/cuidados-com-o-banheiro/alvejante?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Branqueador",
-                  "url": "/limpeza/cuidados-com-o-banheiro/branqueador"
+                  "url": "/limpeza/cuidados-com-o-banheiro/branqueador?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Desinfetante",
-                  "url": "/limpeza/cuidados-com-o-banheiro/desinfetante"
+                  "url": "/limpeza/cuidados-com-o-banheiro/desinfetante?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Desodorizador Sanitário",
-                  "url": "/limpeza/cuidados-com-o-banheiro/desodorizador-sanitario"
+                  "url": "/limpeza/cuidados-com-o-banheiro/desodorizador-sanitario?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Detergente Sanitário",
-                  "url": "/limpeza/cuidados-com-o-banheiro/detergente-sanitario"
+                  "url": "/limpeza/cuidados-com-o-banheiro/detergente-sanitario?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Cuidados com o Banheiro",
-              "url": "/limpeza/cuidados-com-o-banheiro"
+              "url": "/limpeza/cuidados-com-o-banheiro?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Limpeza",
@@ -1600,191 +1600,191 @@
                   "image": [],
                   "children": [],
                   "name": "Achocolatado",
-                  "url": "/mercearia/achocolatado"
+                  "url": "/mercearia/achocolatado?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Açúcar",
-                  "url": "/mercearia/acucar"
+                  "url": "/mercearia/acucar?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Arroz",
-                  "url": "/mercearia/arroz"
+                  "url": "/mercearia/arroz?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Atum",
-                  "url": "/mercearia/atum"
+                  "url": "/mercearia/atum?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Azeite e Óleo",
-                  "url": "mercearia/azeite-e-oleo"
+                  "url": "mercearia/azeite-e-oleo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bala e Doce",
-                  "url": "/mercearia/bala-e-doce"
+                  "url": "/mercearia/bala-e-doce?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Biscoito e Bolacha",
-                  "url": "/mercearia/biscoito-e-bolacha"
+                  "url": "/mercearia/biscoito-e-bolacha?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bombom e Chocolate",
-                  "url": "/mercearia/bombom-e-chocolate"
+                  "url": "/mercearia/bombom-e-chocolate?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Cereal Matinal",
-                  "url": "/mercearia/cereal-matinal"
+                  "url": "/mercearia/cereal-matinal?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Chá ",
-                  "url": "/mercearia/cha"
+                  "url": "/mercearia/cha?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Chocolate em Pó",
-                  "url": "/mercearia/chocolate-em-po"
+                  "url": "/mercearia/chocolate-em-po?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Conserva",
-                  "url": "/mercearia/conserva"
+                  "url": "/mercearia/conserva?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Creme de Leite",
-                  "url": "/mercearia/creme-de-leite"
+                  "url": "/mercearia/creme-de-leite?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Erva Mate",
-                  "url": "/mercearia/erva-mate"
+                  "url": "/mercearia/erva-mate?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Farináceos",
-                  "url": "/mercearia/farinaceos"
+                  "url": "/mercearia/farinaceos?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Feijão",
-                  "url": "/mercearia/feijao"
+                  "url": "/mercearia/feijao?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Fermento",
-                  "url": "/mercearia/fermento"
+                  "url": "/mercearia/fermento?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Gelatina",
-                  "url": "/mercearia/gelatina"
+                  "url": "/mercearia/gelatina?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Geleia e Doce",
-                  "url": "/mercearia/geleia-e-doce"
+                  "url": "/mercearia/geleia-e-doce?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Grão",
-                  "url": "/mercearia/grao"
+                  "url": "/mercearia/grao?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Leite Condensado",
-                  "url": "/mercearia/leite-condensado"
+                  "url": "/mercearia/leite-condensado?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Massa",
-                  "url": "/mercearia/massa"
+                  "url": "/mercearia/massa?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Mel",
-                  "url": "/mercearia/mel"
+                  "url": "/mercearia/mel?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Paçoca",
-                  "url": "/mercearia/pacoca"
+                  "url": "/mercearia/pacoca?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Prato Pronto",
-                  "url": "/mercearia/prato-pronto"
+                  "url": "/mercearia/prato-pronto?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sal",
-                  "url": "/mercearia/sal"
+                  "url": "/mercearia/sal?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Salgadinhos e Aperitivos",
-                  "url": "/mercearia/salgadinhos-e-aperitivos"
+                  "url": "/mercearia/salgadinhos-e-aperitivos?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sopa",
-                  "url": "/mercearia/sopa"
+                  "url": "/mercearia/sopa?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Temperos e Especiarias",
-                  "url": "/mercearia/temperos-e-especiarias"
+                  "url": "/mercearia/temperos-e-especiarias?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Torrada",
-                  "url": "/mercearia/torrada"
+                  "url": "/mercearia/torrada?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Vinagre",
-                  "url": "/mercearia/vinagre"
+                  "url": "/mercearia/vinagre?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Mercearia",
-              "url": "/mercearia"
+              "url": "/mercearia?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1793,35 +1793,35 @@
                   "image": [],
                   "children": [],
                   "name": "Café em Cápsulas",
-                  "url": "/mercearia/cafe/cafe-em-capsulas"
+                  "url": "/mercearia/cafe/cafe-em-capsulas?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Café Grão ",
-                  "url": "/mercearia/cafe/cafe-grao"
+                  "url": "/mercearia/cafe/cafe-grao?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Café Moído",
-                  "url": "/mercearia/cafe/cafe-moido"
+                  "url": "/mercearia/cafe/cafe-moido?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Café Solúvel",
-                  "url": "/mercearia/cafe/cafe-soluvel"
+                  "url": "/mercearia/cafe/cafe-soluvel?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Chococino ",
-                  "url": "/mercearia/cafe/chococino"
+                  "url": "/mercearia/cafe/chococino?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Café",
-              "url": "/mercearia/cafe"
+              "url": "/mercearia/cafe?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1830,23 +1830,23 @@
                   "image": [],
                   "children": [],
                   "name": "Alimentação Infantil",
-                  "url": "/mercearia/infantil/alimentacao-infantil"
+                  "url": "/mercearia/infantil/alimentacao-infantil?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Leite em Pó",
-                  "url": "/mercearia/infantil/leite-em-po"
+                  "url": "/mercearia/infantil/leite-em-po?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Papinha",
-                  "url": "/mercearia/infantil/papinha"
+                  "url": "/mercearia/infantil/papinha?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Infantil",
-              "url": "/mercearia/infantil"
+              "url": "/mercearia/infantil?sort=orders%3Adesc&page=1"
             },
             {
               "image": [],
@@ -1855,35 +1855,35 @@
                   "image": [],
                   "children": [],
                   "name": "Ketchup",
-                  "url": "/mercearia/molho/ketchup"
+                  "url": "/mercearia/molho/ketchup?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Maionese",
-                  "url": "/mercearia/molho/maionese"
+                  "url": "/mercearia/molho/maionese?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Molho de Tomate",
-                  "url": "/mercearia/molho/molho-de-tomate"
+                  "url": "/mercearia/molho/molho-de-tomate?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Molhos Diversos",
-                  "url": "/mercearia/molho/molhos-diversos"
+                  "url": "/mercearia/molho/molhos-diversos?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Mostarda",
-                  "url": "/mercearia/molho/mostarda"
+                  "url": "/mercearia/molho/mostarda?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": " Molho",
-              "url": "/mercearia/molho"
+              "url": "/mercearia/molho?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Mercearia ",
@@ -1899,23 +1899,23 @@
                   "image": [],
                   "children": [],
                   "name": "Ceia",
-                  "url": "/natal/ceia"
+                  "url": "/natal/ceia?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Cestas de Natal",
-                  "url": "/natal/cestas-de-natal"
+                  "url": "/natal/cestas-de-natal?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Panettone",
-                  "url": "/natal/panettone"
+                  "url": "/natal/panettone?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Natal",
-              "url": "/natal"
+              "url": "/natal?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Natal",
@@ -1931,53 +1931,53 @@
                   "image": [],
                   "children": [],
                   "name": "Bolo e Torta Fresca Festval",
-                  "url": "/padaria/bolo-e-torta-fresca-festval"
+                  "url": "/padaria/bolo-e-torta-fresca-festval?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bolo Industrializado",
-                  "url": "/padaria/bolo-industrializado"
+                  "url": "/padaria/bolo-industrializado?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Croissant",
-                  "url": "/padaria/croissant"
+                  "url": "/padaria/croissant?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pães Festval",
-                  "url": "/padaria/paes-festval"
+                  "url": "/padaria/paes-festval?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pães Industrializados",
-                  "url": "/padaria/paes-industrializados"
+                  "url": "/padaria/paes-industrializados?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pão de Queijo",
-                  "url": "/padaria/pao-de-queijo"
+                  "url": "/padaria/pao-de-queijo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Salgado Festval",
-                  "url": "/padaria/salgado-festval"
+                  "url": "/padaria/salgado-festval?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sonho e Doce",
-                  "url": "/padaria/sonho-e-doce"
+                  "url": "/padaria/sonho-e-doce?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Padaria",
-              "url": "/padaria"
+              "url": "/padaria?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Padaria",
@@ -1990,7 +1990,7 @@
               "image": [],
               "children": [],
               "name": "Páscoa",
-              "url": "/pascoa"
+              "url": "/pascoa?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Páscoa",
@@ -2004,30 +2004,25 @@
               "children": [
                 {
                   "image": [],
-                  "children": [
-                    {
-                      "image": [],
-                      "children": [],
-                      "name": "Cão",
-                      "url": "petshop/cao"
-                    },
-                    {
-                      "image": [],
-                      "children": [],
-                      "name": "Gato",
-                      "url": "/petshop/gato"
-                    },
-                    {
-                      "image": [],
-                      "children": [],
-                      "name": "Higiene e Limpeza",
-                      "url": "/petshop/higiene-e-limpeza"
-                    }
-                  ]
+                  "children": [],
+                  "url": "petshop/cao?sort=orders%3Adesc&page=1",
+                  "name": "Cão "
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "url": "/petshop/gato?sort=orders%3Adesc&page=1",
+                  "name": "Gato"
+                },
+                {
+                  "image": [],
+                  "children": [],
+                  "url": "/petshop/higiene-e-limpeza?sort=orders%3Adesc&page=1",
+                  "name": "Higiene e limpeza "
                 }
               ],
               "name": "Petshop",
-              "url": "/petshop"
+              "url": "/petshop?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Petshop",
@@ -2043,17 +2038,17 @@
                   "image": [],
                   "children": [],
                   "name": "Prato Executivo",
-                  "url": "/restaurante-e-grill/prato-executivo"
+                  "url": "/restaurante-e-grill/prato-executivo?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
-                  "url": "/restaurante-e-grill/sanduiches",
+                  "url": "/restaurante-e-grill/sanduiches?sort=orders%3Adesc&page=1",
                   "name": "Sanduíches"
                 }
               ],
               "name": "Restaurante e Grill",
-              "url": "/restaurante-e-grill"
+              "url": "/restaurante-e-grill?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Restaurante e Grill",
@@ -2069,23 +2064,23 @@
                   "image": [],
                   "children": [],
                   "name": "Açaí",
-                  "url": "/sorvete/acai"
+                  "url": "/sorvete/acai?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
-                  "url": "/sorvete/sorvete-importado",
+                  "url": "/sorvete/sorvete-importado?sort=orders%3Adesc&page=1",
                   "name": "Sorvete Importado"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sorvete Nacional",
-                  "url": "/sorvete/sorvete-nacional"
+                  "url": "/sorvete/sorvete-nacional?sort=orders%3Adesc&page=1"
                 }
               ],
               "name": "Sorvete",
-              "url": "/sorvete"
+              "url": "/sorvete?sort=orders%3Adesc&page=1"
             }
           ],
           "name": "Sorvete",
@@ -2099,31 +2094,31 @@
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/178?map=productClusterIds",
+      "url": "/178?map=productClusterIds&sort=discount%3Adesc&page=1",
       "name": "Sou Festval",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/142?map=productClusterIds",
+      "url": "/142?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Mais vendidos",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/159?map=productClusterIds",
+      "url": "/159?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/1358?map=productClusterIds",
+      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Mamma Bia",
       "children": []
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/adega",
+      "url": "/adega?sort=orders%3Adesc&page=1",
       "name": "Adega",
       "children": []
     },
@@ -2131,7 +2126,7 @@
       "children": [],
       "image": [],
       "name": "Importados",
-      "url": "/importados"
+      "url": "/importados?sort=orders%3Adesc&page=1"
     }
   ],
   "loading": "eager",
