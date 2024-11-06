@@ -55,7 +55,32 @@
             "sort": "price:desc",
             "collection": "1486",
             "count": 30,
-            "similars": false
+            "similars": false,
+            "hideUnavailableItems": true
+          }
+        },
+        "title": "Compre também"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx",
+        "color": "#f8f8f8"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1486",
+            "count": 30,
+            "similars": true,
+            "hideUnavailableItems": true
           }
         },
         "title": "Mais vendidos"

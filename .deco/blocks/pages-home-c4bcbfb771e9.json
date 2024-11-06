@@ -133,11 +133,11 @@
           "sort": "orders:desc",
           "collection": "1073",
           "count": 12,
-          "hideUnavailableItems": false
+          "hideUnavailableItems": true
         }
       },
-      "title": "Mais Vendidos",
-      "cta": "/1073?map=productClusterIds"
+      "cta": "/1073?map=productClusterIds",
+      "title": "Mais Vendidos"
     },
     {
       "__resolveType": "site/sections/separator.tsx",
@@ -151,11 +151,11 @@
           "sort": "orders:desc",
           "collection": "1072",
           "count": 12,
-          "hideUnavailableItems": false
+          "hideUnavailableItems": true
         }
       },
-      "title": "Oportunidades",
-      "cta": "/1072?map=productClusterIds"
+      "cta": "/1072?map=productClusterIds",
+      "title": "Oportunidades"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -182,17 +182,18 @@
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "title": "Açougue",
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "price:desc",
           "count": 12,
           "fuzzy": "automatic",
-          "query": "Açougue"
+          "query": "Açougue",
+          "hideUnavailableItems": true
         }
       },
-      "cta": "/acougue"
+      "cta": "/acougue",
+      "title": "Açougue"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -235,12 +236,12 @@
           "sort": "orders:desc",
           "collection": "172",
           "count": 12,
-          "hideUnavailableItems": false,
+          "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "title": "Unilever",
-      "cta": "/172?map=productClusterIds"
+      "cta": "/172?map=productClusterIds",
+      "title": "Unilever"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
