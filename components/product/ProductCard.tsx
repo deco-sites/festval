@@ -258,6 +258,29 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
       }
     }
   });
+
+  if (window.innerWidth < 768) {
+    const cart = window.STOREFRONT.CART.getCart();
+    console.log(cart);
+    if (cart) {
+      // deno-lint-ignore no-explicit-any
+      const item = cart.items.find((i) => (i as any).item_id === itemId);
+      if (item) {
+        const buttonAddToCart = container!.querySelector<HTMLButtonElement>(
+          'button[data-attribute="add-to-cart"]'
+        );
+
+        if (buttonAddToCart) {
+          buttonAddToCart.style.backgroundColor = "#fff";
+          buttonAddToCart.style.color = "#3E3D41";
+          buttonAddToCart.style.border = "1px solid  #989898";
+          buttonAddToCart.innerText = "Adicionado ao carrinho";
+
+          buttonAddToCart.disabled = true;
+        }
+      }
+    }
+  }
 };
 
 // const onLoad = (id: string) => {

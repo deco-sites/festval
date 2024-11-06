@@ -82,8 +82,6 @@ export const action = async (
   if (!cep) return { actionResult: false };
   const cepFormatted = cep.replace("-", "").trim();
 
-  console.log(cepFormatted);
-
   if (platform === "vtex") {
     // deno-lint-ignore no-explicit-any
     const response = await (ctx as any).invoke(
@@ -181,9 +179,6 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
       }, 1000);
     } else if (attempts < maxAttempts) {
       attempts += 1;
-      console.log(
-        `Tentativa ${attempts} de ${maxAttempts} falhou. Reexecutando...`
-      );
       setTimeout(attemptSubmit, delay);
     } else {
       redText?.classList.remove("hidden");

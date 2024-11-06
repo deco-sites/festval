@@ -44,8 +44,6 @@ const onClick = (inputId: string, modalPreviewMobile?: string) => {
   event?.stopPropagation();
 
   const input = document.getElementById(inputId);
-  console.log(inputId);
-  console.log(input);
   const productData: ProductData = JSON.parse(
     input!.getAttribute("data-product-data") ?? "{}"
   );
@@ -54,10 +52,6 @@ const onClick = (inputId: string, modalPreviewMobile?: string) => {
       ? input!.querySelector<HTMLInputElement>("input[type=text]")
       : input!.querySelector<HTMLInputElement>("input[type=number]");
   const container = input!.closest<HTMLDivElement>("div[data-cart-item]")!;
-
-  console.log(inputId);
-  console.log(input);
-  console.log(inputValue);
 
   const { item, platformProps } = JSON.parse(
     decodeURIComponent(container.getAttribute("data-cart-item")!)

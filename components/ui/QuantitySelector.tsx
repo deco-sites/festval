@@ -29,8 +29,6 @@ const onClick = (delta: number) => {
     productId = dataFieldset.getAttribute("data-item-id")!;
   }
 
-  console.log(productId, input.value);
-
   if (productId) {
     window.STOREFRONT.CART.setQuantity(productId, Number(input.value));
   }

@@ -128,7 +128,6 @@ const onClick = (delta: number) => {
     "data-quantity-number",
     (productQuantityHandler + delta).toString()
   );
-
   console.log();
 
   const unitQuantityMsg = input!.nextSibling?.nextSibling as HTMLSpanElement;
