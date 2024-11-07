@@ -1,0 +1,55 @@
+{
+  "name": "Testando Lp",
+  "path": "/testando Lp",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Carousel.tsx",
+        "images": [
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b683e0a6-5f96-452b-a07b-2f1c13cad9f3/Festval---1953---Banner---2638x682---01.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3410e605-27b7-46c4-a3ad-1d58d599323f/31680_Festval---1953---Banner---1080x1080---01_original.png",
+            "alt": "Carrossel Principal",
+            "action": {
+              "href": "/"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+        "items": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3ef80cf2-7acc-4a97-bb41-515be669ab82/Festval---1953---Banner---1080x10804.png"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/workflow/products.ts",
+          "page": 0
+        },
+        "title": "1953",
+        "cta": "/1227?map=productClusterIds&page=1"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

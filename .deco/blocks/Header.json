@@ -2117,10 +2117,16 @@
       "children": []
     },
     {
-      "@type": "SiteNavigationElement",
-      "url": "/adega?sort=orders%3Adesc&page=1",
+      "url": "/bebidas/sucos-festval?page=1",
+      "name": "Sucos Festval",
+      "children": [],
+      "image": []
+    },
+    {
+      "children": [],
       "name": "Adega",
-      "children": []
+      "url": "/adega",
+      "@type": "SiteNavigationElement"
     },
     {
       "children": [],
