@@ -76,7 +76,7 @@
           "label": "Padaria"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5cbbd1f8-a585-4081-93db-d88a914ba36c/Latici.png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e6e29f29-aa3d-4a6e-a079-a97038d09283/Frios-e-Laticinios.png",
           "href": "/frios-e-laticinios?sort=orders%3Adesc&page=1",
           "label": "Frios e Laticínios"
         },
@@ -101,7 +101,7 @@
           "label": "Sorvetes"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/46e581c1-9904-4ab7-891f-25f8c5cf0a91/Floricultura.png",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cfbf6a0c-083e-4f32-87d8-c390a7565a04/Floricultura-2.png",
           "href": "/floricultura?sort=orders%3Adesc&page=1",
           "label": "Floricultura"
         },
@@ -334,7 +334,6 @@
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
-  "path": "/",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
