@@ -139,9 +139,10 @@ const onClick = (delta: number) => {
     "data-quantity-number",
     (productQuantityHandler + delta).toString()
   );
-  console.log();
 
-  const unitQuantityMsg = input!.nextSibling?.nextSibling as HTMLSpanElement;
+  const unitQuantityMsg = input!
+    .closest(".input-div-container")
+    ?.querySelector<HTMLSpanElement>("#unit-quantity-msg");
   unitQuantityMsg!.innerHTML = `Aprox. ${
     productQuantityHandler + delta
   } unidade(s) selecionada(s)`;
@@ -182,25 +183,13 @@ const onClick = (delta: number) => {
 //   // window.STOREFRONT.CART.setQuantity(productId, quantity);
 // };
 
-function QuantitySelectorKg({
+function QuantitySelectorKgModal({
   id,
   disabled,
   ...props
 }: JSX.IntrinsicElements["input"]) {
   return (
-    <div class="flex flex-col items-start input-div-container">
-      <span
-        id="unit-multiplier-msg"
-        class="text-xs text-[#646072]  text-center "
-      >
-        Aprox. 800g/unidade
-      </span>
-      <span
-        id="unit-quantity-msg"
-        class="text-xs text-[#646072] text-center mb-1"
-      >
-        Aprox. 1 unidade(s) selecionada(s)
-      </span>
+    <div class="flex flex-col items-center input-div-container">
       <div class="join w-full flex gap-[7px]">
         <button
           type="button"
@@ -248,6 +237,15 @@ function QuantitySelectorKg({
           />
         </button>
       </div>
+      <span
+        id="unit-multiplier-msg"
+        class="text-xs text-[#646072]  text-center mt-1 "
+      >
+        Aprox. 800g/unidade
+      </span>
+      <span id="unit-quantity-msg" class="text-xs text-[#646072] text-center">
+        Aprox. 1 unidade(s) selecionada(s)
+      </span>
       <script
         type="module"
         dangerouslySetInnerHTML={{
@@ -257,4 +255,4 @@ function QuantitySelectorKg({
     </div>
   );
 }
-export default QuantitySelectorKg;
+export default QuantitySelectorKgModal;

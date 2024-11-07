@@ -11,7 +11,7 @@ import QuantitySelector from "../ui/QuantitySelector.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
 import { useScript } from "@deco/deco/hooks";
-import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
+import QuantitySelectorKgModal from "../ui/QuantitySelectorKgModal.tsx";
 
 export interface Props {
   id: string;
@@ -419,7 +419,7 @@ function ModalAddToCartMobile(props: Props) {
                   JSON.stringify({ item, platformProps })
                 )}
               >
-                <QuantitySelectorKg
+                <QuantitySelectorKgModal
                   id={`input-${idQuantity}`}
                   min={1}
                   max={100}

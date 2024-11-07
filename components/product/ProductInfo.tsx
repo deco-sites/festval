@@ -18,7 +18,7 @@ import AddToCartMobileButton from "./AddToCartMobileButton.tsx";
 import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
 import Drawer from "../ui/Drawer.tsx";
 import Image from "apps/website/components/Image.tsx";
-import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
+import QuantitySelectorKgModal from "../ui/QuantitySelectorKgModal.tsx";
 interface Props {
   page: ProductDetailsPage | null;
 }
@@ -115,7 +115,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     document?.querySelector<HTMLSpanElement>(`.discount-percent`);
   const loadingElement =
     currentPriceElement?.parentElement?.querySelector<HTMLSpanElement>(
-      `.loading-spinner`
+      `.loading-price`
     );
   const priceQuantityElements = document.querySelector<HTMLDivElement>(
     ".price-quantity-elements"
@@ -365,7 +365,7 @@ function ProductInfo({ page }: Props) {
               )}
             </div>
             <div>
-              <span class="block loading loading-spinner" />
+              <span class="block loading loading-spinner loading-price" />
               <span class="current-price hidden text-xl font-bold text-base-400 hidden">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
@@ -383,7 +383,7 @@ function ProductInfo({ page }: Props) {
               JSON.stringify({ item, platformProps })
             )}
           >
-            <QuantitySelectorKg id={`input-${id}`} min={1} max={100} />
+            <QuantitySelectorKgModal id={`input-${id}`} min={1} max={100} />
           </div>
 
           <div

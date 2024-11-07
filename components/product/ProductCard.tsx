@@ -108,7 +108,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
       `.discount-percent`
     );
   const loadingElement =
-    container?.querySelector<HTMLSpanElement>(`.loading-spinner`);
+    container?.querySelector<HTMLSpanElement>(`.loading-price`);
 
   if (productData && productData.MeasurementUnit == "kg") {
     const listPrice = product.offers?.offers[0].priceSpecification[0].price;
@@ -191,6 +191,21 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
   } else {
     loadingElement?.classList.add("hidden");
     quantityNormal?.classList.remove("hidden");
+    if (quantityNormal && quantityKg) {
+      quantityKg.style.display = "block";
+      quantityKg.style.position = "absolute";
+      quantityKg.style.visibility = "hidden";
+      const unitMultiplierMsg = quantityKg!.querySelector<HTMLSpanElement>(
+        "#unit-multiplier-msg"
+      );
+      const unitQuantityMsg =
+        quantityKg!.querySelector<HTMLSpanElement>("#unit-quantity-msg");
+      if (unitMultiplierMsg && unitQuantityMsg) {
+        quantityNormal.style.marginTop = `${
+          unitMultiplierMsg?.offsetHeight + unitQuantityMsg?.offsetHeight
+        }px`;
+      }
+    }
     listPriceElement?.classList.remove("hidden");
     currentPriceElement?.classList.remove("hidden");
     measurementUnit?.classList.add("hidden");
@@ -641,7 +656,7 @@ function ProductCard({
               </span>
             )}
             <div>
-              <span class="block loading loading-spinner" />
+              <span class="block loading loading-spinner loading-price" />
               <span class="current-price hidden font-bold text-base sm:text-lg text-[#1A1A1A]">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
