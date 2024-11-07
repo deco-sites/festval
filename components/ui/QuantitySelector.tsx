@@ -57,7 +57,7 @@ function QuantitySelector({
   ...props
 }: JSX.IntrinsicElements["input"]) {
   return (
-    <div class="join w-full h-[40px] flex gap-[7px]">
+    <div class="join flex-grow w-full h-[40px] flex gap-[7px]">
       <button
         type="button"
         class="w-[40px] h-[40px] bg-[#EBEAED] rounded-full	text-lg	flex justify-center items-center hover:opacity-80 ease-in-out duration-300"

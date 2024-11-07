@@ -200,6 +200,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
   } else {
     loadingElement?.classList.add("hidden");
     quantityNormal?.classList.remove("hidden");
+    listPriceElement?.classList.remove("hidden");
     currentPriceElement?.classList.remove("hidden");
     measurementUnit?.classList.add("hidden");
     quantityKg?.classList.add("hidden");
