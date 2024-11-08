@@ -1,6 +1,5 @@
 {
   "name": "Search Page",
-  "path": "/s",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -12,7 +11,14 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryBanner.tsx",
-        "banners": []
+        "banners": [
+          {
+            "matcher": [
+              "Cestas de Natal"
+            ],
+            "images": []
+          }
+        ]
       }
     },
     {
@@ -39,5 +45,6 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "__resolveType": "website/pages/Page.tsx"
+  "__resolveType": "website/pages/Page.tsx",
+  "path": "/s"
 }

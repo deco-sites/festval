@@ -22,6 +22,14 @@
           "action": {
             "href": "https://www.festval.com/s?q=colorado+lata+350ml&page=1&utm_source=BannerHome&utm_campaign=Colorado30%25na2%C2%BA"
           }
+        },
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9da75014-1f49-4870-a398-8e940349a77e/NOSSO-KV-MUCILON-1920X490.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6add02f7-c031-4108-8c8a-0918195e275d/NOSSO-KV-MUCILON-1080X1500.jpg",
+          "alt": "Mucilon",
+          "action": {
+            "href": "https://www.festval.com/s?q=mucilon&page=1"
+          }
         }
       ],
       "preload": true,
