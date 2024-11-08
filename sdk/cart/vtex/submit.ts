@@ -7,29 +7,25 @@ const actions: CartSubmitActions<AppContext> = {
     const response = await ctx.invoke(
       "vtex/actions/cart/addItems.ts",
       // @ts-expect-error I don't know how to fix this
-      addToCart,
+      addToCart
     );
 
-    return cartFrom(response, req.url);
+    return cartFrom(response, req.url, ctx);
   },
   setQuantity: async ({ items }, req, ctx) => {
-    const response = await ctx.invoke(
-      "vtex/actions/cart/updateItems.ts",
-      {
-        allowedOutdatedData: ["paymentData"],
-        orderItems: items.map((quantity, index) => ({ quantity, index })),
-      },
-    );
+    const response = await ctx.invoke("vtex/actions/cart/updateItems.ts", {
+      allowedOutdatedData: ["paymentData"],
+      orderItems: items.map((quantity, index) => ({ quantity, index })),
+    });
 
-    return cartFrom(response, req.url);
+    return cartFrom(response, req.url, ctx);
   },
   setCoupon: async ({ coupon }, req, ctx) => {
-    const response = await ctx.invoke(
-      "vtex/actions/cart/updateCoupons.ts",
-      { text: coupon ?? undefined },
-    );
+    const response = await ctx.invoke("vtex/actions/cart/updateCoupons.ts", {
+      text: coupon ?? undefined,
+    });
 
-    return cartFrom(response, req.url);
+    return cartFrom(response, req.url, ctx);
   },
 };
 

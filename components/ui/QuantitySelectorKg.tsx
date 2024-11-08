@@ -139,9 +139,10 @@ const onClick = (delta: number) => {
     "data-quantity-number",
     (productQuantityHandler + delta).toString()
   );
-  console.log();
 
-  const unitQuantityMsg = input!.nextSibling?.nextSibling as HTMLSpanElement;
+  const unitQuantityMsg = input!
+    .closest(".input-div-container")
+    ?.querySelector<HTMLSpanElement>("#unit-quantity-msg");
   unitQuantityMsg!.innerHTML = `Aprox. ${
     productQuantityHandler + delta
   } unidade(s) selecionada(s)`;
@@ -160,7 +161,8 @@ const onClick = (delta: number) => {
   if (productId) {
     window.STOREFRONT.CART.setQuantity(
       productId,
-      Number(input.getAttribute("data-quantity-number") || "1")
+      Number(input.getAttribute("data-quantity-number") || "1"),
+      true
     );
   }
 
@@ -222,6 +224,7 @@ function QuantitySelectorKg({
             "has-[:invalid]:tooltip has-[:invalid]:tooltip-error has-[:invalid]:tooltip-open has-[:invalid]:tooltip-bottom"
           )}
         >
+          <input id="input-quantity-control" type="hidden" {...props} />
           <input
             id={id}
             class={clx(

@@ -71,17 +71,18 @@ const cartFrom = (form: FormData) => {
 async function action(
   _props: unknown,
   req: Request,
-  ctx: AppContext,
+  ctx: AppContext
 ): Promise<Minicart> {
   const { setQuantity, setCoupon, addToCart } = actions[usePlatform()];
 
   const form = cartFrom(await req.formData());
 
-  const handler = form.action === "set-coupon"
-    ? setCoupon
-    : form.action === "add-to-cart"
-    ? addToCart
-    : setQuantity;
+  const handler =
+    form.action === "set-coupon"
+      ? setCoupon
+      : form.action === "add-to-cart"
+      ? addToCart
+      : setQuantity;
 
   if (!handler) {
     throw new Error(`Unsupported action on platform ${usePlatform()}`);

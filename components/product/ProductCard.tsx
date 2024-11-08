@@ -226,9 +226,10 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     const quantity =
       productData?.MeasurementUnit == "kg"
         ? (
-            productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)
+            productData!.UnitMultiplier *
+            (sdk.getQuantity(itemID, productData?.MeasurementUnit) ?? 1)
           ).toFixed(3)
-        : sdk.getQuantity(itemID) || 1;
+        : sdk.getQuantity(itemID, productData?.MeasurementUnit) || 1;
 
     if (!input) {
       return;
@@ -241,7 +242,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     if (productData?.MeasurementUnit == "kg") {
       input.setAttribute(
         "data-quantity-number",
-        `${sdk.getQuantity(itemID) || 1}`
+        `${sdk.getQuantity(itemID, productData?.MeasurementUnit) || 1}`
       );
     }
 
@@ -277,7 +278,6 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
 
   if (window.innerWidth < 768) {
     const cart = window.STOREFRONT.CART.getCart();
-    console.log(cart);
     if (cart) {
       // deno-lint-ignore no-explicit-any
       const item = cart.items.find((i) => (i as any).item_id === itemId);
@@ -290,7 +290,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           buttonAddToCart.style.backgroundColor = "#fff";
           buttonAddToCart.style.color = "#3E3D41";
           buttonAddToCart.style.border = "1px solid  #989898";
-          buttonAddToCart.innerText = "Adicionado ao carrinho";
+          buttonAddToCart.innerText = "Adicionado";
 
           buttonAddToCart.disabled = true;
         }
@@ -480,16 +480,6 @@ function ProductCard({
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
   const platformProps = useAddToCart({ product, seller });
 
-  // if (product.productID === "5339") {
-  //   console.log("Produto", product);
-  //   console.log(
-  //     "additionalProperty",
-  //     product.isVariantOf.hasVariant[0].additionalProperty
-  //   );
-  //   console.log("Offers", offers);
-  //   console.log("Item", item);
-  // }
-
   {
     /* Add click event to dataLayer */
   }
@@ -669,7 +659,7 @@ function ProductCard({
             </div>
           </div>
 
-          <div class="opacity-0 sm:group-hover:opacity-100">
+          <div class="opacity-0 hidden sm:flex sm:group-hover:opacity-100">
             <button
               class="flex items-center gap-[5.2px] px-[8px] py-[11px] bg-[#ededed] border-none rounded-[9px] text-xs font-normal text-[#55535D]"
               hx-on:click={useScript(onClick, modalPreviewId)}

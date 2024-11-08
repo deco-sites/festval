@@ -216,9 +216,10 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     const quantity =
       productData?.MeasurementUnit == "kg"
         ? (
-            productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)
+            productData!.UnitMultiplier *
+            (sdk.getQuantity(itemID, productData?.MeasurementUnit) ?? 1)
           ).toFixed(3)
-        : sdk.getQuantity(itemID) || 1;
+        : sdk.getQuantity(itemID, productData?.MeasurementUnit) || 1;
 
     if (!input) {
       return;
@@ -231,7 +232,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     if (productData?.MeasurementUnit == "kg") {
       input.setAttribute(
         "data-quantity-number",
-        `${sdk.getQuantity(itemID) || 1}`
+        `${sdk.getQuantity(itemID, productData?.MeasurementUnit) || 1}`
       );
     }
 

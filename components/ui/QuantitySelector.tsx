@@ -30,7 +30,7 @@ const onClick = (delta: number) => {
   }
 
   if (productId) {
-    window.STOREFRONT.CART.setQuantity(productId, Number(input.value));
+    window.STOREFRONT.CART.setQuantity(productId, Number(input.value), false);
   }
 
   input.dispatchEvent(new Event("change", { bubbles: true }));

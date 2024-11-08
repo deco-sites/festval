@@ -119,4 +119,17 @@
   .container-submenu {
     width: calc(100% - 405px);
   }
+
+  @media (max-width: 640px) {
+    .mobile-truncate {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      line-clamp: 1;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+      height: 2.5em;
+    }
+  }
 }

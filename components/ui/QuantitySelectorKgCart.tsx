@@ -76,12 +76,12 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
         // const divInput = input!.querySelector(
         //   ".input-div-container"
         // ) as HTMLDivElement;
-        const unitMultiplierMsg = inputElement!.closest(
-          "#unit-multiplier-msg"
-        ) as HTMLSpanElement;
-        const unitQuantityMsg = inputElement!.closest(
-          "#unit-quantity-msg"
-        ) as HTMLSpanElement;
+        const unitMultiplierMsg = inputElement!
+          .closest(".input-div-container")
+          ?.querySelector<HTMLSpanElement>("#unit-multiplier-msg");
+        const unitQuantityMsg = inputElement!
+          .closest(".input-div-container")
+          ?.querySelector<HTMLSpanElement>("#unit-quantity-msg");
         const quantity = inputElement!.getAttribute("data-quantity-number");
         if (unitMultiplierMsg) {
           unitMultiplierMsg.classList.remove("hidden");
@@ -112,6 +112,10 @@ const onClick = (delta: number) => {
   const input =
     button.parentElement?.querySelector<HTMLInputElement>(
       'input[type="text"]'
+    )!;
+  const inputQuantityControl =
+    button.parentElement?.querySelector<HTMLInputElement>(
+      'input[type="hidden"]'
     )!;
 
   const productData: ProductData = JSON.parse(
@@ -184,13 +188,25 @@ const onClick = (delta: number) => {
 //   // window.STOREFRONT.CART.setQuantity(productId, quantity);
 // };
 
-function QuantitySelectorKgModal({
+function QuantitySelectorKgCart({
   id,
   disabled,
   ...props
 }: JSX.IntrinsicElements["input"]) {
   return (
-    <div class="flex flex-col items-center input-div-container">
+    <div class="flex flex-col items-start input-div-container">
+      <span
+        id="unit-multiplier-msg"
+        class="text-xs text-[#646072] text-center hidden"
+      >
+        Aprox. 800g/unidade
+      </span>
+      <span
+        id="unit-quantity-msg"
+        class="text-xs text-[#646072] text-center mb-1 hidden"
+      >
+        Aprox. 1 unidade(s) selecionada(s)
+      </span>
       <div class="join w-full flex gap-[7px]">
         <button
           type="button"
@@ -238,15 +254,6 @@ function QuantitySelectorKgModal({
           />
         </button>
       </div>
-      <span
-        id="unit-multiplier-msg"
-        class="text-xs text-[#646072]  text-center mt-1 "
-      >
-        Aprox. 800g/unidade
-      </span>
-      <span id="unit-quantity-msg" class="text-xs text-[#646072] text-center">
-        Aprox. 1 unidade(s) selecionada(s)
-      </span>
       <script
         type="module"
         dangerouslySetInnerHTML={{
@@ -256,4 +263,4 @@ function QuantitySelectorKgModal({
     </div>
   );
 }
-export default QuantitySelectorKgModal;
+export default QuantitySelectorKgCart;

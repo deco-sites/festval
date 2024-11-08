@@ -24,8 +24,15 @@ export interface Cart {
 export interface SDK {
   CART: {
     getCart: () => Cart | null;
-    getQuantity: (itemId: string) => number | undefined;
-    setQuantity: (itemId: string, quantity: number) => boolean;
+    getQuantity: (
+      itemId: string,
+      measurementUnit: string | undefined
+    ) => number | undefined;
+    setQuantity: (
+      itemId: string,
+      quantity: number,
+      cartItem: boolean
+    ) => boolean;
     addToCart: (
       item: Item,
       platformProps: unknown,
@@ -69,14 +76,38 @@ const sdk = () => {
       );
     const sdk: SDK["CART"] = {
       getCart,
-      getQuantity: (itemId) =>
-        form?.querySelector<HTMLInputElement>(
-          `[data-item-id="${itemId}"] input[type="number"]`
-        )?.valueAsNumber,
-      setQuantity: (itemId, quantity) => {
-        const input = form?.querySelector<HTMLInputElement>(
-          `[data-item-id="${itemId}"] input[type="number"]`
-        );
+      getQuantity: (itemId, measurementUnit) => {
+        if (measurementUnit === "kg") {
+          return form?.querySelector<HTMLInputElement>(
+            `[data-item-id="${itemId}"] input[type="hidden"]`
+          )?.value !== undefined
+            ? Number(
+                form.querySelector<HTMLInputElement>(
+                  `[data-item-id="${itemId}"] input[type="hidden"]`
+                )?.value
+              )
+            : undefined;
+        } else {
+          return form?.querySelector<HTMLInputElement>(
+            `[data-item-id="${itemId}"] input[type="number"]`
+          )?.valueAsNumber;
+        }
+      },
+      setQuantity: (itemId, quantity, cartItem) => {
+        let input;
+        let inputControl;
+        if (cartItem) {
+          input = form?.querySelector<HTMLInputElement>(
+            `[data-item-id="${itemId}"] input[type="text"]`
+          );
+          inputControl = form?.querySelector<HTMLInputElement>(
+            `[data-item-id="${itemId}"] input[type="hidden"]`
+          );
+        } else {
+          input = form?.querySelector<HTMLInputElement>(
+            `[data-item-id="${itemId}"] input[type="number"]`
+          );
+        }
         const item = getCart()?.items.find(
           (item) =>
             // deno-lint-ignore no-explicit-any
@@ -85,11 +116,12 @@ const sdk = () => {
         if (!input || !item) {
           return false;
         }
-        input.value = quantity.toString();
+        if (!cartItem) input.value = quantity.toString();
+        if (inputControl) inputControl.value = quantity.toString();
         if (input.validity.valid) {
           window.DECO.events.dispatch({
             name:
-              item.quantity < input.valueAsNumber
+              item.quantity < Number(input.value)
                 ? "add_to_cart"
                 : "remove_from_cart",
             params: { items: [{ ...item, quantity }] },
