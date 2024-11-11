@@ -16,20 +16,28 @@
           "alt": "site"
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6bf1716b-c5b5-401b-9fc9-f6886dcf52b1/1920X490-COLORADO.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3bee3f31-13ab-41de-a4e1-eca4b816343a/1080x1500-COLORADO.jpg",
-          "alt": "colarodo",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/92854464-db0b-4e44-aa05-0426560c54a4/CORONA-CERO-KV-PRPRIO-1920X490.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f41062bf-db6f-4677-88e9-9885118af0d5/CORONA-CERO-KV-PRPRIO-1080X1500.jpg",
+          "alt": "corona-cero",
           "action": {
-            "href": "https://www.festval.com/s?q=colorado+lata+350ml&page=1&utm_source=BannerHome&utm_campaign=Colorado30%25na2%C2%BA"
+            "href": "https://www.festval.com/cerveja-cero-sunbrew-zero-alcool-corona-garrafa-330ml/p?skuId=25951&utm_source=BannerHome&utm_campaign=CoronaCeroDesconto10"
           }
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9da75014-1f49-4870-a398-8e940349a77e/NOSSO-KV-MUCILON-1920X490.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6add02f7-c031-4108-8c8a-0918195e275d/NOSSO-KV-MUCILON-1080X1500.jpg",
-          "alt": "Mucilon",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d1a19ab8-8c31-41ca-9524-d7a602d301bc/NOSSO-KV-1920X490-UNILEVER-PRE.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5cbaed0e-fef0-42ab-9522-a72a7e7f793b/NOSSO-KV-1080X1500-UNILEVER-PRE.jpg",
+          "alt": "omopreblack",
           "action": {
-            "href": "https://www.festval.com/s?q=mucilon&page=1"
+            "href": "https://www.festval.com/1541?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=OmoLeve3Pague2Pr%C3%A9Bk"
           }
+        },
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/49a0f883-78d9-4c65-9ffd-16e7c60b74a2/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1080x1500px.jpg",
+          "action": {
+            "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
+          },
+          "alt": "cestasnatal"
         }
       ],
       "preload": true,
