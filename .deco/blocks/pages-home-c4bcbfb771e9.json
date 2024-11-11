@@ -259,11 +259,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/039fd766-52f0-4590-8781-13070cc1b090/FESTVAL-NOVO-APP-BANNER-1080x465-MAMMA_BIA.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f334b839-2f3e-4e43-b040-d39934858842/MAMMA-BIA.jpg",
-          "alt": "mamma bia",
-          "href": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "hrefMobile": "/1358?map=productClusterIds"
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/557ce91a-de7f-436e-846e-703eb8ebe5a2/1080X465-BANNER-PANNETONE.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/757583d5-3436-41a6-9037-ab55e4d66289/1700X400-BANNER-PANNETONE.jpg",
+          "alt": "mamma-bia",
+          "href": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bba26047-5316-4767-8b82-b42327d3c307/BANNER_M_NINHO.jpg",
