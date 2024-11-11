@@ -211,11 +211,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c4ded8b-e025-4736-b555-ab83da18045f/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a9548b9d-9859-4d07-8f84-8b25c0882280/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "/159?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7b81da40-b117-42f1-8322-a1051bf8a600/churras.jpg",
-          "hrefMobile": "/159?map=productClusterIds&sort=discount%3Adesc&page=1"
+          "href": "/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4126bc57-c49c-45af-8c8f-d608bffe2fa8/limpeza-teste-app-4.jpg",
+          "hrefMobile": "/1482?map=productClusterIds&sort=discount%3Adesc&page=1"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7d266bd-6140-4157-b0ac-db5f1cb9d1aa/AXE.jpg",
