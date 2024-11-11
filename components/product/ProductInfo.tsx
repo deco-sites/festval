@@ -103,31 +103,18 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
   const productData = await getProductData(itemId);
 
   const quantityKg = document.querySelector<HTMLDivElement>(".quantity-kg");
-  const quantityNormal =
-    document.querySelector<HTMLDivElement>(".quantity-normal");
-  const measurementUnit =
-    document?.querySelector<HTMLSpanElement>(`.measurement-unit`);
-  const currentPriceElement =
-    document?.querySelector<HTMLSpanElement>(`.current-price`);
-  const listPriceElement =
-    document?.querySelector<HTMLSpanElement>(`.list-price`);
-  const discountElement =
-    document?.querySelector<HTMLSpanElement>(`.discount-percent`);
-  const loadingElement =
-    currentPriceElement?.parentElement?.querySelector<HTMLSpanElement>(
-      `.loading-price`
-    );
-  const priceQuantityElements = document.querySelector<HTMLDivElement>(
-    ".price-quantity-elements"
-  );
+  const quantityNormal = document.querySelector<HTMLDivElement>(".quantity-normal");
+  const measurementUnit = document?.querySelector<HTMLSpanElement>(`.measurement-unit`);
+  const currentPriceElement = document?.querySelector<HTMLSpanElement>(`.current-price`);
+  const listPriceElement = document?.querySelector<HTMLSpanElement>(`.list-price`);
+  const discountElement = document?.querySelector<HTMLSpanElement>(`.discount-percent`);
+  const loadingElement = currentPriceElement?.parentElement?.querySelector<HTMLSpanElement>(`.loading-price`);
+  const priceQuantityElements = document.querySelector<HTMLDivElement>(".price-quantity-elements");
 
   if (productData && productData.MeasurementUnit == "kg") {
     const listPrice = product.offers?.offers[0].priceSpecification[0].price;
     const price = product.offers?.offers[0].priceSpecification[1].price;
-    const percent =
-      listPrice && price
-        ? Math.round(((listPrice - price) / listPrice) * 100)
-        : 0;
+    const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
     if (window.innerWidth < 768 && priceQuantityElements) {
       priceQuantityElements.classList.remove("flex-row");
       priceQuantityElements.classList.add("flex-col", "gap-4");
@@ -221,33 +208,21 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity =
       productData?.MeasurementUnit == "kg"
-        ? (
-            productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)
-          ).toFixed(3)
+        ? (productData!.UnitMultiplier * (sdk.getQuantity(itemID) ?? 1)).toFixed(3)
         : sdk.getQuantity(itemID) || 1;
 
     if (!input) {
       return;
     }
-    input.value =
-      productData?.MeasurementUnit == "kg"
-        ? `${quantity.toString()} kg`
-        : quantity.toString();
+    input.value = productData?.MeasurementUnit == "kg" ? `${quantity.toString()} kg` : quantity.toString();
 
     if (productData?.MeasurementUnit == "kg") {
-      input.setAttribute(
-        "data-quantity-number",
-        `${sdk.getQuantity(itemID) || 1}`
-      );
+      input.setAttribute("data-quantity-number", `${sdk.getQuantity(itemID) || 1}`);
     }
 
     // enable interactivity
-    container
-      ?.querySelectorAll<HTMLButtonElement>("button")
-      .forEach((node) => (node.disabled = false));
-    container
-      ?.querySelectorAll<HTMLButtonElement>("input")
-      .forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) => (node.disabled = false));
+    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) => (node.disabled = false));
 
     const cart = window.STOREFRONT.CART.getCart();
     if (cart) {
@@ -289,10 +264,7 @@ function ProductInfo({ page }: Props) {
 
   const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
 
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && price ? Math.round(((listPrice - price) / listPrice) * 100) : 0;
 
   const breadcrumb = {
     ...breadcrumbList,
@@ -332,18 +304,8 @@ function ProductInfo({ page }: Props) {
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
       {/* Product Name */}
-      <span
-        class={clx(
-          "lg:text-xl sm:text-base font-bold text-[#373737]",
-          "pt-4",
-          "px-4 sm:px-0"
-        )}
-      >
-        {title}
-      </span>
-      <div className="pt-1 text-[#646072] lg:text-lg text-sm px-4 sm:px-0">
-        Ref.{gtin}
-      </div>
+      <span class={clx("lg:text-xl sm:text-base font-bold text-[#373737]", "pt-4", "px-4 sm:px-0")}>{title}</span>
+      <div className="pt-1 text-[#646072] lg:text-lg text-sm px-4 sm:px-0">Ref.{gtin}</div>
       <div className="relative w-fit px-4 sm:px-0">
         <WishlistButton item={item} />
       </div>
@@ -369,9 +331,7 @@ function ProductInfo({ page }: Props) {
               <span class="current-price hidden text-xl font-bold text-base-400 hidden">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
-              <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">
-                /kg
-              </span>
+              <span class="measurement-unit hidden font-bold text-sm text-[#9f9f9f] ml-[2px]">/kg</span>
             </div>
           </div>
 
@@ -379,9 +339,7 @@ function ProductInfo({ page }: Props) {
             id={`input-${id}`}
             class="hidden quantity-kg"
             data-item-id={product.productID}
-            data-cart-item={encodeURIComponent(
-              JSON.stringify({ item, platformProps })
-            )}
+            data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
           >
             <QuantitySelectorKgModal id={`input-${id}`} min={1} max={100} />
           </div>
@@ -390,9 +348,7 @@ function ProductInfo({ page }: Props) {
             id={`input-${id}`}
             class="lg:w-2/4 hidden quantity-normal"
             data-item-id={product.productID}
-            data-cart-item={encodeURIComponent(
-              JSON.stringify({ item, platformProps })
-            )}
+            data-cart-item={encodeURIComponent(JSON.stringify({ item, platformProps }))}
           >
             <QuantitySelector min={1} max={100} />
           </div>
@@ -432,28 +388,16 @@ function ProductInfo({ page }: Props) {
         )}
       </div>
 
-      <ModalAddToCartMobile
-        id={modalPreviewId}
-        product={product}
-        seller={seller}
-        item={item}
-      />
+      <ModalAddToCartMobile id={modalPreviewId} product={product} seller={seller} item={item} />
 
       {/* Shipping Simulation */}
 
       {/* Description card */}
       {device !== "mobile" ? (
         <div class="mt-4 sm:mt-6">
-          <span className="lg:text-lg text-base font-bold text-[#373737]">
-            Detalhes do produto
-          </span>
-          <span class="text-sm">
-            {description && (
-              <div
-                class="mt-0"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            )}
+          <span className="lg:text-lg text-base font-bold text-[#373737]">Detalhes do produto</span>
+          <span class="text-sm whitespace-break-spaces line-clamp-none">
+            {description && <div class="mt-0" dangerouslySetInnerHTML={{ __html: description }} />}
           </span>
         </div>
       ) : (
@@ -462,19 +406,11 @@ function ProductInfo({ page }: Props) {
             id={`detalhes-produto`}
             class="drawer-end z-50"
             aside={
-              <Drawer.Aside
-                title="Detalhes do produto"
-                drawer={`detalhes-produto`}
-              >
+              <Drawer.Aside title="Detalhes do produto" drawer={`detalhes-produto`}>
                 <div class="h-full px-4 flex flex-col bg-base-100 overflow-auto">
                   <div class="mt-4 sm:mt-6">
-                    <span class="text-sm">
-                      {description && (
-                        <div
-                          class="mt-0"
-                          dangerouslySetInnerHTML={{ __html: description }}
-                        />
-                      )}
+                    <span class="text-sm whitespace-break-spaces line-clamp-none">
+                      {description && <div class="mt-0" dangerouslySetInnerHTML={{ __html: description }} />}
                     </span>
                   </div>
                 </div>
@@ -483,11 +419,7 @@ function ProductInfo({ page }: Props) {
           />
 
           <div className="flex w-full mt-3 bg-white">
-            <label
-              for={`detalhes-produto`}
-              class="w-full flex justify-between items-center p-4"
-              aria-label="open menu"
-            >
+            <label for={`detalhes-produto`} class="w-full flex justify-between items-center p-4" aria-label="open menu">
               <span>Detalhes do produto</span>
 
               <span>

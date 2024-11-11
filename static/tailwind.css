@@ -3915,6 +3915,12 @@ details.collapse summary::-webkit-details-marker {
 .box-border {
   box-sizing: border-box;
 }
+.line-clamp-none {
+  overflow: visible;
+  display: block;
+  -webkit-box-orient: horizontal;
+  -webkit-line-clamp: none;
+}
 .block {
   display: block;
 }
@@ -4532,6 +4538,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.whitespace-break-spaces {
+  white-space: break-spaces;
 }
 .break-words {
   overflow-wrap: break-word;

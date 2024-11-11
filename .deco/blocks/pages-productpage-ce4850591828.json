@@ -21,8 +21,7 @@
             "__resolveType": "website/functions/requestToParam.ts",
             "param": "slug"
           },
-          "similars": true,
-          "indexingSkus": true
+          "similars": false
         }
       }
     },
@@ -50,16 +49,11 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "price:desc",
-            "collection": "1486",
-            "count": 30,
-            "similars": false,
-            "hideUnavailableItems": true
-          }
+          "__resolveType": "vtex/loaders/legacy/relatedProductsLoader.ts",
+          "crossSelling": "suggestions",
+          "hideUnavailableItems": true
         },
-        "title": "Compre também"
+        "title": "Compre Também"
       }
     },
     {
@@ -77,13 +71,14 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "1486",
+            "collection": "1072",
             "count": 30,
-            "similars": true,
+            "similars": false,
             "hideUnavailableItems": true
           }
         },
-        "title": "Mais vendidos"
+        "title": "Oportunidades",
+        "cta": "/1072?map=productClusterIds"
       }
     },
     {
