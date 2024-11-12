@@ -1,5 +1,5 @@
 import { AppContext } from "../../apps/site.ts";
-import { setCookie } from "@std/http/cookie";
+import { deleteCookie, setCookie } from "@std/http/cookie";
 import { HEADER_HEIGHT_MOBILE } from "../../constants.ts";
 import { useComponent } from "../../sections/Component.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
@@ -7,7 +7,7 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { useId } from "../../sdk/useId.ts";
-import { type SectionProps, type Resolved } from "@deco/deco";
+import { type SectionProps } from "@deco/deco";
 
 export interface Props {
   /**
@@ -96,7 +96,12 @@ export const action = async (
       }
     );
 
+    console.log(response);
+
     if (response) {
+      deleteCookie(req.headers, "vtex_segment");
+      deleteCookie(req.headers, "vtex_session");
+
       setCookie(ctx.response.headers, {
         value: response.segmentToken,
         name: "vtex_segment",
