@@ -96,8 +96,6 @@ export const action = async (
       }
     );
 
-    console.log(response);
-
     if (response) {
       deleteCookie(req.headers, "vtex_segment");
       deleteCookie(req.headers, "vtex_session");

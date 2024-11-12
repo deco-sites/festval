@@ -31,28 +31,36 @@ export const cartFrom = async (
           items: items.map((item, index) => {
             const detailUrl = new URL(item.detailUrl, url).href;
 
-            if (products) {
-              const correctListPrice = Number(
-                products[index].offers?.offers[0].priceSpecification[0].price
-                  .toFixed(2)
-                  .toString()
-                  .replace(".", "")
-                  .trim()
-              );
-              const correctPrice = Number(
-                products[index].offers?.offers[0].priceSpecification[1].price
-                  .toFixed(2)
-                  .toString()
-                  .replace(".", "")
-                  .trim()
-              );
+            if (item.measurementUnit == "kg") {
+              if (products) {
+                const correctListPrice = Number(
+                  products[index].offers?.offers[0].priceSpecification[0].price
+                    .toFixed(2)
+                    .toString()
+                    .replace(".", "")
+                    .trim()
+                );
+                const correctPrice = Number(
+                  products[index].offers?.offers[0].priceSpecification[1].price
+                    .toFixed(2)
+                    .toString()
+                    .replace(".", "")
+                    .trim()
+                );
 
-              item.sellingPrice = correctPrice;
+                item.sellingPrice = correctPrice;
 
+                return {
+                  ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+                  image: item.imageUrl,
+                  listPrice: correctListPrice / 100,
+                  measurementUnit: item.measurementUnit,
+                };
+              }
               return {
                 ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
                 image: item.imageUrl,
-                listPrice: correctListPrice / 100,
+                listPrice: item.listPrice / 100,
                 measurementUnit: item.measurementUnit,
               };
             }
@@ -61,7 +69,6 @@ export const cartFrom = async (
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
               image: item.imageUrl,
               listPrice: item.listPrice / 100,
-              measurementUnit: item.measurementUnit,
             };
           }),
 
@@ -84,28 +91,36 @@ export const cartFrom = async (
       items: items.map((item, index) => {
         const detailUrl = new URL(item.detailUrl, url).href;
 
-        if (products) {
-          const correctListPrice = Number(
-            products[index].offers?.offers[0].priceSpecification[0].price
-              .toFixed(2)
-              .toString()
-              .replace(".", "")
-              .trim()
-          );
-          const correctPrice = Number(
-            products[index].offers?.offers[0].priceSpecification[1].price
-              .toFixed(2)
-              .toString()
-              .replace(".", "")
-              .trim()
-          );
+        if (item.measurementUnit == "kg") {
+          if (products) {
+            const correctListPrice = Number(
+              products[index].offers?.offers[0].priceSpecification[0].price
+                .toFixed(2)
+                .toString()
+                .replace(".", "")
+                .trim()
+            );
+            const correctPrice = Number(
+              products[index].offers?.offers[0].priceSpecification[1].price
+                .toFixed(2)
+                .toString()
+                .replace(".", "")
+                .trim()
+            );
 
-          item.sellingPrice = correctPrice;
+            item.sellingPrice = correctPrice;
 
+            return {
+              ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+              image: item.imageUrl,
+              listPrice: correctListPrice / 100,
+              measurementUnit: item.measurementUnit,
+            };
+          }
           return {
             ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
             image: item.imageUrl,
-            listPrice: correctListPrice / 100,
+            listPrice: item.listPrice / 100,
             measurementUnit: item.measurementUnit,
           };
         }
