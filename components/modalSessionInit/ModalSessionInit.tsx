@@ -135,6 +135,9 @@ const onLoad = (id: string) => {
     }
     return null;
   }
+  function deleteCookie(name: string) {
+    document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+  }
   const cep = getCookie("vtex_last_session_cep");
   const vtex_segment_cookie = getCookie("vtex_last_segment");
   const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
@@ -144,6 +147,8 @@ const onLoad = (id: string) => {
     modal?.classList.remove("modal-open");
   } else {
     modal?.classList.add("modal-open");
+    deleteCookie("vtex_last_session_cep");
+    deleteCookie("vtex_last_segment");
   }
 };
 
