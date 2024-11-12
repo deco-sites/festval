@@ -2105,21 +2105,27 @@
       "children": []
     },
     {
+      "url": "/natal",
+      "name": "Natal",
+      "children": [],
+      "image": []
+    },
+    {
       "@type": "SiteNavigationElement",
       "url": "/159?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
       "children": []
     },
     {
-      "@type": "SiteNavigationElement",
       "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Mamma Bia",
-      "children": []
+      "children": [],
+      "@type": "SiteNavigationElement"
     },
     {
-      "url": "/bebidas/sucos-festval?page=1",
-      "name": "Sucos Festval",
       "children": [],
+      "name": "Sucos Festval",
+      "url": "/bebidas/sucos-festval?page=1",
       "image": []
     },
     {
