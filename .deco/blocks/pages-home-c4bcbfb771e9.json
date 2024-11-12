@@ -16,12 +16,28 @@
           "alt": "site"
         },
         {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/dc33fd9a-6e18-4eae-8d48-824b2f2be249/ABERTO_V02_Dia_do_Supermercado_Festval.com_MOD01_Banner_Home_Desktop_1920x490px.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c868d8f5-6cb8-4d38-8b46-87378f675130/ABERTO_V02_Dia_do_Supermercado_Festval_MOD01_Banner_Digital_1080x1500px.jpg",
+          "alt": "diasupermercado",
+          "action": {
+            "href": "https://www.festval.com/1072?map=productClusterIds&sort=discount%3Adesc&page=1"
+          }
+        },
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a178c0bc-2e74-411b-833b-3e09ce9659f4/biscuit-nestle-1920x490.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/86430243-91a2-467e-846a-ce2a8240f7f4/1080x1500-biscuit.jpg",
+          "alt": "chocobiscuit",
+          "action": {
+            "href": "https://www.festval.com/s?q=Biscoito+com+Chocolate+Chocobiscuit+Nestl%C3%A9+ao+Leite+78g&page=1&utm_source=BannerHome&utm_campaign=ChocobiscuitVisibilidade"
+          }
+        },
+        {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/92854464-db0b-4e44-aa05-0426560c54a4/CORONA-CERO-KV-PRPRIO-1920X490.jpg",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f41062bf-db6f-4677-88e9-9885118af0d5/CORONA-CERO-KV-PRPRIO-1080X1500.jpg",
-          "alt": "corona-cero",
           "action": {
             "href": "https://www.festval.com/cerveja-cero-sunbrew-zero-alcool-corona-garrafa-330ml/p?skuId=25951&utm_source=BannerHome&utm_campaign=CoronaCeroDesconto10"
-          }
+          },
+          "alt": "corona-cero"
         },
         {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d1a19ab8-8c31-41ca-9524-d7a602d301bc/NOSSO-KV-1920X490-UNILEVER-PRE.jpg",
@@ -34,10 +50,10 @@
         {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/49a0f883-78d9-4c65-9ffd-16e7c60b74a2/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1080x1500px.jpg",
+          "alt": "cestasnatal",
           "action": {
             "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
-          },
-          "alt": "cestasnatal"
+          }
         }
       ],
       "preload": true,
