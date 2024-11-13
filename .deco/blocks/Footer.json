@@ -2,7 +2,7 @@
   "__resolveType": "site/sections/Footer/Footer.tsx",
   "links": [
     {
-      "title": "Minha conta",
+      "title": "Ajuda",
       "children": [
         {
           "title": "Meus pedidos",
@@ -15,12 +15,24 @@
         {
           "title": "Meus dados",
           "href": "/account#"
+        },
+        {
+          "title": "Entrega e retirada",
+          "href": "/entrega-e-retirada"
+        },
+        {
+          "href": "/troca-e-devolucao",
+          "title": "Trocas e devoluções"
+        },
+        {
+          "title": "Política de privacidade",
+          "href": "/conheca-nossa-politica-de-privacidade"
         }
       ],
       "href": "#"
     },
     {
-      "title": "Meu Festval",
+      "title": "Sobre o Festval",
       "href": "#",
       "children": [
         {
@@ -32,30 +44,12 @@
           "href": "https://superfestval.com.br/lojas"
         },
         {
-          "title": "Política de privacidade",
-          "href": "/conheca-nossa-politica-de-privacidade"
-        },
-        {
           "title": "Sobre os cookies",
           "href": "/sobre-os-cookies"
         },
         {
           "title": "DPO",
           "href": "https://superfestval.com.br/dpo"
-        }
-      ]
-    },
-    {
-      "title": "Mais informações",
-      "href": "#",
-      "children": [
-        {
-          "title": "Entrega e Retirada",
-          "href": "/entrega-e-retirada"
-        },
-        {
-          "title": "Trocas de devoluções",
-          "href": "/troca-e-devolucao"
         }
       ]
     }
@@ -81,16 +75,16 @@
       "href": "#",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
     },
-    "title": "Conecte-se",
+    "title": "Redes sociais",
     "socialItens": [
       {
         "alt": "Instagram",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/70248092-5c22-4eca-9048-1b20282fdc97/Grupo-243.svg",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3fda406d-59e6-4613-943f-b0c3892ce094/Grupo-243.svg",
         "href": "https://www.instagram.com/festvalcuritiba/"
       },
       {
         "alt": "Facebook",
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8f558b5f-43d6-4fae-8820-b306e60dcfd7/Grupo-244.svg",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/942cc301-dff4-432d-a8d8-d4e6e2936df2/Grupo-de-mascara-18.svg",
         "href": "https://www.facebook.com/festvalcuritiba/?locale=pt_BR"
       }
     ]
@@ -182,7 +176,7 @@
     "title": "Segurança",
     "socialItens": [
       {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/403da7f5-7d85-4c39-bce3-533476adb304/letsencrypt.svg",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/12a11d51-276c-4cb0-98d7-973adcd30f7a/letsencrypt.svg",
         "alt": "encrypt"
       },
       {
@@ -197,7 +191,7 @@
       "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d6dfa3c9-adc9-4224-bcd4-19ff6a553d77/Camada-1.svg"
     }
   },
-  "underEighteen": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3be740a8-51a3-44d9-9a0d-b4998c65d204/18.svg",
+  "underEighteen": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/122d9ca1-4b04-4223-b9dc-2e0196453f68/Grupo-4176.svg",
   "infos": [
     {
       "children": [
@@ -241,7 +235,7 @@
       "children": [
         {
           "subItems": [],
-          "title": "Atendimento ao cliente: Festval.com"
+          "title": "Atendimento E-commerce"
         },
         {
           "subItems": [],
@@ -252,5 +246,12 @@
       "title": "Fale com o Festval"
     }
   ],
-  "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c2b441e-db01-459f-a25a-0ab59d7b2c15/18-mb.svg"
+  "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c669ac32-6648-4105-ab40-e54be3799101/Grupo-4177.svg",
+  "highlightedImage": {
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/196ec59d-6833-46d5-a160-3d1b33b05b41/rodape-novoapp.png",
+    "imageMbGoogle": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6a9ba015-9fe3-469f-858d-6a48aa04a60a/Grupo-4121.png",
+    "hrefGoogle": "https://play.google.com/store/apps/details?id=com.festval.app",
+    "imageMbIOS": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/545ff981-443d-4b8c-851e-2a3567663e68/Grupo-4122.png",
+    "hrefIOS": "https://apps.apple.com/br/app/festval-com/id1593063841"
+  }
 }
