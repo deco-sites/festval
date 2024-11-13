@@ -241,11 +241,11 @@
           "hrefMobile": "/s?q=axe+152ml&page=1"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2c64dfdb-d0c6-4393-99ae-37fdb5b9da24/Corona.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e121a175-7a34-40e8-bc46-ac96ecc78a51/BANNER-DE-OFERTAS-M-CORONA.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c7f8f2cf-1d3d-422d-b2dc-bbc86c5b7045/BARILLA.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a47ac29a-a999-4b97-86c4-30a62a688914/BANNER-DE-OFERTAS-M-BARILLA.jpg",
           "alt": "OFERTA-2",
-          "href": "/s?q=corona+33ml&page=1",
-          "hrefMobile": "/s?q=corona+33ml&page=1"
+          "href": "https://www.festval.com/s?q=barilla&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=barilla&page=1"
         }
       ]
     },
