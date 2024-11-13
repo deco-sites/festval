@@ -86,6 +86,10 @@
         "alt": "Facebook",
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/942cc301-dff4-432d-a8d8-d4e6e2936df2/Grupo-de-mascara-18.svg",
         "href": "https://www.facebook.com/festvalcuritiba/?locale=pt_BR"
+      },
+      {
+        "href": "https://www.youtube.com/@FestvalCuritiba",
+        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5902bf22-cea8-4ff9-8cd5-f76dac605eff/youtube-(1).svg"
       }
     ]
   },
@@ -205,7 +209,12 @@
             }
           ],
           "title": "Atendimento ao cliente: Lojas físicas"
-        },
+        }
+      ],
+      "title": "Fale com o Festval"
+    },
+    {
+      "children": [
         {
           "subItems": [
             {
@@ -213,11 +222,14 @@
               "href": "tel:(41) 3148-6507"
             },
             {
-              "href": "mailto:sac@superfestval.com.br",
-              "text": "sac@superfestval.com.br"
+              "text": "sac@superfestval.com.br",
+              "href": "mailto:sac@superfestval.com.br"
+            },
+            {
+              "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
             }
           ],
-          "title": "SAC Curitiba"
+          "title": "Atendimento ao cliente : Curitiba"
         },
         {
           "subItems": [
@@ -226,24 +238,11 @@
               "href": "tel:(45) 3225-0017"
             }
           ],
-          "title": "SAC Cascavel"
-        }
-      ],
-      "title": "Fale com o Festval"
-    },
-    {
-      "children": [
-        {
-          "subItems": [],
-          "title": "Atendimento E-commerce"
-        },
-        {
-          "subItems": [],
           "textoBtn": "(41) 99846-0016",
-          "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
+          "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F",
+          "title": "Atendimento ao cliente : Cascavel"
         }
-      ],
-      "title": "Fale com o Festval"
+      ]
     }
   ],
   "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c669ac32-6648-4105-ab40-e54be3799101/Grupo-4177.svg",
