@@ -127,8 +127,8 @@ function Footer({
   const device = useDevice();
 
   return (
-    <footer class="sm:px-0 sm:mt-10" style={{ backgroundColor: "#111", borderTop: "1px solid #707070" }}>
-      <div class="sm:custom-container flex flex-col pt-[30px] sm:pt-12">
+    <footer class="sm:px-0 sm:mt-10 mt-[25px]" style={{ backgroundColor: "#111" }}>
+      <div class="sm:custom-container flex flex-col pt-[45px] sm:pt-12">
         <div class="flex flex-col sm:flex-row md:gap-2 mb-14 justify-between md:px-0 px-[15px]">
           {/* Links Column */}
           {/* <ul class="flex md:flex-row flex-col sm:gap-9 md:px-0 px-[15px]">
@@ -394,14 +394,14 @@ function Footer({
           )}
 
           {device === "mobile" && social && social.socialItens && (
-            <div class="w-full mt-5">
+            <div class="w-fit m-w-[140px] mt-5">
               <h2 class="lg:text-base text-sm text-base-100 font-normal mt-2 mb-2">{social.title}</h2>
-              <ul class="flex gap-4">
+              <ul class="flex gap-4 m-w-[140px]">
                 {social.socialItens.map(({ image, href, alt }) => (
                   <li>
-                    <a href={href} target="_blank" rel="noopener noreferrer">
+                    <a class="w-fit flex" href={href} target="_blank" rel="noopener noreferrer">
                       <Image
-                        class="!w-full !h-full max-h-[30px]"
+                        class="!w-fit !h-full max-h-[30px] max-w-[44px]"
                         src={image}
                         alt={alt}
                         loading="lazy"
