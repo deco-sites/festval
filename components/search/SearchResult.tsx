@@ -51,17 +51,25 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
   return url;
 };
 
-const onLoad = (id: string) => {
+const onLoad = (id: string, record: number) => {
   const container = document.getElementById(id);
   const sentinel = document.getElementById("sentinel");
   const btnFoward = container?.querySelector(".btn-next") as HTMLButtonElement;
+
+  function validateGoNext(): boolean {
+    const productsCards = container?.querySelectorAll(".product-card");
+    if (productsCards!.length >= record) {
+      return false;
+    } else {
+      return true;
+    }
+  }
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          console.log(btnFoward);
-          btnFoward.click();
+          if (validateGoNext()) btnFoward.click();
         }
       });
     },
@@ -124,7 +132,7 @@ function PageResult(props: SectionProps<typeof loader>) {
             product={product}
             preload={index === 0}
             index={offset + index}
-            class="h-full min-w-[160px] max-w-[300px]"
+            class="h-full min-w-[160px] max-w-[300px] product-card"
           />
         ))}
       </div>
@@ -227,8 +235,13 @@ function Result(props: SectionProps<typeof loader>) {
     },
   });
   const results = (
-    <span class="text-sm font-normal">
-      {page.pageInfo.recordPerPage} de {page.pageInfo.records} resultados
+    <span className="text-sm font-normal">
+      {page?.pageInfo?.recordPerPage && page?.pageInfo?.records
+        ? page.pageInfo.recordPerPage >= page.pageInfo.records
+          ? page.pageInfo.records
+          : page.pageInfo.recordPerPage
+        : 0}{" "}
+      de {page?.pageInfo?.records ?? 0} resultados
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
@@ -327,7 +340,13 @@ function Result(props: SectionProps<typeof loader>) {
       </div>
       <script
         type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, container) }}
+        dangerouslySetInnerHTML={{
+          __html: useScript(
+            onLoad,
+            container,
+            pageInfo.records || products.length
+          ),
+        }}
       />
       <script
         type="module"
