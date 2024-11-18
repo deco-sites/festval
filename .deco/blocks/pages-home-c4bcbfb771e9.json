@@ -16,6 +16,14 @@
           "alt": "site"
         },
         {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/49a0f883-78d9-4c65-9ffd-16e7c60b74a2/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1080x1500px.jpg",
+          "alt": "cestasnatal",
+          "action": {
+            "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
+          }
+        },
+        {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/17eb181e-d3a4-4aa0-bc61-f5c4a58aa49f/AF_ABERTO_V01_Campanha_Produtos_Importados_II_Festival_2024_Banner_Home_Festval-com_Desktop_1920x490-px.jpg",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cab9c004-078d-4cc3-b72c-8e2994a098e1/V02_Campanha_Produtos_Importados_II_Festival_2024_Banner_Digital_1080x1500-px.jpg",
           "alt": "importados",
@@ -24,36 +32,12 @@
           }
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a178c0bc-2e74-411b-833b-3e09ce9659f4/biscuit-nestle-1920x490.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/86430243-91a2-467e-846a-ce2a8240f7f4/1080x1500-biscuit.jpg",
-          "alt": "chocobiscuit",
-          "action": {
-            "href": "https://www.festval.com/s?q=Biscoito+com+Chocolate+Chocobiscuit+Nestl%C3%A9+ao+Leite+78g&page=1&utm_source=BannerHome&utm_campaign=ChocobiscuitVisibilidade"
-          }
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/92854464-db0b-4e44-aa05-0426560c54a4/CORONA-CERO-KV-PRPRIO-1920X490.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f41062bf-db6f-4677-88e9-9885118af0d5/CORONA-CERO-KV-PRPRIO-1080X1500.jpg",
-          "action": {
-            "href": "https://www.festval.com/cerveja-cero-sunbrew-zero-alcool-corona-garrafa-330ml/p?skuId=25951&utm_source=BannerHome&utm_campaign=CoronaCeroDesconto10"
-          },
-          "alt": "corona-cero"
-        },
-        {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d1a19ab8-8c31-41ca-9524-d7a602d301bc/NOSSO-KV-1920X490-UNILEVER-PRE.jpg",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5cbaed0e-fef0-42ab-9522-a72a7e7f793b/NOSSO-KV-1080X1500-UNILEVER-PRE.jpg",
-          "alt": "omopreblack",
           "action": {
             "href": "https://www.festval.com/1541?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=OmoLeve3Pague2Pr%C3%A9Bk"
-          }
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/49a0f883-78d9-4c65-9ffd-16e7c60b74a2/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1080x1500px.jpg",
-          "alt": "cestasnatal",
-          "action": {
-            "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
-          }
+          },
+          "alt": "omopreblack"
         }
       ],
       "preload": true,
@@ -227,11 +211,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c4ded8b-e025-4736-b555-ab83da18045f/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a9548b9d-9859-4d07-8f84-8b25c0882280/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7b81da40-b117-42f1-8322-a1051bf8a600/churras.jpg",
-          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1"
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4126bc57-c49c-45af-8c8f-d608bffe2fa8/limpeza-teste-app-4.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7d266bd-6140-4157-b0ac-db5f1cb9d1aa/AXE.jpg",
