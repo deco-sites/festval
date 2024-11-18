@@ -50,6 +50,27 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
   }
   return url;
 };
+
+const onLoad = (id: string) => {
+  const container = document.getElementById(id);
+  const sentinel = document.getElementById("sentinel");
+  const btnFoward = container?.querySelector(".btn-next") as HTMLButtonElement;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log(btnFoward);
+          btnFoward.click();
+        }
+      });
+    },
+    { rootMargin: "100px" }
+  );
+
+  if (sentinel) observer.observe(sentinel);
+};
+
 function PageResult(props: SectionProps<typeof loader>) {
   const { layout, startingPage = 0, url, partial } = props;
   const page = props.page!;
@@ -68,8 +89,9 @@ function PageResult(props: SectionProps<typeof loader>) {
     props: { partial: "hideLess" },
   });
   const infinite = layout?.pagination !== "pagination";
+  const id = useId();
   return (
-    <div class="grid grid-flow-row grid-cols-1 place-items-center ">
+    <div id={id} class="grid grid-flow-row grid-cols-1 place-items-center ">
       <div
         class={clx(
           "pb-2 sm:pb-10",
@@ -113,13 +135,13 @@ function PageResult(props: SectionProps<typeof loader>) {
             <a
               rel="next"
               class={clx(
-                "btn btn-ghost",
+                "btn btn-ghost btn-next",
                 (!nextPageUrl || partial === "hideMore") && "hidden"
               )}
               hx-swap="outerHTML show:parent:top"
               hx-get={partialNext}
             >
-              <span class="inline [.htmx-request_&]:hidden">Ver mais</span>
+              <span class="inline [.htmx-request_&]:hidden"></span>
               <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
             </a>
           </div>
@@ -226,7 +248,10 @@ function Result(props: SectionProps<typeof loader>) {
             )}
             {searchTerm && (
               <div class="text-sm text-[#646072] flex flex-col  lg:hidden">
-                Você buscou por <span class="font-normal capitalize text-[#282828] md:text-lg text-3xl">{searchTerm}</span>
+                Você buscou por{" "}
+                <span class="font-normal capitalize text-[#282828] md:text-lg text-3xl">
+                  {searchTerm}
+                </span>
               </div>
             )}
 
@@ -255,7 +280,10 @@ function Result(props: SectionProps<typeof loader>) {
                 <div class="flex sm:hidden justify-between items-end">
                   <div class="flex flex-col">
                     {results}
-                    <label class="btn btn-ghost p-0 justify-start" for={controls}>
+                    <label
+                      class="btn btn-ghost p-0 justify-start"
+                      for={controls}
+                    >
                       Filtros
                     </label>
                   </div>
@@ -279,7 +307,9 @@ function Result(props: SectionProps<typeof loader>) {
                 {searchTerm && (
                   <div class="text-sm text-[#646072] flex-col hidden lg:flex">
                     Você buscou por
-                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">{searchTerm}</span>
+                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
+                      {searchTerm}
+                    </span>
                   </div>
                 )}
                 {device === "desktop" && (
@@ -289,12 +319,16 @@ function Result(props: SectionProps<typeof loader>) {
                   </div>
                 )}
                 <PageResult {...props} />
+                <div id="sentinel" />
               </div>
             </div>
           </div>
         )}
       </div>
-
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, container) }}
+      />
       <script
         type="module"
         dangerouslySetInnerHTML={{
