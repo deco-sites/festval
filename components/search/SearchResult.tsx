@@ -57,8 +57,8 @@ const onLoad = (id: string, record: number) => {
   const btnFoward = container?.querySelector(".btn-next") as HTMLButtonElement;
 
   function validateGoNext(): boolean {
-    const productsCards = container?.querySelectorAll(".product-card");
-    if (productsCards!.length >= record) {
+    const productsCards = document?.querySelectorAll(".product-card");
+    if (productsCards!.length >= record - 1) {
       return false;
     } else {
       return true;
