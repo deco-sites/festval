@@ -4214,6 +4214,9 @@ details.collapse summary::-webkit-details-marker {
 .min-w-\[4px\] {
   min-width: 4px;
 }
+.\!max-w-\[120px\] {
+  max-width: 120px !important;
+}
 .max-w-6xl {
   max-width: 72rem;
 }

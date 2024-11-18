@@ -601,6 +601,7 @@ function Footer({
               {copyright?.developer && (
                 <a href={copyright.developer.href}>
                   <Image
+                    class="!w-full !max-w-[120px] !h-full"
                     src={copyright.developer.image}
                     alt={copyright.developer.alt ?? "Developer"}
                     loading="lazy"
@@ -625,6 +626,7 @@ function Footer({
               {copyright?.developer && (
                 <a href={copyright.developer.href}>
                   <Image
+                    class="!w-full !max-w-[120px] !h-full"
                     src={copyright.developer.image}
                     alt={copyright.developer.alt ?? "Developer"}
                     loading="lazy"
