@@ -35,7 +35,7 @@
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5de766f0-8aea-4509-a655-0cb0172bec7d/1080X1500-RECKITT.jpg",
           "action": {
-            "href": "https://www.festval.com/1545?map=productClusterIds&page=1"
+            "href": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
           },
           "alt": "reckittpreblack"
         },
@@ -52,7 +52,7 @@
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/85cb57e1-9751-4522-85f1-ae3530a11b0a/KV-PROPRIO-BRAHMA-L12P10.jpg",
           "alt": "brahma",
           "action": {
-            "href": "https://www.festval.com/1546?map=productClusterIds&page=1"
+            "href": "https://www.festval.com/1546?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=brahmal12p10"
           }
         },
         {
@@ -60,7 +60,7 @@
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/929f9b1a-61cb-4efa-b82e-0f23882bff5d/garoto-nestle-1080x1500-kv-proprio.jpg",
           "alt": "garoto",
           "action": {
-            "href": "https://www.festval.com/1547?map=productClusterIds&sort=orders%3Adesc&page=1"
+            "href": "https://www.festval.com/1547?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=GarotoVisibilidade"
           }
         }
       ],
