@@ -29,14 +29,18 @@
           {
             "matcher": [
               "tira manchas",
+              "tira mancha",
+              "lava louças",
               "lava louça",
               "detergente para máquina de lava louças",
-              "Inseticidas"
+              "detergente para máquina de lava louça",
+              "Inseticidas",
+              "inseticida"
             ],
             "images": [
               {
                 "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7d45366c-df58-4c26-91b6-24b9a17c4abf/1080x694-RECKITT.jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bc4f9fa3-ea40-4f8b-988b-1c5a66ca3d47/1080x460-RECKITT.jpg",
                 "href": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black",
                 "alt": "reckitt-search",
                 "hrefMobile": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
