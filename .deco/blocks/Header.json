@@ -89,39 +89,39 @@
                   "image": [],
                   "children": [],
                   "name": "Vinho Tinto",
-                  "url": "/adega/vinho-tinto?sort=orders%3Adesc&page=1"
+                  "url": "/adega/vinho-tinto"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Vinho Branco",
-                  "url": "/adega/vinho-branco?sort=orders%3Adesc&page=1"
+                  "url": "/adega/vinho-branco"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Vinho Rosé",
-                  "url": "/adega/vinho-rose?sort=orders%3Adesc&page=1"
+                  "url": "/adega/vinho-rose"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Espumante",
-                  "url": "/adega/espumante?sort=orders%3Adesc&page=1"
+                  "url": "/adega/espumante"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Champagne",
-                  "url": "/adega/champagne?sort=orders%3Adesc&page=1"
+                  "url": "/adega/champagne"
                 }
               ],
               "name": "Adega",
-              "url": "/adega?sort=orders%3Adesc&page=1"
+              "url": "/adega"
             }
           ],
           "name": "Adega",
-          "url": "/adega?sort=orders%3Adesc&page=1"
+          "url": "/adega"
         },
         {
           "image": [
