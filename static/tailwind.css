@@ -3767,6 +3767,9 @@ details.collapse summary::-webkit-details-marker {
 .m-8 {
   margin: 2rem;
 }
+.m-auto {
+  margin: auto;
+}
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -4163,6 +4166,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[940px\] {
   width: 940px;
+}
+.w-\[950\] {
+  width: 950;
 }
 .w-auto {
   width: auto;
@@ -6595,6 +6601,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:h-\[107px\] {
     height: 107px;
+  }
+
+  .lg\:h-\[490\] {
+    height: 490;
   }
 
   .lg\:max-h-\[600px\] {

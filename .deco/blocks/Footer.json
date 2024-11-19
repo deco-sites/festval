@@ -253,5 +253,9 @@
     "hrefGoogle": "https://play.google.com/store/apps/details?id=com.festval.app",
     "imageMbIOS": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/545ff981-443d-4b8c-851e-2a3567663e68/Grupo-4122.png",
     "hrefIOS": "https://apps.apple.com/br/app/festval-com/id1593063841"
+  },
+  "WhatsApp": {
+    "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F",
+    "title": "Atendimento ao cliente: WhatsApp"
   }
 }
