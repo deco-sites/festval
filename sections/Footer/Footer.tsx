@@ -52,6 +52,10 @@ interface SocialItem {
   href?: string;
   image: ImageWidget;
 }
+interface WhatsAppLinkProps {
+  linkWpp?: string;
+  title?: string;
+}
 
 /** @titleBy title */
 interface Social {
@@ -78,6 +82,7 @@ interface Props {
   security?: Social;
   paymentMethods?: Social;
   policies?: Police;
+  WhatsApp?: WhatsAppLinkProps;
   copyright?: Copyright;
   underEighteen?: ImageWidget;
   underEighteenMobile?: ImageWidget;
@@ -115,6 +120,7 @@ const onClick = () => {
 function Footer({
   links = [],
   infos = [],
+  WhatsApp,
   social,
   security,
   policies,
@@ -228,7 +234,7 @@ function Footer({
                                       ) : (
                                         <span class="lg:text-base text-xs font-normal text-base-100">{text}</span>
                                       )}
-                                      {linkWpp && (
+                                      {/* {linkWpp && (
                                         <div class="flex flex-col items-start mt-2">
                                           <p class="lg:text-base text-sm text-base-100 font-normal">Whatsapp</p>
                                           <a
@@ -275,7 +281,7 @@ function Footer({
                                             </svg>
                                           </a>
                                         </div>
-                                      )}
+                                      )} */}
                                     </li>
                                   ))}
                                 </ul>
@@ -414,6 +420,40 @@ function Footer({
               </ul>
             </div>
           )}
+          {device === "mobile" && WhatsApp && WhatsApp.linkWpp && WhatsApp.title && (
+            <div class="flex flex-col items-start mt-6">
+              <p class="lg:text-base text-sm text-base-100 font-normal mb-1">{WhatsApp.title}</p>
+              <a
+                href={WhatsApp.linkWpp}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex justify-center items-center hover:opacity-90 rounded-md bg-base-100 px-6 py-2 gap-2"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20.004" height="20.073" viewBox="0 0 20.004 20.073">
+                  <g id="wpp" transform="translate(0.5 0.5)">
+                    <path
+                      id="Caminho_2158"
+                      data-name="Caminho 2158"
+                      d="M22.5,13a9.5,9.5,0,0,0-7.949,14.706l-1.224,4.145,4.305-1.193A9.5,9.5,0,1,0,22.5,13Z"
+                      transform="translate(-13 -13)"
+                      fill="#fff"
+                      stroke="#25d366"
+                      stroke-width="1"
+                    />
+                    <path
+                      id="Caminho_2159"
+                      data-name="Caminho 2159"
+                      d="M132.907,142.094a.345.345,0,0,0-.2-.285l-2.3-1.056a.216.216,0,0,0-.254.055l-1.04,1.173a.285.285,0,0,1-.325.078,7.386,7.386,0,0,1-2-1.232,7.462,7.462,0,0,1-1.685-2.092,1.822,1.822,0,0,0,.716-.935.014.014,0,0,1,0-.008,1.585,1.585,0,0,0-.035-1.032,11.019,11.019,0,0,0-.782-1.783c-.027-.027-.059-.055-.059-.055a.69.69,0,0,0-.43-.172c-.055,0-.113,0-.176,0a3.272,3.272,0,0,0-.457.012,1.18,1.18,0,0,0-.727.457,3.093,3.093,0,0,0-.547.993c-.012.039-.023.074-.035.113a2.8,2.8,0,0,0,.063,1.7,9.236,9.236,0,0,0,.837,1.767,9.781,9.781,0,0,0,1.889,2.229,9.024,9.024,0,0,0,2.334,1.666,8.1,8.1,0,0,0,2.538.739,2.8,2.8,0,0,0,1.24-.172,2.618,2.618,0,0,0,.61-.328,1.965,1.965,0,0,0,.817-1.3v-.012A2.341,2.341,0,0,0,132.907,142.094Z"
+                      transform="translate(-118.185 -129.984)"
+                      fill="#25d366"
+                    />
+                  </g>
+                </svg>
+                <p className="font-medium text-base text-black">Clique Aqui</p>
+              </a>
+            </div>
+          )}
+
           {highlightedImage && (
             <>
               <div class="lg:flex hidden">
