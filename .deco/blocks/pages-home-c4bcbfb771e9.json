@@ -270,14 +270,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "172",
+          "collection": "1542",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "/172?map=productClusterIds",
-      "title": "Unilever"
+      "cta": "/1542?map=productClusterIds",
+      "title": "Reckitt"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
