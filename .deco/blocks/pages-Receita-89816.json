@@ -1,0 +1,54 @@
+{
+  "name": "Receita",
+  "path": "/receita",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/recipe/recipe.tsx",
+        "UrlVideo": "https://www.youtube.com/embed/k5aj3QYgxzk?si=FY1ig3j6TCNbAnLd",
+        "receita": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/200ead95-a276-469c-9303-97b77be13992/1920x130.png",
+        "ImgDestaque": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58fcf197-8e20-4087-9441-86111334fbec/950x490.png",
+        "videoUrl": "https://www.youtube.com/embed/k5aj3QYgxzk?si=MML2SNUgKtTsm0Mo&autoplay=1&loop=1&mute=1&controls=1&color=white",
+        "recipeImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/200ead95-a276-469c-9303-97b77be13992/1920x130.png",
+        "headerImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58fcf197-8e20-4087-9441-86111334fbec/950x490.png",
+        "headerImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7a2d222d-92dc-438f-9f15-7807b01d4a57/1080x130.png",
+        "recipeImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97fdf60f-71f4-44e9-8f51-4f7c149f3d09/1080x500.png"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 12,
+          "sort": "name:desc",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "value": "1486",
+              "key": "productClusterIds"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

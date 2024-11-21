@@ -1,6 +1,4 @@
-import SearchResult, {
-  Props as SearchResultProps,
-} from "../search/SearchResult.tsx";
+import SearchResult, { Props as SearchResultProps } from "../search/SearchResult.tsx";
 import { type SectionProps } from "@deco/deco";
 export type Props = SearchResultProps;
 function WishlistGallery(props: SectionProps<typeof loader>) {
@@ -9,11 +7,8 @@ function WishlistGallery(props: SectionProps<typeof loader>) {
     return (
       <div class="container mx-4 sm:mx-auto">
         <div class="mx-10 my-20 flex flex-col gap-4 justify-center items-center">
-          <span class="font-medium text-2xl">Your wishlist is empty</span>
-          <span>
-            Log in and add items to your wishlist for later. They will show up
-            here
-          </span>
+          <span class="font-medium text-2xl">Sua lista de favoritos está vazia</span>
+          <span>Faça login e adicione itens à sua lista de favoritos para mais tarde. Eles vão aparecer aqui</span>
         </div>
       </div>
     );

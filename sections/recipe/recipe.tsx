@@ -1,62 +1,51 @@
-import { useEffect } from "preact/hooks";
-import Image from "apps/website/components/Image.tsx";
-import Section from "../../components/ui/Section.tsx";
-import { ImageWidget } from "apps/admin/widgets.ts";
+import { type ImageWidget } from "apps/admin/widgets.ts";
 
-export interface VideoProps {
-  UrlVideo: string;
-  receita: ImageWidget;
-  ImgDestaque: ImageWidget;
+import Iframe from "../../components/ui/iframe.tsx";
+import Image from "apps/website/components/Image.tsx";
+
+interface RecipeDisplayProps {
+  headerImage: ImageWidget;
+  headerImageMb?: ImageWidget;
+  videoUrl: string;
+  recipeImage: ImageWidget;
+  recipeImageMb?: ImageWidget;
 }
 
-const Receita = ({ UrlVideo, receita, ImgDestaque }: VideoProps) => {
-  const videoSrc = `${UrlVideo}`;
-
-  useEffect(() => {
-    // Add a comment explaining the purpose of this useEffect.
-    const lazyIframes = document.querySelectorAll(".lazy-iframe");
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const iframe = entry.target as HTMLIFrameElement;
-            const src = iframe.getAttribute("data-src") ?? "";
-            iframe.setAttribute("src", src);
-            iframe.style.opacity = "1";
-            console.log(iframe);
-            observer.unobserve(iframe);
-          }
-        });
-      },
-      { rootMargin: "0px 0px 100px 0px" } // Adjust the rootMargin as needed
-    );
-
-    lazyIframes.forEach((lazyIframe) => {
-      observer.observe(lazyIframe);
-    });
-  }, []);
-
+export default function Component({ headerImage, recipeImageMb, videoUrl, headerImageMb, recipeImage }: RecipeDisplayProps) {
   return (
-    <div class="custom-container">
-      <div className="flex">
-        <Image width={1920} height={130} src={ImgDestaque} alt="Intro image" class="h-auto" />
-        <div class="video-container flex w-[950] lg:h-[490] m-auto relative">
-          <div class="video-overlay"></div>
-          <iframe
-            class="lazy-iframe w-full h-full"
-            data-src={videoSrc}
-            title="YouTube video"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+    <div className="custom-container w-full  mx-auto md:space-y-3 space-y-2 ">
+      {/* Header Banner */}
+      <div className="relative w-full md:flex hidden">
+        <Image src={headerImage} alt="imagem" width={1920} height={130} className="object-contain rounded-none" />
+      </div>
+      <div className="relative w-full md:hidden flex">
+        <Image src={headerImageMb || ""} alt="imagem" width={1080} height={130} className="object-contain rounded-none" />
+      </div>
+
+      {/* Main Content */}
+      <div className="grid md:grid-cols-2 md:gap-3 gap-2">
+        <Iframe videoId={videoUrl} />
+
+        {/* Recipe Image */}
+        <div className="relative md:flex hidden">
+          <Image
+            src={recipeImage}
+            alt="Recipe details"
+            width={950}
+            height={490}
+            className="object-contain rounded-none !h-full !w-full"
+          />
         </div>
-        <div className="image">
-          <Image width={950} height={490} src={receita} alt="Intro image" class="h-auto" />
+        <div className="relative md:hidden flex">
+          <Image
+            src={recipeImageMb || ""}
+            alt="Recipe details"
+            width={1080}
+            height={500}
+            className="object-contain rounded-none !w-full"
+          />
         </div>
       </div>
     </div>
   );
-};
-
-export default Receita;
+}
