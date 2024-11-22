@@ -20,12 +20,14 @@ export const cartFrom = async (
   const currency = form?.storePreferencesData.currencyCode ?? "BRL";
   const coupon = form?.marketingData?.coupon ?? undefined;
 
+  let minicart: Minicart;
+
   if (ctx) {
     const ids = items.map((item) => item.id);
     if (ids.length > 0) {
       const products: Product[] | null = await cartMiddleware2(ids, ctx);
 
-      return {
+      minicart = {
         platformCart: form as unknown as Record<string, unknown>,
         storefront: {
           items: items.map((item, index) => {
@@ -115,7 +117,7 @@ export const cartFrom = async (
     }
   }
 
-  return {
+  minicart = {
     platformCart: form as unknown as Record<string, unknown>,
     storefront: {
       items: items.map((item, index) => {
@@ -158,6 +160,7 @@ export const cartFrom = async (
         }
 
         if (products) {
+          //console.log(products[index].offers);
           const correctListPrice = Number(
             products[index].offers?.offers[0].priceSpecification[0].price
               .toFixed(2)
@@ -201,6 +204,42 @@ export const cartFrom = async (
       checkoutHref: "/checkout",
     },
   };
+
+  let correctTotal: number = 0;
+
+  minicart.storefront.items.forEach((item) => {
+    const itemPrice = Math.round((item.price || 0) * 100); // Multiplica e garante que seja um número inteiro
+    correctTotal += itemPrice;
+  });
+
+  if (
+    Array.isArray(minicart.platformCart.totalizers) &&
+    typeof minicart.platformCart.totalizers[0]?.value === "number"
+  ) {
+    minicart.platformCart.totalizers[0].value = correctTotal - discounts;
+  } else {
+    console.error("Totalizers não está no formato esperado.");
+  }
+
+  if (Array.isArray(minicart.platformCart.items)) {
+    minicart.platformCart.items.map((item, index) => {
+      item.priceDefinition.calculatedSellingPrice = Math.round(
+        (minicart.storefront.items[index].price || 0) * 100
+      );
+      item.priceDefinition.total = Math.round(
+        (minicart.storefront.items[index].price || 0) * 100
+      );
+      item.priceDefinition.sellingPrices[0].value = Math.round(
+        (minicart.storefront.items[index].price || 0) * 100
+      );
+      return item;
+    });
+  }
+
+  minicart.storefront.total = (correctTotal - discounts) / 100;
+  minicart.storefront.subtotal = correctTotal / 100;
+
+  return minicart;
 };
 
 export const cartMiddleware = async (

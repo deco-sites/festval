@@ -70,20 +70,27 @@ export const action = async (_props: unknown, req: Request, ctx: AppContext) =>
   req.method === "PATCH"
     ? { cart: await ctx.invoke("site/loaders/minicart.ts") } // error fallback
     : { cart: await ctx.invoke("site/actions/minicart/submit.ts") };
-// export function ErrorFallback() {
-//   return (
-//     <div class="flex flex-col flex-grow justify-center items-center overflow-hidden w-full gap-2">
-//       <div class="flex flex-col gap-1 p-6 justify-center items-center">
-//         <span class="font-semibold">Erro ao atualizar carrinho</span>
-//         <span class="text-sm text-center">Clique no botão abaixo para tentar novamente ou atualizar a página</span>
-//       </div>
+export function ErrorFallback() {
+  return (
+    <div class="flex flex-col flex-grow justify-center items-center overflow-hidden w-full gap-2">
+      <div class="flex flex-col gap-1 p-6 justify-center items-center">
+        <span class="font-semibold">Erro ao atualizar carrinho</span>
+        <span class="text-sm text-center">
+          Clique no botão abaixo para tentar novamente ou atualizar a página
+        </span>
+      </div>
 
-//       <button class="btn btn-primary" hx-patch={useComponent(import.meta.url)} hx-swap="outerHTML" hx-target="closest div">
-//         Tentar novamente
-//       </button>
-//     </div>
-//   );
-// }
+      <button
+        class="btn btn-primary"
+        hx-patch={useComponent(import.meta.url)}
+        hx-swap="outerHTML"
+        hx-target="closest div"
+      >
+        Tentar novamente
+      </button>
+    </div>
+  );
+}
 export default function Cart({
   cart: {
     platformCart,
