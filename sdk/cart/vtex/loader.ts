@@ -210,7 +210,7 @@ export const cartFrom = async (
 
   minicart.storefront.items.forEach((item) => {
     const itemPrice = Math.round((item.price || 0) * 100); // Multiplica e garante que seja um número inteiro
-    correctTotal += itemPrice;
+    correctTotal += itemPrice * item.quantity;
   });
 
   if (
