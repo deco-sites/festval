@@ -235,18 +235,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1ed8b4d9-3cab-4edd-99ce-d6ea07937da9/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b27fe71a-592f-486f-b7dc-e6efbdfb7ff7/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ed702168-0da5-493d-9587-2656737fac9a/horti-teste-app-4.jpg",
-          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1"
-        },
-        {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7d266bd-6140-4157-b0ac-db5f1cb9d1aa/AXE.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c289b79c-f0d7-4c90-9d09-4684a54090d7/BANNER-DE-OFERTAS-M-AXE.jpg",
-          "alt": "OFERTA-1",
-          "href": "/s?q=axe+152ml&page=1",
-          "hrefMobile": "/s?q=axe+152ml&page=1"
+          "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5b07d388-060d-4b2f-b7fd-22c53d76eb94/churras.jpg",
+          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b55fd379-650b-4b4f-aded-db0a972cb789/GUARANA.jpg",
@@ -254,6 +247,13 @@
           "alt": "OFERTA-2",
           "href": "https://www.festval.com/s?q=GUARANA+ANTARCTICA+350ML&page=1",
           "hrefMobile": "https://www.festval.com/s?q=GUARANA+ANTARCTICA+350ML&page=1"
+        },
+        {
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7d266bd-6140-4157-b0ac-db5f1cb9d1aa/AXE.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c289b79c-f0d7-4c90-9d09-4684a54090d7/BANNER-DE-OFERTAS-M-AXE.jpg",
+          "alt": "OFERTA-1",
+          "href": "/s?q=axe+152ml&page=1",
+          "hrefMobile": "/s?q=axe+152ml&page=1"
         }
       ]
     },
