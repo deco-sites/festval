@@ -21,7 +21,6 @@ export const cartFrom = async (
   const coupon = form?.marketingData?.coupon ?? undefined;
 
   if (ctx) {
-    console.log("entra aqui");
     const ids = items.map((item) => item.id);
     if (ids.length > 0) {
       const products: Product[] | null = await cartMiddleware2(ids, ctx);
