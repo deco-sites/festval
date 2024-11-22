@@ -3,6 +3,7 @@ import type a from "apps/vtex/loaders/cart.ts";
 import { AppContext } from "apps/vtex/mod.ts";
 import { Minicart } from "../../../components/minicart/Minicart.tsx";
 import type { Product } from "apps/commerce/types.ts";
+import { getCookies } from "std/http/cookie.ts";
 
 export type Cart = Awaited<ReturnType<typeof a>>;
 
@@ -269,6 +270,50 @@ export const cartMiddleware2 = async (
   return responseProductList;
 };
 
+const setPostalCode = async (req: Request, platformCart: any) => {
+  const cookies = getCookies(req.headers);
+  const postalCode = cookies["vtex_last_session_cep"];
+  console.log(postalCode);
+
+  try {
+    const url = `https://meufestval.vtexcommercestable.com.br/api/checkout/pub/orderForm/${platformCart.orderFormId}/attachments/shippingData`;
+
+    // Configurar o payload com o CEP
+    const payload = {
+      address: {
+        postalCode: postalCode,
+        country: "BRA",
+        city: null,
+        state: null,
+      },
+    };
+
+    // Fazer a requisição
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    // Checar o status da resposta
+    if (!response.ok) {
+      throw new Error(
+        `Failed to set postal code: ${response.status} ${response.statusText}`
+      );
+    }
+
+    // Processar a resposta se necessário
+    const data = await response.json();
+
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
+
 async function loader(
   _props: unknown,
   req: Request,
@@ -277,6 +322,8 @@ async function loader(
   const response = await ctx.invoke("vtex/loaders/cart.ts");
 
   const products: Product[] | null = await cartMiddleware(response, ctx);
+
+  setPostalCode(req, response);
 
   return cartFrom(response, req.url, undefined, products ?? undefined);
 }
