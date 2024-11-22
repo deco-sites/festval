@@ -125,6 +125,13 @@ export const cartFrom = async (
           };
         }
 
+        // console.log(item);
+        // console.log({
+        //   ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+        //   image: item.imageUrl,
+        //   listPrice: item.listPrice / 100,
+        // });
+
         return {
           ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
           image: item.imageUrl,
