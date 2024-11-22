@@ -51,14 +51,18 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
   return url;
 };
 
-const onLoad = (id: string, record: number) => {
+const onLoad = (id: string, record: number, page: ProductListingPage) => {
   const container = document.getElementById(id);
   const sentinel = document.getElementById("sentinel");
   const btnFoward = container?.querySelector(".btn-next") as HTMLButtonElement;
 
   function validateGoNext(): boolean {
-    const productsCards = document?.querySelectorAll(".product-card");
-    if (productsCards!.length >= record - 1) {
+    //const productsCards = document?.querySelectorAll(".product-card");
+    if (
+      page.pageInfo.currentPage * (page.pageInfo.recordPerPage ?? 12) >=
+        record - 1 ||
+      page.pageInfo.currentPage === 50
+    ) {
       return false;
     } else {
       return true;
@@ -344,7 +348,8 @@ function Result(props: SectionProps<typeof loader>) {
           __html: useScript(
             onLoad,
             container,
-            pageInfo.records || products.length
+            pageInfo.records || products.length,
+            page
           ),
         }}
       />
