@@ -123,6 +123,8 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     ".price-quantity-elements"
   );
 
+  console.log(productData);
+
   if (productData && productData.MeasurementUnit == "kg") {
     const listPrice = product.offers?.offers[0].priceSpecification[0].price;
     const price = product.offers?.offers[0].priceSpecification[1].price;
@@ -166,6 +168,7 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     } else {
       const listPrice = product.offers?.offers[0].priceSpecification[0].price;
       const price = product.offers?.offers[0].priceSpecification[1].price;
+
       if (price && listPrice) {
         const priceFormatted = new Intl.NumberFormat("pt-BR", {
           style: "currency",
@@ -175,6 +178,8 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           style: "currency",
           currency: "BRL",
         }).format(listPrice);
+
+        console.log("caiu aqui", currentPriceElement, listPriceElement);
 
         if (currentPriceElement && listPriceElement) {
           if (price < listPrice) {
@@ -192,6 +197,12 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
             currentPriceElement.innerHTML = `${priceFormatted}`;
             currentPriceElement.classList.remove("hidden");
           }
+        } else {
+          loadingElement?.classList.add("hidden");
+          discountElement?.classList.add("hidden");
+          listPriceElement?.classList.add("hidden");
+          currentPriceElement!.innerHTML = `${priceFormatted}`;
+          currentPriceElement?.classList.remove("hidden");
         }
       }
     }
