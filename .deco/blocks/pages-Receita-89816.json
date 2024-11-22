@@ -15,11 +15,11 @@
         "UrlVideo": "https://www.youtube.com/embed/k5aj3QYgxzk?si=FY1ig3j6TCNbAnLd",
         "receita": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/200ead95-a276-469c-9303-97b77be13992/1920x130.png",
         "ImgDestaque": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58fcf197-8e20-4087-9441-86111334fbec/950x490.png",
-        "videoUrl": "https://www.youtube.com/embed/k5aj3QYgxzk?si=MML2SNUgKtTsm0Mo&autoplay=1&loop=1&mute=1&controls=1&color=white",
-        "recipeImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/200ead95-a276-469c-9303-97b77be13992/1920x130.png",
-        "headerImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58fcf197-8e20-4087-9441-86111334fbec/950x490.png",
-        "headerImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7a2d222d-92dc-438f-9f15-7807b01d4a57/1080x130.png",
-        "recipeImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97fdf60f-71f4-44e9-8f51-4f7c149f3d09/1080x500.png"
+        "videoUrl": "https://www.youtube.com/embed/lTAvWI0RNFs?si=30WQCY5KoWmEqbBN\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin",
+        "recipeImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bd9f6c06-29de-49c6-a95f-36686a8a1942/MAMINHA.jpg",
+        "headerImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b2f38f6-6379-4b8c-a0d5-d072f606ed50/banner-menu-festval-2.jpg",
+        "headerImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2f744759-3062-4686-802c-81f7cb694df2/banner-menu-festval-1.jpg",
+        "recipeImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/dc38a877-c924-4b51-8e1d-14939733177f/MAMINHA-MBL.jpg"
       }
     },
     {
@@ -29,11 +29,11 @@
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "count": 12,
-          "sort": "name:desc",
+          "sort": "",
           "fuzzy": "automatic",
           "selectedFacets": [
             {
-              "value": "1486",
+              "value": "1543",
               "key": "productClusterIds"
             }
           ]
