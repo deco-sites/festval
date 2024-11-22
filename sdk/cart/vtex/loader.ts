@@ -21,6 +21,7 @@ export const cartFrom = async (
   const coupon = form?.marketingData?.coupon ?? undefined;
 
   if (ctx) {
+    console.log("entra aqui");
     const ids = items.map((item) => item.id);
     if (ids.length > 0) {
       const products: Product[] | null = await cartMiddleware2(ids, ctx);
@@ -48,7 +49,9 @@ export const cartFrom = async (
                     .trim()
                 );
 
+                item.price = correctPrice;
                 item.sellingPrice = correctPrice;
+                item.listPrice = correctListPrice;
 
                 return {
                   ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
@@ -61,6 +64,34 @@ export const cartFrom = async (
                 ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
                 image: item.imageUrl,
                 listPrice: item.listPrice / 100,
+                measurementUnit: item.measurementUnit,
+              };
+            }
+
+            if (products) {
+              const correctListPrice = Number(
+                products[index].offers?.offers[0].priceSpecification[0].price
+                  .toFixed(2)
+                  .toString()
+                  .replace(".", "")
+                  .trim()
+              );
+              const correctPrice = Number(
+                products[index].offers?.offers[0].priceSpecification[1].price
+                  .toFixed(2)
+                  .toString()
+                  .replace(".", "")
+                  .trim()
+              );
+
+              item.price = correctPrice;
+              item.sellingPrice = correctPrice;
+              item.listPrice = correctListPrice;
+
+              return {
+                ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+                image: item.imageUrl,
+                listPrice: correctListPrice / 100,
                 measurementUnit: item.measurementUnit,
               };
             }
@@ -108,7 +139,9 @@ export const cartFrom = async (
                 .trim()
             );
 
+            item.price = correctPrice;
             item.sellingPrice = correctPrice;
+            item.listPrice = correctListPrice;
 
             return {
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
@@ -125,12 +158,32 @@ export const cartFrom = async (
           };
         }
 
-        // console.log(item);
-        // console.log({
-        //   ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-        //   image: item.imageUrl,
-        //   listPrice: item.listPrice / 100,
-        // });
+        if (products) {
+          const correctListPrice = Number(
+            products[index].offers?.offers[0].priceSpecification[0].price
+              .toFixed(2)
+              .toString()
+              .replace(".", "")
+              .trim()
+          );
+          const correctPrice = Number(
+            products[index].offers?.offers[0].priceSpecification[1].price
+              .toFixed(2)
+              .toString()
+              .replace(".", "")
+              .trim()
+          );
+
+          item.price = correctPrice;
+          item.sellingPrice = correctPrice;
+          item.listPrice = correctListPrice;
+
+          return {
+            ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+            image: item.imageUrl,
+            listPrice: correctListPrice / 100,
+          };
+        }
 
         return {
           ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
