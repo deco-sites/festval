@@ -1,0 +1,78 @@
+{
+  "name": "teste",
+  "path": "/teste",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Carousel.tsx",
+        "images": [
+          {
+            "alt": "banner",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5de766f0-8aea-4509-a655-0cb0172bec7d/1080X1500-RECKITT.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "site/sections/Category/categoryGridLp.tsx",
+      "items": [
+        {
+          "href": "/",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/53c90c72-6f58-4f07-bc41-beb585ab3afb/Retangulo-2129.png"
+        },
+        {
+          "href": "/",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/53c90c72-6f58-4f07-bc41-beb585ab3afb/Retangulo-2129.png"
+        },
+        {
+          "href": "/",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/53c90c72-6f58-4f07-bc41-beb585ab3afb/Retangulo-2129.png"
+        },
+        {
+          "href": "/",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/53c90c72-6f58-4f07-bc41-beb585ab3afb/Retangulo-2129.png"
+        },
+        {
+          "href": "/",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/53c90c72-6f58-4f07-bc41-beb585ab3afb/Retangulo-2129.png"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "title": "teste",
+        "cta": "/",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1486",
+            "count": 12
+          }
+        },
+        "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/93eb98f3-88f2-431c-be8d-a45b60b15a4b/Vector-(1).png",
+        "bannerMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bc4f9fa3-ea40-4f8b-988b-1c5a66ca3d47/1080x460-RECKITT.jpg"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
