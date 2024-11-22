@@ -1705,7 +1705,7 @@
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/142?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "url": "/178?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Mais vendidos",
       "children": []
     },
