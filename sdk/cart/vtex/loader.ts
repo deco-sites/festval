@@ -55,10 +55,12 @@ export const cartFrom = async (
                 item.sellingPrice = correctPrice;
                 item.listPrice = correctListPrice;
 
+                item.unitMultiplier;
                 return {
                   ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
                   image: item.imageUrl,
                   listPrice: correctListPrice / 100,
+                  unitMultiplier: item.unitMultiplier,
                   measurementUnit: item.measurementUnit,
                 };
               }
@@ -66,6 +68,7 @@ export const cartFrom = async (
                 ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
                 image: item.imageUrl,
                 listPrice: item.listPrice / 100,
+                unitMultiplier: item.unitMultiplier,
                 measurementUnit: item.measurementUnit,
               };
             }
@@ -94,6 +97,7 @@ export const cartFrom = async (
                 ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
                 image: item.imageUrl,
                 listPrice: correctListPrice / 100,
+                unitMultiplier: item.unitMultiplier,
                 measurementUnit: item.measurementUnit,
               };
             }
@@ -101,6 +105,7 @@ export const cartFrom = async (
             return {
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
               image: item.imageUrl,
+              unitMultiplier: item.unitMultiplier,
               listPrice: item.listPrice / 100,
             };
           }),
@@ -149,6 +154,7 @@ export const cartFrom = async (
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
               image: item.imageUrl,
               listPrice: correctListPrice / 100,
+              unitMultiplier: item.unitMultiplier,
               measurementUnit: item.measurementUnit,
             };
           }
@@ -156,6 +162,7 @@ export const cartFrom = async (
             ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
             image: item.imageUrl,
             listPrice: item.listPrice / 100,
+            unitMultiplier: item.unitMultiplier,
             measurementUnit: item.measurementUnit,
           };
         }
@@ -209,8 +216,14 @@ export const cartFrom = async (
   let correctTotal: number = 0;
 
   minicart.storefront.items.forEach((item) => {
-    const itemPrice = Math.round((item.price || 0) * 100); // Multiplica e garante que seja um número inteiro
-    correctTotal += itemPrice * item.quantity;
+    console.log(item);
+    const itemPrice = Math.round((item.price || 0) * 100);
+    if (item.measurementUnit === "kg") {
+      correctTotal += itemPrice * item.unitMultiplier * item.quantity;
+      console.log("total", Math.floor(correctTotal));
+    } else {
+      correctTotal += itemPrice * item.quantity;
+    }
   });
 
   if (
@@ -237,8 +250,11 @@ export const cartFrom = async (
     });
   }
 
-  minicart.storefront.total = (correctTotal - discounts) / 100;
-  minicart.storefront.subtotal = correctTotal / 100;
+  console.log(Math.floor((correctTotal - discounts) * 100) / 100);
+
+  minicart.storefront.total = Math.floor(correctTotal - discounts) / 100;
+  console.log("minicart.total", minicart.storefront.total);
+  minicart.storefront.subtotal = Math.floor(correctTotal) / 100;
 
   return minicart;
 };

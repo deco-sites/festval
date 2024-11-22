@@ -10,6 +10,7 @@ import QuantitySelectorKgCart from "../ui/QuantitySelectorKgCart.tsx";
 export type Item = AnalyticsItem & {
   listPrice: number;
   image: string;
+  unitMultiplier: number;
   measurementUnit: string;
 };
 export interface Props {
