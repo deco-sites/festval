@@ -24,52 +24,20 @@
           }
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/17eb181e-d3a4-4aa0-bc61-f5c4a58aa49f/AF_ABERTO_V01_Campanha_Produtos_Importados_II_Festival_2024_Banner_Home_Festval-com_Desktop_1920x490-px.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cab9c004-078d-4cc3-b72c-8e2994a098e1/V02_Campanha_Produtos_Importados_II_Festival_2024_Banner_Digital_1080x1500-px.jpg",
-          "alt": "importados",
-          "action": {
-            "href": "https://www.festval.com/1544?map=productClusterIds&sort=discount%3Adesc&page=1"
-          }
-        },
-        {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5de766f0-8aea-4509-a655-0cb0172bec7d/1080X1500-RECKITT.jpg",
+          "alt": "reckittpreblack",
           "action": {
             "href": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
-          },
-          "alt": "reckittpreblack"
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d1a19ab8-8c31-41ca-9524-d7a602d301bc/NOSSO-KV-1920X490-UNILEVER-PRE.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5cbaed0e-fef0-42ab-9522-a72a7e7f793b/NOSSO-KV-1080X1500-UNILEVER-PRE.jpg",
-          "action": {
-            "href": "https://www.festval.com/1541?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=OmoLeve3Pague2Pr%C3%A9Bk"
-          },
-          "alt": "omopreblack"
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/85632380-d723-43d4-b302-d3268dd542c6/1920X490-BRAHMA.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/85cb57e1-9751-4522-85f1-ae3530a11b0a/KV-PROPRIO-BRAHMA-L12P10.jpg",
-          "alt": "brahma",
-          "action": {
-            "href": "https://www.festval.com/1546?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=brahmal12p10"
-          }
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/042eef2b-c1d0-4dc1-951d-9a6116ccba9a/garoto-nestle-1920x490-kv-proprio.jpg",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/929f9b1a-61cb-4efa-b82e-0f23882bff5d/garoto-nestle-1080x1500-kv-proprio.jpg",
-          "alt": "garoto",
-          "action": {
-            "href": "https://www.festval.com/1547?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=GarotoVisibilidade"
           }
         },
         {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/09fcf3b3-5bfd-446f-8c39-0bd9e3e2605d/1920x490-(1).png",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9053d5ca-55d6-4a54-9a2a-ef4c3c221733/1080X1500.png",
-          "alt": "MAMINHA1953",
           "action": {
             "href": "https://www.festval.com/receita?page=1&utm_source=BannerHome&utm_campaign=Maminhaassada1953"
-          }
+          },
+          "alt": "MAMINHA1953"
         }
       ],
       "preload": true,
@@ -243,11 +211,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b27fe71a-592f-486f-b7dc-e6efbdfb7ff7/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5de36422-038e-44af-a81e-9a026c2e9ec8/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5b07d388-060d-4b2f-b7fd-22c53d76eb94/churras.jpg",
-          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1"
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0739f5f8-96a1-4eaf-a828-b1fbea2075bb/limpeza-teste-app-4.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b55fd379-650b-4b4f-aded-db0a972cb789/GUARANA.jpg",
