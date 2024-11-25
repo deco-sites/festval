@@ -161,9 +161,10 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "1072",
           "count": 12,
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "similars": true,
+          "collection": "1397"
         }
       },
       "cta": "/1397?map=productClusterIds&sort=discount%3Adesc&page=1",
