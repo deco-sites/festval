@@ -32,12 +32,36 @@
           }
         },
         {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e8be92e4-bcba-4cc5-bfb1-e8926fd3164b/MOCA_1920X490.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1a4c82c3-2196-47c2-a0d8-abb49d0f9466/MOCA_1080X1500.jpg",
+          "action": {
+            "href": "https://www.festval.com/1548?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=Mo%C3%A7aVisibilidade"
+          },
+          "alt": "moça"
+        },
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1d7867cb-8f82-486d-9ab7-7f1c0d86491e/50especiais_1920x490.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f9874d81-dfc8-4967-992a-3c8363d0cb3d/50especiais_1080x1500.jpg",
+          "alt": "Cervejas_especiais",
+          "action": {
+            "href": "https://www.festval.com/1549?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=CervejasEspeciais"
+          }
+        },
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cf0defaa-0c3a-466b-993e-8482c41d5cd0/prebk_desodorantes_1920x490.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3d4d3669-89b5-49e6-9bb6-2262a53f9410/prebk_desodorantes_1080x1500.jpg",
+          "alt": "desodorantes",
+          "action": {
+            "href": "https://www.festval.com/s?q=desodorantes&filter.brand=rexona&filter.brand=axe&filter.brand=dove&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=desodorantesunilever"
+          }
+        },
+        {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/09fcf3b3-5bfd-446f-8c39-0bd9e3e2605d/1920x490-(1).png",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9053d5ca-55d6-4a54-9a2a-ef4c3c221733/1080X1500.png",
+          "alt": "MAMINHA1953",
           "action": {
             "href": "https://www.festval.com/receita?page=1&utm_source=BannerHome&utm_campaign=Maminhaassada1953"
-          },
-          "alt": "MAMINHA1953"
+          }
         }
       ],
       "preload": true,
