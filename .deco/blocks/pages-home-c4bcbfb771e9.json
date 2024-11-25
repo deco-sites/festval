@@ -246,13 +246,13 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "discount:desc",
-          "collection": "1542",
+          "collection": "1545",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "/1542?map=productClusterIds",
+      "cta": "/1545?map=productClusterIds",
       "title": "Reckitt"
     },
     {
