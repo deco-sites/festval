@@ -56,6 +56,14 @@
           }
         },
         {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/feaca14f-5fc6-4ef7-bbc9-09d2af113f69/AF_24-1096_BANNERWEB_PREBLACKFRIDAY_LINDT_FESTVAL_1920x490px.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e89b0850-549b-4986-bb56-8ba636bf4ef7/AF_24-1096_BANNERWEB_PREBLACKFRIDAY_LINDT_FESTVAL_1080x1500px.jpg",
+          "alt": "GOLDBAR",
+          "action": {
+            "href": "https://www.festval.com/chocolate-lindt-gold-bar-tablete-ao-leite-com-avelas-300g/p?skuId=3808&utm_source=BannerHome&utm_campaign=PREBLACKLINDT"
+          }
+        },
+        {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/09fcf3b3-5bfd-446f-8c39-0bd9e3e2605d/1920x490-(1).png",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9053d5ca-55d6-4a54-9a2a-ef4c3c221733/1080X1500.png",
           "alt": "MAMINHA1953",

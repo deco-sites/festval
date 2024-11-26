@@ -1,0 +1,56 @@
+{
+  "name": "Leve-Pague-bk",
+  "path": "/leve-pague-bk",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/categoryGridLp.tsx",
+        "items": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f4333401-7624-4c43-ab14-7954153cc168/V02_Festval.com_BlackFriday_Banner-50_528x465px.jpg",
+            "href": "festval.com"
+          },
+          {
+            "href": "festval.com",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f4333401-7624-4c43-ab14-7954153cc168/V02_Festval.com_BlackFriday_Banner-50_528x465px.jpg"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 12,
+          "sort": "",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "value": "1556",
+              "key": "productClusterIds"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
