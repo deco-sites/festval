@@ -36,6 +36,15 @@
 		</g>
 	</symbol>
 
+
+	<sumbol id="filtrar" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+		<g id="Filtro" transform="translate(-14 -231)"> 
+			<rect id="Retângulo_2082" data-name="Retângulo 2082" width="25" height="25" transform="translate(14 231)" fill="none"/>
+			<path id="XMLID_6_" d="M3.164,7.122l6.654,7.741V21l4.091-2.727V14.864l6.654-7.741A.681.681,0,0,0,20.036,6H3.691A.681.681,0,0,0,3.164,7.122Z" transform="translate(14.5 230.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.3"/>
+		</g>
+	</sumbol>
+
+
 	
 	
 

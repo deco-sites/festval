@@ -1,7 +1,8 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
-import Filters from "../../components/search/Filters.tsx";
+import Filters from "./Filters.tsx";
+import FiltersMb from "../../islands/FiltersMb.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
@@ -12,6 +13,7 @@ import Drawer from "../ui/MenuMobileDrawer.tsx";
 import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
+import Image from "apps/website/components/Image.tsx";
 export interface Layout {
   /**
    * @title Pagination
@@ -104,32 +106,14 @@ function PageResult(props: SectionProps<typeof loader>) {
   const id = useId();
   return (
     <div id={id} class="grid grid-flow-row grid-cols-1 place-items-center ">
-      <div
-        class={clx(
-          "pb-2 sm:pb-10",
-          (!prevPageUrl || partial === "hideLess") && "hidden"
-        )}
-      >
-        <a
-          rel="prev"
-          class="btn btn-ghost"
-          hx-swap="outerHTML show:parent:top"
-          hx-get={partialPrev}
-        >
+      <div class={clx("pb-2 sm:pb-10", (!prevPageUrl || partial === "hideLess") && "hidden")}>
+        <a rel="prev" class="btn btn-ghost" hx-swap="outerHTML show:parent:top" hx-get={partialPrev}>
           <span class="inline [.htmx-request_&]:hidden">Show Less</span>
           <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
         </a>
       </div>
 
-      <div
-        data-product-list
-        class={clx(
-          "grid items-center",
-          "grid-cols-2 gap-2",
-          "sm:grid-cols-4 sm:gap-10",
-          "w-full"
-        )}
-      >
+      <div data-product-list class={clx("grid items-center", "grid-cols-2 gap-2", "sm:grid-cols-4 sm:gap-10", "w-full")}>
         {products?.map((product, index) => (
           <ProductCard
             key={`product-card-${product.productID}`}
@@ -146,10 +130,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           <div class="flex justify-center [&_section]:contents">
             <a
               rel="next"
-              class={clx(
-                "btn btn-ghost btn-next",
-                (!nextPageUrl || partial === "hideMore") && "hidden"
-              )}
+              class={clx("btn btn-ghost btn-next", (!nextPageUrl || partial === "hideMore") && "hidden")}
               hx-swap="outerHTML show:parent:top"
               hx-get={partialNext}
             >
@@ -168,9 +149,7 @@ function PageResult(props: SectionProps<typeof loader>) {
             >
               <Icon id="chevron-right" class="rotate-180" />
             </a>
-            <span class="btn btn-ghost join-item">
-              Page {zeroIndexedOffsetPage + 1}
-            </span>
+            <span class="btn btn-ghost join-item">Page {zeroIndexedOffsetPage + 1}</span>
             <a
               rel="next"
               aria-label="next page link"
@@ -187,9 +166,7 @@ function PageResult(props: SectionProps<typeof loader>) {
   );
 }
 const setPageQuerystring = (page: string, id: string) => {
-  const element = document
-    .getElementById(id)
-    ?.querySelector("[data-product-list]");
+  const element = document.getElementById(id)?.querySelector("[data-product-list]");
   if (!element) {
     return;
   }
@@ -199,10 +176,7 @@ const setPageQuerystring = (page: string, id: string) => {
     for (let it = 0; it < entries.length; it++) {
       if (entries[it].isIntersecting) {
         url.searchParams.set("page", page);
-      } else if (
-        typeof history.state?.prevPage === "string" &&
-        history.state?.prevPage !== page
-      ) {
+      } else if (typeof history.state?.prevPage === "string" && history.state?.prevPage !== page) {
         url.searchParams.set("page", history.state.prevPage);
       }
     }
@@ -248,9 +222,7 @@ function Result(props: SectionProps<typeof loader>) {
       de {page?.pageInfo?.records ?? 0} resultados
     </span>
   );
-  const sortBy = sortOptions.length > 0 && (
-    <Sort sortOptions={sortOptions} url={url} />
-  );
+  const sortBy = sortOptions.length > 0 && <Sort sortOptions={sortOptions} url={url} />;
   return (
     <>
       <div id={container} {...viewItemListEvent} class="w-full ">
@@ -265,10 +237,7 @@ function Result(props: SectionProps<typeof loader>) {
             )}
             {searchTerm && (
               <div class="text-sm text-[#646072] flex flex-col  lg:hidden">
-                Você buscou por{" "}
-                <span class="font-normal capitalize text-[#282828] md:text-lg text-3xl">
-                  {searchTerm}
-                </span>
+                Você buscou por <span class="font-normal capitalize text-[#282828] md:text-lg text-3xl">{searchTerm}</span>
               </div>
             )}
 
@@ -276,20 +245,17 @@ function Result(props: SectionProps<typeof loader>) {
               <Drawer
                 id={controls}
                 aside={
-                  <div class="bg-base-100 flex flex-col w-full  h-full divide-y overflow-y-hidden">
-                    <div class="flex justify-between items-center">
+                  <div class="bg-[#f8f8f8] flex flex-col w-full  gap-4 h-full overflow-y-hidden">
+                    <div class="bg-base-100 flex justify-between items-center">
                       <h1 class="px-4 py-3">
                         <span class="font-medium text-lg">Filtros</span>
                       </h1>
-                      <label
-                        class="btn btn-ghost hover:opacity-80 hover:bg-transparent"
-                        for={controls}
-                      >
+                      <label class="btn btn-ghost hover:opacity-80 hover:bg-transparent" for={controls}>
                         <Icon id="close" />
                       </label>
                     </div>
                     <div class="flex-grow overflow-auto">
-                      <Filters filters={filters} />
+                      <FiltersMb filters={filters} />
                     </div>
                   </div>
                 }
@@ -298,13 +264,18 @@ function Result(props: SectionProps<typeof loader>) {
                   <div class="flex flex-col">
                     {results}
                     <label
-                      class="btn btn-ghost p-0 justify-start"
+                      class="flex gap-1 mt-2 text-sm items-center border justify-center px-2 min-h-[36px]"
                       for={controls}
                     >
-                      Filtros
+                      Filtrar
+                      <Image
+                        src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9b4294b4-6379-478d-96e8-6199311b7dec/Filtro.svg"
+                        width={16}
+                        height={16}
+                      />
                     </label>
                   </div>
-                  <div className="w-fit">{sortBy}</div>
+                  <div className="w-fit border px-2">{sortBy}</div>
                 </div>
               </Drawer>
             )}
@@ -312,9 +283,7 @@ function Result(props: SectionProps<typeof loader>) {
             <div class="grid md:gap-4 place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
               {device === "desktop" && (
                 <aside class="place-self-start flex flex-col gap-9">
-                  <span class="text-base font-semibold h-12 flex items-center">
-                    Filtros
-                  </span>
+                  <span class="text-base font-semibold h-12 flex items-center">Filtros</span>
 
                   <Filters filters={filters} />
                 </aside>
@@ -324,9 +293,7 @@ function Result(props: SectionProps<typeof loader>) {
                 {searchTerm && (
                   <div class="text-sm text-[#646072] flex-col hidden lg:flex">
                     Você buscou por
-                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
-                      {searchTerm}
-                    </span>
+                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">{searchTerm}</span>
                   </div>
                 )}
                 {device === "desktop" && (
@@ -345,22 +312,13 @@ function Result(props: SectionProps<typeof loader>) {
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(
-            onLoad,
-            container,
-            pageInfo.records || products.length,
-            page
-          ),
+          __html: useScript(onLoad, container, pageInfo.records || products.length),
         }}
       />
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(
-            setPageQuerystring,
-            `${pageInfo.currentPage}`,
-            container
-          ),
+          __html: useScript(setPageQuerystring, `${pageInfo.currentPage}`, container),
         }}
       />
     </>

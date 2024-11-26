@@ -21,7 +21,8 @@ export type AvailableIcons =
   | "arrow-white"
   | "cart-white"
   | "burguer-white"
-  | "info";
+  | "info"
+  | "filtrar";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   id: AvailableIcons;
@@ -32,6 +33,7 @@ const customSizes: Record<AvailableIcons, number> = {
   "cart-white": 20,
   "burguer-white": 20,
   info: 20,
+  filtrar: 20,
   search: 24,
   shopping_bag: 30,
   menu: 24,
