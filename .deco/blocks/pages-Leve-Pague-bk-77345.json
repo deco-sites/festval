@@ -14,12 +14,24 @@
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
         "items": [
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f4333401-7624-4c43-ab14-7954153cc168/V02_Festval.com_BlackFriday_Banner-50_528x465px.jpg",
-            "href": "festval.com"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/66e530ef-7710-4e66-b061-596ca45b93f9/L2P1.jpg",
+            "href": "https://www.festval.com/1552?map=productClusterIds&sort=orders%3Adesc&page=1"
           },
           {
-            "href": "festval.com",
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f4333401-7624-4c43-ab14-7954153cc168/V02_Festval.com_BlackFriday_Banner-50_528x465px.jpg"
+            "href": "https://www.festval.com/1551?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0d1f8b80-fc71-41fb-9595-5489e97448e1/L3P2.jpg"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b2e2b401-60a5-41fa-bec9-4a189db8c817/L5P4.jpg",
+            "href": "https://www.festval.com/1554?map=productClusterIds&sort=orders%3Adesc&page=1"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/30c1edef-b362-449c-b596-be77b8343315/L6P4.jpg",
+            "href": "https://www.festval.com/1553?map=productClusterIds&sort=orders%3Adesc&page=1"
+          },
+          {
+            "href": "https://www.festval.com/1555?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b50a03e6-4fdd-4160-bb47-4ddfe8635bbf/L12P10.jpg"
           }
         ]
       }
@@ -31,7 +43,7 @@
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "count": 12,
-          "sort": "",
+          "sort": "orders:desc",
           "fuzzy": "automatic",
           "selectedFacets": [
             {
