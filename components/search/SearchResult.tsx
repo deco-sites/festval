@@ -1,4 +1,4 @@
-import type { ProductListingPage } from "apps/commerce/types.ts";
+import type { ProductListingPage, PageInfo } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
 import Filters from "./Filters.tsx";
@@ -53,17 +53,16 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
   return url;
 };
 
-const onLoad = (id: string, record: number, page: ProductListingPage) => {
+const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
   const container = document.getElementById(id);
   const sentinel = document.getElementById("sentinel");
   const btnFoward = container?.querySelector(".btn-next") as HTMLButtonElement;
 
   function validateGoNext(): boolean {
-    //const productsCards = document?.querySelectorAll(".product-card");
+    console.log(pageInfo);
     if (
-      page.pageInfo.currentPage * (page.pageInfo.recordPerPage ?? 12) >=
-        record - 1 ||
-      page.pageInfo.currentPage === 50
+      pageInfo.currentPage * (pageInfo.recordPerPage ?? 12) >= record - 1 ||
+      pageInfo.currentPage === 50
     ) {
       return false;
     } else {
@@ -107,14 +106,32 @@ function PageResult(props: SectionProps<typeof loader>) {
   const id = useId();
   return (
     <div id={id} class="grid grid-flow-row grid-cols-1 place-items-center ">
-      <div class={clx("pb-2 sm:pb-10", (!prevPageUrl || partial === "hideLess") && "hidden")}>
-        <a rel="prev" class="btn btn-ghost" hx-swap="outerHTML show:parent:top" hx-get={partialPrev}>
+      <div
+        class={clx(
+          "pb-2 sm:pb-10",
+          (!prevPageUrl || partial === "hideLess") && "hidden"
+        )}
+      >
+        <a
+          rel="prev"
+          class="btn btn-ghost"
+          hx-swap="outerHTML show:parent:top"
+          hx-get={partialPrev}
+        >
           <span class="inline [.htmx-request_&]:hidden">Show Less</span>
           <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
         </a>
       </div>
 
-      <div data-product-list class={clx("grid items-center", "grid-cols-2 gap-2", "sm:grid-cols-4 sm:gap-10", "w-full")}>
+      <div
+        data-product-list
+        class={clx(
+          "grid items-center",
+          "grid-cols-2 gap-2",
+          "sm:grid-cols-4 sm:gap-10",
+          "w-full"
+        )}
+      >
         {products?.map((product, index) => (
           <ProductCard
             key={`product-card-${product.productID}`}
@@ -131,7 +148,10 @@ function PageResult(props: SectionProps<typeof loader>) {
           <div class="flex justify-center [&_section]:contents">
             <a
               rel="next"
-              class={clx("btn btn-ghost btn-next", (!nextPageUrl || partial === "hideMore") && "hidden")}
+              class={clx(
+                "btn btn-ghost btn-next",
+                (!nextPageUrl || partial === "hideMore") && "hidden"
+              )}
               hx-swap="outerHTML show:parent:top"
               hx-get={partialNext}
             >
@@ -150,7 +170,9 @@ function PageResult(props: SectionProps<typeof loader>) {
             >
               <Icon id="chevron-right" class="rotate-180" />
             </a>
-            <span class="btn btn-ghost join-item">Page {zeroIndexedOffsetPage + 1}</span>
+            <span class="btn btn-ghost join-item">
+              Page {zeroIndexedOffsetPage + 1}
+            </span>
             <a
               rel="next"
               aria-label="next page link"
@@ -167,7 +189,9 @@ function PageResult(props: SectionProps<typeof loader>) {
   );
 }
 const setPageQuerystring = (page: string, id: string) => {
-  const element = document.getElementById(id)?.querySelector("[data-product-list]");
+  const element = document
+    .getElementById(id)
+    ?.querySelector("[data-product-list]");
   if (!element) {
     return;
   }
@@ -177,7 +201,10 @@ const setPageQuerystring = (page: string, id: string) => {
     for (let it = 0; it < entries.length; it++) {
       if (entries[it].isIntersecting) {
         url.searchParams.set("page", page);
-      } else if (typeof history.state?.prevPage === "string" && history.state?.prevPage !== page) {
+      } else if (
+        typeof history.state?.prevPage === "string" &&
+        history.state?.prevPage !== page
+      ) {
         url.searchParams.set("page", history.state.prevPage);
       }
     }
@@ -191,6 +218,7 @@ function Result(props: SectionProps<typeof loader>) {
   const { startingPage = 0, url, partial, searchTerm } = props;
   const page = props.page!;
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+  console.log(pageInfo);
   const perPage = pageInfo?.recordPerPage || products.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
@@ -223,7 +251,9 @@ function Result(props: SectionProps<typeof loader>) {
       de {page?.pageInfo?.records ?? 0} resultados
     </span>
   );
-  const sortBy = sortOptions.length > 0 && <Sort sortOptions={sortOptions} url={url} />;
+  const sortBy = sortOptions.length > 0 && (
+    <Sort sortOptions={sortOptions} url={url} />
+  );
   return (
     <>
       <div id={container} {...viewItemListEvent} class="w-full ">
@@ -238,7 +268,10 @@ function Result(props: SectionProps<typeof loader>) {
             )}
             {searchTerm && (
               <div class="text-sm text-[#646072] flex flex-col  lg:hidden">
-                Você buscou por <span class="font-normal capitalize text-[#282828] md:text-lg text-3xl">{searchTerm}</span>
+                Você buscou por{" "}
+                <span class="font-normal capitalize text-[#282828] md:text-lg text-3xl">
+                  {searchTerm}
+                </span>
               </div>
             )}
 
@@ -251,7 +284,10 @@ function Result(props: SectionProps<typeof loader>) {
                       <h1 class="px-4 py-3">
                         <span class="font-medium text-lg">Filtros</span>
                       </h1>
-                      <label class="btn btn-ghost hover:opacity-80 hover:bg-transparent" for={controls}>
+                      <label
+                        class="btn btn-ghost hover:opacity-80 hover:bg-transparent"
+                        for={controls}
+                      >
                         <Icon id="close" />
                       </label>
                     </div>
@@ -284,7 +320,9 @@ function Result(props: SectionProps<typeof loader>) {
             <div class="grid md:gap-4 place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
               {device === "desktop" && (
                 <aside class="place-self-start flex flex-col gap-9">
-                  <span class="text-base font-semibold h-12 flex items-center">Filtros</span>
+                  <span class="text-base font-semibold h-12 flex items-center">
+                    Filtros
+                  </span>
 
                   <Filters filters={filters} />
                 </aside>
@@ -294,7 +332,9 @@ function Result(props: SectionProps<typeof loader>) {
                 {searchTerm && (
                   <div class="text-sm text-[#646072] flex-col hidden lg:flex">
                     Você buscou por
-                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">{searchTerm}</span>
+                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
+                      {searchTerm}
+                    </span>
                   </div>
                 )}
                 {device === "desktop" && (
@@ -313,13 +353,22 @@ function Result(props: SectionProps<typeof loader>) {
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(onLoad, container, pageInfo.records || products.length),
+          __html: useScript(
+            onLoad,
+            container,
+            pageInfo.records || products.length,
+            pageInfo
+          ),
         }}
       />
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(setPageQuerystring, `${pageInfo.currentPage}`, container),
+          __html: useScript(
+            setPageQuerystring,
+            `${pageInfo.currentPage}`,
+            container
+          ),
         }}
       />
     </>
