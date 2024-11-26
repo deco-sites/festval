@@ -168,7 +168,6 @@ export const cartFrom = async (
         }
 
         if (products) {
-          //console.log(products[index].offers);
           const correctListPrice = Number(
             products[index].offers?.offers[0].priceSpecification[0].price
               .toFixed(2)
@@ -216,11 +215,9 @@ export const cartFrom = async (
   let correctTotal: number = 0;
 
   minicart.storefront.items.forEach((item) => {
-    console.log(item);
     const itemPrice = Math.round((item.price || 0) * 100);
     if (item.measurementUnit === "kg") {
       correctTotal += itemPrice * item.unitMultiplier * item.quantity;
-      console.log("total", Math.floor(correctTotal));
     } else {
       correctTotal += itemPrice * item.quantity;
     }
@@ -250,10 +247,7 @@ export const cartFrom = async (
     });
   }
 
-  console.log(Math.floor((correctTotal - discounts) * 100) / 100);
-
   minicart.storefront.total = Math.floor(correctTotal - discounts) / 100;
-  console.log("minicart.total", minicart.storefront.total);
   minicart.storefront.subtotal = Math.floor(correctTotal) / 100;
 
   return minicart;
@@ -289,7 +283,8 @@ export const cartMiddleware2 = async (
 const setPostalCode = async (req: Request, platformCart: any) => {
   const cookies = getCookies(req.headers);
   const postalCode = cookies["vtex_last_session_cep"];
-  console.log(postalCode);
+
+  if (!postalCode) return;
 
   try {
     const url = `https://meufestval.vtexcommercestable.com.br/api/checkout/pub/orderForm/${platformCart.orderFormId}/attachments/shippingData`;

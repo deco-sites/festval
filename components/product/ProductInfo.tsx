@@ -123,8 +123,6 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
     ".price-quantity-elements"
   );
 
-  console.log(productData);
-
   if (productData && productData.MeasurementUnit == "kg") {
     const listPrice = product.offers?.offers[0].priceSpecification[0].price;
     const price = product.offers?.offers[0].priceSpecification[1].price;
@@ -178,8 +176,6 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           style: "currency",
           currency: "BRL",
         }).format(listPrice);
-
-        console.log("caiu aqui", currentPriceElement, listPriceElement);
 
         if (currentPriceElement && listPriceElement) {
           if (price < listPrice) {

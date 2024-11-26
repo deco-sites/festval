@@ -74,6 +74,7 @@ const onLoad = (id: string, record: number, page: ProductListingPage) => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+        console.log(entry);
         if (entry.isIntersecting) {
           if (validateGoNext()) btnFoward.click();
         }
