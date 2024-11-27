@@ -61,7 +61,8 @@
           "fuzzy": "automatic",
           "selectedFacets": [],
           "hideUnavailableItems": true
-        }
+        },
+        "layout": {}
       }
     },
     {

@@ -32,6 +32,9 @@
           "selectedFacets": [],
           "count": 12,
           "hideUnavailableItems": true
+        },
+        "layout": {
+          "pagination": "show-more"
         }
       }
     },
