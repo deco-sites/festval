@@ -185,7 +185,7 @@
           "sort": "",
           "count": 12,
           "hideUnavailableItems": true,
-          "similars": true,
+          "similars": false,
           "collection": "1073"
         }
       },
@@ -224,12 +224,10 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "orders:desc",
+          "sort": "",
           "count": 12,
-          "fuzzy": "automatic",
-          "query": "1564",
-          "hideUnavailableItems": true,
-          "similars": true
+          "collection": "1564",
+          "hideUnavailableItems": true
         }
       },
       "cta": "https://www.festval.com/1564?map=productClusterIds&sort=orders%3Adesc&page=1",
