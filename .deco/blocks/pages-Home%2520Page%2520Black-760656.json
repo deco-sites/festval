@@ -1,5 +1,5 @@
 {
-  "name": "Home Page",
+  "name": "Home Page Black",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -13,11 +13,6 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
-            "alt": "site"
-          },
-          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/49a0f883-78d9-4c65-9ffd-16e7c60b74a2/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1080x1500px.jpg",
             "alt": "cestasnatal",
@@ -26,52 +21,13 @@
             }
           },
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5de766f0-8aea-4509-a655-0cb0172bec7d/1080X1500-RECKITT.jpg",
-            "alt": "reckittpreblack",
-            "action": {
-              "href": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a70a2417-7ee1-4126-8bdf-a21eac8491a9/50especiais_1920x490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/359b5ef8-433a-4b8d-bda5-33a9cecd2621/50especiais_1080x1500.jpg",
-            "action": {
-              "href": "https://www.festval.com/1549?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=CervejasEspeciais"
-            },
-            "alt": "especiais"
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7452da30-fae7-420e-a914-322828e1a12f/MOCA_1920X490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/555270ce-7230-4437-9355-c86a19ad731a/MOCA_1080X1500.jpg",
-            "alt": "moça",
-            "action": {
-              "href": "https://www.festval.com/1548?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=Mo%C3%A7aVisibilidade"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1d43c49f-2c73-42f6-8cd8-4bbaf63a4914/prebk_desodorantes_1920x490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/32b49899-cc0c-4aee-b661-7979f1b57979/prebk_desodorantes_1080x1500.jpg",
-            "alt": "unilever",
-            "action": {
-              "href": "https://www.festval.com/s?q=desodorantes&filter.brand=rexona&filter.brand=axe&filter.brand=dove&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=desodorantesunilever"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f3d263c2-13db-43b8-9f18-6bae50e8e8e9/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/839beb56-449e-4b96-a328-25eb907bada1/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg",
+            "region": "Curitiba",
             "alt": "lindt",
             "action": {
-              "href": "https://www.festval.com/377?map=productClusterIds&sort=discount%3Adesc&page=1"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/09fcf3b3-5bfd-446f-8c39-0bd9e3e2605d/1920x490-(1).png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9053d5ca-55d6-4a54-9a2a-ef4c3c221733/1080X1500.png",
-            "alt": "MAMINHA1953",
-            "action": {
-              "href": "https://www.festval.com/receita?page=1&utm_source=BannerHome&utm_campaign=Maminhaassada1953"
-            }
+              "href": "/festval"
+            },
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/840a665d-e472-46e6-82f4-2ed000622515/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bfc78b37-65ea-452c-8736-2cd14fd56c76/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg"
           }
         ],
         "preload": true,
@@ -209,20 +165,20 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cb23208f-2b92-4d47-8e1e-ba5d9127ea87/ADEGA.jpg",
-          "alt": "adega",
-          "href": "/adega?sort=orders%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3701f449-96c4-47d1-bea2-95ea99dde75c/FESTVAL-NOVO-APP-BANNER-528x465-ADEGA.png",
-          "hrefMobile": "/adega",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96a6d52e-9aff-4315-9989-c3f1bd112b0d/V02_Festval.com_BlackFriday_Banner-Leve_840x320px.jpg",
+          "alt": "leve+pague-",
+          "href": "https://www.festval.com/leve-pague-bk?page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0003a9b4-48e1-4fcb-8aad-ffcf614220dd/V02_Festval.com_BlackFriday_Banner-Leve_528x465px.jpg",
+          "hrefMobile": "https://www.festval.com/leve-pague-bk?page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Left"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c551c33b-00e2-4c80-83d2-0194dc3a070e/FESTVAL-NOVO-APP-BANNER-528x465-AC_OUGUE.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/37e0d270-825d-47da-8457-06ed6ae469ca/ACOUGUE.jpg",
-          "href": "/acougue?sort=orders%3Adesc&page=1",
-          "alt": "carnes",
-          "hrefMobile": "/acougue",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/de24f2cc-2736-4c84-8fc9-218525c6a934/V02_Festval.com_BlackFriday_Banner-50_528x465px.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4ca88b2e-f5ac-4b7c-83bc-246e209ffcfc/V02_Festval.com_BlackFriday_Banner-50_840x320px.jpg",
+          "href": "https://www.festval.com/1557?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "alt": "50nasegunda",
+          "hrefMobile": "https://www.festval.com/1557?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Right"
         }
@@ -251,31 +207,31 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/db310cee-1ffe-40e2-bab8-e655b3e7a79b/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/34518bff-89c8-4ac6-9482-51d5e736c0f7/V02_Festval.com_BlackFriday_BannerHome_1700x400pxTOP30.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9f0c1522-459d-47e1-8d52-582200de5e5d/horti-teste-app-4.jpg",
-          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1558?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4da56834-a144-4c20-935c-e2381b22c56c/V02_Festval.com_BlackFriday_BannerHome_1080x465pxTOP30.jpg",
+          "hrefMobile": "https://www.festval.com/1558?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full"
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a4b3d34a-9e67-456a-8cfd-26bc7d513e08/BANNER-DE-OFERTAS-M-GUARANA.jpg",
-          "alt": "OFERTA-2",
-          "href": "https://www.festval.com/s?q=GUARANA+ANTARCTICA+350ML&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b55fd379-650b-4b4f-aded-db0a972cb789/GUARANA.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=GUARANA+ANTARCTICA+350ML&page=1",
-          "region": "Mostrar em ambas",
-          "positionBanner": "Left"
-        },
-        {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7d266bd-6140-4157-b0ac-db5f1cb9d1aa/AXE.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c289b79c-f0d7-4c90-9d09-4684a54090d7/BANNER-DE-OFERTAS-M-AXE.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/896fd3e2-806f-4bc8-9b19-0e42c3cea7b7/V02_Festval.com_BlackFriday_Banner_840x320pxOMO.jpg",
           "alt": "OFERTA-1",
-          "href": "/s?q=axe+152ml&page=1",
-          "hrefMobile": "/s?q=axe+152ml&page=1",
+          "href": "https://www.festval.com/lava-roupas-liquido-omo-ultra-power-frasco-18l/p?skuId=7350",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4c7fc3c5-ad08-4236-8dd5-cef8016c82f7/V02_Festval.com_BlackFriday_Banner_528x465px-OMO.jpg",
+          "hrefMobile": "https://www.festval.com/lava-roupas-liquido-omo-ultra-power-frasco-18l/p?skuId=7350",
           "region": "Mostrar em ambas",
           "positionBanner": "Right"
+        },
+        {
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f2e72d3e-3dcb-4844-b013-5552d2b86fca/V02_Festval.com_BlackFriday_Banner_528x465px-heine.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/57ade000-0f75-4136-aa9b-39761b3a6ccd/V02_Festval.com_BlackFriday_Banner_840x320pxheine.jpg",
+          "alt": "OFERTA-2",
+          "href": "https://www.festval.com/cerveja-heineken-lata-350ml/p?skuId=427",
+          "hrefMobile": "https://www.festval.com/cerveja-heineken-lata-350ml/p?skuId=427",
+          "region": "Mostrar em ambas",
+          "positionBanner": "Left"
         }
       ]
     },
@@ -305,8 +261,8 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/557ce91a-de7f-436e-846e-703eb8ebe5a2/1080X465-BANNER-PANNETONE.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/757583d5-3436-41a6-9037-ab55e4d66289/1700X400-BANNER-PANNETONE.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7adc1c0e-7e62-4f6f-89a7-85372c85245b/V02_Festval.com_BlackFriday_Banner-Panettones-MB_1080x465px_MOD02corrigido.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f6e81bc7-de34-4d17-bffa-b86e735bbb2c/V02_Festval.com_BlackFriday_Banner-Panettones-MB_1700x400pxcorrigido.jpg",
           "alt": "mamma-bia",
           "href": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1",
           "hrefMobile": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1",
@@ -314,20 +270,20 @@
           "positionBanner": "Full"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bba26047-5316-4767-8b82-b42327d3c307/BANNER_M_NINHO.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/337523ed-8844-413e-9c62-5b21e9a3a13a/Ninho-visibilidade.jpg",
-          "alt": "Ninho",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1411cd6e-6df1-443d-abe5-df6662ba5558/V02_Festval.com_BlackFriday_Banner-Reckitt_528x465px-rek.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9ae3d8e3-1a32-4bc1-8627-078c0c21632f/V02_Festval.com_BlackFriday_Banner-Reckitt_840x320px-rek.jpg",
+          "alt": "reckitt",
           "href": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
           "hrefMobile": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
           "region": "Mostrar em ambas",
           "positionBanner": "Left"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee25d1dd-a872-4e07-826c-cff57605b9bc/BANNER-M-visibilidade-lindor.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97a300f4-4866-4b3f-8187-e92546112f13/BANNER-M-VISUALIZACAO-LINDOR.jpg",
-          "alt": "Lindor",
-          "href": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "hrefMobile": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c726079-5c73-47b9-8e3e-9029e2f5c7d3/V02_Festval.com_BlackFriday_Banner-Reckitt_528x465px-lindt.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9295dba1-3dc6-4d3c-818c-6d39977457a4/V02_Festval.com_BlackFriday_Banner-Unilever_840x320pxlindt.jpg",
+          "alt": "lindt",
+          "href": "https://www.festval.com/1560?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/1560?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Right"
         }
@@ -405,5 +361,5 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "path": "/"
+  "path": "/testetestebk"
 }
