@@ -165,13 +165,13 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "1073",
+          "collection": "1550",
           "count": 12,
           "hideUnavailableItems": true
         }
       },
-      "cta": "/1073?map=productClusterIds",
-      "title": "Mais Vendidos"
+      "cta": "/1550?map=productClusterIds",
+      "title": "Black Friday"
     },
     {
       "__resolveType": "site/sections/separator.tsx",
@@ -190,7 +190,7 @@
         }
       },
       "cta": "/1397?map=productClusterIds&sort=discount%3Adesc&page=1",
-      "title": "Esquenta Black Friday"
+      "title": "Mais Vendidos"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -232,7 +232,7 @@
         }
       },
       "cta": "/acougue",
-      "title": "Açougue"
+      "title": "Importados Black Friday"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -286,7 +286,7 @@
         }
       },
       "cta": "/1545?map=productClusterIds",
-      "title": "Reckitt"
+      "title": "Adega Black Friday"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -327,14 +327,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "1067",
+          "collection": "1169",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "title": "Importados",
-      "cta": "/1067?map=productClusterIds"
+      "title": "Dolce Gusto",
+      "cta": "/1169?map=productClusterIds"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
