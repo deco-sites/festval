@@ -26,20 +26,28 @@
             }
           },
           {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f3d263c2-13db-43b8-9f18-6bae50e8e8e9/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/839beb56-449e-4b96-a328-25eb907bada1/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg",
+            "alt": "lindt",
+            "action": {
+              "href": "https://www.festval.com/377?map=productClusterIds&sort=discount%3Adesc&page=1"
+            }
+          },
+          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5de766f0-8aea-4509-a655-0cb0172bec7d/1080X1500-RECKITT.jpg",
-            "alt": "reckittpreblack",
             "action": {
               "href": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
-            }
+            },
+            "alt": "reckittpreblack"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a70a2417-7ee1-4126-8bdf-a21eac8491a9/50especiais_1920x490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/359b5ef8-433a-4b8d-bda5-33a9cecd2621/50especiais_1080x1500.jpg",
+            "alt": "especiais",
             "action": {
               "href": "https://www.festval.com/1549?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=CervejasEspeciais"
-            },
-            "alt": "especiais"
+            }
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7452da30-fae7-420e-a914-322828e1a12f/MOCA_1920X490.jpg",
@@ -55,14 +63,6 @@
             "alt": "unilever",
             "action": {
               "href": "https://www.festval.com/s?q=desodorantes&filter.brand=rexona&filter.brand=axe&filter.brand=dove&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=desodorantesunilever"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f3d263c2-13db-43b8-9f18-6bae50e8e8e9/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/839beb56-449e-4b96-a328-25eb907bada1/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg",
-            "alt": "lindt",
-            "action": {
-              "href": "https://www.festval.com/377?map=productClusterIds&sort=discount%3Adesc&page=1"
             }
           },
           {
