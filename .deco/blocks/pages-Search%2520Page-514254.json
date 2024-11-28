@@ -46,6 +46,21 @@
                 "hrefMobile": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
               }
             ]
+          },
+          {
+            "matcher": [
+              "chocolate",
+              "chocolates"
+            ],
+            "images": [
+              {
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/840a665d-e472-46e6-82f4-2ed000622515/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bfc78b37-65ea-452c-8736-2cd14fd56c76/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg",
+                "alt": "lindt",
+                "href": "https://www.festval.com/1562?map=productClusterIds&sort=discount%3Adesc&page=1",
+                "hrefMobile": "https://www.festval.com/1562?map=productClusterIds&sort=discount%3Adesc&page=1"
+              }
+            ]
           }
         ]
       }

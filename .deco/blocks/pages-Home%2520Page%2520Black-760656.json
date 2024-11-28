@@ -13,21 +13,44 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/49a0f883-78d9-4c65-9ffd-16e7c60b74a2/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1080x1500px.jpg",
-            "alt": "cestasnatal",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2e4cc79d-f63c-4ad4-b862-9d76f9688154/V02_Festval.com_BlackFriday_BannerHome_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4475e347-cae7-4424-a8b6-1826fbf98749/V02_Festval.com_BlackFriday_BannerHome_1080x1500px.jpg",
+            "alt": "institucionalcuritiba",
             "action": {
-              "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
+              "href": "https://www.festval.com/1550?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
           },
           {
-            "region": "Curitiba",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/840a665d-e472-46e6-82f4-2ed000622515/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bfc78b37-65ea-452c-8736-2cd14fd56c76/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg",
             "alt": "lindt",
             "action": {
-              "href": "/festval"
-            },
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/840a665d-e472-46e6-82f4-2ed000622515/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bfc78b37-65ea-452c-8736-2cd14fd56c76/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg"
+              "href": "https://www.festval.com/1562?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=lindtblackfriday"
+            }
+          },
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/62e0d1da-e774-44ed-97a2-d928481feb47/V02_Festval.com_ambevBlackFriday_BannerHome_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7f147d77-4124-4c02-b588-a8390fcdb4e7/V02_Festval.com_ambevBlackFriday_BannerHome_1080x1500px.jpg",
+            "alt": "AMBEV",
+            "action": {
+              "href": "https://www.festval.com/s?q=patagonia&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=patagoniablackfriday"
+            }
+          },
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c00b4047-9683-4d2f-b201-51b2cc5866bd/V02_Festval.com_BlackFridaynestle_BannerHome_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c7f57823-d556-4817-a9f5-521c01b14bc6/V02_Festval.com_nestleBlackFriday_BannerHome_1080x1500px.jpg",
+            "alt": "nestlé",
+            "action": {
+              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1"
+            }
+          },
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2cc5e2ed-a5be-4a83-9a6b-7291974f40bd/V02_Festval.com_RECKBlackFriday_BannerHome_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9b0fba7b-d4db-47a4-8dcb-8b6bcc81d0cb/V02_Festval.com_RECBlackFriday_BannerHome_1080x1500px.jpg",
+            "alt": "reckitt",
+            "action": {
+              "href": "https://www.festval.com/1559?map=productClusterIds&sort=discount%3Adesc&page=1"
+            }
           }
         ],
         "preload": true,
