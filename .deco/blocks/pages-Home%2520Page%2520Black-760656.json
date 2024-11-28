@@ -164,7 +164,7 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "orders:desc",
+          "sort": "discount:desc",
           "collection": "1550",
           "count": 12,
           "hideUnavailableItems": true
@@ -186,10 +186,10 @@
           "count": 12,
           "hideUnavailableItems": true,
           "similars": true,
-          "collection": "1397"
+          "collection": "1073"
         }
       },
-      "cta": "/1397?map=productClusterIds&sort=discount%3Adesc&page=1",
+      "cta": "/1073?map=productClusterIds&sort=discount%3Adesc&page=1",
       "title": "Mais Vendidos"
     },
     {
