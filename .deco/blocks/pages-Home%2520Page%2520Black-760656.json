@@ -228,7 +228,8 @@
           "count": 12,
           "fuzzy": "automatic",
           "query": "1564",
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "similars": true
         }
       },
       "cta": "https://www.festval.com/1564?map=productClusterIds&sort=orders%3Adesc&page=1",
