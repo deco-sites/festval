@@ -224,14 +224,14 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "price:desc",
+          "sort": "orders:desc",
           "count": 12,
           "fuzzy": "automatic",
-          "query": "Açougue",
+          "query": "1564",
           "hideUnavailableItems": true
         }
       },
-      "cta": "/acougue",
+      "cta": "https://www.festval.com/1564?map=productClusterIds&sort=orders%3Adesc&page=1",
       "title": "Importados Black Friday"
     },
     {
@@ -278,14 +278,14 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "discount:desc",
-          "collection": "1545",
+          "sort": "orders:desc",
+          "collection": "1565",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "/1545?map=productClusterIds",
+      "cta": "https://www.festval.com/1565?map=productClusterIds&sort=discount%3Adesc&page=1",
       "title": "Adega Black Friday"
     },
     {
