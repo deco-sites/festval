@@ -303,8 +303,8 @@
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1411cd6e-6df1-443d-abe5-df6662ba5558/V02_Festval.com_BlackFriday_Banner-Reckitt_528x465px-rek.jpg",
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9ae3d8e3-1a32-4bc1-8627-078c0c21632f/V02_Festval.com_BlackFriday_Banner-Reckitt_840x320px-rek.jpg",
           "alt": "reckitt",
-          "href": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
-          "hrefMobile": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
+          "href": "https://www.festval.com/1559?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=reckittblackfriday",
+          "hrefMobile": "https://www.festval.com/1559?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=reckittblackfriday",
           "region": "Mostrar em ambas",
           "positionBanner": "Left"
         },
