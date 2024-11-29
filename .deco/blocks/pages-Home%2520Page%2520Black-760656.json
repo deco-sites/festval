@@ -309,11 +309,11 @@
           "positionBanner": "Full"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1411cd6e-6df1-443d-abe5-df6662ba5558/V02_Festval.com_BlackFriday_Banner-Reckitt_528x465px-rek.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9ae3d8e3-1a32-4bc1-8627-078c0c21632f/V02_Festval.com_BlackFriday_Banner-Reckitt_840x320px-rek.jpg",
-          "alt": "reckitt",
-          "href": "https://www.festval.com/1559?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=reckittblackfriday",
-          "hrefMobile": "https://www.festval.com/1559?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=reckittblackfriday",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23baf0f4-ced1-4160-a826-938073b0fe69/V02_Festval.com_BlackFriday_Banner-Reckitt_528x465px-nestle.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ea0e902e-5679-425e-973f-7ca2efe532cf/V02_Festval.com_BlackFriday_Banner-Reckitt_840x320px-nestle.jpg",
+          "alt": "nestle",
+          "href": "https://www.festval.com/1481?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/1481?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Left"
         },
