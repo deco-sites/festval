@@ -153,24 +153,24 @@ export async function loader(
 
   if (!regionCookie) {
     if (!cep) {
-      region = undefined;
+      region = "Curitiba";
 
       return { images, preload, interval, region };
     }
+    const curitibaMin = 80000000;
+    const curitibaMax = 83800999;
+    const cascavelMin = 85800001;
+    const cascavelMax = 85824999;
 
-    const cepFormatted = cep.toString().replace("-", "").trim();
+    const cepInt = parseInt(cep, 10);
 
-    const response = await fetch(
-      `https://viacep.com.br/ws/${cepFormatted}/json`
-    );
-
-    if (!response.ok) {
-      throw new Error(`Erro ao buscar endereço: ${response.statusText}`);
+    if (cepInt >= curitibaMin && cepInt <= curitibaMax) {
+      region = "Curitiba";
+    } else if (cepInt >= cascavelMin && cepInt <= cascavelMax) {
+      region = "Cascavel";
+    } else {
+      region = "Curitiba";
     }
-
-    const address: Address = await response.json();
-
-    region = address.localidade;
 
     const now = new Date();
     const expirationTime = now.getTime() + 23 * 60 * 60 * 1000;
