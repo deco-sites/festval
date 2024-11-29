@@ -45,19 +45,19 @@
             }
           },
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2cc5e2ed-a5be-4a83-9a6b-7291974f40bd/V02_Festval.com_RECKBlackFriday_BannerHome_1920x490px.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9b0fba7b-d4db-47a4-8dcb-8b6bcc81d0cb/V02_Festval.com_RECBlackFriday_BannerHome_1080x1500px.jpg",
-            "alt": "reckitt",
-            "action": {
-              "href": "https://www.festval.com/1559?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=reckittblackfriday"
-            }
-          },
-          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/465f854c-5eca-4b4d-b7de-b6d72b8438e5/V02_Festval.com_unileBlackFriday_BannerHome_1920x490px.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/59912534-a411-4acd-a9a4-a7105ef9c5fb/V02_Festval.com_unileBlackFriday_BannerHome_1080x1500px.jpg",
             "alt": "unilever",
             "action": {
               "href": "https://www.festval.com/1563?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=unileverblackfriday"
+            }
+          },
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7b78505e-3030-4372-b2d2-45412821ae75/V02_Festval.com_BlackFriday_BannerHome_1920x490pxpane.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ca822a94-22e7-44d7-bf4a-bb3c2e46966d/V02_Festval.com_BlackFriday_BannerHome_1080x1500pxpane.jpg",
+            "alt": "panetones",
+            "action": {
+              "href": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1"
             }
           }
         ],
