@@ -661,7 +661,7 @@ function ProductCard({
 
           <div class="opacity-0 hidden sm:flex sm:group-hover:opacity-100">
             <button
-              class="flex items-center gap-[5.2px] px-[8px] py-[11px] bg-[#ededed] border-none rounded-[9px] text-xs font-normal text-[#55535D]"
+              class="flex items-center gap-[5.2px] px-[8px] py-[11px] bg-[#ededed] hover:opacity-80 border-none rounded-[9px] text-xs font-normal text-[#55535D]"
               hx-on:click={useScript(onClick, modalPreviewId)}
             >
               <span>

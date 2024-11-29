@@ -55,7 +55,7 @@ import * as $$$$$$34 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$35 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
-  "loaders": { 
+  "loaders": {
     "site/loaders/availableIcons.ts": $$$0,
     "site/loaders/icons.ts": $$$1,
     "site/loaders/minicart.ts": $$$2,
