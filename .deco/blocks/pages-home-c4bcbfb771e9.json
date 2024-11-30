@@ -26,46 +26,6 @@
             }
           },
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f3d263c2-13db-43b8-9f18-6bae50e8e8e9/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/839beb56-449e-4b96-a328-25eb907bada1/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg",
-            "alt": "lindt",
-            "action": {
-              "href": "https://www.festval.com/377?map=productClusterIds&sort=discount%3Adesc&page=1"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5de766f0-8aea-4509-a655-0cb0172bec7d/1080X1500-RECKITT.jpg",
-            "action": {
-              "href": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
-            },
-            "alt": "reckittpreblack"
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a70a2417-7ee1-4126-8bdf-a21eac8491a9/50especiais_1920x490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/359b5ef8-433a-4b8d-bda5-33a9cecd2621/50especiais_1080x1500.jpg",
-            "alt": "especiais",
-            "action": {
-              "href": "https://www.festval.com/1549?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=CervejasEspeciais"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7452da30-fae7-420e-a914-322828e1a12f/MOCA_1920X490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/555270ce-7230-4437-9355-c86a19ad731a/MOCA_1080X1500.jpg",
-            "alt": "moça",
-            "action": {
-              "href": "https://www.festval.com/1548?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=Mo%C3%A7aVisibilidade"
-            }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1d43c49f-2c73-42f6-8cd8-4bbaf63a4914/prebk_desodorantes_1920x490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/32b49899-cc0c-4aee-b661-7979f1b57979/prebk_desodorantes_1080x1500.jpg",
-            "alt": "unilever",
-            "action": {
-              "href": "https://www.festval.com/s?q=desodorantes&filter.brand=rexona&filter.brand=axe&filter.brand=dove&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=desodorantesunilever"
-            }
-          },
-          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/09fcf3b3-5bfd-446f-8c39-0bd9e3e2605d/1920x490-(1).png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9053d5ca-55d6-4a54-9a2a-ef4c3c221733/1080X1500.png",
             "alt": "MAMINHA1953",
@@ -251,11 +211,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/db310cee-1ffe-40e2-bab8-e655b3e7a79b/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/610d73ca-abdb-439a-9bf4-bcc42cb52bd3/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9f0c1522-459d-47e1-8d52-582200de5e5d/horti-teste-app-4.jpg",
-          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/159?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23f9249d-4aeb-4b2e-b0f8-6ad1da77077a/churras.jpg",
+          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full"
         },
@@ -405,5 +365,5 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "path": "/ficadeescanteio0"
+  "path": "/"
 }
