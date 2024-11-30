@@ -251,15 +251,15 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "discount:desc",
-          "collection": "1545",
+          "sort": "orders:desc",
+          "collection": "172",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "/1545?map=productClusterIds",
-      "title": "Reckitt"
+      "cta": "https://www.festval.com/172?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "title": "Unilever"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
