@@ -246,31 +246,22 @@
           "positionBanner": "Full"
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2a123899-e49f-4f14-b2d4-171d4f826001/V02_Festval.com_BlackFriday_Banner_840x320pxcoca.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bcda8f7c-47db-4658-b3fe-e45b87e97458/V02_Festval.com_BlackFriday_Banner_840x320pxdowny.jpg",
           "alt": "OFERTA-1",
-          "href": "https://www.festval.com/1569?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e7170842-ee5e-4061-9f6a-861d13d1dd53/V02_Festval.com_BlackFriday_Banner_528x465px-coca.jpg",
-          "hrefMobile": "https://www.festval.com/1569?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "region": "Curitiba",
+          "href": "https://www.festval.com/s?q=DOWNY+FRASCO+1%2C5L&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/69dcbfd6-d39b-4c3f-ab6b-0bc33f39518b/V02_Festval.com_BlackFriday_Banner_528x465pxdowny.jpg",
+          "hrefMobile": "https://www.festval.com/s?q=DOWNY+FRASCO+1%2C5L&page=1",
+          "region": "Mostrar em ambas",
           "positionBanner": "Right"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f2e72d3e-3dcb-4844-b013-5552d2b86fca/V02_Festval.com_BlackFriday_Banner_528x465px-heine.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/57ade000-0f75-4136-aa9b-39761b3a6ccd/V02_Festval.com_BlackFriday_Banner_840x320pxheine.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d2b113d6-a7c4-410a-8ed8-e827a1fb11ba/V02_Festval.com_BlackFriday_Banner_528x465px-yoki.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8510934e-372a-41cc-a2a6-6f5fff4ea97d/V02_Festval.com_BlackFriday_Banner_840x320pxyoki.jpg",
           "alt": "OFERTA-2",
-          "href": "https://www.festval.com/cerveja-heineken-lata-350ml/p?skuId=427",
-          "hrefMobile": "https://www.festval.com/cerveja-heineken-lata-350ml/p?skuId=427",
+          "href": "https://www.festval.com/s?q=Batata+Palha+Extrafina+yoki&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=Batata+Palha+Extrafina+yoki&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Left"
-        },
-        {
-          "positionBanner": "Right",
-          "region": "Cascavel",
-          "alt": "OFERTA-3",
-          "href": "https://www.festval.com/lava-roupas-liquido-omo-ultra-power-frasco-18l/p?skuId=7350",
-          "hrefMobile": "https://www.festval.com/lava-roupas-liquido-omo-ultra-power-frasco-18l/p?skuId=7350",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4c7fc3c5-ad08-4236-8dd5-cef8016c82f7/V02_Festval.com_BlackFriday_Banner_528x465px-OMO.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/896fd3e2-806f-4bc8-9b19-0e42c3cea7b7/V02_Festval.com_BlackFriday_Banner_840x320pxOMO.jpg"
         }
       ]
     },
@@ -309,11 +300,11 @@
           "positionBanner": "Full"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23baf0f4-ced1-4160-a826-938073b0fe69/V02_Festval.com_BlackFriday_Banner-Reckitt_528x465px-nestle.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ea0e902e-5679-425e-973f-7ca2efe532cf/V02_Festval.com_BlackFriday_Banner-Reckitt_840x320px-nestle.jpg",
-          "alt": "nestle",
-          "href": "https://www.festval.com/1481?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "hrefMobile": "https://www.festval.com/1481?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9def1c64-f6a1-43e2-91ab-3d9809935c4f/V02_Festval.com_BlackFriday_Banner-Reckitt_528x465px-MAMA.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4793f332-d86a-464b-bd12-a5e9ad41e217/V02_Festval.com_BlackFriday_Banner-Reckitt_840x320px-MAMA.jpg",
+          "alt": "mamma",
+          "href": "https://www.festval.com/1570?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/1570?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Left"
         },
