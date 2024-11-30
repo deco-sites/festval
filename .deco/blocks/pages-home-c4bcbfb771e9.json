@@ -24,14 +24,6 @@
             "action": {
               "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
             }
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/09fcf3b3-5bfd-446f-8c39-0bd9e3e2605d/1920x490-(1).png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9053d5ca-55d6-4a54-9a2a-ef4c3c221733/1080X1500.png",
-            "alt": "MAMINHA1953",
-            "action": {
-              "href": "https://www.festval.com/receita?page=1&utm_source=BannerHome&utm_campaign=Maminhaassada1953"
-            }
           }
         ],
         "preload": true,
