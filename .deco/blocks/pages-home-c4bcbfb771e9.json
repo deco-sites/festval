@@ -155,15 +155,15 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "",
+          "sort": "name:desc",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": true,
           "collection": "1397"
         }
       },
-      "cta": "/1397?map=productClusterIds&sort=discount%3Adesc&page=1",
-      "title": "Esquenta Black Friday"
+      "cta": "https://www.festval.com/1397?map=productClusterIds&sort=discount%3Adesc&page=3",
+      "title": "Oportunidades"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
