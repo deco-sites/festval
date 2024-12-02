@@ -142,7 +142,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
   );
 }
 
-export async function loader(
+export function loader(
   { images, preload, interval, region }: Props,
   req: Request,
   ctx: AppContext

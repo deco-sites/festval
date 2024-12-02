@@ -1,5 +1,5 @@
 import { AppContext } from "../../apps/site.ts";
-import { deleteCookie, setCookie } from "@std/http/cookie";
+import { deleteCookie, getCookies, setCookie } from "@std/http/cookie";
 import { HEADER_HEIGHT_MOBILE } from "../../constants.ts";
 import { useComponent } from "../../sections/Component.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
@@ -45,6 +45,22 @@ export interface ModalInitProps {
   modalInitProps: Props;
 }
 
+export interface Address {
+  cep: string;
+  logradouro: string;
+  complemento: string;
+  unidade: string;
+  bairro: string;
+  localidade: string;
+  uf: string;
+  estado: string;
+  regiao: string;
+  ibge: string;
+  gia: string;
+  ddd: string;
+  siafi: string;
+}
+
 const saveCepToCookies = (
   ctx: AppContext,
   cep: string,
@@ -71,6 +87,21 @@ const saveSegmentToCookie = (ctx: AppContext, segment: string) => {
   });
 };
 
+export const viaCep = async (cep: string): Promise<Address> => {
+  try {
+    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    if (!response.ok) {
+      throw new Error(`Erro na requisição: ${response.status}`);
+    }
+
+    const result = await response.json();
+    return result;
+  } catch (error) {
+    console.error("Erro ao consultar o ViaCep:", error);
+    throw error; // Repropaga o erro para tratamento superior
+  }
+};
+
 export const action = async (
   _props: ModalInitProps,
   req: Request,
@@ -83,41 +114,59 @@ export const action = async (
   const cepFormatted = cep.replace("-", "").trim();
 
   if (platform === "vtex") {
-    // deno-lint-ignore no-explicit-any
-    const response = await (ctx as any).invoke(
-      "site/actions/sessionInit/submit.ts",
-      {
-        data: {
-          public: {
-            country: { value: "BRA" },
-            postalCode: { value: cepFormatted },
+    const viaCepResponse: Address = await viaCep(cepFormatted);
+
+    if (
+      (viaCepResponse && viaCepResponse.localidade === "Cascavel") ||
+      (viaCepResponse && viaCepResponse.localidade === "Curitiba")
+    ) {
+      // deno-lint-ignore no-explicit-any
+      const response = await (ctx as any).invoke(
+        "site/actions/sessionInit/submit.ts",
+        {
+          data: {
+            public: {
+              country: { value: "BRA" },
+              postalCode: { value: cepFormatted },
+            },
           },
-        },
+        }
+      );
+      if (response) {
+        deleteCookie(req.headers, "vtex_segment");
+        deleteCookie(req.headers, "vtex_session");
+
+        const now = new Date();
+        const expirationTime = now.getTime() + 23 * 60 * 60 * 1000;
+
+        setCookie(ctx.response.headers, {
+          value: viaCepResponse.localidade,
+          name: "region",
+          path: "/",
+          expires: new Date(expirationTime),
+          secure: true,
+        });
+
+        setCookie(ctx.response.headers, {
+          value: response.segmentToken,
+          name: "vtex_segment",
+          path: "/",
+          secure: true,
+        });
+
+        setCookie(ctx.response.headers, {
+          value: response.sessionToken,
+          name: "vtex_session",
+          path: "/",
+          secure: true,
+        });
+
+        saveSegmentToCookie(ctx, response.segmentToken);
+        saveCepToCookies(ctx, cep);
+        return true;
       }
-    );
-
-    if (response) {
-      deleteCookie(req.headers, "vtex_segment");
-      deleteCookie(req.headers, "vtex_session");
-
-      setCookie(ctx.response.headers, {
-        value: response.segmentToken,
-        name: "vtex_segment",
-        path: "/",
-        secure: true,
-      });
-
-      setCookie(ctx.response.headers, {
-        value: response.sessionToken,
-        name: "vtex_session",
-        path: "/",
-        secure: true,
-      });
-
-      saveSegmentToCookie(ctx, response.segmentToken);
-      saveCepToCookies(ctx, cep);
-      return true;
     }
+
     return false;
   }
 
