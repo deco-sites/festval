@@ -171,14 +171,14 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "orders:desc",
+          "sort": "",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": true,
           "collection": "1397"
         }
       },
-      "cta": "https://www.festval.com/1397?map=productClusterIds&sort=discount%3Adesc&page=3",
+      "cta": "https://www.festval.com/1397?map=productClusterIds&sort=&page=1",
       "title": "Oportunidades"
     },
     {
