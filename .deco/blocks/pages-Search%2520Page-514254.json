@@ -11,58 +11,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryBanner.tsx",
-        "banners": [
-          {
-            "matcher": [
-              "Cesta Natal"
-            ],
-            "images": [
-              {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f544659e-72c9-451a-a427-057616872041/banner-search-link-whats-aneli.jpg",
-                "alt": "cestasdenatal",
-                "href": "https://wa.me/554199813062/?text=Oi!%20Quero%20saber%20mais%20sobres%20as%20cestas%20de%20natal",
-                "hrefMobile": "https://wa.me/554199813062/?text=Oi!%20Quero%20saber%20mais%20sobres%20as%20cestas%20de%20natal",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1e1f085e-d5f7-40f3-91bc-a438806c1ebe/1080x694.jpg"
-              }
-            ]
-          },
-          {
-            "matcher": [
-              "tira manchas",
-              "tira mancha",
-              "lava louças",
-              "lava louça",
-              "detergente para máquina de lava louças",
-              "detergente para máquina de lava louça",
-              "Inseticidas",
-              "inseticida"
-            ],
-            "images": [
-              {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a34af0e9-201a-4d4e-92ce-e9a142aa84ca/1920X490-RECKITT.jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bc4f9fa3-ea40-4f8b-988b-1c5a66ca3d47/1080x460-RECKITT.jpg",
-                "href": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black",
-                "alt": "reckitt-search",
-                "hrefMobile": "https://www.festval.com/1545?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Reckitt+pr%C3%A9+black"
-              }
-            ]
-          },
-          {
-            "matcher": [
-              "chocolate",
-              "chocolates"
-            ],
-            "images": [
-              {
-                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/840a665d-e472-46e6-82f4-2ed000622515/V02_Festval.com_BlackFridaylindt_BannerHome_1920x490px.jpg",
-                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bfc78b37-65ea-452c-8736-2cd14fd56c76/V02_Festval.com_lindtBlackFriday_BannerHome_1080x1500px.jpg",
-                "alt": "lindt",
-                "href": "https://www.festval.com/1562?map=productClusterIds&sort=discount%3Adesc&page=1",
-                "hrefMobile": "https://www.festval.com/1562?map=productClusterIds&sort=discount%3Adesc&page=1"
-              }
-            ]
-          }
-        ]
+        "banners": []
       }
     },
     {
