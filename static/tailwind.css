@@ -1580,6 +1580,28 @@ html {
 :root:has(:is(.modal-open, .modal:target, .modal-toggle:checked + .modal, .modal[open])) {
   overflow: hidden;
 }
+.\!navbar {
+  display: flex !important;
+  align-items: center !important;
+  padding: var(--navbar-padding, 0.5rem) !important;
+  min-height: 4rem !important;
+  width: 100% !important;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--navbar-padding, 0.5rem);
+  min-height: 4rem;
+  width: 100%;
+}
+:where(.\!navbar > *) {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+:where(.navbar > *) {
+  display: inline-flex;
+  align-items: center;
+}
 .progress {
   position: relative;
   width: 100%;
@@ -3863,6 +3885,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .ml-\[2px\] {
   margin-left: 2px;
+}
+.ml-\[50px\] {
+  margin-left: 50px;
 }
 .mr-1 {
   margin-right: 0.25rem;

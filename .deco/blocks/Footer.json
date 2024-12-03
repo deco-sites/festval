@@ -203,13 +203,22 @@
         {
           "subItems": [
             {
-              "text": "seg a sab 08h às 22h"
+              "text": "(41) 3148-6507",
+              "href": "tel:(41) 3148-6507"
             },
             {
-              "text": "dom 08h às 20h"
+              "text": "sac@superfestval.com.br",
+              "href": "mailto:sac@superfestval.com.br"
             }
           ],
-          "title": "Atendimento ao cliente: Lojas físicas"
+          "title": "Atendimento ao cliente : Curitiba"
+        },
+        {
+          "subItems": [
+            {
+              "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
+            }
+          ]
         }
       ],
       "title": "Fale com o Festval"
@@ -219,31 +228,16 @@
         {
           "subItems": [
             {
-              "text": "(41) 3148-6507",
-              "href": "tel:(41) 3148-6507"
-            },
-            {
-              "text": "sac@superfestval.com.br",
-              "href": "mailto:sac@superfestval.com.br"
-            },
-            {
-              "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
-            }
-          ],
-          "title": "Atendimento ao cliente : Curitiba"
-        },
-        {
-          "subItems": [
-            {
               "text": "(45) 3225-0017",
               "href": "tel:(45) 3225-0017"
             }
           ],
+          "title": "Atendimento ao cliente : Cascavel",
           "textoBtn": "(41) 99846-0016",
-          "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F",
-          "title": "Atendimento ao cliente : Cascavel"
+          "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
         }
-      ]
+      ],
+      "title": "    Fale com o Festval"
     }
   ],
   "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c669ac32-6648-4105-ab40-e54be3799101/Grupo-4177.svg",

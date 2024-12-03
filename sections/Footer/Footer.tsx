@@ -233,27 +233,30 @@ function Footer({
                         </a> */}
                         <ul class="flex flex-col gap-2 pt-0">
                           {children.map(({ title, subItems }) => (
-                            <li key={title}>
-                              <p class="lg:text-base text-sm text-base-100 md:font-bold font-normal">
-                                {title}
-                              </p>
-                              {subItems && subItems.length > 0 && (
-                                <ul class="flex flex-col gap-1 mb-2">
-                                  {subItems.map(({ href, text, linkWpp }) => (
-                                    <li key={text}>
-                                      {href ? (
-                                        <a
-                                          class="lg:text-base text-xs font-normal text-base-100 underline"
-                                          href={href}
-                                        >
-                                          {text}
-                                        </a>
-                                      ) : (
-                                        <span class="lg:text-base text-xs font-normal text-base-100">
-                                          {text}
-                                        </span>
-                                      )}
-                                      {/* {linkWpp && (
+                            <>
+                              {title && (
+                                <li key={title}>
+                                  <p class="lg:text-base text-sm text-base-100 md:font-bold font-normal">
+                                    {title}
+                                  </p>
+                                  {subItems && subItems.length > 0 && (
+                                    <ul class="flex flex-col gap-1 mb-2">
+                                      {subItems.map(
+                                        ({ href, text, linkWpp }) => (
+                                          <li key={text}>
+                                            {href ? (
+                                              <a
+                                                class="lg:text-base text-xs font-normal text-base-100 underline"
+                                                href={href}
+                                              >
+                                                {text}
+                                              </a>
+                                            ) : (
+                                              <span class="lg:text-base text-xs font-normal text-base-100">
+                                                {text}
+                                              </span>
+                                            )}
+                                            {/* {linkWpp && (
                                         <div class="flex flex-col items-start mt-2">
                                           <p class="lg:text-base text-sm text-base-100 font-normal">Whatsapp</p>
                                           <a
@@ -301,11 +304,14 @@ function Footer({
                                           </a>
                                         </div>
                                       )} */}
-                                    </li>
-                                  ))}
-                                </ul>
+                                          </li>
+                                        )
+                                      )}
+                                    </ul>
+                                  )}
+                                </li>
                               )}
-                            </li>
+                            </>
                           ))}
                         </ul>
                       </div>
@@ -320,7 +326,9 @@ function Footer({
               <li key={index} class="list-none md:w-fit w-full">
                 <div class="flex flex-col md:gap-4 gap-1 last:gap-0">
                   <a
-                    class="lg:text-lg text-base-100 text-sm font-bold"
+                    class={`lg:text-lg text-base-100 text-sm font-bold ${
+                      index == 1 ? "opacity-0" : ""
+                    }`}
                     href={href}
                   >
                     {title}
@@ -387,7 +395,7 @@ function Footer({
                                         </g>
                                       </svg>
                                       <p className="font-medium text-base text-black">
-                                        Clique Aqui
+                                        Clique Aqui la
                                       </p>
                                     </a>
                                   </div>
@@ -507,7 +515,7 @@ function Footer({
 
           {highlightedImage && (
             <>
-              <div class="lg:flex hidden">
+              <div class="lg:flex hidden ml-[50px]">
                 <a href={highlightedImage.href}>
                   <Image
                     src={highlightedImage.image}
