@@ -6829,6 +6829,10 @@ details.collapse summary::-webkit-details-marker {
     line-height: 1.75rem;
   }
 
+  .lg\:font-bold {
+    font-weight: 700;
+  }
+
   .group:hover .lg\:group-hover\:opacity-100 {
     opacity: 1;
   }
