@@ -236,20 +236,20 @@
           "positionBanner": "Full"
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a4b3d34a-9e67-456a-8cfd-26bc7d513e08/BANNER-DE-OFERTAS-M-GUARANA.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ed282597-909d-457e-818f-b29c1f341956/BANNER-DE-OFERTAS-M-FERRERO.jpg",
           "alt": "OFERTA-2",
-          "href": "https://www.festval.com/s?q=GUARANA+ANTARCTICA+350ML&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b55fd379-650b-4b4f-aded-db0a972cb789/GUARANA.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=GUARANA+ANTARCTICA+350ML&page=1",
+          "href": "https://www.festval.com/s?q=Ferrero+Rocher+Tablete&sort=orders%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bba3005-0e7b-43ea-a9f0-f41b0227ef02/FERRERO.jpg",
+          "hrefMobile": "https://www.festval.com/s?q=Ferrero+Rocher+Tablete&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Left"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7d266bd-6140-4157-b0ac-db5f1cb9d1aa/AXE.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c289b79c-f0d7-4c90-9d09-4684a54090d7/BANNER-DE-OFERTAS-M-AXE.jpg",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6387221e-2a70-4c4b-86f0-2a3efe84054c/spaten.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a82bb813-9292-47fc-a294-f338bcc22af8/BANNER-DE-OFERTAS-M-SPATEN.jpg",
           "alt": "OFERTA-1",
-          "href": "/s?q=axe+152ml&page=1",
-          "hrefMobile": "/s?q=axe+152ml&page=1",
+          "href": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314",
+          "hrefMobile": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314",
           "region": "Mostrar em ambas",
           "positionBanner": "Right"
         }
