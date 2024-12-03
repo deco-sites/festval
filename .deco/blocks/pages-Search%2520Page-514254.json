@@ -11,7 +11,25 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryBanner.tsx",
-        "banners": []
+        "banners": [
+          {
+            "matcher": [
+              "Cestas de Natal",
+              "cestas",
+              "cestas natal",
+              "cesta natal"
+            ],
+            "images": [
+              {
+                "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f544659e-72c9-451a-a427-057616872041/banner-search-link-whats-aneli.jpg",
+                "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1e1f085e-d5f7-40f3-91bc-a438806c1ebe/1080x694.jpg",
+                "alt": "cestasdenatal",
+                "href": "https://wa.me/554199813062/?text=Oi!%20Quero%20saber%20mais%20sobres%20as%20cestas%20de%20natal",
+                "hrefMobile": "https://wa.me/554199813062/?text=Oi!%20Quero%20saber%20mais%20sobres%20as%20cestas%20de%20natal"
+              }
+            ]
+          }
+        ]
       }
     },
     {
