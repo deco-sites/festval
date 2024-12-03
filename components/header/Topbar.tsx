@@ -73,7 +73,7 @@ function Topbar({ topBarProps }: TopBarProps) {
   const device = useDevice();
   const isMobile = device === "mobile";
   const width = isMobile ? 1080 : 1920;
-  const height = isMobile ? 159 : 50;
+  const height = 50;
 
   return (
     <div class="w-full flex justify-center">

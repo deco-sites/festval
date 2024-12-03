@@ -243,7 +243,7 @@ const onLoad = (id: string) => {
 
   const handleScroll = () => {
     const isMobile = globalThis.innerWidth < 768; // Substitui `window` por `globalThis`
-    const scrollThreshold = isMobile ? 100 : 50;
+    const scrollThreshold = 50;
 
     if (globalThis.scrollY > scrollThreshold) {
       // Substitui `window` por `globalThis`
