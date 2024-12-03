@@ -395,7 +395,7 @@ function Footer({
                                         </g>
                                       </svg>
                                       <p className="font-medium text-base text-black">
-                                        Clique Aqui la
+                                        Clique Aqui
                                       </p>
                                     </a>
                                   </div>
