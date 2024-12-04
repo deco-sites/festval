@@ -160,10 +160,14 @@
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-        "props": {}
+        "props": {
+          "collection": "1073",
+          "count": 12,
+          "hideUnavailableItems": true
+        }
       },
-      "cta": "/1073?map=productClusterIds",
-      "title": "Mais Vendidos"
+      "title": "Mais Vendidos",
+      "cta": "/1073?map=productClusterIds"
     },
     {
       "__resolveType": "site/sections/separator.tsx",
