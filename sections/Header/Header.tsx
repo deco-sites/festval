@@ -238,18 +238,21 @@ const Mobile = ({
 const onLoad = (id: string) => {
   const header = document.getElementById(id);
   const navbar = header?.querySelector(".navbar-topbar-control");
+  const overlayMegamenu = navbar?.querySelector(
+    ".megamenu-overlay"
+  ) as HTMLDivElement;
 
-  if (!header || !navbar) return;
+  if (!header || !navbar || !overlayMegamenu) return;
 
   const handleScroll = () => {
-    const isMobile = globalThis.innerWidth < 768; // Substitui `window` por `globalThis`
     const scrollThreshold = 50;
 
     if (globalThis.scrollY > scrollThreshold) {
-      // Substitui `window` por `globalThis`
       navbar.classList.add("top-0");
+      overlayMegamenu.style.top = "124px";
     } else {
       navbar.classList.remove("top-0");
+      overlayMegamenu.style.top = "174px";
     }
   };
 
@@ -285,7 +288,12 @@ function Header({
         props.topBarProps.topBarProps.desktop && (
           <Topbar topBarProps={props.topBarProps.topBarProps} />
         )}
-      <div class="navbar-topbar-control bg-base-100 fixed w-screen z-40">
+      <div
+        class="navbar-topbar-control bg-base-100 fixed w-screen z-40"
+        style={{
+          transition: "all 0.3s ease-in-out",
+        }}
+      >
         {alerts.length > 0 && <Alert alerts={alerts} />}
         {device === "desktop" ? (
           <Desktop logo={logo} {...props} />

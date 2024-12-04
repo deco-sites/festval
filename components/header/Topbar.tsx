@@ -56,7 +56,6 @@ function Banner({
         {/* Fallback para o caso de <img> */}
         <img
           className="w-full h-full object-cover"
-          width={width}
           height={height}
           src={desktop || mobile}
           alt={alt}

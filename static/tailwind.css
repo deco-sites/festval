@@ -4048,6 +4048,9 @@ details.collapse summary::-webkit-details-marker {
 .h-auto {
   height: auto;
 }
+.h-dvh {
+  height: 100dvh;
+}
 .h-full {
   height: 100%;
 }
@@ -4206,6 +4209,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-auto {
   width: auto;
+}
+.w-dvw {
+  width: 100dvw;
 }
 .w-fit {
   width: -moz-fit-content;

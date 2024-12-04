@@ -22,13 +22,13 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
       </button>
 
       {children && children.length > 0 && (
-        <div class="hidden group-hover:flex">
+        <div class="hidden flex group-hover:flex">
           <div
             id={`overlay-${menuId}`}
-            class="fixed left-0 w-full h-full bg-[#646072] opacity-30 z-30 pointer-events-none"
+            class="fixed megamenu-overlay bg-[#646072] opacity-30 z-30 pointer-events-none w-dvw h-dvh"
             style={{
-              top: "10px",
-              marginTop: "114px",
+              top: "174px",
+              left: "0px",
             }}
           ></div>
           <div
@@ -74,8 +74,13 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                               leaf.children.map((subleaf) => (
                                 <ul>
                                   <li>
-                                    <a class="text-base font-normal" href={subleaf.url}>
-                                      <span class="text-xs">{subleaf.name}</span>
+                                    <a
+                                      class="text-base font-normal"
+                                      href={subleaf.url}
+                                    >
+                                      <span class="text-xs">
+                                        {subleaf.name}
+                                      </span>
                                     </a>
                                   </li>
                                 </ul>
