@@ -18,6 +18,14 @@
             "alt": "site"
           },
           {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/299b155c-45fe-40b8-b155-ac473568fa71/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c5ddd20a-b7e8-4a23-a676-b1c17cd696ca/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1080x1500px.jpg",
+            "alt": "natal",
+            "action": {
+              "href": "https://www.festval.com/natal?page=1"
+            }
+          },
+          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/49a0f883-78d9-4c65-9ffd-16e7c60b74a2/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1080x1500px.jpg",
             "alt": "cestasnatal",
@@ -34,17 +42,17 @@
             }
           },
           {
+            "alt": "mundonestle",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ca0e930a-6428-4d88-81a9-1ad48b84ad24/nestle1920x490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97e9e3bb-90a8-4afb-ad4b-eb06442920f2/nestle1080x1500.jpg",
-            "alt": "mundonestle",
             "action": {
               "href": "https://www.festval.com/163?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=MundoNestle"
             }
           },
           {
-            "alt": "coronita",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f28a8f6f-3fd8-40f0-923c-7622b5f359ce/coronita1920x490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/fdeee749-ded7-434a-b4f3-892482884293/coronita1080x1500.jpg",
+            "alt": "coronita",
             "action": {
               "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=Coronital6p5"
             }
@@ -152,12 +160,7 @@
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-        "props": {
-          "sort": "orders:desc",
-          "collection": "1073",
-          "count": 12,
-          "hideUnavailableItems": true
-        }
+        "props": {}
       },
       "cta": "/1073?map=productClusterIds",
       "title": "Mais Vendidos"
