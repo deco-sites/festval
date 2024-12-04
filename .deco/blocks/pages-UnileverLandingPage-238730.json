@@ -1,0 +1,65 @@
+{
+  "name": "UnileverLandingPage",
+  "path": "/Unileverteste",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
+        "images": [
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/299b155c-45fe-40b8-b155-ac473568fa71/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1920x490px.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c5ddd20a-b7e8-4a23-a676-b1c17cd696ca/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1080x1500px.jpg",
+            "alt": "UUU"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/categoryGridLp.tsx",
+        "items": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bba3005-0e7b-43ea-a9f0-f41b0227ef02/FERRERO.jpg",
+            "href": "tete"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 12,
+          "sort": "",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "value": "172",
+              "key": "productClusterIds"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

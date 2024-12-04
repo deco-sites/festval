@@ -22,7 +22,7 @@
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c5ddd20a-b7e8-4a23-a676-b1c17cd696ca/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1080x1500px.jpg",
             "alt": "natal",
             "action": {
-              "href": "https://www.festval.com/natal?page=1"
+              "href": "https://www.festval.com/1572?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
           },
           {
