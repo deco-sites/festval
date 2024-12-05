@@ -1,6 +1,6 @@
 {
   "name": "UnileverLandingPage",
-  "path": "/Unileverteste",
+  "path": "/Unilever",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -14,9 +14,12 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/299b155c-45fe-40b8-b155-ac473568fa71/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1920x490px.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c5ddd20a-b7e8-4a23-a676-b1c17cd696ca/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1080x1500px.jpg",
-            "alt": "UUU"
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/328f327a-a418-415f-b041-98772e86bcd1/FESTVAL_Hellmanns_promo_fim_de_ano_1920x490.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e444c936-8585-4e80-b909-b72e3f860f90/FESTVAL_Hellmanns_promo_fim_de_ano_1080x1500.jpg",
+            "alt": "CELEBRAR15/11A15/01",
+            "action": {
+              "href": "https://www.festval.com/1571?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=CelebrarUnilever"
+            }
           }
         ]
       }
@@ -27,10 +30,62 @@
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
         "items": [
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bba3005-0e7b-43ea-a9f0-f41b0227ef02/FERRERO.jpg",
-            "href": "tete"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a1471897-c9ee-4873-8581-d4f2f8f14704/SUBMENU-UNIPrancheta-1.jpg",
+            "href": "https://www.festval.com/1215?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Rexona"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7004ad4e-5855-4318-b8f8-906be75cf333/SUBMENU-UNIPrancheta-2.jpg",
+            "href": "https://www.festval.com/1183?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Cuidados Domésticos"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b846f5c0-5f39-4212-b53e-d83de99fe852/SUBMENU-UNIPrancheta-3.jpg",
+            "label": "Beleza & Bem-estar",
+            "href": "https://www.festval.com/1178?map=productClusterIds&sort=orders%3Adesc&page=1"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2b9db7a5-6b6f-46e7-8646-a95c7ee505e6/SUBMENU-UNIPrancheta-4.jpg",
+            "href": "https://www.festval.com/1218?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Mãe Terra"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4612ffe0-1255-4f36-a575-f7f4db7928ff/SUBMENU-UNIPrancheta-5.jpg",
+            "href": "qwe",
+            "label": "Nutriçao"
           }
         ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx",
+        "color": "#F8F8F8"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "orders:desc",
+            "collection": "1219",
+            "count": 12,
+            "hideUnavailableItems": false,
+            "similars": false
+          }
+        },
+        "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3a91ff82-4fb1-4009-91e9-809a2c406c7d/helmans-lp-arte.jpg",
+        "bannerMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9c6fcc76-f8e7-4105-a85d-29fe5fc841b1/helmans-lp-arte-MBL.jpg"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx"
       }
     },
     {
