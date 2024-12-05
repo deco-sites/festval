@@ -23,6 +23,23 @@ export interface Banner {
   /** @description Image's alt text */
   alt: string;
 
+  /** @description Activate deadline */
+  activeTerm: boolean;
+
+  /**
+   * @description Initial date
+   * @format date
+   * @default	2024-01-02
+   */
+  initialDate: string;
+
+  /**
+   * @description Deadline date
+   * @format date
+   * @default	2024-01-02
+   */
+  deadLine: string;
+
   /** @description Region which banner will be shown  */
   region?: "Cascavel" | "Curitiba";
 
@@ -200,10 +217,23 @@ function CarouselGeoLocation({
   const id = useId();
 
   const filteredImages = images.filter((image) => {
-    if (region) {
-      return image.region === region || !image.region;
-    }
-    return !image.region;
+    const now = new Date();
+
+    const initialDate = new Date(image.initialDate);
+    initialDate.setHours(0, 0, 0, 0);
+
+    const deadLine = new Date(image.deadLine);
+    deadLine.setHours(23, 59, 59, 999);
+
+    const isActiveTermValid = image.activeTerm
+      ? now >= initialDate && now <= deadLine
+      : true;
+
+    const isRegionValid = region
+      ? image.region === region || !image.region
+      : !image.region;
+
+    return isRegionValid && isActiveTermValid;
   });
 
   const showNavigation = filteredImages.length > 1;

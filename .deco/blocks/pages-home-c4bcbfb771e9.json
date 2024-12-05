@@ -15,7 +15,10 @@
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
-            "alt": "site"
+            "alt": "site",
+            "activeTerm": true,
+            "deadLine": "2024-12-05",
+            "initialDate": "2024-12-04"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/299b155c-45fe-40b8-b155-ac473568fa71/V05_Campanha_Natal_2024_Banner_Home_Desktop_Festval.com_1920x490px.jpg",
@@ -23,7 +26,10 @@
             "alt": "natal",
             "action": {
               "href": "https://www.festval.com/1572?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
+            },
+            "deadLine": "2024-12-12",
+            "activeTerm": false,
+            "initialDate": "2024-12-11"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
@@ -31,7 +37,10 @@
             "alt": "cestasnatal",
             "action": {
               "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
-            }
+            },
+            "activeTerm": false,
+            "deadLine": "2024-12-05",
+            "initialDate": "2024-12-04"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b34f84b9-7f12-4921-a218-38b56c6b8fdf/FESTVAL_Hellmanns_promo_fim_de_ano_1920x496.jpg",
@@ -39,7 +48,10 @@
             "alt": "CELEBRARUNILEVER",
             "action": {
               "href": "https://www.festval.com/1571?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=CelebrarUnilever"
-            }
+            },
+            "activeTerm": false,
+            "deadLine": "2024-12-05",
+            "initialDate": "2024-12-04"
           },
           {
             "alt": "mundonestle",
@@ -47,7 +59,10 @@
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97e9e3bb-90a8-4afb-ad4b-eb06442920f2/nestle1080x1500.jpg",
             "action": {
               "href": "https://www.festval.com/163?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=MundoNestle"
-            }
+            },
+            "activeTerm": false,
+            "deadLine": "2024-12-05",
+            "initialDate": "2024-12-04"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f28a8f6f-3fd8-40f0-923c-7622b5f359ce/coronita1920x490.jpg",
@@ -55,7 +70,10 @@
             "alt": "coronita",
             "action": {
               "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=Coronital6p5"
-            }
+            },
+            "activeTerm": false,
+            "deadLine": "2024-12-08",
+            "initialDate": "2024-12-04"
           }
         ],
         "preload": true,
@@ -198,7 +216,10 @@
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3701f449-96c4-47d1-bea2-95ea99dde75c/FESTVAL-NOVO-APP-BANNER-528x465-ADEGA.png",
           "hrefMobile": "/adega",
           "region": "Mostrar em ambas",
-          "positionBanner": "Left"
+          "positionBanner": "Left",
+          "initialDate": "2024-12-07",
+          "deadLine": "2024-12-10",
+          "activeTerm": false
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c551c33b-00e2-4c80-83d2-0194dc3a070e/FESTVAL-NOVO-APP-BANNER-528x465-AC_OUGUE.png",
@@ -207,7 +228,10 @@
           "alt": "carnes",
           "hrefMobile": "/acougue",
           "region": "Mostrar em ambas",
-          "positionBanner": "Right"
+          "positionBanner": "Right",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
         }
       ]
     },
@@ -240,7 +264,10 @@
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a7b3aaad-ae56-4f39-8641-fc3d302d076e/horti-teste-app-4.jpg",
           "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
-          "positionBanner": "Full"
+          "positionBanner": "Full",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
         },
         {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ed282597-909d-457e-818f-b29c1f341956/BANNER-DE-OFERTAS-M-FERRERO.jpg",
@@ -249,7 +276,10 @@
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bba3005-0e7b-43ea-a9f0-f41b0227ef02/FERRERO.jpg",
           "hrefMobile": "https://www.festval.com/s?q=Ferrero+Rocher+Tablete&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
-          "positionBanner": "Left"
+          "positionBanner": "Left",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6387221e-2a70-4c4b-86f0-2a3efe84054c/spaten.jpg",
@@ -258,7 +288,10 @@
           "href": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314",
           "hrefMobile": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314",
           "region": "Mostrar em ambas",
-          "positionBanner": "Right"
+          "positionBanner": "Right",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
         }
       ]
     },
@@ -294,7 +327,10 @@
           "href": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1",
           "hrefMobile": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1",
           "region": "Mostrar em ambas",
-          "positionBanner": "Full"
+          "positionBanner": "Full",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bba26047-5316-4767-8b82-b42327d3c307/BANNER_M_NINHO.jpg",
@@ -303,7 +339,10 @@
           "href": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
           "hrefMobile": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
           "region": "Mostrar em ambas",
-          "positionBanner": "Left"
+          "positionBanner": "Left",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee25d1dd-a872-4e07-826c-cff57605b9bc/BANNER-M-visibilidade-lindor.jpg",
@@ -312,7 +351,10 @@
           "href": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
           "hrefMobile": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
-          "positionBanner": "Right"
+          "positionBanner": "Right",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
         }
       ],
       "inverted": true

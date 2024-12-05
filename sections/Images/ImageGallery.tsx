@@ -22,6 +22,22 @@ interface Banner {
   positionBanner: "Full" | "Left" | "Right";
   /** @description Region which banner will be shown  */
   region: "Cascavel" | "Curitiba" | "Mostrar em ambas";
+  /** @description Activate deadline */
+  activeTerm: boolean;
+
+  /**
+   * @description Initial date
+   * @format date
+   * @default	2024-01-02
+   */
+  initialDate: string;
+
+  /**
+   * @description Deadline date
+   * @format date
+   * @default	2024-01-02
+   */
+  deadLine: string;
 }
 
 export interface Address {
@@ -191,6 +207,22 @@ function Gallery({
   inverted = false,
   region,
 }: SectionProps<typeof loader>) {
+  const isValidDateRange = (banner: Banner) => {
+    if (!banner.activeTerm) return true;
+
+    const now = new Date();
+
+    const initialDate = new Date(banner.initialDate);
+    initialDate.setHours(0, 0, 0, 0);
+
+    const deadLine = new Date(banner.deadLine);
+    deadLine.setHours(23, 59, 59, 999);
+
+    return now >= initialDate && now <= deadLine;
+  };
+
+  const filteredBanners = banners.filter((banner) => isValidDateRange(banner));
+
   const prioritizeByRegion = (banner: Banner) => {
     if (region) {
       if (banner.region === region) return 1;
@@ -200,9 +232,11 @@ function Gallery({
     return banner.region ? 3 : 2;
   };
 
-  const sortedBanners = [...banners].sort(
+  const sortedBanners = [...filteredBanners].sort(
     (a, b) => prioritizeByRegion(a) - prioritizeByRegion(b)
   );
+
+  console.log("sorted", sortedBanners);
 
   const fullBanner = sortedBanners.find(
     (banner) => banner.positionBanner === "Full"
