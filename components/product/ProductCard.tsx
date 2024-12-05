@@ -378,75 +378,14 @@ const useAddToCart = ({ product, seller }: Props) => {
   return null;
 };
 
-function expandPromoText(text: string): string | null {
-  const promoMap: { [key: string]: string } = {
-    L12P8: "Leve 12 Pague 8",
-    L12P10: "Leve 12 Pague 10",
-    L10P8: "Leve 10 Pague 8",
-    L10P6: "Leve 10 Pague 6",
-    L10P5: "Leve 10 Pague 5",
-    L8P6: "Leve 8 Pague 6",
-    L6P5: "Leve 6 Pague 5",
-    L6P4: "Leve 6 Pague 4",
-    L5P4: "Leve 5 Pague 4",
-    L4P3: "Leve 4 Pague 3",
-    L4P2: "Leve 4 Pague 2",
-    L3P2: "Leve 3 Pague 2",
-    L2P1: "Leve 2 Pague 1",
-    // Promoções de 50% off
-    "50off na 3": "50% Off na 3ª unidade",
-    "50off na 3°": "50% Off na 3ª unidade",
-    "50off Na 3": "50% Off na 3ª unidade",
-    "50off Na 3°": "50% Off na 3ª unidade",
-    "50%Off na 2": "50% Off na 2ª unidade",
-    "50%Off na 2°": "50% Off na 2ª unidade",
-    "50%Off Na 2°": "50% Off na 2ª unidade",
-    "50%Off Na 2": "50% Off na 2ª unidade",
-
-    // Promoções de 40% off
-    "40off na 2": "40% Off na 2ª unidade",
-    "40off na 2°": "40% Off na 2ª unidade",
-    "40off Na 2": "40% Off na 2ª unidade",
-    "40off Na 2°": "40% Off na 2ª unidade",
-
-    // Promoções de 30% off
-    "30off na 2": "30% Off na 2ª unidade",
-    "30off na 2°": "30% Off na 2ª unidade",
-    "30off Na 2": "30% Off na 2ª unidade",
-    "30off Na 2°": "30% Off na 2ª unidade",
-    "30%Off na 2": "30% Off na 2ª unidade",
-
-    // Promoções de 25% off
-    "25off na 3": "25% Off na 3ª unidade",
-    "25off na 3°": "25% Off na 3ª unidade",
-    "25off Na 3": "25% Off na 3ª unidade",
-    "25off Na 3°": "25% Off na 3ª unidade",
-
-    // Promoções de 20% off
-    "20off na 2": "20% Off na 2ª unidade",
-    "20off na 2°": "20% Off na 2ª unidade",
-    "20off Na 2": "20% Off na 2ª unidade",
-    "20off Na 2°": "20% Off na 2ª unidade",
-
-    // Promoções de 15% off
-    "15off na 2": "15% Off na 2ª unidade",
-    "15off na 2°": "15% Off na 2ª unidade",
-    "15off Na 2": "15% Off na 2ª unidade",
-    "15off Na 2°": "15% Off na 2ª unidade",
-
-    // Promoções de 10% off
-    "10off na 2": "10% Off na 2ª unidade",
-    "10off na 2°": "10% Off na 2ª unidade",
-    "10off Na 2": "10% Off na 2ª unidade",
-    "10off Na 2°": "10% Off na 2ª unidade",
-  };
-
-  for (const [promoCode, promoText] of Object.entries(promoMap)) {
-    if (text.includes(promoCode)) {
-      return (text = promoText);
+function expandPromoText(promo: string): string | null {
+  if (promo.includes("FLAG")) {
+    if (promo.includes("|")) {
+      const [beforePipe] = promo.split("|");
+      return beforePipe.trim();
     }
+    return promo.replace("FLAG", "").trim();
   }
-
   return null;
 }
 
@@ -508,12 +447,11 @@ function ProductCard({
     product.offers?.offers[0].teasers.forEach((promo) => {
       const expandedPromo = expandPromoText(promo.name);
 
-      if (expandedPromo !== null) {
+      if (expandedPromo) {
         textTag.push(expandedPromo);
       }
     });
   }
-
   return (
     <div
       {...event}
