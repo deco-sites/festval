@@ -252,10 +252,10 @@ const onLoad = (id: string) => {
 
       if (globalThis.scrollY > scrollThreshold) {
         navbar.classList.add("top-0");
-        overlayMegamenu.style.top = "124px";
+        if (overlayMegamenu) overlayMegamenu.style.top = "124px";
       } else {
         navbar.classList.remove("top-0");
-        overlayMegamenu.style.top = "174px";
+        if (overlayMegamenu) overlayMegamenu.style.top = "174px";
       }
     };
 
