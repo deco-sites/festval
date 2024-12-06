@@ -43,7 +43,6 @@ interface Props {
 }
 
 function Filters({ filters }: Props) {
-  console.log(filters.filter);
   const [openFilters, setOpenFilters] = useState<Record<string, boolean>>({});
 
   const toggleFilter = (key: string) => {

@@ -236,8 +236,6 @@ function Gallery({
     (a, b) => prioritizeByRegion(a) - prioritizeByRegion(b)
   );
 
-  console.log("sorted", sortedBanners);
-
   const fullBanner = sortedBanners.find(
     (banner) => banner.positionBanner === "Full"
   );

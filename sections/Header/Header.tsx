@@ -237,30 +237,36 @@ const Mobile = ({
 
 const onLoad = (id: string) => {
   const header = document.getElementById(id);
+  const topbar = document.getElementById("topbar");
   const navbar = header?.querySelector(".navbar-topbar-control");
   const overlayMegamenu = navbar?.querySelector(
     ".megamenu-overlay"
   ) as HTMLDivElement;
 
-  if (!header || !navbar || !overlayMegamenu) return;
+  if (!header || !navbar) return;
 
-  const handleScroll = () => {
-    const scrollThreshold = 50;
+  if (topbar) {
+    header.style.height = "174px";
+    const handleScroll = () => {
+      const scrollThreshold = 50;
 
-    if (globalThis.scrollY > scrollThreshold) {
-      navbar.classList.add("top-0");
-      overlayMegamenu.style.top = "124px";
-    } else {
-      navbar.classList.remove("top-0");
-      overlayMegamenu.style.top = "174px";
-    }
-  };
+      if (globalThis.scrollY > scrollThreshold) {
+        navbar.classList.add("top-0");
+        overlayMegamenu.style.top = "124px";
+      } else {
+        navbar.classList.remove("top-0");
+        overlayMegamenu.style.top = "174px";
+      }
+    };
 
-  globalThis.addEventListener("scroll", handleScroll);
+    globalThis.addEventListener("scroll", handleScroll);
 
-  globalThis.addEventListener("unload", () => {
-    globalThis.removeEventListener("scroll", handleScroll);
-  });
+    globalThis.addEventListener("unload", () => {
+      globalThis.removeEventListener("scroll", handleScroll);
+    });
+  } else {
+    header.style.height = "124px";
+  }
 };
 
 function Header({

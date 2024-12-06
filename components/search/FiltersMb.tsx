@@ -1,14 +1,19 @@
-import type { Filter, FilterToggle, FilterToggleValue, ProductListingPage } from "apps/commerce/types.ts";
+import type {
+  Filter,
+  FilterToggle,
+  FilterToggleValue,
+  ProductListingPage,
+} from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 
 import { useScript } from "@deco/deco/hooks";
 
 // Helper para verificar se o filtro é do tipo "FilterToggle"
-const isToggle = (filter: Filter): filter is FilterToggle => filter["@type"] === "FilterToggle";
+const isToggle = (filter: Filter): filter is FilterToggle =>
+  filter["@type"] === "FilterToggle";
 
 // Função de controle do acordeon (baseado no código fornecido)
 const onClick = () => {
-  console.log("clique");
   event?.stopPropagation();
 
   const button = event?.currentTarget as HTMLButtonElement;
@@ -16,10 +21,8 @@ const onClick = () => {
   const arrow = span?.querySelector<HTMLImageElement>("img");
   const li = button.closest<HTMLLIElement>("li");
   const ul = li?.querySelector<HTMLUListElement>("ul");
-  console.log(ul);
 
   if (ul) {
-    console.log("lista");
     if (ul.style.maxHeight) {
       ul.style.maxHeight = "";
       ul.classList.remove("opacity-100");
@@ -34,7 +37,6 @@ const onClick = () => {
 
     if (arrow) {
       arrow.classList.toggle("rotate-[-180deg]");
-      console.log("roda");
     }
   }
 };
@@ -46,7 +48,9 @@ function ValueItem({ url, selected, label }: FilterToggleValue) {
       href={url}
       rel="nofollow"
       class={`px-4 py-2 rounded-full border ${
-        selected ? "bg-primary text-white border-primary" : "bg-white text-black border-gray-300"
+        selected
+          ? "bg-primary text-white border-primary"
+          : "bg-white text-black border-gray-300"
       } text-sm hover:bg-gray-200`}
     >
       {label}

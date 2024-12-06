@@ -59,7 +59,6 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
   const btnFoward = container?.querySelector(".btn-next") as HTMLButtonElement;
 
   function validateGoNext(): boolean {
-    console.log(pageInfo);
     if (
       pageInfo.currentPage * (pageInfo.recordPerPage ?? 12) >= record - 1 ||
       pageInfo.currentPage === 50
@@ -73,7 +72,6 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
           if (validateGoNext()) btnFoward.click();
         }
@@ -218,7 +216,6 @@ function Result(props: SectionProps<typeof loader>) {
   const { startingPage = 0, url, partial, searchTerm } = props;
   const page = props.page!;
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
-  console.log(pageInfo);
   const perPage = pageInfo?.recordPerPage || products.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;

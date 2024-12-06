@@ -75,7 +75,7 @@ function Topbar({ topBarProps }: TopBarProps) {
   const height = 50;
 
   return (
-    <div class="w-full flex justify-center">
+    <div id="topbar" class="w-full flex justify-center">
       <div style={`width:${width}px; height:${height}px;`}>
         <Banner
           mobile={mobile ?? undefined}
