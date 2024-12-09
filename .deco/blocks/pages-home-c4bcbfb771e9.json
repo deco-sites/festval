@@ -52,6 +52,26 @@
             "activeTerm": false,
             "deadLine": "2024-12-05",
             "initialDate": "2024-12-04"
+          },
+          {
+            "initialDate": "2024-01-02",
+            "deadLine": "2024-01-02",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ef653103-6f05-4fac-9969-b1046e7f0fe4/coronita1920x490fretegratis.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e670eeca-18fd-45fe-af0e-49a952d8f244/coronita1080x1500fretegratis.jpg",
+            "alt": "coronafretegratis",
+            "action": {
+              "href": "https://www.festval.com/s?q=corona+330ml+long&page=1&utm_source=BannerHome&utm_campaign=coronafretegr%C3%A1tis"
+            }
+          },
+          {
+            "initialDate": "2024-01-02",
+            "deadLine": "2024-01-02",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/48f88184-093f-4a69-ac8c-ea997752bdc1/camp_zaffari_amigo_secreto_1920x490.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2277e22c-019d-4df0-a37d-29c8bdfef15f/camp_zaffari_amigo_secreto_1080x1500.jpg",
+            "alt": "amigosecreto",
+            "action": {
+              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=amigosecretonestl%C3%A9"
+            }
           }
         ],
         "preload": true,
