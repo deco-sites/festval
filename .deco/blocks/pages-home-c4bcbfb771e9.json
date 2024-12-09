@@ -52,28 +52,6 @@
             "activeTerm": false,
             "deadLine": "2024-12-05",
             "initialDate": "2024-12-04"
-          },
-          {
-            "alt": "mundonestle",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ca0e930a-6428-4d88-81a9-1ad48b84ad24/nestle1920x490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97e9e3bb-90a8-4afb-ad4b-eb06442920f2/nestle1080x1500.jpg",
-            "action": {
-              "href": "https://www.festval.com/163?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=MundoNestle"
-            },
-            "activeTerm": false,
-            "deadLine": "2024-12-05",
-            "initialDate": "2024-12-04"
-          },
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f28a8f6f-3fd8-40f0-923c-7622b5f359ce/coronita1920x490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/fdeee749-ded7-434a-b4f3-892482884293/coronita1080x1500.jpg",
-            "alt": "coronita",
-            "action": {
-              "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=Coronital6p5"
-            },
-            "activeTerm": false,
-            "deadLine": "2024-12-08",
-            "initialDate": "2024-12-04"
           }
         ],
         "preload": true,
@@ -258,11 +236,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f3282c04-0972-490f-a0c7-831c5d597616/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bd1889e6-d51b-4608-a19d-73f7adec93c9/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c656b319-5ffb-4d9c-88ee-d1a099bc4920/churras.jpg",
-          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5468c56e-e984-4543-8541-2342a77d07bd/limpeza-teste-app-4.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
@@ -399,8 +377,7 @@
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c7f119f-73ad-4065-a0aa-a8487c15b1cb/unilever-2-sub-menu.png",
-          "href": "/Unilever",
-          "label": "Unilever"
+          "href": "/Unilever"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/30cbfd5b-2ab3-4dcf-9a42-49a00c8d677a/g7-2-(1).png",
