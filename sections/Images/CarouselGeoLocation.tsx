@@ -28,15 +28,13 @@ export interface Banner {
 
   /**
    * @description Initial date
-   * @format date
-   * @default	2024-01-02
+   * @default	01/01/2024
    */
   initialDate: string;
 
   /**
    * @description Deadline date
-   * @format date
-   * @default	2024-01-02
+   * @default	01/01/2024
    */
   deadLine: string;
 
