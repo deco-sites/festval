@@ -27,9 +27,9 @@
             "action": {
               "href": "https://www.festval.com/1572?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "deadLine": "28/12/2024",
+            "deadLine": "2024-12-25",
             "activeTerm": true,
-            "initialDate": "10/12/2024"
+            "initialDate": "2024-12-01"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1f92366d-e64a-4690-99d1-33dc8c9bba32/AF_V08_Campanha_Divulgacao_Cesta-Natal_Festval.com_Banner_Home_Desktop_1920x490px.jpg",
@@ -39,8 +39,8 @@
               "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
             },
             "activeTerm": true,
-            "initialDate": "10/12/2024",
-            "deadLine": "23/12/2024"
+            "initialDate": "2024-12-09",
+            "deadLine": "2024-12-22"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b34f84b9-7f12-4921-a218-38b56c6b8fdf/FESTVAL_Hellmanns_promo_fim_de_ano_1920x496.jpg",
@@ -50,8 +50,8 @@
               "href": "https://www.festval.com/1571?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=CelebrarUnilever"
             },
             "activeTerm": true,
-            "deadLine": "30/12/2024",
-            "initialDate": "10/12/2024"
+            "deadLine": "2024-12-29",
+            "initialDate": "2024-12-11"
           },
           {
             "initialDate": "01/01/2024",
@@ -76,8 +76,8 @@
             "activeTerm": false
           },
           {
-            "initialDate": "24/12/2024",
-            "deadLine": "30/12/2024",
+            "initialDate": "2024-12-23",
+            "deadLine": "2024-12-29",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96cba865-c178-4e49-9848-854009e84cc8/1920X490-lindt_natal.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d42c255b-a60d-4e11-add1-e331422d90ee/1080X1500-lindt_natal.jpg",
             "alt": "LindtNatal",
@@ -87,8 +87,8 @@
             }
           },
           {
-            "initialDate": "17/12/2024",
-            "deadLine": "30/12/2024",
+            "initialDate": "2024-12-16",
+            "deadLine": "2024-12-29",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/48ee7010-df12-483e-9743-5aaaf3891455/KV-Final-de-Ano_vermelho_fricasse_manjar-1920x490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/afb40947-b6ca-42e6-97e0-d8e0668e8512/KV-Final-de-Ano_vermelho_fricasse_manjar-1080x1500.jpg",
             "alt": "Nestlefimdeano",
@@ -98,8 +98,8 @@
             }
           },
           {
-            "initialDate": "17/12/2024",
-            "deadLine": "30/12/2024",
+            "initialDate": "2024-12-16",
+            "deadLine": "2024-12-29",
             "alt": "ambevfimdeano",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/efd0ab43-d254-406b-9e35-108147d8fa3e/spaten12por10d.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6cd9a187-b41a-440b-b198-4028412f3b13/spaten12por10m.jpg",
@@ -109,19 +109,19 @@
             }
           },
           {
-            "initialDate": "24/12/2024",
-            "deadLine": "13/01/2025",
+            "deadLine": "2025-01-12",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f5c3e726-1f05-4fd2-9d9b-457165e07dda/1920X490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/247e41aa-ef58-488d-bdd0-f1b4770c8c5c/1080X1500.jpg",
             "alt": "ASSADO1953",
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/assado-de-tiras-1953?page=1&utm_source=BannerHome&utm_campaign=ASSADODETIRAS1953"
-            }
+            },
+            "initialDate": "2024-12-27"
           },
           {
-            "initialDate": "14/01/2025",
-            "deadLine": "20/01/2025",
+            "initialDate": "2025-01-13",
+            "deadLine": "2025-01-19",
             "alt": "JBS13-19/25",
             "activeTerm": true,
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
@@ -131,8 +131,8 @@
             }
           },
           {
-            "initialDate": "28/12/2024",
-            "deadLine": "05/01/2025",
+            "initialDate": "2024-12-27",
+            "deadLine": "2025-01-05",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/fcfcd24c-fc50-42bc-90d5-0cabc60fb143/ANO-NOVO---1920X490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b1e7feab-5616-4457-9f13-3492fc3535c1/ANO-NOVO---1080X1500.jpg",
             "alt": "anonovo",
@@ -142,8 +142,8 @@
             }
           },
           {
-            "initialDate": "07/01/2025",
-            "deadLine": "20/01/2025",
+            "initialDate": "2025-01-06",
+            "deadLine": "2025-01-19",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2872d4aa-c5ad-4b52-a635-2a8ee7bf3d1b/V01_Campanha_Verao-1----2025_Festval_1920X490_MOD01.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8350db72-f71c-4c30-b652-753b4ea257f1/V01_Campanha_Verao-1----2025_Festval_1080X1500_MOD01.jpg",
             "alt": "verao25",
@@ -406,8 +406,20 @@
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
-          "deadLine": "2024-12-06",
-          "activeTerm": false
+          "deadLine": "2024-12-22",
+          "activeTerm": true
+        },
+        {
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23c9e678-2b63-4cb6-87a5-97f3f2f13fe4/MAMMA-BIA.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8203e98d-e107-4636-82df-86083e91ce10/FESTVAL-NOVO-APP-BANNER-1080x465-MAMMA-BIA.png",
+          "alt": "mammabiagenerico",
+          "href": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "region": "Mostrar em ambas",
+          "positionBanner": "Full",
+          "initialDate": "2024-12-23",
+          "deadLine": "2029-01-20",
+          "activeTerm": true
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bba26047-5316-4767-8b82-b42327d3c307/BANNER_M_NINHO.jpg",
@@ -422,16 +434,16 @@
           "activeTerm": false
         },
         {
+          "positionBanner": "Right",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee25d1dd-a872-4e07-826c-cff57605b9bc/BANNER-M-visibilidade-lindor.jpg",
+          "activeTerm": false,
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97a300f4-4866-4b3f-8187-e92546112f13/BANNER-M-VISUALIZACAO-LINDOR.jpg",
           "alt": "Lindor",
           "href": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
           "hrefMobile": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "region": "Mostrar em ambas",
-          "positionBanner": "Right",
-          "initialDate": "2024-12-05",
-          "deadLine": "2024-12-06",
-          "activeTerm": false
+          "region": "Mostrar em ambas"
         }
       ],
       "inverted": true
