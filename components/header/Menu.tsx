@@ -29,6 +29,8 @@ function SubMenuItem({ item }: { item: SiteNavigationElementLeaf }) {
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6367b27c-92b8-4ff7-a9f9-689de3ff4f20/arrow-right-mobile.svg"
             width={9}
             height={13}
+            preload={true}
+            fetchPriority={"high"}
           />
         </div>
       </a>
@@ -73,6 +75,8 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
                   src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6367b27c-92b8-4ff7-a9f9-689de3ff4f20/arrow-right-mobile.svg"
                   width={9}
                   height={13}
+                  preload={true}
+                  fetchPriority={"high"}
                 />
               </div>
             </label>

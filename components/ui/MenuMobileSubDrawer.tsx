@@ -27,7 +27,9 @@ const script = (id: string) => {
 
 const onClick = (id: string) => {
   const input = document.getElementById(id) as HTMLInputElement | null;
-  const drawer = document.getElementById("sidemenu-drawer") as HTMLInputElement | null;
+  const drawer = document.getElementById(
+    "sidemenu-drawer"
+  ) as HTMLInputElement | null;
   if (!input || !drawer) {
     return;
   }
@@ -35,7 +37,13 @@ const onClick = (id: string) => {
   drawer.checked = false;
 };
 
-function SubDrawer({ children, aside, open, class: _class = "", id = useId() }: Props) {
+function SubDrawer({
+  children,
+  aside,
+  open,
+  class: _class = "",
+  id = useId(),
+}: Props) {
   return (
     <>
       <div class={clx("drawer", _class)}>
@@ -50,17 +58,34 @@ function SubDrawer({ children, aside, open, class: _class = "", id = useId() }: 
 
         <div class="drawer-content">{children}</div>
 
-        <aside data-aside class={clx("drawer-side h-full z-50 overflow-auto", "[[data-aside]&_section]:contents")}>
+        <aside
+          data-aside
+          class={clx(
+            "drawer-side h-full z-50 overflow-auto",
+            "[[data-aside]&_section]:contents"
+          )}
+        >
           <label for={id} class="drawer-overlay" />
           {aside}
         </aside>
       </div>
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(script, id) }} />
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(script, id) }}
+      />
     </>
   );
 }
 
-function SubAside({ drawer, children, id }: { drawer: string; id: string; children: ComponentChildren }) {
+function SubAside({
+  drawer,
+  children,
+  id,
+}: {
+  drawer: string;
+  id: string;
+  children: ComponentChildren;
+}) {
   return (
     <div data-aside class="bg-base-100 w-full " style={{ maxWidth: "100vw" }}>
       <div class="flex justify-end items-center h-[48px] bg-[#F6F6F6]">
@@ -76,12 +101,18 @@ function SubAside({ drawer, children, id }: { drawer: string; id: string; childr
         </button>
       </div>
       <div class="flex bg-[#EBEBEB]">
-        <label for={drawer} aria-label="X" class="flex items-center gap-[10px] p-[15px] w-fit">
+        <label
+          for={drawer}
+          aria-label="X"
+          class="flex items-center gap-[10px] p-[15px] w-fit"
+        >
           <span>
             <Image
               src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6367b27c-92b8-4ff7-a9f9-689de3ff4f20/arrow-right-mobile.svg"
               width={9}
               height={13}
+              preload={true}
+              fetchPriority={"high"}
               class="rotate-180"
             />
           </span>

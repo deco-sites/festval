@@ -53,6 +53,8 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                           src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c9248193-966b-4090-b793-af09d677027a/arrow-right.svg"
                           width={7}
                           height={13}
+                          preload={true}
+                          fetchPriority={"high"}
                         />
                       </span>
                     </button>
