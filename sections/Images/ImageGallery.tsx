@@ -27,15 +27,13 @@ interface Banner {
 
   /**
    * @description Initial date
-   * @format date
-   * @default	2024-01-02
+   * @default	01/01/2024
    */
   initialDate: string;
 
   /**
    * @description Deadline date
-   * @format date
-   * @default	2024-01-02
+   * @default	01/01/2024
    */
   deadLine: string;
 }
@@ -212,10 +210,14 @@ function Gallery({
 
     const now = new Date();
 
-    const initialDate = new Date(banner.initialDate);
+    const initialDate = new Date(
+      banner.initialDate.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1")
+    );
     initialDate.setHours(0, 0, 0, 0);
 
-    const deadLine = new Date(banner.deadLine);
+    const deadLine = new Date(
+      banner.deadLine.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1")
+    );
     deadLine.setHours(23, 59, 59, 999);
 
     return now >= initialDate && now <= deadLine;
