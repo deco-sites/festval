@@ -61,7 +61,8 @@
             "alt": "coronafretegratis",
             "action": {
               "href": "https://www.festval.com/s?q=corona+330ml+long&page=1&utm_source=BannerHome&utm_campaign=coronafretegr%C3%A1tis"
-            }
+            },
+            "activeTerm": false
           },
           {
             "initialDate": "2024-01-02",
@@ -71,7 +72,8 @@
             "alt": "amigosecreto",
             "action": {
               "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=amigosecretonestl%C3%A9"
-            }
+            },
+            "activeTerm": false
           },
           {
             "initialDate": "2024-12-24",
@@ -89,7 +91,7 @@
             "deadLine": "2024-12-30",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/48ee7010-df12-483e-9743-5aaaf3891455/KV-Final-de-Ano_vermelho_fricasse_manjar-1920x490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/afb40947-b6ca-42e6-97e0-d8e0668e8512/KV-Final-de-Ano_vermelho_fricasse_manjar-1080x1500.jpg",
-            "alt": "NestléFimdeano",
+            "alt": "Nestlefimdeano",
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1573?map=productClusterIds&sort=orders%3Adesc&page=2&utm_source=BannerHome&utm_campaign=receitasfinaldeanonestl%C3%A9"
@@ -115,6 +117,39 @@
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/assado-de-tiras-1953?page=1&utm_source=BannerHome&utm_campaign=ASSADODETIRAS1953"
+            }
+          },
+          {
+            "initialDate": "2025-01-14",
+            "deadLine": "2025-01-20",
+            "alt": "JBS13-19/25",
+            "activeTerm": true,
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/98b2a9e7-f4b1-4a69-bb58-8a6f07752460/Festval---1953---Banner---1080x1500---01.jpg",
+            "action": {
+              "href": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=1953generico"
+            }
+          },
+          {
+            "initialDate": "2024-12-28",
+            "deadLine": "2025-01-05",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/fcfcd24c-fc50-42bc-90d5-0cabc60fb143/ANO-NOVO---1920X490.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b1e7feab-5616-4457-9f13-3492fc3535c1/ANO-NOVO---1080X1500.jpg",
+            "alt": "anonovo",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/adega?filter.category-1=adega&filter.category-2=vinho-branco&filter.category-2=espumantes&filter.category-2=champagne&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=anonovofestval"
+            }
+          },
+          {
+            "initialDate": "2025-01-07",
+            "deadLine": "2025-01-20",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2872d4aa-c5ad-4b52-a635-2a8ee7bf3d1b/V01_Campanha_Verao-1----2025_Festval_1920X490_MOD01.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8350db72-f71c-4c30-b652-753b4ea257f1/V01_Campanha_Verao-1----2025_Festval_1080X1500_MOD01.jpg",
+            "alt": "verao25",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ver%C3%A3o"
             }
           }
         ],
