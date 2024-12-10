@@ -251,6 +251,7 @@ function QuantitySelectorKgCart({
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/dbd42389-3ec3-4160-946e-2370117e9b95/mais.svg"
             width={20}
             height={20}
+            preload={true}
           />
         </button>
       </div>
