@@ -217,10 +217,14 @@ function CarouselGeoLocation({
   const filteredImages = images.filter((image) => {
     const now = new Date();
 
-    const initialDate = new Date(image.initialDate);
+    const initialDate = new Date(
+      image.initialDate.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1")
+    );
     initialDate.setHours(0, 0, 0, 0);
 
-    const deadLine = new Date(image.deadLine);
+    const deadLine = new Date(
+      image.deadLine.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1")
+    );
     deadLine.setHours(23, 59, 59, 999);
 
     const isActiveTermValid = image.activeTerm
