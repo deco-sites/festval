@@ -76,8 +76,8 @@
             "activeTerm": false
           },
           {
-            "initialDate": "2024-12-23",
-            "deadLine": "2024-12-29",
+            "initialDate": "2024-12-16",
+            "deadLine": "2024-12-22",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96cba865-c178-4e49-9848-854009e84cc8/1920X490-lindt_natal.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d42c255b-a60d-4e11-add1-e331422d90ee/1080X1500-lindt_natal.jpg",
             "alt": "LindtNatal",
@@ -369,6 +369,12 @@
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false
+        },
+        {
+          "positionBanner": "Full",
+          "region": "Cascavel",
+          "initialDate": "01/01/2024",
+          "deadLine": "01/01/2024"
         }
       ]
     },
