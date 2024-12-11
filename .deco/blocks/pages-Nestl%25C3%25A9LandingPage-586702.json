@@ -20,7 +20,9 @@
             "action": {
               "href": "https://www.festval.com/1285?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "activeTerm": false
+            "activeTerm": false,
+            "initialDate": "00",
+            "deadLine": "00"
           }
         ]
       }
@@ -86,7 +88,19 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/separator.tsx"
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Full",
+            "region": "Mostrar em ambas",
+            "initialDate": "00",
+            "deadLine": "00",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7785b17d-432b-4f4e-95ca-a870a03f98de/20241010_td_ecom_lp_festval_1080x456.gif",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b674909-bedd-4f28-baa3-5b708cfa959f/20241010_td_ecom_lp_festval_2638x682.gif",
+            "alt": "teste",
+            "href": "/festval"
+          }
+        ]
       }
     },
     {
