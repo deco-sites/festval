@@ -14,17 +14,17 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b674909-bedd-4f28-baa3-5b708cfa959f/20241010_td_ecom_lp_festval_2638x682.gif",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b18c0058-0d5d-4be0-acbc-81e0d20cbadf/20241010_td_ecom_lp_festval_1080x1500.gif",
-            "alt": "nestlecafechocolate",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5baca24b-7907-47a3-a7e2-0f94b2eacebf/kitkat.gif",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/926a8f68-101a-4864-bbb4-865ff85823eb/kitkatmbl.gif",
+            "alt": "kitkat",
             "action": {
-              "href": "https://www.festval.com/1285?map=productClusterIds&sort=orders%3Adesc&page=1"
+              "href": "https://www.festval.com/1481?map=productClusterIds&sort=discount%3Adesc&page=1"
             },
-            "activeTerm": false,
             "initialDate": "00",
             "deadLine": "00"
           }
-        ]
+        ],
+        "interval": 5
       }
     },
     {
@@ -33,38 +33,31 @@
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
         "items": [
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a1471897-c9ee-4873-8581-d4f2f8f14704/SUBMENU-UNIPrancheta-1.jpg",
-            "href": "https://www.festval.com/1215?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Rexona"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2e2f6489-331a-47d3-8f4d-af4091418576/banner_desktop_554x554.png",
+            "href": "https://www.festval.com/1177?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Bicoitos"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7004ad4e-5855-4318-b8f8-906be75cf333/SUBMENU-UNIPrancheta-2.jpg",
-            "href": "https://www.festval.com/1183?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Cuidados Domésticos"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/aa33cd73-3dfe-4ab1-b2bc-66aa68f46893/banner_desktop_554x554.jpg",
+            "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "chocolates"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b846f5c0-5f39-4212-b53e-d83de99fe852/SUBMENU-UNIPrancheta-3.jpg",
-            "label": "Beleza & Bem-estar",
-            "href": "https://www.festval.com/1178?map=productClusterIds&sort=orders%3Adesc&page=1"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c4c6ee3e-fbd4-4946-a6b0-bff2ba5f43fb/banner_desktop_554x554-(4).jpg",
+            "label": "culinários",
+            "href": "https://www.festval.com/1168?map=productClusterIds&sort=orders%3Adesc&page=1"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2b9db7a5-6b6f-46e7-8646-a95c7ee505e6/SUBMENU-UNIPrancheta-4.jpg",
-            "href": "https://www.festval.com/1218?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Mãe Terra"
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0d54780e-6d86-436a-ba49-25e815193343/banner_desktop_554x554-(2).png",
+            "href": "https://www.festval.com/1170?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "infantil"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4612ffe0-1255-4f36-a575-f7f4db7928ff/SUBMENU-UNIPrancheta-5.jpg",
-            "href": "qwe",
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/56f40c54-3db0-49cf-96de-466001ef9c41/banner_desktop_554x554-(3).png",
+            "href": "https://www.festval.com/1167?map=productClusterIds&page=1",
             "label": "Nutriçao"
           }
         ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/separator.tsx",
-        "color": "#F8F8F8"
       }
     },
     {
@@ -75,14 +68,15 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "orders:desc",
-            "collection": "1219",
+            "collection": "1168",
             "count": 12,
             "hideUnavailableItems": false,
             "similars": false
           }
         },
-        "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3a91ff82-4fb1-4009-91e9-809a2c406c7d/helmans-lp-arte.jpg",
-        "bannerMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9c6fcc76-f8e7-4105-a85d-29fe5fc841b1/helmans-lp-arte-MBL.jpg"
+        "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b8e92363-8c3d-4a51-9f5e-d6fb1c95217e/receitas.jpg",
+        "bannerMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/88490366-3bec-44a2-a19c-1b73ff4ffd52/receitasmbl.jpg",
+        "hrer": "https://www.festval.com/1168?map=productClusterIds&sort=orders%3Adesc&page=1"
       }
     },
     {
@@ -106,15 +100,72 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/912b33c5-5bf8-4e5e-8754-b627e8861c01/20241010_td_ecom_lp_festval_388x690-4.png",
+        "cta": "https://www.festval.com/1577?map=productClusterIds&sort=orders%3Adesc&page=1",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "orders:desc",
+            "count": 12,
+            "collection": "1577"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Left",
+            "region": "Mostrar em ambas",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d1826fa0-c13e-4f04-93d0-85518ba5551b/20241010_td_ecom_lp_festval_1136X554-1.gif",
+            "alt": "café1",
+            "href": "/café"
+          },
+          {
+            "positionBanner": "Right",
+            "region": "Mostrar em ambas",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "alt": "cafe2",
+            "href": "/café",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a26b3809-70b9-45ad-9053-f08343b6a098/20241010_td_ecom_lp_festval_1136X554-2.gif"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "orders:desc",
+            "collection": "1165",
+            "count": 12
+          }
+        },
+        "cta": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "count": 12,
-          "sort": "",
+          "sort": "orders:desc",
           "fuzzy": "automatic",
           "selectedFacets": [
             {
-              "value": "172",
+              "value": "1172",
               "key": "productClusterIds"
             }
           ]

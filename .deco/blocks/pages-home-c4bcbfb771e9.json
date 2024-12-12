@@ -39,8 +39,9 @@
               "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
             },
             "activeTerm": true,
-            "initialDate": "2024-12-09",
-            "deadLine": "2024-12-11"
+            "initialDate": "2024-12-12",
+            "deadLine": "2024-12-13",
+            "region": "Cascavel"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b34f84b9-7f12-4921-a218-38b56c6b8fdf/FESTVAL_Hellmanns_promo_fim_de_ano_1920x496.jpg",
@@ -151,6 +152,11 @@
             "action": {
               "href": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ver%C3%A3o"
             }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel"
           }
         ],
         "preload": true,
