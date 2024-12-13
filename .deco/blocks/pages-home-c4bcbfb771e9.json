@@ -162,7 +162,8 @@
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1578?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
+            },
+            "region": "Curitiba"
           }
         ],
         "preload": true,
@@ -397,14 +398,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "172",
+          "collection": "377",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/172?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "Unilever"
+      "cta": "https://www.festval.com/377?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "title": "Lindt"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",

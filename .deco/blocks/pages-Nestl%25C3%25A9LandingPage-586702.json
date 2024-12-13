@@ -22,6 +22,16 @@
             },
             "initialDate": "00",
             "deadLine": "00"
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a9d5ed19-ee29-432c-9c1d-89f2d8313b95/maggigenericodesk.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f03094b3-11b9-458e-88fd-a9caff371d51/maggigenericombl.jpg",
+            "alt": "MAGGI",
+            "action": {
+              "href": "https://www.festval.com/1195?map=productClusterIds&sort=orders%3Adesc&page=1"
+            }
           }
         ],
         "interval": 5
@@ -91,8 +101,8 @@
             "deadLine": "00",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7785b17d-432b-4f4e-95ca-a870a03f98de/20241010_td_ecom_lp_festval_1080x456.gif",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b674909-bedd-4f28-baa3-5b708cfa959f/20241010_td_ecom_lp_festval_2638x682.gif",
-            "alt": "teste",
-            "href": "/festval"
+            "alt": "bannermidcafechocolate",
+            "href": "/nestlé"
           }
         ]
       }
@@ -125,7 +135,8 @@
             "deadLine": "01/01/2024",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d1826fa0-c13e-4f04-93d0-85518ba5551b/20241010_td_ecom_lp_festval_1136X554-1.gif",
             "alt": "café1",
-            "href": "/café"
+            "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "hrefMobile": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1"
           },
           {
             "positionBanner": "Right",
@@ -133,7 +144,7 @@
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
             "alt": "cafe2",
-            "href": "/café",
+            "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a26b3809-70b9-45ad-9053-f08343b6a098/20241010_td_ecom_lp_festval_1136X554-2.gif"
           }
         ]
