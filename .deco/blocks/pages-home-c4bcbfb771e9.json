@@ -341,11 +341,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2d00e4da-7e5a-402e-adf4-b8865b1fa36c/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a6a87e11-5308-4536-9111-13d262a91a39/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/69b4cb43-05af-4301-929f-e30189dd9635/horti-teste-app-4.jpg",
-          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/31bc1600-d3ed-4197-afc9-6f07f2c59658/churras.jpg",
+          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
