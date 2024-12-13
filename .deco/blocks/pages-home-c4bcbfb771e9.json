@@ -163,6 +163,17 @@
               "href": "https://www.festval.com/1578?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "region": "Curitiba"
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Curitiba",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bc36c1a5-7ca7-4111-af89-f3ee67f554c2/ceia-de-natal-desk.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/76a4f832-d4fd-4c5c-9684-3cb7127a007a/ceia-de-natal.jpg",
+            "alt": "ceia-de-fim",
+            "action": {
+              "href": "https://api.whatsapp.com/send/?phone=554199813062&text=Ol%C3%A1%21+Vim+pelo+site+do+Festval.com+e+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+Ceias+de+Natal.&type=phone_number&app_absent=0"
+            }
           }
         ],
         "preload": true,
