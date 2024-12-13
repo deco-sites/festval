@@ -154,9 +154,15 @@
             }
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "region": "Cascavel"
+            "initialDate": "2024-12-13",
+            "deadLine": "2024-12-15",
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a5d8d4e1-6cd5-4747-a2bb-44739e540c1d/AF_V02_Campanha_Selecao_de_Espumantes_50-_Digital_Festval.com_2024_1920x490px.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e3bc195e-aebc-4677-9820-f2135d95061d/AF_V02_Campanha_Selecao_de_Espumantes_50-_Digital_Festval.com_2024_1080x1500px.png",
+            "alt": "espumantes",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1578?map=productClusterIds&sort=orders%3Adesc&page=1"
+            }
           }
         ],
         "preload": true,
@@ -375,12 +381,6 @@
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false
-        },
-        {
-          "positionBanner": "Full",
-          "region": "Cascavel",
-          "initialDate": "01/01/2024",
-          "deadLine": "01/01/2024"
         }
       ]
     },
