@@ -152,6 +152,17 @@
               "href": "https://api.whatsapp.com/send/?phone=554199813062&text=Ol%C3%A1%21+Vim+pelo+site+do+Festval.com+e+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+Ceias+de+Natal.&type=phone_number&app_absent=0"
             },
             "region": "Curitiba"
+          },
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f07e45b5-2760-4958-81a8-f6d1ad0841cc/verao-nestle.jpg",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/117c1099-c30c-47a5-ab96-c8da15b81e00/verao-nestle-mbl.jpg",
+            "alt": "VERÃO-NESTLÉ",
+            "activeTerm": true,
+            "initialDate": "2024-12-30",
+            "deadLine": "2025-01-05",
+            "action": {
+              "href": "https://www.festval.com/1579?map=productClusterIds&sort=discount%3Adesc&page=1"
+            }
           }
         ],
         "preload": true,
@@ -336,37 +347,13 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a6a87e11-5308-4536-9111-13d262a91a39/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7e055245-a5d1-44fa-9c7c-41a298300778/OFERTAS-GENERICAS.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/31bc1600-d3ed-4197-afc9-6f07f2c59658/churras.jpg",
-          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0e7d034a-7ec2-421a-802f-b76302658d1d/ofertas-semanais.jpg",
+          "hrefMobile": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
-          "initialDate": "2024-12-05",
-          "deadLine": "2024-12-06",
-          "activeTerm": false
-        },
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ed282597-909d-457e-818f-b29c1f341956/BANNER-DE-OFERTAS-M-FERRERO.jpg",
-          "alt": "OFERTA-2",
-          "href": "https://www.festval.com/s?q=Ferrero+Rocher+Tablete&sort=orders%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bba3005-0e7b-43ea-a9f0-f41b0227ef02/FERRERO.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=Ferrero+Rocher+Tablete&sort=orders%3Adesc&page=1",
-          "region": "Mostrar em ambas",
-          "positionBanner": "Left",
-          "initialDate": "2024-12-05",
-          "deadLine": "2024-12-06",
-          "activeTerm": false
-        },
-        {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6387221e-2a70-4c4b-86f0-2a3efe84054c/spaten.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a82bb813-9292-47fc-a294-f338bcc22af8/BANNER-DE-OFERTAS-M-SPATEN.jpg",
-          "alt": "OFERTA-1",
-          "href": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314",
-          "hrefMobile": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314",
-          "region": "Mostrar em ambas",
-          "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false
@@ -485,7 +472,7 @@
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/deb09522-114f-4e11-92e2-40fbca7696f2/nestle-2-sub-menu.png",
-          "href": "/nestlé"
+          "href": "/Nestlé"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c7f119f-73ad-4065-a0aa-a8487c15b1cb/unilever-2-sub-menu.png",
