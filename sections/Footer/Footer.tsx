@@ -2,6 +2,7 @@ import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Section from "../../components/ui/Section.tsx";
 import { useDevice, useScript } from "@deco/deco/hooks";
+import { useId } from "../../sdk/useId.ts";
 
 /** @titleBy title */
 interface Item {
@@ -89,6 +90,14 @@ interface Props {
   trademark?: string;
 }
 
+const onLoad = (id: string) => {
+  const footer = document.getElementById(id);
+  const pathName = window.location.pathname;
+  if (pathName == "/ceia-festval") {
+    footer!.style.marginTop = "0px";
+  }
+};
+
 const onClick = () => {
   event?.stopPropagation();
 
@@ -131,9 +140,11 @@ function Footer({
   highlightedImage,
 }: Props) {
   const device = useDevice();
+  const id = useId();
 
   return (
     <footer
+      id={id}
       class="sm:px-0 sm:mt-10 mt-[25px]"
       style={{ backgroundColor: "#111" }}
     >
@@ -798,6 +809,10 @@ function Footer({
           </div>
         </div>
       )}
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+      />
     </footer>
   );
 }
