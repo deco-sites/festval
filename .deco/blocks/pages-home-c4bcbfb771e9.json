@@ -51,12 +51,12 @@
               "href": "https://www.festval.com/s?q=cesta+natal&page=1&utm_source=BannerHome&utm_campaign=Cestasdenatal2024"
             },
             "activeTerm": true,
-            "deadLine": "2024-12-24",
-            "initialDate": "2024-12-12"
+            "deadLine": "24/12/2024",
+            "initialDate": "12/12/2024"
           },
           {
-            "initialDate": "2024-12-11",
-            "deadLine": "2024-12-29",
+            "initialDate": "11/12/2024",
+            "deadLine": "29/12/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b34f84b9-7f12-4921-a218-38b56c6b8fdf/FESTVAL_Hellmanns_promo_fim_de_ano_1920x496.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f277dd36-3c40-4063-8638-73301552d553/FESTVAL_Hellmanns_promo_fim_de_ano_1080x1500.jpg",
             "alt": "CELEBRARUNILEVER",
@@ -66,8 +66,8 @@
             "activeTerm": true
           },
           {
-            "initialDate": "2024-12-16",
-            "deadLine": "2024-12-22",
+            "initialDate": "16/12/2024",
+            "deadLine": "22/12/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96cba865-c178-4e49-9848-854009e84cc8/1920X490-lindt_natal.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d42c255b-a60d-4e11-add1-e331422d90ee/1080X1500-lindt_natal.jpg",
             "alt": "LindtNatal",
@@ -77,8 +77,8 @@
             "activeTerm": true
           },
           {
-            "initialDate": "2024-12-16",
-            "deadLine": "2024-12-29",
+            "initialDate": "16/12/2024",
+            "deadLine": "29/12/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/48ee7010-df12-483e-9743-5aaaf3891455/KV-Final-de-Ano_vermelho_fricasse_manjar-1920x490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/afb40947-b6ca-42e6-97e0-d8e0668e8512/KV-Final-de-Ano_vermelho_fricasse_manjar-1080x1500.jpg",
             "alt": "Nestlefimdeano",
