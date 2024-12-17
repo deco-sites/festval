@@ -88,8 +88,8 @@
             }
           },
           {
-            "initialDate": "2024-12-16",
-            "deadLine": "2024-12-29",
+            "initialDate": "16/12/2024",
+            "deadLine": "29/12/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/727601a0-3a62-492c-9830-986c6cce211a/spaten12por10dcinza.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9fe0d187-0de7-47f8-af41-6ff3d7a80ade/spaten12por10mcinza.jpg",
             "alt": "ambevfimdeano",
@@ -99,8 +99,8 @@
             }
           },
           {
-            "initialDate": "2024-12-27",
-            "deadLine": "2025-01-12",
+            "initialDate": "27/12/2024",
+            "deadLine": "12/01/2025",
             "alt": "ASSADO1953",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f5c3e726-1f05-4fd2-9d9b-457165e07dda/1920X490.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/247e41aa-ef58-488d-bdd0-f1b4770c8c5c/1080X1500.jpg",
@@ -110,7 +110,7 @@
             }
           },
           {
-            "deadLine": "2025-01-19",
+            "deadLine": "19/01/2025",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/98b2a9e7-f4b1-4a69-bb58-8a6f07752460/Festval---1953---Banner---1080x1500---01.jpg",
             "alt": "JBS13-19/25",
@@ -118,11 +118,11 @@
             "action": {
               "href": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=1953generico"
             },
-            "initialDate": "2025-01-13"
+            "initialDate": "13/01/2025"
           },
           {
-            "initialDate": "2024-12-27",
-            "deadLine": "2025-01-05",
+            "initialDate": "27/12/2024",
+            "deadLine": "05/01/2025",
             "alt": "anonovo",
             "activeTerm": true,
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/fcfcd24c-fc50-42bc-90d5-0cabc60fb143/ANO-NOVO---1920X490.jpg",
@@ -132,8 +132,8 @@
             }
           },
           {
-            "initialDate": "2025-01-06",
-            "deadLine": "2025-01-19",
+            "initialDate": "06/01/2025",
+            "deadLine": "19/01/2025",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2872d4aa-c5ad-4b52-a635-2a8ee7bf3d1b/V01_Campanha_Verao-1----2025_Festval_1920X490_MOD01.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8350db72-f71c-4c30-b652-753b4ea257f1/V01_Campanha_Verao-1----2025_Festval_1080X1500_MOD01.jpg",
             "alt": "verao25",
@@ -143,8 +143,7 @@
             }
           },
           {
-            "initialDate": "2024-12-13",
-            "deadLine": "2024-12-15",
+            "initialDate": "13/12/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a5d8d4e1-6cd5-4747-a2bb-44739e540c1d/AF_V02_Campanha_Selecao_de_Espumantes_50-_Digital_Festval.com_2024_1920x490px.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e3bc195e-aebc-4677-9820-f2135d95061d/AF_V02_Campanha_Selecao_de_Espumantes_50-_Digital_Festval.com_2024_1080x1500px.png",
             "alt": "espumantes",
@@ -152,7 +151,8 @@
               "href": "https://www.festval.com/1578?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "region": "Curitiba",
-            "activeTerm": true
+            "activeTerm": true,
+            "deadLine": "15/12/2024"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bc36c1a5-7ca7-4111-af89-f3ee67f554c2/ceia-de-natal-desk.jpg",
@@ -167,8 +167,8 @@
             "activeTerm": false
           },
           {
-            "initialDate": "2024-12-30",
-            "deadLine": "2025-01-05",
+            "initialDate": "30/12/2024",
+            "deadLine": "05/01/2025",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f07e45b5-2760-4958-81a8-f6d1ad0841cc/verao-nestle.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/117c1099-c30c-47a5-ab96-c8da15b81e00/verao-nestle-mbl.jpg",
             "alt": "VERÃO-NESTLÉ",
@@ -365,6 +365,18 @@
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0e7d034a-7ec2-421a-802f-b76302658d1d/ofertas-semanais.jpg",
           "hrefMobile": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
+          "positionBanner": "Full",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-06",
+          "activeTerm": false
+        },
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7e055245-a5d1-44fa-9c7c-41a298300778/OFERTAS-GENERICAS.jpg",
+          "alt": "OFERTAS-SEMANAIS",
+          "href": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0e7d034a-7ec2-421a-802f-b76302658d1d/ofertas-semanais.jpg",
+          "hrefMobile": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "region": "Curitiba",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
