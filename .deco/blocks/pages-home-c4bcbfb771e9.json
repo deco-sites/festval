@@ -27,20 +27,20 @@
             "action": {
               "href": "https://www.festval.com/1572?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "deadLine": "2024-12-25",
+            "deadLine": "25/12/2024",
             "activeTerm": true,
-            "initialDate": "2024-12-01"
+            "initialDate": "01/12/2024"
           },
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d99cefa0-9b49-4c7d-ad35-c846ea2a0fca/CEIA-DE-NATL-SITE.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/d11458ef-7b51-4d70-a4bf-063309711ae1/CEIA-DE-NATL-MBL.jpg",
             "alt": "ceia-fim-cvel",
             "action": {
-              "href": "https://www.festval.com/ceia-de-natal-2024"
+              "href": "https://www.festval.com/ceia-de-natal-2024?utm_source=BannerHome&utm_campaign=CEIAFIMDEANO"
             },
             "activeTerm": true,
-            "initialDate": "17/12/2024",
-            "deadLine": "27/12/2024",
+            "initialDate": "16/12/2024",
+            "deadLine": "28/12/2024",
             "region": "Cascavel"
           },
           {
@@ -163,7 +163,8 @@
             "action": {
               "href": "https://api.whatsapp.com/send/?phone=554199813062&text=Ol%C3%A1%21+Vim+pelo+site+do+Festval.com+e+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+Ceias+de+Natal.&type=phone_number&app_absent=0"
             },
-            "region": "Curitiba"
+            "region": "Curitiba",
+            "activeTerm": false
           },
           {
             "initialDate": "2024-12-30",
@@ -175,11 +176,6 @@
             "action": {
               "href": "https://www.festval.com/1579?map=productClusterIds&sort=discount%3Adesc&page=1"
             }
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "region": "Cascavel"
           }
         ],
         "preload": true,
