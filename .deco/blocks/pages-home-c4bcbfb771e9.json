@@ -155,30 +155,18 @@
             "deadLine": "15/12/2024"
           },
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bc36c1a5-7ca7-4111-af89-f3ee67f554c2/ceia-de-natal-desk.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/76a4f832-d4fd-4c5c-9684-3cb7127a007a/ceia-de-natal.jpg",
-            "alt": "ceia-de-fim",
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "action": {
-              "href": "https://api.whatsapp.com/send/?phone=554199813062&text=Ol%C3%A1%21+Vim+pelo+site+do+Festval.com+e+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+Ceias+de+Natal.&type=phone_number&app_absent=0"
-            },
-            "region": "Curitiba",
-            "activeTerm": false
-          },
-          {
-            "initialDate": "30/12/2024",
-            "deadLine": "05/01/2025",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f07e45b5-2760-4958-81a8-f6d1ad0841cc/verao-nestle.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/117c1099-c30c-47a5-ab96-c8da15b81e00/verao-nestle-mbl.jpg",
             "alt": "VERÃO-NESTLÉ",
-            "activeTerm": true,
+            "initialDate": "30/12/2024",
+            "deadLine": "05/01/2025",
             "action": {
               "href": "https://www.festval.com/1579?map=productClusterIds&sort=discount%3Adesc&page=1"
-            }
+            },
+            "activeTerm": true
           }
         ],
-        "preload": true,
+        "preload": false,
         "interval": 5
       }
     },
