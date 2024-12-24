@@ -299,13 +299,13 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "count": 12,
-          "collection": "1581",
+          "collection": "1493",
           "sort": "orders:desc",
           "hideUnavailableItems": true
         }
       },
-      "cta": "https://www.festval.com/adega?sort=orders%3Adesc&page=1",
-      "title": "Adega"
+      "cta": "https://www.festval.com/1493?sort=orders%3Adesc&page=1",
+      "title": "Mais vendidos"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
