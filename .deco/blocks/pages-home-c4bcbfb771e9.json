@@ -304,7 +304,7 @@
           "hideUnavailableItems": true
         }
       },
-      "cta": "/1583?sort=orders%3Adesc&page=1",
+      "cta": "/1583?map=productClusterIds",
       "title": "Mais vendidos "
     },
     {
