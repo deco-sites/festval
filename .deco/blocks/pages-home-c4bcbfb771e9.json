@@ -281,13 +281,13 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "collection": "1073",
           "count": 12,
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "collection": "1582"
         }
       },
-      "title": "Mais Vendidos",
-      "cta": "/1073?map=productClusterIds"
+      "title": "Destilados",
+      "cta": "/1582?map=productClusterIds"
     },
     {
       "__resolveType": "site/sections/separator.tsx",
