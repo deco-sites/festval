@@ -298,14 +298,14 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "count": 12,
-          "collection": "1493",
+          "count": 25,
+          "collection": "1583",
           "sort": "orders:desc",
           "hideUnavailableItems": true
         }
       },
-      "cta": "https://www.festval.com/1493?sort=orders%3Adesc&page=1",
-      "title": "Mais vendidos"
+      "cta": "https://www.festval.com/1583?sort=orders%3Adesc&page=1",
+      "title": "Mais vendidos "
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
