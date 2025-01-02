@@ -271,10 +271,10 @@
         "props": {
           "count": 12,
           "hideUnavailableItems": true,
-          "collection": "1582"
+          "collection": "1583"
         }
       },
-      "title": "Destilados",
+      "title": "Mais vendidos",
       "cta": "/1582?map=productClusterIds"
     },
     {
@@ -287,13 +287,13 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "count": 12,
-          "collection": "1583",
+          "collection": "1581",
           "sort": "orders:desc",
           "hideUnavailableItems": true
         }
       },
       "cta": "/1583?map=productClusterIds",
-      "title": "Mais vendidos "
+      "title": "Adega"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
