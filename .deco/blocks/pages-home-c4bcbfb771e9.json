@@ -289,7 +289,8 @@
           "count": 12,
           "collection": "1581",
           "sort": "orders:desc",
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "similars": false
         }
       },
       "cta": "/1583?map=productClusterIds",
