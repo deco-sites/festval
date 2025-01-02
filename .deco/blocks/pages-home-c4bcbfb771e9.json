@@ -275,7 +275,7 @@
         }
       },
       "title": "Mais vendidos",
-      "cta": "/1582?map=productClusterIds"
+      "cta": "/1583?map=productClusterIds"
     },
     {
       "__resolveType": "site/sections/separator.tsx",
