@@ -286,7 +286,7 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "name:asc"
+          "sort": "price:desc"
         }
       },
       "cta": "/1397?map=productClusterIds",
