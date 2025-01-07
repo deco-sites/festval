@@ -292,7 +292,7 @@
         }
       },
       "cta": "/1397?map=productClusterIds",
-      "title": "Oportunidades"
+      "title": "Oportunidades "
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
