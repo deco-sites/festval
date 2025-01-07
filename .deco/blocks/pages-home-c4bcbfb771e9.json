@@ -287,14 +287,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "count": 12,
-          "collection": "1581",
           "sort": "orders:desc",
           "hideUnavailableItems": true,
-          "similars": false
+          "similars": false,
+          "collection": "1397"
         }
       },
-      "cta": "/1581?map=productClusterIds",
-      "title": "Adega"
+      "cta": "/1397?map=productClusterIds",
+      "title": "Oportunidades"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
