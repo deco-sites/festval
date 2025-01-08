@@ -288,7 +288,8 @@
         "props": {
           "sort": "",
           "count": 12,
-          "collection": "1397"
+          "collection": "1397",
+          "hideUnavailableItems": true
         }
       },
       "cta": "/1397?map=productClusterIds",
