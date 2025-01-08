@@ -411,15 +411,15 @@
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23c9e678-2b63-4cb6-87a5-97f3f2f13fe4/MAMMA-BIA.jpg",
-          "desktop": "https://data.decoassets.com/festval/caecbbb0-cce0-46db-ab19-ec6c9b54c772/Group-1.png",
           "alt": "mammabiagenerico",
           "href": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
           "hrefMobile": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
-          "initialDate": "2024-12-23",
-          "deadLine": "2029-01-20",
-          "activeTerm": true
+          "initialDate": "23/14/2024",
+          "deadLine": "20/01/2029",
+          "activeTerm": false,
+          "desktop": "https://data.decoassets.com/festval/caecbbb0-cce0-46db-ab19-ec6c9b54c772/Group-1.png"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bba26047-5316-4767-8b82-b42327d3c307/BANNER_M_NINHO.jpg",
