@@ -45,20 +45,29 @@ export interface ModalInitProps {
   modalInitProps: Props;
 }
 
+// export interface Address {
+//   cep: string;
+//   logradouro: string;
+//   complemento: string;
+//   unidade: string;
+//   bairro: string;
+//   localidade: string;
+//   uf: string;
+//   estado: string;
+//   regiao: string;
+//   ibge: string;
+//   gia: string;
+//   ddd: string;
+//   siafi: string;
+// }
+
 export interface Address {
   cep: string;
-  logradouro: string;
-  complemento: string;
-  unidade: string;
-  bairro: string;
-  localidade: string;
-  uf: string;
-  estado: string;
-  regiao: string;
-  ibge: string;
-  gia: string;
-  ddd: string;
-  siafi: string;
+  state: string;
+  city: string;
+  neighborhood: string;
+  street: string;
+  service: string;
 }
 
 const saveCepToCookies = (
@@ -89,7 +98,9 @@ const saveSegmentToCookie = (ctx: AppContext, segment: string) => {
 
 export const viaCep = async (cep: string): Promise<Address> => {
   try {
-    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    //const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    const response = await fetch(`https://brasilapi.com.br/api/cep/v1/${cep}`);
+
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
     }
@@ -117,8 +128,8 @@ export const action = async (
     const viaCepResponse: Address = await viaCep(cepFormatted);
 
     if (
-      (viaCepResponse && viaCepResponse.localidade === "Cascavel") ||
-      (viaCepResponse && viaCepResponse.localidade === "Curitiba")
+      (viaCepResponse && viaCepResponse.city === "Cascavel") ||
+      (viaCepResponse && viaCepResponse.city === "Curitiba")
     ) {
       // deno-lint-ignore no-explicit-any
       const response = await (ctx as any).invoke(
@@ -140,7 +151,7 @@ export const action = async (
         const expirationTime = now.getTime() + 23 * 60 * 60 * 1000;
 
         setCookie(ctx.response.headers, {
-          value: viaCepResponse.localidade,
+          value: viaCepResponse.city,
           name: "region",
           path: "/",
           expires: new Date(expirationTime),
