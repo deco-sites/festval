@@ -9,7 +9,7 @@ import { useScript } from "@deco/deco/hooks";
 import { useId } from "../../sdk/useId.ts";
 import { type SectionProps } from "@deco/deco";
 
-export interface Props {
+export interface Props { 
   /**
    * @title Mensagem de boas vindas
    * @default Seja bem vindo(a) ao
