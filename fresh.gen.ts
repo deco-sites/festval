@@ -5,7 +5,7 @@
 import * as $_app from "./routes/_app.tsx";
 import * as $Filters from "./islands/Filters.tsx";
 import * as $FiltersMb from "./islands/FiltersMb.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
