@@ -180,7 +180,7 @@ function CartItem({ item, index, locale, currency }: Props) {
 						{isGift
 							? "Grátis"
 							: measurementUnit == "kg"
-							? `${formatPrice(price, currency, locale)} Kg`
+							? `${formatPrice(price, currency, locale)} kg`
 							: formatPrice(price, currency, locale)}
 					</span>
 				</div>

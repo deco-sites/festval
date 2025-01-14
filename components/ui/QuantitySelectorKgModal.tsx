@@ -56,10 +56,11 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
 					".input-div-container"
 				) as HTMLDivElement;
 				const unitMultiplierMsg = divInput!.querySelector<HTMLSpanElement>(
-					"#unit-multiplier-msg"
+					"#unit-multiplier-msg-modal"
 				);
-				const unitQuantityMsg =
-					divInput!.querySelector<HTMLSpanElement>("#unit-quantity-msg");
+				const unitQuantityMsg = divInput!.querySelector<HTMLSpanElement>(
+					"#unit-quantity-msg-modal"
+				);
 				const quantity = input.getAttribute("data-quantity-number");
 
 				if (unitMultiplierMsg) {
@@ -71,11 +72,11 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
 					unitQuantityMsg!.innerHTML = `Aprox. ${quantity} unidade(s) selecionada(s)`;
 				}
 			} else if (input instanceof HTMLDivElement) {
-				const inputDivContainer = document.querySelector(
-					"#unit-multiplier-container"
+				const inputDivContainer = input.querySelector(
+					"#unit-multiplier-container-modal"
 				);
 
-				const inputElement = input!.querySelector<HTMLInputElement>(
+				const inputElement = input.querySelector<HTMLInputElement>(
 					'input[type="text"].input-kg'
 				);
 
@@ -86,21 +87,22 @@ const onLoad = (id: string | null, maxAttempts = 5, delay = 1000) => {
 				// ) as HTMLDivElement;
 
 				const unitMultiplierMsg = inputDivContainer.querySelector(
-					"#unit-multiplier-msg"
+					"#unit-multiplier-msg-modal"
 				) as HTMLSpanElement;
 
 				const unitQuantityMsg = inputDivContainer.querySelector(
-					"#unit-quantity-msg"
+					"#unit-quantity-msg-modal"
 				) as HTMLSpanElement;
 
 				const quantity = inputElement!.getAttribute("data-quantity-number");
+
 				if (unitMultiplierMsg) {
 					unitMultiplierMsg.classList.remove("hidden");
 					unitQuantityMsg!.classList.remove("hidden");
-					unitMultiplierMsg.innerHTML = `Aprox. ${productData.UnitMultiplier.toFixed(
+					unitMultiplierMsg.innerText = `Aprox. ${productData.UnitMultiplier.toFixed(
 						3
 					)} kg/unidade`;
-					unitQuantityMsg!.innerHTML = `Aprox. ${quantity} unidade(s) selecionada(s)`;
+					unitQuantityMsg!.innerText = `Aprox. ${quantity} unidade(s) selecionada(s)`;
 				}
 			}
 		} else if (
@@ -153,7 +155,7 @@ const onClick = (delta: number) => {
 
 	const unitQuantityMsg = input!
 		.closest(".input-div-container")
-		?.querySelector<HTMLSpanElement>("#unit-quantity-msg");
+		?.querySelector<HTMLSpanElement>("#unit-quantity-msg-modal");
 	unitQuantityMsg!.innerHTML = `Aprox. ${
 		productQuantityHandler + delta
 	} unidade(s) selecionada(s)`;
@@ -201,7 +203,7 @@ function QuantitySelectorKgModal({
 }: JSX.IntrinsicElements["input"]) {
 	return (
 		<div
-			id="unit-multiplier-container"
+			id="unit-multiplier-container-modal"
 			class="flex flex-col items-center input-div-container"
 		>
 			<div class="join w-full flex gap-[7px]">
@@ -253,12 +255,15 @@ function QuantitySelectorKgModal({
 				</button>
 			</div>
 			<span
-				id="unit-multiplier-msg"
+				id="unit-multiplier-msg-modal"
 				class="text-xs text-[#646072]  text-center mt-1 "
 			>
 				Aprox. 800g/unidade
 			</span>
-			<span id="unit-quantity-msg" class="text-xs text-[#646072] text-center">
+			<span
+				id="unit-quantity-msg-modal"
+				class="text-xs text-[#646072] text-center"
+			>
 				Aprox. 1 unidade(s) selecionada(s)
 			</span>
 			<script
