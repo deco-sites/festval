@@ -171,7 +171,7 @@
             "desktop": "https://data.decoassets.com/festval/1fd2cdcc-319a-4c73-bf9d-ecf774871d45/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1920x490px.png",
             "mobile": "https://data.decoassets.com/festval/d7cd41d6-fcf9-46f6-a9d9-f89a74d871c9/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1080x1500px-(1).png",
             "alt": "SEU VERÃO",
-            "activeTerm": true
+            "activeTerm": false
           }
         ],
         "preload": false,
