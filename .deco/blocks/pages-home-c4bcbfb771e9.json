@@ -224,10 +224,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7e055245-a5d1-44fa-9c7c-41a298300778/OFERTAS-GENERICAS.jpg",
+          "desktop": "https://data.decoassets.com/festval/6718de49-24af-4e0e-b0c1-da468a9dc303/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0e7d034a-7ec2-421a-802f-b76302658d1d/ofertas-semanais.jpg",
+          "mobile": "https://data.decoassets.com/festval/bc3c8fd6-e365-454d-8459-710e26e6844e/churras.jpg",
           "hrefMobile": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
