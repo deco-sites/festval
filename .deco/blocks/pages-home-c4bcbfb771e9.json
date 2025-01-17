@@ -273,14 +273,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "377",
+          "collection": "1227",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/377?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "Lindt"
+      "cta": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "title": "1953"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
