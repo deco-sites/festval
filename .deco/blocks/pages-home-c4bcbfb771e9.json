@@ -236,16 +236,27 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7e055245-a5d1-44fa-9c7c-41a298300778/OFERTAS-GENERICAS.jpg",
-          "alt": "OFERTAS-SEMANAIS",
+          "desktop": "https://data.decoassets.com/festval/725278c2-3d87-4fc7-ada3-e06b8897345f/BANNER-DE-OFERTAS-M-creme-de-leite.jpg",
+          "alt": "OFERTAS-SEMANAIS-DIREITA",
           "href": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0e7d034a-7ec2-421a-802f-b76302658d1d/ofertas-semanais.jpg",
+          "mobile": "https://data.decoassets.com/festval/8abed83e-b576-48e3-abed-e0ee41f13074/creme-de-leite.jpg",
           "hrefMobile": "https://www.festval.com/178?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Curitiba",
-          "positionBanner": "Full",
+          "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false
+        },
+        {
+          "positionBanner": "Left",
+          "region": "Curitiba",
+          "mobile": "https://data.decoassets.com/festval/3f51c4ab-eb03-45dc-b00d-838619ab4e66/coca310.jpg",
+          "desktop": "https://data.decoassets.com/festval/ea32aece-061f-45fb-8c20-0868e6dbf96e/BANNER-DE-OFERTAS-M-coca-310.jpg",
+          "alt": "OFERTAS-SEMANAIS-ESQUERDA",
+          "href": "https://www.festval.com/1586?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/1586?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "initialDate": "2024-12-05",
+          "deadLine": "2024-12-05"
         }
       ]
     },
@@ -275,19 +286,8 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/557ce91a-de7f-436e-846e-703eb8ebe5a2/1080X465-BANNER-PANNETONE.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/757583d5-3436-41a6-9037-ab55e4d66289/1700X400-BANNER-PANNETONE.jpg",
-          "alt": "mamma-bia",
-          "href": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=Panettone+Italiano+Mamma+Bia&page=1",
-          "region": "Mostrar em ambas",
-          "positionBanner": "Full",
-          "initialDate": "2024-12-05",
-          "deadLine": "2024-12-22",
-          "activeTerm": true
-        },
-        {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23c9e678-2b63-4cb6-87a5-97f3f2f13fe4/MAMMA-BIA.jpg",
+          "desktop": "https://data.decoassets.com/festval/caecbbb0-cce0-46db-ab19-ec6c9b54c772/Group-1.png",
           "alt": "mammabiagenerico",
           "href": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
           "hrefMobile": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
@@ -295,32 +295,31 @@
           "positionBanner": "Full",
           "initialDate": "23/14/2024",
           "deadLine": "20/01/2029",
-          "activeTerm": false,
-          "desktop": "https://data.decoassets.com/festval/caecbbb0-cce0-46db-ab19-ec6c9b54c772/Group-1.png"
+          "activeTerm": false
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bba26047-5316-4767-8b82-b42327d3c307/BANNER_M_NINHO.jpg",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/337523ed-8844-413e-9c62-5b21e9a3a13a/Ninho-visibilidade.jpg",
-          "alt": "Ninho",
-          "href": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
-          "hrefMobile": "/leite-em-po-ninho-adulto-lata-350g/p?skuId=26418",
+          "mobile": "https://data.decoassets.com/festval/16368d16-8fc3-41b9-a3fc-c743f81b6123/BANNER-M-G7.jpg",
+          "alt": "g7",
+          "href": "https://www.festval.com/1533?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/1533?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Left",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
-          "activeTerm": false
+          "activeTerm": false,
+          "desktop": "https://data.decoassets.com/festval/bc9ab92d-0b47-48f0-8cfe-f519575eec63/g7-visibilidade.jpg"
         },
         {
+          "mobile": "https://data.decoassets.com/festval/6ca627de-8270-4521-b4de-9abd389354d8/BANNER-M-sucos.jpg",
+          "desktop": "https://data.decoassets.com/festval/b6d9d032-8c6b-427b-b71c-1f93159c55bb/sucos-festval.jpg",
+          "alt": "sucos",
+          "href": "https://www.festval.com/1097?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/1097?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "region": "Mostrar em ambas",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ee25d1dd-a872-4e07-826c-cff57605b9bc/BANNER-M-visibilidade-lindor.jpg",
-          "activeTerm": false,
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/97a300f4-4866-4b3f-8187-e92546112f13/BANNER-M-VISUALIZACAO-LINDOR.jpg",
-          "alt": "Lindor",
-          "href": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "hrefMobile": "/1042?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "region": "Mostrar em ambas"
+          "activeTerm": false
         }
       ],
       "inverted": true
