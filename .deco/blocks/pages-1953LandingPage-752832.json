@@ -1,6 +1,6 @@
 {
   "name": "1953LandingPage",
-  "path": "/1953LP",
+  "path": "/1953",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
