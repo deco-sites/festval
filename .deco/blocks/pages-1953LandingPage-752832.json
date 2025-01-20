@@ -25,10 +25,25 @@
             "activeTerm": false
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "region": "Cascavel",
-            "alt": "1953_2"
+            "alt": "1953_2",
+            "desktop": "https://data.decoassets.com/festval/42dbd95c-b982-48c6-9c5f-b4576878c398/Festval---1953---Banner---2638x682---02.jpg",
+            "mobile": "https://data.decoassets.com/festval/403775f2-a8ec-4b8a-bd79-ad9d794e84cd/1953-2.jpg",
+            "action": {
+              "href": "/1953"
+            },
+            "activeTerm": false,
+            "initialDate": "0",
+            "deadLine": "0"
+          },
+          {
+            "initialDate": "0",
+            "deadLine": "0",
+            "desktop": "https://data.decoassets.com/festval/53c3ebbe-6038-4e78-815f-4f8016f83105/Festval---1953---Banner---2638x682---03.jpg",
+            "mobile": "https://data.decoassets.com/festval/d4905866-0e61-404b-b502-e3a217f89de3/1953-3.jpg",
+            "alt": "1953_3",
+            "action": {
+              "href": "/1953"
+            }
           }
         ],
         "preload": false,
@@ -40,31 +55,7 @@
       "section": {
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
         "items": [
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a1471897-c9ee-4873-8581-d4f2f8f14704/SUBMENU-UNIPrancheta-1.jpg",
-            "href": "https://www.festval.com/1215?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Rexona"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7004ad4e-5855-4318-b8f8-906be75cf333/SUBMENU-UNIPrancheta-2.jpg",
-            "href": "https://www.festval.com/1183?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Cuidados Domésticos"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/b846f5c0-5f39-4212-b53e-d83de99fe852/SUBMENU-UNIPrancheta-3.jpg",
-            "label": "Beleza & Bem-estar",
-            "href": "https://www.festval.com/1178?map=productClusterIds&sort=orders%3Adesc&page=1"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2b9db7a5-6b6f-46e7-8646-a95c7ee505e6/SUBMENU-UNIPrancheta-4.jpg",
-            "href": "https://www.festval.com/1218?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Mãe Terra"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/4612ffe0-1255-4f36-a575-f7f4db7928ff/SUBMENU-UNIPrancheta-5.jpg",
-            "href": "qwe",
-            "label": "Nutriçao"
-          }
+          {}
         ]
       }
     },
