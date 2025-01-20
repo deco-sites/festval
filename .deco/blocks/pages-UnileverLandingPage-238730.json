@@ -15,13 +15,17 @@
         "images": [
           {
             "desktop": "https://data.decoassets.com/festval/0f96cb93-89a1-4dff-8e07-0ca31e713560/BANNER-UNIlever-fundo-azul.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e444c936-8585-4e80-b909-b72e3f860f90/FESTVAL_Hellmanns_promo_fim_de_ano_1080x1500.jpg",
-            "alt": "CELEBRAR15/11A15/01",
-            "action": {},
+            "mobile": "https://data.decoassets.com/festval/7da54078-7d1f-43a7-aa03-929bb4602e1e/BANNER-MBL-1080X1500.jpg",
+            "alt": "BANNER-UNILEVER-LP",
+            "action": {
+              "href": "/Unilever"
+            },
             "initialDate": "0",
-            "deadLine": "0"
+            "deadLine": "0",
+            "activeTerm": false
           }
-        ]
+        ],
+        "preload": false
       }
     },
     {
