@@ -14,12 +14,12 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/328f327a-a418-415f-b041-98772e86bcd1/FESTVAL_Hellmanns_promo_fim_de_ano_1920x490.jpg",
+            "desktop": "https://data.decoassets.com/festval/0f96cb93-89a1-4dff-8e07-0ca31e713560/BANNER-UNIlever-fundo-azul.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e444c936-8585-4e80-b909-b72e3f860f90/FESTVAL_Hellmanns_promo_fim_de_ano_1080x1500.jpg",
             "alt": "CELEBRAR15/11A15/01",
-            "action": {
-              "href": "https://www.festval.com/1571?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=CelebrarUnilever"
-            }
+            "action": {},
+            "initialDate": "0",
+            "deadLine": "0"
           }
         ]
       }

@@ -217,7 +217,7 @@
           "hideUnavailableItems": true
         }
       },
-      "cta": "/acougue",
+      "cta": "/açougue",
       "title": "Açougue"
     },
     {
@@ -274,14 +274,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "1227",
+          "collection": "1097",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "1953"
+      "cta": "https://www.festval.com/1097?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "title": "Festval Natural"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
