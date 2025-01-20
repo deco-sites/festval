@@ -1710,27 +1710,21 @@
       "children": []
     },
     {
-      "url": "/natal",
-      "name": "Natal",
-      "children": [],
-      "image": []
-    },
-    {
-      "@type": "SiteNavigationElement",
       "url": "/159?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
-      "children": []
-    },
-    {
-      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "name": "Mamma Bia",
       "children": [],
       "@type": "SiteNavigationElement"
     },
     {
-      "children": [],
-      "name": "Sucos Festval",
+      "@type": "SiteNavigationElement",
+      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "name": "Mamma Bia",
+      "children": []
+    },
+    {
       "url": "/bebidas/sucos-festval?page=1",
+      "name": "Sucos Festval",
+      "children": [],
       "image": []
     },
     {
@@ -1741,9 +1735,13 @@
     },
     {
       "children": [],
-      "image": [],
       "name": "Importados",
-      "url": "/importados?sort=orders%3Adesc&page=1"
+      "url": "/importados?sort=orders%3Adesc&page=1",
+      "image": []
+    },
+    {
+      "children": [],
+      "image": []
     }
   ],
   "loading": "eager",
@@ -1775,7 +1773,9 @@
     }
   },
   "imageBannerMobile": {
-    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6cab2998-634e-45f1-a927-b7a3e9ad132d/Grupo-de-mascara-9.png"
+    "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6cab2998-634e-45f1-a927-b7a3e9ad132d/Grupo-de-mascara-9.png",
+    "video": null,
+    "image": null
   },
   "navItemsMobile": [
     {
