@@ -54,9 +54,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
-        "items": [
-          {}
-        ]
+        "items": []
       }
     },
     {

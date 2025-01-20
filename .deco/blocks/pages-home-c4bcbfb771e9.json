@@ -213,7 +213,7 @@
           "sort": "price:desc",
           "count": 12,
           "fuzzy": "automatic",
-          "query": "Açougue",
+          "query": "açougue",
           "hideUnavailableItems": true
         }
       },
