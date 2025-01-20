@@ -14,11 +14,11 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/328f327a-a418-415f-b041-98772e86bcd1/FESTVAL_Hellmanns_promo_fim_de_ano_1920x490.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e444c936-8585-4e80-b909-b72e3f860f90/FESTVAL_Hellmanns_promo_fim_de_ano_1080x1500.jpg",
+            "desktop": "https://data.decoassets.com/festval/0bcba254-237e-4d5c-af98-5bbac6a5a951/Festval---1953---Banner---2638x682---01.jpg",
+            "mobile": "https://data.decoassets.com/festval/b4ce3a67-f3b5-4107-8373-9fe3f2e499e1/1953-1.jpg",
             "alt": "CELEBRAR15/11A15/01",
             "action": {
-              "href": "https://www.festval.com/1571?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=CelebrarUnilever"
+              "href": "/1953"
             },
             "initialDate": "00",
             "deadLine": "00",
