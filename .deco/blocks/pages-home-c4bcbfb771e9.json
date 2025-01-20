@@ -253,8 +253,8 @@
           "mobile": "https://data.decoassets.com/festval/2c3dd789-86be-4acc-b7fd-409d2bf814eb/pepsi-2.jpg",
           "desktop": "https://data.decoassets.com/festval/e0ff3656-4aca-4e19-8d9d-5df49e706f8c/BANNER-DE-OFERTAS-M-pepsi.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/1586?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "hrefMobile": "https://www.festval.com/1586?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "href": "https://www.festval.com/s?q=Pepsi+Garrafa+2L&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=Pepsi+Garrafa+2L&page=1",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false
