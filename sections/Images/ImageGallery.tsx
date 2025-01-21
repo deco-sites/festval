@@ -223,28 +223,23 @@ function Gallery({
     return now >= initialDate && now <= deadLine;
   };
 
-  const filteredBanners = banners.filter((banner) => isValidDateRange(banner));
-
-  const prioritizeByRegion = (banner: Banner) => {
-    if (region) {
-      if (banner.region === region) return 1;
-      if (banner.region === "Mostrar em ambas") return 2;
-      return 3;
-    }
-    return banner.region ? 3 : 2;
+  const isRegionValid = (banner: Banner) => {
+    if (!region) return false; // Caso a região não esteja definida, nenhum banner será exibido
+    if (banner.region === "Mostrar em ambas") return true; // Banner visível em ambas as regiões
+    return banner.region === region; // Verifica se o banner corresponde à região atual
   };
 
-  const sortedBanners = [...filteredBanners].sort(
-    (a, b) => prioritizeByRegion(a) - prioritizeByRegion(b)
+  const filteredBanners = banners.filter(
+    (banner) => isValidDateRange(banner) && isRegionValid(banner)
   );
 
-  const fullBanner = sortedBanners.find(
+  const fullBanner = filteredBanners.find(
     (banner) => banner.positionBanner === "Full"
   );
-  const leftBanner = sortedBanners.find(
+  const leftBanner = filteredBanners.find(
     (banner) => banner.positionBanner === "Left"
   );
-  const rightBanner = sortedBanners.find(
+  const rightBanner = filteredBanners.find(
     (banner) => banner.positionBanner === "Right"
   );
 
@@ -274,7 +269,7 @@ function Gallery({
                       <Banner
                         {...banner}
                         index={index + 1}
-                        isSingleBanner={sortedBanners.length === 2}
+                        isSingleBanner={filteredBanners.length === 2}
                       />
                     </div>
                   );
@@ -294,7 +289,7 @@ function Gallery({
                   <Banner
                     {...banner}
                     index={index + 1}
-                    isSingleBanner={sortedBanners.length === 2}
+                    isSingleBanner={filteredBanners.length === 2}
                   />
                 </div>
               );
