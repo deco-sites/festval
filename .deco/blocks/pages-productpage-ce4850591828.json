@@ -70,15 +70,15 @@
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "sort": "price:desc",
-            "collection": "1072",
+            "sort": "release:desc",
+            "collection": "1073",
             "count": 30,
             "similars": false,
             "hideUnavailableItems": true
           }
         },
-        "title": "Oportunidades",
-        "cta": "/1072?map=productClusterIds"
+        "title": "Mais vendidos",
+        "cta": "/1073?map=productClusterIds"
       }
     },
     {
