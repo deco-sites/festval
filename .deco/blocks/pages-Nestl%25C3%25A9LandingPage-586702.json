@@ -101,9 +101,10 @@
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7785b17d-432b-4f4e-95ca-a870a03f98de/20241010_td_ecom_lp_festval_1080x456.gif",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3b674909-bedd-4f28-baa3-5b708cfa959f/20241010_td_ecom_lp_festval_2638x682.gif",
             "alt": "bannermidcafechocolate",
-            "href": "/nestlé",
-            "hrefMobile": "/nestlé",
-            "initialDate": "0"
+            "href": "/Nestlé",
+            "hrefMobile": "/Nestlé",
+            "initialDate": "0",
+            "activeTerm": false
           }
         ]
       }
@@ -113,7 +114,6 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
         "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/912b33c5-5bf8-4e5e-8754-b627e8861c01/20241010_td_ecom_lp_festval_388x690-4.png",
-        "cta": "https://www.festval.com/1577?map=productClusterIds&sort=orders%3Adesc&page=1",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
@@ -122,7 +122,8 @@
             "collection": "1577",
             "hideUnavailableItems": true
           }
-        }
+        },
+        "hrer": "https://www.festval.com/1577?map=productClusterIds&sort=orders%3Adesc&page=1"
       }
     },
     {
