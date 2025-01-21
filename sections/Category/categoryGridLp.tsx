@@ -14,6 +14,7 @@ export interface Item {
 
 export interface Props {
   items: Item[];
+  itensGrid: "4" | "5";
 }
 
 function CardLp({ image, href, label }: Item) {
@@ -34,7 +35,7 @@ function CardLp({ image, href, label }: Item) {
   );
 }
 
-function CategorySliderLp({ items }: Props) {
+function CategorySliderLp({ items, itensGrid }: Props) {
   const id = useId();
   const device = useDevice();
 
@@ -42,9 +43,21 @@ function CategorySliderLp({ items }: Props) {
     <div className="custom-container">
       <div id={id} class="relative">
         <div class="overflow-x-auto scrollbar-hidden">
-          <Slider class={`carousel ${device === "mobile" ? "carousel-center" : "grid grid-cols-5"} gap-3`}>
+          <Slider
+            class={`carousel ${
+              device === "mobile"
+                ? "carousel-center"
+                : itensGrid === "4"
+                ? "grid grid-cols-4"
+                : "grid grid-cols-5"
+            } gap-3`}
+          >
             {items.map((item, index) => (
-              <Slider.Item key={index} index={index} class={clx("carousel-item", "first:pl-2", "last:pr-2")}>
+              <Slider.Item
+                key={index}
+                index={index}
+                class={clx("carousel-item", "first:pl-2", "last:pr-2")}
+              >
                 <CardLp {...item} />
               </Slider.Item>
             ))}
