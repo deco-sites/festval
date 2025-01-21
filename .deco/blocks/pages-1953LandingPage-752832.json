@@ -54,8 +54,26 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/separator.tsx",
-        "color": "#F8F8F8"
+        "__resolveType": "site/sections/Category/categoryGridLp.tsx",
+        "itensGrid": "4",
+        "items": [
+          {
+            "image": "https://data.decoassets.com/festval/082f48fe-4af5-44b4-8086-7b3d0e8fc818/Festval---1953---Banner---1080x10801.png",
+            "href": "/"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/52349ca3-203d-4b25-8501-4967be29338f/Festval---1953---Banner---1080x10802.png",
+            "href": "/"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/283ac3bb-4e38-49c6-acb2-286f480bd301/Festval---1953---Banner---1080x10803.png",
+            "href": "/"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/a3e19371-a108-4a84-b459-f069bed9c088/Festval---1953---Banner---1080x10804.png",
+            "href": "/"
+          }
+        ]
       }
     },
     {
@@ -79,12 +97,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/separator.tsx"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
@@ -96,13 +108,6 @@
         },
         "banner": "https://data.decoassets.com/festval/8fb56226-c11a-4f40-9105-0c7d5fc5d332/dia-a-dia-1953-2.jpg",
         "bannerMb": "https://data.decoassets.com/festval/e3f32fc5-4a24-44c4-bb4e-cd6c1795908b/dia-a-dia-1953-2-mbl.jpg"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/separator.tsx",
-        "color": "#f8f8f8"
       }
     },
     {

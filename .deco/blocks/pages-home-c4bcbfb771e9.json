@@ -181,11 +181,11 @@
           "href": "/adega?sort=orders%3Adesc&page=1",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3701f449-96c4-47d1-bea2-95ea99dde75c/FESTVAL-NOVO-APP-BANNER-528x465-ADEGA.png",
           "hrefMobile": "/adega",
-          "region": "Mostrar em ambas",
           "positionBanner": "Left",
           "initialDate": "2024-12-07",
           "deadLine": "2024-12-10",
-          "activeTerm": false
+          "activeTerm": false,
+          "region": "Mostrar em ambas"
         },
         {
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c551c33b-00e2-4c80-83d2-0194dc3a070e/FESTVAL-NOVO-APP-BANNER-528x465-AC_OUGUE.png",
