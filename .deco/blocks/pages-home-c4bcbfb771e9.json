@@ -224,11 +224,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/f38e0226-1087-470a-b95e-1b2cbf6782c9/BANNER-OFERTAS-SEGTER.jpg",
+          "desktop": "https://data.decoassets.com/festval/c3bdd437-38fd-497b-aaa5-bd89901a3200/BANNER-OFERTAS-QUAQUI.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/868a012d-bbaa-4532-a11b-65dfbe3b004e/limpeza-teste-app-4.jpg",
-          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/26eb4473-394c-4b12-9a56-d45ad3c935a8/horti-teste-app-4.jpg",
+          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",

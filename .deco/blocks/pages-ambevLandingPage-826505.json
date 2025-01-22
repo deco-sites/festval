@@ -1,0 +1,134 @@
+{
+  "name": "ambevLandingPage",
+  "path": "/exampleambev",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
+        "images": [
+          {
+            "desktop": "https://data.decoassets.com/festval/0bcba254-237e-4d5c-af98-5bbac6a5a951/Festval---1953---Banner---2638x682---01.jpg",
+            "mobile": "https://data.decoassets.com/festval/b4ce3a67-f3b5-4107-8373-9fe3f2e499e1/1953-1.jpg",
+            "alt": "1953_1",
+            "action": {
+              "href": "/1953"
+            },
+            "initialDate": "00",
+            "deadLine": "00",
+            "activeTerm": false
+          },
+          {
+            "alt": "1953_2",
+            "desktop": "https://data.decoassets.com/festval/42dbd95c-b982-48c6-9c5f-b4576878c398/Festval---1953---Banner---2638x682---02.jpg",
+            "mobile": "https://data.decoassets.com/festval/403775f2-a8ec-4b8a-bd79-ad9d794e84cd/1953-2.jpg",
+            "action": {
+              "href": "/1953"
+            },
+            "activeTerm": false,
+            "initialDate": "0",
+            "deadLine": "0"
+          },
+          {
+            "initialDate": "0",
+            "deadLine": "0",
+            "desktop": "https://data.decoassets.com/festval/53c3ebbe-6038-4e78-815f-4f8016f83105/Festval---1953---Banner---2638x682---03.jpg",
+            "mobile": "https://data.decoassets.com/festval/d4905866-0e61-404b-b502-e3a217f89de3/1953-3.jpg",
+            "alt": "1953_3",
+            "action": {
+              "href": "/1953"
+            },
+            "activeTerm": false
+          }
+        ],
+        "preload": false,
+        "interval": 5
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "orders:desc",
+            "collection": "1377",
+            "count": 12,
+            "hideUnavailableItems": false,
+            "similars": false
+          }
+        },
+        "banner": "https://data.decoassets.com/festval/7da1eb5d-390c-48a6-a9a1-d97d47d67f0f/churrasco-1953-site.jpg",
+        "bannerMb": "https://data.decoassets.com/festval/dc77ea04-e971-4fdb-b3b3-1ef78ceb3415/churrasco-1953.jpg"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "discount:desc",
+            "collection": "1381",
+            "count": 12
+          }
+        },
+        "banner": "https://data.decoassets.com/festval/8fb56226-c11a-4f40-9105-0c7d5fc5d332/dia-a-dia-1953-2.jpg",
+        "bannerMb": "https://data.decoassets.com/festval/e3f32fc5-4a24-44c4-bb4e-cd6c1795908b/dia-a-dia-1953-2-mbl.jpg"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 12,
+          "sort": "",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "value": "181",
+              "key": "productClusterIds"
+            }
+          ],
+          "hideUnavailableItems": false
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Full",
+            "region": "Cascavel",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://data.decoassets.com/festval/7c4be201-8658-4763-9287-d97bcdbaf4fb/bebidasalcoolicasambevlp.jpg",
+            "desktop": "https://data.decoassets.com/festval/7c4be201-8658-4763-9287-d97bcdbaf4fb/bebidasalcoolicasambevlp.jpg"
+          }
+        ]
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
