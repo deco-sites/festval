@@ -101,8 +101,8 @@
             "desktop": "https://data.decoassets.com/festval/7d0073ee-5706-4516-a8c8-5aeb44237c35/banner-guarana.jpg",
             "mobile": "https://data.decoassets.com/festval/f684e543-5304-4ec2-89cc-d2072528898a/banner-guarana-mbl.jpg",
             "alt": "banner_mid_guaran",
-            "href": "/",
-            "hrefMobile": "/",
+            "href": "https://www.festval.com/1372?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "hrefMobile": "https://www.festval.com/1372?map=productClusterIds&sort=orders%3Adesc&page=1",
             "activeTerm": false
           }
         ],
