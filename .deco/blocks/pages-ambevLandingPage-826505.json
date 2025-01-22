@@ -1,6 +1,6 @@
 {
   "name": "ambevLandingPage",
-  "path": "/exampleambev",
+  "path": "/Ambev",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -11,39 +11,24 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/separator.tsx",
+        "color": "#ffffff"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/0bcba254-237e-4d5c-af98-5bbac6a5a951/Festval---1953---Banner---2638x682---01.jpg",
-            "mobile": "https://data.decoassets.com/festval/b4ce3a67-f3b5-4107-8373-9fe3f2e499e1/1953-1.jpg",
-            "alt": "1953_1",
+            "desktop": "https://data.decoassets.com/festval/30e521d0-6d63-4973-b908-244310d6d624/ambev1920x490.jpg",
+            "mobile": "https://data.decoassets.com/festval/11388e83-33bb-440e-95f5-a6d81b206068/ambev1080x1500.jpg",
+            "alt": "brindar",
             "action": {
-              "href": "/1953"
+              "href": "/Ambev"
             },
             "initialDate": "00",
             "deadLine": "00",
-            "activeTerm": false
-          },
-          {
-            "alt": "1953_2",
-            "desktop": "https://data.decoassets.com/festval/42dbd95c-b982-48c6-9c5f-b4576878c398/Festval---1953---Banner---2638x682---02.jpg",
-            "mobile": "https://data.decoassets.com/festval/403775f2-a8ec-4b8a-bd79-ad9d794e84cd/1953-2.jpg",
-            "action": {
-              "href": "/1953"
-            },
-            "activeTerm": false,
-            "initialDate": "0",
-            "deadLine": "0"
-          },
-          {
-            "initialDate": "0",
-            "deadLine": "0",
-            "desktop": "https://data.decoassets.com/festval/53c3ebbe-6038-4e78-815f-4f8016f83105/Festval---1953---Banner---2638x682---03.jpg",
-            "mobile": "https://data.decoassets.com/festval/d4905866-0e61-404b-b502-e3a217f89de3/1953-3.jpg",
-            "alt": "1953_3",
-            "action": {
-              "href": "/1953"
-            },
             "activeTerm": false
           }
         ],
@@ -54,19 +39,34 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "orders:desc",
-            "collection": "1377",
-            "count": 12,
-            "hideUnavailableItems": false,
-            "similars": false
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Right",
+            "initialDate": "0",
+            "deadLine": "0",
+            "mobile": "https://data.decoassets.com/festval/bd516599-b636-4405-8884-f4f1b399b15f/alcoolicas-mbl.png",
+            "desktop": "https://data.decoassets.com/festval/7ed59b05-1d63-4d9c-961e-bbf4b661679a/alcoolicas.png",
+            "alt": "alcool",
+            "href": "https://www.festval.com/1590?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "hrefMobile": "https://www.festval.com/1590?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "region": "Mostrar em ambas",
+            "activeTerm": false
+          },
+          {
+            "positionBanner": "Left",
+            "initialDate": "0",
+            "deadLine": "0",
+            "mobile": "https://data.decoassets.com/festval/3824793c-90b6-451b-8782-fac0a8c52535/bebidas-mbl.png",
+            "desktop": "https://data.decoassets.com/festval/c7452cff-5bcb-4d96-82ba-07425126b18f/bebidas.png",
+            "alt": "bebidas",
+            "href": "https://www.festval.com/1591?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "hrefMobile": "https://www.festval.com/1591?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "region": "Mostrar em ambas",
+            "activeTerm": false
           }
-        },
-        "banner": "https://data.decoassets.com/festval/7da1eb5d-390c-48a6-a9a1-d97d47d67f0f/churrasco-1953-site.jpg",
-        "bannerMb": "https://data.decoassets.com/festval/dc77ea04-e971-4fdb-b3b3-1ef78ceb3415/churrasco-1953.jpg"
+        ],
+        "inverted": false
       }
     },
     {
@@ -76,13 +76,51 @@
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "sort": "discount:desc",
-            "collection": "1381",
-            "count": 12
+            "sort": "orders:desc",
+            "collection": "223",
+            "count": 12,
+            "hideUnavailableItems": false,
+            "similars": false
           }
         },
-        "banner": "https://data.decoassets.com/festval/8fb56226-c11a-4f40-9105-0c7d5fc5d332/dia-a-dia-1953-2.jpg",
-        "bannerMb": "https://data.decoassets.com/festval/e3f32fc5-4a24-44c4-bb4e-cd6c1795908b/dia-a-dia-1953-2-mbl.jpg"
+        "banner": "https://data.decoassets.com/festval/920456b7-0292-4422-afe9-a75c64c52fd2/patagonia-dsk-lp.jpg",
+        "bannerMb": "https://data.decoassets.com/festval/61b14c54-9b41-4022-a7c3-158f059ccb94/patagonia-lp-mbl.jpg",
+        "hrer": "https://www.festval.com/223?map=productClusterIds&sort=orders%3Adesc&page=1"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Full",
+            "region": "Mostrar em ambas",
+            "initialDate": "0",
+            "deadLine": "0",
+            "desktop": "https://data.decoassets.com/festval/7d0073ee-5706-4516-a8c8-5aeb44237c35/banner-guarana.jpg",
+            "mobile": "https://data.decoassets.com/festval/f684e543-5304-4ec2-89cc-d2072528898a/banner-guarana-mbl.jpg",
+            "alt": "banner_mid_guaran",
+            "href": "/",
+            "hrefMobile": "/",
+            "activeTerm": false
+          }
+        ],
+        "inverted": true
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "release:desc",
+            "collection": "1372",
+            "count": 12
+          }
+        }
       }
     },
     {
@@ -96,7 +134,7 @@
           "fuzzy": "automatic",
           "selectedFacets": [
             {
-              "value": "181",
+              "value": "587",
               "key": "productClusterIds"
             }
           ],
@@ -108,22 +146,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Footer"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/ImageGallery.tsx",
-        "banners": [
-          {
-            "positionBanner": "Full",
-            "region": "Cascavel",
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "mobile": "https://data.decoassets.com/festval/7c4be201-8658-4763-9287-d97bcdbaf4fb/bebidasalcoolicasambevlp.jpg",
-            "desktop": "https://data.decoassets.com/festval/7c4be201-8658-4763-9287-d97bcdbaf4fb/bebidasalcoolicasambevlp.jpg"
-          }
-        ]
       }
     }
   ],
