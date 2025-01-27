@@ -224,11 +224,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://data.decoassets.com/festval/1a5208ae-4bdf-4081-9d66-da2d02daa3c0/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/159?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b216c4d2-c5a2-41e6-93f4-432b6a2299f2/churras.jpg",
-          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/f50f50fa-9026-4b72-b716-ccfad38dfd1b/limpeza-teste-app-4.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
