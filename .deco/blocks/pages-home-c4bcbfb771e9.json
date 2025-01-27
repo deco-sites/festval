@@ -250,11 +250,11 @@
         {
           "positionBanner": "Left",
           "region": "Curitiba",
-          "mobile": "https://data.decoassets.com/festval/2c3dd789-86be-4acc-b7fd-409d2bf814eb/pepsi-2.jpg",
-          "desktop": "https://data.decoassets.com/festval/e0ff3656-4aca-4e19-8d9d-5df49e706f8c/BANNER-DE-OFERTAS-M-pepsi.jpg",
+          "mobile": "https://data.decoassets.com/festval/7773e675-0716-45a6-89fb-06ba18c0f78c/EISENBAHN.jpg",
+          "desktop": "https://data.decoassets.com/festval/b3e8ad92-0fec-4ca2-b5ab-0f993b86d613/BANNER-DE-OFERTAS-M-eisenbahn.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=Pepsi+Garrafa+2L&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=Pepsi+Garrafa+2L&page=1",
+          "href": "https://www.festval.com/s?q=EISENBAHN+GARRAFA+355ML&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=EISENBAHN+GARRAFA+355ML&sort=orders%3Adesc&page=1",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false
