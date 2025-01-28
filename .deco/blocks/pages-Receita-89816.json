@@ -1,6 +1,6 @@
 {
   "name": "Receita",
-  "path": "/receita",
+  "path": "/Brisket-assado-com-polenta",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -16,10 +16,10 @@
         "receita": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/200ead95-a276-469c-9303-97b77be13992/1920x130.png",
         "ImgDestaque": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58fcf197-8e20-4087-9441-86111334fbec/950x490.png",
         "videoUrl": "https://www.youtube.com/embed/lTAvWI0RNFs?si=RQNWmoY6Mv4OKPjI&autoplay=1&loop=1&mute=1&controls=1&color=white",
-        "recipeImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bd9f6c06-29de-49c6-a95f-36686a8a1942/MAMINHA.jpg",
+        "recipeImage": "https://data.decoassets.com/festval/20c32a37-4892-432f-af7a-d0fa6fe715d8/RECEITA---tamnaho-para-encaixar-no-video.jpg",
         "headerImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/21676a19-43d3-434c-8eb9-2d1d3484a51a/BANNER-TITULO-desk.jpg",
         "headerImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/57bdb69d-1a98-4b3f-b87f-2946e51319a9/BANNER-TITULO-mbl.jpg",
-        "recipeImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/dc38a877-c924-4b51-8e1d-14939733177f/MAMINHA-MBL.jpg"
+        "recipeImageMb": "https://data.decoassets.com/festval/5a868b1b-4a08-4191-a469-132b59e8541e/receita-tamanho-mbl.jpg"
       }
     },
     {
@@ -33,7 +33,7 @@
           "fuzzy": "automatic",
           "selectedFacets": [
             {
-              "value": "1543",
+              "value": "1580",
               "key": "productClusterIds"
             }
           ]
