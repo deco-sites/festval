@@ -1,0 +1,99 @@
+{
+  "name": "LP AÇOUGUE",
+  "path": "/example-path",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
+        "images": [
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://data.decoassets.com/festval/c24ec6fc-749c-4c15-a15b-a9345c41611a/1920X490-ACOUGUE.jpg",
+            "mobile": "https://data.decoassets.com/festval/a5892b58-1a36-4074-ab31-dd9590139584/lindmbl1080x1500.jpg",
+            "alt": "Lindtbanner",
+            "activeTerm": false
+          }
+        ],
+        "preload": false,
+        "interval": 5
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/categoryGridLp.tsx",
+        "items": [
+          {
+            "image": "https://data.decoassets.com/festval/8caba708-c907-45c6-9fca-3d272534c091/trufas.jpg",
+            "href": "https://www.festval.com/1042?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "trufas"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/cbddce5d-13ab-4aca-b620-6d9385261d88/lindor.jpg",
+            "href": "https://www.festval.com/1368?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Lindor"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/a1055129-ae6f-4433-9bf9-aec5850b1760/excellence.jpg",
+            "label": "Excellence",
+            "href": "https://www.festval.com/1367?map=productClusterIds&sort=orders%3Adesc&page=1"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/93dd25dd-8b6a-4a23-9a46-fa1ac3473802/classic.jpg",
+            "href": "https://www.festval.com/1588?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "classic"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/2affb913-78e5-48f4-8f49-a86e86ccc600/presenteie.jpg",
+            "href": "https://www.festval.com/1589?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Presente"
+          }
+        ],
+        "itensGrid": "5"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 12,
+          "sort": "orders:desc",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "value": "377",
+              "key": "productClusterIds"
+            }
+          ],
+          "hideUnavailableItems": false
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

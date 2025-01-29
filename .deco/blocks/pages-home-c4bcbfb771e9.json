@@ -41,6 +41,18 @@
             "action": {
               "href": "https://www.festval.com/1585?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
+          },
+          {
+            "initialDate": "2025-01-30",
+            "deadLine": "2025-02-10",
+            "region": "Curitiba",
+            "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
+            "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
+            "activeTerm": true,
+            "alt": "menufestval",
+            "action": {
+              "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
+            }
           }
         ],
         "preload": false,
