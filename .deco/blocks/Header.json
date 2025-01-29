@@ -555,38 +555,6 @@
                 {
                   "image": [],
                   "children": [],
-                  "name": "Ceia",
-                  "url": "/natal/ceia?sort=orders%3Adesc&page=1"
-                },
-                {
-                  "image": [],
-                  "children": [],
-                  "name": "Cestas de Natal",
-                  "url": "/natal/cestas-de-natal?sort=orders%3Adesc&page=1"
-                },
-                {
-                  "image": [],
-                  "children": [],
-                  "name": "Panettone",
-                  "url": "/natal/panettone?sort=orders%3Adesc&page=1"
-                }
-              ],
-              "name": "Natal",
-              "url": "/natal?sort=orders%3Adesc&page=1"
-            }
-          ],
-          "name": "Natal",
-          "url": "/natal?sort=orders%3Adesc&page=1"
-        },
-        {
-          "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [
-                {
-                  "image": [],
-                  "children": [],
                   "name": " Aceto e Vinagre",
                   "url": "/importados/aceto-e-vinagre?sort=orders%3Adesc&page=1"
                 },
@@ -965,8 +933,8 @@
                 {
                   "image": [],
                   "children": [],
-                  "name": "Piso",
-                  "url": "/limpeza/cuidados-com-a-casa/piso?sort=orders%3Adesc&page=1"
+                  "url": "/limpeza/cuidados-com-a-casa/piso?sort=orders%3Adesc&page=1",
+                  "name": "Piso"
                 }
               ],
               "name": "Cuidados com a Casa",
@@ -1412,8 +1380,8 @@
                 {
                   "image": [],
                   "children": [],
-                  "url": "/diet-light/acucar-e-adocante/acucar?sort=orders%3Adesc&page=1",
-                  "name": "Açúcar"
+                  "name": "Açúcar",
+                  "url": "/diet-light/acucar-e-adocante/acucar?sort=orders%3Adesc&page=1"
                 },
                 {
                   "image": [],
@@ -1671,25 +1639,6 @@
           ],
           "name": "Floricultura",
           "url": "/floricultura?sort=orders%3Adesc&page=1"
-        },
-        {
-          "image": [
-            {
-              "image": [],
-              "video": [],
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a8762de7-945b-4479-8a14-850fa0348f3b/banner-menu.png"
-            }
-          ],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "name": "Especiais",
-              "url": "/especiais?sort=orders%3Adesc&page=1"
-            }
-          ],
-          "name": "Especiais",
-          "url": "/especiais?sort=orders%3Adesc&page=1"
         }
       ],
       "@type": "SiteNavigationElement",
