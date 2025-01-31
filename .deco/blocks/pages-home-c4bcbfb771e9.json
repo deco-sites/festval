@@ -21,51 +21,51 @@
             "initialDate": "01/01/2024"
           },
           {
+            "desktop": "https://data.decoassets.com/festval/4fc0759d-8a1e-40b9-bb7a-e8e3829ca501/38849_Festval---Fecha-Me_s---Banner-Web-1920x490_original.png",
+            "mobile": "https://data.decoassets.com/festval/ccd1d9eb-59bd-4b1c-a3e3-53d76136bb01/38850_Festval---Fecha-Me_s---Banner-Web-1080x1500_original.png",
+            "alt": "Fecha Mês",
+            "action": {
+              "href": "https://www.festval.com/1593?map=productClusterIds&sort=orders%3Adesc&page=1",
+              "title": "Fecha mês",
+              "subTitle": "Fecha Mês"
+            },
+            "deadLine": "2025/01/31",
+            "activeTerm": true,
+            "initialDate": "2025/01/31",
+            "region": "Cascavel"
+          },
+          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/98b2a9e7-f4b1-4a69-bb58-8a6f07752460/Festval---1953---Banner---1080x1500---01.jpg",
             "alt": "JBS13-19/25",
+            "activeTerm": false,
+            "initialDate": "13/01/2025",
+            "deadLine": "19/01/2025",
             "action": {
               "href": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=1953generico"
-            },
-            "deadLine": "19/01/2025",
-            "activeTerm": false,
-            "initialDate": "13/01/2025"
+            }
           },
           {
-            "desktop": "https://data.decoassets.com/festval/1fd2cdcc-319a-4c73-bf9d-ecf774871d45/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1920x490px.png",
-            "mobile": "https://data.decoassets.com/festval/d7cd41d6-fcf9-46f6-a9d9-f89a74d871c9/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1080x1500px-(1).png",
-            "alt": "SEU VERÃO",
-            "activeTerm": true,
             "initialDate": "17/01/2025",
             "deadLine": "28/02/2025",
+            "desktop": "https://data.decoassets.com/festval/1fd2cdcc-319a-4c73-bf9d-ecf774871d45/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1920x490px.png",
+            "mobile": "https://data.decoassets.com/festval/d7cd41d6-fcf9-46f6-a9d9-f89a74d871c9/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1080x1500px-(1).png",
+            "activeTerm": true,
+            "alt": "SEU VERÃO",
             "action": {
               "href": "https://www.festval.com/1585?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
           },
           {
             "initialDate": "2025-01-31",
-            "deadLine": "2025-02-10",
             "region": "Curitiba",
             "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
             "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
-            "activeTerm": true,
             "alt": "menufestval",
+            "activeTerm": true,
+            "deadLine": "2025-02-10",
             "action": {
               "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
-            }
-          },
-          {
-            "initialDate": "2025/01/31",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/4fc0759d-8a1e-40b9-bb7a-e8e3829ca501/38849_Festval---Fecha-Me_s---Banner-Web-1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/ccd1d9eb-59bd-4b1c-a3e3-53d76136bb01/38850_Festval---Fecha-Me_s---Banner-Web-1080x1500_original.png",
-            "alt": "Fecha Mês",
-            "activeTerm": true,
-            "deadLine": "2025/01/31",
-            "action": {
-              "href": "https://www.festval.com/1593?map=productClusterIds&sort=orders%3Adesc&page=1",
-              "title": "Fecha mês",
-              "subTitle": "Fecha Mês"
             }
           }
         ],
