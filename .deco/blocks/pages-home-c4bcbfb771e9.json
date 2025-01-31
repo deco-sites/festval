@@ -44,27 +44,16 @@
             }
           },
           {
-            "initialDate": "17/01/2025",
-            "deadLine": "28/02/2025",
-            "desktop": "https://data.decoassets.com/festval/1fd2cdcc-319a-4c73-bf9d-ecf774871d45/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1920x490px.png",
-            "mobile": "https://data.decoassets.com/festval/d7cd41d6-fcf9-46f6-a9d9-f89a74d871c9/AF_V02_Campanha_Verao_2_Digital_Festval.com_2025_1080x1500px-(1).png",
-            "activeTerm": true,
-            "alt": "SEU VERÃO",
-            "action": {
-              "href": "https://www.festval.com/1585?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
-          },
-          {
             "initialDate": "2025-01-31",
-            "region": "Curitiba",
+            "deadLine": "2025-02-10",
             "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
             "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
-            "alt": "menufestval",
             "activeTerm": true,
-            "deadLine": "2025-02-10",
+            "alt": "menufestval",
             "action": {
               "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
-            }
+            },
+            "region": "Curitiba"
           }
         ],
         "preload": false,
