@@ -17,8 +17,9 @@
           "props": {
             "sort": "release:desc",
             "count": 12,
-            "collection": "106",
-            "hideUnavailableItems": true
+            "collection": "1595",
+            "hideUnavailableItems": false,
+            "similars": false
           }
         },
         "banner": "https://data.decoassets.com/festval/a1b0eff6-db12-4433-b382-c0ab4541775c/310X585-VALENTINES.jpg",
