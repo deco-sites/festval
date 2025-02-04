@@ -35,14 +35,13 @@
           {
             "desktop": "https://data.decoassets.com/festval/81ab9476-4201-4220-812f-96846b546d94/AF_V02_ValentinesDay_Festval_2024_Banner_Festval.com_1920x490-px.png",
             "mobile": "https://data.decoassets.com/festval/bcef169b-5d67-4844-8749-69d3224ca229/AF_V02_ValentinesDay_Festval_2024_Banner_Festval.com_1080x1500-px.png",
-            "alt": "Valentines-Day",
             "activeTerm": true,
             "initialDate": "2025-02-04",
             "deadLine": "2025-02-15",
             "action": {
-              "href": "https://www.festval.com/1594?map=productClusterIds&sort=orders%3Adesc&page=1",
-              "title": "Valentines-Day"
-            }
+              "href": "https://www.festval.com/1594?map=productClusterIds&sort=orders%3Adesc&page=1"
+            },
+            "alt": "Valentines-Day"
           },
           {
             "initialDate": "13/01/2025",
