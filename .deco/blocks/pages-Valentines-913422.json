@@ -18,7 +18,7 @@
             "sort": "",
             "count": 12,
             "collection": "1595",
-            "hideUnavailableItems": false,
+            "hideUnavailableItems": true,
             "similars": false
           }
         },
