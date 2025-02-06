@@ -70,7 +70,7 @@
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "sort": "price:desc",
+            "sort": "",
             "collection": "1073",
             "count": 30,
             "similars": false,
