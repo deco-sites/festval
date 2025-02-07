@@ -10,7 +10,7 @@ import { type LoadingFallbackProps } from "@deco/deco";
 export interface Props extends SectionHeaderProps {
   products: Product[] | null;
 }
-export default function ProductShelf({ products, title, cta }: Props) {
+export default function ProductShelfSimilar({ products, title, cta }: Props) {
   if (!products || products.length === 0) {
     return null;
   }
@@ -24,7 +24,6 @@ export default function ProductShelf({ products, title, cta }: Props) {
   if (!produtosEmEstoque || produtosEmEstoque.length === 0) {
     return null;
   }
-
   const viewItemListEvent = useSendEvent({
     on: "view",
     event: {

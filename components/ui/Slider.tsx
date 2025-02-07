@@ -71,12 +71,15 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     const next = root?.querySelector<HTMLElement>('[data-slide="next"]');
     const dots = root?.querySelectorAll<HTMLElement>("[data-dot]");
     if (!root || !slider || !items || items.length === 0) {
-      console.warn("Missing necessary slider attributes. It will not work as intended. Necessary elements:", {
-        root,
-        slider,
-        items,
-        rootId,
-      });
+      console.warn(
+        "Missing necessary slider attributes. It will not work as intended. Necessary elements:",
+        {
+          root,
+          slider,
+          items,
+          rootId,
+        }
+      );
       return;
     }
     const getElementsInsideContainer = () => {
@@ -95,7 +98,9 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     const goToItem = (to: number) => {
       const item = items.item(to);
       if (!isHTMLElement(item)) {
-        console.warn(`Element at index ${to} is not an html element. Skipping carousel`);
+        console.warn(
+          `Element at index ${to} is not an html element. Skipping carousel`
+        );
         return;
       }
       slider.scrollTo({
@@ -111,10 +116,13 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
       const itemsPerPage = indices.length;
       const isShowingFirst = indices[0] === 0;
       const pageIndex = Math.floor(indices[indices.length - 1] / itemsPerPage);
-      goToItem(isShowingFirst ? items.length - 1 : (pageIndex - 1) * itemsPerPage);
+      goToItem(
+        isShowingFirst ? items.length - 1 : (pageIndex - 1) * itemsPerPage
+      );
     };
     const onClickNext = () => {
       event?.stopPropagation();
+      console.log("onClickNext");
       const indices = getElementsInsideContainer();
       // Wow! items per page is how many elements are being displayed inside the container!!
       const itemsPerPage = indices.length;
