@@ -472,10 +472,9 @@ function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
 
 export const loader = (props: Props, req: Request) => {
   const url = new URL(req.url);
-  const searchTerm = url.searchParams.get("q") || ""; // Extrai o termo de busca da URL
+  const searchTerm = url.searchParams.get("q") || "";
   const page = props.page!;
 
-  // Reordena os produtos se a URL contiver "discount%3Adesc"
   if (url.search.includes("discount%3Adesc")) {
     accumulatedProducts = [...accumulatedProducts, ...page.products];
     accumulatedProducts.sort((a, b) => {
