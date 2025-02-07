@@ -1,4 +1,8 @@
-import type { ProductListingPage, PageInfo } from "apps/commerce/types.ts";
+import type {
+  ProductListingPage,
+  PageInfo,
+  Product,
+} from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
 import Filters from "./Filters.tsx";
@@ -32,6 +36,9 @@ export interface Props {
   /** @description Termo de busca */
   searchTerm?: string;
 }
+
+let accumulatedProducts: Product[] = [];
+
 function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-10">
@@ -73,7 +80,15 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          if (validateGoNext()) btnFoward.click();
+          if (validateGoNext()) {
+            if (window.location.href.includes("discount%3Adesc")) {
+              const productsCards = document.querySelectorAll(".product-card");
+              productsCards.forEach((card) => {
+                card.remove();
+              });
+            }
+            btnFoward.click();
+          }
         }
       });
     },
@@ -102,90 +117,165 @@ function PageResult(props: SectionProps<typeof loader>) {
   });
   const infinite = layout?.pagination !== "pagination";
   const id = useId();
+  const isDiscountSorted = url.includes("discount%3Adesc");
+
   return (
-    <div id={id} class="grid grid-flow-row grid-cols-1 place-items-center ">
-      <div
-        class={clx(
-          "pb-2 sm:pb-10",
-          (!prevPageUrl || partial === "hideLess") && "hidden"
-        )}
-      >
-        <a
-          rel="prev"
-          class="btn btn-ghost"
-          hx-swap="outerHTML show:parent:top"
-          hx-get={partialPrev}
+    <>
+      {isDiscountSorted && products.length > 12 ? (
+        <div>
+          <div
+            data-product-list
+            className={clx(
+              "grid items-center",
+              "grid-cols-2 gap-2",
+              "sm:grid-cols-4 sm:gap-10",
+              "w-full"
+            )}
+          >
+            {products?.map((product, index) => (
+              <ProductCard
+                key={`product-card-${product.productID}`}
+                product={product}
+                preload={index === 0}
+                index={offset + index}
+                class="h-full min-w-[160px] max-w-[300px] product-card"
+              />
+            ))}
+          </div>
+
+          <div className={clx("w-full")}>
+            {infinite ? (
+              <div className="flex justify-center [&_section]:contents">
+                <a
+                  rel="next"
+                  className={clx(
+                    "btn btn-ghost btn-next",
+                    (!nextPageUrl || partial === "hideMore") && "hidden"
+                  )}
+                  hx-swap="outerHTML show:parent:top"
+                  hx-get={partialNext}
+                >
+                  <span className="inline [.htmx-request_&]:hidden"></span>
+                  <span className="loading loading-spinner hidden [.htmx-request_&]:block" />
+                </a>
+              </div>
+            ) : (
+              <div className={clx("join", infinite && "hidden")}>
+                <a
+                  rel="prev"
+                  aria-label="previous page link"
+                  href={prevPageUrl ?? "#"}
+                  disabled={!prevPageUrl}
+                  className="btn btn-ghost join-item"
+                >
+                  <Icon id="chevron-right" className="rotate-180" />
+                </a>
+                <span className="btn btn-ghost join-item">
+                  Page {zeroIndexedOffsetPage + 1}
+                </span>
+                <a
+                  rel="next"
+                  aria-label="next page link"
+                  href={nextPageUrl ?? "#"}
+                  disabled={!nextPageUrl}
+                  className="btn btn-ghost join-item"
+                >
+                  <Icon id="chevron-right" />
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      ) : (
+        <div
+          id={id}
+          class="grid grid-flow-row grid-cols-1 place-items-center page-result"
         >
-          <span class="inline [.htmx-request_&]:hidden">Show Less</span>
-          <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
-        </a>
-      </div>
-
-      <div
-        data-product-list
-        class={clx(
-          "grid items-center",
-          "grid-cols-2 gap-2",
-          "sm:grid-cols-4 sm:gap-10",
-          "w-full"
-        )}
-      >
-        {products?.map((product, index) => (
-          <ProductCard
-            key={`product-card-${product.productID}`}
-            product={product}
-            preload={index === 0}
-            index={offset + index}
-            class="h-full min-w-[160px] max-w-[300px] product-card"
-          />
-        ))}
-      </div>
-
-      <div class={clx("pt-2 sm:pt-10 w-full", "")}>
-        {infinite ? (
-          <div class="flex justify-center [&_section]:contents">
+          <div
+            class={clx(
+              "pb-2 sm:pb-10",
+              (!prevPageUrl || partial === "hideLess") && "hidden"
+            )}
+          >
             <a
-              rel="next"
-              class={clx(
-                "btn btn-ghost btn-next",
-                (!nextPageUrl || partial === "hideMore") && "hidden"
-              )}
+              rel="prev"
+              class="btn btn-ghost"
               hx-swap="outerHTML show:parent:top"
-              hx-get={partialNext}
+              hx-get={partialPrev}
             >
-              <span class="inline [.htmx-request_&]:hidden"></span>
+              <span class="inline [.htmx-request_&]:hidden">Show Less</span>
               <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
             </a>
           </div>
-        ) : (
-          <div class={clx("join", infinite && "hidden")}>
-            <a
-              rel="prev"
-              aria-label="previous page link"
-              href={prevPageUrl ?? "#"}
-              disabled={!prevPageUrl}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="chevron-right" class="rotate-180" />
-            </a>
-            <span class="btn btn-ghost join-item">
-              Page {zeroIndexedOffsetPage + 1}
-            </span>
-            <a
-              rel="next"
-              aria-label="next page link"
-              href={nextPageUrl ?? "#"}
-              disabled={!nextPageUrl}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="chevron-right" />
-            </a>
+
+          <div
+            data-product-list
+            class={clx(
+              "grid items-center",
+              "grid-cols-2 gap-2",
+              "sm:grid-cols-4 sm:gap-10",
+              "w-full"
+            )}
+          >
+            {products?.map((product, index) => (
+              <ProductCard
+                key={`product-card-${product.productID}`}
+                product={product}
+                preload={index === 0}
+                index={offset + index}
+                class="h-full min-w-[160px] max-w-[300px] product-card"
+              />
+            ))}
           </div>
-        )}
-      </div>
-    </div>
+
+          <div class={clx("pt-2 sm:pt-10 w-full", "")}>
+            {infinite ? (
+              <div class="flex justify-center [&_section]:contents">
+                <a
+                  rel="next"
+                  class={clx(
+                    "btn btn-ghost btn-next",
+                    (!nextPageUrl || partial === "hideMore") && "hidden"
+                  )}
+                  hx-swap="outerHTML show:parent:top"
+                  hx-get={partialNext}
+                >
+                  <span class="inline [.htmx-request_&]:hidden"></span>
+                  <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
+                </a>
+              </div>
+            ) : (
+              <div class={clx("join", infinite && "hidden")}>
+                <a
+                  rel="prev"
+                  aria-label="previous page link"
+                  href={prevPageUrl ?? "#"}
+                  disabled={!prevPageUrl}
+                  class="btn btn-ghost join-item"
+                >
+                  <Icon id="chevron-right" class="rotate-180" />
+                </a>
+                <span class="btn btn-ghost join-item">
+                  Page {zeroIndexedOffsetPage + 1}
+                </span>
+                <a
+                  rel="next"
+                  aria-label="next page link"
+                  href={nextPageUrl ?? "#"}
+                  disabled={!nextPageUrl}
+                  class="btn btn-ghost join-item"
+                >
+                  <Icon id="chevron-right" />
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+    </>
   );
 }
+
 const setPageQuerystring = (page: string, id: string) => {
   const element = document
     .getElementById(id)
@@ -209,6 +299,7 @@ const setPageQuerystring = (page: string, id: string) => {
     history.replaceState({ prevPage }, "", url.href);
   }).observe(element);
 };
+
 function Result(props: SectionProps<typeof loader>) {
   const container = useId();
   const controls = useId();
@@ -371,15 +462,49 @@ function Result(props: SectionProps<typeof loader>) {
     </>
   );
 }
+
 function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
   if (!page) {
     return <NotFound />;
   }
   return <Result {...props} page={page} />;
 }
+
 export const loader = (props: Props, req: Request) => {
   const url = new URL(req.url);
   const searchTerm = url.searchParams.get("q") || ""; // Extrai o termo de busca da URL
+  const page = props.page!;
+
+  // Reordena os produtos se a URL contiver "discount%3Adesc"
+  if (url.search.includes("discount%3Adesc")) {
+    accumulatedProducts = [...accumulatedProducts, ...page.products];
+    accumulatedProducts.sort((a, b) => {
+      const listPriceA = a.offers?.offers[0].priceSpecification[0].price || 0;
+      const priceA = a.offers?.offers[0].priceSpecification[1].price || 0;
+      const discountA = listPriceA
+        ? Math.round(((listPriceA - priceA) / listPriceA) * 100)
+        : 0;
+
+      const listPriceB = b.offers?.offers[0].priceSpecification[0].price || 0;
+      const priceB = b.offers?.offers[0].priceSpecification[1].price || 0;
+      const discountB = listPriceB
+        ? Math.round(((listPriceB - priceB) / listPriceB) * 100)
+        : 0;
+
+      return discountB - discountA;
+    });
+    return {
+      ...props,
+      url: req.url,
+      searchTerm,
+      page: {
+        ...page,
+        products: accumulatedProducts,
+      },
+    };
+  } else {
+    accumulatedProducts = [];
+  }
 
   return {
     ...props,
@@ -387,5 +512,16 @@ export const loader = (props: Props, req: Request) => {
     searchTerm,
   };
 };
+
+// export const loader = (props: Props, req: Request) => {
+//   const url = new URL(req.url);
+//   const searchTerm = url.searchParams.get("q") || ""; // Extrai o termo de busca da URL
+
+//   return {
+//     ...props,
+//     url: req.url,
+//     searchTerm,
+//   };
+// };
 
 export default SearchResult;
