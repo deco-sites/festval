@@ -32,7 +32,24 @@
             "query": "suco, carne,peixe"
           }
         },
-        "count": 12
+        "count": 12,
+        "titleSimilar": "Quem viu, comprou também"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "",
+            "collection": "1073",
+            "count": 12,
+            "hideUnavailableItems": true
+          }
+        },
+        "title": "Mais vendidos"
       }
     },
     {

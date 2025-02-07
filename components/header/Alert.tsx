@@ -30,5 +30,5 @@ function Alert({ alerts = [], interval = 5 }: Props) {
     </div>
   );
 }
-
+ 
 export default Alert;
