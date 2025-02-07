@@ -119,6 +119,8 @@ function PageResult(props: SectionProps<typeof loader>) {
   const id = useId();
   const isDiscountSorted = url.includes("discount%3Adesc");
 
+  console.log(accumulatedProducts);
+
   return (
     <>
       {isDiscountSorted && products.length > 12 ? (
