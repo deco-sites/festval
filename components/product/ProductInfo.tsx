@@ -19,8 +19,13 @@ import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
 import Drawer from "../ui/Drawer.tsx";
 import Image from "apps/website/components/Image.tsx";
 import QuantitySelectorKgModal from "../ui/QuantitySelectorKgModal.tsx";
+import { Section } from "@deco/deco/blocks";
 interface Props {
   page: ProductDetailsPage | null;
+  /**
+   * @hide
+   */
+  region?: string;
 }
 
 interface AddToCartProps {
@@ -282,18 +287,35 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
   });
 };
 
-function expandPromoText(promo: string): string | null {
-  if (promo.includes("FLAG")) {
+function expandPromoText(promo: string, region: string): string | null {
+  const isCuritiba = region.toLowerCase() === "curitiba";
+  const isCascavel = region.toLowerCase() === "cascavel";
+
+  // Primeiro, verifica se é uma promoção global (somente FLAG, sem CWB/CAC)
+  if (
+    promo.includes("FLAG") &&
+    !promo.includes("CWB") &&
+    !promo.includes("CAC")
+  ) {
     if (promo.includes("|")) {
-      const [beforePipe] = promo.split("|");
-      return beforePipe.trim();
+      return promo.split("|")[0].trim();
     }
     return promo.replace("FLAG", "").trim();
   }
+
+  // Filtragem por região
+  if (isCuritiba && promo.includes("CWB")) {
+    return promo.split("|")[0].trim();
+  }
+
+  if (isCascavel && promo.includes("CAC")) {
+    return promo.split("|")[0].trim();
+  }
+
   return null;
 }
 
-function ProductInfo({ page }: Props) {
+function ProductInfo({ page, region }: Props) {
   const id = useId();
   const modalPreviewId = `modal-${useId()}`;
 
@@ -346,7 +368,7 @@ function ProductInfo({ page }: Props) {
 
   if (product.offers?.offers[0].teasers) {
     product.offers?.offers[0].teasers.forEach((promo) => {
-      const expandedPromo = expandPromoText(promo.name);
+      const expandedPromo = expandPromoText(promo.name, region ?? "");
 
       if (expandedPromo) {
         textTag.push(expandedPromo);
@@ -366,7 +388,7 @@ function ProductInfo({ page }: Props) {
     <div {...viewItemEvent} class="flex flex-col" id={id}>
       {/* Promo tags */}
       {textTag && textTag.length > 0 && (
-        <div class="w-full flex items-center justify-between">
+        <div class="w-full flex items-center gap-2">
           {textTag.map((text, index) => (
             <span
               key={index}

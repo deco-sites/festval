@@ -8,9 +8,13 @@ import { useId } from "../../sdk/useId.ts";
 interface Props {
   products: Product[];
   itemListName?: string;
+  /**
+   * @hide
+   */
+  region?: string;
 }
 
-function ProductSlider({ products, itemListName }: Props) {
+function ProductSlider({ products, itemListName, region }: Props) {
   const id = useId();
 
   return (
@@ -36,6 +40,7 @@ function ProductSlider({ products, itemListName }: Props) {
                   index={index}
                   product={product}
                   itemListName={itemListName}
+                  region={region}
                   class="w-[150px] sm:w-[180px] md:w-[200px] lg:w-[180px] xl:w-[320px]"
                 />
               </Slider.Item>

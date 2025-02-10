@@ -13,6 +13,7 @@ import Drawer from "../ui/MenuMobileDrawer.tsx";
 import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
+import { getCookies } from "std/http/cookie.ts";
 import Image from "apps/website/components/Image.tsx";
 export interface Layout {
   /**
@@ -31,6 +32,10 @@ export interface Props {
   partial?: "hideMore" | "hideLess";
   /** @description Termo de busca */
   searchTerm?: string;
+  /**
+   * @hide
+   */
+  region?: string;
 }
 function NotFound() {
   return (
@@ -84,7 +89,7 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
 };
 
 function PageResult(props: SectionProps<typeof loader>) {
-  const { layout, startingPage = 0, url, partial } = props;
+  const { layout, startingPage = 0, url, partial, region } = props;
   const page = props.page!;
   const { products, pageInfo } = page;
   const perPage = pageInfo?.recordPerPage || products.length;
@@ -136,6 +141,7 @@ function PageResult(props: SectionProps<typeof loader>) {
             product={product}
             preload={index === 0}
             index={offset + index}
+            region={region}
             class="h-full min-w-[160px] max-w-[300px] product-card"
           />
         ))}
@@ -380,6 +386,11 @@ function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
 export const loader = (props: Props, req: Request) => {
   const url = new URL(req.url);
   const searchTerm = url.searchParams.get("q") || ""; // Extrai o termo de busca da URL
+
+  const cookies = getCookies(req.headers);
+  const regionCookie = cookies["region"];
+
+  props.region = regionCookie ?? "";
 
   return {
     ...props,

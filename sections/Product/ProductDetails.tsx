@@ -8,6 +8,7 @@ import { clx } from "../../sdk/clx.ts";
 import ProductShelfSimilar from "./ProductShelfSimilar.tsx";
 import { SectionProps } from "@deco/deco";
 import { AppContext } from "../../apps/site.ts";
+import { getCookies } from "std/http/cookie.ts";
 import Separator from "../separator.tsx";
 
 export interface Props {
@@ -21,6 +22,10 @@ export interface Props {
   titleSimilar?: string;
   /** @title Similar Products cta */
   ctaSimilar?: string;
+  /**
+   * @hide
+   */
+  region?: string;
 }
 
 function formatarString(category: string | undefined) {
@@ -29,11 +34,16 @@ function formatarString(category: string | undefined) {
 }
 
 export const loader = async (
-  { page, similarProducts, count, titleSimilar, ctaSimilar }: Props,
-  _req: Request,
+  { page, similarProducts, count, titleSimilar, ctaSimilar, region }: Props,
+  req: Request,
   ctx: AppContext
 ) => {
-  if (!page) return { page, similarProducts, titleSimilar, ctaSimilar };
+  const cookies = getCookies(req.headers);
+  const regionCookie = cookies["region"];
+
+  region = regionCookie ?? "";
+
+  if (!page) return { page, similarProducts, titleSimilar, ctaSimilar, region };
 
   const { product } = page;
 
@@ -53,7 +63,7 @@ export const loader = async (
 
   similarProducts = response;
 
-  return { page, similarProducts, titleSimilar, ctaSimilar };
+  return { page, similarProducts, titleSimilar, ctaSimilar, region };
 };
 
 export default function ProductDetails({
@@ -61,6 +71,7 @@ export default function ProductDetails({
   similarProducts,
   titleSimilar,
   ctaSimilar,
+  region,
 }: SectionProps<typeof loader>) {
   /**
    * Rendered when a not found is returned by any of the loaders run on this page
@@ -96,7 +107,7 @@ export default function ProductDetails({
             <ImageGallerySlider page={page} />
           </div>
           <div class="sm:col-span-5 lg:ml-7 ">
-            <ProductInfo page={page} />
+            <ProductInfo page={page} region={region} />
           </div>
         </div>
         <Separator />

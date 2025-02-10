@@ -1,10 +1,15 @@
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductBannerSlider from "../../components/product/ProductBannerSlider.tsx";
-import Section, { Props as SectionHeaderProps } from "../../components/ui/Section.tsx";
+import Section, {
+  Props as SectionHeaderProps,
+} from "../../components/ui/Section.tsx";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import { type LoadingFallbackProps } from "@deco/deco";
+import { SectionProps } from "@deco/deco";
+import { AppContext } from "../../apps/site.ts";
+import { getCookies } from "std/http/cookie.ts";
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 export interface Props extends SectionHeaderProps {
@@ -12,8 +17,33 @@ export interface Props extends SectionHeaderProps {
   banner?: ImageWidget;
   hrer?: string;
   bannerMb?: ImageWidget;
+  /**
+   * @hide
+   */
+  region?: string;
 }
-export default function ProductShelf({ products, banner, bannerMb, hrer, title, cta }: Props) {
+
+export const loader = (
+  { products, banner, bannerMb, hrer, title, cta, region }: Props,
+  req: Request,
+  _ctx: AppContext
+) => {
+  const cookies = getCookies(req.headers);
+  const regionCookie = cookies["region"];
+
+  region = regionCookie ?? "";
+
+  return { products, banner, bannerMb, hrer, title, cta, region };
+};
+export default function ProductShelf({
+  products,
+  banner,
+  bannerMb,
+  hrer,
+  title,
+  cta,
+  region,
+}: SectionProps<typeof loader>) {
   if (!products || products.length === 0) {
     return null;
   }
@@ -34,24 +64,47 @@ export default function ProductShelf({ products, banner, bannerMb, hrer, title, 
     },
   });
   return (
-    <Section.Container class="custom-container relative sm:!py-12" {...viewItemListEvent}>
+    <Section.Container
+      class="custom-container relative sm:!py-12"
+      {...viewItemListEvent}
+    >
       <a href={hrer} class={`flex md:hidden ${!bannerMb ? "hidden" : ""}`}>
-        <Image src={bannerMb || ""} class=" h-full w-full object-contain" width={1080} height={500} alt={bannerMb} />
+        <Image
+          src={bannerMb || ""}
+          class=" h-full w-full object-contain"
+          width={1080}
+          height={500}
+          alt={bannerMb}
+        />
       </a>
       <Section.Header title={title} cta={cta} />
       <div>
         <div className="flex flex-row gap-5 w-full">
           <a href={hrer} class="hidden md:block">
-            <Image src={banner || ""} class=" h-full object-contain" width={310} height={586} alt={banner} />
+            <Image
+              src={banner || ""}
+              class=" h-full object-contain"
+              width={310}
+              height={586}
+              alt={banner}
+            />
           </a>
-          <ProductBannerSlider hasBanner={!!banner} products={products} itemListName={title} />
+          <ProductBannerSlider
+            hasBanner={!!banner}
+            products={products}
+            itemListName={title}
+            region={region}
+          />
         </div>
       </div>
     </Section.Container>
   );
 }
 
-export const LoadingFallback = ({ title, cta }: LoadingFallbackProps<Props>) => (
+export const LoadingFallback = ({
+  title,
+  cta,
+}: LoadingFallbackProps<Props>) => (
   <Section.Container>
     <Section.Header title={title} cta={cta} />
     <Section.Placeholder height="471px" />;

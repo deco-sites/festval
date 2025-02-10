@@ -5,12 +5,39 @@ import Section, {
   Props as SectionHeaderProps,
 } from "../../components/ui/Section.tsx";
 import { useOffer } from "../../sdk/useOffer.ts";
+import { SectionProps } from "@deco/deco";
+import { AppContext } from "../../apps/site.ts";
+import { getCookies } from "std/http/cookie.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import { type LoadingFallbackProps } from "@deco/deco";
 export interface Props extends SectionHeaderProps {
   products: Product[] | null;
+
+  /**
+   * @hide
+   */
+  region?: string;
 }
-export default function ProductShelf({ products, title, cta }: Props) {
+
+export const loader = (
+  { products, title, cta, region }: Props,
+  req: Request,
+  _ctx: AppContext
+) => {
+  const cookies = getCookies(req.headers);
+  const regionCookie = cookies["region"];
+
+  region = regionCookie ?? "";
+
+  return { products, title, cta, region };
+};
+
+export default function ProductShelf({
+  products,
+  title,
+  cta,
+  region,
+}: SectionProps<typeof loader>) {
   if (!products || products.length === 0) {
     return null;
   }
@@ -48,7 +75,11 @@ export default function ProductShelf({ products, title, cta }: Props) {
     >
       <Section.Header title={title} cta={cta} />
 
-      <ProductSlider products={produtosEmEstoque} itemListName={title} />
+      <ProductSlider
+        products={produtosEmEstoque}
+        itemListName={title}
+        region={region}
+      />
     </Section.Container>
   );
 }

@@ -1,4 +1,5 @@
 import type { Product } from "apps/commerce/types.ts";
+import { SectionProps } from "@deco/deco";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "../../sdk/clx.ts";
@@ -12,13 +13,13 @@ import AddToCartButton from "./AddToCartButton.tsx";
 import { Ring } from "./ProductVariantSelector.tsx";
 import { useId } from "../../sdk/useId.ts";
 import { useDevice, useScript } from "@deco/deco/hooks";
-import Icon from "../ui/Icon.tsx";
 import QuantitySelector from "../ui/QuantitySelector.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import ModalAddToCart from "./ModalAddToCart.tsx";
 import AddToCartMobileButton from "./AddToCartMobileButton.tsx";
 import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
 import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
+import Section from "../../components/ui/Section.tsx";
 
 interface Props {
   product: Product;
@@ -34,6 +35,11 @@ interface Props {
   class?: string;
 
   seller?: string;
+
+  /**
+   * @hide
+   */
+  region?: string;
 }
 
 const WIDTH = 287;
@@ -378,14 +384,31 @@ const useAddToCart = ({ product, seller }: Props) => {
   return null;
 };
 
-function expandPromoText(promo: string): string | null {
-  if (promo.includes("FLAG")) {
+function expandPromoText(promo: string, region: string): string | null {
+  const isCuritiba = region.toLowerCase() === "curitiba";
+  const isCascavel = region.toLowerCase() === "cascavel";
+
+  // Primeiro, verifica se é uma promoção global (somente FLAG, sem CWB/CAC)
+  if (
+    promo.includes("FLAG") &&
+    !promo.includes("CWB") &&
+    !promo.includes("CAC")
+  ) {
     if (promo.includes("|")) {
-      const [beforePipe] = promo.split("|");
-      return beforePipe.trim();
+      return promo.split("|")[0].trim();
     }
     return promo.replace("FLAG", "").trim();
   }
+
+  // Filtragem por região
+  if (isCuritiba && promo.includes("CWB")) {
+    return promo.split("|")[0].trim();
+  }
+
+  if (isCascavel && promo.includes("CAC")) {
+    return promo.split("|")[0].trim();
+  }
+
   return null;
 }
 
@@ -394,6 +417,7 @@ function ProductCard({
   preload,
   itemListName,
   index,
+  region,
   class: _class,
 }: Props) {
   const id = useId();
@@ -443,9 +467,15 @@ function ProductCard({
 
   const textTag: string[] = [];
 
+  // const promos = [
+  //   { name: "Leve 12 pague 11 | FLAG" },
+  //   { name: "Leve 6 pague 5 | FLAG CWB" }, // Promoção válida para Curitiba
+  //   { name: "Desconto exclusivo | FLAG CAC" }, // Promoção válida para Cascavel
+  // ];
+
   if (product.offers?.offers[0].teasers) {
     product.offers?.offers[0].teasers.forEach((promo) => {
-      const expandedPromo = expandPromoText(promo.name);
+      const expandedPromo = expandPromoText(promo.name, region ?? "");
 
       if (expandedPromo) {
         textTag.push(expandedPromo);
@@ -519,7 +549,7 @@ function ProductCard({
           </span>
         </div>
 
-        <div class="absolute bottom-0 left-0 w-full flex items-center justify-between">
+        <div class="absolute flex-col gap-1 bottom-0 left-0 w-full flex items-end justify-between">
           {/* Discounts */}
           {textTag &&
             textTag.length > 0 &&
@@ -687,5 +717,7 @@ function ProductCard({
     </div>
   );
 }
+
+export const LoadingFallback = () => <Section.Placeholder height="322px" />;
 
 export default ProductCard;
