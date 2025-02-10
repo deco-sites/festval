@@ -285,11 +285,11 @@
         {
           "positionBanner": "Left",
           "region": "Curitiba",
-          "mobile": "https://data.decoassets.com/festval/55ea5e96-b70b-4825-88ce-66495f7bc7a8/arroz-mamma-bia.jpg",
-          "desktop": "https://data.decoassets.com/festval/c0fee02c-6575-48e6-9afc-dd902f033844/BANNER-DE-OFERTAS-M-arroz-mamma.jpg",
+          "mobile": "https://data.decoassets.com/festval/a6cb1965-cea4-491c-89f0-78fe39721ad7/lindt-excellence.jpg",
+          "desktop": "https://data.decoassets.com/festval/28c21b38-9c64-471d-8ec7-a7ab7610c295/BANNER-DE-OFERTAS-M-excellence.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=arroz+mamma+1kg&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=arroz+mamma+1kg&page=1",
+          "href": "https://www.festval.com/s?q=excellence&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=excellence&page=1",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false
