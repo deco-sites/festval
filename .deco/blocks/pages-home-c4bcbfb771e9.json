@@ -66,23 +66,12 @@
             }
           },
           {
-            "initialDate": "13/01/2025",
-            "deadLine": "19/01/2025",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/98b2a9e7-f4b1-4a69-bb58-8a6f07752460/Festval---1953---Banner---1080x1500---01.jpg",
-            "activeTerm": false,
-            "alt": "JBS13-19/25",
-            "action": {
-              "href": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=1953generico"
-            }
-          },
-          {
             "initialDate": "2025-01-31",
             "deadLine": "2025-02-15",
             "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
             "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
-            "alt": "menufestval",
             "activeTerm": true,
+            "alt": "menufestval",
             "action": {
               "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
             },
@@ -270,11 +259,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
+          "desktop": "https://data.decoassets.com/festval/d9b3e69b-71cf-425a-afce-6f27689a33f3/BANNER-OFERTAS-QUAQUI.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/47380651-8c6c-4a8a-a8df-06b1a6f8fdf2/limpeza-teste-app-5.jpg",
-          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/6e3e2bd6-3167-4f02-b9ba-10c296ac1567/horti-teste-app-4.jpg",
+          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
