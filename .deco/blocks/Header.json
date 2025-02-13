@@ -548,7 +548,14 @@
         },
         {
           "image": null,
-          "children": [],
+          "children": [
+            {
+              "children": [],
+              "image": null,
+              "name": "Páscoa",
+              "url": "https://www.festval.com/pascoa?sort=orders%3Adesc&page=1"
+            }
+          ],
           "name": "Páscoa",
           "url": "/pascoa?sort=orders%3Adesc&page=1"
         },
