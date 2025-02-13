@@ -547,6 +547,12 @@
           "url": "/mercearia?sort=orders%3Adesc&page=1"
         },
         {
+          "image": null,
+          "children": [],
+          "name": "Páscoa",
+          "url": "/pascoa?sort=orders%3Adesc&page=1"
+        },
+        {
           "image": [],
           "children": [
             {
@@ -1659,21 +1665,27 @@
       "children": []
     },
     {
+      "url": "/pascoa",
+      "name": "Páscoa",
+      "children": [],
+      "image": []
+    },
+    {
+      "@type": "SiteNavigationElement",
       "url": "/159?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
+      "children": []
+    },
+    {
+      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "name": "Mamma Bia",
       "children": [],
       "@type": "SiteNavigationElement"
     },
     {
-      "@type": "SiteNavigationElement",
-      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "name": "Mamma Bia",
-      "children": []
-    },
-    {
-      "url": "/bebidas/sucos-festval?page=1",
-      "name": "Sucos Festval",
       "children": [],
+      "name": "Sucos Festval",
+      "url": "/bebidas/sucos-festval?page=1",
       "image": []
     },
     {
@@ -1684,13 +1696,13 @@
     },
     {
       "children": [],
+      "image": [],
       "name": "Importados",
-      "url": "/importados?sort=orders%3Adesc&page=1",
-      "image": []
+      "url": "/importados?sort=orders%3Adesc&page=1"
     },
     {
       "children": [],
-      "image": []
+      "image": null
     }
   ],
   "loading": "eager",
