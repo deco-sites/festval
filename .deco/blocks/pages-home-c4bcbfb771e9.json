@@ -32,35 +32,23 @@
             "initialDate": "2025/02/10"
           },
           {
-            "desktop": "https://data.decoassets.com/festval/4fc0759d-8a1e-40b9-bb7a-e8e3829ca501/38849_Festval---Fecha-Me_s---Banner-Web-1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/ccd1d9eb-59bd-4b1c-a3e3-53d76136bb01/38850_Festval---Fecha-Me_s---Banner-Web-1080x1500_original.png",
-            "activeTerm": true,
-            "initialDate": "2025/01/31",
-            "deadLine": "2025/02/01",
-            "action": {
-              "href": "https://www.festval.com/1593?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "alt": "Fecha Mês",
-            "region": "Cascavel"
-          },
-          {
-            "initialDate": "2025-02-04",
-            "deadLine": "2025-02-15",
             "desktop": "https://data.decoassets.com/festval/81ab9476-4201-4220-812f-96846b546d94/AF_V02_ValentinesDay_Festval_2024_Banner_Festval.com_1920x490-px.png",
             "mobile": "https://data.decoassets.com/festval/bcef169b-5d67-4844-8749-69d3224ca229/AF_V02_ValentinesDay_Festval_2024_Banner_Festval.com_1080x1500-px.png",
             "activeTerm": true,
-            "alt": "Valentines-Day",
+            "initialDate": "2025-02-04",
+            "deadLine": "2025-02-15",
             "action": {
               "href": "https://www.festval.com/valentinesday2025"
-            }
+            },
+            "alt": "Valentines-Day"
           },
           {
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
             "desktop": "https://data.decoassets.com/festval/b1545d58-ea6b-42e3-b4e4-8efbf9cbacb7/franuipink-1920x490-32.jpg",
             "mobile": "https://data.decoassets.com/festval/c9f9fe52-54cd-48f5-a688-968d49bff530/franuipink-1080x1500-32.jpg",
-            "alt": "franui-pink",
             "activeTerm": false,
+            "alt": "franui-pink",
             "action": {
               "href": "https://www.festval.com/franui-pink-framboesa-banhada-chocolate-branco-150g/p?skuId=26683"
             }
@@ -70,8 +58,8 @@
             "deadLine": "2025-02-15",
             "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
             "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
-            "activeTerm": true,
             "alt": "menufestval",
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
             },
@@ -80,14 +68,26 @@
           {
             "initialDate": "0",
             "deadLine": "0",
-            "region": "Curitiba",
             "desktop": "https://data.decoassets.com/festval/3c54f90e-8fc5-4930-aea1-370b7d3a203d/Bertoncello-1920x490.jpg",
             "mobile": "https://data.decoassets.com/festval/167adff6-97af-48b5-bd0f-1216235d1a7c/Bertoncello-1080x1500.jpg",
+            "activeTerm": false,
             "alt": "bertoncello",
             "action": {
               "href": "https://www.festval.com/s?q=bertoncello&sort=price%3Adesc&page=1"
             },
-            "activeTerm": false
+            "region": "Curitiba"
+          },
+          {
+            "deadLine": "2024-02-14",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/2d73fb6b-fd08-4908-8b12-4bfdb92e9334/38851_Super-Sexta---1920x490_original.png",
+            "mobile": "https://data.decoassets.com/festval/cae919ee-3146-4775-abe8-897fa59a2910/38852_Super-Sexta---1080x1500_original.png",
+            "initialDate": "2024-02-14",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1601?map=productClusterIds&sort=orders%3Adesc&page=1"
+            },
+            "alt": "Super Sexta"
           }
         ],
         "preload": false,
