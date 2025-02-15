@@ -31,13 +31,16 @@ import { type LoadingFallbackProps } from "@deco/deco";
 import MegaMenu from "../../components/header/MegaMenu.tsx";
 import Topbar, { TopBarProps } from "../../components/header/Topbar.tsx";
 import { useId } from "../../sdk/useId.ts";
+import { SectionProps } from "@deco/deco";
+import { AppContext } from "../../apps/site.ts";
+import { getCookies } from "std/http/cookie.ts";
 export interface Logo {
   src: ImageWidget;
   alt: string;
   width?: number;
   height?: number;
 }
-export interface SectionProps {
+export interface Props {
   alerts?: HTMLWidget[];
   /**
    * @title Navigation items
@@ -84,8 +87,53 @@ export interface SectionProps {
    * @description Modal Cep configuration
    */
   modalInitProps: ModalInitProps;
+
+  /**
+   * @hide
+   */
+  region?: string;
 }
-type Props = Omit<SectionProps, "alert">;
+//type Props = Omit<SectionProps, "alert">;
+
+export const loader = (
+  {
+    alerts,
+    navItems,
+    navItemsMobile,
+    imageBannerMobile,
+    searchbar,
+    logo,
+    loading,
+    variant,
+    icon,
+    topBarProps,
+    modalInitProps,
+    region,
+  }: Props,
+  req: Request,
+  _ctx: AppContext
+) => {
+  const cookies = getCookies(req.headers);
+  const regionCookie = cookies["region"];
+
+  region = regionCookie ?? "";
+
+  return {
+    alerts,
+    navItems,
+    navItemsMobile,
+    imageBannerMobile,
+    searchbar,
+    logo,
+    loading,
+    variant,
+    icon,
+    topBarProps,
+    modalInitProps,
+    region,
+  };
+};
+
 const Desktop = ({
   navItems,
   logo,
@@ -93,6 +141,7 @@ const Desktop = ({
   variant,
   icon,
   modalInitProps,
+  region,
 }: Props) => (
   <>
     <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
@@ -107,11 +156,19 @@ const Desktop = ({
         )}
       </div>
     </Modal> */}
-
     <div class="flex flex-col gap-2 pt-2 shadow">
       <div class="custom-container flex justify-between items-center w-full">
         <div class="flex flex-1">
-          <a href="/" aria-label="Store logo">
+          <a
+            href={
+              region === "Curitiba"
+                ? "/cwb"
+                : region === "Cascavel"
+                ? "/cac"
+                : "/"
+            }
+            aria-label="Store logo"
+          >
             <Image
               src={logo.src}
               alt={logo.alt}
@@ -278,9 +335,10 @@ function Header({
     alt: "Logo",
   },
   ...props
-}: Props) {
+}: SectionProps<typeof loader>) {
   const id = useId();
   const device = useDevice();
+  console.log(props.region);
   return (
     <header
       id={id}
@@ -314,7 +372,9 @@ function Header({
     </header>
   );
 }
-export const LoadingFallback = (props: LoadingFallbackProps<Props>) => (
+export const LoadingFallback = (
+  props: LoadingFallbackProps<SectionProps<typeof loader>>
+) => (
   // deno-lint-ignore no-explicit-any
   <Header {...(props as any)} loading="lazy" />
 );

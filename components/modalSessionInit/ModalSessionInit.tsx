@@ -195,16 +195,44 @@ const onLoad = (id: string) => {
     }
     return null;
   }
+
   function deleteCookie(name: string) {
     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
   }
+
   const cep = getCookie("vtex_last_session_cep");
   const vtex_segment_cookie = getCookie("vtex_last_segment");
   const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
+  const region = getCookie("region");
   const modal = document.getElementById(id);
   const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
+
+  // Caminhos esperados
+  const regionPaths = {
+    Cascavel: "/cac",
+    Curitiba: "/cwb",
+  };
+
+  const targetPath =
+    region && regionPaths[region as keyof typeof regionPaths]
+      ? regionPaths[region as keyof typeof regionPaths]
+      : null;
+
+  // Evita redirecionamento contínuo usando sessionStorage
+  const alreadyRedirected = sessionStorage.getItem("redirected");
+
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
+
+    if (targetPath) {
+      const currentPath = window.location.pathname;
+
+      // Verifica se já estamos na página correta
+      if (!currentPath.startsWith(targetPath) && !alreadyRedirected) {
+        sessionStorage.setItem("redirected", "true"); // Marca que o redirecionamento já aconteceu
+        window.location.replace(window.location.origin + targetPath);
+      }
+    }
   } else {
     modal?.classList.add("modal-open");
     deleteCookie("vtex_last_session_cep");
@@ -224,42 +252,117 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
     return null;
   }
 
+  function hideElement(element: Element | null) {
+    element?.classList.add("hidden");
+  }
+
+  function showElement(element: Element | null) {
+    element?.classList.remove("hidden");
+  }
+
   function attemptSubmit() {
     const modal = document.getElementById(id);
-    const limeText = modal?.querySelector(".text-lime-600");
-    const redText = modal?.querySelector(".text-red-700");
-    const btnSubmit = modal?.querySelector(".btn-submit");
-    const loading = modal?.querySelector(".loading");
+    if (!modal) return;
 
-    btnSubmit?.classList.add("hidden");
-    loading?.classList.remove("hidden");
+    const limeText = modal.querySelector(".text-lime-600");
+    const redText = modal.querySelector(".text-red-700");
+    const btnSubmit = modal.querySelector(".btn-submit");
+    const loading = modal.querySelector(".loading");
+
+    hideElement(btnSubmit);
+    showElement(loading);
 
     const cep = getCookie("vtex_last_session_cep");
     const vtex_segment_cookie = getCookie("vtex_last_segment");
+    const region = getCookie("region");
     const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
     const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
 
     if (cep && regionId) {
-      limeText?.classList.remove("hidden");
-      redText?.classList.add("hidden");
+      showElement(limeText);
+      hideElement(redText);
 
       setTimeout(() => {
-        modal?.classList.remove("modal-open");
-        window.location.reload();
+        modal.classList.remove("modal-open");
+
+        const regionPaths: Record<string, string> = {
+          Cascavel: "/cac",
+          Curitiba: "/cwb",
+        };
+
+        const targetPath = region ? regionPaths[region] : null;
+
+        if (targetPath && !window.location.pathname.startsWith(targetPath)) {
+          window.location.replace(window.location.origin + targetPath);
+        }
       }, 1000);
     } else if (attempts < maxAttempts) {
       attempts += 1;
       setTimeout(attemptSubmit, delay);
     } else {
-      redText?.classList.remove("hidden");
-      limeText?.classList.add("hidden");
-      btnSubmit?.classList.remove("hidden");
-      loading?.classList.add("hidden");
+      showElement(redText);
+      hideElement(limeText);
+      showElement(btnSubmit);
+      hideElement(loading);
     }
   }
 
   attemptSubmit();
 };
+
+// const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
+//   let attempts = 0;
+
+//   function getCookie(name: string): string | null {
+//     const value = `; ${document.cookie}`;
+//     const parts = value.split(`; ${name}=`);
+//     if (parts.length === 2) {
+//       return parts.pop()?.split(";").shift() || null;
+//     }
+//     return null;
+//   }
+
+//   function attemptSubmit() {
+//     const modal = document.getElementById(id);
+//     const limeText = modal?.querySelector(".text-lime-600");
+//     const redText = modal?.querySelector(".text-red-700");
+//     const btnSubmit = modal?.querySelector(".btn-submit");
+//     const loading = modal?.querySelector(".loading");
+
+//     btnSubmit?.classList.add("hidden");
+//     loading?.classList.remove("hidden");
+
+//     const cep = getCookie("vtex_last_session_cep");
+//     const vtex_segment_cookie = getCookie("vtex_last_segment");
+//     const region = getCookie("region");
+//     const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
+//     const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
+
+//     if (cep && regionId) {
+//       limeText?.classList.remove("hidden");
+//       redText?.classList.add("hidden");
+
+//       setTimeout(() => {
+//         modal?.classList.remove("modal-open");
+//         if (region === "Cascavel") {
+//           window.location.replace(window.location.origin + "/cac");
+//         } else if (region === "Curitiba") {
+//           window.location.replace(window.location.origin + "/cwb");
+//         }
+//       }, 1000);
+//     } else if (attempts < maxAttempts) {
+//       attempts += 1;
+//       setTimeout(attemptSubmit, delay);
+//     } else {
+//       redText?.classList.remove("hidden");
+//       limeText?.classList.add("hidden");
+//       btnSubmit?.classList.remove("hidden");
+//       loading?.classList.add("hidden");
+//     }
+//   }
+
+//   attemptSubmit();
+// };
 
 const applyCepMask = () => {
   const cepInput = event?.currentTarget as HTMLInputElement;
