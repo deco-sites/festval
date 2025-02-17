@@ -8,7 +8,7 @@ const onLoad = (id: string) =>
     const count = sdk.getCart()?.items.length ?? 0;
     if (!counter) {
       return;
-    }
+    } 
     // Set minicart items count on header
     if (count === 0) {
       counter.classList.add("hidden");
