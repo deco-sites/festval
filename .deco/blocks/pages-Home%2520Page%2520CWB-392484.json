@@ -53,6 +53,17 @@
             "action": {
               "href": "https://www.festval.com/1599?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
+          },
+          {
+            "initialDate": "0",
+            "deadLine": "0",
+            "desktop": "https://data.decoassets.com/festval/3c54f90e-8fc5-4930-aea1-370b7d3a203d/Bertoncello-1920x490.jpg",
+            "mobile": "https://data.decoassets.com/festval/167adff6-97af-48b5-bd0f-1216235d1a7c/Bertoncello-1080x1500.jpg",
+            "alt": "bertoncelo",
+            "activeTerm": false,
+            "action": {
+              "href": "https://www.festval.com/s?q=bertoncello&sort=price%3Adesc&page=1"
+            }
           }
         ],
         "preload": false,
