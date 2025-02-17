@@ -32,6 +32,17 @@
             "action": {
               "href": "https://www.festval.com/1195?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
+          },
+          {
+            "initialDate": "2025/02/17",
+            "deadLine": "2025/03/03",
+            "alt": "bbem",
+            "desktop": "https://data.decoassets.com/festval/bce7e115-66c9-40f2-9282-265f0d311686/BBBEM-1920X490.jpg",
+            "mobile": "https://data.decoassets.com/festval/bd837333-d2b7-4173-a477-6951675948fa/BBBEM-1080X1500.jpg",
+            "action": {
+              "href": "https://www.festval.com/1602?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerLandingPage&utm_campaign=Faz+bbbem"
+            },
+            "activeTerm": true
           }
         ],
         "interval": 5
