@@ -21,38 +21,38 @@
             "initialDate": "01/01/2024"
           },
           {
+            "desktop": "https://data.decoassets.com/festval/fb3e932c-b2ce-4c66-8514-d1fb1837437c/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1920x490-px.png",
+            "mobile": "https://data.decoassets.com/festval/888e48f2-e571-456b-9246-85bd02dfa53f/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1080x1500-px.png",
+            "alt": "Queijo-vinho",
+            "action": {
+              "href": "https://www.festval.com/1599?map=productClusterIds&sort=orders%3Adesc&page=1"
+            },
+            "deadLine": "2025/02/23",
+            "activeTerm": true,
+            "initialDate": "2025/02/10"
+          },
+          {
             "desktop": "https://data.decoassets.com/festval/b1545d58-ea6b-42e3-b4e4-8efbf9cbacb7/franuipink-1920x490-32.jpg",
             "mobile": "https://data.decoassets.com/festval/c9f9fe52-54cd-48f5-a688-968d49bff530/franuipink-1080x1500-32.jpg",
-            "alt": "franui-pink",
+            "activeTerm": false,
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
             "action": {
               "href": "https://www.festval.com/franui-pink-framboesa-banhada-chocolate-branco-150g/p?skuId=26683"
             },
-            "deadLine": "01/01/2024",
-            "activeTerm": false,
-            "initialDate": "01/01/2024"
+            "alt": "franui-pink"
           },
           {
+            "initialDate": "2025-01-31",
+            "deadLine": "2025-02-10",
+            "alt": "menufestval",
             "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
             "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
             "activeTerm": true,
-            "initialDate": "2025-01-31",
-            "deadLine": "2025-02-10",
             "action": {
               "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
             },
-            "alt": "menufestval",
             "region": "Curitiba"
-          },
-          {
-            "initialDate": "2025/02/10",
-            "deadLine": "2025/02/23",
-            "alt": "Queijo-vinho",
-            "desktop": "https://data.decoassets.com/festval/fb3e932c-b2ce-4c66-8514-d1fb1837437c/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1920x490-px.png",
-            "mobile": "https://data.decoassets.com/festval/888e48f2-e571-456b-9246-85bd02dfa53f/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1080x1500-px.png",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1599?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
           },
           {
             "initialDate": "0",
