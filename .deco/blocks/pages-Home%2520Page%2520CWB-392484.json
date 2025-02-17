@@ -276,8 +276,8 @@
           "mobile": "https://data.decoassets.com/festval/a6cb1965-cea4-491c-89f0-78fe39721ad7/lindt-excellence.jpg",
           "desktop": "https://data.decoassets.com/festval/28c21b38-9c64-471d-8ec7-a7ab7610c295/BANNER-DE-OFERTAS-M-excellence.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=excellence&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=excellence&page=1",
+          "href": "https://www.festval.com/s?q=excellence+lindt&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=excellence+lindt&page=1",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false
