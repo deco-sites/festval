@@ -101,8 +101,6 @@ export const viaCep = async (cep: string): Promise<Address> => {
     const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     //const response = await fetch(`https://brasilapi.com.br/api/cep/v1/${cep}`);
 
-    console.log(response);
-
     if (!response.ok) {
       throw new Error(`Erro na requisição: ${response.status}`);
     }
@@ -294,6 +292,7 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
 
         if (targetPath && !window.location.pathname.startsWith(targetPath)) {
           window.location.replace(window.location.origin + targetPath);
+          sessionStorage.setItem("redirected", "true");
         }
       }, 1000);
     } else if (attempts < maxAttempts) {
