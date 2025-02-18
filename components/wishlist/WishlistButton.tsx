@@ -23,6 +23,9 @@ const onLoad = (id: string, productID: string) =>
     }
 
     if (favoriteFillSvg) {
+      if (inWishlist) {
+        favoriteFillSvg.classList.remove("d-none");
+      }
       favoriteFillSvg.classList.toggle("hidden", !inWishlist);
     }
 
