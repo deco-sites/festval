@@ -6635,6 +6635,10 @@ details.collapse summary::-webkit-details-marker {
     width: 200px;
   }
 
+  .md\:w-\[301px\] {
+    width: 301px;
+  }
+
   .md\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
@@ -6859,6 +6863,10 @@ details.collapse summary::-webkit-details-marker {
     width: 180px;
   }
 
+  .lg\:w-\[276px\] {
+    width: 276px;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
@@ -7015,6 +7023,10 @@ details.collapse summary::-webkit-details-marker {
   .xl\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .xl\:w-\[301px\] {
+    width: 301px;
   }
 
   .xl\:w-\[320px\] {

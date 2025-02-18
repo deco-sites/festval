@@ -338,7 +338,6 @@ function Header({
 }: SectionProps<typeof loader>) {
   const id = useId();
   const device = useDevice();
-  console.log(props.region);
   return (
     <header
       id={id}

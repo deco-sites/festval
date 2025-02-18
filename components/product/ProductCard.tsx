@@ -1,5 +1,4 @@
 import type { Product } from "apps/commerce/types.ts";
-import { SectionProps } from "@deco/deco";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import { clx } from "../../sdk/clx.ts";
@@ -442,8 +441,6 @@ function ProductCard({
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
   const platformProps = useAddToCart({ product, seller });
-
-  if (product.productID === "3303") console.log(product, item);
 
   {
     /* Add click event to dataLayer */
