@@ -92,6 +92,13 @@ function PageResult(props: SectionProps<typeof loader>) {
   const { layout, startingPage = 0, url, partial, region } = props;
   const page = props.page!;
   const { products, pageInfo } = page;
+
+  const produtosEmEstoque = products.filter((product) => {
+    const { offers } = product;
+    const { availability } = useOffer(offers);
+    return availability === "https://schema.org/InStock";
+  });
+
   const perPage = pageInfo?.recordPerPage || products.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
@@ -135,7 +142,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           "w-full"
         )}
       >
-        {products?.map((product, index) => (
+        {produtosEmEstoque?.map((product, index) => (
           <ProductCard
             key={`product-card-${product.productID}`}
             product={product}

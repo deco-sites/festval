@@ -47,6 +47,16 @@ export default function ProductShelf({
   if (!products || products.length === 0) {
     return null;
   }
+
+  const produtosEmEstoque = products.filter((product) => {
+    const { offers } = product;
+    const { availability } = useOffer(offers);
+    return availability === "https://schema.org/InStock";
+  });
+
+  if (!produtosEmEstoque || produtosEmEstoque.length === 0) {
+    return null;
+  }
   const viewItemListEvent = useSendEvent({
     on: "view",
     event: {
@@ -91,7 +101,7 @@ export default function ProductShelf({
           </a>
           <ProductBannerSlider
             hasBanner={!!banner}
-            products={products}
+            products={produtosEmEstoque}
             itemListName={title}
             region={region}
           />
