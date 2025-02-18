@@ -198,6 +198,20 @@ const onLoad = (id: string) => {
     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
   }
 
+  // Caminhos esperados
+  const regionPaths: Record<string, string> = {
+    Cascavel: "/cac",
+    Curitiba: "/cwb",
+  };
+
+  const lastRegion = localStorage.getItem("lastRegion");
+  const isHomePage = window.location.pathname === "/";
+
+  if (isHomePage && lastRegion && regionPaths[lastRegion]) {
+    window.location.replace(window.location.origin + regionPaths[lastRegion]);
+    return;
+  }
+
   const cep = getCookie("vtex_last_session_cep");
   const vtex_segment_cookie = getCookie("vtex_last_segment");
   const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
@@ -205,19 +219,9 @@ const onLoad = (id: string) => {
   const modal = document.getElementById(id);
   const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
 
-  // Caminhos esperados
-  const regionPaths = {
-    Cascavel: "/cac",
-    Curitiba: "/cwb",
-  };
+  const targetPath = region && regionPaths[region] ? regionPaths[region] : null;
 
-  const targetPath =
-    region && regionPaths[region as keyof typeof regionPaths]
-      ? regionPaths[region as keyof typeof regionPaths]
-      : null;
-
-  // Evita redirecionamento contínuo usando sessionStorage
-  const alreadyRedirected = sessionStorage.getItem("redirected");
+  const alreadyRedirected = localStorage.getItem("redirected");
 
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
@@ -225,9 +229,9 @@ const onLoad = (id: string) => {
     if (targetPath) {
       const currentPath = window.location.pathname;
 
-      // Verifica se já estamos na página correta
       if (!currentPath.startsWith(targetPath) && !alreadyRedirected) {
-        sessionStorage.setItem("redirected", "true"); // Marca que o redirecionamento já aconteceu
+        localStorage.setItem("redirected", "true");
+        if (region) localStorage.setItem("lastRegion", region); // Salvamos a última região acessada
         window.location.replace(window.location.origin + targetPath);
       }
     }
@@ -292,7 +296,8 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
 
         if (targetPath && !window.location.pathname.startsWith(targetPath)) {
           window.location.replace(window.location.origin + targetPath);
-          sessionStorage.setItem("redirected", "true");
+          localStorage.setItem("redirected", "true");
+          if (region) localStorage.setItem("lastRegion", region); // Salvar região para persistência
         }
       }, 1000);
     } else if (attempts < maxAttempts) {
