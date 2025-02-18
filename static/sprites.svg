@@ -22,11 +22,11 @@
 	<symbol id="favorite_fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 35 35">
 		<defs>
 			<clipPath id="clip-path">
-			<rect id="Retângulo_2076" data-name="Retângulo 2076" width="35" height="35" transform="translate(-775 -486)" fill="#a3a0ab" stroke="#a3a0ab" stroke-width="2"/>
+			<rect id="Retângulo_2090" data-name="Retângulo_2090" width="35" height="35" transform="translate(-775 -486)" fill="red" stroke="red" stroke-width="2"/>
 			</clipPath> 
 		</defs>
 		<g id="favorito_fill" transform="translate(775 486)" clip-path="url(#clip-path)">
-			<path id="Caminho_2084" data-name="Caminho 2084" d="M28.53,5.253a7.693,7.693,0,0,0-10.881,0L16.166,6.735,14.684,5.253A7.694,7.694,0,0,0,3.8,16.134l1.483,1.483L16.166,28.5,27.048,17.617l1.483-1.483a7.693,7.693,0,0,0,0-10.881Z" transform="translate(-773.667 -484.248)" fill="red" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+			<path id="Caminho_2090" data-name="Caminho_2090" d="M28.53,5.253a7.693,7.693,0,0,0-10.881,0L16.166,6.735,14.684,5.253A7.694,7.694,0,0,0,3.8,16.134l1.483,1.483L16.166,28.5,27.048,17.617l1.483-1.483a7.693,7.693,0,0,0,0-10.881Z" transform="translate(-773.667 -484.248)" fill="red" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
 		</g>
 	</symbol> 
 
