@@ -270,11 +270,11 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://data.decoassets.com/festval/122b63af-be58-48ff-8295-0a12d1b8b64f/vanish-site.jpg",
+          "desktop": "https://data.decoassets.com/festval/1bb0fc3d-1978-4da1-a1db-e831953cdd8b/BANNER-DE-OFERTAS-M-heineken.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
-          "href": "https://www.festval.com/s?q=Vanish+P%C3%B3+Oxi+Action+Sach%C3%AA+400g&page=1",
-          "mobile": "https://data.decoassets.com/festval/b6745eed-f802-46c9-a148-feac53990277/vanish-app.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=Vanish+P%C3%B3+Oxi+Action+Sach%C3%AA+400g&page=1",
+          "href": "https://www.festval.com/cerveja-heineken-premium-long-neck-250ml/p?skuId=426",
+          "mobile": "https://data.decoassets.com/festval/3cbe5dd2-ec43-4fe0-98f2-2908b088705d/heineken-250ml.jpg",
+          "hrefMobile": "https://www.festval.com/cerveja-heineken-premium-long-neck-250ml/p?skuId=426",
           "region": "Curitiba",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
@@ -284,11 +284,11 @@
         {
           "positionBanner": "Left",
           "region": "Curitiba",
-          "mobile": "https://data.decoassets.com/festval/a6cb1965-cea4-491c-89f0-78fe39721ad7/lindt-excellence.jpg",
-          "desktop": "https://data.decoassets.com/festval/28c21b38-9c64-471d-8ec7-a7ab7610c295/BANNER-DE-OFERTAS-M-excellence.jpg",
+          "mobile": "https://data.decoassets.com/festval/c68a81eb-1aff-4738-9bf3-dd29215643d1/happy-eggs.jpg",
+          "desktop": "https://data.decoassets.com/festval/95d1532f-1ad1-45e0-a835-ae6140adc0de/BANNER-DE-OFERTAS-M-happy-eggs.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=excellence+lindt&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=excellence+lindt&page=1",
+          "href": "https://www.festval.com/ovos-tipo-grande-caipira-organicos-mantiqueira-happy-eggs-10-unidades/p?skuId=8738",
+          "hrefMobile": "https://www.festval.com/ovos-tipo-grande-caipira-organicos-mantiqueira-happy-eggs-10-unidades/p?skuId=8738",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false
