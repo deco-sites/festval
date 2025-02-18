@@ -284,11 +284,11 @@
         {
           "positionBanner": "Left",
           "region": "Curitiba",
-          "mobile": "https://data.decoassets.com/festval/c68a81eb-1aff-4738-9bf3-dd29215643d1/happy-eggs.jpg",
-          "desktop": "https://data.decoassets.com/festval/95d1532f-1ad1-45e0-a835-ae6140adc0de/BANNER-DE-OFERTAS-M-happy-eggs.jpg",
+          "mobile": "https://data.decoassets.com/festval/3ce089af-a8ef-499a-9ebd-69a9a851fa67/valsierra.jpg",
+          "desktop": "https://data.decoassets.com/festval/a35f9655-e047-4c8f-9309-70819f1c5c9f/BANNER-DE-OFERTAS-M-VALSIERRA.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/ovos-tipo-grande-caipira-organicos-mantiqueira-happy-eggs-10-unidades/p?skuId=8738",
-          "hrefMobile": "https://www.festval.com/ovos-tipo-grande-caipira-organicos-mantiqueira-happy-eggs-10-unidades/p?skuId=8738",
+          "href": "https://www.festval.com/s?q=valsierra+varietal&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=valsierra+varietal&page=1",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false
