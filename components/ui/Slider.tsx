@@ -122,7 +122,6 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     };
     const onClickNext = () => {
       event?.stopPropagation();
-      console.log("onClickNext");
       const indices = getElementsInsideContainer();
       // Wow! items per page is how many elements are being displayed inside the container!!
       const itemsPerPage = indices.length;

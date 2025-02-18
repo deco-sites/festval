@@ -14,7 +14,18 @@ const onLoad = (id: string, productID: string) =>
     const inWishlist = sdk.inWishlist(productID);
     button.disabled = false;
     button.classList.remove("htmx-request");
-    button.querySelector("svg")?.setAttribute("fill", inWishlist ? "black" : "none");
+    const favoriteSvg = button.querySelector("svg#favorite") as SVGSVGElement;
+    const favoriteFillSvg = button.querySelector(
+      "svg#favorite_fill"
+    ) as SVGSVGElement;
+    if (favoriteSvg) {
+      favoriteSvg.classList.toggle("hidden", inWishlist);
+    }
+
+    if (favoriteFillSvg) {
+      favoriteFillSvg.classList.toggle("hidden", !inWishlist);
+    }
+
     const span = button.querySelector("span");
     if (span) {
       span.innerHTML = inWishlist ? "Remover dos favoritos" : "Tornar Favorito";
@@ -27,7 +38,9 @@ const onClick = (productID: string, productGroupID: string) => {
     button.classList.add("htmx-request");
     window.STOREFRONT.WISHLIST.toggle(productID, productGroupID);
   } else {
-    window.alert(`Por favor, faça login para adicionar o produto à sua lista de desejos.`);
+    window.alert(
+      `Por favor, faça login para adicionar o produto à sua lista de desejos.`
+    );
   }
 };
 function WishlistButton({ item, variant = "full" }: Props) {
@@ -52,18 +65,28 @@ function WishlistButton({ item, variant = "full" }: Props) {
         aria-label="Tornar Favorito"
         hx-on:click={useScript(onClick, productID, productGroupID)}
         class={clx(
-          "btn no-animation",
+          "btn no-animation relative min-w-[24px]",
           variant === "icon"
             ? "btn-circle border-none shadow-inherit btn-sm bg-white opacity-90 hover:opacity-100 hover:bg-white hover:border-none"
-            : "rounded btn-accent p-0 bg-transparent opacity-100 hover:opacity-90 hover:bg-transparent  border-none shadow-inherit font-normal gap-2 w-full text-[#646072]"
+            : "rounded btn-accent p-0 bg-[unset] opacity-100 hover:opacity-90 hover:bg-transparent  border-none shadow-inherit font-normal gap-2 w-full disabled:!bg-[unset] text-[#646072]"
         )}
       >
         <Icon id="favorite" class="[.htmx-request_&]:hidden" fill="none" />
-        {variant === "full" && <span class="[.htmx-request_&]:hidden">Tornar Favorito</span>}
+        <Icon
+          id="favorite_fill"
+          class="[.htmx-request_&]:hidden d-none"
+          fill="none"
+        />
+        {variant === "full" && (
+          <span class="[.htmx-request_&]:hidden">Tornar Favorito</span>
+        )}
 
-        <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
+        <span class="[.htmx-request_&]:inline hidden loading loading-spinner absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[28px]" />
       </button>
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, productID) }} />
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id, productID) }}
+      />
     </>
   );
 }

@@ -443,6 +443,8 @@ function ProductCard({
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
   const platformProps = useAddToCart({ product, seller });
 
+  if (product.productID === "3303") console.log(product, item);
+
   {
     /* Add click event to dataLayer */
   }

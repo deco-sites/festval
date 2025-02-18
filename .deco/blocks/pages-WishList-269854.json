@@ -11,7 +11,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/Wishlist.tsx"
+        "__resolveType": "site/sections/Product/Wishlist.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/product/wishlist.ts",
+          "count": 12
+        },
+        "layout": {
+          "pagination": "show-more"
+        }
       }
     }
   ],

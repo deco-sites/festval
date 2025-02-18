@@ -9,6 +9,7 @@ export type AvailableIcons =
   | "close"
   | "chevron-right"
   | "favorite"
+  | "favorite_fill"
   | "home_pin"
   | "call"
   | "local_shipping"
@@ -41,6 +42,7 @@ const customSizes: Record<AvailableIcons, number> = {
   close: 24,
   "chevron-right": 24,
   favorite: 24,
+  favorite_fill: 24,
   home_pin: 24,
   call: 24,
   local_shipping: 24,
@@ -57,7 +59,12 @@ function Icon({ id, size = 24, width, height, ...otherProps }: Props) {
   const iconSize = id in customSizes ? customSizes[id] : size;
 
   return (
-    <svg {...otherProps} width={width ?? iconSize} height={height ?? iconSize}>
+    <svg
+      id={id}
+      {...otherProps}
+      width={width ?? iconSize}
+      height={height ?? iconSize}
+    >
       <use href={asset(`/sprites.svg#${id}`)} />
     </svg>
   );
