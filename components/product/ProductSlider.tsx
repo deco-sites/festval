@@ -41,7 +41,7 @@ function ProductSlider({ products, itemListName, region }: Props) {
                   product={product}
                   itemListName={itemListName}
                   region={region}
-                  class="w-[150px] sm:w-[180px] md:w-[301px] lg:w-[276px] xl:w-[301px]"
+                  class="w-[150px] sm:w-[180px] md:w-[381px] lg:w-[276px] xl:w-[301px]"
                 />
               </Slider.Item>
             ))}
