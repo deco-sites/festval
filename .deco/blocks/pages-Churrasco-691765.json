@@ -1,0 +1,149 @@
+{
+  "name": "Churrasco",
+  "path": "/churrascofestval",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
+        "images": [
+          {
+            "desktop": "https://data.decoassets.com/festval/e65cf2b3-da15-4a90-8d68-927f2177daab/1920X490-ACOUGUE.jpg",
+            "mobile": "https://data.decoassets.com/festval/9073f7be-a79d-4770-a6ff-3659b687fca7/Capa.png",
+            "alt": "banner-churrasco",
+            "action": {
+              "href": "/churrascofestval"
+            },
+            "initialDate": "0",
+            "deadLine": "0",
+            "activeTerm": false
+          }
+        ],
+        "preload": false
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+        "items": [
+          {
+            "image": "https://data.decoassets.com/festval/9f388c67-0339-41b3-9ba1-b8f555a95795/BOVINO.png",
+            "href": "/",
+            "label": "Bovino"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/aac3f982-e26e-43a1-91b9-8335dad20f1d/SUINO.png",
+            "href": "/",
+            "label": "Suíno"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/8e79809e-ab83-4a5a-96e3-89799c156d91/AVE.png",
+            "href": "/",
+            "label": "Ave"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/cb8b4aaa-7771-4ec4-9887-9d0b62f413ea/PEIXE.png",
+            "href": "/",
+            "label": "Peixe"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/6a432efb-3846-4f20-a128-4d564b03b22f/APERITIVO.png",
+            "href": "/",
+            "label": "Aperitivos"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/8e0e1e5a-26b7-4117-b530-d159622f3abb/TEMPERO.png",
+            "href": "/",
+            "label": "Temperos"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/7f727eca-161d-447d-8509-afaf12776b68/BEBIDAS.png",
+            "href": "/",
+            "label": "Bebidas"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/2443da13-8da5-45ab-a8bf-6bc6f1903186/MOLHOS.png",
+            "href": "/",
+            "label": "Molhos"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/3851de12-f310-43a4-9e25-037303397c2e/ACESSORIOS.png",
+            "label": "Acessórios",
+            "href": "/"
+          },
+          {
+            "image": "https://data.decoassets.com/festval/a9c2218a-0771-4097-8704-b73c35da8e35/SOBREMESA.png",
+            "href": "/",
+            "label": "Sobremesas"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx",
+        "color": "#F8F8F8"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "orders:desc",
+            "collection": "1219",
+            "count": 12,
+            "hideUnavailableItems": false,
+            "similars": false
+          }
+        },
+        "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3a91ff82-4fb1-4009-91e9-809a2c406c7d/helmans-lp-arte.jpg",
+        "bannerMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9c6fcc76-f8e7-4105-a85d-29fe5fc841b1/helmans-lp-arte-MBL.jpg"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/separator.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 12,
+          "sort": "",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "value": "172",
+              "key": "productClusterIds"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
