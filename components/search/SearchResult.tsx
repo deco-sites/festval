@@ -61,31 +61,43 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
 const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
   const container = document.getElementById(id);
   const sentinel = document.getElementById("sentinel");
-  const btnFoward = container?.querySelector(".btn-next") as HTMLButtonElement;
+  const btnFoward = container?.querySelector(
+    ".btn-next"
+  ) as HTMLButtonElement | null;
+
+  console.log(pageInfo);
 
   function validateGoNext(): boolean {
-    if (
-      pageInfo.currentPage * (pageInfo.recordPerPage ?? 12) >= record - 1 ||
-      pageInfo.currentPage === 50
-    ) {
-      return false;
-    } else {
-      return true;
-    }
+    const totalRecords = record ?? 0;
+    const recordsPerPage = pageInfo.recordPerPage ?? 12;
+    const currentPage = pageInfo.currentPage;
+
+    // Calcula o número total de páginas necessárias
+    const totalPages = Math.ceil(totalRecords / recordsPerPage);
+
+    // Retorna false se já estiver na última página ou se atingir o limite de 50 páginas
+    return currentPage < totalPages - 1 && currentPage < 50;
+  }
+
+  if (!container || !sentinel || !btnFoward) {
+    console.warn("Elementos necessários não encontrados.");
+    return;
   }
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (validateGoNext()) btnFoward.click();
+        if (entry.isIntersecting && validateGoNext()) {
+          if (!btnFoward.disabled) {
+            btnFoward.click();
+          }
         }
       });
     },
     { rootMargin: "100px" }
   );
 
-  if (sentinel) observer.observe(sentinel);
+  observer.observe(sentinel);
 };
 
 function PageResult(props: SectionProps<typeof loader>) {
@@ -285,7 +297,7 @@ function Result(props: SectionProps<typeof loader>) {
               </div>
             )}
 
-            {device === "mobile" && (
+            {device === "mobile" && filters.length > 0 && (
               <Drawer
                 id={controls}
                 aside={
@@ -327,8 +339,14 @@ function Result(props: SectionProps<typeof loader>) {
               </Drawer>
             )}
 
-            <div class="grid md:gap-4 place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
-              {device === "desktop" && (
+            <div
+              class={`grid md:gap-4 grid-cols-1 ${
+                filters.length > 0
+                  ? "sm:grid-cols-[250px_1fr] place-items-center"
+                  : "sm:grid-cols-[1fr]"
+              }`}
+            >
+              {device === "desktop" && filters.length > 0 && (
                 <aside class="place-self-start flex flex-col gap-9">
                   <span class="text-base font-semibold h-12 flex items-center">
                     Filtros

@@ -2,6 +2,7 @@ import SearchResult, {
   Props as SearchResultProps,
 } from "../search/SearchResult.tsx";
 import { type SectionProps } from "@deco/deco";
+import { AppContext } from "apps/vtex/mod.ts";
 export type Props = SearchResultProps;
 function WishlistGallery(props: SectionProps<typeof loader>) {
   const isEmpty = !props.page || props.page.products.length === 0;
@@ -22,7 +23,23 @@ function WishlistGallery(props: SectionProps<typeof loader>) {
   }
   return <SearchResult {...props} searchTerm={props.searchTerm ?? ""} />;
 }
-export const loader = (props: Props, req: Request) => {
+export const loader = async (props: Props, req: Request, ctx: AppContext) => {
+  let productsId: string[] = [];
+  if (props.page?.products) {
+    productsId = props.page.products.map((product) => product.productID);
+  }
+
+  const response = await ctx.invoke(
+    "vtex/loaders/intelligentSearch/productList.ts",
+    { props: { ids: productsId } }
+  );
+
+  props.page = {
+    ...props.page,
+    "@type": "ProductListingPage",
+    products: response ?? [],
+  };
+
   return {
     ...props,
     url: req.url,

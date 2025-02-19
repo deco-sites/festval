@@ -547,23 +547,9 @@
           "url": "/mercearia?sort=orders%3Adesc&page=1"
         },
         {
-          "image": null,
-          "children": [
-            {
-              "children": [],
-              "image": null,
-              "name": "Páscoa",
-              "url": "https://www.festval.com/pascoa?sort=orders%3Adesc&page=1"
-            }
-          ],
-          "name": "Páscoa",
-          "url": "/pascoa?sort=orders%3Adesc&page=1"
-        },
-        {
           "image": [],
           "children": [
             {
-              "image": [],
               "children": [
                 {
                   "image": [],
@@ -680,6 +666,7 @@
                   "name": "Vegetais"
                 }
               ],
+              "image": [],
               "name": "Importados",
               "url": "/importados?sort=orders%3Adesc&page=1"
             }
@@ -1672,27 +1659,21 @@
       "children": []
     },
     {
-      "url": "/pascoa",
-      "name": "Páscoa",
-      "children": [],
-      "image": []
-    },
-    {
-      "@type": "SiteNavigationElement",
       "url": "/159?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
-      "children": []
-    },
-    {
-      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "name": "Mamma Bia",
       "children": [],
       "@type": "SiteNavigationElement"
     },
     {
-      "children": [],
-      "name": "Sucos Festval",
+      "@type": "SiteNavigationElement",
+      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "name": "Mamma Bia",
+      "children": []
+    },
+    {
       "url": "/bebidas/sucos-festval?page=1",
+      "name": "Sucos Festval",
+      "children": [],
       "image": []
     },
     {
@@ -1703,13 +1684,13 @@
     },
     {
       "children": [],
-      "image": [],
       "name": "Importados",
-      "url": "/importados?sort=orders%3Adesc&page=1"
+      "url": "/importados?sort=orders%3Adesc&page=1",
+      "image": []
     },
     {
       "children": [],
-      "image": null
+      "image": []
     }
   ],
   "loading": "eager",
