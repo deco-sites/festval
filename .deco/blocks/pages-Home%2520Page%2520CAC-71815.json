@@ -259,15 +259,15 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bd321f49-a5c4-49ce-a168-9411a0e6b52c/BANNER-OFERTAS-QUAQUI.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/47380651-8c6c-4a8a-a8df-06b1a6f8fdf2/limpeza-teste-app-5.jpg",
+          "mobile": "https://data.decoassets.com/festval/6e3e2bd6-3167-4f02-b9ba-10c296ac1567/horti-teste-app-4.jpg",
           "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
-          "initialDate": "2024-12-05",
-          "deadLine": "2024-12-06",
+          "initialDate": "2025-02-19",
+          "deadLine": "2025-02-20",
           "activeTerm": false
         },
         {
