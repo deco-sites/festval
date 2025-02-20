@@ -1835,14 +1835,26 @@
         {
           "image": [
             {
+              "url": "https://data.decoassets.com/festval/aede418e-dc00-48fb-b37f-ba82edb730f5/pascoa.jpg",
+              "image": [],
+              "video": []
+            }
+          ],
+          "children": [],
+          "url": "/pascoa?sort=orders%3Adesc&page=1",
+          "name": "Páscoa"
+        },
+        {
+          "image": [
+            {
               "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8444d1b7-0f7b-4116-a389-b0b2e16cc58f/Grupo-4027.svg",
               "image": [],
               "video": []
             }
           ],
           "children": [],
-          "url": "/importados?sort=orders%3Adesc&page=1",
-          "name": "Importados"
+          "name": "Importados",
+          "url": "/importados?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -1853,8 +1865,8 @@
             }
           ],
           "children": [],
-          "name": "Padaria",
-          "url": "/padaria?sort=orders%3Adesc&page=1"
+          "url": "/padaria?sort=orders%3Adesc&page=1",
+          "name": "Padaria"
         },
         {
           "image": [
@@ -1865,15 +1877,15 @@
             }
           ],
           "children": [],
-          "url": "/frios-e-laticinios?sort=orders%3Adesc&page=1",
-          "name": "Frios e Laticínios"
+          "name": "Frios e Laticínios",
+          "url": "/frios-e-laticinios?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
             {
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/334a4fe4-1d38-4403-8589-e92b64300838/10.svg",
               "image": [],
-              "video": []
+              "video": [],
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/334a4fe4-1d38-4403-8589-e92b64300838/10.svg"
             }
           ],
           "children": [],
@@ -1889,8 +1901,8 @@
             }
           ],
           "children": [],
-          "name": "Higiene e Perfumaria",
-          "url": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1"
+          "url": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1",
+          "name": "Higiene e Perfumaria"
         },
         {
           "image": [
@@ -1901,8 +1913,8 @@
             }
           ],
           "children": [],
-          "url": "/diet-light?sort=orders%3Adesc&page=1",
-          "name": "Diet Light"
+          "name": "Diet Light",
+          "url": "/diet-light?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -1939,18 +1951,6 @@
           "children": [],
           "name": "Sorvete",
           "url": "/sorvete?sort=orders%3Adesc&page=1"
-        },
-        {
-          "image": [
-            {
-              "image": [],
-              "video": [],
-              "url": "https://data.decoassets.com/festval/aede418e-dc00-48fb-b37f-ba82edb730f5/pascoa.jpg"
-            }
-          ],
-          "children": [],
-          "name": "Páscoa",
-          "url": "/pascoa?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
