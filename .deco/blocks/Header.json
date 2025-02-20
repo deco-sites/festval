@@ -1659,21 +1659,29 @@
       "children": []
     },
     {
+      "url": "https://www.festval.com/pascoa?page=1",
+      "name": "Páscoa",
+      "children": [],
+      "image": null,
+      "additionalType": "Páscoa",
+      "identifier": "Páscoa"
+    },
+    {
+      "@type": "SiteNavigationElement",
       "url": "/159?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
+      "children": []
+    },
+    {
+      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "name": "Mamma Bia",
       "children": [],
       "@type": "SiteNavigationElement"
     },
     {
-      "@type": "SiteNavigationElement",
-      "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "name": "Mamma Bia",
-      "children": []
-    },
-    {
-      "url": "/bebidas/sucos-festval?page=1",
-      "name": "Sucos Festval",
       "children": [],
+      "name": "Sucos Festval",
+      "url": "/bebidas/sucos-festval?page=1",
       "image": []
     },
     {
@@ -1684,9 +1692,9 @@
     },
     {
       "children": [],
+      "image": [],
       "name": "Importados",
-      "url": "/importados?sort=orders%3Adesc&page=1",
-      "image": []
+      "url": "/importados?sort=orders%3Adesc&page=1"
     },
     {
       "children": [],
@@ -1812,16 +1820,24 @@
           "url": "/mercearia?sort=orders%3Adesc&page=1"
         },
         {
+          "image": null,
+          "children": [],
+          "url": "/pascoa?sort=orders%3Adesc&page=1",
+          "name": "Páscoa",
+          "additionalType": "Páscoa",
+          "identifier": "Páscoa"
+        },
+        {
           "image": [
             {
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1db36f33-060b-4078-a59f-8d2135813f3e/natal.svg",
               "image": [],
-              "video": [],
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1db36f33-060b-4078-a59f-8d2135813f3e/natal.svg"
+              "video": []
             }
           ],
           "children": [],
-          "url": "/natal?sort=orders%3Adesc&page=1",
-          "name": "Natal"
+          "name": "Natal",
+          "url": "/natal?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -1832,8 +1848,8 @@
             }
           ],
           "children": [],
-          "name": "Importados",
-          "url": "/importados?sort=orders%3Adesc&page=1"
+          "url": "/importados?sort=orders%3Adesc&page=1",
+          "name": "Importados"
         },
         {
           "image": [
@@ -1844,15 +1860,15 @@
             }
           ],
           "children": [],
-          "url": "/padaria?sort=orders%3Adesc&page=1",
-          "name": "Padaria"
+          "name": "Padaria",
+          "url": "/padaria?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
             {
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/31475836-0735-4d1c-bd90-e9a38baf4cc5/8.svg",
               "image": [],
-              "video": []
+              "video": [],
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/31475836-0735-4d1c-bd90-e9a38baf4cc5/8.svg"
             }
           ],
           "children": [],
@@ -1868,8 +1884,8 @@
             }
           ],
           "children": [],
-          "name": "Limpeza",
-          "url": "/limpeza?sort=orders%3Adesc&page=1"
+          "url": "/limpeza?sort=orders%3Adesc&page=1",
+          "name": "Limpeza"
         },
         {
           "image": [
@@ -1880,8 +1896,8 @@
             }
           ],
           "children": [],
-          "url": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1",
-          "name": "Higiene e Perfumaria"
+          "name": "Higiene e Perfumaria",
+          "url": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
