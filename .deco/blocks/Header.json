@@ -547,9 +547,23 @@
           "url": "/mercearia?sort=orders%3Adesc&page=1"
         },
         {
+          "image": null,
+          "children": [
+            {
+              "children": [],
+              "image": null,
+              "name": "Páscoa",
+              "url": "/pascoa?sort=orders%3Adesc&page=1"
+            }
+          ],
+          "name": "Páscoa",
+          "url": "/pascoa?sort=orders%3Adesc&page=1"
+        },
+        {
           "image": [],
           "children": [
             {
+              "image": [],
               "children": [
                 {
                   "image": [],
@@ -666,7 +680,6 @@
                   "name": "Vegetais"
                 }
               ],
-              "image": [],
               "name": "Importados",
               "url": "/importados?sort=orders%3Adesc&page=1"
             }
@@ -1622,23 +1635,23 @@
           "url": "/sorvete?sort=orders%3Adesc&page=1"
         },
         {
+          "children": [
+            {
+              "children": [],
+              "image": [],
+              "name": "Floricultura",
+              "url": "/floricultura?sort=orders%3Adesc&page=1"
+            }
+          ],
+          "name": "Floricultura",
+          "url": "/floricultura?sort=orders%3Adesc&page=1",
           "image": [
             {
               "image": [],
               "video": [],
               "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a8762de7-945b-4479-8a14-850fa0348f3b/banner-menu.png"
             }
-          ],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "name": "Floricultura",
-              "url": "/floricultura?sort=orders%3Adesc&page=1"
-            }
-          ],
-          "name": "Floricultura",
-          "url": "/floricultura?sort=orders%3Adesc&page=1"
+          ]
         }
       ],
       "@type": "SiteNavigationElement",
@@ -1820,26 +1833,6 @@
           "url": "/mercearia?sort=orders%3Adesc&page=1"
         },
         {
-          "image": null,
-          "children": [],
-          "url": "/pascoa?sort=orders%3Adesc&page=1",
-          "name": "Páscoa",
-          "additionalType": "Páscoa",
-          "identifier": "Páscoa"
-        },
-        {
-          "image": [
-            {
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1db36f33-060b-4078-a59f-8d2135813f3e/natal.svg",
-              "image": [],
-              "video": []
-            }
-          ],
-          "children": [],
-          "name": "Natal",
-          "url": "/natal?sort=orders%3Adesc&page=1"
-        },
-        {
           "image": [
             {
               "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8444d1b7-0f7b-4116-a389-b0b2e16cc58f/Grupo-4027.svg",
@@ -1866,26 +1859,26 @@
         {
           "image": [
             {
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/31475836-0735-4d1c-bd90-e9a38baf4cc5/8.svg",
               "image": [],
-              "video": [],
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/31475836-0735-4d1c-bd90-e9a38baf4cc5/8.svg"
+              "video": []
             }
           ],
           "children": [],
-          "name": "Frios e Laticínios",
-          "url": "/frios-e-laticinios?sort=orders%3Adesc&page=1"
+          "url": "/frios-e-laticinios?sort=orders%3Adesc&page=1",
+          "name": "Frios e Laticínios"
         },
         {
           "image": [
             {
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/334a4fe4-1d38-4403-8589-e92b64300838/10.svg",
               "image": [],
-              "video": [],
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/334a4fe4-1d38-4403-8589-e92b64300838/10.svg"
+              "video": []
             }
           ],
           "children": [],
-          "url": "/limpeza?sort=orders%3Adesc&page=1",
-          "name": "Limpeza"
+          "name": "Limpeza",
+          "url": "/limpeza?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
@@ -1908,8 +1901,8 @@
             }
           ],
           "children": [],
-          "name": "Diet Light",
-          "url": "/diet-light?sort=orders%3Adesc&page=1"
+          "url": "/diet-light?sort=orders%3Adesc&page=1",
+          "name": "Diet Light"
         },
         {
           "image": [
@@ -1946,6 +1939,18 @@
           "children": [],
           "name": "Sorvete",
           "url": "/sorvete?sort=orders%3Adesc&page=1"
+        },
+        {
+          "image": [
+            {
+              "image": [],
+              "video": [],
+              "url": "https://data.decoassets.com/festval/aede418e-dc00-48fb-b37f-ba82edb730f5/pascoa.jpg"
+            }
+          ],
+          "children": [],
+          "name": "Páscoa",
+          "url": "/pascoa?sort=orders%3Adesc&page=1"
         },
         {
           "image": [
