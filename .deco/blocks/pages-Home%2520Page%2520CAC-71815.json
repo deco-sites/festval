@@ -33,15 +33,15 @@
             "region": "Cascavel"
           },
           {
-            "desktop": "https://data.decoassets.com/festval/4fc0759d-8a1e-40b9-bb7a-e8e3829ca501/38849_Festval---Fecha-Me_s---Banner-Web-1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/ccd1d9eb-59bd-4b1c-a3e3-53d76136bb01/38850_Festval---Fecha-Me_s---Banner-Web-1080x1500_original.png",
-            "activeTerm": true,
-            "initialDate": "2025/01/31",
-            "deadLine": "2025/02/01",
+            "desktop": "https://data.decoassets.com/festval/fb3e932c-b2ce-4c66-8514-d1fb1837437c/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1920x490-px.png",
+            "mobile": "https://data.decoassets.com/festval/888e48f2-e571-456b-9246-85bd02dfa53f/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1080x1500-px.png",
+            "activeTerm": false,
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
             "action": {
-              "href": "https://www.festval.com/1593?map=productClusterIds&sort=orders%3Adesc&page=1"
+              "href": "https://www.festval.com/1599?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "alt": "Fecha Mês",
+            "alt": "Queijo-vinho",
             "region": "Cascavel"
           },
           {
@@ -56,45 +56,15 @@
             }
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "desktop": "https://data.decoassets.com/festval/ab9092c2-079c-4b01-b5c0-88e8ccb5da64/franuipink-1920x490.jpg",
-            "mobile": "https://data.decoassets.com/festval/bcf058a1-cbb7-4867-8ce8-fa69fa039cef/franuipink-1080x1500.jpg",
-            "alt": "franui-pink",
-            "activeTerm": false,
-            "action": {
-              "href": "https://www.festval.com/franui-pink-framboesa-banhada-chocolate-branco-150g/p?skuId=26683"
-            }
-          },
-          {
             "initialDate": "13/01/2025",
             "deadLine": "19/01/2025",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/98b2a9e7-f4b1-4a69-bb58-8a6f07752460/Festval---1953---Banner---1080x1500---01.jpg",
-            "activeTerm": true,
             "alt": "JBS13-19/25",
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=1953generico"
             }
-          },
-          {
-            "initialDate": "2025-01-31",
-            "deadLine": "2025-02-10",
-            "region": "Curitiba",
-            "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
-            "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
-            "alt": "menufestval",
-            "action": {
-              "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/fb3e932c-b2ce-4c66-8514-d1fb1837437c/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1920x490-px.png",
-            "mobile": "https://data.decoassets.com/festval/888e48f2-e571-456b-9246-85bd02dfa53f/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1080x1500-px.png"
           }
         ],
         "preload": false,
