@@ -88,6 +88,13 @@
               "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
             },
             "activeTerm": true
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/fb3e932c-b2ce-4c66-8514-d1fb1837437c/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1920x490-px.png",
+            "mobile": "https://data.decoassets.com/festval/888e48f2-e571-456b-9246-85bd02dfa53f/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1080x1500-px.png"
           }
         ],
         "preload": false,
