@@ -34,17 +34,17 @@
         "__resolveType": "site/sections/Category/CategoryGrid.tsx",
         "items": [
           {
-            "image": "https://data.decoassets.com/festval/9f388c67-0339-41b3-9ba1-b8f555a95795/BOVINO.png",
+            "image": "https://data.decoassets.com/festval/8474a6ca-9cb8-42ee-aae2-67b8bb8db427/BOVINO.png",
             "href": "/",
             "label": "Bovino"
           },
           {
-            "image": "https://data.decoassets.com/festval/aac3f982-e26e-43a1-91b9-8335dad20f1d/SUINO.png",
+            "image": "https://data.decoassets.com/festval/6d281a2b-138c-4fbb-8d7a-9ecdd74b7ecc/SUINO.png",
             "href": "/",
             "label": "Suíno"
           },
           {
-            "image": "https://data.decoassets.com/festval/8e79809e-ab83-4a5a-96e3-89799c156d91/AVE.png",
+            "image": "https://data.decoassets.com/festval/0e0ea1a6-c215-4eba-91a0-ec1b567499cc/AVE.png",
             "href": "/",
             "label": "Ave"
           },
