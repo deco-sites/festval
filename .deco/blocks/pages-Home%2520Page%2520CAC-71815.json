@@ -83,7 +83,11 @@
             "region": "Cascavel",
             "desktop": "https://data.decoassets.com/festval/16b9e093-3795-427e-bec4-ff6fb3d166ad/38847_Festval---Festival-do-Bebe_-1920x490_original.png",
             "mobile": "https://data.decoassets.com/festval/ba51f812-6539-4651-88a1-fc060027b65c/38848_Festval---Festival-do-Bebe_-1080x1500_original.png",
-            "alt": "Festival do Bebê"
+            "alt": "Festival do Bebê",
+            "action": {
+              "href": "https://www.festval.com/1603?map=productClusterIds&sort=orders%3Adesc&page=1"
+            },
+            "activeTerm": true
           }
         ],
         "preload": false,
