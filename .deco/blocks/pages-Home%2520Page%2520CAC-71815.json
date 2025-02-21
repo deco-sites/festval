@@ -60,7 +60,7 @@
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/98b2a9e7-f4b1-4a69-bb58-8a6f07752460/Festval---1953---Banner---1080x1500---01.jpg",
             "alt": "JBS13-19/25",
-            "activeTerm": false,
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=1953generico"
             }
@@ -76,6 +76,14 @@
               "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
             },
             "region": "Curitiba"
+          },
+          {
+            "initialDate": "2025-02-21",
+            "deadLine": "2025-02-21",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/16b9e093-3795-427e-bec4-ff6fb3d166ad/38847_Festval---Festival-do-Bebe_-1920x490_original.png",
+            "mobile": "https://data.decoassets.com/festval/ba51f812-6539-4651-88a1-fc060027b65c/38848_Festval---Festival-do-Bebe_-1080x1500_original.png",
+            "alt": "Festival do Bebê"
           }
         ],
         "preload": false,
