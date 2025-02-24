@@ -14,22 +14,33 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
+            "desktop": "https://data.decoassets.com/festval/0c8feede-1a43-4292-bbcd-746835900447/1920x490-dolcelover.jpg",
+            "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
+            "alt": "Dolcelover",
+            "action": {
+              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
+            },
+            "initialDate": "2025-02-24",
+            "deadLine": "2025-03-02",
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025/02/17",
+            "deadLine": "2025/03/03",
             "desktop": "https://data.decoassets.com/festval/bce7e115-66c9-40f2-9282-265f0d311686/BBBEM-1920X490.jpg",
             "mobile": "https://data.decoassets.com/festval/bd837333-d2b7-4173-a477-6951675948fa/BBBEM-1080X1500.jpg",
             "alt": "bbem",
             "action": {
               "href": "https://www.festval.com/1602?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerLandingPage&utm_campaign=Faz+bbbem"
             },
-            "initialDate": "2025/02/17",
-            "deadLine": "2025/03/03",
             "activeTerm": true
           },
           {
             "initialDate": "0",
             "deadLine": "0",
+            "alt": "kitkat",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5baca24b-7907-47a3-a7e2-0f94b2eacebf/kitkat.gif",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/926a8f68-101a-4864-bbb4-865ff85823eb/kitkatmbl.gif",
-            "alt": "kitkat",
             "action": {
               "href": "https://www.festval.com/1481?map=productClusterIds&sort=discount%3Adesc&page=1"
             },
@@ -38,23 +49,12 @@
           {
             "initialDate": "0",
             "deadLine": "0",
-            "alt": "MAGGI",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a9d5ed19-ee29-432c-9c1d-89f2d8313b95/maggigenericodesk.jpg",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f03094b3-11b9-458e-88fd-a9caff371d51/maggigenericombl.jpg",
+            "alt": "MAGGI",
+            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1195?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "activeTerm": false
-          },
-          {
-            "initialDate": "2025-02-24",
-            "deadLine": "2025-03-02",
-            "desktop": "https://data.decoassets.com/festval/0c8feede-1a43-4292-bbcd-746835900447/1920x490-dolcelover.jpg",
-            "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
-            "alt": "Dolcelover",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             }
           }
         ],
