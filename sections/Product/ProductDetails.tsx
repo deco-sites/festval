@@ -50,15 +50,27 @@ export const loader = async (
 
   const category = formatarString(product.category);
 
+  let props;
+
+  if (category.includes("páscoa")) {
+    props = {
+      query: category,
+      sort: "",
+      count: count,
+    };
+  } else {
+    props = {
+      query: category,
+      sort: "orders:desc",
+      count: count,
+    };
+  }
+
   // deno-lint-ignore no-explicit-any
   const response = await (ctx as any).invoke(
     "vtex/loaders/intelligentSearch/productList.ts",
     {
-      props: {
-        query: category,
-        sort: "orders:desc",
-        count: count,
-      },
+      props: { ...props },
     }
   );
 
