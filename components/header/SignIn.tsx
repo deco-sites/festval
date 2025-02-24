@@ -15,6 +15,7 @@ export interface SingInProps {
 const onLoad = (containerID: string) => {
   window.STOREFRONT.USER.subscribe((sdk) => {
     const container = document.getElementById(containerID) as HTMLDivElement;
+    if (!container) return;
     const nodes = container.querySelectorAll<HTMLAnchorElement>("a");
     const login = nodes.item(0);
     const account = nodes.item(1);
@@ -53,7 +54,10 @@ function SignIn({ variant }: SingInProps) {
       >
         <Icon id="account_circle" />
       </a>
-      <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+      />
     </div>
   );
 }

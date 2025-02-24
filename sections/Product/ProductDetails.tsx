@@ -10,6 +10,7 @@ import { SectionProps } from "@deco/deco";
 import { AppContext } from "../../apps/site.ts";
 import { getCookies } from "std/http/cookie.ts";
 import Separator from "../separator.tsx";
+import { useScript } from "@deco/deco/hooks";
 
 export interface Props {
   /** @title Integration */
@@ -66,6 +67,35 @@ export const loader = async (
   return { page, similarProducts, titleSimilar, ctaSimilar, region };
 };
 
+const onLoad = (product: Product) => {
+  const ccs_cc_args = [];
+
+  // Página do Produto
+  ccs_cc_args.push(["cpn", product.productID]);
+  ccs_cc_args.push(["mf", product.brand?.name]);
+  ccs_cc_args.push(["pn", product.gtin]);
+  ccs_cc_args.push(["upcean", product.gtin]);
+  ccs_cc_args.push(["ccid", product.sku]);
+  ccs_cc_args.push(["lang", "PT"]);
+  ccs_cc_args.push(["market", "BR"]);
+
+  console.log(ccs_cc_args);
+
+  (function () {
+    const o = ccs_cc_args;
+    o.push(["_SKey", "692a8c55"]);
+    o.push(["_ZoneId", "7885526c4e"]);
+    const sc = document.createElement("script");
+    sc.type = "text/javascript";
+    sc.async = true;
+    sc.src =
+      ("https:" == document.location.protocol ? "https://" : "http://") +
+      "cdn.cs.1worldsync.com/jsc/h1ws.js";
+    const n = document.getElementsByTagName("script")[0];
+    n.parentNode?.insertBefore(sc, n);
+  })();
+};
+
 export default function ProductDetails({
   page,
   similarProducts,
@@ -91,7 +121,7 @@ export default function ProductDetails({
 
   return (
     <div className="bg-[#F8F8F8] pb-6">
-      <div class="container custom-container flex flex-col gap-4 sm:gap-5 w-full sm:py-4 sm:py-5">
+      <div class="container custom-container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5">
         <div class="px-4 sm:px-0">
           <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
         </div>
@@ -119,6 +149,17 @@ export default function ProductDetails({
           />
         </div>
       </div>
+
+      <div id="ccs-wsf-content"></div>
+      <div id="ccs-logos"></div>
+      <div id="ccs-wsi-content"></div>
+
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(onLoad, page.product),
+        }}
+      />
     </div>
   );
 }

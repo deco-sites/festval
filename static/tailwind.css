@@ -6524,11 +6524,6 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 0.5rem;
   }
 
-  .sm\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
