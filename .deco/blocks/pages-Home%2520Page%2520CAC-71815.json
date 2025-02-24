@@ -172,11 +172,11 @@
         "props": {
           "count": 12,
           "hideUnavailableItems": true,
-          "collection": "1073"
+          "collection": "1606"
         }
       },
       "title": "Mais vendidos",
-      "cta": "/1073?map=productClusterIds"
+      "cta": "/1606?map=productClusterIds"
     },
     {
       "__resolveType": "site/sections/separator.tsx",
