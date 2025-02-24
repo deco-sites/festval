@@ -21,62 +21,16 @@
             "initialDate": "01/01/2024"
           },
           {
-            "desktop": "https://data.decoassets.com/festval/16b9e093-3795-427e-bec4-ff6fb3d166ad/38847_Festval---Festival-do-Bebe_-1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/ba51f812-6539-4651-88a1-fc060027b65c/38848_Festval---Festival-do-Bebe_-1080x1500_original.png",
-            "alt": "Festival do Bebê",
-            "action": {
-              "href": "https://www.festval.com/1603?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "deadLine": "2025-02-21",
-            "activeTerm": true,
-            "initialDate": "2025-02-21",
-            "region": "Cascavel"
-          },
-          {
-            "desktop": "https://data.decoassets.com/festval/fb3e932c-b2ce-4c66-8514-d1fb1837437c/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1920x490-px.png",
-            "mobile": "https://data.decoassets.com/festval/888e48f2-e571-456b-9246-85bd02dfa53f/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1080x1500-px.png",
-            "activeTerm": false,
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "action": {
-              "href": "https://www.festval.com/1599?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "alt": "Queijo-vinho",
-            "region": "Cascavel"
-          },
-          {
-            "initialDate": "2025-02-04",
-            "deadLine": "2025-02-15",
-            "desktop": "https://data.decoassets.com/festval/81ab9476-4201-4220-812f-96846b546d94/AF_V02_ValentinesDay_Festval_2024_Banner_Festval.com_1920x490-px.png",
-            "mobile": "https://data.decoassets.com/festval/bcef169b-5d67-4844-8749-69d3224ca229/AF_V02_ValentinesDay_Festval_2024_Banner_Festval.com_1080x1500-px.png",
-            "activeTerm": true,
-            "alt": "Valentines-Day",
-            "action": {
-              "href": "https://www.festval.com/valentinesday2025"
-            }
-          },
-          {
-            "initialDate": "13/01/2025",
-            "deadLine": "19/01/2025",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/00a41189-52cf-4967-aa32-012133d45376/Festval---1953---Banner---1920x490---01.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/98b2a9e7-f4b1-4a69-bb58-8a6f07752460/Festval---1953---Banner---1080x1500---01.jpg",
-            "alt": "JBS13-19/25",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=1953generico"
-            }
-          },
-          {
-            "initialDate": "2025-02-24",
-            "deadLine": "2025-02-24",
-            "region": "Cascavel",
             "desktop": "https://data.decoassets.com/festval/e943200d-a063-4fb1-b1b9-49e3149e7d3e/1920x490-dolcelover.jpg",
             "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
-            "alt": "Dolce-lovers",
+            "alt": "dolcelovers",
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             },
-            "activeTerm": false
+            "deadLine": "2025-03-02",
+            "activeTerm": false,
+            "initialDate": "2025-02-24",
+            "region": "Cascavel"
           }
         ],
         "preload": false,
