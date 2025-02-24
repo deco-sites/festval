@@ -19,6 +19,17 @@
             "activeTerm": false,
             "deadLine": "01/01/2024",
             "initialDate": "01/01/2024"
+          },
+          {
+            "initialDate": "2024-02-24",
+            "deadLine": "2024-03-02",
+            "desktop": "https://data.decoassets.com/festval/0c8feede-1a43-4292-bbcd-746835900447/1920x490-dolcelover.jpg",
+            "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
+            "alt": "dolcelovers",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
+            }
           }
         ],
         "preload": false,
