@@ -118,6 +118,23 @@
       "section": {
         "__resolveType": "Footer"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1227",
+            "count": 12,
+            "hideUnavailableItems": true
+          }
+        },
+        "banner": "https://data.decoassets.com/festval/e8bcb0da-e834-4c66-9b36-d30908ca26e9/1953.jpg",
+        "hrer": "/"
+      }
     }
   ],
   "seo": {

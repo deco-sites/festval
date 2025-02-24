@@ -19,62 +19,6 @@
             "activeTerm": false,
             "deadLine": "01/01/2024",
             "initialDate": "01/01/2024"
-          },
-          {
-            "desktop": "https://data.decoassets.com/festval/fb3e932c-b2ce-4c66-8514-d1fb1837437c/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1920x490-px.png",
-            "mobile": "https://data.decoassets.com/festval/888e48f2-e571-456b-9246-85bd02dfa53f/AF_V03_Campanha_Queijos_Vinhos_Banner_Festval.com_1080x1500-px.png",
-            "alt": "Queijo-vinho",
-            "action": {
-              "href": "https://www.festval.com/1599?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "deadLine": "2025/02/23",
-            "activeTerm": true,
-            "initialDate": "2025/02/10"
-          },
-          {
-            "desktop": "https://data.decoassets.com/festval/b1545d58-ea6b-42e3-b4e4-8efbf9cbacb7/franuipink-1920x490-32.jpg",
-            "mobile": "https://data.decoassets.com/festval/c9f9fe52-54cd-48f5-a688-968d49bff530/franuipink-1080x1500-32.jpg",
-            "activeTerm": false,
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "action": {
-              "href": "https://www.festval.com/franui-pink-framboesa-banhada-chocolate-branco-150g/p?skuId=26683"
-            },
-            "alt": "franui-pink"
-          },
-          {
-            "initialDate": "2025-01-31",
-            "deadLine": "2025-02-10",
-            "alt": "menufestval",
-            "desktop": "https://data.decoassets.com/festval/345bfaa1-f2a4-4b7a-8003-cd6c6013c861/1920x490.png",
-            "mobile": "https://data.decoassets.com/festval/b643a408-d32a-4c88-b9a6-38d6c0d23ca9/1080X1500.png",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/Brisket-assado-com-polenta?utm_source=BannerHome&utm_campaign=MenufestvalBrisket1953"
-            },
-            "region": "Curitiba"
-          },
-          {
-            "initialDate": "0",
-            "deadLine": "0",
-            "desktop": "https://data.decoassets.com/festval/3c54f90e-8fc5-4930-aea1-370b7d3a203d/Bertoncello-1920x490.jpg",
-            "mobile": "https://data.decoassets.com/festval/167adff6-97af-48b5-bd0f-1216235d1a7c/Bertoncello-1080x1500.jpg",
-            "alt": "bertoncelo",
-            "activeTerm": false,
-            "action": {
-              "href": "https://www.festval.com/s?q=bertoncello&sort=price%3Adesc&page=1"
-            }
-          },
-          {
-            "initialDate": "2025/02/17",
-            "deadLine": "2025/02/23",
-            "alt": "faz-bbbem",
-            "activeTerm": true,
-            "desktop": "https://data.decoassets.com/festval/bce7e115-66c9-40f2-9282-265f0d311686/BBBEM-1920X490.jpg",
-            "mobile": "https://data.decoassets.com/festval/bd837333-d2b7-4173-a477-6951675948fa/BBBEM-1080X1500.jpg",
-            "action": {
-              "href": "https://www.festval.com/1602?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Faz+bbbem"
-            }
           }
         ],
         "preload": false,
@@ -258,11 +202,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b216c4d2-c5a2-41e6-93f4-432b6a2299f2/churras.jpg",
-          "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=2",
+          "mobile": "https://data.decoassets.com/festval/47380651-8c6c-4a8a-a8df-06b1a6f8fdf2/limpeza-teste-app-5.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=2",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
