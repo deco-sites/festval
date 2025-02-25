@@ -14,7 +14,7 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/dfd004b8-b7a7-4330-a2d9-e587fcd6f58d/1920X490-ACOUGUE-2.jpg",
+            "desktop": "https://data.decoassets.com/festval/944c0b52-7d13-4347-9df8-cd384ccd1a1f/1920X490-ACOUGUE-2.jpg",
             "mobile": "https://data.decoassets.com/festval/491c2a18-107a-4148-8e0a-9cf1329d3855/1080X1350.jpg",
             "alt": "banner-churrasco",
             "action": {
@@ -74,14 +74,14 @@
             "label": "Acessórios"
           },
           {
-            "image": "https://data.decoassets.com/festval/96666749-ada3-4a53-bcc0-6fc58bd9c4fb/10-MOLHOS.png",
-            "label": "Molhos",
+            "image": "https://data.decoassets.com/festval/b8338efc-5616-4b4e-8a52-68fb9ad63a03/09-SOBREMESA.png",
+            "label": "Sobremesas",
             "href": "/"
           },
           {
-            "image": "https://data.decoassets.com/festval/b8338efc-5616-4b4e-8a52-68fb9ad63a03/09-SOBREMESA.png",
+            "image": "https://data.decoassets.com/festval/96666749-ada3-4a53-bcc0-6fc58bd9c4fb/10-MOLHOS.png",
             "href": "/",
-            "label": "Sobremesas"
+            "label": "Molhos"
           }
         ]
       }
