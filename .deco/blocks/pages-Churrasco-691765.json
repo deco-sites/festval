@@ -89,19 +89,18 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "release:desc",
             "collection": "1227",
-            "count": 12,
-            "hideUnavailableItems": false
+            "count": 24,
+            "hideUnavailableItems": true
           }
         },
-        "banner": "https://data.decoassets.com/festval/e8bcb0da-e834-4c66-9b36-d30908ca26e9/1953.jpg",
-        "hrer": "/",
-        "bannerMb": "https://data.decoassets.com/festval/115db77b-f94e-4d73-9888-0ffb52a75dc7/1953-mbl.jpg"
+        "title": "O Melhor Churrasco - 1953",
+        "cta": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1"
       }
     },
     {
