@@ -14,8 +14,8 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/944c0b52-7d13-4347-9df8-cd384ccd1a1f/1920X490-ACOUGUE-2.jpg",
-            "mobile": "https://data.decoassets.com/festval/491c2a18-107a-4148-8e0a-9cf1329d3855/1080X1350.jpg",
+            "desktop": "https://data.decoassets.com/festval/adc3a14c-d090-4698-8c73-2e05f08ae013/1920X490-CHURRASCO.jpg",
+            "mobile": "https://data.decoassets.com/festval/fc9c0370-83f5-406d-ae43-f4dbcdaeb89f/1080X1350-CHURRASCO.jpg",
             "alt": "banner-churrasco",
             "action": {
               "href": "/churrascofestval"
@@ -35,7 +35,7 @@
         "items": [
           {
             "image": "https://data.decoassets.com/festval/e963fc7f-016c-4bf1-ab73-a8efea7f9943/01-AVE.png",
-            "href": "/",
+            "href": "https://www.festval.com/acougue/carne-de-ave?sort=orders%3Adesc&page=1",
             "label": "Ave"
           },
           {
@@ -101,13 +101,6 @@
         },
         "title": "O Melhor Churrasco - 1953",
         "cta": "https://www.festval.com/1227?map=productClusterIds&sort=orders%3Adesc&page=1"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/separator.tsx",
-        "color": "#F8F8F8"
       }
     },
     {
