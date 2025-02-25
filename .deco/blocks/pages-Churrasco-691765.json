@@ -93,14 +93,15 @@
         "products": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
-            "sort": "price:desc",
+            "sort": "release:desc",
             "collection": "1227",
             "count": 12,
             "hideUnavailableItems": false
           }
         },
         "banner": "https://data.decoassets.com/festval/e8bcb0da-e834-4c66-9b36-d30908ca26e9/1953.jpg",
-        "hrer": "/"
+        "hrer": "/",
+        "bannerMb": "https://data.decoassets.com/festval/115db77b-f94e-4d73-9888-0ffb52a75dc7/1953-mbl.jpg"
       }
     },
     {
