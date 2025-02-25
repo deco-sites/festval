@@ -35,22 +35,22 @@
         "items": [
           {
             "image": "https://data.decoassets.com/festval/e963fc7f-016c-4bf1-ab73-a8efea7f9943/01-AVE.png",
-            "href": "https://www.festval.com/acougue/carne-de-ave?sort=orders%3Adesc&page=1",
+            "href": "https://www.festval.com/1609?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "Ave"
           },
           {
             "image": "https://data.decoassets.com/festval/11733891-3ec3-45a4-95a4-99cf45742054/02-BOVINO.png",
-            "href": "/",
+            "href": "https://www.festval.com/1610?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "Bovino"
           },
           {
             "image": "https://data.decoassets.com/festval/799021c0-f645-4928-9aba-e850bea2fc21/03-SUINO.png",
-            "href": "/",
+            "href": "https://www.festval.com/1611?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "Suíno"
           },
           {
             "image": "https://data.decoassets.com/festval/307a4986-bcb9-4038-be31-469a8eacc139/04-PEIXE.png",
-            "href": "/",
+            "href": "https://www.festval.com/1612?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "Peixe"
           },
           {
