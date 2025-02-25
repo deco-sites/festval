@@ -14,8 +14,8 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/e65cf2b3-da15-4a90-8d68-927f2177daab/1920X490-ACOUGUE.jpg",
-            "mobile": "https://data.decoassets.com/festval/9073f7be-a79d-4770-a6ff-3659b687fca7/Capa.png",
+            "desktop": "https://data.decoassets.com/festval/dfd004b8-b7a7-4330-a2d9-e587fcd6f58d/1920X490-ACOUGUE-2.jpg",
+            "mobile": "https://data.decoassets.com/festval/491c2a18-107a-4148-8e0a-9cf1329d3855/1080X1350.jpg",
             "alt": "banner-churrasco",
             "action": {
               "href": "/churrascofestval"
