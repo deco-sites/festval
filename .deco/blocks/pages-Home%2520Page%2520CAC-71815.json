@@ -214,16 +214,16 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
+          "desktop": "https://data.decoassets.com/festval/c3bdd437-38fd-497b-aaa5-bd89901a3200/BANNER-OFERTAS-QUAQUI.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1605?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/47380651-8c6c-4a8a-a8df-06b1a6f8fdf2/limpeza-teste-app-5.jpg",
-          "hrefMobile": "https://www.festval.com/1605?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/6e3e2bd6-3167-4f02-b9ba-10c296ac1567/horti-teste-app-4.jpg",
+          "hrefMobile": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
-          "initialDate": "2025-02-24",
-          "deadLine": "2025-02-25",
-          "activeTerm": false
+          "initialDate": "2025-02-26",
+          "deadLine": "2025-02-27",
+          "activeTerm": true
         },
         {
           "desktop": "https://data.decoassets.com/festval/122b63af-be58-48ff-8295-0a12d1b8b64f/vanish-site.jpg",
