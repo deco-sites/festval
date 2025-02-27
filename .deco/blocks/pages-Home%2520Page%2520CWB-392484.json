@@ -28,7 +28,7 @@
             "alt": "Carnaval",
             "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1615?map=productClusterIds&sort=discount%3Adesc&page=1"
+              "href": "https://www.festval.com/carnaval2025?page=1"
             }
           },
           {
@@ -54,7 +54,7 @@
             }
           }
         ],
-        "preload": false,
+        "preload": true,
         "interval": 5
       }
     },
