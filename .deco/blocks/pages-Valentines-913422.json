@@ -1,6 +1,6 @@
 {
-  "name": "Valentines",
-  "path": "/valentinesday2025",
+  "name": "Carnaval",
+  "path": "/carnaval2025",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -11,20 +11,21 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "",
-            "count": 12,
-            "collection": "1595",
-            "hideUnavailableItems": true,
-            "similars": false
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Full",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://data.decoassets.com/festval/49494e78-3f38-49e0-bcb1-c1e6c996655c/sucocampari-mbl.jpg",
+            "desktop": "https://data.decoassets.com/festval/153554f8-bcf2-48d7-a955-9d1d2897a875/sucocampari.jpg",
+            "alt": "Sucocampari",
+            "href": "https://www.festval.com/aperitivo-bitter-campari-garrafa-748ml/p?skuId=26106",
+            "hrefMobile": "https://www.festval.com/aperitivo-bitter-campari-garrafa-748ml/p?skuId=26106",
+            "region": "Mostrar em ambas",
+            "activeTerm": false
           }
-        },
-        "banner": "https://data.decoassets.com/festval/a1b0eff6-db12-4433-b382-c0ab4541775c/310X585-VALENTINES.jpg",
-        "bannerMb": "https://data.decoassets.com/festval/2a4e0de9-0e68-4df0-8870-335471e58741/1080x465-valentines.jpg",
-        "hrer": "/floricultura"
+        ]
       }
     },
     {
@@ -34,11 +35,11 @@
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "count": 12,
-          "sort": "orders:desc",
+          "sort": "discount:desc",
           "fuzzy": "automatic",
           "selectedFacets": [
             {
-              "value": "1594",
+              "value": "1615",
               "key": "productClusterIds"
             }
           ],
