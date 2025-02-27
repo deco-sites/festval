@@ -41,7 +41,8 @@
             "alt": "Carnaval",
             "action": {
               "href": "https://www.festval.com/carnaval2025?page=1"
-            }
+            },
+            "activeTerm": true
           }
         ],
         "preload": false,
