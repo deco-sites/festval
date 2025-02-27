@@ -33,27 +33,27 @@
             "region": "Cascavel"
           },
           {
-            "initialDate": "2025-02-24",
-            "deadLine": "2025-03-02",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/e943200d-a063-4fb1-b1b9-49e3149e7d3e/1920x490-dolcelover.jpg",
-            "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
-            "alt": "dolcelovers",
-            "action": {
-              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
-            },
-            "activeTerm": false
-          },
-          {
             "initialDate": "2025-02-25",
             "deadLine": "2025-03-09",
             "region": "Cascavel",
             "desktop": "https://data.decoassets.com/festval/1441d12d-df8c-4e5e-a95c-a65d40bd7f4e/AF_V09_DiaDaMulher_Festval-com_2025_Banner_1920x490px.png",
             "mobile": "https://data.decoassets.com/festval/bbf1eb2e-29bd-4b48-8e56-7ae039cd0890/AF_V09_DiaDaMulher_Festval-com_2025_Banner_1080x1500px.png",
             "alt": "mulheres",
-            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1607?map=productClusterIds&sort=discount%3Adesc&page=1"
+            },
+            "activeTerm": false
+          },
+          {
+            "initialDate": "2025-02-24",
+            "deadLine": "2025-03-02",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/e943200d-a063-4fb1-b1b9-49e3149e7d3e/1920x490-dolcelover.jpg",
+            "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
+            "alt": "dolcelovers",
+            "activeTerm": false,
+            "action": {
+              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             }
           }
         ],
