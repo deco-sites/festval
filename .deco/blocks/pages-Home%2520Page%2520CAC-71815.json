@@ -284,7 +284,7 @@
           "hrefMobile": "https://www.festval.com/s?q=excellence&page=1",
           "deadLine": "0",
           "initialDate": "0",
-          "activeTerm": false
+          "activeTerm": true
         },
         {
           "positionBanner": "Full",
