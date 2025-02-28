@@ -33,10 +33,11 @@
           "fuzzy": "automatic",
           "selectedFacets": [
             {
-              "value": "1535",
+              "value": "1592",
               "key": "productClusterIds"
             }
-          ]
+          ],
+          "hideUnavailableItems": false
         }
       }
     },

@@ -294,7 +294,7 @@
           "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
           "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
           "alt": "Oferta-final-semana",
-          "activeTerm": false,
+          "activeTerm": true,
           "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1"
         }
       ]
