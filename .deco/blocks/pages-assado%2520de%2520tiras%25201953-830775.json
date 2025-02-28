@@ -1,6 +1,6 @@
 {
-  "name": "assado de tiras 1953",
-  "path": "/assado-de-tiras-1953",
+  "name": "Baby beef na manteiga de ervas",
+  "path": "/baby-beef-195",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -15,11 +15,11 @@
         "UrlVideo": "https://www.youtube.com/embed/k5aj3QYgxzk?si=FY1ig3j6TCNbAnLd",
         "receita": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/200ead95-a276-469c-9303-97b77be13992/1920x130.png",
         "ImgDestaque": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/58fcf197-8e20-4087-9441-86111334fbec/950x490.png",
-        "recipeImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/bd9ba886-f096-4074-8be5-a8ca3d53c0a4/RECEITA---tamanho-desk.jpg",
+        "recipeImage": "https://data.decoassets.com/festval/9cf2305a-a887-4281-b545-6112f9343818/baby-beef-desk-receita.jpg",
         "headerImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/21676a19-43d3-434c-8eb9-2d1d3484a51a/BANNER-TITULO-desk.jpg",
         "headerImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/57bdb69d-1a98-4b3f-b87f-2946e51319a9/BANNER-TITULO-mbl.jpg",
-        "recipeImageMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/15b65e08-8a14-4fba-b700-3f9b6cddf1a1/receita-tamanho-mbl.jpg",
-        "videoUrl": "https://www.youtube.com/embed/h3B1cjeejSY?si=UDHVKx2yFurDo41L&autoplay=1&loop=1&mute=1&controls=1&color=white"
+        "recipeImageMb": "https://data.decoassets.com/festval/ef0bb830-f0ff-42f7-8547-654d7a7439fe/baby-beef-mbl-receita.jpg",
+        "videoUrl": "https://www.youtube.com/embed/17DUZYr_mk4?si=ub2n4FtvpLr2NSje&autoplay=1&loop=1&mute=1&controls=1&color=white"
       }
     },
     {

@@ -55,6 +55,18 @@
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             }
+          },
+          {
+            "initialDate": "2025-02-28",
+            "deadLine": "2025-02-28",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/4fc0759d-8a1e-40b9-bb7a-e8e3829ca501/38849_Festval---Fecha-Me_s---Banner-Web-1920x490_original.png",
+            "mobile": "https://data.decoassets.com/festval/ccd1d9eb-59bd-4b1c-a3e3-53d76136bb01/38850_Festval---Fecha-Me_s---Banner-Web-1080x1500_original.png",
+            "alt": "Fecha Mês",
+            "action": {
+              "href": "https://www.festval.com/1614?map=productClusterIds&sort=discount%3Adesc&page=1"
+            },
+            "activeTerm": true
           }
         ],
         "preload": false,
