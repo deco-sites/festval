@@ -272,7 +272,7 @@
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
-          "activeTerm": false
+          "activeTerm": true
         },
         {
           "positionBanner": "Left",
