@@ -174,7 +174,8 @@
         "props": {
           "count": 12,
           "hideUnavailableItems": true,
-          "collection": "1606"
+          "collection": "1606",
+          "sort": "discount:desc"
         }
       },
       "title": "Mais vendidos",
