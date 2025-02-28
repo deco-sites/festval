@@ -43,11 +43,22 @@
             }
           },
           {
+            "initialDate": "2025-02-28",
+            "deadLine": "2025-03-05",
+            "alt": "temporada-de-drinks",
+            "desktop": "https://data.decoassets.com/festval/fca6df82-d2d2-4aff-8017-41f50fea6aeb/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1920x490_V3.jpg",
+            "mobile": "https://data.decoassets.com/festval/8c597e4a-79f7-4d0e-a90f-5b33a989bc8b/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1080x1500_V3.jpg",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1617?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=temporadadedrinks"
+            }
+          },
+          {
             "initialDate": "2025-02-24",
             "deadLine": "2025-03-02",
-            "alt": "dolcelovers",
             "desktop": "https://data.decoassets.com/festval/0c8feede-1a43-4292-bbcd-746835900447/1920x490-dolcelover.jpg",
             "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
+            "alt": "dolcelovers",
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
@@ -63,14 +74,6 @@
             "action": {
               "href": "https://www.festval.com/baby-beef-1953?page=1&utm_source=BannerHome&utm_campaign=babybeef1953"
             }
-          },
-          {
-            "initialDate": "2025-02-28",
-            "deadLine": "2025-03-05",
-            "desktop": "https://data.decoassets.com/festval/fca6df82-d2d2-4aff-8017-41f50fea6aeb/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1920x490_V3.jpg",
-            "mobile": "https://data.decoassets.com/festval/8c597e4a-79f7-4d0e-a90f-5b33a989bc8b/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1080x1500_V3.jpg",
-            "alt": "drinks",
-            "activeTerm": true
           }
         ],
         "preload": true,
