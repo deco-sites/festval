@@ -312,14 +312,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "1097",
+          "collection": "1615",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/1097?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "Festval Natural"
+      "cta": "https://www.festval.com/1615?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "title": "Carnaval 2025"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
