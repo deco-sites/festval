@@ -52,6 +52,17 @@
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             }
+          },
+          {
+            "initialDate": "2025-02-28",
+            "deadLine": "2025-03-18",
+            "desktop": "https://data.decoassets.com/festval/fc4349f1-955c-4cc8-b966-25b432baa7c5/1920x490-(2).png",
+            "mobile": "https://data.decoassets.com/festval/b6b3d01c-86c1-4dba-88ec-c360e418daae/1080X1500-(1).png",
+            "alt": "babybeef",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/baby-beef-1953?page=1"
+            }
           }
         ],
         "preload": true,
