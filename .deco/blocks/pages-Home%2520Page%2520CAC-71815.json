@@ -21,16 +21,28 @@
             "initialDate": "01/01/2024"
           },
           {
+            "desktop": "https://data.decoassets.com/festval/4fc0759d-8a1e-40b9-bb7a-e8e3829ca501/38849_Festval---Fecha-Me_s---Banner-Web-1920x490_original.png",
+            "mobile": "https://data.decoassets.com/festval/ccd1d9eb-59bd-4b1c-a3e3-53d76136bb01/38850_Festval---Fecha-Me_s---Banner-Web-1080x1500_original.png",
+            "alt": "Fecha Mês",
+            "action": {
+              "href": "https://www.festval.com/1614?map=productClusterIds&sort=discount%3Adesc&page=1"
+            },
+            "deadLine": "2025-02-28",
+            "activeTerm": true,
+            "initialDate": "2025-02-28",
+            "region": "Cascavel"
+          },
+          {
+            "initialDate": "2025-02-26",
+            "deadLine": "2025-03-05",
+            "region": "Cascavel",
             "desktop": "https://data.decoassets.com/festval/59a4764e-0d5e-4ec7-a04c-65cdf92c9127/AF_V03_Campanha_Carnaval_Festval-com_2025_1920x490px.png",
             "mobile": "https://data.decoassets.com/festval/7d43732d-bbba-417a-86eb-80611ae43434/AF_V03_Campanha_Carnaval_Festval-com_2025_1080x1500px.png",
             "alt": "Carnaval",
             "action": {
               "href": "https://www.festval.com/carnaval2025?page=1"
             },
-            "deadLine": "2025-03-05",
-            "activeTerm": true,
-            "initialDate": "2025-02-26",
-            "region": "Cascavel"
+            "activeTerm": true
           },
           {
             "initialDate": "2025-02-25",
@@ -39,10 +51,10 @@
             "desktop": "https://data.decoassets.com/festval/1441d12d-df8c-4e5e-a95c-a65d40bd7f4e/AF_V09_DiaDaMulher_Festval-com_2025_Banner_1920x490px.png",
             "mobile": "https://data.decoassets.com/festval/bbf1eb2e-29bd-4b48-8e56-7ae039cd0890/AF_V09_DiaDaMulher_Festval-com_2025_Banner_1080x1500px.png",
             "alt": "mulheres",
+            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1607?map=productClusterIds&sort=discount%3Adesc&page=1"
-            },
-            "activeTerm": false
+            }
           },
           {
             "initialDate": "2025-02-24",
@@ -51,22 +63,10 @@
             "desktop": "https://data.decoassets.com/festval/e943200d-a063-4fb1-b1b9-49e3149e7d3e/1920x490-dolcelover.jpg",
             "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
             "alt": "dolcelovers",
-            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
-            }
-          },
-          {
-            "initialDate": "2025-02-28",
-            "deadLine": "2025-02-28",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/4fc0759d-8a1e-40b9-bb7a-e8e3829ca501/38849_Festval---Fecha-Me_s---Banner-Web-1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/ccd1d9eb-59bd-4b1c-a3e3-53d76136bb01/38850_Festval---Fecha-Me_s---Banner-Web-1080x1500_original.png",
-            "alt": "Fecha Mês",
-            "action": {
-              "href": "https://www.festval.com/1614?map=productClusterIds&sort=discount%3Adesc&page=1"
             },
-            "activeTerm": true
+            "activeTerm": false
           }
         ],
         "preload": false,
