@@ -189,7 +189,7 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "orders:desc",
+          "sort": "discount:desc",
           "count": 12,
           "collection": "1604",
           "hideUnavailableItems": true,
