@@ -191,11 +191,12 @@
         "props": {
           "sort": "",
           "count": 12,
-          "collection": "1587",
-          "hideUnavailableItems": true
+          "collection": "1604",
+          "hideUnavailableItems": true,
+          "similars": false
         }
       },
-      "cta": "/1587?map=productClusterIds",
+      "cta": "/1604?map=productClusterIds",
       "title": "Oportunidades "
     },
     {
