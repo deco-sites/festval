@@ -13,7 +13,7 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/c5c906ec-93eb-4a0e-bf63-fa6cdf12911f/Festval---BannerDesk---Sou-Festval.jpg",
+            "desktop": "https://data.decoassets.com/festval/ad18dce7-ee9e-44fe-9202-77a193ce19c5/Festval---BannerDesk---Sou-Festval.jpg",
             "mobile": "https://data.decoassets.com/festval/630dba02-3700-4e0a-bbdf-75b7848ac489/Festval---BannerMBL---Sou-Festval.jpg",
             "alt": "soufestval",
             "activeTerm": false,
