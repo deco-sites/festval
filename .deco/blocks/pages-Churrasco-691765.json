@@ -106,6 +106,24 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "release:desc",
+            "collection": "1219",
+            "count": 12,
+            "hideUnavailableItems": true
+          }
+        },
+        "banner": "https://data.decoassets.com/festval/250c38ae-6646-4e2f-b71f-30209ec7a772/hellmanns-banner-carrossel---388x690.jpg",
+        "bannerMb": "https://data.decoassets.com/festval/250c38ae-6646-4e2f-b71f-30209ec7a772/hellmanns-banner-carrossel---388x690.jpg",
+        "title": "Tudo fica melhor com Hellmann's"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
