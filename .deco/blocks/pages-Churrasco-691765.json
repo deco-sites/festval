@@ -60,23 +60,23 @@
           },
           {
             "image": "https://data.decoassets.com/festval/738d6ce2-dda4-4a6b-8adf-a6255c51c353/06-TEMPERO.png",
-            "href": "/",
+            "href": "https://www.festval.com/1616?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "Temperos"
           },
           {
             "image": "https://data.decoassets.com/festval/26a539e9-4e16-464d-8737-618ef7f08f43/07-BEBIDAS.png",
-            "href": "/",
+            "href": "https://www.festval.com/1618?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "Bebidas"
           },
           {
             "image": "https://data.decoassets.com/festval/49d9077d-6633-4ba0-981d-46726fa89df3/08-ACESSORIOS.png",
-            "href": "/",
-            "label": "Acessórios"
+            "href": "https://www.festval.com/1619?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Utensílios"
           },
           {
             "image": "https://data.decoassets.com/festval/b8338efc-5616-4b4e-8a52-68fb9ad63a03/09-SOBREMESA.png",
             "label": "Sobremesas",
-            "href": "/"
+            "href": "https://www.festval.com/1620?map=productClusterIds&sort=orders%3Adesc&page=1"
           },
           {
             "image": "https://data.decoassets.com/festval/96666749-ada3-4a53-bcc0-6fc58bd9c4fb/10-MOLHOS.png",
