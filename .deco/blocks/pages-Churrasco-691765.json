@@ -130,8 +130,8 @@
             "positionBanner": "Full",
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
-            "desktop": "https://data.decoassets.com/festval/dcc6bd2e-36ae-41f1-90e2-19f055806e9c/ambev-banner.jpg",
-            "mobile": "https://data.decoassets.com/festval/dcc6bd2e-36ae-41f1-90e2-19f055806e9c/ambev-banner.jpg",
+            "desktop": "https://data.decoassets.com/festval/df3b9da5-8218-45d1-b938-dde750db2fe3/ambev-2.png",
+            "mobile": "https://data.decoassets.com/festval/df3b9da5-8218-45d1-b938-dde750db2fe3/ambev-2.png",
             "alt": "-",
             "href": "/",
             "hrefMobile": "/",
@@ -153,7 +153,8 @@
             "count": 12,
             "hideUnavailableItems": true
           }
-        }
+        },
+        "cta": "https://www.festval.com/1160?map=productClusterIds&sort=orders%3Adesc&page=1"
       }
     },
     {
