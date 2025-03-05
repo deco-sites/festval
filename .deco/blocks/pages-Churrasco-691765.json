@@ -124,6 +124,41 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Full",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://data.decoassets.com/festval/0fdcf5df-7c0d-4eb6-adaf-8024172f4be1/ambev-banner-1700x150.jpg",
+            "mobile": "https://data.decoassets.com/festval/0fdcf5df-7c0d-4eb6-adaf-8024172f4be1/ambev-banner-1700x150.jpg",
+            "alt": "-",
+            "href": "/",
+            "hrefMobile": "/",
+            "region": "Mostrar em ambas",
+            "activeTerm": false
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "1160",
+            "count": 12,
+            "hideUnavailableItems": true
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
@@ -145,26 +180,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Footer"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/ImageGallery.tsx",
-        "banners": [
-          {
-            "positionBanner": "Full",
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "desktop": "https://data.decoassets.com/festval/61c01e41-5049-40f3-934b-8925fd677143/ambev-banner.jpg",
-            "mobile": "https://data.decoassets.com/festval/61c01e41-5049-40f3-934b-8925fd677143/ambev-banner.jpg",
-            "alt": "-",
-            "href": "/",
-            "hrefMobile": "/",
-            "region": "Mostrar em ambas",
-            "activeTerm": false
-          }
-        ]
       }
     }
   ],
