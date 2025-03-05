@@ -313,14 +313,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "release:desc",
-          "collection": "1615",
+          "collection": "1607",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/1615?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "Carnaval 2025"
+      "cta": "https://www.festval.com/1607?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "title": "Dia das Mulheres"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
