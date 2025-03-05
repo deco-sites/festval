@@ -146,6 +146,26 @@
       "section": {
         "__resolveType": "Footer"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Full",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://data.decoassets.com/festval/61c01e41-5049-40f3-934b-8925fd677143/ambev-banner.jpg",
+            "mobile": "https://data.decoassets.com/festval/61c01e41-5049-40f3-934b-8925fd677143/ambev-banner.jpg",
+            "alt": "-",
+            "href": "/",
+            "hrefMobile": "/",
+            "region": "Mostrar em ambas",
+            "activeTerm": false
+          }
+        ]
+      }
     }
   ],
   "seo": {
