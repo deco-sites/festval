@@ -235,9 +235,9 @@
           "hrefMobile": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
-          "initialDate": "2025-03-03",
-          "deadLine": "2025-03-04",
-          "activeTerm": false
+          "initialDate": "2025-03-10",
+          "deadLine": "2025-03-11",
+          "activeTerm": true
         },
         {
           "desktop": "https://data.decoassets.com/festval/122b63af-be58-48ff-8295-0a12d1b8b64f/vanish-site.jpg",
