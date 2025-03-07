@@ -228,16 +228,16 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/c3bdd437-38fd-497b-aaa5-bd89901a3200/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b1fe65a3-93d8-44a0-aa88-a01f429d2f69/QUAQUI-APP-MBL.jpg",
-          "hrefMobile": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
+          "hrefMobile": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
-          "initialDate": "2025-03-10",
-          "deadLine": "2025-03-11",
-          "activeTerm": false
+          "initialDate": "2025-03-07",
+          "deadLine": "2025-03-09",
+          "activeTerm": true
         },
         {
           "desktop": "https://data.decoassets.com/festval/122b63af-be58-48ff-8295-0a12d1b8b64f/vanish-site.jpg",
@@ -271,7 +271,7 @@
           "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
           "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
           "alt": "Oferta-final-semana",
-          "activeTerm": true,
+          "activeTerm": false,
           "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1"
         }
       ]
