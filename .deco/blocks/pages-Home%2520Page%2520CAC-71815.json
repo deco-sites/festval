@@ -237,7 +237,7 @@
           "positionBanner": "Full",
           "initialDate": "2025-03-10",
           "deadLine": "2025-03-11",
-          "activeTerm": true
+          "activeTerm": false
         },
         {
           "desktop": "https://data.decoassets.com/festval/122b63af-be58-48ff-8295-0a12d1b8b64f/vanish-site.jpg",
