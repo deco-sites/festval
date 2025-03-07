@@ -76,7 +76,7 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
     const totalPages = Math.ceil(totalRecords / recordsPerPage);
 
     // Retorna false se já estiver na última página ou se atingir o limite de 50 páginas
-    return currentPage < totalPages - 1 && currentPage < 50;
+    return currentPage < totalPages && currentPage < 50;
   }
 
   if (!container || !sentinel || !btnFoward) {
