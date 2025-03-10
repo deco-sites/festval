@@ -329,14 +329,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "1169",
+          "collection": "1624",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers",
-      "title": "Aniversário Dolce Gusto"
+      "cta": "https://www.festval.com/1624?map=productClusterIds&sort=discount%3Adesc&page=1",
+      "title": "Semana do Consumidor"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
