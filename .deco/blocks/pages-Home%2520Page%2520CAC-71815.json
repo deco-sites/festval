@@ -228,15 +228,15 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
+          "mobile": "https://data.decoassets.com/festval/47380651-8c6c-4a8a-a8df-06b1a6f8fdf2/limpeza-teste-app-5.jpg",
           "hrefMobile": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
-          "initialDate": "2025-03-07",
-          "deadLine": "2025-03-09",
+          "initialDate": "2025-03-10",
+          "deadLine": "2025-03-11",
           "activeTerm": true
         },
         {
@@ -262,17 +262,6 @@
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": true
-        },
-        {
-          "positionBanner": "Full",
-          "region": "Cascavel",
-          "initialDate": "2025-03-07",
-          "deadLine": "2025-03-09",
-          "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
-          "alt": "Oferta-final-semana",
-          "activeTerm": false,
-          "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1"
         }
       ]
     },
