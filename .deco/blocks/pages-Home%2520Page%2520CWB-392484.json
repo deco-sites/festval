@@ -54,6 +54,17 @@
             }
           },
           {
+            "initialDate": "2025-03-10",
+            "deadLine": "2025-03-16",
+            "desktop": "https://data.decoassets.com/festval/d2be1050-77fc-42b5-b5e0-9b31e7a43c8a/20250124_td_ecom_kv_semana_do_consumidor-1920x490.jpg",
+            "mobile": "https://data.decoassets.com/festval/5c5708e9-f5a7-4242-b54a-3e9ce3238ee3/20250124_td_ecom_kv_semana_do_consumidor-1080x1500.jpg",
+            "alt": "consumidornestle",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1"
+            }
+          },
+          {
             "initialDate": "2025-02-25",
             "deadLine": "2025-03-09",
             "desktop": "https://data.decoassets.com/festval/1441d12d-df8c-4e5e-a95c-a65d40bd7f4e/AF_V09_DiaDaMulher_Festval-com_2025_Banner_1920x490px.png",
@@ -65,23 +76,23 @@
             }
           },
           {
-            "initialDate": "2025-02-28",
             "deadLine": "2025-03-05",
             "desktop": "https://data.decoassets.com/festval/fca6df82-d2d2-4aff-8017-41f50fea6aeb/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1920x490_V3.jpg",
             "mobile": "https://data.decoassets.com/festval/8c597e4a-79f7-4d0e-a90f-5b33a989bc8b/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1080x1500_V3.jpg",
             "alt": "temporada-de-drinks",
             "activeTerm": true,
+            "initialDate": "2025-02-28",
             "action": {
               "href": "https://www.festval.com/1617?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=temporadadedrinks"
             }
           },
           {
+            "initialDate": "2025-02-24",
             "deadLine": "2025-03-02",
             "desktop": "https://data.decoassets.com/festval/0c8feede-1a43-4292-bbcd-746835900447/1920x490-dolcelover.jpg",
             "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
             "alt": "dolcelovers",
             "activeTerm": true,
-            "initialDate": "2025-02-24",
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             }
