@@ -392,24 +392,37 @@ function ModalSessionInit({
     submitButtonText,
     findCepText,
   } = modalInitProps;
+  const finalWelcomeMessage = welcomeMessage ?? "Seja bem vindo(a) ao";
+  const finalLogo =
+    logo ??
+    "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9188f318-f9a3-4e57-81be-78087c260c9b/logo.svg";
+  const finalModalTitle =
+    modalTitle ?? "Vamos conferir se atendemos a sua região:";
+  const finalCepPlaceholder = cepPlaceholder ?? "CEP 00000-000";
+  const finalSubmitButtonText = submitButtonText ?? "Salvar";
+  const finalFindCepText = findCepText ?? "Não sei meu CEP";
   return (
     <div className={`modal`} id={id}>
       <div
         class="bg-base-100 absolute top-0 pt-5 pb-5 px-[30px] sm:px-[40px] modal-box rounded-lg flex flex-col gap-2.5"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
       >
-        {welcomeMessage && (
+        {finalWelcomeMessage && (
           <div>
-            <h3 class="font-bold text-base text-center">{welcomeMessage}</h3>
+            <h3 class="font-bold text-base text-center">
+              {finalWelcomeMessage}
+            </h3>
           </div>
         )}
-        {logo && (
+        {finalLogo && (
           <div class="flex justify-center">
-            <Image width={250} height={40} src={logo} />
+            <Image width={250} height={40} src={finalLogo} />
           </div>
         )}
-        {modalTitle && (
-          <h3 class="font-normal text-center text-[12.8px]">{modalTitle}</h3>
+        {finalModalTitle && (
+          <h3 class="font-normal text-center text-[12.8px]">
+            {finalModalTitle}
+          </h3>
         )}
 
         <form
@@ -419,14 +432,14 @@ function ModalSessionInit({
           hx-on:submit={useScript(onSubmit, id)}
           class="flex flex-col gap-2.5 w-full"
         >
-          {cepPlaceholder && (
+          {finalCepPlaceholder && (
             <input
               name="cep"
               class="input input-bordered flex-grow text-center rounded-[5px]"
               type="text"
               inputmode="numeric"
               pattern="\d{5}-?\d{3}"
-              placeholder={cepPlaceholder}
+              placeholder={finalCepPlaceholder}
               hx-on:input={useScript(applyCepMask)}
             />
           )}
@@ -451,14 +464,14 @@ function ModalSessionInit({
             }}
             type="submit"
           >
-            {submitButtonText && (
-              <span class="btn-submit inline">{submitButtonText}</span>
+            {finalSubmitButtonText && (
+              <span class="btn-submit inline">{finalSubmitButtonText}</span>
             )}
 
             <span class="inline hidden loading loading-spinner" />
           </button>
         </form>
-        {findCepText && (
+        {finalFindCepText && (
           <a
             href="https://buscacepinter.correios.com.br/app/endereco/index.php"
             target="_blank"
@@ -468,7 +481,7 @@ function ModalSessionInit({
               color: "#6495ed",
             }}
           >
-            {findCepText}
+            {finalFindCepText}
           </a>
         )}
       </div>
