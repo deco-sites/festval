@@ -65,7 +65,7 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
     ".btn-next"
   ) as HTMLButtonElement | null;
 
-  console.log(pageInfo);
+  //console.log(pageInfo);
 
   function validateGoNext(): boolean {
     const totalRecords = record ?? 0;
@@ -108,7 +108,8 @@ function PageResult(props: SectionProps<typeof loader>) {
   const produtosEmEstoque = products.filter((product) => {
     const { offers } = product;
     const { availability } = useOffer(offers);
-    return availability === "https://schema.org/InStock";
+    //return availability === "https://schema.org/InStock";
+    return product;
   });
 
   const perPage = pageInfo?.recordPerPage || products.length;
