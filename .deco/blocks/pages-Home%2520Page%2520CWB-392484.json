@@ -24,12 +24,34 @@
             }
           },
           {
+            "initialDate": "2025/03/10",
+            "deadLine": "2025/03/16",
+            "desktop": "https://data.decoassets.com/festval/5a66be33-8f1a-47b2-a5ed-7c1657660353/CONSUMIDOR-1920X490.jpg",
+            "mobile": "https://data.decoassets.com/festval/36f048d6-6d2d-45e4-840d-13edb76f171c/CONSUMIDOR-1080X1500.jpg",
+            "alt": "semanadeofertas",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1624?map=productClusterIds&sort=discount%3Adesc&page=1"
+            }
+          },
+          {
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
             "activeTerm": false
+          },
+          {
+            "initialDate": "2025-02-28",
+            "deadLine": "2025-03-18",
+            "alt": "babybeef",
+            "desktop": "https://data.decoassets.com/festval/fc4349f1-955c-4cc8-b966-25b432baa7c5/1920x490-(2).png",
+            "mobile": "https://data.decoassets.com/festval/b6b3d01c-86c1-4dba-88ec-c360e418daae/1080X1500-(1).png",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/baby-beef-1953?page=1&utm_source=BannerHome&utm_campaign=babybeef1953"
+            }
           },
           {
             "initialDate": "2025-02-25",
@@ -45,34 +67,23 @@
           {
             "initialDate": "2025-02-28",
             "deadLine": "2025-03-05",
-            "alt": "temporada-de-drinks",
             "desktop": "https://data.decoassets.com/festval/fca6df82-d2d2-4aff-8017-41f50fea6aeb/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1920x490_V3.jpg",
             "mobile": "https://data.decoassets.com/festval/8c597e4a-79f7-4d0e-a90f-5b33a989bc8b/DIA_0277_24_MUL_SUMMER_CELEBRATIONS_DIGITAL_BANNER_1080x1500_V3.jpg",
+            "alt": "temporada-de-drinks",
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1617?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=temporadadedrinks"
             }
           },
           {
-            "initialDate": "2025-02-24",
             "deadLine": "2025-03-02",
             "desktop": "https://data.decoassets.com/festval/0c8feede-1a43-4292-bbcd-746835900447/1920x490-dolcelover.jpg",
             "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
             "alt": "dolcelovers",
             "activeTerm": true,
+            "initialDate": "2025-02-24",
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
-            }
-          },
-          {
-            "initialDate": "2025-02-28",
-            "deadLine": "2025-03-18",
-            "desktop": "https://data.decoassets.com/festval/fc4349f1-955c-4cc8-b966-25b432baa7c5/1920x490-(2).png",
-            "mobile": "https://data.decoassets.com/festval/b6b3d01c-86c1-4dba-88ec-c360e418daae/1080X1500-(1).png",
-            "alt": "babybeef",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/baby-beef-1953?page=1&utm_source=BannerHome&utm_campaign=babybeef1953"
             }
           }
         ],
