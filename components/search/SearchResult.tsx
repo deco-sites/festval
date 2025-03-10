@@ -108,8 +108,8 @@ function PageResult(props: SectionProps<typeof loader>) {
   const produtosEmEstoque = products.filter((product) => {
     const { offers } = product;
     const { availability } = useOffer(offers);
-    //return availability === "https://schema.org/InStock";
-    return product;
+    return availability === "https://schema.org/InStock";
+    //return product;
   });
 
   const perPage = pageInfo?.recordPerPage || products.length;
