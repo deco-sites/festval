@@ -4199,11 +4199,11 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[215px\] {
   max-height: 215px;
 }
+.max-h-\[23px\] {
+  max-height: 23px;
+}
 .max-h-\[250px\] {
   max-height: 250px;
-}
-.max-h-\[26px\] {
-  max-height: 26px;
 }
 .max-h-\[300px\] {
   max-height: 300px;
@@ -4409,6 +4409,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[200px\] {
   max-width: 200px;
+}
+.max-w-\[23px\] {
+  max-width: 23px;
 }
 .max-w-\[2px\] {
   max-width: 2px;
@@ -6844,8 +6847,8 @@ details.collapse summary::-webkit-details-marker {
     margin-left: 1.75rem;
   }
 
-  .lg\:ml-\[50px\] {
-    margin-left: 50px;
+  .lg\:ml-\[30px\] {
+    margin-left: 30px;
   }
 
   .lg\:mt-0 {
@@ -6934,6 +6937,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
   }
 
   .lg\:items-start {
@@ -7083,6 +7090,10 @@ details.collapse summary::-webkit-details-marker {
 
   .\32xl\:max-h-\[607px\] {
     max-height: 607px;
+  }
+
+  .\32xl\:flex-row {
+    flex-direction: row;
   }
 
   .\32xl\:gap-7 {

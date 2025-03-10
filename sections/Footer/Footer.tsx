@@ -455,7 +455,7 @@ function Footer({
                         <h2 class="lg:text-base text-sm text-base-100 font-normal lg:font-bold mt-2 mb-2">
                           {appDownload.title}
                         </h2>
-                        <ul class="flex gap-4">
+                        <ul class="flex justify-between lg:flex-col 2xl:flex-row gap-2">
                           {appDownload.socialItens.map(
                             ({ image, href, alt }) => (
                               <li>
@@ -463,17 +463,19 @@ function Footer({
                                   href={href}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  class="flex justify-center items-center hover:opacity-90 rounded-md bg-base-100 px-6 py-2 gap-2"
+                                  class="flex justify-center items-center hover:opacity-90 rounded-md bg-base-100 px-2 py-2 gap-1"
                                 >
                                   <Image
-                                    class="!h-full max-h-[26px]"
+                                    class="!h-full max-w-[23px] max-h-[23px]"
                                     src={image}
                                     alt={alt}
                                     loading="lazy"
                                     width={30}
                                     height={30}
                                   />
-                                  <span>{alt}</span>
+                                  <span class="text-base font-medium text-black">
+                                    {alt}
+                                  </span>
                                 </a>
                               </li>
                             )
@@ -562,7 +564,7 @@ function Footer({
 
           {highlightedImage && (
             <>
-              <div class="flex justify-center lg:justify-start mt-3 lg:mt-0 lg:ml-[50px]">
+              <div class="flex justify-center lg:justify-start mt-3 lg:mt-0 lg:ml-[30px]">
                 <a href={highlightedImage.href}>
                   <Image
                     src={highlightedImage.image}
@@ -573,7 +575,7 @@ function Footer({
                   />
                 </a>
               </div>
-              <div class="w-full flex  lg:hidden flex-col gap-1 mt-3 lg:mt-7 md:px-0 ">
+              <div class="w-full flex lg:hidden flex-col gap-1 mt-3 lg:mt-7 md:px-0 ">
                 <p className="text-sm text-base-100 font-normal">
                   Baixe o novo App
                 </p>
