@@ -80,6 +80,7 @@ interface Props {
   infos?: Infos[];
   highlightedImage?: Img;
   social?: Social;
+  appDownload?: Social;
   security?: Social;
   paymentMethods?: Social;
   policies?: Police;
@@ -131,6 +132,7 @@ function Footer({
   infos = [],
   WhatsApp,
   social,
+  appDownload,
   security,
   policies,
   paymentMethods,
@@ -445,6 +447,40 @@ function Footer({
                       </ul>
                     </div>
                   )}
+                  {device !== "mobile" &&
+                    index === 1 &&
+                    appDownload &&
+                    appDownload.socialItens && (
+                      <div class="w-full mt-3">
+                        <h2 class="lg:text-base text-sm text-base-100 font-normal lg:font-bold mt-2 mb-2">
+                          {appDownload.title}
+                        </h2>
+                        <ul class="flex gap-4">
+                          {appDownload.socialItens.map(
+                            ({ image, href, alt }) => (
+                              <li>
+                                <a
+                                  href={href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  class="flex justify-center items-center hover:opacity-90 rounded-md bg-base-100 px-6 py-2 gap-2"
+                                >
+                                  <Image
+                                    class="!h-full max-h-[26px]"
+                                    src={image}
+                                    alt={alt}
+                                    loading="lazy"
+                                    width={30}
+                                    height={30}
+                                  />
+                                  <span>{alt}</span>
+                                </a>
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    )}
                 </div>
               </li>
             ))
@@ -482,7 +518,7 @@ function Footer({
             WhatsApp &&
             WhatsApp.linkWpp &&
             WhatsApp.title && (
-              <div class="flex flex-col items-start mt-6">
+              <div class="flex flex-col items-start mt-6 gap-2">
                 <p class="lg:text-base text-sm text-base-100 font-normal">
                   {WhatsApp.title}
                 </p>
@@ -526,7 +562,7 @@ function Footer({
 
           {highlightedImage && (
             <>
-              <div class="lg:flex hidden ml-[50px]">
+              <div class="flex justify-center lg:justify-start mt-3 lg:mt-0 lg:ml-[50px]">
                 <a href={highlightedImage.href}>
                   <Image
                     src={highlightedImage.image}
@@ -537,7 +573,7 @@ function Footer({
                   />
                 </a>
               </div>
-              <div class="w-full flex  lg:hidden flex-col gap-1 mt-7 md:px-0 ">
+              <div class="w-full flex  lg:hidden flex-col gap-1 mt-3 lg:mt-7 md:px-0 ">
                 <p className="text-sm text-base-100 font-normal">
                   Baixe o novo App
                 </p>

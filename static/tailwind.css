@@ -4012,9 +4012,6 @@ details.collapse summary::-webkit-details-marker {
 .ml-\[2px\] {
   margin-left: 2px;
 }
-.ml-\[50px\] {
-  margin-left: 50px;
-}
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -4053,9 +4050,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-6 {
   margin-top: 1.5rem;
-}
-.mt-7 {
-  margin-top: 1.75rem;
 }
 .mt-\[-3px\] {
   margin-top: -3px;
@@ -4207,6 +4201,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-h-\[250px\] {
   max-height: 250px;
+}
+.max-h-\[26px\] {
+  max-height: 26px;
 }
 .max-h-\[300px\] {
   max-height: 300px;
@@ -6847,6 +6844,18 @@ details.collapse summary::-webkit-details-marker {
     margin-left: 1.75rem;
   }
 
+  .lg\:ml-\[50px\] {
+    margin-left: 50px;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -6937,6 +6946,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:justify-normal {
     justify-content: normal;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-center {
