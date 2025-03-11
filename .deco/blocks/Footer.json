@@ -251,5 +251,8 @@
   "WhatsApp": {
     "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F",
     "title": "Atendimento ao cliente: WhatsApp"
+  },
+  "appDownload": {
+    "socialItens": []
   }
 }
