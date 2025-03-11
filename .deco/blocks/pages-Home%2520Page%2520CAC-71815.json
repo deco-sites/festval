@@ -43,6 +43,18 @@
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             },
             "activeTerm": false
+          },
+          {
+            "initialDate": "2025-03-10",
+            "deadLine": "2025-03-16",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/5a66be33-8f1a-47b2-a5ed-7c1657660353/CONSUMIDOR-1920X490.jpg",
+            "mobile": "https://data.decoassets.com/festval/36f048d6-6d2d-45e4-840d-13edb76f171c/CONSUMIDOR-1080X1500.jpg",
+            "alt": "semana-consumidor",
+            "action": {
+              "href": "https://www.festval.com/1624?map=productClusterIds&sort=discount%3Adesc&page=1"
+            },
+            "activeTerm": true
           }
         ],
         "preload": false,
