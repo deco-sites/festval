@@ -13,24 +13,36 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
+            "desktop": "https://data.decoassets.com/festval/c5c906ec-93eb-4a0e-bf63-fa6cdf12911f/Festval---BannerDesk---Sou-Festval.jpg",
+            "mobile": "https://data.decoassets.com/festval/630dba02-3700-4e0a-bbdf-75b7848ac489/Festval---BannerMBL---Sou-Festval.jpg",
+            "alt": "soufestval",
+            "activeTerm": false,
+            "deadLine": "01/01/2024",
+            "initialDate": "01/01/2024",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
+            }
+          },
+          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
-            "activeTerm": false,
             "deadLine": "01/01/2024",
+            "activeTerm": false,
             "initialDate": "01/01/2024"
           },
           {
+            "initialDate": "2025-03-10",
+            "deadLine": "2025-03-16",
+            "region": "Cascavel",
             "desktop": "https://data.decoassets.com/festval/5a66be33-8f1a-47b2-a5ed-7c1657660353/CONSUMIDOR-1920X490.jpg",
             "mobile": "https://data.decoassets.com/festval/36f048d6-6d2d-45e4-840d-13edb76f171c/CONSUMIDOR-1080X1500.jpg",
             "alt": "semana-consumidor",
             "action": {
               "href": "https://www.festval.com/1624?map=productClusterIds&sort=discount%3Adesc&page=1"
             },
-            "deadLine": "2025-03-16",
-            "activeTerm": true,
-            "initialDate": "2025-03-10",
-            "region": "Cascavel"
+            "activeTerm": true
           },
           {
             "initialDate": "01/01/2024",
@@ -53,18 +65,6 @@
             "alt": "dolcelovers",
             "action": {
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
-            },
-            "activeTerm": false
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/c5c906ec-93eb-4a0e-bf63-fa6cdf12911f/Festval---BannerDesk---Sou-Festval.jpg",
-            "mobile": "https://data.decoassets.com/festval/630dba02-3700-4e0a-bbdf-75b7848ac489/Festval---BannerMBL---Sou-Festval.jpg",
-            "alt": "soufestval",
-            "action": {
-              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
             },
             "activeTerm": false
           }
