@@ -33,6 +33,18 @@
             "region": "Cascavel"
           },
           {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/d2be1050-77fc-42b5-b5e0-9b31e7a43c8a/20250124_td_ecom_kv_semana_do_consumidor-1920x490.jpg",
+            "mobile": "https://data.decoassets.com/festval/5c5708e9-f5a7-4242-b54a-3e9ce3238ee3/20250124_td_ecom_kv_semana_do_consumidor-1080x1500.jpg",
+            "alt": "nestle",
+            "action": {
+              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=SConsumidorNestl%C3%A9"
+            },
+            "activeTerm": false
+          },
+          {
             "initialDate": "2025-02-24",
             "deadLine": "2025-03-02",
             "region": "Cascavel",
@@ -48,11 +60,11 @@
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
             "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/d2be1050-77fc-42b5-b5e0-9b31e7a43c8a/20250124_td_ecom_kv_semana_do_consumidor-1920x490.jpg",
-            "mobile": "https://data.decoassets.com/festval/5c5708e9-f5a7-4242-b54a-3e9ce3238ee3/20250124_td_ecom_kv_semana_do_consumidor-1080x1500.jpg",
-            "alt": "nestle",
+            "desktop": "https://data.decoassets.com/festval/c5c906ec-93eb-4a0e-bf63-fa6cdf12911f/Festval---BannerDesk---Sou-Festval.jpg",
+            "mobile": "https://data.decoassets.com/festval/630dba02-3700-4e0a-bbdf-75b7848ac489/Festval---BannerMBL---Sou-Festval.jpg",
+            "alt": "soufestval",
             "action": {
-              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=SConsumidorNestl%C3%A9"
+              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
             },
             "activeTerm": false
           }
