@@ -50,6 +50,10 @@
         {
           "title": "DPO",
           "href": "https://superfestval.com.br/dpo"
+        },
+        {
+          "title": "Sou Festval",
+          "href": "https://festval.querovantagens.com/home"
         }
       ]
     }
@@ -236,23 +240,35 @@
           "textoBtn": "(41) 99846-0016",
           "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F"
         }
-      ],
-      "title": "    Fale com o Festval"
+      ]
     }
   ],
   "underEighteenMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c669ac32-6648-4105-ab40-e54be3799101/Grupo-4177.svg",
   "highlightedImage": {
-    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/196ec59d-6833-46d5-a160-3d1b33b05b41/rodape-novoapp.png",
+    "image": "https://data.decoassets.com/festval/cfba98e6-2673-49f4-b0c1-9578e06c0ba5/botao-soufestval-footer-(1).png",
     "imageMbGoogle": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6a9ba015-9fe3-469f-858d-6a48aa04a60a/Grupo-4121.png",
     "hrefGoogle": "https://play.google.com/store/apps/details?id=com.festval.app",
     "imageMbIOS": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/545ff981-443d-4b8c-851e-2a3567663e68/Grupo-4122.png",
-    "hrefIOS": "https://apps.apple.com/br/app/festval-com/id1593063841"
+    "hrefIOS": "https://apps.apple.com/br/app/festval-com/id1593063841",
+    "href": "https://festval.querovantagens.com/home"
   },
   "WhatsApp": {
     "linkWpp": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20vim%20do%20festval.com%2C%20pode%20me%20ajudar%3F",
     "title": "Atendimento ao cliente: WhatsApp"
   },
   "appDownload": {
-    "socialItens": []
+    "socialItens": [
+      {
+        "alt": "Google play",
+        "href": "https://play.google.com/store/apps/details?id=com.festval.app&hl=pt_BR&pli=1",
+        "image": "https://data.decoassets.com/festval/a6a94c14-a19a-4d09-b2a7-3e138aa88f2b/google-play(1).png"
+      },
+      {
+        "alt": "App store",
+        "href": "https://apps.apple.com/br/app/festval-com/id1593063841",
+        "image": "https://data.decoassets.com/festval/5a32661a-87a9-48cd-a70b-9642859cc481/apple-logo.png"
+      }
+    ],
+    "title": "Baixe o Novo App"
   }
 }
