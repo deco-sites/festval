@@ -128,7 +128,7 @@ function Aside({
           <div>
             <a
               id="my-account-mobile"
-              href="/account#/profile"
+              href="/account#/"
               class="flex gap[16px] items-center"
             >
               <span class="text-xs font-bold text-black">Minha conta</span>
