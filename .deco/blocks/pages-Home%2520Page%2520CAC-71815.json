@@ -67,6 +67,18 @@
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             },
             "activeTerm": false
+          },
+          {
+            "deadLine": "2025-03-14",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/4a415bef-45b0-4162-8fe2-7b6653b617ab/38851_Super-Sexta---1920x490_original.png",
+            "mobile": "https://data.decoassets.com/festval/14c5335c-07a7-4b69-99f1-5adf46925371/38852_Super-Sexta---1080x1500_original.png",
+            "alt": "super-sexta",
+            "activeTerm": true,
+            "initialDate": "2025-03-14",
+            "action": {
+              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
+            }
           }
         ],
         "preload": false,
