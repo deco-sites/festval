@@ -187,7 +187,7 @@
           "count": 12,
           "hideUnavailableItems": true,
           "collection": "1606",
-          "sort": "discount:desc"
+          "sort": "price:desc"
         }
       },
       "title": "Mais vendidos",
