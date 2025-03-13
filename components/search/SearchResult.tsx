@@ -1,6 +1,7 @@
 import type { ProductListingPage, PageInfo } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCard from "../../components/product/ProductCard.tsx";
+import AddAllProductsToCartButton from "../../components/product/AddAllProductsToCartButton.tsx";
 import Filters from "./Filters.tsx";
 import FiltersMb from "../../islands/FiltersMb.tsx";
 import Icon from "../../components/ui/Icon.tsx";
@@ -65,15 +66,14 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
     ".btn-next"
   ) as HTMLButtonElement | null;
 
-  //console.log(pageInfo);
-
   function validateGoNext(): boolean {
     const totalRecords = record ?? 0;
     const recordsPerPage = pageInfo.recordPerPage ?? 12;
     const currentPage = pageInfo.currentPage;
 
     // Calcula o número total de páginas necessárias
-    const totalPages = Math.ceil(totalRecords / recordsPerPage);
+    const totalPages =
+      totalRecords < 13 ? 0 : Math.ceil(totalRecords / recordsPerPage);
 
     // Retorna false se já estiver na última página ou se atingir o limite de 50 páginas
     return currentPage < totalPages && currentPage < 50;
@@ -271,7 +271,7 @@ function Result(props: SectionProps<typeof loader>) {
           ? page.pageInfo.records
           : page.pageInfo.recordPerPage
         : 0}{" "}
-      de {page?.pageInfo?.records ?? 0} resultados
+      de {page?.pageInfo?.records ?? 0} resultados teste
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
@@ -366,11 +366,21 @@ function Result(props: SectionProps<typeof loader>) {
                     </span>
                   </div>
                 )}
-                {device === "desktop" && (
-                  <div class="flex justify-between items-center">
-                    {results}
-                    <div>{sortBy}</div>
-                  </div>
+                {device === "desktop" && props.page?.products.length && (
+                  <>
+                    <div class="flex justify-between items-center">
+                      {results}
+                      <div>{sortBy}</div>
+                    </div>
+                    {/* <div>
+                      <AddAllProductsToCartButton
+                        product={props.page?.products[0]}
+                        seller={1},
+                        item={}
+                      />
+                      ;
+                    </div> */}
+                  </>
                 )}
                 <PageResult {...props} />
                 <div id="sentinel" />

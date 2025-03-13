@@ -34,6 +34,7 @@ import { useId } from "../../sdk/useId.ts";
 import { SectionProps } from "@deco/deco";
 import { AppContext } from "../../apps/site.ts";
 import { getCookies } from "std/http/cookie.ts";
+import MyOrders from "../../components/header/MyOrders.tsx";
 export interface Logo {
   src: ImageWidget;
   alt: string;
@@ -192,6 +193,7 @@ const Desktop = ({
         </label> */}
 
         <div class="flex flex-1 justify-end gap-4">
+          <MyOrders />
           <WishListNav {...icon} />
           <SingIn {...variant} />
           <Bag />

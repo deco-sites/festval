@@ -2019,8 +2019,8 @@
           "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ea3ae829-1c66-4ebc-bd63-d6a09442f216/pedidos.svg"
         }
       ],
-      "name": "Meus pedidos",
-      "url": "/account#/orders"
+      "name": "Lista de Compras",
+      "url": "/account#/wishlist"
     },
     {
       "children": [],
