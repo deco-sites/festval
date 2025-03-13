@@ -122,7 +122,6 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
     };
     const onClickNext = () => {
       event?.stopPropagation();
-      //console.log("cliclou");
       const indices = getElementsInsideContainer();
       // Wow! items per page is how many elements are being displayed inside the container!!
       const itemsPerPage = indices.length;
@@ -173,7 +172,13 @@ const onLoad = ({ rootId, scroll, interval, infinite }: Props) => {
   if (document.readyState === "complete") {
     init();
   } else {
-    document.addEventListener("DOMContentLoaded", init);
+    setTimeout(() => {
+      init();
+    }, 1000);
+    // document.addEventListener("DOMContentLoaded", () => {
+    //   console.log("DOMContentLoaded", document);
+    //   init();
+    // });
   }
 };
 function JS({ rootId, scroll = "smooth", interval, infinite = false }: Props) {
