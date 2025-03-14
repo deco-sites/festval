@@ -24,7 +24,7 @@
           "count": 12,
           "fuzzy": "automatic",
           "selectedFacets": [],
-          "hideUnavailableItems": true
+          "hideUnavailableItems": false
         },
         "layout": {}
       }
