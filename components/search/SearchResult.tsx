@@ -271,7 +271,7 @@ function Result(props: SectionProps<typeof loader>) {
           ? page.pageInfo.records
           : page.pageInfo.recordPerPage
         : 0}{" "}
-      de {page?.pageInfo?.records ?? 0} resultados teste
+      de {page?.pageInfo?.records ?? 0} resultados
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
