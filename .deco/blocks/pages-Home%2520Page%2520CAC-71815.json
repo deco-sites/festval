@@ -13,48 +13,24 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/c5c906ec-93eb-4a0e-bf63-fa6cdf12911f/Festval---BannerDesk---Sou-Festval.jpg",
-            "mobile": "https://data.decoassets.com/festval/630dba02-3700-4e0a-bbdf-75b7848ac489/Festval---BannerMBL---Sou-Festval.jpg",
-            "alt": "soufestval",
-            "activeTerm": false,
-            "deadLine": "01/01/2024",
-            "initialDate": "01/01/2024",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
-            }
-          },
-          {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
-            "deadLine": "01/01/2024",
             "activeTerm": false,
+            "deadLine": "01/01/2024",
             "initialDate": "01/01/2024"
           },
           {
-            "initialDate": "2025-03-10",
-            "deadLine": "2025-03-16",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/5a66be33-8f1a-47b2-a5ed-7c1657660353/CONSUMIDOR-1920X490.jpg",
-            "mobile": "https://data.decoassets.com/festval/36f048d6-6d2d-45e4-840d-13edb76f171c/CONSUMIDOR-1080X1500.jpg",
-            "alt": "semana-consumidor",
-            "action": {
-              "href": "https://www.festval.com/1624?map=productClusterIds&sort=discount%3Adesc&page=1"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-03-10",
-            "deadLine": "2025-03-16",
-            "region": "Cascavel",
             "desktop": "https://data.decoassets.com/festval/d2be1050-77fc-42b5-b5e0-9b31e7a43c8a/20250124_td_ecom_kv_semana_do_consumidor-1920x490.jpg",
             "mobile": "https://data.decoassets.com/festval/5c5708e9-f5a7-4242-b54a-3e9ce3238ee3/20250124_td_ecom_kv_semana_do_consumidor-1080x1500.jpg",
             "alt": "nestle",
+            "deadLine": "2025-03-16",
+            "activeTerm": true,
+            "initialDate": "2025-03-10",
+            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=SConsumidorNestl%C3%A9"
-            },
-            "activeTerm": true
+            }
           },
           {
             "initialDate": "2025-02-24",
@@ -67,18 +43,6 @@
               "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
             },
             "activeTerm": false
-          },
-          {
-            "deadLine": "2025-03-14",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/4a415bef-45b0-4162-8fe2-7b6653b617ab/38851_Super-Sexta---1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/14c5335c-07a7-4b69-99f1-5adf46925371/38852_Super-Sexta---1080x1500_original.png",
-            "alt": "super-sexta",
-            "activeTerm": true,
-            "initialDate": "2025-03-14",
-            "action": {
-              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DolceLovers"
-            }
           }
         ],
         "preload": false,
@@ -314,14 +278,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "discount:desc",
-          "collection": "1624",
+          "collection": "1097",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/1624?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "Semana do Consumidor"
+      "cta": "https://www.festval.com/1097?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "title": "Festval Natural"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
