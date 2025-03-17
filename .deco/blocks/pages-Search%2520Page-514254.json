@@ -39,9 +39,11 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "sort": "",
           "count": 12,
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
           "fuzzy": "automatic",
-          "selectedFacets": [],
-          "hideUnavailableItems": false
+          "selectedFacets": []
         },
         "layout": {}
       }

@@ -271,9 +271,9 @@ function Result(props: SectionProps<typeof loader>) {
   });
   const results = (
     <span className="text-sm font-normal">
-      {page?.pageInfo?.recordPerPage && page?.pageInfo?.records
-        ? page.pageInfo.recordPerPage >= page.pageInfo.records
-          ? page.pageInfo.records
+      {page?.pageInfo?.recordPerPage && products
+        ? page.pageInfo.recordPerPage >= products.length
+          ? products.length
           : page.pageInfo.recordPerPage
         : 0}{" "}
       de {page?.pageInfo?.records ?? 0} resultados

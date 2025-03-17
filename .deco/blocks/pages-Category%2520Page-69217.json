@@ -28,10 +28,12 @@
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
           "sort": "",
-          "fuzzy": "automatic",
-          "selectedFacets": [],
           "count": 12,
-          "hideUnavailableItems": true
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
+          "fuzzy": "automatic",
+          "selectedFacets": []
         },
         "layout": {
           "pagination": "show-more"
