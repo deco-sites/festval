@@ -21,7 +21,9 @@ function WishlistGallery(props: SectionProps<typeof loader>) {
       </div>
     );
   }
-  return <SearchResult {...props} searchTerm={props.searchTerm ?? ""} />;
+  return (
+    <SearchResult {...props} isWishList searchTerm={props.searchTerm ?? ""} />
+  );
 }
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   let productsId: string[] = [];
@@ -29,20 +31,27 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     productsId = props.page.products.map((product) => product.productID);
   }
 
-  const response = await ctx.invoke(
-    "vtex/loaders/intelligentSearch/productList.ts",
-    { props: { ids: productsId } }
-  );
+  if (!productsId.length) {
+    return {
+      ...props,
+      url: req.url,
+    };
+  } else {
+    const response = await ctx.invoke(
+      "vtex/loaders/intelligentSearch/productList.ts",
+      { props: { ids: productsId } }
+    );
 
-  props.page = {
-    ...props.page,
-    "@type": "ProductListingPage",
-    products: response ?? [],
-  };
+    props.page = {
+      ...props.page,
+      "@type": "ProductListingPage",
+      products: response ?? [],
+    };
 
-  return {
-    ...props,
-    url: req.url,
-  };
+    return {
+      ...props,
+      url: req.url,
+    };
+  }
 };
 export default WishlistGallery;

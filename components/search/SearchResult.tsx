@@ -16,6 +16,7 @@ import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
 import { getCookies } from "std/http/cookie.ts";
 import Image from "apps/website/components/Image.tsx";
+import Section from "../../sections/Component.tsx";
 export interface Layout {
   /**
    * @title Pagination
@@ -37,6 +38,10 @@ export interface Props {
    * @hide
    */
   region?: string;
+  /**
+   * @hide
+   */
+  isWishList?: boolean;
 }
 function NotFound() {
   return (
@@ -239,7 +244,7 @@ function Result(props: SectionProps<typeof loader>) {
   const container = useId();
   const controls = useId();
   const device = useDevice();
-  const { startingPage = 0, url, partial, searchTerm } = props;
+  const { startingPage = 0, url, partial, searchTerm, isWishList } = props;
   const page = props.page!;
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
   const perPage = pageInfo?.recordPerPage || products.length;
@@ -275,7 +280,9 @@ function Result(props: SectionProps<typeof loader>) {
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
-    <Sort sortOptions={sortOptions} url={url} />
+    <div>
+      <Sort sortOptions={sortOptions} url={url} />
+    </div>
   );
   return (
     <>
@@ -368,20 +375,32 @@ function Result(props: SectionProps<typeof loader>) {
                 )}
                 {device === "desktop" && props.page?.products.length && (
                   <>
-                    <div class="flex justify-between items-center">
+                    <div class="flex flex-col md:flex-row justify-between items-center">
                       {results}
-                      <div>{sortBy}</div>
+                      {isWishList && (
+                        <AddAllProductsToCartButton
+                          class={clx(
+                            " bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full px-2 md:my-2",
+                            "hover:opacity-80 ease-in-out duration-300"
+                          )}
+                        />
+                      )}
+                      {sortBy}
                     </div>
-                    {/* <div>
-                      <AddAllProductsToCartButton
-                        product={props.page?.products[0]}
-                        seller={1},
-                        item={}
-                      />
-                      ;
-                    </div> */}
                   </>
                 )}
+                {device === "mobile" &&
+                  isWishList &&
+                  props.page?.products.length && (
+                    <div class="flex justify-center">
+                      <AddAllProductsToCartButton
+                        class={clx(
+                          "bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation px-2 my-2",
+                          "hover:opacity-80 ease-in-out duration-300"
+                        )}
+                      />
+                    </div>
+                  )}
                 <PageResult {...props} />
                 <div id="sentinel" />
               </div>
@@ -434,5 +453,7 @@ export const loader = (props: Props, req: Request) => {
     searchTerm,
   };
 };
+
+export const LoadingFallback = () => <Section.Placeholder height="322px" />;
 
 export default SearchResult;
