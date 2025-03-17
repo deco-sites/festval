@@ -285,14 +285,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "orders:desc",
-          "collection": "1624",
+          "collection": "1627",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/1624?map=productClusterIds&sort=discount%3Adesc&page=1",
-      "title": "Semana do Consumidor"
+      "cta": "https://www.festval.com/1627?map=productClusterIds&sort=discount%3Adesc&page=1",
+      "title": "Adega Exclusiva Festval"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
