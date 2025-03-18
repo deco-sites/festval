@@ -697,63 +697,63 @@
                   "image": [],
                   "children": [],
                   "name": "Bolo e Torta Fresca Festval",
-                  "url": "/padaria/bolo-e-torta-fresca-festval?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/bolo-e-torta-fresca-festval?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Bolo",
-                  "url": "/padaria/bolo?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/bolo?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Croissant",
-                  "url": "/padaria/croissant?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/croissant?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pães Festval",
-                  "url": "/padaria/paes-festval?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/paes-festval?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pães",
-                  "url": "/padaria/paes?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/paes?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Pão de Queijo",
-                  "url": "/padaria/pao-de-queijo?sort=orders%3Adesc&page=1"
+                  "url": "/pao-de-queijo?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": " Salgado Festval",
-                  "url": "/padaria/salgado-festval?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/salgado-festval?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sobremesas",
-                  "url": "/padaria/sobremesas?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/sobremesas?sort=&page=1"
                 },
                 {
                   "image": [],
                   "children": [],
                   "name": "Sonho e Doce",
-                  "url": "/padaria/sonho-e-doce?sort=orders%3Adesc&page=1"
+                  "url": "/padaria/sonho-e-doce?sort=&page=1"
                 }
               ],
               "name": "Padaria",
-              "url": "/padaria?sort=orders%3Adesc&page=1"
+              "url": "/padaria?sort=&page=1"
             }
           ],
           "name": "Padaria",
-          "url": "/padaria?sort=orders%3Adesc&page=1"
+          "url": "/padaria?sort=&page=1"
         },
         {
           "image": [

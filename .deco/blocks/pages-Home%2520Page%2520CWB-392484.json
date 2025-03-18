@@ -103,7 +103,7 @@
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/792b3033-3e42-4621-8c16-4c07cd34ae06/Padaria.png",
-          "href": "/padaria?sort=orders%3Adesc&page=1",
+          "href": "/padaria?sort=&page=1",
           "label": "Padaria"
         },
         {
