@@ -43,15 +43,26 @@
             }
           },
           {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "alt": "peixes",
+            "action": {
+              "href": "https://www.festval.com/frios-e-laticinios/peixe-e-fruto-do-mar?page=1"
+            },
+            "desktop": "https://data.decoassets.com/festval/94bba0f3-0e8f-4ace-a517-1004d53bb3e1/frutos-do-mar.jpg",
+            "mobile": "https://data.decoassets.com/festval/f3880da9-e684-4a36-a126-3deee21b97db/frutos-do-mar-mbl.jpg",
+            "activeTerm": false
+          },
+          {
             "initialDate": "2025-02-28",
             "deadLine": "2025-03-18",
-            "alt": "babybeef",
-            "activeTerm": true,
+            "desktop": "https://data.decoassets.com/festval/4fb794f4-a226-4c2e-82b2-bc27b09c2b5e/1920X490-BABY.jpg",
+            "mobile": "https://data.decoassets.com/festval/c5b3e725-719f-495f-a26c-e5f7e3fdd70a/1080X1500-BABY.jpg",
             "action": {
               "href": "https://www.festval.com/baby-beef-1953?page=1&utm_source=BannerHome&utm_campaign=babybeef1953"
             },
-            "desktop": "https://data.decoassets.com/festval/4fb794f4-a226-4c2e-82b2-bc27b09c2b5e/1920X490-BABY.jpg",
-            "mobile": "https://data.decoassets.com/festval/c5b3e725-719f-495f-a26c-e5f7e3fdd70a/1080X1500-BABY.jpg"
+            "alt": "babybeef",
+            "activeTerm": true
           }
         ],
         "preload": true,
