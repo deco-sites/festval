@@ -1,6 +1,6 @@
 {
   "name": "RótulosImperdíveis",
-  "path": "/r-i",
+  "path": "/rotulosimperdiveis",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
