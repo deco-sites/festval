@@ -20,9 +20,9 @@
             "deadLine": "0",
             "mobile": "https://assets.decocache.com/festval/4756e7fd-9316-4bdb-8917-81c70f280a45/WPPJHONNYBANNER-MBL.jpg",
             "desktop": "https://assets.decocache.com/festval/87fc4fdc-e49a-48b6-8855-068b05e7d609/WPPJHONNYBANNER.jpg",
-            "alt": "teste",
-            "href": "/teste",
-            "hrefMobile": "/teste",
+            "alt": "wppjhonny",
+            "href": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=Bannerlp&utm_campaign=WppSommelier",
+            "hrefMobile": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=Bannerlp&utm_campaign=WppSommelier",
             "activeTerm": false
           }
         ]
