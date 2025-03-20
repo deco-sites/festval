@@ -27,6 +27,24 @@
                 "hrefMobile": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerSearch&utm_campaign=Caf%C3%A9+Nest%C3%A9"
               }
             ]
+          },
+          {
+            "matcher": [
+              "vinho",
+              "vinhos",
+              "espumantes",
+              "espumante",
+              "champagne",
+              "champanhe"
+            ],
+            "images": [
+              {
+                "desktop": "https://assets.decocache.com/festval/87fc4fdc-e49a-48b6-8855-068b05e7d609/WPPJHONNYBANNER.jpg",
+                "mobile": "https://assets.decocache.com/festval/4756e7fd-9316-4bdb-8917-81c70f280a45/WPPJHONNYBANNER-MBL.jpg",
+                "href": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=BannerSearch&utm_campaign=WppSommelier",
+                "hrefMobile": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=BannerSearch&utm_campaign=WppSommelier"
+              }
+            ]
           }
         ]
       }
