@@ -5,12 +5,22 @@
     {
       "children": [
         {
-          "title": "festval"
+          "title": "festval",
+          "subItems": []
         }
       ]
     }
   ],
   "social": [],
   "paymentMethods": [],
-  "policies": []
+  "policies": [],
+  "appDownload": {
+    "socialItens": []
+  },
+  "security": {
+    "socialItens": []
+  },
+  "copyright": {
+    "developer": {}
+  }
 }
