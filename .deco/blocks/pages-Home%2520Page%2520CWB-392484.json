@@ -321,16 +321,16 @@
           "activeTerm": false
         },
         {
-          "mobile": "https://data.decoassets.com/festval/16368d16-8fc3-41b9-a3fc-c743f81b6123/BANNER-M-G7.jpg",
-          "alt": "g7",
-          "href": "https://www.festval.com/1533?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "hrefMobile": "https://www.festval.com/1533?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "mobile": "https://assets.decocache.com/festval/3d3ea640-ba8e-4ecc-8e65-dbc1e3ce2388/BANNER-M-visibilidade-RB-POMELO.jpg",
+          "alt": "RB Pomelo",
+          "href": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
+          "hrefMobile": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
           "region": "Mostrar em ambas",
           "positionBanner": "Left",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false,
-          "desktop": "https://data.decoassets.com/festval/bc9ab92d-0b47-48f0-8cfe-f519575eec63/g7-visibilidade.jpg"
+          "desktop": "https://assets.decocache.com/festval/a5860029-b051-4574-a878-fed9c6069319/RB-POMELO-VISIBILIDADE.jpg"
         },
         {
           "mobile": "https://data.decoassets.com/festval/862a823f-7d9e-4e36-b377-f034a440353d/BANNER-M-visibilidade-MAMBA-WATER.jpg",
