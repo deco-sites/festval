@@ -22,7 +22,10 @@
             "param": "slug"
           },
           "similars": false,
-          "indexingSkus": true
+          "indexingSkus": true,
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          }
         },
         "similarProducts": {
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
