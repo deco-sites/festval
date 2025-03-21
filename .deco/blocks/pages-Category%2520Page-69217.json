@@ -33,7 +33,8 @@
             "includeOriginalAttributes": []
           },
           "fuzzy": "automatic",
-          "selectedFacets": []
+          "selectedFacets": [],
+          "hideUnavailableItems": false
         },
         "layout": {
           "pagination": "show-more"

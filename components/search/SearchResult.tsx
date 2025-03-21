@@ -1,10 +1,10 @@
 import type { ProductListingPage, PageInfo } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import ProductCard from "../../components/product/ProductCard.tsx";
-import AddAllProductsToCartButton from "../../components/product/AddAllProductsToCartButton.tsx";
+import ProductCard from "../product/ProductCard.tsx";
+import AddAllProductsToCartButton from "../product/AddAllProductsToCartButton.tsx";
 import Filters from "./Filters.tsx";
 import FiltersMb from "../../islands/FiltersMb.tsx";
-import Icon from "../../components/ui/Icon.tsx";
+import Icon from "../ui/Icon.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
@@ -16,7 +16,6 @@ import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
 import { getCookies } from "std/http/cookie.ts";
 import Image from "apps/website/components/Image.tsx";
-import Section from "../../sections/Component.tsx";
 export interface Layout {
   /**
    * @title Pagination
@@ -34,6 +33,10 @@ export interface Props {
   partial?: "hideMore" | "hideLess";
   /** @description Termo de busca */
   searchTerm?: string;
+  /**
+   * @hide
+   */
+  url?: string;
   /**
    * @hide
    */
@@ -64,8 +67,8 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
   return url;
 };
 
-const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
-  const container = document.getElementById(id);
+const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
+  const container = document.querySelector(".search-result-wrapper");
   const sentinel = document.getElementById("sentinel");
   const btnFoward = container?.querySelector(
     ".btn-next"
@@ -96,6 +99,7 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
           if (!btnFoward.disabled) {
             btnFoward.click();
           }
+          observer.disconnect();
         }
       });
     },
@@ -104,6 +108,199 @@ const onLoad = (id: string, record: number, pageInfo: PageInfo) => {
 
   observer.observe(sentinel);
 };
+
+const onHandlePagination = (
+  id: string,
+  records: number,
+  partial: string | undefined
+) => {
+  if (partial && partial === "hideLess") {
+    // Seleciona o container pelo id
+    const container = document.getElementById(id);
+    // A section é o elemento pai do container
+    const section = container?.parentElement;
+    if (container && section && section.parentNode) {
+      // Seleciona o elemento pai da section
+      const parent = section.parentNode;
+      // Enquanto houver filhos dentro do container, move-os para o parent,
+      // posicionando-os antes da section (que é filho direto do parent)
+      while (container.firstChild) {
+        parent.insertBefore(container.firstChild, section);
+      }
+      // Remove a section vazia
+      section.remove();
+    }
+
+    const btnsNext = document.querySelectorAll(".btn-next");
+    if (btnsNext.length >= 2) {
+      // Seleciona o botão na posição 0 e 1
+      const btn0 = btnsNext[1];
+      const btn1 = btnsNext[0];
+
+      // Substitui btn0 por btn1 no mesmo elemento pai
+      if (btn0 && btn0.parentNode) btn0.parentNode.replaceChild(btn1, btn0);
+
+      if (records > 0) {
+        // Atualiza a query string incrementando o parâmetro "page"
+        const url = new URL(window.location.href);
+        // Obtém o valor atual de "page" ou usa 1 se não existir
+        const currentPage = Number(url.searchParams.get("page") || "1");
+        const newPage = currentPage + 1;
+        url.searchParams.set("page", newPage.toString());
+
+        // Atualiza a URL sem recarregar a página
+        history.replaceState(null, "", url.href);
+      }
+    }
+  } else if (partial && partial === "hideMore") {
+    const container = document.getElementById(id);
+    const section = container?.parentElement;
+    if (container && section && section.parentNode) {
+      // Seleciona o elemento pai da section
+      const parent = section.parentNode;
+      // Enquanto houver filhos dentro do container, move-os para o parent,
+      // posicionando-os antes da section (que é filho direto do parent)
+      while (container.firstChild) {
+        parent.insertBefore(container.firstChild, section);
+      }
+      // Remove a section vazia
+      section.remove();
+    }
+
+    const btnsPrev = document.querySelectorAll(".btn-prev");
+    if (btnsPrev.length >= 2) {
+      // Atualiza a query string incrementando o parâmetro "page"
+      const url = new URL(window.location.href);
+
+      // Seleciona o botão na posição 0 e 1
+      const btn0 = btnsPrev[0];
+      const btn1 = btnsPrev[1];
+      const btnCurrentPage = Number(btn1!.getAttribute("data-prev-page"));
+
+      if (btnCurrentPage && btnCurrentPage > 2) {
+        // Substitui btn0 por btn1 no mesmo elemento pai
+        if (btn0 && btn0.parentNode) btn0.parentNode.replaceChild(btn1, btn0);
+
+        if (records > 0) {
+          const newPage = btnCurrentPage - 1 > 0 ? btnCurrentPage : 1;
+          url.searchParams.set("page", newPage.toString());
+
+          // Atualiza a URL sem recarregar a página
+          history.replaceState(null, "", url.href);
+        }
+      } else {
+        btnsPrev.forEach((btn) => {
+          const btnElement = btn as HTMLButtonElement;
+          if (btnElement) {
+            const parent = btn.parentElement;
+            if (parent && parent.classList.contains(".btn-prev-wrapper"))
+              parent.style.display = "none";
+            btnElement.style.display = "none";
+          }
+          if (records > 0) {
+            const newPage = btnCurrentPage - 1 > 0 ? btnCurrentPage : 1;
+            url.searchParams.set("page", newPage.toString());
+
+            // Atualiza a URL sem recarregar a página
+            history.replaceState(null, "", url.href);
+          }
+        });
+      }
+    }
+  }
+};
+
+function PartialPageResult(props: Props) {
+  const id = useId();
+  const { startingPage = 0, partial, url, region } = props;
+  const page = props.page!;
+  const { products, pageInfo } = page;
+
+  const produtosEmEstoque = products.filter((product) => {
+    const { offers } = product;
+    const { availability } = useOffer(offers);
+    return availability === "https://schema.org/InStock";
+    //return product;
+  });
+
+  const perPage = pageInfo?.recordPerPage || products.length;
+  const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
+  const offset = zeroIndexedOffsetPage * perPage;
+  const nextPageUrl = useUrlRebased(pageInfo.nextPage, url ?? "");
+  const prevPageUrl = useUrlRebased(pageInfo.previousPage, url ?? "");
+  const partialPrev = useSection({
+    href: prevPageUrl,
+    props: { partial: "hideMore" },
+  });
+  const partialNext = useSection({
+    href: nextPageUrl,
+    props: { partial: "hideLess" },
+  });
+  return (
+    <div id={id}>
+      {partial && partial === "hideMore" && (
+        <a
+          rel="prev"
+          class="btn btn-ghost btn-prev"
+          //hx-swap="outerHTML show:parent:top"
+          hx-target="[data-product-list]"
+          hx-swap="afterbegin"
+          hx-get={partialPrev}
+          data-prev-page={pageInfo.currentPage}
+        >
+          <span class="inline [.htmx-request_&]:hidden">Mostrar menos</span>
+          <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
+        </a>
+      )}
+
+      {produtosEmEstoque?.map((product, index) => (
+        <ProductCard
+          key={`product-card-${product.productID}`}
+          product={product}
+          preload={index === 0}
+          index={offset + index}
+          region={region}
+          class="h-full min-w-[160px] max-w-[300px] product-card"
+        />
+      ))}
+
+      {partial && partial === "hideLess" && (
+        <a
+          rel="next"
+          class={clx("btn btn-ghost btn-next")}
+          hx-target="[data-product-list]"
+          //hx-swap="outerHTML show:parent:top"
+          hx-swap="beforeend"
+          hx-get={partialNext}
+          data-next-page={pageInfo.currentPage}
+        >
+          <span class="inline [.htmx-request_&]:hidden"></span>
+          <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
+        </a>
+      )}
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(
+            onHandlePagination,
+            id,
+            produtosEmEstoque.length,
+            partial
+          ),
+        }}
+      />
+      {partial && partial === "hideLess" && (
+        <script
+          type="module"
+          class="script-go-next"
+          dangerouslySetInnerHTML={{
+            __html: useScript(onLoad, pageInfo.records, pageInfo),
+          }}
+        />
+      )}
+    </div>
+  );
+}
 
 function PageResult(props: SectionProps<typeof loader>) {
   const { layout, startingPage = 0, url, partial, region } = props;
@@ -136,17 +333,20 @@ function PageResult(props: SectionProps<typeof loader>) {
     <div id={id} class="grid grid-flow-row grid-cols-1 place-items-center ">
       <div
         class={clx(
-          "pb-2 sm:pb-10",
+          "pb-2 sm:pb-10 btn-prev-wrapper",
           (!prevPageUrl || partial === "hideLess") && "hidden"
         )}
       >
         <a
           rel="prev"
-          class="btn btn-ghost"
-          hx-swap="outerHTML show:parent:top"
+          class="btn btn-ghost btn-prev"
+          //hx-swap="outerHTML show:parent:top"
+          hx-target="[data-product-list]"
+          hx-swap="afterbegin"
           hx-get={partialPrev}
+          data-prev-page={pageInfo.currentPage}
         >
-          <span class="inline [.htmx-request_&]:hidden">Show Less</span>
+          <span class="inline [.htmx-request_&]:hidden">Mostrar menos</span>
           <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
         </a>
       </div>
@@ -181,8 +381,11 @@ function PageResult(props: SectionProps<typeof loader>) {
                 "btn btn-ghost btn-next",
                 (!nextPageUrl || partial === "hideMore") && "hidden"
               )}
-              hx-swap="outerHTML show:parent:top"
+              hx-target="[data-product-list]"
+              //hx-swap="outerHTML show:parent:top"
+              hx-swap="beforeend"
               hx-get={partialNext}
+              data-next-page={pageInfo.currentPage}
             >
               <span class="inline [.htmx-request_&]:hidden"></span>
               <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
@@ -286,11 +489,15 @@ function Result(props: SectionProps<typeof loader>) {
   );
   return (
     <>
-      <div id={container} {...viewItemListEvent} class="w-full ">
-        {partial ? (
-          <PageResult {...props} />
-        ) : (
-          <div class="container  custom-container  flex flex-col gap-4 sm:gap-5 w-full py-2 sm:py-2 px-2 sm:px-0">
+      {partial ? (
+        <PartialPageResult {...props} />
+      ) : (
+        <div
+          id={container}
+          {...viewItemListEvent}
+          class="w-full search-result-wrapper"
+        >
+          <div class="container custom-container  flex flex-col gap-4 sm:gap-5 w-full py-2 sm:py-2 px-2 sm:px-0">
             {!searchTerm && (
               <div class="flex md:gap-10 items-center">
                 <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
@@ -406,14 +613,13 @@ function Result(props: SectionProps<typeof loader>) {
               </div>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
       <script
         type="module"
         dangerouslySetInnerHTML={{
           __html: useScript(
             onLoad,
-            container,
             pageInfo.records || products.length,
             pageInfo
           ),
@@ -421,6 +627,7 @@ function Result(props: SectionProps<typeof loader>) {
       />
       <script
         type="module"
+        class="script-go-next"
         dangerouslySetInnerHTML={{
           __html: useScript(
             setPageQuerystring,
@@ -436,6 +643,7 @@ function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
   if (!page) {
     return <NotFound />;
   }
+
   return <Result {...props} page={page} />;
 }
 export const loader = (props: Props, req: Request) => {
@@ -453,7 +661,5 @@ export const loader = (props: Props, req: Request) => {
     searchTerm,
   };
 };
-
-export const LoadingFallback = () => <Section.Placeholder height="322px" />;
 
 export default SearchResult;
