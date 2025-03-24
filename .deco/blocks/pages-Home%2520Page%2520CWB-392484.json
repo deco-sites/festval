@@ -52,6 +52,17 @@
             "action": {
               "href": "https://www.festval.com/1630?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NutritionWeek"
             }
+          },
+          {
+            "initialDate": "2025-03-24",
+            "deadLine": "2025-03-30",
+            "desktop": "https://assets.decocache.com/festval/9abb1f6c-9162-4218-b1b9-e36b03d2c3dd/COQUEIRO_QUA2025_FESTVAL_1920x490pxs.jpg",
+            "mobile": "https://assets.decocache.com/festval/cf8be692-4885-497b-a4f6-8491bedf4239/COQUEIRO_QUA2025_FESTVAL_1080x1500pxs.jpg",
+            "alt": "promo_coqueiro",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1631?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=PromoCoqueiro"
+            }
           }
         ],
         "preload": true,
