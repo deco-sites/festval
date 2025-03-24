@@ -63,6 +63,17 @@
             "action": {
               "href": "https://www.festval.com/1631?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=PromoCoqueiro"
             }
+          },
+          {
+            "deadLine": "2025-03-30",
+            "desktop": "https://assets.decocache.com/festval/83605532-a95a-4cb0-825e-89557840acae/FESTVAL-NOVOS-BANNERS-bold.jpg",
+            "mobile": "https://assets.decocache.com/festval/63a16f88-a50a-4a7a-8c1c-5b3c2c125101/FESTVAL-NOVOS-BANNERS-1080-1500-bold.jpg",
+            "alt": "bold-thin",
+            "initialDate": "2025-03-24",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/s?q=bold+thin&page=1&utm_source=BannerHome&utm_campaign=promoboldthin"
+            }
           }
         ],
         "preload": true,
