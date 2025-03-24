@@ -98,6 +98,7 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
         if (entry.isIntersecting && validateGoNext()) {
           if (!btnFoward.disabled) {
             btnFoward.click();
+            btnFoward.disabled = true;
           }
           observer.disconnect();
         }
@@ -613,29 +614,29 @@ function Result(props: SectionProps<typeof loader>) {
               </div>
             </div>
           </div>
+          <script
+            type="module"
+            dangerouslySetInnerHTML={{
+              __html: useScript(
+                onLoad,
+                pageInfo.records || products.length,
+                pageInfo
+              ),
+            }}
+          />
+          <script
+            type="module"
+            class="script-go-next"
+            dangerouslySetInnerHTML={{
+              __html: useScript(
+                setPageQuerystring,
+                `${pageInfo.currentPage}`,
+                container
+              ),
+            }}
+          />
         </div>
       )}
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{
-          __html: useScript(
-            onLoad,
-            pageInfo.records || products.length,
-            pageInfo
-          ),
-        }}
-      />
-      <script
-        type="module"
-        class="script-go-next"
-        dangerouslySetInnerHTML={{
-          __html: useScript(
-            setPageQuerystring,
-            `${pageInfo.currentPage}`,
-            container
-          ),
-        }}
-      />
     </>
   );
 }
