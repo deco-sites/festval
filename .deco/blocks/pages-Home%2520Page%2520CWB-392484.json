@@ -283,11 +283,11 @@
         {
           "positionBanner": "Left",
           "region": "Curitiba",
-          "mobile": "https://data.decoassets.com/festval/09a28180-801a-4502-a07a-048c11318950/comfort.jpg",
-          "desktop": "https://data.decoassets.com/festval/0e9537b9-e774-4787-8ced-6c3f4b2f678d/BANNER-DE-OFERTAS-M-comfort.jpg",
+          "mobile": "https://assets.decocache.com/festval/59afc6ad-e38b-4a6e-9e4c-8c96dee2048b/azeite-anfora.jpg",
+          "desktop": "https://assets.decocache.com/festval/375fadae-4754-4f22-aa27-5992c80b931c/BANNER-DE-OFERTAS-M-azeite-anfora.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=comfort+1l&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=comfort+1l&page=1",
+          "href": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522&utm_source=BannerOfertas&utm_campaign=Azeite+mamma+bia",
+          "hrefMobile": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522&utm_source=BannerOfertas&utm_campaign=Azeite+mamma+bia",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false
