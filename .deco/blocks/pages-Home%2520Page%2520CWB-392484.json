@@ -32,15 +32,15 @@
             "activeTerm": false
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "desktop": "https://data.decoassets.com/festval/94bba0f3-0e8f-4ace-a517-1004d53bb3e1/frutos-do-mar.jpg",
-            "mobile": "https://data.decoassets.com/festval/f3880da9-e684-4a36-a126-3deee21b97db/frutos-do-mar-mbl.jpg",
+            "initialDate": "25-03-25",
+            "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
+            "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
             "alt": "peixes",
-            "activeTerm": false,
+            "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/frios-e-laticinios/peixe-e-fruto-do-mar?page=1"
-            }
+              "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
+            },
+            "deadLine": "05-04-06"
           },
           {
             "deadLine": "2025-03-30",
@@ -199,7 +199,7 @@
           "sort": "",
           "count": 12,
           "collection": "1397",
-          "hideUnavailableItems": true
+          "hideUnavailableItems": false
         }
       },
       "cta": "/1397?map=productClusterIds",
