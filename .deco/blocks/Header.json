@@ -1681,9 +1681,10 @@
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/159?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "url": "/churrascofestval?filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=casa-e-utilidades&filter.category-1=bebidas-alcoolicas&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
-      "children": []
+      "children": [],
+      "image": null
     },
     {
       "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
