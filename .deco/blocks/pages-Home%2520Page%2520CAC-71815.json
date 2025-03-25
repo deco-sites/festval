@@ -33,27 +33,39 @@
             "initialDate": "01/01/2024"
           },
           {
-            "initialDate": "2025-03-10",
-            "deadLine": "2025-03-16",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/d2be1050-77fc-42b5-b5e0-9b31e7a43c8a/20250124_td_ecom_kv_semana_do_consumidor-1920x490.jpg",
-            "mobile": "https://data.decoassets.com/festval/5c5708e9-f5a7-4242-b54a-3e9ce3238ee3/20250124_td_ecom_kv_semana_do_consumidor-1080x1500.jpg",
-            "alt": "nestle",
-            "action": {
-              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=SConsumidorNestl%C3%A9"
-            },
-            "activeTerm": true
-          },
-          {
+            "initialDate": "2025-03-25",
             "deadLine": "2025-04-25",
             "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
             "alt": "caderno-peixes",
-            "activeTerm": true,
-            "initialDate": "2025-03-25",
             "action": {
               "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
+            },
+            "activeTerm": true
+          },
+          {
+            "deadLine": "2025-03-16",
+            "region": "Cascavel",
+            "desktop": "https://data.decoassets.com/festval/d2be1050-77fc-42b5-b5e0-9b31e7a43c8a/20250124_td_ecom_kv_semana_do_consumidor-1920x490.jpg",
+            "mobile": "https://data.decoassets.com/festval/5c5708e9-f5a7-4242-b54a-3e9ce3238ee3/20250124_td_ecom_kv_semana_do_consumidor-1080x1500.jpg",
+            "alt": "nestle",
+            "activeTerm": true,
+            "initialDate": "2025-03-10",
+            "action": {
+              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=SConsumidorNestl%C3%A9"
+            }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/b4c1094a-d2c4-45f1-a68f-858d14fb5d1d/nutriweek-1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/5dc1d5a5-7b94-4688-ab82-9c4539ff21ca/nutriweek-1080x1500.jpg",
+            "alt": "nutrition",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1630?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NutritionWeek"
             }
           }
         ],
