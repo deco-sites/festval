@@ -45,27 +45,27 @@
             "activeTerm": true
           },
           {
-            "deadLine": "2025-03-16",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/d2be1050-77fc-42b5-b5e0-9b31e7a43c8a/20250124_td_ecom_kv_semana_do_consumidor-1920x490.jpg",
-            "mobile": "https://data.decoassets.com/festval/5c5708e9-f5a7-4242-b54a-3e9ce3238ee3/20250124_td_ecom_kv_semana_do_consumidor-1080x1500.jpg",
-            "alt": "nestle",
-            "activeTerm": true,
-            "initialDate": "2025-03-10",
-            "action": {
-              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=SConsumidorNestl%C3%A9"
-            }
-          },
-          {
-            "initialDate": "2025-03-24",
             "deadLine": "2025-03-30",
             "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/b4c1094a-d2c4-45f1-a68f-858d14fb5d1d/nutriweek-1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/5dc1d5a5-7b94-4688-ab82-9c4539ff21ca/nutriweek-1080x1500.jpg",
             "alt": "nutrition",
             "activeTerm": true,
+            "initialDate": "2025-03-24",
             "action": {
               "href": "https://www.festval.com/1630?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NutritionWeek"
+            }
+          },
+          {
+            "initialDate": "2025-03-25",
+            "deadLine": "2025-03-30",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/9abb1f6c-9162-4218-b1b9-e36b03d2c3dd/COQUEIRO_QUA2025_FESTVAL_1920x490pxs.jpg",
+            "mobile": "https://assets.decocache.com/festval/cf8be692-4885-497b-a4f6-8491bedf4239/COQUEIRO_QUA2025_FESTVAL_1080x1500pxs.jpg",
+            "alt": "coqueiro",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1631?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=PromoCoqueiro"
             }
           }
         ],
