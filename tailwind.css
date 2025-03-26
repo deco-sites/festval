@@ -45,10 +45,10 @@
   }
 
   .custom-container {
-    max-width: 1700px;
+    max-width: 1586px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0.625rem;
+    padding: 0rem;
     /* text-align: center; */
   }
   @media only screen and (max-width: 1800px) and (min-width: 1360px) {
@@ -57,10 +57,16 @@
       padding: 0.625rem;
     }
   }
-  @media only screen and (max-width: 1360px) and (min-width: 1220px) {
+  @media only screen and (max-width: 1359px) and (min-width: 1220px) {
     .custom-container {
       max-width: 1200px;
       padding: 0.625rem;
+    }
+  }
+  @media only screen and (max-width: 1219px) and (min-width: 1080px) {
+    .custom-container {
+      max-width: 880px;
+      padding: 0rem;
     }
   }
   @media only screen and (max-width: 768px) {

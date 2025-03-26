@@ -52,7 +52,7 @@ function CategorySlider({ title, items }: Props) {
         <div class={`overflow-x-auto `}>
           <Slider
             class={`gap-5 w-full ${
-              items.length < 12 ? "carousel carousel-center justify-start lg:justify-between px-3 sm:px-4 lg:px-4 " : "carousel carousel-center sm:carousel-end "
+              items.length < 12 ? "carousel carousel-center justify-start lg:justify-between px-3 xl:!px-4 " : "carousel carousel-center sm:carousel-end lg:px-3 "
             }, `}
           >
             {items.map((item, index) => (
@@ -65,13 +65,13 @@ function CategorySlider({ title, items }: Props) {
 
         {hasArrows && (
           <>
-            <div class=" z-10 self-center xl:-left-8 lg:left-0  p-2 absolute inset-y-0  ">
+            <div class=" z-10 self-center xl:-left-8 lg:-left-8 sm:left-0 p-2 absolute inset-y-0  ">
               <Slider.PrevButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" class="rotate-180" />
               </Slider.PrevButton>
             </div>
 
-            <div class=" z-10 self-center xl:-right-8 lg:right-0   p-2 absolute inset-y-0 ">
+            <div class=" z-10 self-center xl:-right-8 lg:-right-8 sm:right-0 p-2 absolute inset-y-0 ">
               <Slider.NextButton class="hidden sm:flex disabled:opacity-75 no-animation">
                 <Icon id="chevron-right" />
               </Slider.NextButton>
