@@ -13,64 +13,75 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
+            "desktop": "https://assets.decocache.com/festval/9960ab72-4f44-4ec7-a92e-ccde604b7a54/AF_V05_Campanha_Vinhos_com_ate_50_de_desconto_Festval_2025_Banner_Festval.com_GG_1920x490px.png",
+            "mobile": "https://assets.decocache.com/festval/8b8884f0-76c5-4829-9087-b793d57bd1c6/AF_V05_Campanha_Vinhos_com_ate_50_de_desconto_Festval_2025_Banner_Festval.com_GG_1080x1500px.png",
+            "alt": "SUPERPROMOÇÃO-VINHOS",
+            "activeTerm": true,
+            "deadLine": "2025-03-30",
+            "initialDate": "2025-03-26",
+            "action": {
+              "href": "https://www.festval.com/1632?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=superpromo%C3%A7%C3%A3o+de+vinho"
+            }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
             "desktop": "https://data.decoassets.com/festval/ad18dce7-ee9e-44fe-9202-77a193ce19c5/Festval---BannerDesk---Sou-Festval.jpg",
             "mobile": "https://data.decoassets.com/festval/630dba02-3700-4e0a-bbdf-75b7848ac489/Festval---BannerMBL---Sou-Festval.jpg",
             "alt": "soufestval",
             "activeTerm": false,
-            "deadLine": "01/01/2024",
-            "initialDate": "01/01/2024",
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
             }
           },
           {
             "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
-            "activeTerm": false
-          },
-          {
-            "initialDate": "2025-03-25",
-            "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
-            "alt": "peixes",
             "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
-            },
-            "deadLine": "2025-04-06"
+            "deadLine": "01/01/2024"
           },
           {
-            "deadLine": "2025-03-30",
-            "desktop": "https://assets.decocache.com/festval/b4c1094a-d2c4-45f1-a68f-858d14fb5d1d/nutriweek-1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/5dc1d5a5-7b94-4688-ab82-9c4539ff21ca/nutriweek-1080x1500.jpg",
-            "alt": "nutrion-week",
-            "activeTerm": true,
-            "initialDate": "2025-03-24",
-            "action": {
-              "href": "https://www.festval.com/1630?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NutritionWeek"
-            }
-          },
-          {
-            "initialDate": "2025-03-24",
             "deadLine": "2025-03-30",
             "desktop": "https://assets.decocache.com/festval/9abb1f6c-9162-4218-b1b9-e36b03d2c3dd/COQUEIRO_QUA2025_FESTVAL_1920x490pxs.jpg",
             "mobile": "https://assets.decocache.com/festval/cf8be692-4885-497b-a4f6-8491bedf4239/COQUEIRO_QUA2025_FESTVAL_1080x1500pxs.jpg",
             "alt": "promo_coqueiro",
             "activeTerm": true,
+            "initialDate": "2025-03-24",
             "action": {
               "href": "https://www.festval.com/1631?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=PromoCoqueiro"
             }
           },
           {
+            "initialDate": "2025-03-24",
             "deadLine": "2025-03-30",
+            "desktop": "https://assets.decocache.com/festval/b4c1094a-d2c4-45f1-a68f-858d14fb5d1d/nutriweek-1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/5dc1d5a5-7b94-4688-ab82-9c4539ff21ca/nutriweek-1080x1500.jpg",
+            "alt": "nutrion-week",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1630?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NutritionWeek"
+            }
+          },
+          {
+            "deadLine": "2025-04-06",
+            "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
+            "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
+            "alt": "peixes",
+            "initialDate": "2025-03-25",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
+            }
+          },
+          {
+            "deadLine": "2025-03-30",
+            "alt": "bold-thin",
+            "activeTerm": true,
+            "initialDate": "2025-03-24",
             "desktop": "https://assets.decocache.com/festval/83605532-a95a-4cb0-825e-89557840acae/FESTVAL-NOVOS-BANNERS-bold.jpg",
             "mobile": "https://assets.decocache.com/festval/63a16f88-a50a-4a7a-8c1c-5b3c2c125101/FESTVAL-NOVOS-BANNERS-1080-1500-bold.jpg",
-            "alt": "bold-thin",
-            "initialDate": "2025-03-24",
-            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/s?q=bold+thin&page=1&utm_source=BannerHome&utm_campaign=promoboldthin"
             }
