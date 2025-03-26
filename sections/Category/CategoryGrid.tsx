@@ -17,9 +17,10 @@ export interface Item {
 
 export interface Props extends SectionHeaderProps {
   items: Item[];
+  
 }
 
-function Card({ image, href, label }: Item) {
+function Card({ image, href, label }: Item ) {
   const device = useDevice(); // Detecta se é mobile ou desktop
 
   const size = device === "mobile" ? 90 : 122; // Tamanhos dinâmicos
@@ -35,10 +36,10 @@ function CategorySlider({ title, items }: Props) {
   const device = useDevice();
   const id = useId();
 
-  const hasArrows = items.length > 12;
+  const hasArrows = items.length > 9;
 
   return (
-    <Section.Container class="custom-container my-3 lg:!p-2 md:!py-0">
+    <Section.Container class="custom-container my-3 lg:!p-2 md:!py-0 ">
       <Section.Header title={title} />
 
       <div
@@ -50,9 +51,9 @@ function CategorySlider({ title, items }: Props) {
       >
         <div class={`overflow-x-auto `}>
           <Slider
-            class={`carousel carousel-center sm:carousel-end gap-5 w-full ${
-              items.length < 12 ? "justify-start lg:justify-between" : ""
-            } `}
+            class={`gap-5 w-full ${
+              items.length < 12 ? "carousel carousel-center justify-start lg:justify-between px-3 sm:px-4 lg:px-4 " : "carousel carousel-center sm:carousel-end "
+            }, `}
           >
             {items.map((item, index) => (
               <Slider.Item index={index} class={clx("carousel-item", "first:pl-5 first:sm:pl-0", "last:pr-5 last:sm:pr-0")}>
