@@ -355,16 +355,16 @@
           "desktop": "https://assets.decocache.com/festval/a5860029-b051-4574-a878-fed9c6069319/RB-POMELO-VISIBILIDADE.jpg"
         },
         {
-          "mobile": "https://data.decoassets.com/festval/862a823f-7d9e-4e36-b377-f034a440353d/BANNER-M-visibilidade-MAMBA-WATER.jpg",
-          "desktop": "https://data.decoassets.com/festval/fbea6c7a-21af-480c-96b5-d9c4cfff93b7/BANNER-M-VISUALIZACAO-NOVOS-PRODUTOS-MAMBA-WATER.jpg",
-          "href": "https://www.festval.com/s?q=mamba+water&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=mamba+water&page=1",
+          "mobile": "https://assets.decocache.com/festval/b8e11e5e-f6a6-4b7c-8101-a243361cfc41/BANNER-M-visibilidade-bertoncello.jpg",
+          "desktop": "https://assets.decocache.com/festval/a4522a14-2ea7-4ef8-be82-1f960bcc7c15/BANNER-M-VISUALIZACAO-BERTONCELLO.jpg",
+          "href": "https://www.festval.com/s?q=bertoncello&sort=price%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=bertoncello&sort=price%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false,
-          "alt": "mamba-water"
+          "alt": "Visibilidade_2"
         }
       ],
       "inverted": true
