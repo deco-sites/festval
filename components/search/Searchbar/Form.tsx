@@ -9,7 +9,10 @@
  * no JavaScript is shipped to the browser!
  */
 import { Suggestion } from "apps/commerce/types.ts";
-import { SEARCHBAR_INPUT_FORM_ID, SEARCHBAR_POPUP_ID } from "../../../constants.ts";
+import {
+  SEARCHBAR_INPUT_FORM_ID,
+  SEARCHBAR_POPUP_ID,
+} from "../../../constants.ts";
 import { useId } from "../../../sdk/useId.ts";
 import { useComponent } from "../../../sections/Component.tsx";
 import Icon from "../../ui/Icon.tsx";
@@ -57,10 +60,13 @@ const script = (formId: string, name: string, popupId: string) => {
   });
 };
 const Suggestions = import.meta.resolve("./Suggestions.tsx");
-export default function Searchbar({ placeholder = "Buscar produtos", loader }: SearchbarProps) {
+export default function Searchbar({
+  placeholder = "Buscar produtos",
+  loader,
+}: SearchbarProps) {
   const slot = useId();
   return (
-    <div class="w-full grid">
+    <div class="w-full grid relative">
       <form id={SEARCHBAR_INPUT_FORM_ID} action={ACTION} class="join">
         <input
           autoFocus
@@ -96,13 +102,18 @@ export default function Searchbar({ placeholder = "Buscar produtos", loader }: S
       </form>
 
       {/* Suggestions slot */}
-      <div id={slot} />
+      <div id={slot} class="absolute top-[50px] w-full" />
 
       {/* Send search events as the user types */}
       <script
         type="module"
         dangerouslySetInnerHTML={{
-          __html: useScript(script, SEARCHBAR_INPUT_FORM_ID, NAME, SEARCHBAR_POPUP_ID),
+          __html: useScript(
+            script,
+            SEARCHBAR_INPUT_FORM_ID,
+            NAME,
+            SEARCHBAR_POPUP_ID
+          ),
         }}
       />
     </div>
