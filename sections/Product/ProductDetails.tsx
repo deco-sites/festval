@@ -91,8 +91,6 @@ const onLoad = (product: Product) => {
   ccs_cc_args.push(["lang", "PT"]);
   ccs_cc_args.push(["market", "BR"]);
 
-  console.log(ccs_cc_args);
-
   (function () {
     const o = ccs_cc_args;
     o.push(["_SKey", "692a8c55"]);
