@@ -296,7 +296,6 @@ const onLoad = async (id: string, itemId: string, product: Product) => {
           buttonAddToCart.style.color = "#3E3D41";
           buttonAddToCart.style.border = "1px solid  #989898";
           buttonAddToCart.innerText = "Adicionado";
-
           buttonAddToCart.disabled = true;
         }
       }
