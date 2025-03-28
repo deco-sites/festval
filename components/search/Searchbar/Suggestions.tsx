@@ -12,6 +12,8 @@ export interface Props {
    * @todo: improve this typings ({query: string, count: number}) => Suggestions
    */
   loader: Resolved<Suggestion | null>;
+
+  query?: string;
 }
 export const action = async (props: Props, req: Request, ctx: AppContext) => {
   const {
@@ -24,7 +26,7 @@ export const action = async (props: Props, req: Request, ctx: AppContext) => {
     ...loaderProps,
     query,
   })) as Suggestion | null;
-  return { suggestion };
+  return { suggestion, query };
 };
 export const loader = async (props: Props, req: Request, ctx: AppContext) => {
   const {
@@ -36,14 +38,16 @@ export const loader = async (props: Props, req: Request, ctx: AppContext) => {
     ...loaderProps,
     query,
   })) as Suggestion | null;
-  return { suggestion };
+  return { suggestion, query };
 };
 function Suggestions({
   suggestion,
+  query,
 }: ComponentProps<typeof loader, typeof action>) {
   const { products = [], searches = [] } = suggestion ?? {};
-  const hasProducts = Boolean(products ? products.length : false);
-  const hasTerms = Boolean(searches.length);
+  const hasProducts = Boolean(products ? products.length > 0 : false);
+  const hasTerms = Boolean(searches.length > 0);
+  if (query.length == 0) return null;
   return (
     <div
       class={clx(

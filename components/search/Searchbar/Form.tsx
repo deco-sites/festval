@@ -59,6 +59,30 @@ const script = (formId: string, name: string, popupId: string) => {
     }
   });
 };
+const onClick = (suggestionId: string, formId: string) => {
+  document.addEventListener("click", (event: Event) => {
+    const form = document.getElementById(formId);
+    const suggestions = document.getElementById(suggestionId);
+    if (
+      suggestions &&
+      form &&
+      !form.contains(event.target as Node) &&
+      !suggestions.contains(event.target as Node)
+    ) {
+      suggestions.innerHTML = "";
+    }
+  });
+};
+
+const onInputHandler = (suggestionId: string, formId: string) => {
+  const input = event?.currentTarget as HTMLInputElement;
+  const suggestions = document.getElementById(suggestionId);
+
+  if (input && input.value.length === 0 && suggestions) {
+    suggestions.innerHTML = "";
+  }
+};
+
 const Suggestions = import.meta.resolve("./Suggestions.tsx");
 export default function Searchbar({
   placeholder = "Buscar produtos",
@@ -85,6 +109,7 @@ export default function Searchbar({
           hx-trigger={`input changed delay:300ms, ${NAME}`}
           hx-indicator={`#${SEARCHBAR_INPUT_FORM_ID}`}
           hx-swap="innerHTML"
+          hx-on:input={useScript(onInputHandler, slot, SEARCHBAR_INPUT_FORM_ID)}
         />
         {/* <label type="button" class="join-item btn btn-ghost btn-square hidden sm:inline-flex no-animation" for={SEARCHBAR_POPUP_ID} aria-label="Toggle searchbar">
           <Icon id="close"/>
@@ -114,6 +139,12 @@ export default function Searchbar({
             NAME,
             SEARCHBAR_POPUP_ID
           ),
+        }}
+      />
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(onClick, slot, SEARCHBAR_INPUT_FORM_ID),
         }}
       />
     </div>
