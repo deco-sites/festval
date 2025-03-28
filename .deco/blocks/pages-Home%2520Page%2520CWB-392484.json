@@ -85,6 +85,17 @@
             "action": {
               "href": "https://www.festval.com/s?q=bold+thin&page=1&utm_source=BannerHome&utm_campaign=promoboldthin"
             }
+          },
+          {
+            "initialDate": "2025-03-28",
+            "deadLine": "2025-04-18",
+            "desktop": "https://assets.decocache.com/festval/900b0ba7-09f4-4fe3-8019-1a653e5e154a/1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/fefb1726-46ff-40e8-8250-2cda129cca57/1080X1500.jpg",
+            "alt": "chuck-eye",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/chuck-eye-roll-1953?page=1&utm_source=BannerHome&utm_campaign=Chuck+Eye+Roll+1953"
+            }
           }
         ],
         "preload": true,
