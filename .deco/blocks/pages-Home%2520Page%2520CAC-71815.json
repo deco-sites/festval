@@ -264,16 +264,16 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://data.decoassets.com/festval/122b63af-be58-48ff-8295-0a12d1b8b64f/vanish-site.jpg",
+          "desktop": "https://data.decoassets.com/festval/c55f1e63-d1ef-414f-8a29-4f5d66d1395a/BANNER-DE-OFERTAS-M-patagonia.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
-          "href": "https://www.festval.com/s?q=Vanish+P%C3%B3+Oxi+Action+Sach%C3%AA+400g&page=1",
-          "mobile": "https://data.decoassets.com/festval/b6745eed-f802-46c9-a148-feac53990277/vanish-app.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=Vanish+P%C3%B3+Oxi+Action+Sach%C3%AA+400g&page=1",
+          "href": "https://www.festval.com/s?q=Cerveja+patagonia+lata+473ml&page=1",
+          "mobile": "https://data.decoassets.com/festval/2c246def-9c4c-4f61-9978-d22d379bac9e/patagonia.jpg",
+          "hrefMobile": "https://www.festval.com/s?q=Cerveja+patagonia+lata+473ml&page=1",
           "region": "Cascavel",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
-          "activeTerm": true
+          "activeTerm": false
         },
         {
           "positionBanner": "Left",
