@@ -27,7 +27,7 @@ function Card({ image, href, label }: Item ) {
   return (
     <a href={href} class="flex flex-col items-center justify-center gap-2">
       <Image class="rounded-xl" src={image} alt={label} width={size} height={size} loading="lazy" />
-      {label && <span class="font-medium text-sm">{label}</span>}
+      {label && <h1 class="font-medium text-sm">{label}</h1>}
     </a>
   );
 }

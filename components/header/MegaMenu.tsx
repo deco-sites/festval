@@ -69,7 +69,7 @@ function MegaMenu({ item }: { item: SiteNavigationElement }) {
                         <>
                           <li class="mr-4">
                             <a href={leaf.url}>
-                              <h2 class="text-lg font-bold">{leaf.name}</h2>
+                              <span class="text-lg font-bold">{leaf.name}</span>
                             </a>
 
                             {leaf.children &&

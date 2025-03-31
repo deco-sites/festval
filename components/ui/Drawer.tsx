@@ -78,9 +78,7 @@ function Aside({
       style={{ maxWidth: "100vw" }}
     >
       <div class="flex justify-between items-center">
-        <h1 class="px-4 py-3">
-          <span class="font-medium text-2xl">{title}</span>
-        </h1>
+      <p class="px-4 py-3 text-2xl font-medium">{title}</p>
         <label for={drawer} aria-label="X" class="btn btn-ghost">
           <Icon id="close" />
         </label>

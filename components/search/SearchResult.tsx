@@ -1,4 +1,4 @@
-import type { ProductListingPage, PageInfo } from "apps/commerce/types.ts";
+import type { PageInfo, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCard from "../product/ProductCard.tsx";
 import AddAllProductsToCartButton from "../product/AddAllProductsToCartButton.tsx";
@@ -71,7 +71,7 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
   const container = document.querySelector(".search-result-wrapper");
   const sentinel = document.getElementById("sentinel");
   const btnFoward = container?.querySelector(
-    ".btn-next"
+    ".btn-next",
   ) as HTMLButtonElement | null;
 
   function validateGoNext(): boolean {
@@ -80,8 +80,9 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
     const currentPage = pageInfo.currentPage;
 
     // Calcula o número total de páginas necessárias
-    const totalPages =
-      totalRecords < 13 ? 0 : Math.ceil(totalRecords / recordsPerPage);
+    const totalPages = totalRecords < 13
+      ? 0
+      : Math.ceil(totalRecords / recordsPerPage);
 
     // Retorna false se já estiver na última página ou se atingir o limite de 50 páginas
     return currentPage < totalPages && currentPage < 50;
@@ -104,7 +105,7 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
         }
       });
     },
-    { rootMargin: "100px" }
+    { rootMargin: "100px" },
   );
 
   observer.observe(sentinel);
@@ -113,7 +114,7 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
 const onHandlePagination = (
   id: string,
   records: number,
-  partial: string | undefined
+  partial: string | undefined,
 ) => {
   if (partial && partial === "hideLess") {
     // Seleciona o container pelo id
@@ -194,8 +195,9 @@ const onHandlePagination = (
           const btnElement = btn as HTMLButtonElement;
           if (btnElement) {
             const parent = btn.parentElement;
-            if (parent && parent.classList.contains(".btn-prev-wrapper"))
+            if (parent && parent.classList.contains(".btn-prev-wrapper")) {
               parent.style.display = "none";
+            }
             btnElement.style.display = "none";
           }
           if (records > 0) {
@@ -286,7 +288,7 @@ function PartialPageResult(props: Props) {
             onHandlePagination,
             id,
             produtosEmEstoque.length,
-            partial
+            partial,
           ),
         }}
       />
@@ -335,7 +337,7 @@ function PageResult(props: SectionProps<typeof loader>) {
       <div
         class={clx(
           "pb-2 sm:pb-10 btn-prev-wrapper",
-          (!prevPageUrl || partial === "hideLess") && "hidden"
+          (!prevPageUrl || partial === "hideLess") && "hidden",
         )}
       >
         <a
@@ -358,7 +360,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           "grid items-center",
           "grid-cols-2 gap-2",
           "sm:grid-cols-4 sm:gap-10",
-          "w-full"
+          "w-full",
         )}
       >
         {produtosEmEstoque?.map((product, index) => (
@@ -374,49 +376,51 @@ function PageResult(props: SectionProps<typeof loader>) {
       </div>
 
       <div class={clx("pt-2 sm:pt-10 w-full", "")}>
-        {infinite ? (
-          <div class="flex justify-center [&_section]:contents">
-            <a
-              rel="next"
-              class={clx(
-                "btn btn-ghost btn-next",
-                (!nextPageUrl || partial === "hideMore") && "hidden"
-              )}
-              hx-target="[data-product-list]"
-              //hx-swap="outerHTML show:parent:top"
-              hx-swap="beforeend"
-              hx-get={partialNext}
-              data-next-page={pageInfo.currentPage}
-            >
-              <span class="inline [.htmx-request_&]:hidden"></span>
-              <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
-            </a>
-          </div>
-        ) : (
-          <div class={clx("join", infinite && "hidden")}>
-            <a
-              rel="prev"
-              aria-label="previous page link"
-              href={prevPageUrl ?? "#"}
-              disabled={!prevPageUrl}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="chevron-right" class="rotate-180" />
-            </a>
-            <span class="btn btn-ghost join-item">
-              Page {zeroIndexedOffsetPage + 1}
-            </span>
-            <a
-              rel="next"
-              aria-label="next page link"
-              href={nextPageUrl ?? "#"}
-              disabled={!nextPageUrl}
-              class="btn btn-ghost join-item"
-            >
-              <Icon id="chevron-right" />
-            </a>
-          </div>
-        )}
+        {infinite
+          ? (
+            <div class="flex justify-center [&_section]:contents">
+              <a
+                rel="next"
+                class={clx(
+                  "btn btn-ghost btn-next",
+                  (!nextPageUrl || partial === "hideMore") && "hidden",
+                )}
+                hx-target="[data-product-list]"
+                //hx-swap="outerHTML show:parent:top"
+                hx-swap="beforeend"
+                hx-get={partialNext}
+                data-next-page={pageInfo.currentPage}
+              >
+                <span class="inline [.htmx-request_&]:hidden"></span>
+                <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
+              </a>
+            </div>
+          )
+          : (
+            <div class={clx("join", infinite && "hidden")}>
+              <a
+                rel="prev"
+                aria-label="previous page link"
+                href={prevPageUrl ?? "#"}
+                disabled={!prevPageUrl}
+                class="btn btn-ghost join-item"
+              >
+                <Icon id="chevron-right" class="rotate-180" />
+              </a>
+              <span class="btn btn-ghost join-item">
+                Page {zeroIndexedOffsetPage + 1}
+              </span>
+              <a
+                rel="next"
+                aria-label="next page link"
+                href={nextPageUrl ?? "#"}
+                disabled={!nextPageUrl}
+                class="btn btn-ghost join-item"
+              >
+                <Icon id="chevron-right" />
+              </a>
+            </div>
+          )}
       </div>
     </div>
   );
@@ -451,6 +455,8 @@ function Result(props: SectionProps<typeof loader>) {
   const { startingPage = 0, url, partial, searchTerm, isWishList } = props;
   const page = props.page!;
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+  const categoryName = breadcrumb.itemListElement?.at(-1)?.name ||
+    "Categoria não especificada";
   const perPage = pageInfo?.recordPerPage || products.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
@@ -479,8 +485,7 @@ function Result(props: SectionProps<typeof loader>) {
         ? page.pageInfo.recordPerPage >= products.length
           ? products.length
           : page.pageInfo.recordPerPage
-        : 0}{" "}
-      de {page?.pageInfo?.records ?? 0} resultados
+        : 0} de {page?.pageInfo?.records ?? 0} resultados
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
@@ -490,9 +495,7 @@ function Result(props: SectionProps<typeof loader>) {
   );
   return (
     <>
-      {partial ? (
-        <PartialPageResult {...props} />
-      ) : (
+      {partial ? <PartialPageResult {...props} /> : (
         <div
           id={container}
           {...viewItemListEvent}
@@ -573,14 +576,25 @@ function Result(props: SectionProps<typeof loader>) {
               )}
 
               <div class="flex flex-col gap-5">
-                {searchTerm && (
-                  <div class="text-sm text-[#646072] flex-col hidden lg:flex">
-                    Você buscou por
-                    <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
-                      {searchTerm}
-                    </span>
-                  </div>
-                )}
+                <div class="text-sm text-[#646072] flex-col hidden lg:flex">
+                  {searchTerm
+                    ? (
+                      <>
+                        Você buscou por
+                        <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
+                          {searchTerm}
+                        </span>
+                      </>
+                    )
+                    : (
+                      <>
+                        Você está em:
+                        <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
+                          {categoryName}
+                        </span>
+                      </>
+                    )}
+                </div>
                 {device === "desktop" && props.page?.products.length && (
                   <>
                     <div class="flex flex-col md:flex-row justify-between items-center">
@@ -589,7 +603,7 @@ function Result(props: SectionProps<typeof loader>) {
                         <AddAllProductsToCartButton
                           class={clx(
                             " bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full px-2 md:my-2",
-                            "hover:opacity-80 ease-in-out duration-300"
+                            "hover:opacity-80 ease-in-out duration-300",
                           )}
                         />
                       )}
@@ -600,15 +614,15 @@ function Result(props: SectionProps<typeof loader>) {
                 {device === "mobile" &&
                   isWishList &&
                   props.page?.products.length && (
-                    <div class="flex justify-center">
-                      <AddAllProductsToCartButton
-                        class={clx(
-                          "bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation px-2 my-2",
-                          "hover:opacity-80 ease-in-out duration-300"
-                        )}
-                      />
-                    </div>
-                  )}
+                  <div class="flex justify-center">
+                    <AddAllProductsToCartButton
+                      class={clx(
+                        "bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation px-2 my-2",
+                        "hover:opacity-80 ease-in-out duration-300",
+                      )}
+                    />
+                  </div>
+                )}
                 <PageResult {...props} />
                 <div id="sentinel" />
               </div>
@@ -620,7 +634,7 @@ function Result(props: SectionProps<typeof loader>) {
               __html: useScript(
                 onLoad,
                 pageInfo.records || products.length,
-                pageInfo
+                pageInfo,
               ),
             }}
           />
@@ -631,7 +645,7 @@ function Result(props: SectionProps<typeof loader>) {
               __html: useScript(
                 setPageQuerystring,
                 `${pageInfo.currentPage}`,
-                container
+                container,
               ),
             }}
           />

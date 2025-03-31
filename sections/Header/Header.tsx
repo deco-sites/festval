@@ -69,7 +69,7 @@ export interface Props {
    * @hide true */
   loading?: "eager" | "lazy";
   /**
-   *@title Sign In
+   * @title Sign In
    * @description Sign In configuration
    */
   variant?: SingInProps;
@@ -112,7 +112,7 @@ export const loader = (
     region,
   }: Props,
   req: Request,
-  _ctx: AppContext
+  _ctx: AppContext,
 ) => {
   const cookies = getCookies(req.headers);
   const regionCookie = cookies["region"];
@@ -146,7 +146,8 @@ const Desktop = ({
 }: Props) => (
   <>
     <ModalSessionInit modalInitProps={modalInitProps.modalInitProps} />
-    {/* <Modal id={SEARCHBAR_POPUP_ID}>
+    {
+      /* <Modal id={SEARCHBAR_POPUP_ID}>
       <div class="absolute top-0 bg-base-100 container" style={{ marginTop: HEADER_HEIGHT_MOBILE }}>
         {loading === "lazy" ? (
           <div class="flex justify-center items-center">
@@ -156,41 +157,44 @@ const Desktop = ({
           <Searchbar {...searchbar} />
         )}
       </div>
-    </Modal> */}
+    </Modal> */
+    }
     <div class="flex flex-col gap-2 pt-2 shadow">
       <div class="custom-container flex justify-between items-center w-full">
         <div class="flex flex-1">
-          <a
-            href={
-              region === "Curitiba"
+          <h1>
+            <a
+              href={region === "Curitiba"
                 ? "/cwb"
                 : region === "Cascavel"
                 ? "/cac"
-                : "/"
-            }
-            aria-label="Store logo"
-          >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width || 100}
-              height={logo.height || 23}
-            />
-          </a>
+                : "/"}
+              aria-label="Store logo"
+            >
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                width={logo.width || 100}
+                height={logo.height || 23}
+              />
+            </a>
+          </h1>
         </div>
 
         <div class="flex flex-auto">
           <Searchbar {...searchbar} />
         </div>
 
-        {/* <label
+        {
+          /* <label
           for={SEARCHBAR_POPUP_ID}
           class="input input-bordered bg-gray-100 border-none rounded flex flex-1 justify-between items-center gap-2 w-full"
           aria-label="search icon button"
         >
           <span class="text-base-400 truncate">Buscar produtos</span>
           <Icon id="search" />
-        </label> */}
+        </label> */
+        }
 
         <div class="flex flex-1 justify-end gap-4">
           <MyOrders />
@@ -206,11 +210,9 @@ const Desktop = ({
             {navItems
               ?.slice(0, 10)
               .map((item, index) =>
-                index === 0 ? (
-                  <MegaMenu key={index} item={item} />
-                ) : (
-                  <NavItem key={index} item={item} />
-                )
+                index === 0
+                  ? <MegaMenu key={index} item={item} />
+                  : <NavItem key={index} item={item} />
               )}
           </ul>
         </div>
@@ -238,17 +240,17 @@ const Mobile = ({
           drawer={SIDEMENU_DRAWER_ID}
           banner={imageBannerMobile ?? null}
         >
-          {loading === "lazy" ? (
-            <div
-              id={SIDEMENU_CONTAINER_ID}
-              class="h-full flex items-center justify-center"
-              style={{ minWidth: "100vw" }}
-            >
-              <span class="loading loading-spinner" />
-            </div>
-          ) : (
-            <Menu navItems={navItemsMobile ?? []} />
-          )}
+          {loading === "lazy"
+            ? (
+              <div
+                id={SIDEMENU_CONTAINER_ID}
+                class="h-full flex items-center justify-center"
+                style={{ minWidth: "100vw" }}
+              >
+                <span class="loading loading-spinner" />
+              </div>
+            )
+            : <Menu navItems={navItemsMobile ?? []} />}
         </MenuMobileDrawer.Aside>
       }
     />
@@ -299,7 +301,7 @@ const onLoad = (id: string) => {
   const topbar = document.getElementById("topbar");
   const navbar = header?.querySelector(".navbar-topbar-control");
   const overlayMegamenu = navbar?.querySelector(
-    ".megamenu-overlay"
+    ".megamenu-overlay",
   ) as HTMLDivElement;
 
   if (!header || !navbar) return;
@@ -331,7 +333,8 @@ const onLoad = (id: string) => {
 function Header({
   alerts = [],
   logo = {
-    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -344,15 +347,16 @@ function Header({
     <header
       id={id}
       style={{
-        height:
-          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
+        height: device === "desktop"
+          ? HEADER_HEIGHT_DESKTOP
+          : HEADER_HEIGHT_MOBILE,
       }}
     >
       {props.topBarProps &&
         props.topBarProps.topBarProps &&
         props.topBarProps.topBarProps.desktop && (
-          <Topbar topBarProps={props.topBarProps.topBarProps} />
-        )}
+        <Topbar topBarProps={props.topBarProps.topBarProps} />
+      )}
       <div
         class="navbar-topbar-control bg-base-100 fixed w-screen z-40"
         style={{
@@ -360,11 +364,9 @@ function Header({
         }}
       >
         {alerts.length > 0 && <Alert alerts={alerts} />}
-        {device === "desktop" ? (
-          <Desktop logo={logo} {...props} />
-        ) : (
-          <Mobile logo={logo} {...props} />
-        )}
+        {device === "desktop"
+          ? <Desktop logo={logo} {...props} />
+          : <Mobile logo={logo} {...props} />}
       </div>
       <script
         type="module"
@@ -374,7 +376,7 @@ function Header({
   );
 }
 export const LoadingFallback = (
-  props: LoadingFallbackProps<SectionProps<typeof loader>>
+  props: LoadingFallbackProps<SectionProps<typeof loader>>,
 ) => (
   // deno-lint-ignore no-explicit-any
   <Header {...(props as any)} loading="lazy" />
