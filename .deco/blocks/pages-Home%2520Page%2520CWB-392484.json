@@ -99,7 +99,6 @@
           },
           {
             "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
             "region": "Curitiba",
             "desktop": "https://assets.decocache.com/festval/80df2ae9-514e-45fa-8396-d5fb9ed5a9c0/1920x490px.jpg",
             "mobile": "https://assets.decocache.com/festval/d242fc17-cff6-4b3a-b30c-db7d9f48d82a/1080x1500px.jpg",
@@ -107,7 +106,8 @@
             "action": {
               "href": "https://www.festval.com/1634?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Mondelez"
             },
-            "alt": "Promoção Lacta"
+            "alt": "Promoção Lacta",
+            "deadLine": "31/12/2025"
           }
         ],
         "preload": true,
