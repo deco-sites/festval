@@ -29,7 +29,7 @@ function Alert({ alerts = [], interval = 5 }: Props) {
       <Slider.JS rootId={id} interval={interval && interval * 1e3} />
     </div>
   );
-}
+} 
  
 export default Alert;
  
