@@ -283,9 +283,9 @@
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
           "href": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522&utm_source=BannerOfertas&utm_campaign=Azeite+mamma+bia",
           "hrefMobile": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522&utm_source=BannerOfertas&utm_campaign=Azeite+mamma+bia",
-          "deadLine": "0",
-          "initialDate": "0",
-          "activeTerm": true
+          "initialDate": "2025-03-31",
+          "activeTerm": false,
+          "deadLine": "2025-04-01"
         }
       ]
     },
