@@ -266,7 +266,8 @@
           "deadLine": "2024-12-06",
           "activeTerm": false
         }
-      ]
+      ],
+      "inverted": false
     },
     {
       "__resolveType": "site/sections/separator.tsx",
@@ -326,7 +327,8 @@
           "initialDate": "0",
           "activeTerm": false
         }
-      ]
+      ],
+      "inverted": false
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -397,14 +399,14 @@
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
-          "sort": "orders:desc",
+          "sort": "release:desc",
           "collection": "1067",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "title": "Importados",
+      "title": "Destaques Exclusivos",
       "cta": "/1067?map=productClusterIds"
     },
     {
