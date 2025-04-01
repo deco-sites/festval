@@ -20,7 +20,7 @@ export interface WishListNavProps {
 function WishListNav({ icon }: WishListNavProps) {
   return (
     <>
-      <a href="/wishlist">
+      <a href="/wishlist" title="Favoritos">
         {icon?.src ? (
           <Image
             src={icon.src}

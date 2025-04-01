@@ -11,7 +11,7 @@ interface Image {
 
 function MyOrders() {
   return (
-    <a href="/account#/orders">
+    <a href="/account#/orders" title="Pedir novamente">
       <Icon width={32} height={32} id="my_orders" />
     </a>
   );

@@ -40,8 +40,9 @@ function SignIn({ variant }: SingInProps) {
         )}
         href="/login"
         aria-label="Login"
+        title="Fazer Login"
       >
-        <Icon id="account_circle" />
+        <Icon id="account_circle"/>
       </a>
       <a
         class={clx(
@@ -51,6 +52,7 @@ function SignIn({ variant }: SingInProps) {
         )}
         href="/account"
         aria-label="Account"
+        title="Minha conta" 
       >
         <Icon id="account_circle" />
       </a>
