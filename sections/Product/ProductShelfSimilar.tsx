@@ -68,7 +68,7 @@ export default function ProductShelfSimilar({
   });
   return (
     <Section.Container
-      class="custom-container relative sm:!py-12"
+      class="carousel-fix custom-container relative sm:!py-12 !p-0 !w-[101%] "
       {...viewItemListEvent}
     >
       <Section.Header title={title} cta={cta} />

@@ -3663,6 +3663,9 @@ details.collapse summary::-webkit-details-marker {
       max-width: 1300px;
       padding: 0.625rem;
     }
+    .carousel-fix {
+      max-width: 1310px;
+    }
   }
 @media only screen and (max-width: 1359px) and (min-width: 1220px) {
     .custom-container {
@@ -4222,6 +4225,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-screen {
   min-height: 100vh;
+}
+.\!w-\[101\%\] {
+  width: 101% !important;
 }
 .\!w-fit {
   width: -moz-fit-content !important;
@@ -5086,6 +5092,9 @@ details.collapse summary::-webkit-details-marker {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+.\!p-0 {
+  padding: 0px !important;
 }
 .p-0 {
   padding: 0px;
