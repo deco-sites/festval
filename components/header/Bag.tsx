@@ -31,5 +31,5 @@ function Bag() {
       <script type="module" dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }} />
     </>
   );
-}
+} 
 export default Bag;
