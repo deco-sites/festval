@@ -75,6 +75,17 @@
             "action": {
               "href": "https://www.festval.com/s?q=pepsi+lata&page=1&utm_source=BannerHome&utm_campaign=PepsiLata"
             }
+          },
+          {
+            "initialDate": "2025/04/01",
+            "deadLine": "2025/04/06",
+            "alt": "Festival-nestle",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=FestivalNestl%C3%A9"
+            },
+            "desktop": "https://assets.decocache.com/festval/89cea5bb-088e-4c26-aa2d-ab1869bb5d02/festival_nestle_kv_1920x490px.jpg",
+            "mobile": "https://assets.decocache.com/festval/e9baacc5-a6e3-48bd-aa4a-93fcc785fab6/festival_nestle_kv_1080x1500px.jpg"
           }
         ],
         "preload": true,
