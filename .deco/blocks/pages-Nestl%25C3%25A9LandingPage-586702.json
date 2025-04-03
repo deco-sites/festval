@@ -179,7 +179,8 @@
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/785da525-713c-4882-8c60-cffa75f558b3/20241010_td_ecom_lp_festval_1136X554-2.gif",
             "hrefMobile": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1"
           }
-        ]
+        ],
+        "inverted": true
       }
     },
     {

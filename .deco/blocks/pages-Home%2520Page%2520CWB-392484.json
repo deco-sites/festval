@@ -282,11 +282,11 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://data.decoassets.com/festval/c55f1e63-d1ef-414f-8a29-4f5d66d1395a/BANNER-DE-OFERTAS-M-patagonia.jpg",
+          "desktop": "https://assets.decocache.com/festval/50e94912-a1fe-403d-8777-d2f3cf18eb0d/BANNER-DE-OFERTAS-M-comfort.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
-          "href": "https://www.festval.com/s?q=Cerveja+patagonia+lata+473ml&page=1",
-          "mobile": "https://data.decoassets.com/festval/2c246def-9c4c-4f61-9978-d22d379bac9e/patagonia.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=Cerveja+patagonia+lata+473ml&page=1",
+          "href": "https://www.festval.com/s?q=comfort+1l&page=1",
+          "mobile": "https://assets.decocache.com/festval/826a2b91-2656-4d6f-b68b-4eeeeaed724c/comfort-2.jpg",
+          "hrefMobile": "https://www.festval.com/s?q=comfort+1l&page=1",
           "region": "Curitiba",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
