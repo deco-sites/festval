@@ -86,6 +86,17 @@
             },
             "desktop": "https://assets.decocache.com/festval/89cea5bb-088e-4c26-aa2d-ab1869bb5d02/festival_nestle_kv_1920x490px.jpg",
             "mobile": "https://assets.decocache.com/festval/e9baacc5-a6e3-48bd-aa4a-93fcc785fab6/festival_nestle_kv_1080x1500px.jpg"
+          },
+          {
+            "initialDate": "2025/04/04",
+            "deadLine": "2025/05/04",
+            "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
+            "mobile": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
+            "alt": "sucos-laranja",
+            "action": {
+              "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
+            },
+            "activeTerm": true
           }
         ],
         "preload": true,
