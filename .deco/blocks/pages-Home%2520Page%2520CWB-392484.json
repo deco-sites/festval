@@ -24,20 +24,31 @@
             }
           },
           {
+            "initialDate": "2025/04/04",
+            "deadLine": "2025/05/04",
+            "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
+            "mobile": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
+            "alt": "sucos-laranja",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
+            }
+          },
+          {
             "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
-            "activeTerm": true
+            "activeTerm": true,
+            "deadLine": "01/01/2024"
           },
           {
-            "initialDate": "2025-03-25",
+            "deadLine": "2025-04-06",
             "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
             "alt": "peixes",
             "activeTerm": true,
-            "deadLine": "2025-04-06",
+            "initialDate": "2025-03-25",
             "action": {
               "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
             }
@@ -48,12 +59,13 @@
             "mobile": "https://assets.decocache.com/festval/fefb1726-46ff-40e8-8250-2cda129cca57/1080X1500.jpg",
             "alt": "chuck-eye",
             "activeTerm": true,
-            "initialDate": "2025-03-28",
             "action": {
               "href": "https://www.festval.com/chuck-eye-roll-1953?page=1&utm_source=BannerHome&utm_campaign=Chuck+Eye+Roll+1953"
-            }
+            },
+            "initialDate": "2025-03-28"
           },
           {
+            "initialDate": "2025/03/31",
             "deadLine": "2025/04/06",
             "desktop": "https://assets.decocache.com/festval/80df2ae9-514e-45fa-8396-d5fb9ed5a9c0/1920x490px.jpg",
             "mobile": "https://assets.decocache.com/festval/d242fc17-cff6-4b3a-b30c-db7d9f48d82a/1080x1500px.jpg",
@@ -62,39 +74,27 @@
             "action": {
               "href": "https://www.festval.com/1634?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Mondelez"
             },
-            "region": "Curitiba",
-            "initialDate": "2025/03/31"
+            "region": "Curitiba"
           },
           {
             "initialDate": "2025-04-01",
             "deadLine": "2025-04-06",
-            "desktop": "https://assets.decocache.com/festval/255c36ba-2421-453a-95bb-faeda2822277/1920X490-PEPSI.jpg",
-            "mobile": "https://assets.decocache.com/festval/c649b042-050b-4502-8cf8-cc05a459b7ae/1080X1500-PEPSI.jpg",
             "alt": "PEPSI",
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/s?q=pepsi+lata&page=1&utm_source=BannerHome&utm_campaign=PepsiLata"
-            }
+            },
+            "desktop": "https://assets.decocache.com/festval/255c36ba-2421-453a-95bb-faeda2822277/1920X490-PEPSI.jpg",
+            "mobile": "https://assets.decocache.com/festval/c649b042-050b-4502-8cf8-cc05a459b7ae/1080X1500-PEPSI.jpg"
           },
           {
             "initialDate": "2025/04/01",
             "deadLine": "2025/04/06",
+            "desktop": "https://assets.decocache.com/festval/89cea5bb-088e-4c26-aa2d-ab1869bb5d02/festival_nestle_kv_1920x490px.jpg",
+            "mobile": "https://assets.decocache.com/festval/e9baacc5-a6e3-48bd-aa4a-93fcc785fab6/festival_nestle_kv_1080x1500px.jpg",
             "alt": "Festival-nestle",
-            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=FestivalNestl%C3%A9"
-            },
-            "desktop": "https://assets.decocache.com/festval/89cea5bb-088e-4c26-aa2d-ab1869bb5d02/festival_nestle_kv_1920x490px.jpg",
-            "mobile": "https://assets.decocache.com/festval/e9baacc5-a6e3-48bd-aa4a-93fcc785fab6/festival_nestle_kv_1080x1500px.jpg"
-          },
-          {
-            "initialDate": "2025/04/04",
-            "deadLine": "2025/05/04",
-            "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
-            "mobile": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
-            "alt": "sucos-laranja",
-            "action": {
-              "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
             },
             "activeTerm": true
           }
