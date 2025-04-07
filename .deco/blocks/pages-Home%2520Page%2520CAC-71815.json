@@ -55,6 +55,18 @@
             "action": {
               "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
             }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
+            "mobile": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
+            "alt": "nestle",
+            "action": {
+              "href": "https://www.festval.com/1168?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=receitaNestlepascoa"
+            },
+            "activeTerm": true
           }
         ],
         "preload": true,
