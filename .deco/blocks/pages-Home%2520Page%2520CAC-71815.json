@@ -31,7 +31,10 @@
             "deadLine": "01/01/2025",
             "activeTerm": false,
             "initialDate": "01/01/2025",
-            "region": "Cascavel"
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
+            }
           },
           {
             "initialDate": "01/01/2024",
