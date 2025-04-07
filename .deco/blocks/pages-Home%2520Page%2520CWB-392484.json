@@ -43,59 +43,22 @@
             "deadLine": "01/01/2024"
           },
           {
-            "deadLine": "2025-04-06",
-            "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
-            "alt": "peixes",
-            "activeTerm": true,
-            "initialDate": "2025-03-25",
-            "action": {
-              "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
-            }
-          },
-          {
             "deadLine": "2025-04-18",
             "desktop": "https://assets.decocache.com/festval/900b0ba7-09f4-4fe3-8019-1a653e5e154a/1920X490.jpg",
             "mobile": "https://assets.decocache.com/festval/fefb1726-46ff-40e8-8250-2cda129cca57/1080X1500.jpg",
             "alt": "chuck-eye",
             "activeTerm": true,
+            "initialDate": "2025-03-28",
             "action": {
               "href": "https://www.festval.com/chuck-eye-roll-1953?page=1&utm_source=BannerHome&utm_campaign=Chuck+Eye+Roll+1953"
-            },
-            "initialDate": "2025-03-28"
+            }
           },
           {
-            "initialDate": "2025/03/31",
-            "deadLine": "2025/04/06",
-            "desktop": "https://assets.decocache.com/festval/80df2ae9-514e-45fa-8396-d5fb9ed5a9c0/1920x490px.jpg",
-            "mobile": "https://assets.decocache.com/festval/d242fc17-cff6-4b3a-b30c-db7d9f48d82a/1080x1500px.jpg",
-            "alt": "Promoção Lacta",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1634?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Mondelez"
-            },
-            "region": "Curitiba"
-          },
-          {
-            "initialDate": "2025-04-01",
-            "deadLine": "2025-04-06",
-            "alt": "PEPSI",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/s?q=pepsi+lata&page=1&utm_source=BannerHome&utm_campaign=PepsiLata"
-            },
-            "desktop": "https://assets.decocache.com/festval/255c36ba-2421-453a-95bb-faeda2822277/1920X490-PEPSI.jpg",
-            "mobile": "https://assets.decocache.com/festval/c649b042-050b-4502-8cf8-cc05a459b7ae/1080X1500-PEPSI.jpg"
-          },
-          {
-            "initialDate": "2025/04/01",
-            "deadLine": "2025/04/06",
-            "desktop": "https://assets.decocache.com/festval/89cea5bb-088e-4c26-aa2d-ab1869bb5d02/festival_nestle_kv_1920x490px.jpg",
-            "mobile": "https://assets.decocache.com/festval/e9baacc5-a6e3-48bd-aa4a-93fcc785fab6/festival_nestle_kv_1080x1500px.jpg",
-            "alt": "Festival-nestle",
-            "action": {
-              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=FestivalNestl%C3%A9"
-            },
+            "initialDate": "2025-04-07",
+            "deadLine": "2025-04-13",
+            "desktop": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
+            "alt": "Receita-nestle",
             "activeTerm": true
           }
         ],
