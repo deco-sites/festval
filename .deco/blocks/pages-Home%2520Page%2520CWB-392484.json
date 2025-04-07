@@ -275,7 +275,7 @@
           "href": "https://www.festval.com/s?q=comfort+1l&page=1",
           "mobile": "https://assets.decocache.com/festval/826a2b91-2656-4d6f-b68b-4eeeeaed724c/comfort-2.jpg",
           "hrefMobile": "https://www.festval.com/s?q=comfort+1l&page=1",
-          "region": "Curitiba",
+          "region": "Cascavel",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
@@ -283,7 +283,7 @@
         },
         {
           "positionBanner": "Left",
-          "region": "Curitiba",
+          "region": "Cascavel",
           "mobile": "https://assets.decocache.com/festval/59afc6ad-e38b-4a6e-9e4c-8c96dee2048b/azeite-anfora.jpg",
           "desktop": "https://assets.decocache.com/festval/375fadae-4754-4f22-aa27-5992c80b931c/BANNER-DE-OFERTAS-M-azeite-anfora.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
