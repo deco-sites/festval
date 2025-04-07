@@ -56,6 +56,17 @@
           {
             "initialDate": "2025-04-07",
             "deadLine": "2025-04-13",
+            "desktop": "https://assets.decocache.com/festval/068110ec-e8bc-480b-aca9-652e25b808b0/SUL---BEC---Pepsi-e-Guarana-600ml---DE-POR----1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/f3562740-611b-4ea8-ab57-a12f1c4a64d8/SUL---BEC---Pepsi-e-Guarana-600ml---DE-POR----1080x1500.jpg",
+            "alt": "AMBEV-600ml",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1636?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=600mlAMBEV"
+            }
+          },
+          {
+            "initialDate": "2025-04-07",
+            "deadLine": "2025-04-13",
             "desktop": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
             "alt": "Receita-nestle",
