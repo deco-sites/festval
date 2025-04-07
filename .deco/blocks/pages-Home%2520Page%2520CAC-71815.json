@@ -45,28 +45,13 @@
             "activeTerm": true
           },
           {
-            "deadLine": "2025-03-30",
+            "initialDate": "01/01/2025",
+            "deadLine": "01/01/2025",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/b4c1094a-d2c4-45f1-a68f-858d14fb5d1d/nutriweek-1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/5dc1d5a5-7b94-4688-ab82-9c4539ff21ca/nutriweek-1080x1500.jpg",
-            "alt": "nutrition",
-            "activeTerm": true,
-            "initialDate": "2025-03-24",
-            "action": {
-              "href": "https://www.festval.com/1630?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NutritionWeek"
-            }
-          },
-          {
-            "initialDate": "2025-03-25",
-            "deadLine": "2025-03-30",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/9abb1f6c-9162-4218-b1b9-e36b03d2c3dd/COQUEIRO_QUA2025_FESTVAL_1920x490pxs.jpg",
-            "mobile": "https://assets.decocache.com/festval/cf8be692-4885-497b-a4f6-8491bedf4239/COQUEIRO_QUA2025_FESTVAL_1080x1500pxs.jpg",
-            "alt": "coqueiro",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1631?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=PromoCoqueiro"
-            }
+            "desktop": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
+            "mobile": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
+            "alt": "sucos-festval",
+            "activeTerm": false
           }
         ],
         "preload": true,
