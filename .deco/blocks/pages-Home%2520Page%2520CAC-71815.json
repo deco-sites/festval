@@ -45,28 +45,16 @@
             }
           },
           {
-            "initialDate": "2025-03-25",
-            "deadLine": "2025-04-25",
-            "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
-            "alt": "caderno-peixes",
-            "activeTerm": true,
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
-            }
-          },
-          {
             "initialDate": "2025-04-07",
             "deadLine": "2025-04-13",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
             "mobile": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
             "alt": "nestle",
+            "activeTerm": true,
+            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1168?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=receitaNestlepascoa"
-            },
-            "activeTerm": true
+            }
           }
         ],
         "preload": true,
