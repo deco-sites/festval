@@ -25,40 +25,40 @@
             }
           },
           {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
+            "alt": "site",
+            "deadLine": "01/01/2024",
+            "activeTerm": false,
+            "initialDate": "01/01/2024"
+          },
+          {
+            "initialDate": "01/01/2025",
+            "deadLine": "01/01/2025",
             "desktop": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
             "mobile": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
             "alt": "sucos-festval",
-            "deadLine": "01/01/2025",
             "activeTerm": false,
-            "initialDate": "01/01/2025",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
             }
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
-            "alt": "site",
-            "activeTerm": false
-          },
-          {
             "initialDate": "2025-03-25",
             "deadLine": "2025-04-25",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/86d2645e-132a-486b-b050-1f9fcae8999c/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/baa8be0e-0a6e-48b7-82cc-c751fe0ea35f/AF_V03_Campanha_Peixes_e_Frutos-do_Mar_Festval-com_2025_1080x1500px.png",
             "alt": "caderno-peixes",
             "activeTerm": true,
+            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1633?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Peixes%26frutosdomar"
             }
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
+            "initialDate": "2025-04-07",
+            "deadLine": "2025-04-13",
             "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
             "mobile": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
