@@ -74,6 +74,17 @@
             "action": {
               "href": "https://www.festval.com/1168?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=receitaNestlepascoa"
             }
+          },
+          {
+            "initialDate": "2025-04-08",
+            "desktop": "https://assets.decocache.com/festval/704b5134-2c5f-4810-8921-f6766a6ccedc/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1920x490px.jpg",
+            "mobile": "https://assets.decocache.com/festval/a266345e-fb3f-4fe6-b62c-75a45713046c/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1080x1500px.jpg",
+            "alt": "páscoa-festval",
+            "activeTerm": true,
+            "deadLine": "2025-04-20",
+            "action": {
+              "href": "https://www.festval.com/pascoa?page=1&utm_source=BannerHome&utm_campaign=pascoa-festval"
+            }
           }
         ],
         "preload": true,
