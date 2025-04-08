@@ -270,12 +270,12 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://assets.decocache.com/festval/50e94912-a1fe-403d-8777-d2f3cf18eb0d/BANNER-DE-OFERTAS-M-comfort.jpg",
+          "desktop": "https://assets.decocache.com/festval/58f4b37d-259d-4ddd-8da9-c83404c8001c/BANNER-DE-OFERTAS-M-chocotrio.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
-          "href": "https://www.festval.com/s?q=comfort+1l&page=1",
-          "mobile": "https://assets.decocache.com/festval/826a2b91-2656-4d6f-b68b-4eeeeaed724c/comfort-2.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=comfort+1l&page=1",
-          "region": "Cascavel",
+          "href": "https://www.festval.com/s?q=chocotrio&page=1",
+          "mobile": "https://assets.decocache.com/festval/1dffaa44-50f5-4149-a47b-b8d57e322b1a/chocotrio.jpg",
+          "hrefMobile": "https://www.festval.com/s?q=chocotrio&page=1",
+          "region": "Mostrar em ambas",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
@@ -283,15 +283,15 @@
         },
         {
           "positionBanner": "Left",
-          "region": "Cascavel",
-          "mobile": "https://assets.decocache.com/festval/59afc6ad-e38b-4a6e-9e4c-8c96dee2048b/azeite-anfora.jpg",
-          "desktop": "https://assets.decocache.com/festval/375fadae-4754-4f22-aa27-5992c80b931c/BANNER-DE-OFERTAS-M-azeite-anfora.jpg",
+          "mobile": "https://assets.decocache.com/festval/6fa5d984-344c-4401-90fc-6e88094719cb/vanish-promo.jpg",
+          "desktop": "https://assets.decocache.com/festval/b0ca82df-e22c-47e0-8a03-cc516d3bb8ca/BANNER-DE-OFERTAS-M-vanish-promo.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522&utm_source=BannerOfertas&utm_campaign=Azeite+mamma+bia",
-          "hrefMobile": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522&utm_source=BannerOfertas&utm_campaign=Azeite+mamma+bia",
+          "href": "https://www.festval.com/s?q=oxi+action+vanish+sache+400g&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=oxi+action+vanish+sache+400g&page=1",
           "deadLine": "0",
           "initialDate": "0",
-          "activeTerm": false
+          "activeTerm": false,
+          "region": "Mostrar em ambas"
         }
       ],
       "inverted": false
