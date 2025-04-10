@@ -85,6 +85,17 @@
             "action": {
               "href": "https://www.festval.com/1168?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=receitaNestlepascoa"
             }
+          },
+          {
+            "initialDate": "2025-04-10",
+            "deadLine": "2025-04-17",
+            "desktop": "https://assets.decocache.com/festval/2183f7cc-0e63-4584-b0f5-00f20cb001ec/1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/522a7323-cc31-4080-8d0f-0864dc55ffb1/1080x1500.jpg",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
+            },
+            "alt": "lacta_páscoa"
           }
         ],
         "preload": true,
