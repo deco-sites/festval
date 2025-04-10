@@ -30,6 +30,30 @@
                 "hrefMobile": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=BannerSearch&utm_campaign=WppSommelier"
               }
             ]
+          },
+          {
+            "matcher": [
+              "Flores",
+              "Flor",
+              "buque",
+              "buquê",
+              "arranjo",
+              "arranjos",
+              "planta",
+              "plantas",
+              "vaso",
+              "vasos",
+              "floricultura"
+            ],
+            "images": [
+              {
+                "desktop": "https://assets.decocache.com/festval/e0fe0c82-fce1-4c55-a5ab-c4bc24fb26e0/Florista-1920x490.jpg",
+                "mobile": "https://assets.decocache.com/festval/519e244e-0833-48a9-b0a5-115323bc3be3/Florista-1080x490.jpg",
+                "alt": "florista",
+                "href": "https://wa.me/5541997620458?text=Ol%C3%A1%2C%20Bom%20Dia.%20Vim%20do%20Festval.com%20e%20gostaria%20de%20personalizar%20ou%20saber%20mais%20sobre%20as%20flores%20!",
+                "hrefMobile": "https://wa.me/5541997620458?text=Ol%C3%A1%2C%20Bom%20Dia.%20Vim%20do%20Festval.com%20e%20gostaria%20de%20personalizar%20ou%20saber%20mais%20sobre%20as%20flores%20!"
+              }
+            ]
           }
         ]
       }
