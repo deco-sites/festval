@@ -326,6 +326,22 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "collection": "377",
+            "sort": "",
+            "count": 12,
+            "hideUnavailableItems": true
+          }
+        },
+        "title": "Páscoa Lindt"
+      }
+    },
+    {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
