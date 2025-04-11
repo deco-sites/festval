@@ -91,6 +91,18 @@
             },
             "activeTerm": false,
             "alt": "lacta-pascoa"
+          },
+          {
+            "initialDate": "2025-04-07",
+            "deadLine": "2025-04-13",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/f3562740-611b-4ea8-ab57-a12f1c4a64d8/SUL---BEC---Pepsi-e-Guarana-600ml---DE-POR----1080x1500.jpg",
+            "mobile": "https://assets.decocache.com/festval/068110ec-e8bc-480b-aca9-652e25b808b0/SUL---BEC---Pepsi-e-Guarana-600ml---DE-POR----1920x490.jpg",
+            "alt": "ambev",
+            "action": {
+              "href": "https://www.festval.com/1636?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=600mlAMBEV"
+            },
+            "activeTerm": false
           }
         ],
         "preload": true,
