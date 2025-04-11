@@ -35,20 +35,31 @@
             }
           },
           {
-            "initialDate": "01/01/2024",
+            "initialDate": "2025-04-11",
+            "desktop": "https://assets.decocache.com/festval/a96a096d-6e3f-4f47-9509-6283f07befa9/2025.03.28-_-LINDT-_-Banners-_-C2M---Banner-Home-_-1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/3b183ec8-e892-4b8e-a014-73cd52e56996/2025.03.28-_-LINDT-_-Banners-_-C2M---Banner-Home-_-1080x1500.png",
+            "alt": "LindtPáscoa",
+            "activeTerm": true,
+            "deadLine": "2025-04-17",
+            "action": {
+              "href": "https://www.festval.com/377?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=pascoalindt"
+            }
+          },
+          {
+            "deadLine": "01/01/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
             "activeTerm": true,
-            "deadLine": "01/01/2024"
+            "initialDate": "01/01/2024"
           },
           {
+            "initialDate": "2025-03-28",
             "deadLine": "2025-04-18",
             "desktop": "https://assets.decocache.com/festval/900b0ba7-09f4-4fe3-8019-1a653e5e154a/1920X490.jpg",
             "mobile": "https://assets.decocache.com/festval/fefb1726-46ff-40e8-8250-2cda129cca57/1080X1500.jpg",
             "alt": "chuck-eye",
             "activeTerm": true,
-            "initialDate": "2025-03-28",
             "action": {
               "href": "https://www.festval.com/chuck-eye-roll-1953?page=1&utm_source=BannerHome&utm_campaign=Chuck+Eye+Roll+1953"
             }
@@ -66,36 +77,36 @@
           },
           {
             "initialDate": "2025-04-08",
-            "deadLine": "2025-04-20",
             "desktop": "https://assets.decocache.com/festval/a81b1cef-dd2b-4c09-8b67-a915cd0ecd92/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1920x490px.jpg",
             "mobile": "https://assets.decocache.com/festval/84ab776b-9ba1-4c32-9b7e-8c4ab77813b1/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1080x1500px.jpg",
             "alt": "páscoa-festval",
             "activeTerm": true,
+            "deadLine": "2025-04-20",
             "action": {
               "href": "https://www.festval.com/pascoa?page=1&utm_source=BannerHome&utm_campaign=pascoa-festval"
             }
           },
           {
             "initialDate": "2025-04-07",
+            "deadLine": "2025-04-13",
             "desktop": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
-            "alt": "Receita-nestle",
             "activeTerm": true,
-            "deadLine": "2025-04-13",
             "action": {
               "href": "https://www.festval.com/1168?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=receitaNestlepascoa"
-            }
+            },
+            "alt": "Receita-nestle"
           },
           {
             "initialDate": "2025-04-10",
             "deadLine": "2025-04-17",
             "desktop": "https://assets.decocache.com/festval/2183f7cc-0e63-4584-b0f5-00f20cb001ec/1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/522a7323-cc31-4080-8d0f-0864dc55ffb1/1080x1500.jpg",
+            "alt": "lacta_páscoa",
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
-            },
-            "alt": "lacta_páscoa"
+            }
           }
         ],
         "preload": true,
