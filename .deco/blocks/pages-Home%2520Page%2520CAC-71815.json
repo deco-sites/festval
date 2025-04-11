@@ -79,6 +79,17 @@
             "action": {
               "href": "https://www.festval.com/pascoa?page=1&utm_source=BannerHome&utm_campaign=pascoa-festval"
             }
+          },
+          {
+            "initialDate": "2025-04-10",
+            "deadLine": "2025-04-17",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/522a7323-cc31-4080-8d0f-0864dc55ffb1/1080x1500.jpg",
+            "mobile": "https://assets.decocache.com/festval/2183f7cc-0e63-4584-b0f5-00f20cb001ec/1920x490.jpg",
+            "action": {
+              "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
+            },
+            "activeTerm": false
           }
         ],
         "preload": true,
