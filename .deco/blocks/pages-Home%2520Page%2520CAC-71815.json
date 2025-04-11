@@ -89,7 +89,8 @@
             "action": {
               "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
             },
-            "activeTerm": false
+            "activeTerm": false,
+            "alt": "lacta-pascoa"
           }
         ],
         "preload": true,
