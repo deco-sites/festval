@@ -240,11 +240,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/d9b3e69b-71cf-425a-afce-6f27689a33f3/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/6e3e2bd6-3167-4f02-b9ba-10c296ac1567/horti-teste-app-4.jpg",
-          "hrefMobile": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/b216c4d2-c5a2-41e6-93f4-432b6a2299f2/churras.jpg",
+          "hrefMobile": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
           "initialDate": "2025-03-31",
