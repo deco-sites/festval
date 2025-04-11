@@ -455,8 +455,15 @@ function Result(props: SectionProps<typeof loader>) {
   const { startingPage = 0, url, partial, searchTerm, isWishList } = props;
   const page = props.page!;
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
+
+  const urlParams = new URL(props.url);
+  const collectionid = urlParams.pathname.split("/").pop() || undefined;
+
+  const collectionName = collectionid && products[0]?.additionalProperty?.find(p => p.name === "cluster" && p.propertyID === collectionid)?.value;
   const categoryName = breadcrumb.itemListElement?.at(-1)?.name ||
-    "Categoria não especificada";
+                        collectionName ||
+                        "Categoria não especificada";
+                                           
   const perPage = pageInfo?.recordPerPage || products.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
