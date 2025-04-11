@@ -33,6 +33,18 @@
             "initialDate": "01/01/2024"
           },
           {
+            "initialDate": "2025-04-11",
+            "deadLine": "2025-04-17",
+            "desktop": "https://assets.decocache.com/festval/3b183ec8-e892-4b8e-a014-73cd52e56996/2025.03.28-_-LINDT-_-Banners-_-C2M---Banner-Home-_-1080x1500.png",
+            "mobile": "https://assets.decocache.com/festval/a96a096d-6e3f-4f47-9509-6283f07befa9/2025.03.28-_-LINDT-_-Banners-_-C2M---Banner-Home-_-1920x490.png",
+            "alt": "lindt-pascoa",
+            "activeTerm": true,
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/377?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=pascoalindt"
+            }
+          },
+          {
             "initialDate": "01/01/2025",
             "deadLine": "01/01/2025",
             "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
@@ -47,11 +59,11 @@
           {
             "initialDate": "2025-04-07",
             "deadLine": "2025-04-13",
+            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
             "alt": "nestle",
             "activeTerm": true,
-            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1168?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=receitaNestlepascoa"
             }
