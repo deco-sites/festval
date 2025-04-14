@@ -96,6 +96,17 @@
             "action": {
               "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
             }
+          },
+          {
+            "initialDate": "2025-04-14",
+            "deadLine": "2025-04-20",
+            "desktop": "https://assets.decocache.com/festval/a645bad7-896d-4d44-9c54-1f318383db38/FESTVAL-NOVOS-BANNERSSPATEN1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/8a3a6823-7f37-44d9-aff3-c30fdfee25e0/FESTVAL-NOVOS-BANNERS-1080-1500SPATEN.jpg",
+            "alt": "spatenl12p10",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314&utm_source=BannerHome&utm_campaign=spatenleve12pague10"
+            }
           }
         ],
         "preload": true,
