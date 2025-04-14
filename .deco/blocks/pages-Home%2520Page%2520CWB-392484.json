@@ -54,6 +54,17 @@
             "initialDate": "01/01/2024"
           },
           {
+            "initialDate": "2025-04-14",
+            "deadLine": "2025-04-20",
+            "desktop": "https://assets.decocache.com/festval/331c0dc6-348d-4d51-a98e-7616c30b6202/FESTVAL-NOVOS-BANNERS.jpg",
+            "mobile": "https://assets.decocache.com/festval/9ff9d03e-8c1d-47f1-894f-b47ce6db10c7/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "alt": "nestlépascoa",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1641?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=p%C3%A1scoanestl%C3%A9"
+            }
+          },
+          {
             "initialDate": "2025-03-28",
             "deadLine": "2025-04-18",
             "desktop": "https://assets.decocache.com/festval/900b0ba7-09f4-4fe3-8019-1a653e5e154a/1920X490.jpg",
@@ -66,35 +77,24 @@
           },
           {
             "initialDate": "2025-04-08",
-            "deadLine": "2025-04-20",
             "desktop": "https://assets.decocache.com/festval/a81b1cef-dd2b-4c09-8b67-a915cd0ecd92/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1920x490px.jpg",
             "mobile": "https://assets.decocache.com/festval/84ab776b-9ba1-4c32-9b7e-8c4ab77813b1/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1080x1500px.jpg",
             "alt": "páscoa-festval",
             "activeTerm": true,
+            "deadLine": "2025-04-20",
             "action": {
               "href": "https://www.festval.com/pascoa?page=1&utm_source=BannerHome&utm_campaign=pascoa-festval"
             }
           },
           {
             "initialDate": "2025-04-10",
+            "deadLine": "2025-04-17",
             "desktop": "https://assets.decocache.com/festval/2183f7cc-0e63-4584-b0f5-00f20cb001ec/1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/522a7323-cc31-4080-8d0f-0864dc55ffb1/1080x1500.jpg",
             "alt": "lacta_páscoa",
             "activeTerm": true,
-            "deadLine": "2025-04-17",
             "action": {
               "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
-            }
-          },
-          {
-            "initialDate": "2025-04-14",
-            "deadLine": "2025-04-20",
-            "desktop": "https://assets.decocache.com/festval/331c0dc6-348d-4d51-a98e-7616c30b6202/FESTVAL-NOVOS-BANNERS.jpg",
-            "mobile": "https://assets.decocache.com/festval/9ff9d03e-8c1d-47f1-894f-b47ce6db10c7/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
-            "alt": "nestlépascoa",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1641?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=p%C3%A1scoanestl%C3%A9"
             }
           }
         ],
