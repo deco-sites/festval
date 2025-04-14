@@ -113,10 +113,16 @@ export const loader = (props: Props, req: Request) => {
   const { banners } = { ...DEFAULT_PROPS, ...props };
   const url = new URL(req.url);
   const searchQuery = url.searchParams.get("q") || "";
-
+  const pathname = url.pathname.toLowerCase();
+  
+  // isso aqui Une o `pathname` com o `searchQuery` para buscar match em qualquer um dos dois
+  const contextToMatch = `${pathname} ${searchQuery}`; 
+  
   const bannerSet = banners.find(({ matcher }) =>
-    matcher.some((pattern) => searchQuery.toLowerCase().includes(pattern.toLowerCase()))
-  );
+    matcher.some((pattern) =>
+      new RegExp(`\\b${pattern}\\b`, "i").test(contextToMatch)
+    )
+  );;
 
   return { bannerSet };
 };

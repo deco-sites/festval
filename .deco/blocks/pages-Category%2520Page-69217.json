@@ -24,6 +24,27 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+        "banners": [
+          {
+            "matcher": [
+              "adega"
+            ],
+            "images": [
+              {
+                "desktop": "https://assets.decocache.com/festval/793d1060-98c9-4597-a0f8-99ad402b4056/WPPJHONNYBANNER.jpg",
+                "mobile": "https://assets.decocache.com/festval/f5a7f72f-fd41-4659-96ac-98a78e83b662/WPPJHONNYBANNER-MBL.jpg",
+                "href": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=BannerSearch&utm_campaign=WppSommelier",
+                "hrefMobile": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=BannerSearch&utm_campaign=WppSommelier"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
