@@ -232,11 +232,11 @@
           "sort": "",
           "count": 12,
           "collection": "1642",
-          "hideUnavailableItems": false,
-          "similars": true
+          "hideUnavailableItems": true,
+          "similars": false
         }
       },
-      "cta": "/1397?map=productClusterIds",
+      "cta": "/1642?map=productClusterIds",
       "title": "Oportunidades "
     },
     {
