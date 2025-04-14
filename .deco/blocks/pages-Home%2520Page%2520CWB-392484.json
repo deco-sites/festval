@@ -65,47 +65,36 @@
             }
           },
           {
-            "initialDate": "2025-04-07",
-            "deadLine": "2025-04-13",
-            "desktop": "https://assets.decocache.com/festval/068110ec-e8bc-480b-aca9-652e25b808b0/SUL---BEC---Pepsi-e-Guarana-600ml---DE-POR----1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/f3562740-611b-4ea8-ab57-a12f1c4a64d8/SUL---BEC---Pepsi-e-Guarana-600ml---DE-POR----1080x1500.jpg",
-            "alt": "AMBEV-600ml",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1636?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=600mlAMBEV"
-            }
-          },
-          {
             "initialDate": "2025-04-08",
+            "deadLine": "2025-04-20",
             "desktop": "https://assets.decocache.com/festval/a81b1cef-dd2b-4c09-8b67-a915cd0ecd92/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1920x490px.jpg",
             "mobile": "https://assets.decocache.com/festval/84ab776b-9ba1-4c32-9b7e-8c4ab77813b1/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1080x1500px.jpg",
             "alt": "páscoa-festval",
             "activeTerm": true,
-            "deadLine": "2025-04-20",
             "action": {
               "href": "https://www.festval.com/pascoa?page=1&utm_source=BannerHome&utm_campaign=pascoa-festval"
             }
           },
           {
-            "initialDate": "2025-04-07",
-            "deadLine": "2025-04-13",
-            "desktop": "https://assets.decocache.com/festval/0c9cb71f-c3c0-44bc-ae72-bc3a6e1e4a1e/kv_almoco_pascoa_1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/081e5b13-45df-49ca-951d-90f25e6330a4/kv_almoco_pascoa_1080x1500.jpg",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1168?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=receitaNestlepascoa"
-            },
-            "alt": "Receita-nestle"
-          },
-          {
             "initialDate": "2025-04-10",
-            "deadLine": "2025-04-17",
             "desktop": "https://assets.decocache.com/festval/2183f7cc-0e63-4584-b0f5-00f20cb001ec/1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/522a7323-cc31-4080-8d0f-0864dc55ffb1/1080x1500.jpg",
             "alt": "lacta_páscoa",
             "activeTerm": true,
+            "deadLine": "2025-04-17",
             "action": {
               "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
+            }
+          },
+          {
+            "initialDate": "2025-04-14",
+            "deadLine": "2025-04-20",
+            "desktop": "https://assets.decocache.com/festval/331c0dc6-348d-4d51-a98e-7616c30b6202/FESTVAL-NOVOS-BANNERS.jpg",
+            "mobile": "https://assets.decocache.com/festval/9ff9d03e-8c1d-47f1-894f-b47ce6db10c7/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "alt": "nestlépascoa",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1641?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=p%C3%A1scoanestl%C3%A9"
             }
           }
         ],
