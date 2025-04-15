@@ -205,8 +205,6 @@ const onLoad = (id: string) => {
 
   const lastRegion = localStorage.getItem("lastRegion");
   const isHomePage = window.location.pathname === "/";
-
-  // Redirecionar apenas se estiver na homepage
   if (isHomePage && lastRegion && regionPaths[lastRegion]) {
     window.location.replace(window.location.origin + regionPaths[lastRegion]);
     return;
@@ -225,17 +223,16 @@ const onLoad = (id: string) => {
 
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
-
-    // Redirecionar apenas se estiver na homepage e a região não estiver na URL
     if (
       targetPath &&
-      window.location.pathname === "/" &&
       !window.location.pathname.startsWith(targetPath) &&
       !alreadyRedirected
     ) {
       localStorage.setItem("redirected", "true");
       if (region) localStorage.setItem("lastRegion", region);
-      window.location.replace(window.location.origin + targetPath);
+    
+      const newUrl = window.location.origin + targetPath + window.location.pathname + window.location.search;
+      window.location.replace(newUrl);
     }
   } else {
     modal?.classList.add("modal-open");
@@ -288,22 +285,34 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
 
       setTimeout(() => {
         modal.classList.remove("modal-open");
-
+      
         const regionPaths: Record<string, string> = {
           Cascavel: "/cac",
           Curitiba: "/cwb",
         };
-
+      
         const targetPath = region ? regionPaths[region] : null;
         const currentPath = window.location.pathname;
-
-        // Redirecionar apenas se estiver na homepage ou se a região não estiver na URL
-        if (targetPath && currentPath === "/" && !currentPath.startsWith(targetPath)) {
-          window.location.replace(window.location.origin + targetPath);
+        const searchParams = window.location.search;
+        const knownRegions = Object.values(regionPaths);
+        let cleanPath = currentPath;
+      
+        for (const path of knownRegions) {
+          if (cleanPath.startsWith(path + "/")) {
+            cleanPath = cleanPath.replace(path, "");
+            break;
+          } else if (cleanPath === path) {
+            cleanPath = "/";
+            break;
+          }
+        }
+        if (targetPath && !currentPath.startsWith(targetPath)) {
+          const newUrl = window.location.origin + targetPath + cleanPath + searchParams;
+          window.location.replace(newUrl);
+      
           localStorage.setItem("redirected", "true");
           if (region) localStorage.setItem("lastRegion", region);
         }
-        // Caso contrário, apenas fechar o modal e manter a página atual
       }, 1000);
     } else if (attempts < maxAttempts) {
       attempts += 1;
