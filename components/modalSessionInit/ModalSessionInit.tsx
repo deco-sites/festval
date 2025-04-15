@@ -14,7 +14,7 @@ export interface Props {
    * @title Mensagem de boas vindas
    * @default Seja bem vindo(a) ao
    */
-  welcomeMessage?: string;
+  welcomeMessage?: string; 
   /**
    * @title Texto modal
    * @default Vamos conferir se atendemos a sua região:
