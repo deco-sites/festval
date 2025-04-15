@@ -107,6 +107,17 @@
             "action": {
               "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
             }
+          },
+          {
+            "initialDate": "2025-04-21",
+            "deadLine": "2025-04-27",
+            "desktop": "https://assets.decocache.com/festval/ce126b3b-64e6-40a2-997c-fba8d2061041/FESTVAL-NOVOS-BANNERS-CAFE.jpg",
+            "mobile": "https://assets.decocache.com/festval/d4d22c31-ef93-443a-831a-a39fcee8df53/FESTVAL-NOVOS-BANNERS-1080-1500-cafe.jpg",
+            "alt": "dia-do-café",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadocaf%C3%A9nestl%C3%A9"
+            }
           }
         ],
         "preload": true,
