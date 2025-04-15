@@ -198,7 +198,6 @@ const onLoad = (id: string) => {
     document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
   }
 
-  // Caminhos esperados
   const regionPaths: Record<string, string> = {
     Cascavel: "/cac",
     Curitiba: "/cwb",
@@ -207,6 +206,7 @@ const onLoad = (id: string) => {
   const lastRegion = localStorage.getItem("lastRegion");
   const isHomePage = window.location.pathname === "/";
 
+  // Redirecionar apenas se estiver na homepage
   if (isHomePage && lastRegion && regionPaths[lastRegion]) {
     window.location.replace(window.location.origin + regionPaths[lastRegion]);
     return;
@@ -226,14 +226,16 @@ const onLoad = (id: string) => {
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
 
-    if (targetPath) {
-      const currentPath = window.location.pathname;
-
-      if (!currentPath.startsWith(targetPath) && !alreadyRedirected) {
-        localStorage.setItem("redirected", "true");
-        if (region) localStorage.setItem("lastRegion", region); // Salvamos a última região acessada
-        window.location.replace(window.location.origin + targetPath);
-      }
+    // Redirecionar apenas se estiver na homepage e a região não estiver na URL
+    if (
+      targetPath &&
+      window.location.pathname === "/" &&
+      !window.location.pathname.startsWith(targetPath) &&
+      !alreadyRedirected
+    ) {
+      localStorage.setItem("redirected", "true");
+      if (region) localStorage.setItem("lastRegion", region);
+      window.location.replace(window.location.origin + targetPath);
     }
   } else {
     modal?.classList.add("modal-open");
@@ -293,12 +295,15 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
         };
 
         const targetPath = region ? regionPaths[region] : null;
+        const currentPath = window.location.pathname;
 
-        if (targetPath && !window.location.pathname.startsWith(targetPath)) {
+        // Redirecionar apenas se estiver na homepage ou se a região não estiver na URL
+        if (targetPath && currentPath === "/" && !currentPath.startsWith(targetPath)) {
           window.location.replace(window.location.origin + targetPath);
           localStorage.setItem("redirected", "true");
-          if (region) localStorage.setItem("lastRegion", region); // Salvar região para persistência
+          if (region) localStorage.setItem("lastRegion", region);
         }
+        // Caso contrário, apenas fechar o modal e manter a página atual
       }, 1000);
     } else if (attempts < maxAttempts) {
       attempts += 1;
