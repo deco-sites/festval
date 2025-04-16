@@ -38,6 +38,20 @@
                 "hrefMobile": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=BannerSearch&utm_campaign=WppSommelier"
               }
             ]
+          },
+          {
+            "matcher": [
+              "floricultura"
+            ],
+            "images": [
+              {
+                "desktop": "https://assets.decocache.com/festval/6a66175c-b522-4d31-aaaf-c8fcaa8e077c/Florista-1920x490.jpg",
+                "mobile": "https://assets.decocache.com/festval/c4b23a3b-1dcf-4890-94a0-05d058e34f2c/Florista-1080x490.jpg",
+                "alt": "florista",
+                "href": "https://api.whatsapp.com/send/?phone=5541997620458&text=Ol%C3%A1%2C+Bom+Dia.+Vim+do+Festval.com+e+gostaria+de+personalizar+ou+saber+mais+sobre+as+flores+%21&type=phone_number&app_absent=0",
+                "hrefMobile": "https://api.whatsapp.com/send/?phone=5541997620458&text=Ol%C3%A1%2C+Bom+Dia.+Vim+do+Festval.com+e+gostaria+de+personalizar+ou+saber+mais+sobre+as+flores+%21&type=phone_number&app_absent=0"
+              }
+            ]
           }
         ]
       }
