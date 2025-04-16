@@ -65,23 +65,34 @@
             "activeTerm": true
           },
           {
+            "initialDate": "2025-04-21",
+            "deadLine": "2025-04-27",
+            "desktop": "https://assets.decocache.com/festval/ce126b3b-64e6-40a2-997c-fba8d2061041/FESTVAL-NOVOS-BANNERS-CAFE.jpg",
+            "mobile": "https://assets.decocache.com/festval/d4d22c31-ef93-443a-831a-a39fcee8df53/FESTVAL-NOVOS-BANNERS-1080-1500-cafe.jpg",
+            "alt": "dia-do-café",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadocaf%C3%A9nestl%C3%A9"
+            }
+          },
+          {
             "initialDate": "2025-04-14",
-            "deadLine": "2025-04-20",
             "desktop": "https://assets.decocache.com/festval/331c0dc6-348d-4d51-a98e-7616c30b6202/FESTVAL-NOVOS-BANNERS.jpg",
             "mobile": "https://assets.decocache.com/festval/9ff9d03e-8c1d-47f1-894f-b47ce6db10c7/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
             "alt": "nestlépascoa",
             "activeTerm": true,
+            "deadLine": "2025-04-20",
             "action": {
               "href": "https://www.festval.com/1641?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=p%C3%A1scoanestl%C3%A9"
             }
           },
           {
             "initialDate": "2025-04-14",
+            "deadLine": "2025-04-20",
             "desktop": "https://assets.decocache.com/festval/a645bad7-896d-4d44-9c54-1f318383db38/FESTVAL-NOVOS-BANNERSSPATEN1920X490.jpg",
             "mobile": "https://assets.decocache.com/festval/8a3a6823-7f37-44d9-aff3-c30fdfee25e0/FESTVAL-NOVOS-BANNERS-1080-1500SPATEN.jpg",
             "alt": "spatenl12p10",
             "activeTerm": true,
-            "deadLine": "2025-04-20",
             "action": {
               "href": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314&utm_source=BannerHome&utm_campaign=spatenleve12pague10"
             }
@@ -109,15 +120,13 @@
             }
           },
           {
-            "initialDate": "2025-04-21",
-            "deadLine": "2025-04-27",
-            "desktop": "https://assets.decocache.com/festval/ce126b3b-64e6-40a2-997c-fba8d2061041/FESTVAL-NOVOS-BANNERS-CAFE.jpg",
-            "mobile": "https://assets.decocache.com/festval/d4d22c31-ef93-443a-831a-a39fcee8df53/FESTVAL-NOVOS-BANNERS-1080-1500-cafe.jpg",
-            "alt": "dia-do-café",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadocaf%C3%A9nestl%C3%A9"
-            }
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/f7d9ea5e-8a6b-48cc-99d8-c70521b6d131/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/bbed3516-184b-49b1-9d8d-c1fb3f348e9a/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
+            "alt": "coronita",
+            "activeTerm": true
           }
         ],
         "preload": true,
