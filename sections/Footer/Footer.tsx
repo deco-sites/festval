@@ -1,7 +1,7 @@
+import { useDevice, useScript } from "@deco/deco/hooks";
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Section from "../../components/ui/Section.tsx";
-import { useDevice, useScript } from "@deco/deco/hooks";
 import { useId } from "../../sdk/useId.ts";
 
 /** @titleBy title */
@@ -447,8 +447,7 @@ function Footer({
                       </ul>
                     </div>
                   )}
-                  {device !== "mobile" &&
-                    index === 1 &&
+                  {index === 1 &&
                     appDownload &&
                     appDownload.socialItens && (
                       <div class="w-full mt-3">
@@ -564,7 +563,7 @@ function Footer({
 
           {highlightedImage && (
             <>
-              <div class="flex justify-center lg:justify-start mt-3 lg:mt-0 lg:ml-[30px]">
+              <div class="flex justify-center lg:justify-start my-8 lg:mt-0 lg:ml-[30px]">
                 <a href={highlightedImage.href}>
                   <Image
                     src={highlightedImage.image}
@@ -575,14 +574,14 @@ function Footer({
                   />
                 </a>
               </div>
-              <div class="w-full flex lg:hidden flex-col gap-1 mt-3 lg:mt-7 md:px-0 ">
+              <div class="w-full flex lg:hidden flex-col gap-2 mt-3 lg:mt-7 md:px-0 ">
                 <p className="text-sm text-base-100 font-normal">
                   Baixe o novo App
                 </p>
                 <div className="flex flex-row gap-4">
                   <a href={highlightedImage.hrefGoogle}>
                     <Image
-                      class="!w-full !h-auto rounded-md"
+                      class="h-[40px] w-[140px] object-cover rounded-md"
                       src={highlightedImage.imageMbGoogle}
                       alt="Google Play"
                       loading="lazy"
@@ -592,7 +591,7 @@ function Footer({
                   </a>
                   <a href={highlightedImage.hrefIOS}>
                     <Image
-                      class="!w-full !h-auto rounded-md"
+                      class="h-[40px] w-[140px] object-cover rounded-md"
                       src={highlightedImage.imageMbIOS}
                       alt="App Store"
                       loading="lazy"
@@ -828,7 +827,7 @@ function Footer({
               </span>
             </div>
             <div class="flex flex-col items-center gap-2">
-              <span class="self-end text-[10px]" style={{ color: "#FFF" }}>
+              <span class="text-[10px]" style={{ color: "#FFF" }}>
                 Desenvolvido por
               </span>
               {copyright?.developer && (
