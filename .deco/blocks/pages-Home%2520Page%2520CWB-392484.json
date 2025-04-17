@@ -13,8 +13,8 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/ad18dce7-ee9e-44fe-9202-77a193ce19c5/Festval---BannerDesk---Sou-Festval.jpg",
-            "mobile": "https://data.decoassets.com/festval/630dba02-3700-4e0a-bbdf-75b7848ac489/Festval---BannerMBL---Sou-Festval.jpg",
+            "desktop": "https://assets.decocache.com/festval/41ffc4ec-b89e-4ca6-a392-ac89b3ef29a1/Festval---BannerDesk---Sou-Festval-NOVO.jpg",
+            "mobile": "https://assets.decocache.com/festval/c7fc6b03-3c4c-4052-98f0-78503b3939d7/Festval---BannerMBL---Sou-Festval-NOVO.jpg",
             "alt": "soufestval",
             "activeTerm": false,
             "deadLine": "01/01/2024",
@@ -312,11 +312,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/d9b3e69b-71cf-425a-afce-6f27689a33f3/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b1fe65a3-93d8-44a0-aa88-a01f429d2f69/QUAQUI-APP-MBL.jpg",
-          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
+          "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
+          "hrefMobile": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
