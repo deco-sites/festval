@@ -115,6 +115,18 @@
             },
             "alt": "Baly",
             "activeTerm": true
+          },
+          {
+            "deadLine": "2025-07-31",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "alt": "happy-eggs",
+            "initialDate": "2025-17-04",
+            "activeTerm": false,
+            "action": {
+              "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
+            }
           }
         ],
         "preload": true,
