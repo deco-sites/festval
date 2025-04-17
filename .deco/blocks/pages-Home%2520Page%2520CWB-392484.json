@@ -449,43 +449,43 @@
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
       "items": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6ddec739-5517-497a-9bce-43ba8b91ef48/1953-6-sub-menu-corrigido.png",
+          "image": "https://assets.decocache.com/festval/b8a2215d-e404-4604-8876-07ddb66b7fc7/1953.png",
           "href": "/1953"
         },
         {
           "href": "/Ambev",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6a2183b0-6988-44ae-a4cd-86fbe8115e29/ambev-4-sub-menu.png"
+          "image": "https://assets.decocache.com/festval/c6455812-2c4c-42bc-ab5d-68685a846426/ambev.png"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ad6dd3c0-22b6-4871-bf55-cc26e6f274a9/lindt-5-sub-menu.png",
+          "image": "https://assets.decocache.com/festval/12892b86-f867-4b87-af47-d3c4a8f16b38/lindt.png",
           "href": "/Lindt"
         },
         {
           "href": "/1358?map=productClusterIds",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a8435437-f97c-4f23-af2f-048373d43690/mamma-bia-1-sub-menu-corrigido.png"
+          "image": "https://assets.decocache.com/festval/41ba4658-dad7-4c3f-a994-7d4d1c598ae3/mamma-bia.png"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/deb09522-114f-4e11-92e2-40fbca7696f2/nestle-2-sub-menu.png",
+          "image": "https://assets.decocache.com/festval/837f06ff-ee14-4394-86ad-4d28634815bd/nestle.png",
           "href": "/Nestlé"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c7f119f-73ad-4065-a0aa-a8487c15b1cb/unilever-2-sub-menu.png",
+          "image": "https://assets.decocache.com/festval/c5df542c-6cde-460c-b4aa-f9f78e673233/unilever.png",
           "href": "/Unilever"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/30cbfd5b-2ab3-4dcf-9a42-49a00c8d677a/g7-2-(1).png",
+          "image": "https://assets.decocache.com/festval/d3f5c043-d89b-4dd1-9452-dee886f9879b/G7.png",
           "href": "/1533?map=productClusterIds"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5bfd34af-6f52-4eb3-90f1-3c782dd002ef/valsierra-sub-menu-(1).png",
+          "image": "https://assets.decocache.com/festval/876d21a1-e561-411c-a71a-38dce4a09758/VALSIERRA.png",
           "href": "/1532?map=productClusterIds"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/947f0b41-a4eb-432c-98ae-ab4864a95713/diaadia-festval-menu-4-(1).png",
+          "image": "https://assets.decocache.com/festval/c47e7142-7a7b-4e11-9dd3-988ded5d7825/Festval-DiaDia.png",
           "href": "/1529?map=productClusterIds"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3accdfc6-3b8a-4f90-9761-14443299ca88/Natural-festval-menu-(1).png",
+          "image": "https://assets.decocache.com/festval/0f49c192-da4f-4def-9d57-bb802846292c/Festval-Natural.png",
           "href": "/1534?map=productClusterIds"
         }
       ]
