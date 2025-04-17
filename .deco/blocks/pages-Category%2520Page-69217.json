@@ -11,7 +11,8 @@
           "sort": "price:desc",
           "fuzzy": "automatic",
           "selectedFacets": [],
-          "count": 12
+          "count": 12,
+          "useCollectionName": true
         }
       }
     },
