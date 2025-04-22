@@ -45,37 +45,13 @@
             }
           },
           {
-            "initialDate": "2025-04-15",
-            "deadLine": "2025-07-31",
-            "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
-            "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
-            "alt": "Baly",
-            "activeTerm": true,
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
-            }
-          },
-          {
-            "initialDate": "2025-17-04",
-            "deadLine": "2025-07-31",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "alt": "happy-eggs",
-            "activeTerm": false,
-            "action": {
-              "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
-          },
-          {
             "initialDate": "2025-04-21",
             "deadLine": "2025-04-27",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/d4d22c31-ef93-443a-831a-a39fcee8df53/FESTVAL-NOVOS-BANNERS-1080-1500-cafe.jpg",
             "mobile": "https://assets.decocache.com/festval/ce126b3b-64e6-40a2-997c-fba8d2061041/FESTVAL-NOVOS-BANNERS-CAFE.jpg",
             "alt": "cafe-nestle",
             "activeTerm": true,
+            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadocaf%C3%A9nestl%C3%A9"
             }
@@ -87,8 +63,32 @@
             "desktop": "https://assets.decocache.com/festval/bbed3516-184b-49b1-9d8d-c1fb3f348e9a/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
             "mobile": "https://assets.decocache.com/festval/f7d9ea5e-8a6b-48cc-99d8-c70521b6d131/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
             "alt": "corona-210ml",
+            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=CoronitaL6P5"
+            }
+          },
+          {
+            "initialDate": "2025-04-15",
+            "deadLine": "2025-07-31",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
+            "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
+            "alt": "Baly",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
+            }
+          },
+          {
+            "initialDate": "2025-17-04",
+            "deadLine": "2025-07-31",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "alt": "happy-eggs",
+            "action": {
+              "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "activeTerm": false
           }
