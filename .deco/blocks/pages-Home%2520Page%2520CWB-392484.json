@@ -35,88 +35,22 @@
             }
           },
           {
-            "initialDate": "2025-04-11",
-            "desktop": "https://assets.decocache.com/festval/a96a096d-6e3f-4f47-9509-6283f07befa9/2025.03.28-_-LINDT-_-Banners-_-C2M---Banner-Home-_-1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/3b183ec8-e892-4b8e-a014-73cd52e56996/2025.03.28-_-LINDT-_-Banners-_-C2M---Banner-Home-_-1080x1500.png",
-            "alt": "LindtPáscoa",
-            "activeTerm": true,
-            "deadLine": "2025-04-17",
-            "action": {
-              "href": "https://www.festval.com/377?map=productClusterIds&sort=&page=1&utm_source=BannerHome&utm_campaign=pascoalindt"
-            }
-          },
-          {
-            "deadLine": "2025-04-20",
-            "desktop": "https://assets.decocache.com/festval/a81b1cef-dd2b-4c09-8b67-a915cd0ecd92/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1920x490px.jpg",
-            "mobile": "https://assets.decocache.com/festval/84ab776b-9ba1-4c32-9b7e-8c4ab77813b1/ABERTO_V02_Campanha_Pascoa_Festval-com_2025_Banner_1080x1500px.jpg",
-            "alt": "páscoa-festval",
-            "activeTerm": true,
-            "initialDate": "2025-04-08",
-            "action": {
-              "href": "https://www.festval.com/pascoa?page=1&utm_source=BannerHome&utm_campaign=pascoa-festval"
-            }
-          },
-          {
             "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
-            "activeTerm": true
+            "activeTerm": true,
+            "deadLine": "01/01/2024"
           },
           {
-            "initialDate": "2025-04-21",
             "deadLine": "2025-04-27",
             "desktop": "https://assets.decocache.com/festval/ce126b3b-64e6-40a2-997c-fba8d2061041/FESTVAL-NOVOS-BANNERS-CAFE.jpg",
             "mobile": "https://assets.decocache.com/festval/d4d22c31-ef93-443a-831a-a39fcee8df53/FESTVAL-NOVOS-BANNERS-1080-1500-cafe.jpg",
             "alt": "dia-do-café",
             "activeTerm": true,
+            "initialDate": "2025-04-21",
             "action": {
               "href": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadocaf%C3%A9nestl%C3%A9"
-            }
-          },
-          {
-            "initialDate": "2025-04-14",
-            "desktop": "https://assets.decocache.com/festval/ac175c0b-4eb9-4c69-98d0-40f813a3c74c/FESTVAL-NOVOS-BANNERS-novo.jpg",
-            "mobile": "https://assets.decocache.com/festval/86f94728-7208-4760-bfb4-22afcb5ed83c/FESTVAL-NOVOS-BANNERS-1080-1500-atualizado.jpg",
-            "alt": "nestlépascoa",
-            "activeTerm": true,
-            "deadLine": "2025-04-20",
-            "action": {
-              "href": "https://www.festval.com/1641?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=p%C3%A1scoanestl%C3%A9"
-            }
-          },
-          {
-            "initialDate": "2025-04-14",
-            "deadLine": "2025-04-20",
-            "desktop": "https://assets.decocache.com/festval/a645bad7-896d-4d44-9c54-1f318383db38/FESTVAL-NOVOS-BANNERSSPATEN1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/8a3a6823-7f37-44d9-aff3-c30fdfee25e0/FESTVAL-NOVOS-BANNERS-1080-1500SPATEN.jpg",
-            "alt": "spatenl12p10",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314&utm_source=BannerHome&utm_campaign=spatenleve12pague10"
-            }
-          },
-          {
-            "initialDate": "2025-03-28",
-            "deadLine": "2025-04-18",
-            "desktop": "https://assets.decocache.com/festval/900b0ba7-09f4-4fe3-8019-1a653e5e154a/1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/fefb1726-46ff-40e8-8250-2cda129cca57/1080X1500.jpg",
-            "alt": "chuck-eye",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/chuck-eye-roll-1953?page=1&utm_source=BannerHome&utm_campaign=Chuck+Eye+Roll+1953"
-            }
-          },
-          {
-            "initialDate": "2025-04-10",
-            "deadLine": "2025-04-17",
-            "desktop": "https://assets.decocache.com/festval/2183f7cc-0e63-4584-b0f5-00f20cb001ec/1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/522a7323-cc31-4080-8d0f-0864dc55ffb1/1080x1500.jpg",
-            "alt": "lacta_páscoa",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1637?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=lactapascoa"
             }
           },
           {
@@ -314,11 +248,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
-          "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
-          "hrefMobile": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/b269d01e-5692-45e3-bcb0-cd6a582612a9/SEGTER-APP-MBL.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
