@@ -103,85 +103,85 @@
         {
           "label": "Hortifruti",
           "href": "/hortifruti?sort=orders%3Adesc&page=1",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/1460b27b-3ab4-4907-8a4e-4587d8450faa/tomate.png"
+          "image": "https://assets.decocache.com/festval/d6b797e8-948b-4581-9098-7c2091bbbc59/hortifruti.png"
         },
         {
           "href": "/adega?sort=orders%3Adesc&page=1",
           "label": "Adega",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/401937a6-8419-4aac-9f9b-f207666b75f9/Adega.png"
+          "image": "https://assets.decocache.com/festval/55936539-da80-4765-8f5f-3c226c38b473/adega.png"
         },
         {
           "href": "/bebidas-alcoolicas?sort=orders%3Adesc&page=1",
           "label": "Bebidas Alcoólicas",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a70bfb93-1d78-48d1-a76d-a60f7fb61c88/Bebidas-Alcooulicas.png"
+          "image": "https://assets.decocache.com/festval/c3f3349c-d198-4618-be87-4092a964d129/alcoolics.png"
         },
         {
           "href": "/acougue?sort=orders%3Adesc&page=1",
           "label": "Açougue",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/8337b62e-8baf-445e-bc78-416dec655192/teste.png"
+          "image": "https://assets.decocache.com/festval/ad1ea8de-e91d-46fb-a1a3-d2e7028e8186/acougue.png"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/732568e4-b9b9-4f58-a834-450b923e8697/Mercearia.png",
+          "image": "https://assets.decocache.com/festval/506366b2-8c41-42fd-a5fb-a05d61097d64/merce.png",
           "href": "/mercearia?sort=orders%3Adesc&page=1",
           "label": "Mercearia"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a18e3173-916b-4942-b718-59c464b8595e/Importados.png",
+          "image": "https://assets.decocache.com/festval/20ca6024-ffef-475a-b8b7-d2e89bc798c3/importa.png",
           "href": "/importados?sort=orders%3Adesc&page=1",
           "label": "Importados"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/96e49984-1396-41b3-8ba6-e17e8887565e/Sucos.png",
+          "image": "https://assets.decocache.com/festval/71e5f63d-f02e-42de-98a7-7b7692699b4f/Sucos.png",
           "href": "/bebidas/suco?sort=orders%3Adesc&page=1",
           "label": "Sucos"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/12629561-ef4e-4969-a86d-348f90a032b8/bebidas.png",
+          "image": "https://assets.decocache.com/festval/d810a994-b385-4ae9-95c7-8bb2bf6222fa/nao-alcoli.png",
           "href": "/bebidas?sort=orders%3Adesc&page=1",
           "label": "Bebidas"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/792b3033-3e42-4621-8c16-4c07cd34ae06/Padaria.png",
+          "image": "https://assets.decocache.com/festval/d1845202-d5f2-4f14-a93d-52580a8444a9/padaria.png",
           "href": "/padaria?sort=orders%3Adesc&page=1",
           "label": "Padaria"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e6e29f29-aa3d-4a6e-a079-a97038d09283/Frios-e-Laticinios.png",
+          "image": "https://assets.decocache.com/festval/b20fa74b-aa01-4a3b-933c-60ea31a4b8e7/frioselat.png",
           "href": "/frios-e-laticinios?sort=orders%3Adesc&page=1",
           "label": "Frios e Laticínios"
         },
         {
           "href": "/limpeza?sort=orders%3Adesc&page=1",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9a9a710a-d819-4d97-b70e-eaddad5b03f5/Limpeza.png",
+          "image": "https://assets.decocache.com/festval/e3782d1e-2fdd-4e13-b985-38fb6279e710/limpeza.png",
           "label": "Limpeza"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2bec5a09-d334-4d28-957f-4ec75b296610/Perfumaria.png",
+          "image": "https://assets.decocache.com/festval/562ea444-3215-42a3-bc17-a18752e0b737/perfumaria.png",
           "href": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1",
           "label": "Higiene e Perfumaria"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/84b19b7c-d2b5-4376-8dc9-fddacf705a05/Diet--Light.png",
+          "image": "https://assets.decocache.com/festval/94ba5314-85db-49fb-8f44-04ce6f9a7280/diet-e-light.png",
           "href": "/diet-light?sort=orders%3Adesc&page=1",
           "label": "Diet & Light"
         },
         {
           "href": "/sorvete?sort=discount%3Adesc&page=1",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/e871466b-93ec-4461-9ef6-62abe4feeca0/Sorvetes.png",
+          "image": "https://assets.decocache.com/festval/c70c1d19-4f79-4099-885f-9b0b906a0556/sorvete.png",
           "label": "Sorvetes"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cfbf6a0c-083e-4f32-87d8-c390a7565a04/Floricultura-2.png",
+          "image": "https://assets.decocache.com/festval/11b92986-149e-4f7f-bb9d-c5117e00a368/flor.png",
           "href": "/floricultura?sort=orders%3Adesc&page=1",
           "label": "Floricultura"
         },
         {
           "label": "Casa & Utilidades",
           "href": "/casa-e-utilidades?sort=orders%3Adesc&page=1",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5adb7dfa-715a-475b-b58e-53382e1c8036/Casa.png"
+          "image": "https://assets.decocache.com/festval/59371e0d-99ab-429b-a9dc-86062a5f2345/casa-e-utili.png"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/52ee0656-cc6a-43d7-8777-d5499fe7ee38/Pet-Shop.png",
+          "image": "https://assets.decocache.com/festval/43860388-655d-442d-9fed-741fbf9daba2/petshop.png",
           "href": "/petshop?sort=orders%3Adesc&page=1",
           "label": "Pet Shop"
         }
@@ -326,14 +326,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "discount:desc",
-          "collection": "377",
+          "collection": "1627",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "https://www.festval.com/377?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "Páscoa Lindt"
+      "cta": "https://www.festval.com/rotulosimperdiveis?page=1",
+      "title": "Adega Festval"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -396,43 +396,43 @@
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
       "items": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6ddec739-5517-497a-9bce-43ba8b91ef48/1953-6-sub-menu-corrigido.png",
+          "image": "https://assets.decocache.com/festval/b8a2215d-e404-4604-8876-07ddb66b7fc7/1953.png",
           "href": "/1953"
         },
         {
           "href": "/Ambev",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/6a2183b0-6988-44ae-a4cd-86fbe8115e29/ambev-4-sub-menu.png"
+          "image": "https://assets.decocache.com/festval/c6455812-2c4c-42bc-ab5d-68685a846426/ambev.png"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/ad6dd3c0-22b6-4871-bf55-cc26e6f274a9/lindt-5-sub-menu.png",
+          "image": "https://assets.decocache.com/festval/12892b86-f867-4b87-af47-d3c4a8f16b38/lindt.png",
           "href": "/Lindt"
         },
         {
           "href": "/1358?map=productClusterIds",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a8435437-f97c-4f23-af2f-048373d43690/mamma-bia-1-sub-menu-corrigido.png"
+          "image": "https://assets.decocache.com/festval/41ba4658-dad7-4c3f-a994-7d4d1c598ae3/mamma-bia.png"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/deb09522-114f-4e11-92e2-40fbca7696f2/nestle-2-sub-menu.png",
+          "image": "https://assets.decocache.com/festval/837f06ff-ee14-4394-86ad-4d28634815bd/nestle.png",
           "href": "/Nestlé"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3c7f119f-73ad-4065-a0aa-a8487c15b1cb/unilever-2-sub-menu.png",
+          "image": "https://assets.decocache.com/festval/c5df542c-6cde-460c-b4aa-f9f78e673233/unilever.png",
           "href": "/Unilever"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/30cbfd5b-2ab3-4dcf-9a42-49a00c8d677a/g7-2-(1).png",
+          "image": "https://assets.decocache.com/festval/d3f5c043-d89b-4dd1-9452-dee886f9879b/G7.png",
           "href": "/1533?map=productClusterIds"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5bfd34af-6f52-4eb3-90f1-3c782dd002ef/valsierra-sub-menu-(1).png",
+          "image": "https://assets.decocache.com/festval/876d21a1-e561-411c-a71a-38dce4a09758/VALSIERRA.png",
           "href": "/1532?map=productClusterIds"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/947f0b41-a4eb-432c-98ae-ab4864a95713/diaadia-festval-menu-4-(1).png",
+          "image": "https://assets.decocache.com/festval/c47e7142-7a7b-4e11-9dd3-988ded5d7825/Festval-DiaDia.png",
           "href": "/1529?map=productClusterIds"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3accdfc6-3b8a-4f90-9761-14443299ca88/Natural-festval-menu-(1).png",
+          "image": "https://assets.decocache.com/festval/0f49c192-da4f-4def-9d57-bb802846292c/Festval-Natural.png",
           "href": "/1534?map=productClusterIds"
         }
       ]
