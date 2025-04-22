@@ -79,6 +79,18 @@
             "action": {
               "href": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadocaf%C3%A9nestl%C3%A9"
             }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/bbed3516-184b-49b1-9d8d-c1fb3f348e9a/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
+            "mobile": "https://assets.decocache.com/festval/f7d9ea5e-8a6b-48cc-99d8-c70521b6d131/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
+            "alt": "corona-210ml",
+            "action": {
+              "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=CoronitaL6P5"
+            },
+            "activeTerm": false
           }
         ],
         "preload": true,
