@@ -26,7 +26,7 @@ function FreeShippingProgressBar({ target, total, currency, locale }: Props) {
       </div>
       <progress id={id} class="progress progress-primary w-full" value={percent} max={100} />
     </div>
-  );
+  );   
 }
-
+ 
 export default FreeShippingProgressBar;
