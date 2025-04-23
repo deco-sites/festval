@@ -205,34 +205,23 @@ const onLoad = (id: string) => {
 
   const lastRegion = localStorage.getItem("lastRegion");
   const isHomePage = window.location.pathname === "/";
-  if (isHomePage && lastRegion && regionPaths[lastRegion]) {
-    window.location.replace(window.location.origin + regionPaths[lastRegion]);
-    return;
-  }
-
   const cep = getCookie("vtex_last_session_cep");
   const vtex_segment_cookie = getCookie("vtex_last_segment");
   const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
   const region = getCookie("region");
-  const modal = document.getElementById(id);
   const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
-
-  const targetPath = region && regionPaths[region] ? regionPaths[region] : null;
-
-  const alreadyRedirected = localStorage.getItem("redirected");
+  const modal = document.getElementById(id);
 
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
-    if (
-      targetPath &&
-      !window.location.pathname.startsWith(targetPath) &&
-      !alreadyRedirected
-    ) {
-      localStorage.setItem("redirected", "true");
-      if (region) localStorage.setItem("lastRegion", region);
-    
-      const newUrl = window.location.origin + targetPath + window.location.pathname + window.location.search;
-      window.location.replace(newUrl);
+
+    if (isHomePage && lastRegion && regionPaths[lastRegion]) {
+      const targetPath = regionPaths[lastRegion];
+      const alreadyRedirected = localStorage.getItem("redirected");
+      if (!alreadyRedirected) {
+        localStorage.setItem("redirected", "true");
+        window.location.replace(window.location.origin + targetPath);
+      }
     }
   } else {
     modal?.classList.add("modal-open");
@@ -240,6 +229,7 @@ const onLoad = (id: string) => {
     deleteCookie("vtex_last_segment");
   }
 };
+
 
 const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
   let attempts = 0;
@@ -259,6 +249,27 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
 
   function showElement(element: Element | null) {
     element?.classList.remove("hidden");
+  }
+
+  function shouldAddRegionPrefix(path: string): boolean {
+    const noPrefixPaths = ["/s", "/p", "/api", "/pascoa"];
+    const searchParams = new URLSearchParams(window.location.search);
+    const isCategoryOrProduct = /\/[a-z0-9\-]+(\/[a-z0-9\-]+)?/.test(path);
+    const hasMapParam = searchParams.has("map");
+    const hasFilterParam = searchParams.has("filter.category-1");
+    console.log("shouldAddRegionPrefix:", {
+      path,
+      isCategoryOrProduct,
+      hasMapParam,
+      hasFilterParam,
+      noPrefixPathsMatch: noPrefixPaths.some(prefix => path.startsWith(prefix)),
+    });
+    return (
+      !noPrefixPaths.some(prefix => path.startsWith(prefix)) &&
+      !isCategoryOrProduct &&
+      !hasMapParam &&
+      !hasFilterParam
+    );
   }
 
   function attemptSubmit() {
@@ -285,34 +296,35 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
 
       setTimeout(() => {
         modal.classList.remove("modal-open");
-      
+
         const regionPaths: Record<string, string> = {
           Cascavel: "/cac",
           Curitiba: "/cwb",
         };
-      
+
         const targetPath = region ? regionPaths[region] : null;
         const currentPath = window.location.pathname;
         const searchParams = window.location.search;
-        const knownRegions = Object.values(regionPaths);
-        let cleanPath = currentPath;
-      
-        for (const path of knownRegions) {
-          if (cleanPath.startsWith(path + "/")) {
-            cleanPath = cleanPath.replace(path, "");
-            break;
-          } else if (cleanPath === path) {
-            cleanPath = "/";
-            break;
-          }
+        console.log("Redirection Info:", {
+          currentPath,
+          targetPath,
+          searchParams,
+          shouldAddPrefix: shouldAddRegionPrefix(currentPath),
+        });
+        const isCategoryPage = currentPath.startsWith("/pascoa");
+
+        let newUrl = window.location.href;
+
+        if (targetPath && shouldAddRegionPrefix(currentPath)) {
+          newUrl = `${window.location.origin}${targetPath}${currentPath === "/" ? "" : currentPath}${searchParams}`;
+        } else if (isCategoryPage) {
+          newUrl = `${window.location.origin}${currentPath}${searchParams}`;
         }
-        if (targetPath && !currentPath.startsWith(targetPath)) {
-          const newUrl = window.location.origin + targetPath + cleanPath + searchParams;
-          window.location.replace(newUrl);
-      
-          localStorage.setItem("redirected", "true");
-          if (region) localStorage.setItem("lastRegion", region);
-        }
+        console.log("New URL:", newUrl);
+
+        window.location.replace(newUrl);
+        localStorage.setItem("redirected", "true");
+        if (region) localStorage.setItem("lastRegion", region);
       }, 1000);
     } else if (attempts < maxAttempts) {
       attempts += 1;
