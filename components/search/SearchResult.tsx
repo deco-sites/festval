@@ -228,8 +228,6 @@ function PartialPageResult(props: Props) {
     //return product;
   });
 
-  console.log('Executei');
-  
 
   const perPage = pageInfo?.recordPerPage || produtosEmEstoque.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
