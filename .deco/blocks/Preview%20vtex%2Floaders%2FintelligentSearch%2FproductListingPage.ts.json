@@ -2,6 +2,10 @@
   "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
   "sort": "price:desc",
   "fuzzy": "automatic",
+  "hideUnavailableItems": true,
   "selectedFacets": [],
+  "advancedConfigs": {
+    "includeOriginalAttributes": []
+  },
   "count": 12
 }

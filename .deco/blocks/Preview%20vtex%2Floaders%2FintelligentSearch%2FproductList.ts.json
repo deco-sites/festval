@@ -1,6 +1,8 @@
 {
   "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
   "props": {
-    "sort": "price:desc"
+    "sort": "price:desc",
+    "count": 12,
+    "hideUnavailableItems": true
   }
 }

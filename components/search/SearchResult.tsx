@@ -1,21 +1,21 @@
+import { type SectionProps } from "@deco/deco";
+import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import type { PageInfo, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import ProductCard from "../product/ProductCard.tsx";
-import AddAllProductsToCartButton from "../product/AddAllProductsToCartButton.tsx";
-import Filters from "./Filters.tsx";
+import Image from "apps/website/components/Image.tsx";
+import { getCookies } from "std/http/cookie.ts";
 import FiltersMb from "../../islands/FiltersMb.tsx";
-import Icon from "../ui/Icon.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import AddAllProductsToCartButton from "../product/AddAllProductsToCartButton.tsx";
+import ProductCard from "../product/ProductCard.tsx";
 import Breadcrumb from "../ui/Breadcrumb.tsx";
+import Icon from "../ui/Icon.tsx";
 import Drawer from "../ui/MenuMobileDrawer.tsx";
+import Filters from "./Filters.tsx";
 import Sort from "./Sort.tsx";
-import { useDevice, useScript, useSection } from "@deco/deco/hooks";
-import { type SectionProps } from "@deco/deco";
-import { getCookies } from "std/http/cookie.ts";
-import Image from "apps/website/components/Image.tsx";
 export interface Layout {
   /**
    * @title Pagination
@@ -46,6 +46,7 @@ export interface Props {
    */
   isWishList?: boolean;
 }
+
 function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-10">
@@ -53,6 +54,7 @@ function NotFound() {
     </div>
   );
 }
+
 const useUrlRebased = (overrides: string | undefined, base: string) => {
   let url: string | undefined = undefined;
   if (overrides) {
@@ -226,7 +228,10 @@ function PartialPageResult(props: Props) {
     //return product;
   });
 
-  const perPage = pageInfo?.recordPerPage || products.length;
+  console.log('Executei');
+  
+
+  const perPage = pageInfo?.recordPerPage || produtosEmEstoque.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
   const nextPageUrl = useUrlRebased(pageInfo.nextPage, url ?? "");
@@ -239,6 +244,7 @@ function PartialPageResult(props: Props) {
     href: nextPageUrl,
     props: { partial: "hideLess" },
   });
+
   return (
     <div id={id}>
       {partial && partial === "hideMore" && (
@@ -316,8 +322,8 @@ function PageResult(props: SectionProps<typeof loader>) {
     return availability === "https://schema.org/InStock";
     //return product;
   });
-
-  const perPage = pageInfo?.recordPerPage || products.length;
+  
+  const perPage = pageInfo?.recordPerPage || produtosEmEstoque.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
   const nextPageUrl = useUrlRebased(pageInfo.nextPage, url);
@@ -425,6 +431,7 @@ function PageResult(props: SectionProps<typeof loader>) {
     </div>
   );
 }
+
 const setPageQuerystring = (page: string, id: string) => {
   const element = document
     .getElementById(id)
@@ -448,6 +455,7 @@ const setPageQuerystring = (page: string, id: string) => {
     history.replaceState({ prevPage }, "", url.href);
   }).observe(element);
 };
+
 function Result(props: SectionProps<typeof loader>) {
   const container = useId();
   const controls = useId();
@@ -456,15 +464,22 @@ function Result(props: SectionProps<typeof loader>) {
   const page = props.page!;
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
 
+  const produtosEmEstoque = products.filter((product) => {
+    const { offers } = product;
+    const { availability } = useOffer(offers);
+    return availability === "https://schema.org/InStock";
+    //return product;
+  });
+  
   const urlParams = new URL(props.url);
   const collectionid = urlParams.pathname.split("/").pop() || undefined;
 
-  const collectionName = collectionid && products[0]?.additionalProperty?.find(p => p.name === "cluster" && p.propertyID === collectionid)?.value;
+  const collectionName = collectionid && produtosEmEstoque[0]?.additionalProperty?.find(p => p.name === "cluster" && p.propertyID === collectionid)?.value;
   const categoryName = breadcrumb.itemListElement?.at(-1)?.name ||
                         collectionName ||
                         "Categoria não especificada";
                                            
-  const perPage = pageInfo?.recordPerPage || products.length;
+  const perPage = pageInfo?.recordPerPage || produtosEmEstoque.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
   const viewItemListEvent = useSendEvent({
@@ -486,13 +501,11 @@ function Result(props: SectionProps<typeof loader>) {
       },
     },
   });
+
+
   const results = (
     <span className="text-sm font-normal">
-      {page?.pageInfo?.recordPerPage && products
-        ? page.pageInfo.recordPerPage >= products.length
-          ? products.length
-          : page.pageInfo.recordPerPage
-        : 0} de {page?.pageInfo?.records ?? 0} resultados
+      {pageInfo.records ?? 0} resultado{pageInfo.records! > 1 && 's'}
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
@@ -500,6 +513,7 @@ function Result(props: SectionProps<typeof loader>) {
       <Sort sortOptions={sortOptions} url={url} />
     </div>
   );
+
   return (
     <>
       {partial ? <PartialPageResult {...props} /> : (
@@ -577,7 +591,6 @@ function Result(props: SectionProps<typeof loader>) {
                   <span class="text-base font-semibold h-12 flex items-center">
                     Filtros
                   </span>
-
                   <Filters filters={filters} />
                 </aside>
               )}
@@ -640,7 +653,7 @@ function Result(props: SectionProps<typeof loader>) {
             dangerouslySetInnerHTML={{
               __html: useScript(
                 onLoad,
-                pageInfo.records || products.length,
+                pageInfo.records || produtosEmEstoque.length,
                 pageInfo,
               ),
             }}
@@ -661,13 +674,15 @@ function Result(props: SectionProps<typeof loader>) {
     </>
   );
 }
+
 function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
   if (!page) {
     return <NotFound />;
   }
-
+  
   return <Result {...props} page={page} />;
 }
+
 export const loader = (props: Props, req: Request) => {
   const url = new URL(req.url);
   const searchTerm = url.searchParams.get("q") || ""; // Extrai o termo de busca da URL

@@ -1,0 +1,9 @@
+{
+  "__resolveType": "app-vtex-session/actions/sessionInit.ts",
+  "data": {
+    "public": {
+      "country": {},
+      "postalCode": {}
+    }
+  }
+}

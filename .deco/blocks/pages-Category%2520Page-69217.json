@@ -70,7 +70,7 @@
           },
           "fuzzy": "automatic",
           "selectedFacets": [],
-          "hideUnavailableItems": false
+          "hideUnavailableItems": true
         },
         "layout": {
           "pagination": "show-more"

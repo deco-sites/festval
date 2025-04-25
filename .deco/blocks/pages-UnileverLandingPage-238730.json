@@ -78,7 +78,7 @@
             "sort": "orders:desc",
             "collection": "1219",
             "count": 12,
-            "hideUnavailableItems": false,
+            "hideUnavailableItems": true,
             "similars": false
           }
         },

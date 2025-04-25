@@ -81,7 +81,7 @@
               "key": "productClusterIds"
             }
           ],
-          "hideUnavailableItems": false
+          "hideUnavailableItems": true
         }
       }
     },

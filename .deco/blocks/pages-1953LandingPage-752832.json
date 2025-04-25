@@ -86,7 +86,7 @@
             "sort": "orders:desc",
             "collection": "1377",
             "count": 12,
-            "hideUnavailableItems": false,
+            "hideUnavailableItems": true,
             "similars": false
           }
         },
@@ -125,7 +125,7 @@
               "key": "productClusterIds"
             }
           ],
-          "hideUnavailableItems": false
+          "hideUnavailableItems": true
         }
       }
     },
