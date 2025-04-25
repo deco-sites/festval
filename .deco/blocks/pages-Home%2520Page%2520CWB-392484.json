@@ -13,42 +13,53 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
+            "desktop": "https://assets.decocache.com/festval/1ddf153a-baa3-4372-88d4-042bc796dddd/FESTVAL-NOVOS-BANNERS-002-1920X490-SUPER-PROMO-DE-BEBIDAS.jpg",
+            "mobile": "https://assets.decocache.com/festval/d60a2f48-93bf-443b-b633-5a3821c08055/FESTVAL-NOVOS-BANNERS-1080-1500-002-superpromo.jpg",
+            "alt": "superpromodebebidas",
+            "activeTerm": true,
+            "deadLine": "2025-04-30",
+            "initialDate": "2025-04-25",
+            "action": {
+              "href": "https://www.festval.com/1647?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=SuperPromodeBebidas"
+            }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/41ffc4ec-b89e-4ca6-a392-ac89b3ef29a1/Festval---BannerDesk---Sou-Festval-NOVO.jpg",
             "mobile": "https://assets.decocache.com/festval/c7fc6b03-3c4c-4052-98f0-78503b3939d7/Festval---BannerMBL---Sou-Festval-NOVO.jpg",
             "alt": "soufestval",
             "activeTerm": false,
-            "deadLine": "01/01/2024",
-            "initialDate": "01/01/2024",
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
             }
           },
           {
             "initialDate": "2025/04/04",
-            "deadLine": "2025/05/04",
             "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
             "mobile": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
             "alt": "sucos-laranja",
             "activeTerm": true,
+            "deadLine": "2025/05/04",
             "action": {
               "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
             }
           },
           {
-            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
             "alt": "site",
             "activeTerm": true,
-            "deadLine": "01/01/2024"
+            "initialDate": "01/01/2024"
           },
           {
+            "initialDate": "2025-04-21",
             "deadLine": "2025-04-27",
             "desktop": "https://assets.decocache.com/festval/ce126b3b-64e6-40a2-997c-fba8d2061041/FESTVAL-NOVOS-BANNERS-CAFE.jpg",
             "mobile": "https://assets.decocache.com/festval/d4d22c31-ef93-443a-831a-a39fcee8df53/FESTVAL-NOVOS-BANNERS-1080-1500-cafe.jpg",
             "alt": "dia-do-café",
             "activeTerm": true,
-            "initialDate": "2025-04-21",
             "action": {
               "href": "https://www.festval.com/1166?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadocaf%C3%A9nestl%C3%A9"
             }
