@@ -49,8 +49,8 @@
                 "desktop": "https://assets.decocache.com/festval/6a66175c-b522-4d31-aaaf-c8fcaa8e077c/Florista-1920x490.jpg",
                 "mobile": "https://assets.decocache.com/festval/c4b23a3b-1dcf-4890-94a0-05d058e34f2c/Florista-1080x490.jpg",
                 "alt": "florista",
-                "href": "https://api.whatsapp.com/send/?phone=5541997620458&text=Ol%C3%A1%2C+Bom+Dia.+Vim+do+Festval.com+e+gostaria+de+personalizar+ou+saber+mais+sobre+as+flores+%21&type=phone_number&app_absent=0",
-                "hrefMobile": "https://api.whatsapp.com/send/?phone=5541997620458&text=Ol%C3%A1%2C+Bom+Dia.+Vim+do+Festval.com+e+gostaria+de+personalizar+ou+saber+mais+sobre+as+flores+%21&type=phone_number&app_absent=0"
+                "href": "https://wa.me/5541997620458?text=Ol%C3%A1%2C%20Bom%20Dia.%20Vim%20do%20Festval.com%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20flores%21",
+                "hrefMobile": "https://wa.me/5541997620458?text=Ol%C3%A1%2C%20Bom%20Dia.%20Vim%20do%20Festval.com%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20flores%21"
               }
             ]
           }
