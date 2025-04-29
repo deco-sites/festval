@@ -130,6 +130,38 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Left",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://assets.decocache.com/festval/55efa306-3011-429e-a8f9-eb7e7c16473e/LINDT-LANDING-PAGE-FESTVAL-BANNER-LOCAL-DIVISAO-528X465-175.png",
+            "desktop": "https://assets.decocache.com/festval/fece25bb-da95-4a25-8097-04e5a40bca6e/BANNER-FINAL-SITE-1700X400-175.png",
+            "region": "Mostrar em ambas",
+            "alt": "imagen1",
+            "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "hrefMobile": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "activeTerm": false
+          },
+          {
+            "positionBanner": "Right",
+            "region": "Mostrar em ambas",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://assets.decocache.com/festval/6b98f8c0-daea-4a8f-8403-9ff81ffbc30d/LINDT-LANDING-PAGE-FESTVAL-BANNER-LOCAL-DIVISAO-528X465-100.png",
+            "desktop": "https://assets.decocache.com/festval/fd62129a-b423-4d2f-97da-0ad6556db11b/BANNER-FINAL-SITE-1700X400.png",
+            "alt": "imagen2",
+            "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "hrefMobile": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "activeTerm": false
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
@@ -150,30 +182,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Footer"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/ImageGallery.tsx",
-        "banners": [
-          {
-            "positionBanner": "Left",
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "mobile": "https://assets.decocache.com/festval/55efa306-3011-429e-a8f9-eb7e7c16473e/LINDT-LANDING-PAGE-FESTVAL-BANNER-LOCAL-DIVISAO-528X465-175.png",
-            "desktop": "https://assets.decocache.com/festval/fece25bb-da95-4a25-8097-04e5a40bca6e/BANNER-FINAL-SITE-1700X400-175.png",
-            "region": "Mostrar em ambas"
-          },
-          {
-            "positionBanner": "Right",
-            "region": "Mostrar em ambas",
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "mobile": "https://assets.decocache.com/festval/6b98f8c0-daea-4a8f-8403-9ff81ffbc30d/LINDT-LANDING-PAGE-FESTVAL-BANNER-LOCAL-DIVISAO-528X465-100.png",
-            "desktop": "https://assets.decocache.com/festval/fd62129a-b423-4d2f-97da-0ad6556db11b/BANNER-FINAL-SITE-1700X400.png"
-          }
-        ]
       }
     }
   ],
