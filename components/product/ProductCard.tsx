@@ -1,24 +1,24 @@
+import { useDevice, useScript } from "@deco/deco/hooks";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
+import Section from "../../components/ui/Section.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
+import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
+import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
+import QuantitySelector from "../ui/QuantitySelector.tsx";
+import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
 import WishlistButton from "../wishlist/WishlistButton.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
-import { Ring } from "./ProductVariantSelector.tsx";
-import { useId } from "../../sdk/useId.ts";
-import { useDevice, useScript } from "@deco/deco/hooks";
-import QuantitySelector from "../ui/QuantitySelector.tsx";
-import { usePlatform } from "../../sdk/usePlatform.tsx";
-import ModalAddToCart from "./ModalAddToCart.tsx";
 import AddToCartMobileButton from "./AddToCartMobileButton.tsx";
+import ModalAddToCart from "./ModalAddToCart.tsx";
 import ModalAddToCartMobile from "./ModalAddToCartMobile.tsx";
-import QuantitySelectorKg from "../ui/QuantitySelectorKg.tsx";
-import Section from "../../components/ui/Section.tsx";
+import { Ring } from "./ProductVariantSelector.tsx";
 
 interface Props {
   product: Product;
@@ -497,6 +497,7 @@ function ProductCard({
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
             "w-full",
+            "remove-preview-link",
             !inStock && "opacity-70"
           )}
         >
@@ -509,7 +510,7 @@ function ProductCard({
             class={clx(
               "object-cover",
               "rounded w-full",
-              "col-span-full row-span-full"
+              "col-span-full row-span-full",
             )}
             // sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
@@ -526,7 +527,7 @@ function ProductCard({
               "object-cover",
               "rounded w-full",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100"
+              "transition-opacity opacity-0 lg:group-hover:opacity-100 max-lg:group-active:opacity-100",
             )}
             // sizes="(max-width: 640px) 50vw, 20vw"
             loading="lazy"
@@ -567,7 +568,7 @@ function ProductCard({
       </figure>
 
       <div>
-        <a href={relativeUrl} class="pt-5">
+        <a href={relativeUrl} class="pt-5 remove-preview-link">
           <span class="text-xs sm:text-sm font-normal flex text-left">
             {title}
           </span>
