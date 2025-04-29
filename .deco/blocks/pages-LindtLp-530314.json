@@ -99,7 +99,7 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "337",
+            "collection": "1368",
             "count": 12,
             "hideUnavailableItems": true
           }
@@ -116,7 +116,7 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "price:desc",
-            "collection": "337",
+            "collection": "1367",
             "count": 12,
             "hideUnavailableItems": true
           }
@@ -124,7 +124,8 @@
         "banner": "https://assets.decocache.com/festval/30738ca4-0798-4db4-a3ef-d09993e2cadd/LINDT-LANDING-PAGE-FESTVAL-BANNER-LATERAL-388X690-EXCELLENCE.png",
         "bannerMb": "https://assets.decocache.com/festval/49cb8138-f143-42a5-a0f7-4b9780c3484a/LINDT-LANDING-PAGE-FESTVAL-BANNER-LATERAL-1080x465-EXCELLENCE.png",
         "title": "exce",
-        "cta": "/"
+        "cta": "/",
+        "hrer": "https://www.festval.com/1367?map=productClusterIds&sort=orders%3Adesc&page=1"
       }
     },
     {
