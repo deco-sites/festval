@@ -1,6 +1,8 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Section, { type Props as SectionHeaderProps } from "../../components/ui/Section.tsx";
+import Section, {
+  type Props as SectionHeaderProps,
+} from "../../components/ui/Section.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useDevice } from "@deco/deco/hooks";
@@ -17,17 +19,29 @@ export interface Item {
 
 export interface Props extends SectionHeaderProps {
   items: Item[];
-  
 }
 
-function Card({ image, href, label }: Item ) {
+function Card({ image, href, label }: Item) {
   const device = useDevice(); // Detecta se é mobile ou desktop
 
   const size = device === "mobile" ? 90 : 122; // Tamanhos dinâmicos
   return (
-    <a href={href} class="flex flex-col items-center justify-center gap-2">
-      <Image class="rounded-xl" src={image} alt={label} width={size} height={size} loading="lazy" />
-      {label && <h2 class="font-medium text-sm">{label}</h2>}
+    <a href={href} class="flex flex-col items-center gap-2">
+      <Image
+        class="rounded-xl"
+        src={image}
+        alt={label}
+        width={size}
+        height={size}
+        loading="lazy"
+      />
+      {label && (
+        <div class="w-full text-center">
+          <h2 class="font-medium text-sm max-w-[90px] break-words mx-auto">
+            {label}
+          </h2>
+        </div>
+      )}
     </a>
   );
 }
@@ -46,17 +60,28 @@ function CategorySlider({ title, items }: Props) {
         id={id}
         class=" relative"
         style={{
-          gridTemplateColumns: hasArrows ? "min-content 1fr min-content" : "1fr",
+          gridTemplateColumns: hasArrows
+            ? "min-content 1fr min-content"
+            : "1fr",
         }}
       >
         <div class={`overflow-x-auto `}>
           <Slider
             class={`gap-5 w-full ${
-              items.length < 12 ? "carousel carousel-center justify-start lg:justify-between px-3 xl:!px-4 " : "carousel carousel-center sm:carousel-end lg:px-3 "
+              items.length < 12
+                ? "carousel carousel-center justify-start lg:justify-between px-3 xl:!px-4 "
+                : "carousel carousel-center sm:carousel-end lg:px-3 "
             }, `}
           >
             {items.map((item, index) => (
-              <Slider.Item index={index} class={clx("carousel-item", "first:pl-5 first:sm:pl-0", "last:pr-5 last:sm:pr-0")}>
+              <Slider.Item
+                index={index}
+                class={clx(
+                  "carousel-item",
+                  "first:pl-5 first:sm:pl-0",
+                  "last:pr-5 last:sm:pr-0",
+                )}
+              >
                 <Card {...item} />
               </Slider.Item>
             ))}
