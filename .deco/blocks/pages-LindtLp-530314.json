@@ -16,10 +16,35 @@
           {
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
-            "desktop": "https://data.decoassets.com/festval/29b66e0c-cb60-431e-b5d5-8000752ae0f3/lindtdsk1920x490.jpg",
-            "mobile": "https://data.decoassets.com/festval/a5892b58-1a36-4074-ab31-dd9590139584/lindmbl1080x1500.jpg",
-            "alt": "Lindtbanner",
-            "activeTerm": false
+            "desktop": "https://assets.decocache.com/festval/9f13ed17-2715-4f84-9bf9-db9f5baa9298/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1920x490-3.jpg",
+            "mobile": "https://assets.decocache.com/festval/211515e5-cc29-4460-b677-520a5cb0779a/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1080x1500-3.jpg",
+            "alt": "Experiencia",
+            "activeTerm": false,
+            "action": {
+              "href": "/"
+            }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://assets.decocache.com/festval/94c3369e-8460-4370-afd8-704e03562973/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/7573932f-6b87-400a-a453-3d254841858e/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1080x1500.jpg",
+            "alt": "175 anos",
+            "activeTerm": false,
+            "action": {
+              "href": "/"
+            }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://assets.decocache.com/festval/eb1b4ad3-d8a6-4639-9a94-a1627ce8296a/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1920x490-2.jpg",
+            "mobile": "https://assets.decocache.com/festval/cf434857-fdb5-42cd-be68-d41670b9d41e/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1080x1500-2.jpg",
+            "alt": "Qualidade",
+            "activeTerm": false,
+            "action": {
+              "href": "/"
+            }
           }
         ],
         "preload": false,
@@ -32,29 +57,29 @@
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
         "items": [
           {
-            "image": "https://data.decoassets.com/festval/8caba708-c907-45c6-9fca-3d272534c091/trufas.jpg",
+            "image": "https://assets.decocache.com/festval/167dfa63-a8c5-4647-8a2f-30a06132ce0a/ICONES-PRODUCTS-TRUFAS.png",
             "href": "https://www.festval.com/1042?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "trufas"
           },
           {
-            "image": "https://data.decoassets.com/festval/cbddce5d-13ab-4aca-b620-6d9385261d88/lindor.jpg",
-            "href": "https://www.festval.com/1368?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Lindor"
+            "image": "https://assets.decocache.com/festval/9333f260-8614-488a-9db6-1d5ebd9a052e/LINDT-LANDING-PAGE-FESTVAL-BOTOES-554x554-TRUFAS.png",
+            "href": "https://www.festval.com/1042?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "Trufas texto"
           },
           {
-            "image": "https://data.decoassets.com/festval/a1055129-ae6f-4433-9bf9-aec5850b1760/excellence.jpg",
-            "label": "Excellence",
-            "href": "https://www.festval.com/1367?map=productClusterIds&sort=orders%3Adesc&page=1"
+            "image": "https://assets.decocache.com/festval/3b3db7e6-afd1-480c-94ef-d3f9df5b0a07/ICONES-PRODUCTS-BARRAS.png",
+            "label": "Barras",
+            "href": "/"
           },
           {
-            "image": "https://data.decoassets.com/festval/93dd25dd-8b6a-4a23-9a46-fa1ac3473802/classic.jpg",
-            "href": "https://www.festval.com/1588?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "classic"
+            "image": "https://assets.decocache.com/festval/ee3afeb9-9029-4748-93a4-c8024528387c/LINDT-LANDING-PAGE-FESTVAL-BOTOES-554x554-BARRAS.png",
+            "label": "barras texto",
+            "href": "/"
           },
           {
-            "image": "https://data.decoassets.com/festval/2affb913-78e5-48f4-8f49-a86e86ccc600/presenteie.jpg",
-            "href": "https://www.festval.com/1589?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Presente"
+            "image": "https://assets.decocache.com/festval/a3e5ca33-674f-4974-9834-8b42ed46c3a0/LINDT-LANDING-PAGE-FESTVAL-BOTOES-554x554-MAES.png",
+            "href": "/",
+            "label": "mães"
           }
         ],
         "itensGrid": "5"
@@ -64,6 +89,42 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/separator.tsx"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "337",
+            "count": 12,
+            "hideUnavailableItems": true
+          }
+        },
+        "banner": "https://assets.decocache.com/festval/6514f87d-8c80-4e99-a0a1-ff0a5415439d/LINDT-LANDING-PAGE-FESTVAL-BANNER-LATERAL-388X690-LINDOR.png",
+        "bannerMb": "https://assets.decocache.com/festval/cd306343-cfab-486d-b3db-1f9c4398271e/LINDT-LANDING-PAGE-FESTVAL-BANNER-LATERAL-1080x465-LINDOR.png"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfBanner.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "price:desc",
+            "collection": "337",
+            "count": 12,
+            "hideUnavailableItems": true
+          }
+        },
+        "banner": "https://assets.decocache.com/festval/30738ca4-0798-4db4-a3ef-d09993e2cadd/LINDT-LANDING-PAGE-FESTVAL-BANNER-LATERAL-388X690-EXCELLENCE.png",
+        "bannerMb": "https://assets.decocache.com/festval/49cb8138-f143-42a5-a0f7-4b9780c3484a/LINDT-LANDING-PAGE-FESTVAL-BANNER-LATERAL-1080x465-EXCELLENCE.png",
+        "title": "exce",
+        "cta": "/"
       }
     },
     {
@@ -89,6 +150,30 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "Footer"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "banners": [
+          {
+            "positionBanner": "Left",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://assets.decocache.com/festval/55efa306-3011-429e-a8f9-eb7e7c16473e/LINDT-LANDING-PAGE-FESTVAL-BANNER-LOCAL-DIVISAO-528X465-175.png",
+            "desktop": "https://assets.decocache.com/festval/fece25bb-da95-4a25-8097-04e5a40bca6e/BANNER-FINAL-SITE-1700X400-175.png",
+            "region": "Mostrar em ambas"
+          },
+          {
+            "positionBanner": "Right",
+            "region": "Mostrar em ambas",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://assets.decocache.com/festval/6b98f8c0-daea-4a8f-8403-9ff81ffbc30d/LINDT-LANDING-PAGE-FESTVAL-BANNER-LOCAL-DIVISAO-528X465-100.png",
+            "desktop": "https://assets.decocache.com/festval/fd62129a-b423-4d2f-97da-0ad6556db11b/BANNER-FINAL-SITE-1700X400.png"
+          }
+        ]
       }
     }
   ],
