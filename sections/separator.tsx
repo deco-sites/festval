@@ -7,7 +7,7 @@ interface Props {
   color?: string;
 }
 
-export default function Separator({ color = "#F8F8F8" }: Props) {
-  return <div class="w-full h-5" style={{ backgroundColor: color }} />;
+export default function Separator({ color = "#fff" }: Props) {
+  return <div class="w-full h-5 !bg-white " style={{ backgroundColor: color }} />;
 }
 export const LoadingFallback = () => <Section.Placeholder height="20px" />;

@@ -244,7 +244,7 @@ function Gallery({
   );
 
   return (
-    <div className="bg-[#f8f8f8] py-4">
+    <div className="bg-[#fff] py-4">
       <Section.Container className="custom-container md:p-2">
         {fullBanner ? (
           <div

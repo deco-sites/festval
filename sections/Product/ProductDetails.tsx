@@ -130,7 +130,7 @@ export default function ProductDetails({
   }
 
   return (
-    <div className="bg-[#F8F8F8] pb-6">
+    <div className="bg-[#FFF] pb-6">
       <div class="container custom-container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5">
         <div class="px-4 sm:px-0">
           <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
