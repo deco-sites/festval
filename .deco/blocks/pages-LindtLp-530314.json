@@ -57,28 +57,28 @@
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
         "items": [
           {
-            "image": "https://assets.decocache.com/festval/167dfa63-a8c5-4647-8a2f-30a06132ce0a/ICONES-PRODUCTS-TRUFAS.png",
-            "href": "https://www.festval.com/1042?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "trufas"
-          },
-          {
             "image": "https://assets.decocache.com/festval/9333f260-8614-488a-9db6-1d5ebd9a052e/LINDT-LANDING-PAGE-FESTVAL-BOTOES-554x554-TRUFAS.png",
             "href": "https://www.festval.com/1042?map=productClusterIds&sort=orders%3Adesc&page=1",
             "label": "Trufas texto"
           },
           {
-            "image": "https://assets.decocache.com/festval/3b3db7e6-afd1-480c-94ef-d3f9df5b0a07/ICONES-PRODUCTS-BARRAS.png",
-            "label": "Barras",
-            "href": "/"
+            "image": "https://assets.decocache.com/festval/167dfa63-a8c5-4647-8a2f-30a06132ce0a/ICONES-PRODUCTS-TRUFAS.png",
+            "href": "https://www.festval.com/1042?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "label": "trufas"
           },
           {
             "image": "https://assets.decocache.com/festval/ee3afeb9-9029-4748-93a4-c8024528387c/LINDT-LANDING-PAGE-FESTVAL-BOTOES-554x554-BARRAS.png",
             "label": "barras texto",
-            "href": "/"
+            "href": "https://www.festval.com/1651?map=productClusterIds&sort=discount%3Adesc&page=1"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/3b3db7e6-afd1-480c-94ef-d3f9df5b0a07/ICONES-PRODUCTS-BARRAS.png",
+            "label": "Barras",
+            "href": "https://www.festval.com/1651?map=productClusterIds&sort=discount%3Adesc&page=1"
           },
           {
             "image": "https://assets.decocache.com/festval/a3e5ca33-674f-4974-9834-8b42ed46c3a0/LINDT-LANDING-PAGE-FESTVAL-BOTOES-554x554-MAES.png",
-            "href": "/",
+            "href": "https://www.festval.com/1649?map=productClusterIds&page=1",
             "label": "mães"
           }
         ],
