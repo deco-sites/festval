@@ -103,6 +103,18 @@
               "href": "https://www.festval.com/1650?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DiadasM%C3%A3es2025"
             },
             "activeTerm": true
+          },
+          {
+            "initialDate": "2025-05-03",
+            "deadLine": "2025-05-09",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/b96306b5-87a5-408a-aac3-9f6daaafc671/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home-_-Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/300ef0e4-5210-437c-9b51-2222c71be0ae/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home---Mobile_App---1080x1500.png",
+            "alt": "Llindtmães",
+            "activeTerm": false,
+            "action": {
+              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=Diadasm%C3%A3es"
+            }
           }
         ],
         "preload": true,
