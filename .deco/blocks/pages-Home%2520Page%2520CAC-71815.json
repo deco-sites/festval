@@ -96,12 +96,13 @@
             "initialDate": "2025-04-30",
             "deadLine": "2025-05-11",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/e24a6114-dcdc-4f7a-85af-cf44b3edf418/FESTVAL-NOVOS-BANNERS-1080-1500---dia-das-maes.jpg",
-            "mobile": "https://assets.decocache.com/festval/92d46f09-2a7f-46de-8087-43cb3061c8a8/V16_Campanha_Dia_das_Maes_Festval_2025_Banner_Festval.com_GG_1920x490-dia-das-maes.jpg",
+            "desktop": "https://assets.decocache.com/festval/92d46f09-2a7f-46de-8087-43cb3061c8a8/V16_Campanha_Dia_das_Maes_Festval_2025_Banner_Festval.com_GG_1920x490-dia-das-maes.jpg",
+            "mobile": "https://assets.decocache.com/festval/e24a6114-dcdc-4f7a-85af-cf44b3edf418/FESTVAL-NOVOS-BANNERS-1080-1500---dia-das-maes.jpg",
             "alt": "dias-das-maes",
             "action": {
               "href": "https://www.festval.com/1650?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DiadasM%C3%A3es2025"
-            }
+            },
+            "activeTerm": true
           }
         ],
         "preload": true,
