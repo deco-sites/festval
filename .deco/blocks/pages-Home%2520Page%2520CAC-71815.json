@@ -57,18 +57,6 @@
             }
           },
           {
-            "initialDate": "2025-04-28",
-            "deadLine": "2025-05-04",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/5e6763e3-16de-49cb-b829-5b8ad2ee8cd0/kv_cafe_manha_1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/10cf8d04-d14c-40e5-bc2e-d66c8fb61bc5/kv_cafe_manha_1080x1500.jpg",
-            "alt": "cafe-nestle",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1646?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Caf%C3%A9daManh%C3%A3Nestl%C3%A9"
-            }
-          },
-          {
             "initialDate": "2025-04-30",
             "deadLine": "2025-05-11",
             "region": "Cascavel",
@@ -87,10 +75,10 @@
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "alt": "Baly",
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
-            },
-            "activeTerm": true
+            }
           },
           {
             "initialDate": "2025-17-04",
@@ -111,10 +99,22 @@
             "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
-            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
+            },
+            "activeTerm": false
+          },
+          {
+            "initialDate": "2025-05-04",
+            "deadLine": "2025-05-11",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/69c7bcad-9d97-4975-bd27-94f2bfa62dfd/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "mobile": "https://assets.decocache.com/festval/8f67e180-6dd0-4062-b36f-ec3090b3878c/FESTVAL-NOVOS-BANNERS.jpg",
+            "alt": "mães",
+            "action": {
+              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Nestl%C3%A9Diadasmaes"
+            },
+            "activeTerm": true
           }
         ],
         "preload": true,
