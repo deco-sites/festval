@@ -219,6 +219,8 @@ const onLoad = (id: string) => {
     }
   }
 
+  console.log("Teste")
+
   const lastRegion = localStorage.getItem("lastRegion");
   const isHomePage = window.location.pathname === "/";
   const cep = getCookie("vtex_last_session_cep");
