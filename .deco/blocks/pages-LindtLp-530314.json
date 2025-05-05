@@ -48,7 +48,7 @@
           }
         ],
         "preload": false,
-        "interval": 5
+        "interval": 0
       }
     },
     {

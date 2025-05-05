@@ -68,8 +68,7 @@
             }
           }
         ],
-        "preload": true,
-        "interval": 10
+        "preload": true
       }
     },
     {
