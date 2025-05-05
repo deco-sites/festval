@@ -69,15 +69,15 @@
             }
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
+            "initialDate": "2025-04-30",
+            "deadLine": "2025-05-11",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/f7d9ea5e-8a6b-48cc-99d8-c70521b6d131/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/bbed3516-184b-49b1-9d8d-c1fb3f348e9a/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
-            "alt": "corona-210ml",
-            "activeTerm": false,
+            "desktop": "https://assets.decocache.com/festval/92d46f09-2a7f-46de-8087-43cb3061c8a8/V16_Campanha_Dia_das_Maes_Festval_2025_Banner_Festval.com_GG_1920x490-dia-das-maes.jpg",
+            "mobile": "https://assets.decocache.com/festval/e24a6114-dcdc-4f7a-85af-cf44b3edf418/FESTVAL-NOVOS-BANNERS-1080-1500---dia-das-maes.jpg",
+            "alt": "dias-das-maes",
+            "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=CoronitaL6P5"
+              "href": "https://www.festval.com/1650?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DiadasM%C3%A3es2025"
             }
           },
           {
@@ -105,15 +105,15 @@
             "activeTerm": false
           },
           {
-            "initialDate": "2025-04-30",
-            "deadLine": "2025-05-11",
+            "initialDate": "2025-05-05",
+            "deadLine": "2025-07-31",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/92d46f09-2a7f-46de-8087-43cb3061c8a8/V16_Campanha_Dia_das_Maes_Festval_2025_Banner_Festval.com_GG_1920x490-dia-das-maes.jpg",
-            "mobile": "https://assets.decocache.com/festval/e24a6114-dcdc-4f7a-85af-cf44b3edf418/FESTVAL-NOVOS-BANNERS-1080-1500---dia-das-maes.jpg",
-            "alt": "dias-das-maes",
-            "activeTerm": true,
+            "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
+            "alt": "frimesa",
+            "activeTerm": false,
             "action": {
-              "href": "https://www.festval.com/1650?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DiadasM%C3%A3es2025"
+              "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
           }
         ],
