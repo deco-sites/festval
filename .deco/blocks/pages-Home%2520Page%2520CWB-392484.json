@@ -66,47 +66,6 @@
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
             }
-          },
-          {
-            "initialDate": "2025/04/04",
-            "deadLine": "2025/05/04",
-            "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
-            "mobile": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
-            "alt": "sucos-laranja",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
-            }
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
-            "alt": "site",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-04-28",
-            "deadLine": "2025-05-04",
-            "desktop": "https://assets.decocache.com/festval/5e6763e3-16de-49cb-b829-5b8ad2ee8cd0/kv_cafe_manha_1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/10cf8d04-d14c-40e5-bc2e-d66c8fb61bc5/kv_cafe_manha_1080x1500.jpg",
-            "alt": "café da manhã",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1646?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Caf%C3%A9daManh%C3%A3Nestl%C3%A9"
-            }
-          },
-          {
-            "initialDate": "2025-04-28",
-            "deadLine": "2025-05-04",
-            "desktop": "https://assets.decocache.com/festval/174935c2-1180-4bd2-92db-e713cff775b6/FESTVAL-NOVOS-BANNERSSPATEN1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/5c2ec1e9-789e-4082-b271-df5854168e7c/FESTVAL-NOVOS-BANNERS-1080-1500SPATEN.jpg",
-            "alt": "Spaten",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/cerveja-spaten-munich-helles-puro-malte-lata-350ml/p?skuId=5314&utm_source=BannerHome&utm_campaign=Spatenl12p10"
-            }
           }
         ],
         "preload": true,
