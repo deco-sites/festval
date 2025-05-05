@@ -2,8 +2,8 @@ import type {
   SiteNavigationElement,
   SiteNavigationElementLeaf,
 } from "apps/commerce/types.ts";
-import SubDrawer from "../ui/MenuMobileSubDrawer.tsx";
 import Image from "apps/website/components/Image.tsx";
+import SubDrawer from "../ui/MenuMobileSubDrawer.tsx";
 
 export interface Props {
   navItems?: SiteNavigationElement[];
@@ -90,6 +90,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
 }
 
 function Menu({ navItems = [] }: Props) {
+
   return (
     <div
       class="flex flex-col h-full overflow-y-auto"

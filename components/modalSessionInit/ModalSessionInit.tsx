@@ -1,13 +1,13 @@
-import { AppContext } from "../../apps/site.ts";
-import { deleteCookie, getCookies, setCookie } from "@std/http/cookie";
-import { HEADER_HEIGHT_MOBILE } from "../../constants.ts";
-import { useComponent } from "../../sections/Component.tsx";
-import { usePlatform } from "../../sdk/usePlatform.tsx";
+import { type SectionProps } from "@deco/deco";
+import { useScript } from "@deco/deco/hooks";
+import { deleteCookie, setCookie } from "@std/http/cookie";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { useScript } from "@deco/deco/hooks";
+import { AppContext } from "../../apps/site.ts";
+import { HEADER_HEIGHT_MOBILE } from "../../constants.ts";
 import { useId } from "../../sdk/useId.ts";
-import { type SectionProps } from "@deco/deco";
+import { usePlatform } from "../../sdk/usePlatform.tsx";
+import { useComponent } from "../../sections/Component.tsx";
 
 export interface Props {
   /**
@@ -203,14 +203,32 @@ const onLoad = (id: string) => {
     Curitiba: "/cwb",
   };
 
+  const regionsList = {
+    Cascavel: "/cac",
+    Curitiba: "/cwb",
+  };
+
+  type CurrentRegion = keyof typeof regionsList | null
+
+  function redirect(region: CurrentRegion | null) {
+    const url = new URL(window.location.href)
+    const isHomePage = url.pathname === '/'
+
+    if (isHomePage && region) {
+      window.location.replace(regionsList[region])
+    }
+  }
+
   const lastRegion = localStorage.getItem("lastRegion");
   const isHomePage = window.location.pathname === "/";
   const cep = getCookie("vtex_last_session_cep");
   const vtex_segment_cookie = getCookie("vtex_last_segment");
   const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
-  const region = getCookie("region");
   const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
   const modal = document.getElementById(id);
+  const region = getCookie("region");
+
+  redirect(region as CurrentRegion)
 
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
@@ -322,9 +340,15 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
         }
         console.log("New URL:", newUrl);
 
-        window.location.replace(newUrl);
         localStorage.setItem("redirected", "true");
         if (region) localStorage.setItem("lastRegion", region);
+        
+        const isHomePage = window.location.pathname === "/";
+        if (isHomePage) {
+          window.location.replace(newUrl);
+        } else {
+          window.location.reload();
+        }
       }, 1000);
     } else if (attempts < maxAttempts) {
       attempts += 1;
@@ -408,7 +432,9 @@ export function loader(props: ModalInitProps) {
 
 function ModalSessionInit({
   modalInitProps,
+
 }: ModalInitProps & SectionProps<typeof loader, typeof action>) {
+  
   const id = useId();
   const {
     welcomeMessage,

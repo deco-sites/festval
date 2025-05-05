@@ -1,40 +1,39 @@
+import { SectionProps, type LoadingFallbackProps } from "@deco/deco";
+import { useDevice, useScript } from "@deco/deco/hooks";
 import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
 import type {
   ImageObject,
   SiteNavigationElement,
 } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
+import { getCookies } from "std/http/cookie.ts";
+import { AppContext } from "../../apps/site.ts";
 import Alert from "../../components/header/Alert.tsx";
 import Bag from "../../components/header/Bag.tsx";
-import SingIn, { SingInProps } from "../../components/header/SignIn.tsx";
+import MegaMenu from "../../components/header/MegaMenu.tsx";
 import Menu from "../../components/header/Menu.tsx";
+import MyOrders from "../../components/header/MyOrders.tsx";
 import NavItem from "../../components/header/NavItem.tsx";
-import Searchbar, {
-  type SearchbarProps,
-} from "../../components/search/Searchbar/Form.tsx";
-import MenuMobileDrawer from "../../components/ui/MenuMobileDrawer.tsx";
-import Icon from "../../components/ui/Icon.tsx";
-import {
-  HEADER_HEIGHT_DESKTOP,
-  HEADER_HEIGHT_MOBILE,
-  SIDEMENU_CONTAINER_ID,
-  SIDEMENU_DRAWER_ID,
-} from "../../constants.ts";
-import { useDevice, useScript } from "@deco/deco/hooks";
+import SingIn, { SingInProps } from "../../components/header/SignIn.tsx";
+import Topbar, { TopBarProps } from "../../components/header/Topbar.tsx";
 import WishListNav, {
   WishListNavProps,
 } from "../../components/header/WishListNav.tsx";
 import ModalSessionInit, {
   type ModalInitProps,
 } from "../../components/modalSessionInit/ModalSessionInit.tsx";
-import { type LoadingFallbackProps } from "@deco/deco";
-import MegaMenu from "../../components/header/MegaMenu.tsx";
-import Topbar, { TopBarProps } from "../../components/header/Topbar.tsx";
+import Searchbar, {
+  type SearchbarProps,
+} from "../../components/search/Searchbar/Form.tsx";
+import Icon from "../../components/ui/Icon.tsx";
+import MenuMobileDrawer from "../../components/ui/MenuMobileDrawer.tsx";
+import {
+  HEADER_HEIGHT_DESKTOP,
+  HEADER_HEIGHT_MOBILE,
+  SIDEMENU_CONTAINER_ID,
+  SIDEMENU_DRAWER_ID,
+} from "../../constants.ts";
 import { useId } from "../../sdk/useId.ts";
-import { SectionProps } from "@deco/deco";
-import { AppContext } from "../../apps/site.ts";
-import { getCookies } from "std/http/cookie.ts";
-import MyOrders from "../../components/header/MyOrders.tsx";
 export interface Logo {
   src: ImageWidget;
   alt: string;
@@ -112,7 +111,7 @@ export const loader = (
     region,
   }: Props,
   req: Request,
-  _ctx: AppContext,
+  _ctx: AppContext
 ) => {
   const cookies = getCookies(req.headers);
   const regionCookie = cookies["region"];

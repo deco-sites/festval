@@ -175,7 +175,8 @@
               "key": "productClusterIds"
             }
           ],
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "useCollectionName": true
         }
       }
     },

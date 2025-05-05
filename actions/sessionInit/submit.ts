@@ -1,6 +1,6 @@
+import { AppContext as AppContextVTEX } from "https://cdn.jsdelivr.net/gh/Suportewing/app-vtex-session/mod.ts";
 import { type AppContext } from "../../apps/site.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
-import { AppContext as AppContextVTEX } from "https://cdn.jsdelivr.net/gh/Suportewing/app-vtex-session/mod.ts";
 
 interface Cep {
   public: {
