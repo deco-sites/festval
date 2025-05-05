@@ -22,7 +22,7 @@ function Alert({ alerts = [], interval = 5 }: Props) {
               class="px-5 py-4 w-screen text-center"
               dangerouslySetInnerHTML={{ __html: alert }} 
             />
-          </Slider.Item>
+          </Slider.Item> 
         ))}
       </Slider>
 
