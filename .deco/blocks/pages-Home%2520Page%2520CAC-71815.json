@@ -45,13 +45,25 @@
             }
           },
           {
+            "initialDate": "2025-05-03",
+            "deadLine": "2025-05-09",
+            "desktop": "https://assets.decocache.com/festval/b96306b5-87a5-408a-aac3-9f6daaafc671/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home-_-Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/300ef0e4-5210-437c-9b51-2222c71be0ae/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home---Mobile_App---1080x1500.png",
+            "alt": "Llindtmães",
+            "activeTerm": false,
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=Diadasm%C3%A3es"
+            }
+          },
+          {
             "initialDate": "2025-04-28",
             "deadLine": "2025-05-04",
+            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/5e6763e3-16de-49cb-b829-5b8ad2ee8cd0/kv_cafe_manha_1920x490.jpg",
             "mobile": "https://assets.decocache.com/festval/10cf8d04-d14c-40e5-bc2e-d66c8fb61bc5/kv_cafe_manha_1080x1500.jpg",
             "alt": "cafe-nestle",
             "activeTerm": true,
-            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1646?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Caf%C3%A9daManh%C3%A3Nestl%C3%A9"
             }
@@ -75,10 +87,10 @@
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "alt": "Baly",
-            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
-            }
+            },
+            "activeTerm": true
           },
           {
             "initialDate": "2025-17-04",
@@ -99,21 +111,9 @@
             "desktop": "https://assets.decocache.com/festval/92d46f09-2a7f-46de-8087-43cb3061c8a8/V16_Campanha_Dia_das_Maes_Festval_2025_Banner_Festval.com_GG_1920x490-dia-das-maes.jpg",
             "mobile": "https://assets.decocache.com/festval/e24a6114-dcdc-4f7a-85af-cf44b3edf418/FESTVAL-NOVOS-BANNERS-1080-1500---dia-das-maes.jpg",
             "alt": "dias-das-maes",
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1650?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DiadasM%C3%A3es2025"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-03",
-            "deadLine": "2025-05-09",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/b96306b5-87a5-408a-aac3-9f6daaafc671/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home-_-Desktop---1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/300ef0e4-5210-437c-9b51-2222c71be0ae/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home---Mobile_App---1080x1500.png",
-            "alt": "Llindtmães",
-            "activeTerm": false,
-            "action": {
-              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=Diadasm%C3%A3es"
             }
           }
         ],
@@ -300,11 +300,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b216c4d2-c5a2-41e6-93f4-432b6a2299f2/churras.jpg",
-          "hrefMobile": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1605?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/b269d01e-5692-45e3-bcb0-cd6a582612a9/SEGTER-APP-MBL.jpg",
+          "hrefMobile": "https://www.festval.com/1605?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
           "initialDate": "2025-03-31",
