@@ -1,6 +1,6 @@
 import { type SectionProps } from "@deco/deco";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
-import type { FilterToggle, PageInfo, ProductListingPage } from "apps/commerce/types.ts";
+import type { PageInfo, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import { getCookies } from "std/http/cookie.ts";
@@ -475,23 +475,7 @@ function Result(props: SectionProps<typeof loader>) {
   const collectionName = collectionid && produtosEmEstoque[0]?.additionalProperty?.find(p => p.name === "cluster" && p.propertyID === collectionid)?.value;
 
   function getBrandName() {
-    const brandValue = String(collectionid).toLowerCase()
-    const brandFilters = filters.find(({ key }) => key === "brand") as FilterToggle
-
-    if (brandFilters) {
-      const brand = brandFilters.values.find(({ value }) => value === brandValue)
-      const hasFoundBrand = brand !== undefined
-
-      if (hasFoundBrand) {
-        const brandName = brand.label
-        // brandFilters.values[0].selected = !brand.selected
-        return false
-      }
-
-      return hasFoundBrand
-    }
-    
-    return brandFilters
+    return decodeURIComponent(String(collectionid))
   }
   
   const categoryName = breadcrumb.itemListElement?.at(-1)?.name ||
