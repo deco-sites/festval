@@ -54,6 +54,21 @@
                 "hrefMobile": "https://wa.me/5541997620458?text=Ol%C3%A1%2C%20Bom%20Dia.%20Vim%20do%20Festval.com%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20flores%21"
               }
             ]
+          },
+          {
+            "matcher": [
+              "chocolate",
+              "chocolates"
+            ],
+            "images": [
+              {
+                "desktop": "https://assets.decocache.com/festval/3a0a274d-0917-43f9-814e-ca1768408cfe/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Busca---Desktop---1920x490.png",
+                "mobile": "https://assets.decocache.com/festval/d80ee55f-71c4-4a52-a40b-672ab10a56f8/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Busca---Mobile---1080x490.png",
+                "alt": "mães lindt",
+                "href": "https://www.festval.com/1648?map=productClusterIds&sort=discount%3Adesc&page=1",
+                "hrefMobile": "https://www.festval.com/1648?map=productClusterIds&sort=discount%3Adesc&page=1"
+              }
+            ]
           }
         ]
       }
