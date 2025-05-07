@@ -146,13 +146,22 @@ export const action = async (
       if (response) {
         deleteCookie(req.headers, "vtex_segment");
         deleteCookie(req.headers, "vtex_session");
+        const LIMIT_EXPIRE_HOURS = 23;
 
         const now = new Date();
-        const expirationTime = now.getTime() + 23 * 60 * 60 * 1000;
+        const expirationTime = now.getTime() + LIMIT_EXPIRE_HOURS * 60 * 60 * 1000;
 
         setCookie(ctx.response.headers, {
           value: viaCepResponse.localidade,
           name: "region",
+          path: "/",
+          expires: new Date(expirationTime),
+          secure: true,
+        });
+
+        setCookie(ctx.response.headers, {
+          value: new Date(expirationTime).toISOString(),
+          name: "expires_at",
           path: "/",
           expires: new Date(expirationTime),
           secure: true,
@@ -173,7 +182,7 @@ export const action = async (
         });
 
         saveSegmentToCookie(ctx, response.segmentToken);
-        saveCepToCookies(ctx, cep);
+        saveCepToCookies(ctx, cep, LIMIT_EXPIRE_HOURS);
         return true;
       }
     }
@@ -214,7 +223,17 @@ const onLoad = (id: string) => {
     const url = new URL(window.location.href)
     const isHomePage = url.pathname === '/'
 
-    if (isHomePage && region) {
+    const expiresAt = getCookie("expires_at")
+
+    if (!expiresAt) {
+      return
+    }
+
+    const expiresAtDate = new Date(expiresAt)
+    const currentDate = new Date()
+    const isSessionExpired = currentDate.getTime() > expiresAtDate.getTime()
+
+    if (isHomePage && region && !isSessionExpired) {
       window.location.replace(regionsList[region])
     }
   }
@@ -227,7 +246,7 @@ const onLoad = (id: string) => {
   const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
   const modal = document.getElementById(id);
   const region = getCookie("region");
-
+  
   redirect(region as CurrentRegion)
 
   if (cep && regionId) {

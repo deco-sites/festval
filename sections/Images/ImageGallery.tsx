@@ -1,10 +1,9 @@
+import { SectionProps } from "@deco/deco";
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { type LoadingFallbackProps } from "@deco/deco";
-import { SectionProps } from "@deco/deco";
 import { getCookies, setCookie } from "std/http/cookie.ts";
-import Section from "../../components/ui/Section.tsx";
 import { AppContext } from "../../apps/site.ts";
+import Section from "../../components/ui/Section.tsx";
 
 /**
  * @titleBy alt

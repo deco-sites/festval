@@ -1,14 +1,14 @@
+import { SectionProps } from "@deco/deco";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
+import { getCookies, setCookie } from "std/http/cookie.ts";
+import { AppContext } from "../../apps/site.ts";
 import Icon from "../../components/ui/Icon.tsx";
+import Section from "../../components/ui/Section.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
-import { SectionProps } from "@deco/deco";
-import { getCookies, setCookie } from "std/http/cookie.ts";
-import Section from "../../components/ui/Section.tsx";
-import { AppContext } from "../../apps/site.ts";
 
 /**
  * @titleBy alt

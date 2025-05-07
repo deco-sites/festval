@@ -4,6 +4,7 @@ import type { PageInfo, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import { getCookies } from "std/http/cookie.ts";
+import { usePagination } from "../../hooks/usePagination.ts";
 import FiltersMb from "../../islands/FiltersMb.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
@@ -271,7 +272,7 @@ function PartialPageResult(props: Props) {
         />
       ))}
 
-      {partial && partial === "hideLess" && (
+      {/* {partial && partial === "hideLess" && (
         <a
           rel="next"
           class={clx("btn btn-ghost btn-next")}
@@ -304,9 +305,63 @@ function PartialPageResult(props: Props) {
             __html: useScript(onLoad, pageInfo.records, pageInfo),
           }}
         />
-      )}
+      )} */}
     </div>
   );
+}
+
+const createPageLink = (page: string, baseUrl: string) => {
+  const url = new URL(baseUrl)
+  const isPageInTheUrl = url.searchParams.has("page")
+
+  if (isPageInTheUrl) {
+    url.searchParams.set("page", page)
+  } else {
+    url.searchParams.append("page", page)
+  }
+
+  return url.href
+}
+
+function Pagination({ pageInfo, url }: {
+  pageInfo: PageInfo,
+  url: string
+}) {
+  
+  const { records = 0, recordPerPage = 12, currentPage, nextPage, previousPage } = pageInfo
+
+  const visiblePageNumbers = usePagination({ currentPage, recordPerPage, records })
+
+  const hasPreviousPage = !!previousPage
+  const hasNextPage = !!nextPage
+  
+  return (
+    <div className="flex items-center gap-2">
+      <a href={previousPage} disabled={!hasPreviousPage} className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${!hasPreviousPage ? 'opacity-20' : 'hover:bg-black/20'}`}>
+        <Icon className="rotate-180 w-4 h-4" id="chevron-right" />
+      </a>
+
+      {
+        visiblePageNumbers.map((pageNumber) => {
+          const isNumber = !Number.isNaN(Number(pageNumber))
+
+          return (
+            isNumber 
+            ? (
+              <a data-current-page={pageNumber === String(currentPage)} className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-black/20 transition-colors data-[current-page=true]:bg-[#282828] data-[current-page=true]:text-white" href={createPageLink(pageNumber, url)}>{pageNumber}</a>
+            ) 
+            : (
+              <span>{pageNumber}</span>
+            )
+          )
+        })
+      }
+
+      <a href={nextPage} disabled={!hasNextPage} className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${!hasNextPage ? 'opacity-20' : 'hover:bg-black/20'}`}>
+        <Icon className=" w-4 h-4" id="chevron-right" />
+      </a>
+    </div>
+  )
 }
 
 function PageResult(props: SectionProps<typeof loader>) {
@@ -334,11 +389,13 @@ function PageResult(props: SectionProps<typeof loader>) {
     href: nextPageUrl,
     props: { partial: "hideLess" },
   });
-  const infinite = layout?.pagination !== "pagination";
+  // const infinite = layout?.pagination !== "pagination";
+  const infinite = false;
   const id = useId();
+
   return (
     <div id={id} class="grid grid-flow-row grid-cols-1 place-items-center ">
-      <div
+      {/* <div
         class={clx(
           "pb-2 sm:pb-10 btn-prev-wrapper",
           (!prevPageUrl || partial === "hideLess") && "hidden",
@@ -356,7 +413,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           <span class="inline [.htmx-request_&]:hidden">Mostrar menos</span>
           <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
         </a>
-      </div>
+      </div> */}
 
       <div
         data-product-list
@@ -379,8 +436,8 @@ function PageResult(props: SectionProps<typeof loader>) {
         ))}
       </div>
 
-      <div class={clx("pt-2 sm:pt-10 w-full", "")}>
-        {infinite
+      <div class={clx("pt-10 w-full flex items-center justify-center", "")}>
+        {/* {infinite
           ? (
             <div class="flex justify-center [&_section]:contents">
               <a
@@ -411,8 +468,8 @@ function PageResult(props: SectionProps<typeof loader>) {
               >
                 <Icon id="chevron-right" class="rotate-180" />
               </a>
-              <span class="btn btn-ghost join-item">
-                Page {zeroIndexedOffsetPage + 1}
+              <span class="join-item ">
+                Página {zeroIndexedOffsetPage}
               </span>
               <a
                 rel="next"
@@ -424,7 +481,8 @@ function PageResult(props: SectionProps<typeof loader>) {
                 <Icon id="chevron-right" />
               </a>
             </div>
-          )}
+          )} */}
+          <Pagination url={url} pageInfo={pageInfo}  />
       </div>
     </div>
   );
@@ -505,13 +563,22 @@ function Result(props: SectionProps<typeof loader>) {
       },
     },
   });
+  
+  const { currentPage, recordPerPage, records } = pageInfo
 
+  const initialIndex = (currentPage - 1) * recordPerPage! + 1
+  const finalIndex = Math.min(currentPage * recordPerPage!, records!)
+
+  const VTEX_PAGE_LIMIT = 50
+  const quantityOfRecordsAccordingByVtexPageLimit = VTEX_PAGE_LIMIT * recordPerPage!
 
   const results = (
     <span className="text-sm font-normal">
-      {pageInfo.records ?? 0} resultado{pageInfo.records! > 1 && 's'}
+      {/* {pageInfo.records ?? 0} resultado{pageInfo.records! > 1 && 's'} */}
+      {initialIndex}-{finalIndex} de {records! > quantityOfRecordsAccordingByVtexPageLimit ? quantityOfRecordsAccordingByVtexPageLimit : records} resultados
     </span>
-  );
+  )
+
   const sortBy = sortOptions.length > 0 && (
     <div>
       <Sort sortOptions={sortOptions} url={url} />
