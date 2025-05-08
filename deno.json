@@ -38,7 +38,7 @@
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.6.0",
     "@deco/dev": "jsr:@deco/dev@1.115.7",
-    "app-vtex-session/": "https:\\denopkg.com\\app-vtex-session/"
+    "app-vtex-session/": "https://cdn.jsdelivr.net/gh/Suportewing/app-vtex-session/"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
