@@ -125,7 +125,8 @@
             },
             "alt": "coronita210",
             "desktop": "https://assets.decocache.com/festval/2a96108c-662f-466f-b943-5c6c9332e659/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/9349d8c6-09e0-4660-b5f2-bbb97b7e98c1/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg"
+            "mobile": "https://assets.decocache.com/festval/9349d8c6-09e0-4660-b5f2-bbb97b7e98c1/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
+            "activeTerm": true
           }
         ],
         "preload": true,
