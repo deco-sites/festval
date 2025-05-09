@@ -349,16 +349,16 @@
           "activeTerm": false
         },
         {
-          "mobile": "https://assets.decocache.com/festval/3d3ea640-ba8e-4ecc-8e65-dbc1e3ce2388/BANNER-M-visibilidade-RB-POMELO.jpg",
-          "alt": "RB Pomelo",
-          "href": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
-          "hrefMobile": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
+          "mobile": "https://assets.decocache.com/festval/819ecd1e-44d0-4a21-8690-a75e4d212e36/BANNER-M-visibilidade-rana.jpg",
+          "href": "https://www.festval.com/s?q=rana+250g&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=rana+250g&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Left",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false,
-          "desktop": "https://assets.decocache.com/festval/a5860029-b051-4574-a878-fed9c6069319/RB-POMELO-VISIBILIDADE.jpg"
+          "desktop": "https://assets.decocache.com/festval/01ec58bc-e7ac-41aa-9dfc-b4ae52dafa62/RANA-VISIBILIDADE.jpg",
+          "alt": "Visibilidade_1"
         },
         {
           "mobile": "https://assets.decocache.com/festval/a0788be7-8005-4438-a08c-7bd003331072/BANNER-M-visibilidade-dellarabica.jpg",
