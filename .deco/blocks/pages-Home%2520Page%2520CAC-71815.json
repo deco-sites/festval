@@ -45,39 +45,15 @@
             }
           },
           {
-            "initialDate": "2025-05-03",
-            "deadLine": "2025-05-09",
-            "desktop": "https://assets.decocache.com/festval/b96306b5-87a5-408a-aac3-9f6daaafc671/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home-_-Desktop---1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/300ef0e4-5210-437c-9b51-2222c71be0ae/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home---Mobile_App---1080x1500.png",
-            "alt": "Llindtmães",
-            "activeTerm": false,
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=Diadasm%C3%A3es"
-            }
-          },
-          {
-            "initialDate": "2025-05-04",
+            "initialDate": "2025-05-05",
             "deadLine": "2025-05-11",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/8f67e180-6dd0-4062-b36f-ec3090b3878c/FESTVAL-NOVOS-BANNERS.jpg",
-            "mobile": "https://assets.decocache.com/festval/69c7bcad-9d97-4975-bd27-94f2bfa62dfd/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
-            "alt": "mães",
+            "desktop": "https://assets.decocache.com/festval/2a96108c-662f-466f-b943-5c6c9332e659/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/9349d8c6-09e0-4660-b5f2-bbb97b7e98c1/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
+            "alt": "coronita210",
             "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Nestl%C3%A9Diadasmaes"
-            }
-          },
-          {
-            "initialDate": "2025-04-30",
-            "deadLine": "2025-05-11",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/92d46f09-2a7f-46de-8087-43cb3061c8a8/V16_Campanha_Dia_das_Maes_Festval_2025_Banner_Festval.com_GG_1920x490-dia-das-maes.jpg",
-            "mobile": "https://assets.decocache.com/festval/e24a6114-dcdc-4f7a-85af-cf44b3edf418/FESTVAL-NOVOS-BANNERS-1080-1500---dia-das-maes.jpg",
-            "alt": "dias-das-maes",
-            "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1650?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DiadasM%C3%A3es2025"
+              "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=coronitamaio"
             }
           },
           {
@@ -87,10 +63,10 @@
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "alt": "Baly",
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
-            },
-            "activeTerm": true
+            }
           },
           {
             "initialDate": "2025-17-04",
@@ -99,10 +75,10 @@
             "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "alt": "happy-eggs",
+            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "activeTerm": false
+            }
           },
           {
             "initialDate": "2025-05-05",
@@ -115,18 +91,6 @@
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "activeTerm": false
-          },
-          {
-            "deadLine": "2025-05-11",
-            "region": "Cascavel",
-            "initialDate": "2025-05-05",
-            "action": {
-              "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=coronitamaio"
-            },
-            "alt": "coronita210",
-            "desktop": "https://assets.decocache.com/festval/2a96108c-662f-466f-b943-5c6c9332e659/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/9349d8c6-09e0-4660-b5f2-bbb97b7e98c1/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
-            "activeTerm": true
           }
         ],
         "preload": true,
