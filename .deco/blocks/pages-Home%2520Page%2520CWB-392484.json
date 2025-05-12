@@ -13,58 +13,36 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/92d46f09-2a7f-46de-8087-43cb3061c8a8/V16_Campanha_Dia_das_Maes_Festval_2025_Banner_Festval.com_GG_1920x490-dia-das-maes.jpg",
-            "mobile": "https://assets.decocache.com/festval/e24a6114-dcdc-4f7a-85af-cf44b3edf418/FESTVAL-NOVOS-BANNERS-1080-1500---dia-das-maes.jpg",
-            "alt": "diadasmaes",
-            "activeTerm": true,
-            "deadLine": "2025-05-11",
-            "initialDate": "2025-04-30",
-            "action": {
-              "href": "https://www.festval.com/1650?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DiadasM%C3%A3es2025"
-            }
-          },
-          {
-            "initialDate": "2025-05-03",
-            "deadLine": "2025-05-09",
-            "desktop": "https://assets.decocache.com/festval/b96306b5-87a5-408a-aac3-9f6daaafc671/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home-_-Desktop---1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/300ef0e4-5210-437c-9b51-2222c71be0ae/2025.04.30-_-LINDT-_-C2M-_-Maes-_-Festval-_-Banner-Home---Mobile_App---1080x1500.png",
-            "alt": "lindtmães",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=Diadasm%C3%A3es"
-            }
-          },
-          {
-            "initialDate": "2025-05-04",
-            "desktop": "https://assets.decocache.com/festval/8f67e180-6dd0-4062-b36f-ec3090b3878c/FESTVAL-NOVOS-BANNERS.jpg",
-            "mobile": "https://assets.decocache.com/festval/69c7bcad-9d97-4975-bd27-94f2bfa62dfd/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
-            "alt": "Diadasmães",
-            "activeTerm": true,
-            "deadLine": "2025-05-11",
-            "action": {
-              "href": "https://www.festval.com/1172?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Nestl%C3%A9Diadasmaes"
-            }
-          },
-          {
-            "deadLine": "2025-05-11",
-            "desktop": "https://assets.decocache.com/festval/2a96108c-662f-466f-b943-5c6c9332e659/FESTVAL-NOVOS-BANNERS-002-1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/9349d8c6-09e0-4660-b5f2-bbb97b7e98c1/FESTVAL-NOVOS-BANNERS-1080-1500-002.jpg",
-            "alt": "CoronitaMaio",
-            "activeTerm": true,
-            "initialDate": "2025-05-04",
-            "action": {
-              "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418&utm_source=BannerHome&utm_campaign=coronitamaio"
-            }
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/41ffc4ec-b89e-4ca6-a392-ac89b3ef29a1/Festval---BannerDesk---Sou-Festval-NOVO.jpg",
             "mobile": "https://assets.decocache.com/festval/c7fc6b03-3c4c-4052-98f0-78503b3939d7/Festval---BannerMBL---Sou-Festval-NOVO.jpg",
             "alt": "soufestval",
             "activeTerm": false,
+            "deadLine": "01/01/2024",
+            "initialDate": "01/01/2024",
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
+            }
+          },
+          {
+            "deadLine": "2025-05-18",
+            "desktop": "https://assets.decocache.com/festval/23af38e4-ed44-4798-9918-b24fe56d7d72/FESTVAL-NOVOS-BANNERS-002-1920X490-GUARANA.jpg",
+            "mobile": "https://assets.decocache.com/festval/8288b621-121c-410a-8f73-e2d28f676741/FESTVAL-NOVOS-BANNERS-1080-1500-002-GUARANA.jpg",
+            "alt": "guaraná",
+            "activeTerm": true,
+            "initialDate": "2025-05-12",
+            "action": {
+              "href": "https://www.festval.com/s?q=guaran%C3%A1+antarctica+350ml&page=1&utm_source=BannerHome&utm_campaign=guaran%C3%A1350ml"
+            }
+          },
+          {
+            "initialDate": "2025-05-12",
+            "deadLine": "2025-05-18",
+            "desktop": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
+            "mobile": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
+            "alt": "invernonestle",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/Nestl%C3%A9?utm_source=BannerHome&utm_campaign=nestl%C3%A9inverno"
             }
           }
         ],
