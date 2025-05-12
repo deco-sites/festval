@@ -39,6 +39,20 @@
                 "hrefMobile": "https://api.whatsapp.com/send/?phone=554187731596&text=Ol%C3%A1%2C+vim+do+Festval.com+e+gostaria+de+saber+mais+sobre+a+adega+Festval.&type=phone_number&app_absent=0&utm_source=BannerSearch&utm_campaign=WppSommelier"
               }
             ]
+          },
+          {
+            "matcher": [
+              "importados"
+            ],
+            "images": [
+              {
+                "desktop": "https://assets.decocache.com/festval/4342c753-adf0-44eb-b01e-7beb08e90849/Lindt---Brinde---Generico-1---1920x490.png",
+                "mobile": "https://assets.decocache.com/festval/8e948247-804b-4203-b86e-c329c5f01bb5/Lindt---Brinde---Generico-1---1080x490.png",
+                "alt": "BrindeLindt",
+                "href": "https://www.festval.com/Lindt?utm_source=BannerCategoria&utm_campaign=BrindesLindt",
+                "hrefMobile": "https://www.festval.com/Lindt?utm_source=BannerCategoria&utm_campaign=BrindesLindt"
+              }
+            ]
           }
         ]
       }
