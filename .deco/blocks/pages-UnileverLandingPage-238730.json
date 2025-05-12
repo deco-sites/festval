@@ -23,6 +23,17 @@
             "initialDate": "0",
             "deadLine": "0",
             "activeTerm": false
+          },
+          {
+            "initialDate": "2025-05-05",
+            "deadLine": "2025-08-05",
+            "desktop": "https://assets.decocache.com/festval/737c72f1-e129-4f0c-adc8-e795ab8e322d/vini-desk.jpg",
+            "mobile": "https://assets.decocache.com/festval/2bb4e1ae-9ab3-4346-bec3-35ae3caf8204/vini.jpg",
+            "alt": "promobol",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/s?q=omo&filter.brand=omo&page=1"
+            }
           }
         ],
         "preload": false
@@ -58,7 +69,8 @@
             "href": "qwe",
             "label": "Nutriçao"
           }
-        ]
+        ],
+        "itensGrid": "5"
       }
     },
     {
