@@ -14,25 +14,25 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/0f96cb93-89a1-4dff-8e07-0ca31e713560/BANNER-UNIlever-fundo-azul.jpg",
-            "mobile": "https://data.decoassets.com/festval/7da54078-7d1f-43a7-aa03-929bb4602e1e/BANNER-MBL-1080X1500.jpg",
-            "alt": "BANNER-UNILEVER-LP",
-            "action": {
-              "href": "/Unilever"
-            },
-            "initialDate": "0",
-            "deadLine": "0",
-            "activeTerm": false
-          },
-          {
-            "initialDate": "2025-05-05",
-            "deadLine": "2025-08-05",
             "desktop": "https://assets.decocache.com/festval/737c72f1-e129-4f0c-adc8-e795ab8e322d/vini-desk.jpg",
             "mobile": "https://assets.decocache.com/festval/2bb4e1ae-9ab3-4346-bec3-35ae3caf8204/vini.jpg",
             "alt": "promobol",
-            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/s?q=omo&filter.brand=omo&page=1"
+            },
+            "initialDate": "2025-05-05",
+            "deadLine": "2025-08-05",
+            "activeTerm": true
+          },
+          {
+            "initialDate": "0",
+            "deadLine": "0",
+            "desktop": "https://data.decoassets.com/festval/0f96cb93-89a1-4dff-8e07-0ca31e713560/BANNER-UNIlever-fundo-azul.jpg",
+            "mobile": "https://data.decoassets.com/festval/7da54078-7d1f-43a7-aa03-929bb4602e1e/BANNER-MBL-1080X1500.jpg",
+            "alt": "BANNER-UNILEVER-LP",
+            "activeTerm": false,
+            "action": {
+              "href": "/Unilever"
             }
           }
         ],
