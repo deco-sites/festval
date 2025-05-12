@@ -24,12 +24,23 @@
             }
           },
           {
+            "deadLine": "2025-05-31",
+            "desktop": "https://assets.decocache.com/festval/821d58cb-fead-41f5-870e-7c16a5c11f4c/LINDT-BANNER-HOME-NOVO-KV.png",
+            "mobile": "https://assets.decocache.com/festval/795ed9fa-54bd-4677-8b4d-a46eb51492c2/LINDT-BANNER-HOME-NOVO-KV-MBL.png",
+            "alt": "BrindeLindt",
+            "activeTerm": true,
+            "initialDate": "2025-05-12",
+            "action": {
+              "href": "https://www.festval.com/Lindt?utm_source=Bannerhome&utm_campaign=BrindesLindt"
+            }
+          },
+          {
+            "initialDate": "2025-05-12",
             "deadLine": "2025-05-18",
             "desktop": "https://assets.decocache.com/festval/23af38e4-ed44-4798-9918-b24fe56d7d72/FESTVAL-NOVOS-BANNERS-002-1920X490-GUARANA.jpg",
             "mobile": "https://assets.decocache.com/festval/8288b621-121c-410a-8f73-e2d28f676741/FESTVAL-NOVOS-BANNERS-1080-1500-002-GUARANA.jpg",
             "alt": "guaraná",
             "activeTerm": true,
-            "initialDate": "2025-05-12",
             "action": {
               "href": "https://www.festval.com/s?q=guaran%C3%A1+antarctica+350ml&page=1&utm_source=BannerHome&utm_campaign=guaran%C3%A1350ml"
             }
