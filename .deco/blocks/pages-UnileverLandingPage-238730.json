@@ -88,14 +88,15 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "orders:desc",
-            "collection": "1219",
+            "collection": "1656",
             "count": 12,
             "hideUnavailableItems": true,
             "similars": false
           }
         },
-        "banner": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3a91ff82-4fb1-4009-91e9-809a2c406c7d/helmans-lp-arte.jpg",
-        "bannerMb": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9c6fcc76-f8e7-4105-a85d-29fe5fc841b1/helmans-lp-arte-MBL.jpg"
+        "banner": "https://assets.decocache.com/festval/debf17eb-89b4-49a7-8c54-dd0e198e2852/omo-liquido.jpg",
+        "bannerMb": "https://assets.decocache.com/festval/55563134-bf4d-4a80-8af0-ce4e631c722c/omo-liquido-mbl.jpg",
+        "title": "omoliquido"
       }
     },
     {
