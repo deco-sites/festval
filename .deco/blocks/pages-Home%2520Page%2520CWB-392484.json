@@ -285,29 +285,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "discount:desc",
-            "collection": "377",
-            "count": 12,
-            "hideUnavailableItems": true
-          }
-        },
-        "title": "Lindt Dia das Mães"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/separator.tsx",
-        "color": "#F8F8F8"
-      }
-    },
-    {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
       "products": {
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
