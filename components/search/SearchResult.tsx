@@ -2,7 +2,6 @@ import { type SectionProps } from "@deco/deco";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import type { PageInfo, ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
-import Image from "apps/website/components/Image.tsx";
 import { getCookies } from "std/http/cookie.ts";
 import { usePagination } from "../../hooks/usePagination.ts";
 import FiltersMb from "../../islands/FiltersMb.tsx";
@@ -74,7 +73,7 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
   const container = document.querySelector(".search-result-wrapper");
   const sentinel = document.getElementById("sentinel");
   const btnFoward = container?.querySelector(
-    ".btn-next",
+    ".btn-next"
   ) as HTMLButtonElement | null;
 
   function validateGoNext(): boolean {
@@ -83,9 +82,8 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
     const currentPage = pageInfo.currentPage;
 
     // Calcula o número total de páginas necessárias
-    const totalPages = totalRecords < 13
-      ? 0
-      : Math.ceil(totalRecords / recordsPerPage);
+    const totalPages =
+      totalRecords < 13 ? 0 : Math.ceil(totalRecords / recordsPerPage);
 
     // Retorna false se já estiver na última página ou se atingir o limite de 50 páginas
     return currentPage < totalPages && currentPage < 50;
@@ -108,7 +106,7 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
         }
       });
     },
-    { rootMargin: "100px" },
+    { rootMargin: "100px" }
   );
 
   observer.observe(sentinel);
@@ -117,7 +115,7 @@ const onLoad = (record: number | undefined, pageInfo: PageInfo) => {
 const onHandlePagination = (
   id: string,
   records: number,
-  partial: string | undefined,
+  partial: string | undefined
 ) => {
   if (partial && partial === "hideLess") {
     // Seleciona o container pelo id
@@ -229,7 +227,6 @@ function PartialPageResult(props: Props) {
     //return product;
   });
 
-
   const perPage = pageInfo?.recordPerPage || produtosEmEstoque.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
@@ -311,57 +308,75 @@ function PartialPageResult(props: Props) {
 }
 
 const createPageLink = (page: string, baseUrl: string) => {
-  const url = new URL(baseUrl)
-  const isPageInTheUrl = url.searchParams.has("page")
+  const url = new URL(baseUrl);
+  const isPageInTheUrl = url.searchParams.has("page");
 
   if (isPageInTheUrl) {
-    url.searchParams.set("page", page)
+    url.searchParams.set("page", page);
   } else {
-    url.searchParams.append("page", page)
+    url.searchParams.append("page", page);
   }
 
-  return url.href
-}
+  return url.href;
+};
 
-function Pagination({ pageInfo, url }: {
-  pageInfo: PageInfo,
-  url: string
-}) {
-  
-  const { records = 0, recordPerPage = 12, currentPage, nextPage, previousPage } = pageInfo
+function Pagination({ pageInfo, url }: { pageInfo: PageInfo; url: string }) {
+  const {
+    records = 0,
+    recordPerPage = 12,
+    currentPage,
+    nextPage,
+    previousPage,
+  } = pageInfo;
 
-  const visiblePageNumbers = usePagination({ currentPage, recordPerPage, records })
+  const visiblePageNumbers = usePagination({
+    currentPage,
+    recordPerPage,
+    records,
+  });
 
-  const hasPreviousPage = !!previousPage
-  const hasNextPage = !!nextPage
-  
+  const hasPreviousPage = !!previousPage;
+  const hasNextPage = !!nextPage;
+
   return (
     <div className="flex items-center gap-2">
-      <a href={previousPage} disabled={!hasPreviousPage} className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${!hasPreviousPage ? 'opacity-20' : 'hover:bg-black/20'}`}>
+      <a
+        href={previousPage}
+        disabled={!hasPreviousPage}
+        className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
+          !hasPreviousPage ? "opacity-20" : "hover:bg-black/20"
+        }`}
+      >
         <Icon className="rotate-180 w-4 h-4" id="chevron-right" />
       </a>
 
-      {
-        visiblePageNumbers.map((pageNumber) => {
-          const isNumber = !Number.isNaN(Number(pageNumber))
+      {visiblePageNumbers.map((pageNumber) => {
+        const isNumber = !Number.isNaN(Number(pageNumber));
 
-          return (
-            isNumber 
-            ? (
-              <a data-current-page={pageNumber === String(currentPage)} className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-black/20 transition-colors data-[current-page=true]:bg-[#282828] data-[current-page=true]:text-white" href={createPageLink(pageNumber, url)}>{pageNumber}</a>
-            ) 
-            : (
-              <span>{pageNumber}</span>
-            )
-          )
-        })
-      }
+        return isNumber ? (
+          <a
+            data-current-page={pageNumber === String(currentPage)}
+            className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-black/20 transition-colors data-[current-page=true]:bg-[#282828] data-[current-page=true]:text-white"
+            href={createPageLink(pageNumber, url)}
+          >
+            {pageNumber}
+          </a>
+        ) : (
+          <span>{pageNumber}</span>
+        );
+      })}
 
-      <a href={nextPage} disabled={!hasNextPage} className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${!hasNextPage ? 'opacity-20' : 'hover:bg-black/20'}`}>
+      <a
+        href={nextPage}
+        disabled={!hasNextPage}
+        className={`flex items-center justify-center w-8 h-8 rounded-full transition-colors ${
+          !hasNextPage ? "opacity-20" : "hover:bg-black/20"
+        }`}
+      >
         <Icon className=" w-4 h-4" id="chevron-right" />
       </a>
     </div>
-  )
+  );
 }
 
 function PageResult(props: SectionProps<typeof loader>) {
@@ -375,7 +390,7 @@ function PageResult(props: SectionProps<typeof loader>) {
     return availability === "https://schema.org/InStock";
     //return product;
   });
-  
+
   const perPage = pageInfo?.recordPerPage || produtosEmEstoque.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
   const offset = zeroIndexedOffsetPage * perPage;
@@ -421,7 +436,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           "grid items-center",
           "grid-cols-2 gap-2",
           "sm:grid-cols-4 sm:gap-10",
-          "w-full",
+          "w-full"
         )}
       >
         {produtosEmEstoque?.map((product, index) => (
@@ -482,7 +497,7 @@ function PageResult(props: SectionProps<typeof loader>) {
               </a>
             </div>
           )} */}
-          <Pagination url={url} pageInfo={pageInfo}  />
+        <Pagination url={url} pageInfo={pageInfo} />
       </div>
     </div>
   );
@@ -526,20 +541,25 @@ function Result(props: SectionProps<typeof loader>) {
     return availability === "https://schema.org/InStock";
     //return product;
   });
-  
+
   const urlParams = new URL(props.url);
   const collectionid = urlParams.pathname.split("/").pop() || undefined;
 
-  const collectionName = collectionid && produtosEmEstoque[0]?.additionalProperty?.find(p => p.name === "cluster" && p.propertyID === collectionid)?.value;
+  const collectionName =
+    collectionid &&
+    produtosEmEstoque[0]?.additionalProperty?.find(
+      (p) => p.name === "cluster" && p.propertyID === collectionid
+    )?.value;
 
   function getBrandName() {
-    return decodeURIComponent(String(collectionid))
+    return decodeURIComponent(String(collectionid));
   }
-  
-  const categoryName = breadcrumb.itemListElement?.at(-1)?.name ||
-                        collectionName ||
-                        getBrandName() ||
-                        "Categoria não especificada";
+
+  const categoryName =
+    breadcrumb.itemListElement?.at(-1)?.name ||
+    collectionName ||
+    getBrandName() ||
+    "Categoria não especificada";
 
   const perPage = pageInfo?.recordPerPage || produtosEmEstoque.length;
   const zeroIndexedOffsetPage = pageInfo.currentPage - startingPage;
@@ -563,21 +583,26 @@ function Result(props: SectionProps<typeof loader>) {
       },
     },
   });
-  
-  const { currentPage, recordPerPage, records } = pageInfo
 
-  const initialIndex = (currentPage - 1) * recordPerPage! + 1
-  const finalIndex = Math.min(currentPage * recordPerPage!, records!)
+  const { currentPage, recordPerPage, records } = pageInfo;
 
-  const VTEX_PAGE_LIMIT = 50
-  const quantityOfRecordsAccordingByVtexPageLimit = VTEX_PAGE_LIMIT * recordPerPage!
+  const initialIndex = (currentPage - 1) * recordPerPage! + 1;
+  const finalIndex = Math.min(currentPage * recordPerPage!, records!);
+
+  const VTEX_PAGE_LIMIT = 50;
+  const quantityOfRecordsAccordingByVtexPageLimit =
+    VTEX_PAGE_LIMIT * recordPerPage!;
 
   const results = (
     <span className="text-sm font-normal">
       {/* {pageInfo.records ?? 0} resultado{pageInfo.records! > 1 && 's'} */}
-      {initialIndex}-{finalIndex} de {records! > quantityOfRecordsAccordingByVtexPageLimit ? quantityOfRecordsAccordingByVtexPageLimit : records} resultados
+      {initialIndex}-{finalIndex} de{" "}
+      {records! > quantityOfRecordsAccordingByVtexPageLimit
+        ? quantityOfRecordsAccordingByVtexPageLimit
+        : records}{" "}
+      resultados
     </span>
-  )
+  );
 
   const sortBy = sortOptions.length > 0 && (
     <div>
@@ -587,7 +612,9 @@ function Result(props: SectionProps<typeof loader>) {
 
   return (
     <>
-      {partial ? <PartialPageResult {...props} /> : (
+      {partial ? (
+        <PartialPageResult {...props} />
+      ) : (
         <div
           id={container}
           {...viewItemListEvent}
@@ -631,21 +658,21 @@ function Result(props: SectionProps<typeof loader>) {
                 }
               >
                 <div class="flex sm:hidden justify-between items-end">
-                  <div class="flex flex-col">
+                  <div class="flex flex-col gap-3">
                     {results}
-                    <label
-                      class="flex gap-1 mt-2 text-sm items-center border justify-center px-2 min-h-[36px]"
-                      for={controls}
-                    >
-                      Filtrar
-                      <Image
+                    <div className="w-fit border">{sortBy}</div>
+                  </div>
+                  <label
+                    class="flex text-sm items-center justify-center px-10 min-h-[36px] rounded-sm bg-[#282828] text-white"
+                    for={controls}
+                  >
+                    Filtrar
+                    {/* <Image
                         src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9b4294b4-6379-478d-96e8-6199311b7dec/Filtro.svg"
                         width={16}
                         height={16}
-                      />
-                    </label>
-                  </div>
-                  <div className="w-fit border px-2">{sortBy}</div>
+                      /> */}
+                  </label>
                 </div>
               </Drawer>
             )}
@@ -668,23 +695,21 @@ function Result(props: SectionProps<typeof loader>) {
 
               <div class="flex flex-col gap-5">
                 <div class="text-sm text-[#646072] flex-col hidden lg:flex">
-                  {searchTerm
-                    ? (
-                      <>
-                        Você buscou por
-                        <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
-                          {searchTerm}
-                        </span>
-                      </>
-                    )
-                    : (
-                      <>
-                        Você está em:
-                        <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
-                          {categoryName}
-                        </span>
-                      </>
-                    )}
+                  {searchTerm ? (
+                    <>
+                      Você buscou por
+                      <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
+                        {searchTerm}
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      Você está em:
+                      <span class="font-normal capitalize text-[#282828] md:text-3xl text-lg">
+                        {categoryName}
+                      </span>
+                    </>
+                  )}
                 </div>
                 {device === "desktop" && props.page?.products.length && (
                   <>
@@ -694,7 +719,7 @@ function Result(props: SectionProps<typeof loader>) {
                         <AddAllProductsToCartButton
                           class={clx(
                             " bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation w-full px-2 md:my-2",
-                            "hover:opacity-80 ease-in-out duration-300",
+                            "hover:opacity-80 ease-in-out duration-300"
                           )}
                         />
                       )}
@@ -705,15 +730,15 @@ function Result(props: SectionProps<typeof loader>) {
                 {device === "mobile" &&
                   isWishList &&
                   props.page?.products.length && (
-                  <div class="flex justify-center">
-                    <AddAllProductsToCartButton
-                      class={clx(
-                        "bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation px-2 my-2",
-                        "hover:opacity-80 ease-in-out duration-300",
-                      )}
-                    />
-                  </div>
-                )}
+                    <div class="flex justify-center">
+                      <AddAllProductsToCartButton
+                        class={clx(
+                          "bg-[#5D7F3A] flex justify-center items-center text-white border-none gap-2 sm:gap-[12.8px] h-[32px] sm:h-[48px] text-sm sm:text-base font-normal rounded-[11px] no-animation px-2 my-2",
+                          "hover:opacity-80 ease-in-out duration-300"
+                        )}
+                      />
+                    </div>
+                  )}
                 <PageResult {...props} />
                 <div id="sentinel" />
               </div>
@@ -725,7 +750,7 @@ function Result(props: SectionProps<typeof loader>) {
               __html: useScript(
                 onLoad,
                 pageInfo.records || produtosEmEstoque.length,
-                pageInfo,
+                pageInfo
               ),
             }}
           />
@@ -736,7 +761,7 @@ function Result(props: SectionProps<typeof loader>) {
               __html: useScript(
                 setPageQuerystring,
                 `${pageInfo.currentPage}`,
-                container,
+                container
               ),
             }}
           />
@@ -750,7 +775,7 @@ function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
   if (!page) {
     return <NotFound />;
   }
-  
+
   return <Result {...props} page={page} />;
 }
 

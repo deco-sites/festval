@@ -144,8 +144,16 @@
 }
 
 .remove-preview-link {
-  touch-action: manipulation; 
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none; 
-  user-select: none; 
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.drawer-toggle:checked ~ .drawer-side > *:not(.drawer-overlay) {
+  transform: translateX(0%) !important;
+}
+
+.drawer-side > *:not(.drawer-overlay) {
+  transform: translateX(100%) !important;
 }
