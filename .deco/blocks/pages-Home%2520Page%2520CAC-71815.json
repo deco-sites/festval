@@ -387,16 +387,16 @@
           "desktop": "https://data.decoassets.com/festval/bc9ab92d-0b47-48f0-8cfe-f519575eec63/g7-visibilidade.jpg"
         },
         {
-          "mobile": "https://data.decoassets.com/festval/862a823f-7d9e-4e36-b377-f034a440353d/BANNER-M-visibilidade-MAMBA-WATER.jpg",
-          "desktop": "https://data.decoassets.com/festval/fbea6c7a-21af-480c-96b5-d9c4cfff93b7/BANNER-M-VISUALIZACAO-NOVOS-PRODUTOS-MAMBA-WATER.jpg",
-          "href": "https://www.festval.com/s?q=mamba+water&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=mamba+water&page=1",
+          "mobile": "https://assets.decocache.com/festval/a0788be7-8005-4438-a08c-7bd003331072/BANNER-M-visibilidade-dellarabica.jpg",
+          "desktop": "https://assets.decocache.com/festval/dc4bc44e-8aa0-421d-8d80-b61dc3dcb702/BANNER-M-VISUALIZACAO-NOVOS-PRODUTOS-dell'arabica.jpg",
+          "href": "https://www.festval.com/s?q=Dell%27Arabica&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=Dell%27Arabica&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false,
-          "alt": "mamba-water"
+          "alt": "dell-arabica"
         }
       ],
       "inverted": true
