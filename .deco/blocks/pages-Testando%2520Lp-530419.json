@@ -64,7 +64,8 @@
           "advancedConfigs": {
             "includeOriginalAttributes": []
           },
-          "count": 8
+          "count": 8,
+          "useCollectionName": true
         }
       }
     }
