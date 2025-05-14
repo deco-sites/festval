@@ -45,13 +45,37 @@
             }
           },
           {
+            "initialDate": "2025-05-12",
+            "deadLine": "2025-05-18",
+            "desktop": "https://assets.decocache.com/festval/8288b621-121c-410a-8f73-e2d28f676741/FESTVAL-NOVOS-BANNERS-1080-1500-002-GUARANA.jpg",
+            "mobile": "https://assets.decocache.com/festval/23af38e4-ed44-4798-9918-b24fe56d7d72/FESTVAL-NOVOS-BANNERS-002-1920X490-GUARANA.jpg",
+            "alt": "guarana",
+            "activeTerm": true,
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/s?q=guaran%C3%A1+antarctica+350ml&page=1&utm_source=BannerHome&utm_campaign=guaran%C3%A1350ml"
+            }
+          },
+          {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
+            "mobile": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
+            "alt": "nestle",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/Nestl%C3%A9?utm_source=BannerHome&utm_campaign=nestl%C3%A9inverno"
+            }
+          },
+          {
             "initialDate": "2025-04-15",
             "deadLine": "2025-07-31",
+            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "alt": "Baly",
             "activeTerm": true,
-            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
             }
@@ -79,13 +103,6 @@
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/8288b621-121c-410a-8f73-e2d28f676741/FESTVAL-NOVOS-BANNERS-1080-1500-002-GUARANA.jpg",
-            "mobile": "https://assets.decocache.com/festval/23af38e4-ed44-4798-9918-b24fe56d7d72/FESTVAL-NOVOS-BANNERS-002-1920X490-GUARANA.jpg"
           }
         ],
         "preload": true,
