@@ -66,6 +66,17 @@
             "action": {
               "href": "https://www.festval.com/1657?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ImportadosMaio"
             }
+          },
+          {
+            "initialDate": "2025-05-14",
+            "deadLine": "2025-05-17",
+            "desktop": "https://assets.decocache.com/festval/79299a24-c008-4bfb-9d65-0ee9d710c809/FESTVAL-NOVOS-BANNERS-NESCAU.jpg",
+            "mobile": "https://assets.decocache.com/festval/f9c436bd-e2bf-43f6-a129-f41b1346692e/FESTVAL-NOVOS-BANNERS-1080-1500-NESCAU.jpg",
+            "alt": "Nescau",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/s?q=nescau&filter.brand=nescau&page=1&utm_source=BannerHome&utm_campaign=LigaNescau"
+            }
           }
         ],
         "preload": true
