@@ -46,6 +46,27 @@
         "title": "1953",
         "cta": "/1227?map=productClusterIds&page=1"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "sort": "price:desc",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "key": "productClusterIds",
+              "value": "345"
+            }
+          ],
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
+          "count": 8
+        }
+      }
     }
   ],
   "seo": {
