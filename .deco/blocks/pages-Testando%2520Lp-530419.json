@@ -27,32 +27,10 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-        "items": [
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3ef80cf2-7acc-4a97-bb41-515be669ab82/Festval---1953---Banner---1080x10804.png"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/workflow/products.ts",
-          "page": 0
-        },
-        "title": "1953",
-        "cta": "/1227?map=productClusterIds&page=1"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 8,
           "sort": "price:desc",
           "fuzzy": "automatic",
           "selectedFacets": [
@@ -64,9 +42,30 @@
           "advancedConfigs": {
             "includeOriginalAttributes": []
           },
-          "count": 8,
-          "useCollectionName": true
+          "useCollectionName": false
         }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+        "items": [
+          {
+            "href": "/",
+            "image": "https://assets.decocache.com/festval/71e5f63d-f02e-42de-98a7-7b7692699b4f/Sucos.png"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/71e5f63d-f02e-42de-98a7-7b7692699b4f/Sucos.png",
+            "href": "/"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
       }
     }
   ],
