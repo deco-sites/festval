@@ -103,6 +103,18 @@
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             }
+          },
+          {
+            "initialDate": "2025-05-13",
+            "deadLine": "2025-05-25",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/ca0c1cb6-4113-4fe6-8124-e48f463fb2f9/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1920X490pxNOVOKV.jpg",
+            "mobile": "https://assets.decocache.com/festval/837c490a-6fc1-4a55-8fec-3c74701c2752/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1080X1500pxNOVOKV.jpg",
+            "alt": "importados",
+            "action": {
+              "href": "https://www.festval.com/1657?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ImportadosMaio"
+            },
+            "activeTerm": true
           }
         ],
         "preload": true,
