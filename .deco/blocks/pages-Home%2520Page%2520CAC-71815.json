@@ -47,8 +47,8 @@
           {
             "initialDate": "2025-05-12",
             "deadLine": "2025-05-18",
-            "desktop": "https://assets.decocache.com/festval/8288b621-121c-410a-8f73-e2d28f676741/FESTVAL-NOVOS-BANNERS-1080-1500-002-GUARANA.jpg",
-            "mobile": "https://assets.decocache.com/festval/23af38e4-ed44-4798-9918-b24fe56d7d72/FESTVAL-NOVOS-BANNERS-002-1920X490-GUARANA.jpg",
+            "desktop": "https://assets.decocache.com/festval/23af38e4-ed44-4798-9918-b24fe56d7d72/FESTVAL-NOVOS-BANNERS-002-1920X490-GUARANA.jpg",
+            "mobile": "https://assets.decocache.com/festval/8288b621-121c-410a-8f73-e2d28f676741/FESTVAL-NOVOS-BANNERS-1080-1500-002-GUARANA.jpg",
             "alt": "guarana",
             "activeTerm": true,
             "region": "Cascavel",
@@ -60,12 +60,24 @@
             "initialDate": "2025-05-12",
             "deadLine": "2025-05-18",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
-            "mobile": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
+            "desktop": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
+            "mobile": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
             "alt": "nestle",
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/Nestl%C3%A9?utm_source=BannerHome&utm_campaign=nestl%C3%A9inverno"
+            }
+          },
+          {
+            "initialDate": "2025-05-13",
+            "deadLine": "2025-05-25",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/ca0c1cb6-4113-4fe6-8124-e48f463fb2f9/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1920X490pxNOVOKV.jpg",
+            "mobile": "https://assets.decocache.com/festval/837c490a-6fc1-4a55-8fec-3c74701c2752/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1080X1500pxNOVOKV.jpg",
+            "alt": "importados",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1657?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ImportadosMaio"
             }
           },
           {
@@ -99,22 +111,10 @@
             "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
-            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
-          },
-          {
-            "initialDate": "2025-05-13",
-            "deadLine": "2025-05-25",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/ca0c1cb6-4113-4fe6-8124-e48f463fb2f9/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1920X490pxNOVOKV.jpg",
-            "mobile": "https://assets.decocache.com/festval/837c490a-6fc1-4a55-8fec-3c74701c2752/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1080X1500pxNOVOKV.jpg",
-            "alt": "importados",
-            "action": {
-              "href": "https://www.festval.com/1657?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ImportadosMaio"
             },
-            "activeTerm": true
+            "activeTerm": false
           }
         ],
         "preload": true,
