@@ -36,22 +36,70 @@ export const cartFrom = async (
           items: items.map((item, index) => {
             const detailUrl = new URL(item.detailUrl, url).href;
 
-            // if (!item.isGift) {
-            if (item.measurementUnit === "kg") {
+            if (!item.isGift) {
+              if (item.measurementUnit === "kg") {
+                if (products) {
+                  const correctListPrice = Number(
+                    products[
+                      index
+                    ]?.offers?.offers[0].priceSpecification[0].price
+                      .toFixed(2)
+                      .toString()
+                      .replace(".", "")
+                      .trim()
+                  );
+                  const correctPrice = Number(
+                    products[
+                      index
+                    ]?.offers?.offers[0].priceSpecification[1].price
+                      .toFixed(2)
+                      .toString()
+                      .replace(".", "")
+                      .trim()
+                  );
+
+                  item.price = correctPrice;
+                  item.sellingPrice = correctPrice;
+                  item.listPrice = correctListPrice;
+
+                  return {
+                    ...itemToAnalyticsItem(
+                      { ...item, detailUrl, coupon },
+                      index
+                    ),
+                    image: item.imageUrl,
+                    listPrice: correctListPrice / 100,
+                    unitMultiplier: item.unitMultiplier,
+                    measurementUnit: item.measurementUnit,
+                  };
+                }
+                return {
+                  ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+                  image: item.imageUrl,
+                  listPrice: item.listPrice / 100,
+                  unitMultiplier: item.unitMultiplier,
+                  measurementUnit: item.measurementUnit,
+                };
+              }
+
               if (products) {
                 const correctListPrice = Number(
-                  products[index]?.offers?.offers[0].priceSpecification[0].price
+                  products[
+                    index
+                  ]?.offers?.offers?.[0].priceSpecification[0].price
                     .toFixed(2)
                     .toString()
                     .replace(".", "")
-                    .trim()
+                    .trim() || ""
                 );
                 const correctPrice = Number(
-                  products[index]?.offers?.offers[0].priceSpecification[1].price
+                  products[
+                    index
+                  ]?.offers?.offers?.[0].priceSpecification[1].price
                     .toFixed(2)
                     .toString()
                     .replace(".", "")
-                    .trim()
+                    .trim() || ""
                 );
 
                 item.price = correctPrice;
@@ -66,44 +114,7 @@ export const cartFrom = async (
                   measurementUnit: item.measurementUnit,
                 };
               }
-              return {
-                ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-                image: item.imageUrl,
-                listPrice: item.listPrice / 100,
-                unitMultiplier: item.unitMultiplier,
-                measurementUnit: item.measurementUnit,
-              };
             }
-
-            if (products) {
-              const correctListPrice = Number(
-                products[index]?.offers?.offers?.[0].priceSpecification[0].price
-                  .toFixed(2)
-                  .toString()
-                  .replace(".", "")
-                  .trim() || ""
-              );
-              const correctPrice = Number(
-                products[index]?.offers?.offers?.[0].priceSpecification[1].price
-                  .toFixed(2)
-                  .toString()
-                  .replace(".", "")
-                  .trim() || ""
-              );
-
-              item.price = correctPrice;
-              item.sellingPrice = correctPrice;
-              item.listPrice = correctListPrice;
-
-              return {
-                ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-                image: item.imageUrl,
-                listPrice: correctListPrice / 100,
-                unitMultiplier: item.unitMultiplier,
-                measurementUnit: item.measurementUnit,
-              };
-            }
-            // }
             return {
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
               image: item.imageUrl,
@@ -131,8 +142,45 @@ export const cartFrom = async (
       items: items.map((item, index) => {
         const detailUrl = new URL(item.detailUrl, url).href;
 
-        // if (!item.isGift) {
-        if (item.measurementUnit === "kg") {
+        if (!item.isGift) {
+          if (item.measurementUnit === "kg") {
+            if (products) {
+              const correctListPrice = Number(
+                products[index]?.offers?.offers[0].priceSpecification[0].price
+                  .toFixed(2)
+                  .toString()
+                  .replace(".", "")
+                  .trim()
+              );
+              const correctPrice = Number(
+                products[index]?.offers?.offers[0].priceSpecification[1].price
+                  .toFixed(2)
+                  .toString()
+                  .replace(".", "")
+                  .trim()
+              );
+
+              item.price = correctPrice;
+              item.sellingPrice = correctPrice;
+              item.listPrice = correctListPrice;
+
+              return {
+                ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+                image: item.imageUrl,
+                listPrice: correctListPrice / 100,
+                unitMultiplier: item.unitMultiplier,
+                measurementUnit: item.measurementUnit,
+              };
+            }
+            return {
+              ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+              image: item.imageUrl,
+              listPrice: item.listPrice / 100,
+              unitMultiplier: item.unitMultiplier,
+              measurementUnit: item.measurementUnit,
+            };
+          }
+
           if (products) {
             const correctListPrice = Number(
               products[index]?.offers?.offers[0].priceSpecification[0].price
@@ -157,46 +205,9 @@ export const cartFrom = async (
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
               image: item.imageUrl,
               listPrice: correctListPrice / 100,
-              unitMultiplier: item.unitMultiplier,
-              measurementUnit: item.measurementUnit,
             };
           }
-          return {
-            ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-            image: item.imageUrl,
-            listPrice: item.listPrice / 100,
-            unitMultiplier: item.unitMultiplier,
-            measurementUnit: item.measurementUnit,
-          };
         }
-
-        if (products) {
-          const correctListPrice = Number(
-            products[index]?.offers?.offers[0].priceSpecification[0].price
-              .toFixed(2)
-              .toString()
-              .replace(".", "")
-              .trim()
-          );
-          const correctPrice = Number(
-            products[index]?.offers?.offers[0].priceSpecification[1].price
-              .toFixed(2)
-              .toString()
-              .replace(".", "")
-              .trim()
-          );
-
-          item.price = correctPrice;
-          item.sellingPrice = correctPrice;
-          item.listPrice = correctListPrice;
-
-          return {
-            ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-            image: item.imageUrl,
-            listPrice: correctListPrice / 100,
-          };
-        }
-        // }
 
         return {
           ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),

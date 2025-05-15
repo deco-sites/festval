@@ -187,30 +187,29 @@ function CartItem({ item, index, locale, currency }: Props) {
         </div>
 
         {/* Quantity Selector */}
-        {/* {!isGift && ( */}
         <div>
-          {measurementUnit === "kg" ? (
-            <div id={`input-${id}`} class={clx("quantity-cart-kg")}>
-              <QuantitySelectorKgCart
-                id={`input-${id}`}
-                min={0}
-                max={QUANTITY_MAX_VALUE}
-                value={quantity}
-                name={`item::${index}`}
-              />
-            </div>
-          ) : (
-            <div id={`input-${id}`} class={clx("quantity-cart-normal")}>
-              <QuantitySelector
-                min={0}
-                max={QUANTITY_MAX_VALUE}
-                value={quantity}
-                name={`item::${index}`}
-              />
-            </div>
-          )}
+          {!isGift &&
+            (measurementUnit === "kg" ? (
+              <div id={`input-${id}`} class={clx("quantity-cart-kg")}>
+                <QuantitySelectorKgCart
+                  id={`input-${id}`}
+                  min={0}
+                  max={QUANTITY_MAX_VALUE}
+                  value={quantity}
+                  name={`item::${index}`}
+                />
+              </div>
+            ) : (
+              <div id={`input-${id}`} class={clx("quantity-cart-normal")}>
+                <QuantitySelector
+                  min={0}
+                  max={QUANTITY_MAX_VALUE}
+                  value={quantity}
+                  name={`item::${index}`}
+                />
+              </div>
+            ))}
         </div>
-        {/* )} */}
       </div>
       <script
         type="module"
