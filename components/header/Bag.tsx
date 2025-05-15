@@ -17,7 +17,7 @@ const onLoad = (id: string) =>
     }
     counter.innerText = count > 9 ? "9+" : count.toString();
   });
-function Bag() {
+function Bag() { 
   const id = useId();
   return (
     <>
