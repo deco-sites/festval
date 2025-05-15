@@ -21,7 +21,7 @@ export const cartFrom = async (
   const currency = form?.storePreferencesData.currencyCode ?? "BRL";
   const coupon = form?.marketingData?.coupon ?? undefined;
 
-  Deno.writeTextFileSync("b.json", JSON.stringify(items));
+  // Deno.writeTextFileSync("b.json", JSON.stringify(items));
 
   let minicart: Minicart;
 
