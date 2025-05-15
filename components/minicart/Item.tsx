@@ -172,18 +172,27 @@ function CartItem({ item, index, locale, currency }: Props) {
 
         {/* Price Block */}
         <div class="flex items-start gap-1 flex-col">
-          {!isGift && listPrice && price && listPrice > price && (
-            <span class="line-through text-sm list-price">
-              {formatPrice(listPrice, currency, locale)}
-            </span>
+          {isGift ? (
+            <span class="text-lg font-medium text-[#282828] price">Grátis</span>
+          ) : (
+            <>
+              {listPrice && price && listPrice > price && (
+                <span class="line-through text-sm list-price">
+                  {formatPrice(listPrice, currency, locale)}
+                </span>
+              )}
+
+              <span class="text-lg font-medium text-[#282828] price">
+                {measurementUnit === "kg"
+                  ? formatPrice(
+                      price * unitMultiplier * quantity,
+                      currency,
+                      locale
+                    )
+                  : formatPrice(price * quantity, currency, locale)}
+              </span>
+            </>
           )}
-          <span class="text-lg font-medium text-[#282828] price">
-            {isGift
-              ? "Grátis"
-              : measurementUnit === "kg"
-              ? formatPrice(price * unitMultiplier * quantity, currency, locale)
-              : formatPrice(price * quantity, currency, locale)}
-          </span>
         </div>
 
         {/* Quantity Selector */}
