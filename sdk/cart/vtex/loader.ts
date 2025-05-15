@@ -1,10 +1,9 @@
+import type { Product } from "apps/commerce/types.ts";
 import { itemToAnalyticsItem } from "apps/vtex/hooks/useCart.ts";
 import type a from "apps/vtex/loaders/cart.ts";
 import { AppContext } from "apps/vtex/mod.ts";
-import { Minicart } from "../../../components/minicart/Minicart.tsx";
-import type { Product } from "apps/commerce/types.ts";
 import { getCookies } from "std/http/cookie.ts";
-import { DENO_DEPLOYMENT_ID } from "$fresh/src/server/build_id.ts";
+import { Minicart } from "../../../components/minicart/Minicart.tsx";
 
 export type Cart = Awaited<ReturnType<typeof a>>;
 
@@ -12,7 +11,7 @@ export const cartFrom = async (
   form: Cart,
   url: string,
   ctx?: AppContext,
-  products?: Product[],
+  products?: Product[]
 ): Promise<Minicart> => {
   const { items, totalizers } = form ?? { items: [] };
   const total = totalizers?.find((item) => item.id === "Items")?.value || 0;
@@ -37,66 +36,22 @@ export const cartFrom = async (
           items: items.map((item, index) => {
             const detailUrl = new URL(item.detailUrl, url).href;
 
-            if (!item.isGift) {
-              if (item.measurementUnit === "kg") {
-                if (products) {
-                  const correctListPrice = Number(
-                    products[index]?.offers?.offers[0].priceSpecification[0]
-                      .price
-                      .toFixed(2)
-                      .toString()
-                      .replace(".", "")
-                      .trim(),
-                  );
-                  const correctPrice = Number(
-                    products[index]?.offers?.offers[0].priceSpecification[1]
-                      .price
-                      .toFixed(2)
-                      .toString()
-                      .replace(".", "")
-                      .trim(),
-                  );
-
-                  item.price = correctPrice;
-                  item.sellingPrice = correctPrice;
-                  item.listPrice = correctListPrice;
-
-                  return {
-                    ...itemToAnalyticsItem(
-                      { ...item, detailUrl, coupon },
-                      index,
-                    ),
-                    image: item.imageUrl,
-                    listPrice: correctListPrice / 100,
-                    unitMultiplier: item.unitMultiplier,
-                    measurementUnit: item.measurementUnit,
-                  };
-                }
-                return {
-                  ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-                  image: item.imageUrl,
-                  listPrice: item.listPrice / 100,
-                  unitMultiplier: item.unitMultiplier,
-                  measurementUnit: item.measurementUnit,
-                };
-              }
-
+            // if (!item.isGift) {
+            if (item.measurementUnit === "kg") {
               if (products) {
                 const correctListPrice = Number(
-                  products[index]?.offers?.offers?.[0].priceSpecification[0]
-                    .price
+                  products[index]?.offers?.offers[0].priceSpecification[0].price
                     .toFixed(2)
                     .toString()
                     .replace(".", "")
-                    .trim() || "",
+                    .trim()
                 );
                 const correctPrice = Number(
-                  products[index]?.offers?.offers?.[0].priceSpecification[1]
-                    .price
+                  products[index]?.offers?.offers[0].priceSpecification[1].price
                     .toFixed(2)
                     .toString()
                     .replace(".", "")
-                    .trim() || "",
+                    .trim()
                 );
 
                 item.price = correctPrice;
@@ -111,7 +66,44 @@ export const cartFrom = async (
                   measurementUnit: item.measurementUnit,
                 };
               }
+              return {
+                ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+                image: item.imageUrl,
+                listPrice: item.listPrice / 100,
+                unitMultiplier: item.unitMultiplier,
+                measurementUnit: item.measurementUnit,
+              };
             }
+
+            if (products) {
+              const correctListPrice = Number(
+                products[index]?.offers?.offers?.[0].priceSpecification[0].price
+                  .toFixed(2)
+                  .toString()
+                  .replace(".", "")
+                  .trim() || ""
+              );
+              const correctPrice = Number(
+                products[index]?.offers?.offers?.[0].priceSpecification[1].price
+                  .toFixed(2)
+                  .toString()
+                  .replace(".", "")
+                  .trim() || ""
+              );
+
+              item.price = correctPrice;
+              item.sellingPrice = correctPrice;
+              item.listPrice = correctListPrice;
+
+              return {
+                ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+                image: item.imageUrl,
+                listPrice: correctListPrice / 100,
+                unitMultiplier: item.unitMultiplier,
+                measurementUnit: item.measurementUnit,
+              };
+            }
+            // }
             return {
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
               image: item.imageUrl,
@@ -139,59 +131,22 @@ export const cartFrom = async (
       items: items.map((item, index) => {
         const detailUrl = new URL(item.detailUrl, url).href;
 
-        if (!item.isGift) {
-          if (item.measurementUnit === "kg") {
-            if (products) {
-              const correctListPrice = Number(
-                products[index]?.offers?.offers[0].priceSpecification[0].price
-                  .toFixed(2)
-                  .toString()
-                  .replace(".", "")
-                  .trim(),
-              );
-              const correctPrice = Number(
-                products[index]?.offers?.offers[0].priceSpecification[1].price
-                  .toFixed(2)
-                  .toString()
-                  .replace(".", "")
-                  .trim(),
-              );
-
-              item.price = correctPrice;
-              item.sellingPrice = correctPrice;
-              item.listPrice = correctListPrice;
-
-              return {
-                ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-                image: item.imageUrl,
-                listPrice: correctListPrice / 100,
-                unitMultiplier: item.unitMultiplier,
-                measurementUnit: item.measurementUnit,
-              };
-            }
-            return {
-              ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
-              image: item.imageUrl,
-              listPrice: item.listPrice / 100,
-              unitMultiplier: item.unitMultiplier,
-              measurementUnit: item.measurementUnit,
-            };
-          }
-
+        // if (!item.isGift) {
+        if (item.measurementUnit === "kg") {
           if (products) {
             const correctListPrice = Number(
               products[index]?.offers?.offers[0].priceSpecification[0].price
                 .toFixed(2)
                 .toString()
                 .replace(".", "")
-                .trim(),
+                .trim()
             );
             const correctPrice = Number(
               products[index]?.offers?.offers[0].priceSpecification[1].price
                 .toFixed(2)
                 .toString()
                 .replace(".", "")
-                .trim(),
+                .trim()
             );
 
             item.price = correctPrice;
@@ -202,9 +157,46 @@ export const cartFrom = async (
               ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
               image: item.imageUrl,
               listPrice: correctListPrice / 100,
+              unitMultiplier: item.unitMultiplier,
+              measurementUnit: item.measurementUnit,
             };
           }
+          return {
+            ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+            image: item.imageUrl,
+            listPrice: item.listPrice / 100,
+            unitMultiplier: item.unitMultiplier,
+            measurementUnit: item.measurementUnit,
+          };
         }
+
+        if (products) {
+          const correctListPrice = Number(
+            products[index]?.offers?.offers[0].priceSpecification[0].price
+              .toFixed(2)
+              .toString()
+              .replace(".", "")
+              .trim()
+          );
+          const correctPrice = Number(
+            products[index]?.offers?.offers[0].priceSpecification[1].price
+              .toFixed(2)
+              .toString()
+              .replace(".", "")
+              .trim()
+          );
+
+          item.price = correctPrice;
+          item.sellingPrice = correctPrice;
+          item.listPrice = correctListPrice;
+
+          return {
+            ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
+            image: item.imageUrl,
+            listPrice: correctListPrice / 100,
+          };
+        }
+        // }
 
         return {
           ...itemToAnalyticsItem({ ...item, detailUrl, coupon }, index),
@@ -247,13 +239,13 @@ export const cartFrom = async (
   if (Array.isArray(minicart.platformCart.items)) {
     minicart.platformCart.items.map((item, index) => {
       item.priceDefinition.calculatedSellingPrice = Math.round(
-        (minicart.storefront.items[index].price || 0) * 100,
+        (minicart.storefront.items[index].price || 0) * 100
       );
       item.priceDefinition.total = Math.round(
-        (minicart.storefront.items[index].price || 0) * 100,
+        (minicart.storefront.items[index].price || 0) * 100
       );
       item.priceDefinition.sellingPrices[0].value = Math.round(
-        (minicart.storefront.items[index].price || 0) * 100,
+        (minicart.storefront.items[index].price || 0) * 100
       );
       return item;
     });
@@ -267,14 +259,14 @@ export const cartFrom = async (
 
 export const cartMiddleware = async (
   form: Cart,
-  ctx: AppContext,
+  ctx: AppContext
 ): Promise<Product[] | null> => {
   const { items } = form ?? { items: [] };
   const ids = items.map((item) => item.id);
   if (ids.length > 0) {
     const responseProductList = await ctx.invoke(
       "vtex/loaders/intelligentSearch/productList.ts",
-      { props: { ids } },
+      { props: { ids } }
     );
     return responseProductList;
   }
@@ -283,11 +275,11 @@ export const cartMiddleware = async (
 
 export const cartMiddleware2 = async (
   ids: string[],
-  ctx: AppContext,
+  ctx: AppContext
 ): Promise<Product[] | null> => {
   const responseProductList = await ctx.invoke(
     "vtex/loaders/intelligentSearch/productList.ts",
-    { props: { ids } },
+    { props: { ids } }
   );
   // console.log(ids, responseProductList);
   return responseProductList;
@@ -300,8 +292,7 @@ const setPostalCode = async (req: Request, platformCart: any) => {
   if (!postalCode) return;
 
   try {
-    const url =
-      `https://meufestval.vtexcommercestable.com.br/api/checkout/pub/orderForm/${platformCart.orderFormId}/attachments/shippingData`;
+    const url = `https://meufestval.vtexcommercestable.com.br/api/checkout/pub/orderForm/${platformCart.orderFormId}/attachments/shippingData`;
 
     const payload = {
       address: {
@@ -323,7 +314,7 @@ const setPostalCode = async (req: Request, platformCart: any) => {
 
     if (!response.ok) {
       throw new Error(
-        `Failed to set postal code: ${response.status} ${response.statusText}`,
+        `Failed to set postal code: ${response.status} ${response.statusText}`
       );
     }
 
@@ -337,7 +328,7 @@ const setPostalCode = async (req: Request, platformCart: any) => {
 async function loader(
   _props: unknown,
   req: Request,
-  ctx: AppContext,
+  ctx: AppContext
 ): Promise<Minicart> {
   const response = await ctx.invoke("vtex/loaders/cart.ts");
   const products: Product[] | null = await cartMiddleware(response, ctx);
