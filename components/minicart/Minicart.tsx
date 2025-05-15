@@ -66,7 +66,8 @@ export const action = async (_props: unknown, req: Request, ctx: AppContext) =>
   req.method === "PATCH"
     ? { cart: await ctx.invoke("site/loaders/minicart.ts") } // error fallback
     : { cart: await ctx.invoke("site/actions/minicart/submit.ts") };
-export function ErrorFallback() {
+export function ErrorFallback(){
+
   return (
     <div class="flex flex-col flex-grow justify-center items-center overflow-hidden w-full gap-2">
       <div class="flex flex-col gap-1 p-6 justify-center items-center">

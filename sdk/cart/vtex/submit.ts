@@ -2,6 +2,8 @@ import { type AppContext } from "apps/vtex/mod.ts";
 import { type CartSubmitActions } from "../../../actions/minicart/submit.ts";
 import { cartFrom } from "./loader.ts";
 
+
+
 const actions: CartSubmitActions<AppContext> = {
   addToCart: async ({ addToCart }, req, ctx) => {
     const response = await ctx.invoke(
@@ -9,7 +11,6 @@ const actions: CartSubmitActions<AppContext> = {
       // @ts-expect-error I don't know how to fix this
       addToCart
     );
-
     return cartFrom(response, req.url, ctx);
   },
   setQuantity: async ({ items }, req, ctx) => {
@@ -17,14 +18,13 @@ const actions: CartSubmitActions<AppContext> = {
       allowedOutdatedData: ["paymentData"],
       orderItems: items.map((quantity, index) => ({ quantity, index })),
     });
-
     return cartFrom(response, req.url, ctx);
   },
+  
   setCoupon: async ({ coupon }, req, ctx) => {
     const response = await ctx.invoke("vtex/actions/cart/updateCoupons.ts", {
       text: coupon ?? undefined,
     });
-
     return cartFrom(response, req.url, ctx);
   },
 };

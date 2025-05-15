@@ -51,7 +51,8 @@ interface ProductData {
 
 const onLoad = async (id: string, item: Item, quantity: number) => {
   async function getProductData(itemId: string): Promise<ProductData | null> {
-    const url = `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
+    const url =
+      `https://www.integracaoiota.com.br/festval-deco-helpers/index.php?skuId=${itemId}`;
 
     try {
       const response = await fetch(url);
@@ -76,15 +77,16 @@ const onLoad = async (id: string, item: Item, quantity: number) => {
   if (productData && productData.MeasurementUnit === "kg") {
     const divInput = document.getElementById(`input-${id}`);
     divInput?.setAttribute("data-product-data", JSON.stringify(productData));
-    const input =
-      divInput?.querySelector<HTMLInputElement>('input[type="text"]');
+    const input = divInput?.querySelector<HTMLInputElement>(
+      'input[type="text"]',
+    );
     divInput?.setAttribute("data-quantity-number", quantity.toString());
     input?.setAttribute("data-product-data", JSON.stringify(productData));
     input?.setAttribute("data-quantity-number", quantity.toString());
 
     if (productData && productData.UnitMultiplier) {
       const quantityForInput = (productData.UnitMultiplier * quantity).toFixed(
-        3
+        3,
       );
       if (input) {
         input.value = `${quantityForInput} kg`;
@@ -107,11 +109,11 @@ const removeItemHandler = (measurementUnit: string) => {
     }
 
     const buttonsAddToCart = document.querySelectorAll<HTMLButtonElement>(
-      'button[data-attribute="add-to-cart"]'
+      'button[data-attribute="add-to-cart"]',
     );
 
     const matchingButtons = Array.from(buttonsAddToCart).filter(
-      (button) => button.getAttribute("data-item-id") === itemID
+      (button) => button.getAttribute("data-item-id") === itemID,
     );
 
     matchingButtons.forEach((button) => {
@@ -127,7 +129,7 @@ const removeItemHandler = (measurementUnit: string) => {
 
 function CartItem({ item, index, locale, currency }: Props) {
   const {
-    image,
+    image, 
     listPrice,
     price = Infinity,
     quantity,
@@ -162,7 +164,7 @@ function CartItem({ item, index, locale, currency }: Props) {
           <button
             class={clx(
               isGift && "hidden",
-              "btn btn-ghost hover:bg-transparent hover:opacity-80 btn-square no-animation"
+              "btn btn-ghost hover:bg-transparent hover:opacity-80 btn-square no-animation",
             )}
             hx-on:click={useScript(removeItemHandler, measurementUnit)}
           >
@@ -172,47 +174,55 @@ function CartItem({ item, index, locale, currency }: Props) {
 
         {/* Price Block */}
         <div class="flex items-start gap-1 flex-col">
-          {listPrice && price && listPrice > price && (
+           {
+            !isGift && (
+              listPrice && price && listPrice > price && (
             <span class="line-through text-sm list-price">
               {formatPrice(listPrice, currency, locale)}
             </span>
-          )}
+          )
+            )
+           }
           <span class="text-lg font-medium text-[#282828] price">
             {isGift
               ? "Grátis"
-              : measurementUnit == "kg"
-              ? `${formatPrice(
+              : (measurementUnit === "kg"
+                ? formatPrice(
                   price * unitMultiplier * quantity,
                   currency,
-                  locale
-                )}`
-              : formatPrice(price * quantity, currency, locale)}
+                  locale,
+                )
+                : formatPrice(price * quantity, currency, locale))}
           </span>
         </div>
 
         {/* Quantity Selector */}
-        <div>
-          {measurementUnit === "kg" ? (
-            <div id={`input-${id}`} class={clx("quantity-cart-kg")}>
-              <QuantitySelectorKgCart
-                id={`input-${id}`}
-                min={0}
-                max={QUANTITY_MAX_VALUE}
-                value={quantity}
-                name={`item::${index}`}
-              />
-            </div>
-          ) : (
-            <div id={`input-${id}`} class={clx("quantity-cart-normal")}>
-              <QuantitySelector
-                min={0}
-                max={QUANTITY_MAX_VALUE}
-                value={quantity}
-                name={`item::${index}`}
-              />
-            </div>
-          )}
-        </div>
+        {!isGift && (
+          <div>
+            {measurementUnit === "kg"
+              ? (
+                <div id={`input-${id}`} class={clx("quantity-cart-kg")}>
+                  <QuantitySelectorKgCart
+                    id={`input-${id}`}
+                    min={0}
+                    max={QUANTITY_MAX_VALUE}
+                    value={quantity}
+                    name={`item::${index}`}
+                  />
+                </div>
+              )
+              : (
+                <div id={`input-${id}`} class={clx("quantity-cart-normal")}>
+                  <QuantitySelector
+                    min={0}
+                    max={QUANTITY_MAX_VALUE}
+                    value={quantity}
+                    name={`item::${index}`}
+                  />
+                </div>
+              )}
+          </div>
+        )}
       </div>
       <script
         type="module"
