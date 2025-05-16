@@ -29,7 +29,7 @@
             "mobile": "https://data.decoassets.com/festval/cae919ee-3146-4775-abe8-897fa59a2910/38852_Super-Sexta---1080x1500_original.png",
             "alt": "super-sexta",
             "deadLine": "2025-05-16",
-            "activeTerm": true,
+            "activeTerm": false,
             "initialDate": "2025-05-16",
             "region": "Cascavel",
             "action": {
