@@ -1654,28 +1654,22 @@
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/178?map=productClusterIds&sort=discount%3Adesc&page=1",
-      "name": "Sou Festval",
-      "children": []
-    },
-    {
-      "@type": "SiteNavigationElement",
       "url": "/178?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Mais vendidos",
       "children": []
     },
     {
+      "@type": "SiteNavigationElement",
       "url": "/churrascofestval?filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=casa-e-utilidades&filter.category-1=bebidas-alcoolicas&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
       "children": [],
-      "image": null,
-      "@type": "SiteNavigationElement"
+      "image": null
     },
     {
-      "@type": "SiteNavigationElement",
       "url": "/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
       "name": "Mamma Bia",
-      "children": []
+      "children": [],
+      "@type": "SiteNavigationElement"
     },
     {
       "url": "/bebidas/sucos-festval?page=1",
@@ -1684,9 +1678,9 @@
       "image": []
     },
     {
-      "children": [],
-      "name": "Adega",
       "url": "/adega",
+      "name": "Adega",
+      "children": [],
       "@type": "SiteNavigationElement"
     },
     {
