@@ -25,12 +25,16 @@
             }
           },
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/40c3dec5-7bac-4198-99a2-89c3f3814475/37241_Festval.com---Banner---1920x490--2_original.png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/7c2ac467-0a27-47bb-9943-67754b6edbc5/37240_Festval.com---Banner---1080x1500_original.png",
-            "alt": "site",
-            "deadLine": "01/01/2024",
-            "activeTerm": false,
-            "initialDate": "01/01/2024"
+            "desktop": "https://data.decoassets.com/festval/2d73fb6b-fd08-4908-8b12-4bfdb92e9334/38851_Super-Sexta---1920x490_original.png",
+            "mobile": "https://data.decoassets.com/festval/cae919ee-3146-4775-abe8-897fa59a2910/38852_Super-Sexta---1080x1500_original.png",
+            "alt": "super-sexta",
+            "deadLine": "2025-05-16",
+            "activeTerm": true,
+            "initialDate": "2025-05-16",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/1601?map=productClusterIds&sort=orders%3Adesc&page=1"
+            }
           },
           {
             "initialDate": "01/01/2025",
@@ -115,18 +119,6 @@
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "activeTerm": false
-          },
-          {
-            "initialDate": "2025-05-16",
-            "deadLine": "2025-05-16",
-            "region": "Cascavel",
-            "desktop": "https://data.decoassets.com/festval/2d73fb6b-fd08-4908-8b12-4bfdb92e9334/38851_Super-Sexta---1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/cae919ee-3146-4775-abe8-897fa59a2910/38852_Super-Sexta---1080x1500_original.png",
-            "alt": "super-sexta",
-            "action": {
-              "href": "https://www.festval.com/1601?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "activeTerm": true
           }
         ],
         "preload": true,
