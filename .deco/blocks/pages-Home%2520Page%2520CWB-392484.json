@@ -24,12 +24,23 @@
             }
           },
           {
+            "deadLine": "2025-05-22",
+            "desktop": "https://assets.decocache.com/festval/53793b8e-d9a4-4fca-9d9b-515b9bbbc3aa/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1920x490px.png",
+            "mobile": "https://assets.decocache.com/festval/7b35a5cd-4fab-4130-af52-69ee883d430a/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1080x1500.png",
+            "alt": "dianacionaldocafé",
+            "activeTerm": true,
+            "initialDate": "2025-05-19",
+            "action": {
+              "href": "https://www.festval.com/mercearia/cafe?sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=dianacionalcaf%C3%A9"
+            }
+          },
+          {
+            "initialDate": "2025-05-12",
             "deadLine": "2025-05-31",
             "desktop": "https://assets.decocache.com/festval/821d58cb-fead-41f5-870e-7c16a5c11f4c/LINDT-BANNER-HOME-NOVO-KV.png",
             "mobile": "https://assets.decocache.com/festval/795ed9fa-54bd-4677-8b4d-a46eb51492c2/LINDT-BANNER-HOME-NOVO-KV-MBL.png",
             "alt": "BrindeLindt",
             "activeTerm": true,
-            "initialDate": "2025-05-12",
             "action": {
               "href": "https://www.festval.com/Lindt?utm_source=Bannerhome&utm_campaign=BrindesLindt"
             }
@@ -275,11 +286,11 @@
         },
         {
           "positionBanner": "Left",
-          "mobile": "https://assets.decocache.com/festval/c660dce0-52dc-4433-8a32-39cd128d5805/omo500ml.jpg",
-          "desktop": "https://assets.decocache.com/festval/4fe6bf09-3f3a-4a50-9124-85dfff769ec1/BANNER-DE-OFERTAS-M-omo-500ml.jpg",
+          "mobile": "https://assets.decocache.com/festval/001ab25e-c13a-434c-a014-649fc47bf073/caixa-lacta.jpg",
+          "desktop": "https://assets.decocache.com/festval/64dedf58-be29-4811-bbe2-2c353e239034/BANNER-DE-OFERTAS-M-CAIXA-LACTA.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=omo+500ml+para+diluir&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=omo+500ml+para+diluir&page=1",
+          "href": "https://www.festval.com/caixa-de-variedades-lacta-favoritos-2506g/p?skuId=4126",
+          "hrefMobile": "https://www.festval.com/caixa-de-variedades-lacta-favoritos-2506g/p?skuId=4126",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false,
