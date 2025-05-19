@@ -25,24 +25,12 @@
             }
           },
           {
-            "desktop": "https://data.decoassets.com/festval/2d73fb6b-fd08-4908-8b12-4bfdb92e9334/38851_Super-Sexta---1920x490_original.png",
-            "mobile": "https://data.decoassets.com/festval/cae919ee-3146-4775-abe8-897fa59a2910/38852_Super-Sexta---1080x1500_original.png",
-            "alt": "super-sexta",
-            "deadLine": "2025-05-16",
-            "activeTerm": true,
-            "initialDate": "2025-05-16",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/1601?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
-          },
-          {
-            "initialDate": "01/01/2025",
-            "deadLine": "01/01/2025",
             "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
             "mobile": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
             "alt": "sucos-festval",
+            "deadLine": "01/01/2025",
             "activeTerm": false,
+            "initialDate": "01/01/2025",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
@@ -63,11 +51,11 @@
           {
             "initialDate": "2025-05-12",
             "deadLine": "2025-05-18",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
             "mobile": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
             "alt": "nestle",
             "activeTerm": true,
+            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/Nestl%C3%A9?utm_source=BannerHome&utm_campaign=nestl%C3%A9inverno"
             }
@@ -115,10 +103,10 @@
             "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
+            "activeTerm": false,
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "activeTerm": false
+            }
           }
         ],
         "preload": true,
@@ -304,11 +292,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1604?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b216c4d2-c5a2-41e6-93f4-432b6a2299f2/churras.jpg",
-          "hrefMobile": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1605?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/b269d01e-5692-45e3-bcb0-cd6a582612a9/SEGTER-APP-MBL.jpg",
+          "hrefMobile": "https://www.festval.com/1605?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
           "initialDate": "2025-03-31",
