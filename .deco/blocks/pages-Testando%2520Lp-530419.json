@@ -27,6 +27,76 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Category/CategoryGrid.tsx",
+        "items": [
+          {
+            "image": "https://assets.decocache.com/festval/9a785162-e8d3-4613-b959-04e72bbc3d88/TINTO-2.0.png",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/e8098ebb-11eb-4ad5-ae56-0d4de4c127a0/ROSE.png"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/36a75ca9-47b0-4a68-85a8-8d33fd1566cd/BRANCO.png",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/fed3d454-813e-4dd8-b7e0-4635dc360a69/espumante.png"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/72e4613d-101f-477a-85b6-40b2460e69de/kit-pronto.png"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/1d8dc31d-4fc5-4e25-b86b-8fee9e1de137/queijo.png"
+          }
+        ],
+        "title": "/"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Category/categoryGridLp.tsx",
+        "items": [
+          {
+            "image": "https://assets.decocache.com/festval/cf61024c-8efc-4f6f-a9e2-51eab6df4578/argentina.jpg",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/45403dd5-e60f-42cd-a8d8-39a95ed19390/brasil.jpg",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/1596af12-2a32-44ae-8d86-e13b32367581/espanhol.jpg",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/6f6955c3-8b37-4c32-8bca-778541462ebf/italia.jpg",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/027e129a-f420-4ef4-adf9-b27c5e17efb3/portugal.jpg",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/fca7d0dd-bbbf-4f64-8532-d9c1e1ba9235/chile.jpg",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/2d4d4256-7101-4857-91b0-30132a9e178d/franca.jpg",
+            "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/festval/db3db1d5-3604-41e6-8197-ae517c0d11d9/uruguai.jpg",
+            "href": "/"
+          }
+        ],
+        "itensGrid": "5"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
@@ -44,22 +114,6 @@
           },
           "useCollectionName": false
         }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Category/CategoryGrid.tsx",
-        "items": [
-          {
-            "href": "/",
-            "image": "https://assets.decocache.com/festval/71e5f63d-f02e-42de-98a7-7b7692699b4f/Sucos.png"
-          },
-          {
-            "image": "https://assets.decocache.com/festval/71e5f63d-f02e-42de-98a7-7b7692699b4f/Sucos.png",
-            "href": "/"
-          }
-        ]
       }
     },
     {
