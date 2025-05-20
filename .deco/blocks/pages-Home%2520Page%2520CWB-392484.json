@@ -369,14 +369,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "",
-          "collection": "1067",
+          "collection": "1659",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "title": "Destaques Exclusivos",
-      "cta": "/1067?map=productClusterIds"
+      "title": "Casa Limpa com até 40%OFF ",
+      "cta": "/1659?map=productClusterIds"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
