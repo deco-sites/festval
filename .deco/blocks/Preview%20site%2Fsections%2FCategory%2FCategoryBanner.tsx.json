@@ -1,3 +1,4 @@
 {
-  "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+  "__resolveType": "site/sections/Category/CategoryBanner.tsx",
+  "banners": []
 }
