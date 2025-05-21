@@ -9,7 +9,7 @@ export interface Props {
    */ 
   interval?: number;  
 }
-
+ 
 function Alert({ alerts = [], interval = 5 }: Props) { 
   const id = useId();  
 
