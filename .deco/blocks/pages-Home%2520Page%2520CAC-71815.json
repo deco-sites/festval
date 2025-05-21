@@ -25,28 +25,16 @@
             }
           },
           {
-            "desktop": "https://assets.decocache.com/festval/10ab568e-7b63-4dc0-8d1e-21e66a657606/Banner-suco-desk.jpg",
-            "mobile": "https://assets.decocache.com/festval/06dc2ac8-c377-463e-ba53-46160e298d3d/Banner-suco.jpg",
-            "alt": "sucos-festval",
-            "deadLine": "01/01/2025",
-            "activeTerm": false,
-            "initialDate": "01/01/2025",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/s?q=suco+festval+laranja&page=1&utm_source=BannerHome&utm_campaign=Novo+Suco+Laranja"
-            }
-          },
-          {
-            "initialDate": "2025-05-20",
-            "deadLine": "2025-06-01",
             "desktop": "https://assets.decocache.com/festval/dacade1d-317b-4e6b-9bb7-c56302133118/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/3582e8d9-75a4-4860-a9ef-e5e2f43f4517/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1080x1500px.png",
             "alt": "natural-fit",
+            "deadLine": "2025-06-01",
+            "activeTerm": true,
+            "initialDate": "2025-05-20",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1661?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NaturalFit"
-            },
-            "activeTerm": true
+            }
           },
           {
             "initialDate": "2025-05-19",
@@ -63,10 +51,10 @@
           {
             "initialDate": "2025-05-19",
             "deadLine": "2025-05-22",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/53793b8e-d9a4-4fca-9d9b-515b9bbbc3aa/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/7b35a5cd-4fab-4130-af52-69ee883d430a/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1080x1500.png",
             "alt": "coffe++",
+            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/mercearia/cafe?sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=dianacionalcaf%C3%A9"
             },
@@ -79,10 +67,10 @@
             "desktop": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
             "mobile": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
             "alt": "nestle",
-            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/Nestl%C3%A9?utm_source=BannerHome&utm_campaign=nestl%C3%A9inverno"
-            }
+            },
+            "activeTerm": true
           },
           {
             "initialDate": "2025-05-13",
