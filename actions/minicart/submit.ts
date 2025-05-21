@@ -3,11 +3,11 @@ import { type Minicart } from "../../components/minicart/Minicart.tsx";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 
 import linx from "../../sdk/cart/linx/submit.ts";
-import vnda from "../../sdk/cart/vnda/submit.ts";
-import wake from "../../sdk/cart/wake/submit.ts";
-import vtex from "../../sdk/cart/vtex/submit.ts";
-import shopify from "../../sdk/cart/shopify/submit.ts";
 import nuvemshop from "../../sdk/cart/nuvemshop/submit.ts";
+import shopify from "../../sdk/cart/shopify/submit.ts";
+import vnda from "../../sdk/cart/vnda/submit.ts";
+import vtex from "../../sdk/cart/vtex/submit.ts";
+import wake from "../../sdk/cart/wake/submit.ts";
 
 const actions: Record<string, CartSubmitActions> = {
   vtex: vtex as CartSubmitActions,
