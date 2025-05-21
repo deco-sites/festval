@@ -76,18 +76,6 @@
             "initialDate": "2025-05-12",
             "deadLine": "2025-05-18",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/23af38e4-ed44-4798-9918-b24fe56d7d72/FESTVAL-NOVOS-BANNERS-002-1920X490-GUARANA.jpg",
-            "mobile": "https://assets.decocache.com/festval/8288b621-121c-410a-8f73-e2d28f676741/FESTVAL-NOVOS-BANNERS-1080-1500-002-GUARANA.jpg",
-            "alt": "guarana",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/s?q=guaran%C3%A1+antarctica+350ml&page=1&utm_source=BannerHome&utm_campaign=guaran%C3%A1350ml"
-            }
-          },
-          {
-            "initialDate": "2025-05-12",
-            "deadLine": "2025-05-18",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
             "mobile": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
             "alt": "nestle",
