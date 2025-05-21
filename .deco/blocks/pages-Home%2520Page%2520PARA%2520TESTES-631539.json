@@ -157,10 +157,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cb23208f-2b92-4d47-8e1e-ba5d9127ea87/ADEGA.jpg",
+          "desktop": "https://assets.decocache.com/festval/baa9866f-1cf0-40e6-b7a9-d5265a2a5b05/ADEGA-FESTVAL.jpg",
           "alt": "adega",
           "href": "/adega?sort=orders%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3701f449-96c4-47d1-bea2-95ea99dde75c/FESTVAL-NOVO-APP-BANNER-528x465-ADEGA.png",
+          "mobile": "https://assets.decocache.com/festval/d8ac79dc-5ba5-4b6b-a09e-033596874c79/ADEGA-FESTVAL-APP.jpg",
           "hrefMobile": "/adega",
           "positionBanner": "Left",
           "initialDate": "2024-12-07",
@@ -169,8 +169,8 @@
           "region": "Mostrar em ambas"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c551c33b-00e2-4c80-83d2-0194dc3a070e/FESTVAL-NOVO-APP-BANNER-528x465-AC_OUGUE.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/37e0d270-825d-47da-8457-06ed6ae469ca/ACOUGUE.jpg",
+          "mobile": "https://assets.decocache.com/festval/faf941a8-00de-4fc5-9436-b270d0de79e8/ACOUGUE-FESTVAL-APP.jpg",
+          "desktop": "https://assets.decocache.com/festval/ba12361a-adde-4c5b-821d-c550f45f456a/ACOUGUE-FESTVAL.jpg",
           "href": "/acougue?sort=orders%3Adesc&page=1",
           "alt": "carnes",
           "hrefMobile": "/acougue",
@@ -205,10 +205,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://assets.decocache.com/festval/8fa84ec7-bd6d-47a6-a1e7-0dc155d4b9f9/QUA-E-QUI-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b216c4d2-c5a2-41e6-93f4-432b6a2299f2/churras.jpg",
+          "mobile": "https://assets.decocache.com/festval/316770bf-e211-4627-ade9-4d34a5ff75a6/QUA-E-QUI.jpg",
           "hrefMobile": "https://www.festval.com/159?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
