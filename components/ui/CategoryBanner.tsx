@@ -1,135 +1,198 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import { type SectionProps } from "@deco/deco";
+import { SectionProps } from "@deco/deco";
 import Section from "../../components/ui/Section.tsx";
+import Slider from "../../components/ui/Slider.tsx";
+import { clx } from "../../sdk/clx.ts";
+import { useId } from "../../sdk/useId.ts";
+import { getCookies } from "std/http/cookie.ts";
 
 /**
- * @titleBy matcher
+ * Widget para configurar o banner no admin Deco
  */
-export interface Banner {
-  /** @description Array de palavras-chave para habilitar este banner quando estiverem presentes na URL */
-  matcher: string[];
-  images: {
-    /** @description Imagem para tela desktop */
-    desktop: ImageWidget;
-    /** @description Imagem para tela mobile */
-    mobile: ImageWidget;
-    /** @description Texto alternativo para a imagem */
-    alt?: string;
-    /** @description Link do banner para desktop */
-    href: string;
-    /** @description Link do banner para mobile */
-    hrefMobile?: string;
-  }[];
+export interface BannerImage {
+  desktop: ImageWidget;
+  mobile: ImageWidget;
+  alt?: string;
+  href: string;
+  hrefMobile?: string;
+  activeTerm?: boolean;
+  initialDate?: string;
+  deadLine?: string;
+  
+  /** @description Região onde o banner será exibido */
+  region?: "Cascavel" | "Curitiba"; 
 }
 
-const DEFAULT_PROPS = {
+export interface Banner {
+  matcher: string[];
+  images: BannerImage[];
+}
+
+export const bannerSchema = {
+  title: "Banner",
+  type: "object",
+  properties: {
+    matcher: {
+      type: "array",
+      items: { type: "string" },
+      title: "Matchers",
+      description: "Palavras para disparar esse banner",
+    },
+    images: {
+      type: "array",
+      title: "Imagens do banner",
+      items: {
+        type: "object",
+        properties: {
+          desktop: { $ref: "ImageWidget" },
+          mobile: { $ref: "ImageWidget" },
+          alt: { type: "string", title: "Texto alternativo" },
+          href: { type: "string", title: "Link do banner" },
+          hrefMobile: { type: "string", title: "Link mobile (opcional)" },
+          activeTerm: { type: "boolean", title: "Ativar controle de data" },
+          initialDate: { type: "string", title: "Data inicial (dd/mm/yyyy)" },
+          deadLine: { type: "string", title: "Data final (dd/mm/yyyy)" },
+          region: {
+            type: "string",
+            title: "Região",
+            enum: ["Cascavel", "Curitiba"],
+            description: "Região onde o banner será exibido",
+          },
+        },
+        required: ["desktop", "mobile", "href"],
+      },
+    },
+  },
+  required: ["matcher", "images"],
+}; 
+
+const DEFAULT_PROPS: { banners: Banner[] } = {
   banners: [
     {
-      matcher: ["churrasco", "acougue"],
+      matcher: ["adega"],
       images: [
         {
-          mobile: "https://link-imagem-mobile-1.jpg",
-          desktop: "https://link-imagem-desktop-1.jpg",
+          mobile: "https://link-mobile-1.jpg",
+          desktop: "https://link-desktop-1.jpg",
           alt: "Banner 1",
           href: "#",
-          hrefMobile: "#",
+          activeTerm: true,
+          initialDate: "01/01/2024",
+          deadLine: "31/12/2024",
+          region: "Curitiba",
         },
         {
-          mobile: "https://link-imagem-mobile-2.jpg",
-          desktop: "https://link-imagem-desktop-2.jpg",
+          mobile: "https://link-mobile-2.jpg",
+          desktop: "https://link-desktop-2.jpg",
           alt: "Banner 2",
           href: "#",
-          hrefMobile: "#",
-        },
-        {
-          mobile: "https://link-imagem-mobile-3.jpg",
-          desktop: "https://link-imagem-desktop-3.jpg",
-          alt: "Banner 3",
-          href: "#",
-          hrefMobile: "#",
+          activeTerm: false,
+          region: "Cascavel",
         },
       ],
     },
   ],
 };
 
-function SingleBanner({ image, size }: { image: Banner["images"][0]; size: "large" | "medium" | "small" }) {
-  const dimensions = {
-    large: { desktopWidth: 1700, desktopHeight: 400, mobileWidth: 1080, mobileHeight: 465 },
-    medium: { desktopWidth: 840, desktopHeight: 320, mobileWidth: 528, mobileHeight: 465 },
-    small: { desktopWidth: 528, desktopHeight: 320, mobileWidth: 360, mobileHeight: 120 },
-  };
-
-  const { desktopWidth, desktopHeight, mobileWidth, mobileHeight } = dimensions[size];
-
+function BannerItem({ image }: { image: Banner["images"][0] }) {
   return (
-    <a href={image.href} className="overflow-hidden">
+    <a href={image.href} className="overflow-hidden block">
       <Picture>
-        <Source src={image.mobile} width={mobileWidth} height={mobileHeight} media="(max-width: 767px)" />
-        <Source src={image.desktop} width={desktopWidth} height={desktopHeight} media="(min-width: 768px)" />
-        <img className="w-full h-full object-cover" src={image.desktop} alt={image.alt} />
+        <Source src={image.mobile} media="(max-width: 767px)" width={1080} height={465} />
+        <Source src={image.desktop} media="(min-width: 768px)" width={1920} height={490} />
+        <img src={image.desktop} alt={image.alt} className="w-full h-full object-cover" />
       </Picture>
     </a>
   );
 }
 
-function Gallery({ images }: { images: Banner["images"] }) {
-  if (images.length === 1) {
-    // Renderiza um único banner com tamanho grande
-    return <SingleBanner image={images[0]} size="large" />;
-  } else if (images.length === 2) {
-    // Renderiza dois banners em uma grade de duas colunas, tamanho médio
-    return (
-      <div className="grid grid-cols-2 gap-3">
-        {images.map((image, index) => (
-          <SingleBanner key={index} image={image} size="medium" />
-        ))}
-      </div>
-    );
-  } else if (images.length >= 3) {
-    // Renderiza um banner grande e dois menores
-    return (
-      <div className="flex flex-col gap-3 custom-container">
-        <div className="w-full">
-          <SingleBanner image={images[0]} size="large" />
-        </div>
-        <div className="grid grid-cols-2 gap-3">
-          {images.slice(1, 3).map((image, index) => (
-            <SingleBanner key={index} image={image} size="medium" />
-          ))}
-        </div>
-      </div>
-    );
+export function loader(props: { banners: Banner[] }, req: Request) {
+  const { banners } = props;
+  const cookies = getCookies(req.headers);
+  const cep = cookies["vtex_last_session_cep"];
+  let region = cookies["region"];
+
+  if (!region) {
+    if (!cep) {
+      region = "Curitiba";
+    } else {
+      const curitibaMin = 80000000;
+      const curitibaMax = 83800999;
+      const cascavelMin = 85800001;
+      const cascavelMax = 85824999;
+
+      const cepInt = parseInt(cep, 10);
+
+      if (cepInt >= curitibaMin && cepInt <= curitibaMax) {
+        region = "Curitiba";
+      } else if (cepInt >= cascavelMin && cepInt <= cascavelMax) {
+        region = "Cascavel";
+      } else {
+        region = "Curitiba";
+      }
+    }
   }
-  return null;
-}
 
-export interface Props {
-  banners?: Banner[];
-}
-
-export const loader = (props: Props, req: Request) => {
-  const { banners } = { ...DEFAULT_PROPS, ...props };
   const url = new URL(req.url);
-  const searchQuery = url.searchParams.get("q") || "";
-  const pathname = url.pathname.toLowerCase();
-  
-  // isso aqui Une o `pathname` com o `searchQuery` para buscar match em qualquer um dos dois
-  const contextToMatch = `${pathname} ${searchQuery}`; 
-  
+  const contextToMatch = `${url.pathname.toLowerCase()} ${url.searchParams.get("q")?.toLowerCase() || ""}`;
+
   const bannerSet = banners.find(({ matcher }) =>
-    matcher.some((pattern) =>
-      new RegExp(`\\b${pattern}\\b`, "i").test(contextToMatch)
-    )
-  );;
+    matcher.some((pattern) => new RegExp(`\\b${pattern.toLowerCase()}\\b`, "i").test(contextToMatch))
+  );
 
-  return { bannerSet };
-};
+  if (!bannerSet) {
+    return { images: [], region };
+  }
 
-export default function BannerGallery(props: SectionProps<ReturnType<typeof loader>>) {
-  const { bannerSet } = props;
-  if (!bannerSet) return null;
-  return <Gallery images={bannerSet.images} />;
+  const now = new Date();
+
+  const filteredImages = bannerSet.images.filter((image) => {
+    const initialDate = image.initialDate
+      ? new Date(image.initialDate.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
+      : null;
+    const deadLine = image.deadLine
+      ? new Date(image.deadLine.replace(/(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
+      : null;
+
+    const isActiveDate =
+      !image.activeTerm || (initialDate && deadLine && now >= initialDate && now <= deadLine);
+
+    const isRegionMatch = !image.region || image.region === region;
+
+    return isActiveDate && isRegionMatch;
+  });
+
+  return { images: filteredImages, region };
 }
-export const LoadingFallback = () => <Section.Placeholder height="145px" />;
+
+export default function BannerCarousel(props: SectionProps<ReturnType<typeof loader>>) {
+  const { images = [] } = props;
+  const id = useId();
+
+  if (images.length === 0) return null;
+
+  return (
+    <div className="w-full overflow-hidden relative pb-4 max-w-[1920px] mx-auto">
+      <Slider className="carousel carousel-center w-full gap-6" rootId={id} interval={5000} infinite>
+        {images.map((image, index) => (
+          <Slider.Item index={index} key={index} className="carousel-item w-full">
+            <BannerItem image={image} />
+          </Slider.Item>
+        ))}
+      </Slider>
+
+      {images.length > 1 && (
+        <ul className="carousel justify-center gap-3 mt-4">
+          {images.map((_, index) => (
+            <li key={index} className="carousel-item">
+              <Slider.Dot index={index} className="bg-gray-400 h-2 w-6 rounded-full" />
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+export const LoadingFallback = () => <Section.Placeholder height="490px" />;

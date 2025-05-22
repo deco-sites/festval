@@ -35,12 +35,32 @@
               {
                 "desktop": "https://assets.decocache.com/festval/4342c753-adf0-44eb-b01e-7beb08e90849/Lindt---Brinde---Generico-1---1920x490.png",
                 "mobile": "https://assets.decocache.com/festval/8e948247-804b-4203-b86e-c329c5f01bb5/Lindt---Brinde---Generico-1---1080x490.png",
-                "href": "https://www.festval.com/Lindt?utm_source=BannerCategoria&utm_campaign=BrindesLindt",
                 "hrefMobile": "https://www.festval.com/Lindt?utm_source=BannerCategoria&utm_campaign=BrindesLindt",
-                "alt": "BrindeLindt"
+                "href": "https://www.festval.com/Lindt?utm_source=BannerCategoria&utm_campaign=BrindesLindt"
               }
             ]
           }
+        ],
+        "images": [
+          {
+            "desktop": "https://assets.decocache.com/festval/baa9866f-1cf0-40e6-b7a9-d5265a2a5b05/ADEGA-FESTVAL.jpg",
+            "mobile": "https://assets.decocache.com/festval/d8ac79dc-5ba5-4b6b-a09e-033596874c79/ADEGA-FESTVAL-APP.jpg",
+            "alt": "teste",
+            "activeTerm": false,
+            "initialDate": "01/01/2025",
+            "deadLine": "31/12/2025",
+            "matcher": "adega",
+            "action": {
+              "href": "#"
+            },
+            "href": "#",
+            "hrefMobile": "#",
+            "region": "Cascavel"
+          }
+        ],
+        "region": "Curiba",
+        "matcher": [
+          "adega"
         ]
       }
     },
