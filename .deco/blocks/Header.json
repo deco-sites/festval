@@ -1660,9 +1660,16 @@
     },
     {
       "@type": "SiteNavigationElement",
+      "url": "/1662?map=productClusterIds",
+      "name": "Novidades",
+      "children": [],
+      "image": null
+    },
+    {
       "url": "/churrascofestval?filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=casa-e-utilidades&filter.category-1=bebidas-alcoolicas&sort=orders%3Adesc&page=1",
       "name": "Churrasco",
       "children": [],
+      "@type": "SiteNavigationElement",
       "image": null
     },
     {
@@ -1678,20 +1685,24 @@
       "image": []
     },
     {
-      "url": "/adega",
-      "name": "Adega",
       "children": [],
+      "name": "Adega",
+      "url": "/adega",
       "@type": "SiteNavigationElement"
     },
     {
       "children": [],
+      "image": [],
       "name": "Importados",
-      "url": "/importados?sort=orders%3Adesc&page=1",
-      "image": []
+      "url": "/importados?sort=orders%3Adesc&page=1"
     },
     {
       "children": [],
       "image": []
+    },
+    {
+      "children": [],
+      "image": null
     }
   ],
   "loading": "eager",
