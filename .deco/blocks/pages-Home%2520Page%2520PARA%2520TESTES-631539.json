@@ -217,10 +217,10 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://data.decoassets.com/festval/122b63af-be58-48ff-8295-0a12d1b8b64f/vanish-site.jpg",
+          "desktop": "https://assets.decocache.com/festval/05e97de8-d2ff-438e-b727-55c2c0f74844/oferta-2-desk.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
           "href": "https://www.festval.com/s?q=Vanish+P%C3%B3+Oxi+Action+Sach%C3%AA+400g&page=1",
-          "mobile": "https://data.decoassets.com/festval/b6745eed-f802-46c9-a148-feac53990277/vanish-app.jpg",
+          "mobile": "https://assets.decocache.com/festval/d0e61787-babe-4ae2-824b-9e4962ebaba8/oferta-2.jpg",
           "hrefMobile": "https://www.festval.com/s?q=Vanish+P%C3%B3+Oxi+Action+Sach%C3%AA+400g&page=1",
           "region": "Curitiba",
           "positionBanner": "Right",
@@ -231,8 +231,8 @@
         {
           "positionBanner": "Left",
           "region": "Curitiba",
-          "mobile": "https://data.decoassets.com/festval/a6cb1965-cea4-491c-89f0-78fe39721ad7/lindt-excellence.jpg",
-          "desktop": "https://data.decoassets.com/festval/28c21b38-9c64-471d-8ec7-a7ab7610c295/BANNER-DE-OFERTAS-M-excellence.jpg",
+          "mobile": "https://assets.decocache.com/festval/461f952a-59cf-45dc-9753-165af44ac7a3/oferta-1.jpg",
+          "desktop": "https://assets.decocache.com/festval/adab7acb-0d7f-4e52-95c0-af6f6da635a1/oferta-1-desk.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
           "href": "https://www.festval.com/s?q=excellence+lindt&page=1",
           "hrefMobile": "https://www.festval.com/s?q=excellence+lindt&page=1",
