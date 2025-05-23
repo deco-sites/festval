@@ -33,7 +33,8 @@
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1603?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
+            },
+            "activeTerm": true
           },
           {
             "initialDate": "2025-05-22",
