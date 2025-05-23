@@ -13,34 +13,23 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/ec795f5b-7653-4f7e-a705-4ed2e1e96069/Festval.com-1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/d45789db-2098-445f-8314-85151d39bd47/Festval.com-1080x1500.png",
-            "alt": "TangerinaNovo",
-            "activeTerm": true,
-            "deadLine": "2025-05-28",
-            "initialDate": "2025-05-22",
-            "action": {
-              "href": "https://www.festval.com/suco-festval-tangerina-900ml/p?skuId=2058&utm_source=BannerHome&utm_campaign=NovosucoTangerina"
-            }
-          },
-          {
-            "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/41ffc4ec-b89e-4ca6-a392-ac89b3ef29a1/Festval---BannerDesk---Sou-Festval-NOVO.jpg",
             "mobile": "https://assets.decocache.com/festval/c7fc6b03-3c4c-4052-98f0-78503b3939d7/Festval---BannerMBL---Sou-Festval-NOVO.jpg",
             "alt": "soufestval",
             "activeTerm": false,
+            "deadLine": "01/01/2024",
             "initialDate": "01/01/2024",
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
             }
           },
           {
-            "initialDate": "2025-05-20",
             "deadLine": "2025-06-01",
             "desktop": "https://assets.decocache.com/festval/dacade1d-317b-4e6b-9bb7-c56302133118/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/3582e8d9-75a4-4860-a9ef-e5e2f43f4517/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1080x1500px.png",
             "alt": "NaturalFit",
             "activeTerm": true,
+            "initialDate": "2025-05-20",
             "action": {
               "href": "https://www.festval.com/1661?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NaturalFit"
             }
@@ -283,10 +272,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/d9b3e69b-71cf-425a-afce-6f27689a33f3/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b1fe65a3-93d8-44a0-aa88-a01f429d2f69/QUAQUI-APP-MBL.jpg",
+          "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
           "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
