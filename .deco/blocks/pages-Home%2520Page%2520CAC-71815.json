@@ -25,35 +25,11 @@
             }
           },
           {
-            "desktop": "https://assets.decocache.com/festval/df9dfd6e-6a50-4626-be49-6f172d458bd4/38847_Festval---Festival-do-Bebe_-1920x490_original.png",
-            "mobile": "https://assets.decocache.com/festval/8bbff211-2c4e-41d6-9f7a-8d914ff4f662/38848_Festval---Festival-do-Bebe_-1080x1500_original.png",
-            "alt": "festival-bebe",
-            "deadLine": "2025-05-23",
-            "initialDate": "2025-05-23",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/1603?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-22",
-            "deadLine": "2025-02-25",
-            "desktop": "https://assets.decocache.com/festval/ec795f5b-7653-4f7e-a705-4ed2e1e96069/Festval.com-1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/d45789db-2098-445f-8314-85151d39bd47/Festval.com-1080x1500.png",
-            "alt": "suco-tangerina",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/suco-festval-tangerina-900ml/p?skuId=2058&utm_source=BannerHome&utm_campaign=NovosucoTangerina"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-20",
-            "deadLine": "2025-06-01",
             "desktop": "https://assets.decocache.com/festval/dacade1d-317b-4e6b-9bb7-c56302133118/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/3582e8d9-75a4-4860-a9ef-e5e2f43f4517/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1080x1500px.png",
             "alt": "natural-fit",
+            "deadLine": "2025-06-01",
+            "initialDate": "2025-05-20",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1661?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NaturalFit"
@@ -61,76 +37,28 @@
             "activeTerm": true
           },
           {
-            "initialDate": "2025-05-19",
-            "deadLine": "2025-05-25",
+            "initialDate": "2025-04-15",
+            "deadLine": "2025-07-31",
+            "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
+            "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
+            "alt": "Baly",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/5547aa80-242c-4d99-98c9-b314ddd1ea62/FESTVAL-NOVOS-BANNERS---MUNDIAL-CAFE.jpg",
-            "mobile": "https://assets.decocache.com/festval/ed0d5e91-451d-480e-b62b-393ed78414ce/FESTVAL-NOVOS-BANNERS-1080-1500---MUNDIAL-CAFE.jpg",
-            "alt": "nestle-cafe",
             "action": {
-              "href": "https://www.festval.com/1166?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Caf%C3%A9+Nestl%C3%A9"
+              "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
             },
             "activeTerm": true
           },
           {
-            "initialDate": "2025-05-19",
-            "deadLine": "2025-05-22",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/53793b8e-d9a4-4fca-9d9b-515b9bbbc3aa/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/7b35a5cd-4fab-4130-af52-69ee883d430a/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1080x1500.png",
-            "alt": "coffe++",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/mercearia/cafe?sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=dianacionalcaf%C3%A9"
-            }
-          },
-          {
-            "initialDate": "2025-05-12",
-            "deadLine": "2025-05-18",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/393d0e4f-90a5-4ce7-8a5e-c4a60a8652c8/FESTVAL-NOVOS-BANNERS---nestle-inverno.jpg",
-            "mobile": "https://assets.decocache.com/festval/306ae81d-9c6e-4d19-9b55-1e58bf5b4b4b/FESTVAL-NOVOS-BANNERS-1080-1500---nestle.jpg",
-            "alt": "nestle",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/Nestl%C3%A9?utm_source=BannerHome&utm_campaign=nestl%C3%A9inverno"
-            }
-          },
-          {
-            "initialDate": "2025-05-13",
-            "deadLine": "2025-05-25",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/ca0c1cb6-4113-4fe6-8124-e48f463fb2f9/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1920X490pxNOVOKV.jpg",
-            "mobile": "https://assets.decocache.com/festval/837c490a-6fc1-4a55-8fec-3c74701c2752/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1080X1500pxNOVOKV.jpg",
-            "alt": "importados",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1657?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ImportadosMaio"
-            }
-          },
-          {
-            "initialDate": "2025-04-15",
-            "deadLine": "2025-07-31",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
-            "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
-            "alt": "Baly",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
-            }
-          },
-          {
             "initialDate": "2025-17-04",
             "deadLine": "2025-07-31",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "alt": "happy-eggs",
-            "activeTerm": false,
+            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
+            },
+            "activeTerm": false
           },
           {
             "initialDate": "2025-05-05",
