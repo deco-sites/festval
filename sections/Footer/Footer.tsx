@@ -564,7 +564,7 @@ function Footer({
           {highlightedImage && (
             <>
               <div class="flex justify-center lg:justify-start my-8 lg:mt-0 lg:ml-[30px]">
-                <a href={highlightedImage.href}>
+                <a href={highlightedImage.href} target="_blank">
                   <Image
                     src={highlightedImage.image}
                     alt="Imagem Destacada"

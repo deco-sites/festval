@@ -21,7 +21,8 @@
             "initialDate": "01/01/2024",
             "region": "Cascavel",
             "action": {
-              "href": "https://www.superfestval.com.br/regulamentobmw/?utm_source=BannerHome&utm_campaign=RegulamentoSouFestval"
+              "href": "https://www.superfestval.com.br/regulamentobmw/?utm_source=BannerHome&utm_campaign=RegulamentoSouFestval",
+              "target": "_blank"
             }
           },
           {

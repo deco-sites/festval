@@ -50,6 +50,8 @@ export interface Banner {
     subTitle?: string;
     /** @description Button label */
     label?: string;
+    /** @description Link target */
+    target?: "_blank" | "_self";
   };
 }
 
@@ -107,6 +109,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
     <a
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
+      target={action?.target ?? "_self"}
       aria-label={action?.label}
       class="relative flex overflow-hidden w-full"
     >
