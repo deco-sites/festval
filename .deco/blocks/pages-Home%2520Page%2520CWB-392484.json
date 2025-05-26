@@ -35,17 +35,6 @@
             }
           },
           {
-            "initialDate": "2025-05-19",
-            "deadLine": "2025-05-22",
-            "desktop": "https://assets.decocache.com/festval/53793b8e-d9a4-4fca-9d9b-515b9bbbc3aa/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/7b35a5cd-4fab-4130-af52-69ee883d430a/AF_V03_Semana_do_Cafe_2025_Festval_2025_Banner_1080x1500.png",
-            "alt": "dianacionaldocafé",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/mercearia/cafe?sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=dianacionalcaf%C3%A9"
-            }
-          },
-          {
             "initialDate": "2025-05-12",
             "deadLine": "2025-05-31",
             "desktop": "https://assets.decocache.com/festval/821d58cb-fead-41f5-870e-7c16a5c11f4c/LINDT-BANNER-HOME-NOVO-KV.png",
@@ -57,36 +46,36 @@
             }
           },
           {
-            "initialDate": "2025-05-19",
-            "deadLine": "2025-05-25",
-            "desktop": "https://assets.decocache.com/festval/5547aa80-242c-4d99-98c9-b314ddd1ea62/FESTVAL-NOVOS-BANNERS---MUNDIAL-CAFE.jpg",
-            "mobile": "https://assets.decocache.com/festval/ed0d5e91-451d-480e-b62b-393ed78414ce/FESTVAL-NOVOS-BANNERS-1080-1500---MUNDIAL-CAFE.jpg",
-            "alt": "NestléCafé",
+            "initialDate": "2025-05-26",
+            "deadLine": "2025-06-01",
+            "desktop": "https://assets.decocache.com/festval/b5fa9bdc-26b4-4d9d-931e-0e938998abd7/FESTVAL-NOVOS-BANNERS---EUDORA.jpg",
+            "mobile": "https://assets.decocache.com/festval/51e6cc96-d860-43b2-8b4b-46ba31c391ed/FESTVAL-NOVOS-BANNERS-1080-1500-EUDORA.jpg",
+            "alt": "Eudora",
             "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1166?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Caf%C3%A9+Nestl%C3%A9"
+              "href": "https://www.festval.com/s?q=cronology&page=1&utm_source=BannerHome&utm_campaign=eudoraprocronology"
             }
           },
           {
-            "initialDate": "2025-05-19",
-            "deadLine": "2025-05-25",
-            "desktop": "https://assets.decocache.com/festval/39798f78-e76b-4ffa-9ef3-8b269130b61d/FESTVAL-NOVOS-BANNERS---dante-robino.jpg",
-            "mobile": "https://assets.decocache.com/festval/876e7243-656e-48ac-8406-014356e183ef/FESTVAL-NOVOS-BANNERS-1080-1500-dante-robino.jpg",
-            "alt": "danterobino",
-            "activeTerm": true,
+            "initialDate": "2025-05-26",
+            "deadLine": "2025-06-01",
+            "desktop": "https://assets.decocache.com/festval/cd4bf1ed-b008-4d4f-b11e-f7a11f215ee0/FESTVAL-NOVOS-BANNERS.jpg",
+            "mobile": "https://assets.decocache.com/festval/49b8bb6e-fa8d-43fa-aeb8-9d043090c45b/FESTVAL-NOVOS-BANNERS-1080-1500-biscuit.jpg",
+            "alt": "Biscoitonestlé",
             "action": {
-              "href": "https://www.festval.com/s?q=dante+robino&page=1&utm_source=BannerHome&utm_campaign=danterobino40off"
-            }
+              "href": "https://www.festval.com/1664?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=biscoitosnestl%C3%A9"
+            },
+            "activeTerm": true
           },
           {
-            "initialDate": "2025-05-13",
-            "deadLine": "2025-05-25",
-            "desktop": "https://assets.decocache.com/festval/ca0c1cb6-4113-4fe6-8124-e48f463fb2f9/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1920X490pxNOVOKV.jpg",
-            "mobile": "https://assets.decocache.com/festval/837c490a-6fc1-4a55-8fec-3c74701c2752/ABERTO_V01_campanha_importados_Festval_2025_Banner_Festval.com_GG_1080X1500pxNOVOKV.jpg",
-            "alt": "importados",
+            "initialDate": "2025-05-26",
+            "deadLine": "2025-06-01",
+            "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
+            "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
+            "alt": "original",
             "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1657?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=ImportadosMaio"
+              "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6"
             }
           }
         ],
@@ -272,11 +261,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/25c7a40b-7a39-4f23-9904-af59d16a7485/BANNER-OFERTAS-FDS.jpg",
+          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
-          "mobile": "https://data.decoassets.com/festval/20e28239-fccc-4e43-aa37-be91f0d07b43/FDS-APP-MBL.jpg",
-          "hrefMobile": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://data.decoassets.com/festval/b269d01e-5692-45e3-bcb0-cd6a582612a9/SEGTER-APP-MBL.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
@@ -297,11 +286,11 @@
         },
         {
           "positionBanner": "Left",
-          "mobile": "https://assets.decocache.com/festval/2ba1c0d8-263c-4187-a5ef-1941a4f605b7/presunto.jpg",
-          "desktop": "https://assets.decocache.com/festval/906f4146-51c5-4816-88cc-59e346c2d3c0/BANNER-DE-OFERTAS-presunto.jpg",
+          "mobile": "https://assets.decocache.com/festval/b2511866-b07e-474d-85cf-90f3fdd303eb/omo500ml.jpg",
+          "desktop": "https://assets.decocache.com/festval/e0e1d47f-7aa4-4a6b-b44e-e09993880fba/BANNER-DE-OFERTAS-M-OMO-DILUIR.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/presunto-cozido-fatiado-sem-capa-de-gordura-frimesa-200g/p?skuId=4879",
-          "hrefMobile": "https://www.festval.com/presunto-cozido-fatiado-sem-capa-de-gordura-frimesa-200g/p?skuId=4879",
+          "href": "https://www.festval.com/s?q=OMO+PARA+DILUIR&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=OMO+PARA+DILUIR&page=1",
           "deadLine": "0",
           "initialDate": "0",
           "activeTerm": false,
