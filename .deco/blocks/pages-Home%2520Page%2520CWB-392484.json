@@ -213,10 +213,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cb23208f-2b92-4d47-8e1e-ba5d9127ea87/ADEGA.jpg",
+          "desktop": "https://assets.decocache.com/festval/668c07be-236a-4642-b366-2ad95a41f300/ADEGA-FESTVAL.jpg",
           "alt": "adega",
           "href": "/adega?sort=orders%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3701f449-96c4-47d1-bea2-95ea99dde75c/FESTVAL-NOVO-APP-BANNER-528x465-ADEGA.png",
+          "mobile": "https://assets.decocache.com/festval/180dc31e-7e0c-47b8-863b-56921726473b/ADEGA-FESTVAL-APP.jpg",
           "hrefMobile": "/adega",
           "positionBanner": "Left",
           "initialDate": "2024-12-07",
@@ -225,8 +225,8 @@
           "region": "Mostrar em ambas"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c551c33b-00e2-4c80-83d2-0194dc3a070e/FESTVAL-NOVO-APP-BANNER-528x465-AC_OUGUE.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/37e0d270-825d-47da-8457-06ed6ae469ca/ACOUGUE.jpg",
+          "mobile": "https://assets.decocache.com/festval/87784bb3-ffd1-4fcf-b581-ff0f41be0e40/ACOUGUE-FESTVAL-APP.jpg",
+          "desktop": "https://assets.decocache.com/festval/7a41a1ba-ded8-43f6-9dcc-3fe0b7ac519b/ACOUGUE-FESTVAL.jpg",
           "href": "/acougue?sort=orders%3Adesc&page=1",
           "alt": "carnes",
           "hrefMobile": "/acougue",
@@ -262,10 +262,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/48248e1b-3ba3-450f-a981-67da4523877c/BANNER-OFERTAS-SEGTER.jpg",
+          "desktop": "https://assets.decocache.com/festval/f71ef318-3b0f-4ad6-9520-f998eefc187d/SEG-E-TER-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b269d01e-5692-45e3-bcb0-cd6a582612a9/SEGTER-APP-MBL.jpg",
+          "mobile": "https://assets.decocache.com/festval/30493414-435d-4d64-86b0-9c5f30a21d41/SEG-E-TER.jpg",
           "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
@@ -274,10 +274,10 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://assets.decocache.com/festval/f24fa1ed-91f8-4f5d-9d08-0c74a21571ac/BANNER-DE-OFERTAS-M-PETRA.jpg",
+          "desktop": "https://assets.decocache.com/festval/4c6ed6a7-8398-489c-a235-6dab8e47d65c/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-PETRA.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
           "href": "https://www.festval.com/cerveja-puro-malte-petra-origem-lata-350ml/p?skuId=419&utm_source=BannerHome&utm_campaign=Petral12p10",
-          "mobile": "https://assets.decocache.com/festval/fc7454b5-dfae-477b-935c-3ad0fb53bcf7/petra.jpg",
+          "mobile": "https://assets.decocache.com/festval/e8e2755d-1a37-400e-81a1-6e3f225de195/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-PETRA.jpg",
           "hrefMobile": "https://www.festval.com/cerveja-puro-malte-petra-origem-lata-350ml/p?skuId=419&utm_source=BannerHome&utm_campaign=Petral12p10",
           "region": "Mostrar em ambas",
           "positionBanner": "Right",
@@ -287,8 +287,8 @@
         },
         {
           "positionBanner": "Left",
-          "mobile": "https://assets.decocache.com/festval/b2511866-b07e-474d-85cf-90f3fdd303eb/omo500ml.jpg",
-          "desktop": "https://assets.decocache.com/festval/e0e1d47f-7aa4-4a6b-b44e-e09993880fba/BANNER-DE-OFERTAS-M-OMO-DILUIR.jpg",
+          "mobile": "https://assets.decocache.com/festval/8829d527-94cb-45f6-9ad8-57a93b701f83/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-OMO-P-DILUIR.jpg",
+          "desktop": "https://assets.decocache.com/festval/1344cf71-6ac7-48fb-b6c5-18543eeedf7f/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-OMO-P-DILUIR.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
           "href": "https://www.festval.com/s?q=OMO+PARA+DILUIR&page=1",
           "hrefMobile": "https://www.festval.com/s?q=OMO+PARA+DILUIR&page=1",
@@ -341,8 +341,8 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23c9e678-2b63-4cb6-87a5-97f3f2f13fe4/MAMMA-BIA.jpg",
-          "desktop": "https://data.decoassets.com/festval/caecbbb0-cce0-46db-ab19-ec6c9b54c772/Group-1.png",
+          "mobile": "https://assets.decocache.com/festval/5eb4c757-60ed-4254-aa39-5e0be80cd4b3/MAMMA-BIA-VISIBILIDADE.jpg",
+          "desktop": "https://assets.decocache.com/festval/4d02c582-782b-4c8b-8094-c4a6a1e87ae9/MAMMA-BIA-VISIBILIDADE-DESK.jpg",
           "alt": "mammabiagenerico",
           "href": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
           "hrefMobile": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
@@ -353,7 +353,7 @@
           "activeTerm": false
         },
         {
-          "mobile": "https://assets.decocache.com/festval/819ecd1e-44d0-4a21-8690-a75e4d212e36/BANNER-M-visibilidade-rana.jpg",
+          "mobile": "https://assets.decocache.com/festval/5bac3c2f-6c1b-468e-ac48-2885fe31033f/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-RANA.jpg",
           "href": "https://www.festval.com/s?q=rana+250g&page=1",
           "hrefMobile": "https://www.festval.com/s?q=rana+250g&page=1",
           "region": "Mostrar em ambas",
@@ -361,12 +361,12 @@
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false,
-          "desktop": "https://assets.decocache.com/festval/01ec58bc-e7ac-41aa-9dfc-b4ae52dafa62/RANA-VISIBILIDADE.jpg",
+          "desktop": "https://assets.decocache.com/festval/f7333859-173d-42bc-be6b-24a48b0219f9/FESTVAL-NOVOS-BANNERS-M-visibilidade-RANA.jpg",
           "alt": "Visibilidade_1"
         },
         {
-          "mobile": "https://assets.decocache.com/festval/a0788be7-8005-4438-a08c-7bd003331072/BANNER-M-visibilidade-dellarabica.jpg",
-          "desktop": "https://assets.decocache.com/festval/dc4bc44e-8aa0-421d-8d80-b61dc3dcb702/BANNER-M-VISUALIZACAO-NOVOS-PRODUTOS-dell'arabica.jpg",
+          "mobile": "https://assets.decocache.com/festval/d52b7f0c-6980-4a87-bd53-fd5d378150a6/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-ARABICA.jpg",
+          "desktop": "https://assets.decocache.com/festval/283f0ff4-c835-4b6a-bb5c-ccbb05728c1a/FESTVAL-NOVOS-BANNERS-M-visibilidade-ARABICA.jpg",
           "href": "https://www.festval.com/s?q=Dell%27Arabica&page=1",
           "hrefMobile": "https://www.festval.com/s?q=Dell%27Arabica&page=1",
           "region": "Mostrar em ambas",
