@@ -72,6 +72,19 @@
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "activeTerm": false
+          },
+          {
+            "initialDate": "2025-05-26",
+            "deadLine": "2025-06-01",
+            "region": "Cascavel",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/s?q=cronology&page=1&utm_source=BannerHome&utm_campaign=eudoraprocronology"
+            },
+            "desktop": "https://assets.decocache.com/festval/b5fa9bdc-26b4-4d9d-931e-0e938998abd7/FESTVAL-NOVOS-BANNERS---EUDORA.jpg",
+            "mobile": "https://assets.decocache.com/festval/51e6cc96-d860-43b2-8b4b-46ba31c391ed/FESTVAL-NOVOS-BANNERS-1080-1500-EUDORA.jpg",
+            "activeTerm": true,
+            "alt": "eudora"
           }
         ],
         "preload": true,
