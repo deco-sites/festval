@@ -13,8 +13,8 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/41ffc4ec-b89e-4ca6-a392-ac89b3ef29a1/Festval---BannerDesk---Sou-Festval-NOVO.jpg",
-            "mobile": "https://assets.decocache.com/festval/c7fc6b03-3c4c-4052-98f0-78503b3939d7/Festval---BannerMBL---Sou-Festval-NOVO.jpg",
+            "desktop": "https://assets.decocache.com/festval/f9ec4849-0933-4809-9914-12a202c209bb/Sou-Festval---Banner-Home---App---Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/a2009e8c-5cc2-4bfe-9c7b-8aea861d6d4e/Sou-Festval---Banner-Home---App---Mobile---1080x1500.png",
             "alt": "soufestval",
             "activeTerm": false,
             "deadLine": "01/01/2024",
