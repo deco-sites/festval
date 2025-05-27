@@ -38,12 +38,38 @@
             "activeTerm": true
           },
           {
+            "initialDate": "2025-05-26",
+            "deadLine": "2025-06-01",
+            "desktop": "https://assets.decocache.com/festval/b5fa9bdc-26b4-4d9d-931e-0e938998abd7/FESTVAL-NOVOS-BANNERS---EUDORA.jpg",
+            "mobile": "https://assets.decocache.com/festval/51e6cc96-d860-43b2-8b4b-46ba31c391ed/FESTVAL-NOVOS-BANNERS-1080-1500-EUDORA.jpg",
+            "alt": "eudora",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/s?q=cronology&page=1&utm_source=BannerHome&utm_campaign=eudoraprocronology",
+              "target": "_blank"
+            },
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025-05-26",
+            "deadLine": "2025-06-01",
+            "desktop": "https://assets.decocache.com/festval/cd4bf1ed-b008-4d4f-b11e-f7a11f215ee0/FESTVAL-NOVOS-BANNERS.jpg",
+            "mobile": "https://assets.decocache.com/festval/49b8bb6e-fa8d-43fa-aeb8-9d043090c45b/FESTVAL-NOVOS-BANNERS-1080-1500-biscuit.jpg",
+            "alt": "biscoito-nestle",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/1664?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=biscoitosnestl%C3%A9",
+              "target": "_blank"
+            },
+            "activeTerm": true
+          },
+          {
             "initialDate": "2025-04-15",
             "deadLine": "2025-07-31",
+            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "alt": "Baly",
-            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
             },
@@ -52,39 +78,26 @@
           {
             "initialDate": "2025-17-04",
             "deadLine": "2025-07-31",
-            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "alt": "happy-eggs",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "activeTerm": false
+            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "activeTerm": false,
+            "alt": "happy-eggs"
           },
           {
             "initialDate": "2025-05-05",
             "deadLine": "2025-07-31",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
-            "alt": "frimesa",
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
+            "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
+            "alt": "frimesa",
             "activeTerm": false
-          },
-          {
-            "initialDate": "2025-05-26",
-            "deadLine": "2025-06-01",
-            "region": "Cascavel",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/s?q=cronology&page=1&utm_source=BannerHome&utm_campaign=eudoraprocronology"
-            },
-            "desktop": "https://assets.decocache.com/festval/b5fa9bdc-26b4-4d9d-931e-0e938998abd7/FESTVAL-NOVOS-BANNERS---EUDORA.jpg",
-            "mobile": "https://assets.decocache.com/festval/51e6cc96-d860-43b2-8b4b-46ba31c391ed/FESTVAL-NOVOS-BANNERS-1080-1500-EUDORA.jpg",
-            "activeTerm": true,
-            "alt": "eudora"
           }
         ],
         "preload": true,
