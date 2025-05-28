@@ -36,6 +36,18 @@
             }
           },
           {
+            "initialDate": "2025-05-28",
+            "deadLine": "2025-06-01",
+            "desktop": "https://assets.decocache.com/festval/58532d06-7eaa-4170-8e76-a324833bdb2a/FESTVAL-NOVOS-BANNERS-002-1920X490-downy.jpg",
+            "mobile": "https://assets.decocache.com/festval/013c086c-6b4d-4910-bf46-59ec5f71c569/FESTVAL-NOVOS-BANNERS-1080-1500-002-downy.jpg",
+            "alt": "downy3l",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/s?q=downy+3l&page=1",
+              "target": "_blank"
+            }
+          },
+          {
             "initialDate": "2025-05-12",
             "deadLine": "2025-05-31",
             "desktop": "https://assets.decocache.com/festval/821d58cb-fead-41f5-870e-7c16a5c11f4c/LINDT-BANNER-HOME-NOVO-KV.png",
@@ -52,10 +64,10 @@
             "desktop": "https://assets.decocache.com/festval/b5fa9bdc-26b4-4d9d-931e-0e938998abd7/FESTVAL-NOVOS-BANNERS---EUDORA.jpg",
             "mobile": "https://assets.decocache.com/festval/51e6cc96-d860-43b2-8b4b-46ba31c391ed/FESTVAL-NOVOS-BANNERS-1080-1500-EUDORA.jpg",
             "alt": "Eudora",
-            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/s?q=cronology&page=1&utm_source=BannerHome&utm_campaign=eudoraprocronology"
-            }
+            },
+            "activeTerm": true
           },
           {
             "initialDate": "2025-05-26",
@@ -63,21 +75,21 @@
             "desktop": "https://assets.decocache.com/festval/cd4bf1ed-b008-4d4f-b11e-f7a11f215ee0/FESTVAL-NOVOS-BANNERS.jpg",
             "mobile": "https://assets.decocache.com/festval/49b8bb6e-fa8d-43fa-aeb8-9d043090c45b/FESTVAL-NOVOS-BANNERS-1080-1500-biscuit.jpg",
             "alt": "Biscoitonestlé",
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1664?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=biscoitosnestl%C3%A9"
-            },
-            "activeTerm": true
+            }
           },
           {
             "initialDate": "2025-05-26",
             "deadLine": "2025-06-01",
+            "action": {
+              "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6"
+            },
             "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
             "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
             "alt": "original",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6"
-            }
+            "activeTerm": true
           }
         ],
         "preload": true
@@ -262,16 +274,16 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/f71ef318-3b0f-4ad6-9520-f998eefc187d/SEG-E-TER-DESK.jpg",
+          "desktop": "https://assets.decocache.com/festval/1ce9544f-b37b-41ca-b032-06b3cafb6941/QUA-E-QUI-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://assets.decocache.com/festval/30493414-435d-4d64-86b0-9c5f30a21d41/SEG-E-TER.jpg",
-          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "mobile": "https://assets.decocache.com/festval/c10b7889-9814-4483-9cff-a097cdd3713f/QUA-E-QUI.jpg",
+          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
-          "activeTerm": false
+          "activeTerm": true
         },
         {
           "desktop": "https://assets.decocache.com/festval/4c6ed6a7-8398-489c-a235-6dab8e47d65c/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-PETRA.jpg",
