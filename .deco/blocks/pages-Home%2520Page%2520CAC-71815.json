@@ -261,10 +261,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/cb23208f-2b92-4d47-8e1e-ba5d9127ea87/ADEGA.jpg",
+          "desktop": "https://assets.decocache.com/festval/668c07be-236a-4642-b366-2ad95a41f300/ADEGA-FESTVAL.jpg",
           "alt": "adega",
           "href": "/adega?sort=orders%3Adesc&page=1",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/3701f449-96c4-47d1-bea2-95ea99dde75c/FESTVAL-NOVO-APP-BANNER-528x465-ADEGA.png",
+          "mobile": "https://assets.decocache.com/festval/180dc31e-7e0c-47b8-863b-56921726473b/ADEGA-FESTVAL-APP.jpg",
           "hrefMobile": "/adega",
           "positionBanner": "Left",
           "initialDate": "2024-12-07",
@@ -273,8 +273,8 @@
           "region": "Mostrar em ambas"
         },
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c551c33b-00e2-4c80-83d2-0194dc3a070e/FESTVAL-NOVO-APP-BANNER-528x465-AC_OUGUE.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/37e0d270-825d-47da-8457-06ed6ae469ca/ACOUGUE.jpg",
+          "mobile": "https://assets.decocache.com/festval/87784bb3-ffd1-4fcf-b581-ff0f41be0e40/ACOUGUE-FESTVAL-APP.jpg",
+          "desktop": "https://assets.decocache.com/festval/7a41a1ba-ded8-43f6-9dcc-3fe0b7ac519b/ACOUGUE-FESTVAL.jpg",
           "href": "/acougue?sort=orders%3Adesc&page=1",
           "alt": "carnes",
           "hrefMobile": "/acougue",
@@ -309,10 +309,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://data.decoassets.com/festval/d9b3e69b-71cf-425a-afce-6f27689a33f3/BANNER-OFERTAS-QUAQUI.jpg",
+          "desktop": "https://assets.decocache.com/festval/1ce9544f-b37b-41ca-b032-06b3cafb6941/QUA-E-QUI-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://data.decoassets.com/festval/b1fe65a3-93d8-44a0-aa88-a01f429d2f69/QUAQUI-APP-MBL.jpg",
+          "mobile": "https://assets.decocache.com/festval/c10b7889-9814-4483-9cff-a097cdd3713f/QUA-E-QUI.jpg",
           "hrefMobile": "https://www.festval.com/1608?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Full",
@@ -321,10 +321,10 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://assets.decocache.com/festval/58f4b37d-259d-4ddd-8da9-c83404c8001c/BANNER-DE-OFERTAS-M-chocotrio.jpg",
+          "desktop": "https://assets.decocache.com/festval/1344cf71-6ac7-48fb-b6c5-18543eeedf7f/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-OMO-P-DILUIR.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
           "href": "https://www.festval.com/s?q=chocotrio&page=1",
-          "mobile": "https://assets.decocache.com/festval/1dffaa44-50f5-4149-a47b-b8d57e322b1a/chocotrio.jpg",
+          "mobile": "https://assets.decocache.com/festval/8829d527-94cb-45f6-9ad8-57a93b701f83/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-OMO-P-DILUIR.jpg",
           "hrefMobile": "https://www.festval.com/s?q=chocotrio&page=1",
           "region": "Cascavel",
           "positionBanner": "Right",
@@ -335,8 +335,8 @@
         {
           "positionBanner": "Left",
           "region": "Cascavel",
-          "mobile": "https://assets.decocache.com/festval/3d3ea640-ba8e-4ecc-8e65-dbc1e3ce2388/BANNER-M-visibilidade-RB-POMELO.jpg",
-          "desktop": "https://assets.decocache.com/festval/a5860029-b051-4574-a878-fed9c6069319/RB-POMELO-VISIBILIDADE.jpg",
+          "mobile": "https://assets.decocache.com/festval/e8e2755d-1a37-400e-81a1-6e3f225de195/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-PETRA.jpg",
+          "desktop": "https://assets.decocache.com/festval/4c6ed6a7-8398-489c-a235-6dab8e47d65c/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-PETRA.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
           "href": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
           "hrefMobile": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
@@ -372,8 +372,8 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/23c9e678-2b63-4cb6-87a5-97f3f2f13fe4/MAMMA-BIA.jpg",
-          "desktop": "https://data.decoassets.com/festval/caecbbb0-cce0-46db-ab19-ec6c9b54c772/Group-1.png",
+          "mobile": "https://assets.decocache.com/festval/5eb4c757-60ed-4254-aa39-5e0be80cd4b3/MAMMA-BIA-VISIBILIDADE.jpg",
+          "desktop": "https://assets.decocache.com/festval/4d02c582-782b-4c8b-8094-c4a6a1e87ae9/MAMMA-BIA-VISIBILIDADE-DESK.jpg",
           "alt": "mammabiagenerico",
           "href": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
           "hrefMobile": "https://www.festval.com/1358?map=productClusterIds&sort=orders%3Adesc&page=1",
@@ -396,8 +396,8 @@
           "desktop": "https://data.decoassets.com/festval/bc9ab92d-0b47-48f0-8cfe-f519575eec63/g7-visibilidade.jpg"
         },
         {
-          "mobile": "https://assets.decocache.com/festval/a0788be7-8005-4438-a08c-7bd003331072/BANNER-M-visibilidade-dellarabica.jpg",
-          "desktop": "https://assets.decocache.com/festval/dc4bc44e-8aa0-421d-8d80-b61dc3dcb702/BANNER-M-VISUALIZACAO-NOVOS-PRODUTOS-dell'arabica.jpg",
+          "mobile": "https://assets.decocache.com/festval/d52b7f0c-6980-4a87-bd53-fd5d378150a6/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-ARABICA.jpg",
+          "desktop": "https://assets.decocache.com/festval/283f0ff4-c835-4b6a-bb5c-ccbb05728c1a/FESTVAL-NOVOS-BANNERS-M-visibilidade-ARABICA.jpg",
           "href": "https://www.festval.com/s?q=Dell%27Arabica&page=1",
           "hrefMobile": "https://www.festval.com/s?q=Dell%27Arabica&page=1",
           "region": "Mostrar em ambas",
