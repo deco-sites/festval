@@ -323,9 +323,9 @@
         {
           "desktop": "https://assets.decocache.com/festval/1344cf71-6ac7-48fb-b6c5-18543eeedf7f/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-OMO-P-DILUIR.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
-          "href": "https://www.festval.com/s?q=chocotrio&page=1",
+          "href": "https://www.festval.com/1659?map=productClusterIds&sort=orders%3Adesc&page=1",
           "mobile": "https://assets.decocache.com/festval/8829d527-94cb-45f6-9ad8-57a93b701f83/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-OMO-P-DILUIR.jpg",
-          "hrefMobile": "https://www.festval.com/s?q=chocotrio&page=1",
+          "hrefMobile": "https://www.festval.com/1659?map=productClusterIds&sort=orders%3Adesc&page=1",
           "region": "Cascavel",
           "positionBanner": "Right",
           "initialDate": "2024-12-05",
@@ -338,8 +338,8 @@
           "mobile": "https://assets.decocache.com/festval/e8e2755d-1a37-400e-81a1-6e3f225de195/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-PETRA.jpg",
           "desktop": "https://assets.decocache.com/festval/4c6ed6a7-8398-489c-a235-6dab8e47d65c/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-PETRA.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
-          "hrefMobile": "https://www.festval.com/energetico-pomelo-zero-acucar-red-bull-lata-250ml-the-pomelo-edition/p?skuId=26853&utm_source=BannerVisibilidade&utm_campaign=RedBullPomelo",
+          "href": "https://www.festval.com/cerveja-puro-malte-petra-origem-lata-350ml/p?skuId=419&utm_source=BannerHome&utm_campaign=Petral12p10",
+          "hrefMobile": "https://www.festval.com/cerveja-puro-malte-petra-origem-lata-350ml/p?skuId=419&utm_source=BannerHome&utm_campaign=Petral12p10",
           "initialDate": "2025-03-31",
           "activeTerm": false,
           "deadLine": "2025-04-01"
