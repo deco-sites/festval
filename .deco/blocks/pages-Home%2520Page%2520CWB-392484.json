@@ -102,6 +102,30 @@
             "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
             "alt": "original",
             "activeTerm": true
+          },
+          {
+            "initialDate": "2025-06-02",
+            "deadLine": "2025-06-08",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite"
+            },
+            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "alt": "semanadoleite",
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025-06-02",
+            "deadLine": "2025-06-08",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/cerveja-puro-malte-pure-gold-stella-artois-long-neck-330ml/p?skuId=25821&utm_source=BannerHome&utm_campaign=stellaartois"
+            },
+            "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
+            "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
+            "alt": "stellaartois",
+            "activeTerm": true
           }
         ],
         "preload": true
