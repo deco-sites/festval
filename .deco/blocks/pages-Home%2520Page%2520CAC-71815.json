@@ -52,15 +52,17 @@
             "activeTerm": true
           },
           {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
+            "initialDate": "2025-06-02",
+            "deadLine": "2025-06-08",
             "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
             "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
             "alt": "stella",
             "region": "Cascavel",
             "action": {
-              "target": "_blank"
-            }
+              "target": "_blank",
+              "href": "https://www.festval.com/cerveja-puro-malte-pure-gold-stella-artois-long-neck-330ml/p?skuId=25821&utm_source=BannerHome&utm_campaign=stellaartois"
+            },
+            "activeTerm": true
           },
           {
             "initialDate": "2025-05-26",
