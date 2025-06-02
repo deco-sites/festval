@@ -39,55 +39,41 @@
             "activeTerm": false
           },
           {
-            "initialDate": "2025-05-20",
-            "deadLine": "2025-06-01",
-            "desktop": "https://assets.decocache.com/festval/dacade1d-317b-4e6b-9bb7-c56302133118/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/3582e8d9-75a4-4860-a9ef-e5e2f43f4517/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1080x1500px.png",
-            "alt": "natural-fit",
+            "initialDate": "2025-06-02",
+            "deadLine": "2025-06-08",
+            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "alt": "semana-do_leite",
             "region": "Cascavel",
             "action": {
-              "href": "https://www.festval.com/1661?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NaturalFit"
+              "target": "_blank",
+              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite"
             },
             "activeTerm": true
           },
           {
-            "initialDate": "2025-05-26",
-            "deadLine": "2025-06-01",
-            "desktop": "https://assets.decocache.com/festval/b5fa9bdc-26b4-4d9d-931e-0e938998abd7/FESTVAL-NOVOS-BANNERS---EUDORA.jpg",
-            "mobile": "https://assets.decocache.com/festval/51e6cc96-d860-43b2-8b4b-46ba31c391ed/FESTVAL-NOVOS-BANNERS-1080-1500-EUDORA.jpg",
-            "alt": "eudora",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
+            "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
+            "alt": "stella",
             "region": "Cascavel",
             "action": {
-              "href": "https://www.festval.com/s?q=cronology&page=1&utm_source=BannerHome&utm_campaign=eudoraprocronology",
               "target": "_blank"
-            },
-            "activeTerm": true
+            }
           },
           {
             "initialDate": "2025-05-26",
             "deadLine": "2025-06-01",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/cd4bf1ed-b008-4d4f-b11e-f7a11f215ee0/FESTVAL-NOVOS-BANNERS.jpg",
-            "mobile": "https://assets.decocache.com/festval/49b8bb6e-fa8d-43fa-aeb8-9d043090c45b/FESTVAL-NOVOS-BANNERS-1080-1500-biscuit.jpg",
-            "alt": "biscoito-nestle",
-            "action": {
-              "href": "https://www.festval.com/1664?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=biscoitosnestl%C3%A9",
-              "target": "_blank"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-26",
-            "deadLine": "2025-06-01",
-            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
+            "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
+            "alt": "original",
             "action": {
               "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6",
               "target": "_blank"
             },
-            "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
-            "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
-            "activeTerm": true,
-            "alt": "original"
+            "activeTerm": true
           },
           {
             "initialDate": "2025-04-15",
@@ -98,8 +84,8 @@
             },
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
-            "alt": "Baly",
-            "activeTerm": true
+            "activeTerm": true,
+            "alt": "Baly"
           },
           {
             "initialDate": "2025-17-04",
