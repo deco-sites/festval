@@ -27,6 +27,17 @@
                 "alt": "brindeslindt"
               }
             ]
+          },
+          {
+            "matcher": [
+              "diadosnamorados"
+            ],
+            "images": [
+              {
+                "region": "Cascavel",
+                "desktop": "https://assets.decocache.com/festval/16726045-d47b-4e69-9ba0-2f5c752244a2/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1920x490px.png"
+              }
+            ]
           }
         ]
       }
