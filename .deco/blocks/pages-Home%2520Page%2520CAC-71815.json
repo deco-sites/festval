@@ -65,6 +65,16 @@
             "activeTerm": false
           },
           {
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "mobile": "https://assets.decocache.com/festval/16726045-d47b-4e69-9ba0-2f5c752244a2/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1920x490px.png",
+            "alt": "dia-dos-namorados",
+            "region": "Cascavel",
+            "action": {
+              "target": "_blank"
+            }
+          },
+          {
             "initialDate": "2025-06-02",
             "deadLine": "2025-06-08",
             "region": "Cascavel",
@@ -81,6 +91,9 @@
             "initialDate": "2025-06-02",
             "deadLine": "2025-06-08",
             "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
+            "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
+            "alt": "stella",
             "action": {
               "href": "https://www.festval.com/cerveja-puro-malte-pure-gold-stella-artois-long-neck-330ml/p?skuId=25821&utm_source=BannerHome&utm_campaign=stellaartois",
               "target": "_blank"
@@ -100,8 +113,8 @@
             },
             "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
             "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
-            "alt": "original",
-            "activeTerm": true
+            "activeTerm": true,
+            "alt": "original"
           },
           {
             "initialDate": "2025-04-15",
@@ -133,10 +146,9 @@
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
-            "initialDate": "2025-05-05",
+            "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "activeTerm": false
           }
         ],
