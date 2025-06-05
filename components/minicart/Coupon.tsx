@@ -17,7 +17,7 @@ function Coupon({ coupon }: Props) {
           button.classList.add("hidden");
           button.nextElementSibling?.classList.remove("hidden");
         })}
-      >
+      > 
         {coupon || "Add"}
       </button>
 
