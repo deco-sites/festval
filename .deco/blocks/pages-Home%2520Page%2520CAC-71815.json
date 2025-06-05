@@ -26,30 +26,30 @@
             }
           },
           {
-            "desktop": "https://assets.decocache.com/festval/16726045-d47b-4e69-9ba0-2f5c752244a2/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/eaf7ec4d-8cb9-4e6e-a7d3-b4868c397bce/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1080x1500px.png",
-            "alt": "diadosnamorados",
-            "deadLine": "22/06/2025",
-            "initialDate": "03/06/2025",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/1669?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadosnamorados",
-              "target": "_blank"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/f9ec4849-0933-4809-9914-12a202c209bb/Sou-Festval---Banner-Home---App---Desktop---1920x490.png",
             "mobile": "https://assets.decocache.com/festval/a2009e8c-5cc2-4bfe-9c7b-8aea861d6d4e/Sou-Festval---Banner-Home---App---Mobile---1080x1500.png",
             "alt": "cadastro-soufestval",
+            "deadLine": "01/01/2024",
+            "initialDate": "01/01/2024",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval",
+              "target": "_blank"
+            },
+            "activeTerm": false
+          },
+          {
+            "initialDate": "03/06/2025",
+            "deadLine": "22/06/2025",
+            "desktop": "https://assets.decocache.com/festval/16726045-d47b-4e69-9ba0-2f5c752244a2/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1920x490px.png",
+            "mobile": "https://assets.decocache.com/festval/eaf7ec4d-8cb9-4e6e-a7d3-b4868c397bce/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1080x1500px.png",
+            "alt": "diadosnamorados",
             "region": "Cascavel",
             "action": {
               "target": "_blank",
-              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
+              "href": "https://www.festval.com/1669?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadosnamorados"
             },
-            "activeTerm": false
+            "activeTerm": true
           },
           {
             "initialDate": "03/06/2025",
