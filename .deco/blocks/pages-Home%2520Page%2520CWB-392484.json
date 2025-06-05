@@ -345,9 +345,9 @@
           "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
-          "initialDate": "2024-12-05",
-          "deadLine": "2024-12-06",
-          "activeTerm": false
+          "initialDate": "2025-01-06",
+          "deadLine": "2025-12-06",
+          "activeTerm": true
         },
         {
           "desktop": "https://assets.decocache.com/festval/4c6ed6a7-8398-489c-a235-6dab8e47d65c/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-PETRA.jpg",
@@ -357,9 +357,9 @@
           "hrefMobile": "https://www.festval.com/cerveja-puro-malte-petra-origem-lata-350ml/p?skuId=419&utm_source=BannerHome&utm_campaign=Petral12p10",
           "region": "Mostrar em ambas",
           "positionBanner": "Right",
-          "initialDate": "2024-12-05",
-          "deadLine": "2024-12-06",
-          "activeTerm": false
+          "initialDate": "2025-01-06",
+          "deadLine": "2025-12-06",
+          "activeTerm": true
         },
         {
           "positionBanner": "Left",
@@ -368,9 +368,9 @@
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
           "href": "https://www.festval.com/s?q=3cora%C3%A7%C3%B5es+a+vacuo&page=1",
           "hrefMobile": "https://www.festval.com/s?q=3cora%C3%A7%C3%B5es+a+vacuo&page=1",
-          "deadLine": "0",
-          "initialDate": "0",
-          "activeTerm": false,
+          "deadLine": "2025-12-06",
+          "initialDate": "2025-01-06",
+          "activeTerm": true,
           "region": "Mostrar em ambas"
         }
       ],
