@@ -14,6 +14,18 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
+            "initialDate": "2025-06-01",
+            "deadLine": "2025-06-30",
+            "desktop": "https://assets.decocache.com/festval/91bf3036-f4d2-4ecf-8501-ee1c233624c3/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/5028e299-20e7-414c-85af-f2cff087bae9/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--App---1080x1500.png",
+            "alt": "namoradoslindt",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/Lindt?utm_source=BannerLandingPage&utm_campaign=NamoradosLindt",
+              "target": "_blank"
+            }
+          },
+          {
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/4342c753-adf0-44eb-b01e-7beb08e90849/Lindt---Brinde---Generico-1---1920x490.png",
@@ -49,13 +61,13 @@
           {
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
+            "action": {
+              "href": "/"
+            },
             "desktop": "https://assets.decocache.com/festval/eb1b4ad3-d8a6-4639-9a94-a1627ce8296a/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1920x490-2.jpg",
             "mobile": "https://assets.decocache.com/festval/cf434857-fdb5-42cd-be68-d41670b9d41e/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1080x1500-2.jpg",
             "alt": "Qualidade",
-            "activeTerm": false,
-            "action": {
-              "href": "/"
-            }
+            "activeTerm": false
           }
         ],
         "preload": false,

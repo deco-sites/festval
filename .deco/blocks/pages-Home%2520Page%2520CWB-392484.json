@@ -52,97 +52,42 @@
             "region": "Curitiba"
           },
           {
-            "initialDate": "2025-05-20",
-            "deadLine": "2025-06-01",
-            "desktop": "https://assets.decocache.com/festval/dacade1d-317b-4e6b-9bb7-c56302133118/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/3582e8d9-75a4-4860-a9ef-e5e2f43f4517/AF_V02_Campanha_Natural_Fit_Festval_2025_Banner_Festval.com_GG_1080x1500px.png",
-            "alt": "NaturalFit",
+            "initialDate": "2025-06-06",
+            "deadLine": "2025-06-12",
+            "desktop": "https://assets.decocache.com/festval/91bf3036-f4d2-4ecf-8501-ee1c233624c3/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/5028e299-20e7-414c-85af-f2cff087bae9/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--App---1080x1500.png",
+            "alt": "NamoradosLindt",
             "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1661?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=NaturalFit"
-            }
-          },
-          {
-            "initialDate": "2025-05-29",
-            "deadLine": "2025-06-01",
-            "desktop": "https://assets.decocache.com/festval/2d8ecb42-1a8f-40ac-b1ae-10250ee49f81/AF_V01_Superpromocao_de_Vinhos_com_ate_50_Festval_2025_Banner_GG_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/d2bf9fbc-6e25-4068-b941-aa400e321085/AF_V01_Superpromocao_de_Vinhos_com_ate_50_Festval_2025_Banner_GG_1080X1500px.png",
-            "alt": "superpromo",
-            "action": {
-              "href": "https://www.festval.com/1660?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=superpromo50%25",
-              "target": "_blank"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-28",
-            "deadLine": "2025-06-01",
-            "desktop": "https://assets.decocache.com/festval/58532d06-7eaa-4170-8e76-a324833bdb2a/FESTVAL-NOVOS-BANNERS-002-1920X490-downy.jpg",
-            "mobile": "https://assets.decocache.com/festval/013c086c-6b4d-4910-bf46-59ec5f71c569/FESTVAL-NOVOS-BANNERS-1080-1500-002-downy.jpg",
-            "alt": "downy3l",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/s?q=downy+3l&page=1",
+              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=NamoradosLindt",
               "target": "_blank"
             }
           },
           {
             "initialDate": "2025-05-12",
-            "deadLine": "2025-05-31",
-            "action": {
-              "href": "https://www.festval.com/Lindt?utm_source=Bannerhome&utm_campaign=BrindesLindt"
-            },
+            "deadLine": "2025-07-31",
             "desktop": "https://assets.decocache.com/festval/821d58cb-fead-41f5-870e-7c16a5c11f4c/LINDT-BANNER-HOME-NOVO-KV.png",
             "mobile": "https://assets.decocache.com/festval/795ed9fa-54bd-4677-8b4d-a46eb51492c2/LINDT-BANNER-HOME-NOVO-KV-MBL.png",
             "alt": "BrindeLindt",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-26",
-            "deadLine": "2025-06-01",
             "action": {
-              "href": "https://www.festval.com/s?q=cronology&page=1&utm_source=BannerHome&utm_campaign=eudoraprocronology"
+              "href": "https://www.festval.com/Lindt?utm_source=Bannerhome&utm_campaign=BrindesLindt"
             },
-            "desktop": "https://assets.decocache.com/festval/b5fa9bdc-26b4-4d9d-931e-0e938998abd7/FESTVAL-NOVOS-BANNERS---EUDORA.jpg",
-            "mobile": "https://assets.decocache.com/festval/51e6cc96-d860-43b2-8b4b-46ba31c391ed/FESTVAL-NOVOS-BANNERS-1080-1500-EUDORA.jpg",
-            "alt": "Eudora",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-26",
-            "deadLine": "2025-06-01",
-            "action": {
-              "href": "https://www.festval.com/1664?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=biscoitosnestl%C3%A9"
-            },
-            "desktop": "https://assets.decocache.com/festval/cd4bf1ed-b008-4d4f-b11e-f7a11f215ee0/FESTVAL-NOVOS-BANNERS.jpg",
-            "mobile": "https://assets.decocache.com/festval/49b8bb6e-fa8d-43fa-aeb8-9d043090c45b/FESTVAL-NOVOS-BANNERS-1080-1500-biscuit.jpg",
-            "alt": "Biscoitonestlé",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-05-26",
-            "deadLine": "2025-06-01",
-            "action": {
-              "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6"
-            },
-            "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
-            "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
-            "alt": "original",
             "activeTerm": true
           },
           {
             "initialDate": "2025-06-02",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite"
-            },
-            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
-            "alt": "semanadoleite",
             "deadLine": "2025-06-08",
+            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "alt": "semanadoleite",
             "activeTerm": true,
-            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg"
+            "action": {
+              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite",
+              "target": "_blank"
+            }
           },
           {
+            "initialDate": "2025-06-05",
             "deadLine": "2025-06-08",
             "action": {
               "target": "_blank",
@@ -151,8 +96,19 @@
             "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
             "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
             "alt": "stellaartois",
-            "activeTerm": true,
-            "initialDate": "2025-06-05"
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025-06-01",
+            "deadLine": "2025-08-31",
+            "action": {
+              "target": "_blank",
+              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025"
+            },
+            "desktop": "https://assets.decocache.com/festval/ba4510fc-5ccc-4c12-9b77-f8f8a73f0b26/1920X490px.png",
+            "mobile": "https://assets.decocache.com/festval/bd59f670-ac03-45c6-98a9-c07e7efe2893/1080X1500px.png",
+            "alt": "invernosolidario",
+            "activeTerm": true
           }
         ],
         "preload": true
@@ -391,11 +347,11 @@
           "collection": "1627",
           "count": 12,
           "hideUnavailableItems": true,
-          "similars": false
+          "similars": true
         }
       },
       "cta": "https://www.festval.com/rotulosimperdiveis",
-      "title": "Rótulos Imperdíveis - Adega Festval"
+      "title": "Ofertas Imperdíveis - Adega Festval"
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
@@ -403,14 +359,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "",
-          "collection": "1659",
+          "collection": "377",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "title": "Casa Limpa com até 40%OFF ",
-      "cta": "/1659?map=productClusterIds"
+      "cta": "https://www.festval.com/Lindt",
+      "title": "Dia dos Namorados é com Lindt"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
