@@ -13,41 +13,28 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/3af37049-841a-47fa-ae75-c2146f7bf918/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/332be242-f12b-4df4-acc4-896e2072c862/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1080x1500.png",
-            "alt": "queijos",
-            "activeTerm": true,
-            "deadLine": "22/06/2025",
-            "initialDate": "03/06/2025",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025",
-              "target": "_blank"
-            }
-          },
-          {
             "desktop": "https://data.decoassets.com/festval/9138e0f7-e5fb-4fcd-a9b9-e9df2aad8cb8/Banner-Home.png",
             "mobile": "https://data.decoassets.com/festval/d0bebc6b-fab0-44b0-bd28-7db480c29910/Banner-Home-APP.png",
             "alt": "soufestval",
+            "activeTerm": false,
             "deadLine": "01/01/2024",
             "initialDate": "01/01/2024",
             "region": "Cascavel",
             "action": {
               "href": "https://www.superfestval.com.br/regulamentobmw/?utm_source=BannerHome&utm_campaign=RegulamentoSouFestval",
               "target": "_blank"
-            },
-            "activeTerm": false
+            }
           },
           {
-            "initialDate": "03/06/2025",
-            "deadLine": "22/06/2025",
             "desktop": "https://assets.decocache.com/festval/16726045-d47b-4e69-9ba0-2f5c752244a2/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1920x490px.png",
             "mobile": "https://assets.decocache.com/festval/eaf7ec4d-8cb9-4e6e-a7d3-b4868c397bce/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1080x1500px.png",
             "alt": "diadosnamorados",
+            "deadLine": "22/06/2025",
+            "initialDate": "03/06/2025",
             "region": "Cascavel",
             "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/1669?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadosnamorados"
+              "href": "https://www.festval.com/1669?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadosnamorados",
+              "target": "_blank"
             },
             "activeTerm": true
           },
@@ -63,6 +50,19 @@
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
             },
             "activeTerm": false
+          },
+          {
+            "initialDate": "03/06/2025",
+            "deadLine": "22/06/2025",
+            "desktop": "https://assets.decocache.com/festval/3af37049-841a-47fa-ae75-c2146f7bf918/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/332be242-f12b-4df4-acc4-896e2072c862/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1080x1500.png",
+            "alt": "queijos",
+            "region": "Cascavel",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025"
+            },
+            "activeTerm": true
           },
           {
             "initialDate": "2025-06-02",
