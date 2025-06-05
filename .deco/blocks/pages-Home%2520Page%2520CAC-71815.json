@@ -13,15 +13,27 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/9138e0f7-e5fb-4fcd-a9b9-e9df2aad8cb8/Banner-Home.png",
-            "mobile": "https://data.decoassets.com/festval/d0bebc6b-fab0-44b0-bd28-7db480c29910/Banner-Home-APP.png",
-            "alt": "soufestval",
-            "activeTerm": false,
-            "deadLine": "01/02/2024",
+            "desktop": "https://assets.decocache.com/festval/3af37049-841a-47fa-ae75-c2146f7bf918/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/332be242-f12b-4df4-acc4-896e2072c862/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1080x1500.png",
+            "alt": "queijos",
+            "activeTerm": true,
+            "deadLine": "22/06/2025",
+            "initialDate": "03/06/2025",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025",
+              "target": "_blank"
+            }
+          },
+          {
+            "desktop": "https://assets.decocache.com/festval/f9ec4849-0933-4809-9914-12a202c209bb/Sou-Festval---Banner-Home---App---Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/a2009e8c-5cc2-4bfe-9c7b-8aea861d6d4e/Sou-Festval---Banner-Home---App---Mobile---1080x1500.png",
+            "alt": "cadastro-soufestval",
+            "deadLine": "01/01/2024",
             "initialDate": "01/01/2024",
             "region": "Cascavel",
             "action": {
-              "href": "https://www.superfestval.com.br/regulamentobmw/?utm_source=BannerHome&utm_campaign=RegulamentoSouFestval",
+              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval",
               "target": "_blank"
             }
           },
@@ -52,15 +64,28 @@
             "activeTerm": true
           },
           {
-            "initialDate": "03/06/2025",
-            "deadLine": "22/06/2025",
-            "desktop": "https://assets.decocache.com/festval/3af37049-841a-47fa-ae75-c2146f7bf918/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/332be242-f12b-4df4-acc4-896e2072c862/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1080x1500.png",
-            "alt": "queijos",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
+            "desktop": "https://data.decoassets.com/festval/9138e0f7-e5fb-4fcd-a9b9-e9df2aad8cb8/Banner-Home.png",
+            "mobile": "https://data.decoassets.com/festval/d0bebc6b-fab0-44b0-bd28-7db480c29910/Banner-Home-APP.png",
+            "alt": "soufestval",
             "region": "Cascavel",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025"
+              "href": "https://www.superfestval.com.br/regulamentobmw/?utm_source=BannerHome&utm_campaign=RegulamentoSouFestval"
+            },
+            "activeTerm": false
+          },
+          {
+            "initialDate": "2025-06-02",
+            "deadLine": "2025-06-08",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "alt": "semana-do_leite",
+            "action": {
+              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite",
+              "target": "_blank"
             },
             "activeTerm": true
           },
@@ -118,18 +143,18 @@
           },
           {
             "initialDate": "17/04/2025",
-            "deadLine": "31/07/2025",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "alt": "HappyEggs",
-            "activeTerm": false
+            "alt": "happy-eggs",
+            "activeTerm": true,
+            "deadLine": "01/06/2025"
           },
           {
-            "deadLine": "31/07/2025",
+            "deadLine": "01/06/2025",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
@@ -137,8 +162,8 @@
             "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
-            "activeTerm": false,
-            "initialDate": "17/04/2025"
+            "activeTerm": true,
+            "initialDate": "05/05/2025"
           }
         ],
         "preload": true,
