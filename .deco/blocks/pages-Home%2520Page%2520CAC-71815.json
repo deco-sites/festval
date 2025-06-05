@@ -35,7 +35,8 @@
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval",
               "target": "_blank"
-            }
+            },
+            "activeTerm": false
           },
           {
             "desktop": "https://assets.decocache.com/festval/f9ec4849-0933-4809-9914-12a202c209bb/Sou-Festval---Banner-Home---App---Desktop---1920x490.png",
@@ -48,7 +49,7 @@
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval",
               "target": "_blank"
             },
-            "activeTerm": false
+            "activeTerm": true
           },
           {
             "initialDate": "03/06/2025",
