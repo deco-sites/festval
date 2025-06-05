@@ -347,7 +347,7 @@
           "positionBanner": "Full",
           "initialDate": "2025-01-06",
           "deadLine": "2025-12-06",
-          "activeTerm": true
+          "activeTerm": false
         },
         {
           "desktop": "https://assets.decocache.com/festval/4c6ed6a7-8398-489c-a235-6dab8e47d65c/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-PETRA.jpg",
@@ -370,7 +370,7 @@
           "hrefMobile": "https://www.festval.com/s?q=3cora%C3%A7%C3%B5es+a+vacuo&page=1",
           "deadLine": "2025-12-06",
           "initialDate": "2025-01-06",
-          "activeTerm": true,
+          "activeTerm": false,
           "region": "Mostrar em ambas"
         }
       ],
