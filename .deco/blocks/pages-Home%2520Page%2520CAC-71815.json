@@ -163,7 +163,7 @@
             "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
-            "activeTerm": true,
+            "activeTerm": false,
             "initialDate": "05/05/2025"
           }
         ],
