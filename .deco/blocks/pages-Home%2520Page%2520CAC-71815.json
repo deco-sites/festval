@@ -65,42 +65,55 @@
             "activeTerm": true
           },
           {
-            "initialDate": "2025-06-02",
-            "deadLine": "2025-06-08",
-            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
-            "alt": "semana-do_leite",
+            "deadLine": "2025-06-12",
+            "desktop": "https://assets.decocache.com/festval/91bf3036-f4d2-4ecf-8501-ee1c233624c3/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/5028e299-20e7-414c-85af-f2cff087bae9/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--App---1080x1500.png",
+            "alt": "namorados-lindt",
             "region": "Cascavel",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite"
+              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=NamoradosLindt"
+            },
+            "initialDate": "2025-06-06",
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025-06-02",
+            "deadLine": "2025-06-08",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
+            "alt": "semana-do_leite",
+            "action": {
+              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite",
+              "target": "_blank"
             },
             "activeTerm": true
           },
           {
             "initialDate": "02/06/2025",
             "deadLine": "08/06/2025",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
             "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
             "alt": "stella",
+            "region": "Cascavel",
             "action": {
-              "href": "https://www.festval.com/cerveja-puro-malte-pure-gold-stella-artois-long-neck-330ml/p?skuId=25821&utm_source=BannerHome&utm_campaign=stellaartois",
-              "target": "_blank"
+              "target": "_blank",
+              "href": "https://www.festval.com/cerveja-puro-malte-pure-gold-stella-artois-long-neck-330ml/p?skuId=25821&utm_source=BannerHome&utm_campaign=stellaartois"
             },
+            "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
             "activeTerm": true
           },
           {
             "initialDate": "26/05/2025",
             "deadLine": "01/06/2025",
+            "region": "Cascavel",
+            "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
             "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
             "alt": "original",
-            "region": "Cascavel",
             "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6"
+              "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6",
+              "target": "_blank"
             },
-            "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
             "activeTerm": true
           },
           {
@@ -120,13 +133,13 @@
             "initialDate": "17/04/2025",
             "deadLine": "01/06/2025",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "alt": "happy-eggs",
             "action": {
               "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "activeTerm": true
+            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "activeTerm": true,
+            "alt": "happy-eggs"
           },
           {
             "initialDate": "05/05/2025",
@@ -137,8 +150,8 @@
             },
             "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
-            "activeTerm": false,
-            "alt": "frimesa"
+            "alt": "frimesa",
+            "activeTerm": false
           }
         ],
         "preload": true,
