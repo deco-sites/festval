@@ -46,8 +46,7 @@
             "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025",
-              "target": "_blank",
-              "title": "namorados"
+              "target": "_blank"
             },
             "region": "Curitiba"
           },
@@ -75,27 +74,27 @@
             "activeTerm": true
           },
           {
-            "initialDate": "2025-06-02",
-            "deadLine": "2025-06-08",
-            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
-            "alt": "semanadoleite",
+            "initialDate": "2025-06-09",
+            "deadLine": "2025-06-15",
+            "desktop": "https://assets.decocache.com/festval/732ac5ea-fdb5-4fa8-b6f2-1b22c0cecd03/FESTVAL-NOVOS-BANNERS-NAMORADOS.jpg",
+            "mobile": "https://assets.decocache.com/festval/4e388438-5350-44f1-825b-4ddc6ad16322/FESTVAL-NOVOS-BANNERS-1080-1500-NAMORADOS.jpg",
+            "alt": "NamoradosNestlé",
             "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite",
+              "href": "https://www.festval.com/mercearia/bombom-e-chocolate?sort=orders%3Adesc&filter.brand=nestle&filter.brand=garoto&filter.brand=kitkat&filter.brand=talento&filter.category-1=mercearia&filter.category-2=bombom-e-chocolate&filter.brand=prestigio&page=1&utm_source=BannerHome&utm_campaign=Namorados+Nestl%C3%A9",
               "target": "_blank"
             }
           },
           {
-            "initialDate": "2025-06-05",
-            "deadLine": "2025-06-08",
+            "initialDate": "2025-06-09",
+            "deadLine": "2025-06-15",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/cerveja-puro-malte-pure-gold-stella-artois-long-neck-330ml/p?skuId=25821&utm_source=BannerHome&utm_campaign=stellaartois"
+              "href": "https://www.festval.com/s?q=%C3%81gua+T%C3%B4nica+Antarctica+Lata+350ml&page=1&utm_source=BannerHome&utm_campaign=T%C3%B4nica350ml"
             },
-            "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
-            "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
-            "alt": "stellaartois",
+            "desktop": "https://assets.decocache.com/festval/cc38b6fa-eabf-4b0b-9c78-615dccc9a052/FESTVAL-NOVOS-BANNERS-TONICA.jpg",
+            "mobile": "https://assets.decocache.com/festval/3337a173-2513-4aeb-9551-70e7e9926635/FESTVAL-NOVOS-BANNERS-1080-1500-Tonica.jpg",
+            "alt": "Tônica",
             "activeTerm": true
           },
           {
@@ -293,11 +292,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/1ce9544f-b37b-41ca-b032-06b3cafb6941/QUA-E-QUI-DESK.jpg",
+          "desktop": "https://assets.decocache.com/festval/30493414-435d-4d64-86b0-9c5f30a21d41/SEG-E-TER.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://assets.decocache.com/festval/c10b7889-9814-4483-9cff-a097cdd3713f/QUA-E-QUI.jpg",
-          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://assets.decocache.com/festval/f71ef318-3b0f-4ad6-9520-f998eefc187d/SEG-E-TER-DESK.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2025-01-06",
@@ -384,15 +383,15 @@
           "activeTerm": false
         },
         {
-          "mobile": "https://assets.decocache.com/festval/5bac3c2f-6c1b-468e-ac48-2885fe31033f/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-RANA.jpg",
-          "href": "https://www.festval.com/s?q=rana+250g&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=rana+250g&page=1",
+          "mobile": "https://assets.decocache.com/festval/c415b9fa-1178-4d61-b451-b9399c08cf03/FESTVAL-NOVOS-BANNERS-M-visibilidade-proenergy.jpg",
+          "href": "https://www.festval.com/s?q=Bebida+L%C3%A1ctea+Nescaf%C3%A9+Pro-Energy&page=1&utm_source=BannerVisibilidade&utm_campaign=proenergy",
+          "hrefMobile": "https://www.festval.com/s?q=Bebida+L%C3%A1ctea+Nescaf%C3%A9+Pro-Energy&page=1&utm_source=BannerVisibilidade&utm_campaign=proenergy",
           "region": "Mostrar em ambas",
           "positionBanner": "Left",
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false,
-          "desktop": "https://assets.decocache.com/festval/f7333859-173d-42bc-be6b-24a48b0219f9/FESTVAL-NOVOS-BANNERS-M-visibilidade-RANA.jpg",
+          "desktop": "https://assets.decocache.com/festval/6bb359fc-8bbf-49d4-bbe0-55c7ce122cdf/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-proenergy.jpg",
           "alt": "Visibilidade_1"
         },
         {
