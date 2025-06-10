@@ -14,48 +14,16 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/0c8feede-1a43-4292-bbcd-746835900447/1920x490-dolcelover.jpg",
-            "mobile": "https://data.decoassets.com/festval/da15784f-d003-4d4f-9c3c-1ac5b1f575f1/1080x1500-dolcelover.jpg",
-            "alt": "Dolcelover",
+            "initialDate": "01/01/2024",
+            "deadLine": "01/01/2024",
             "action": {
-              "href": "https://www.festval.com/1169?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerLP&utm_campaign=DolceLovers"
+              "target": "_blank",
+              "href": "/nestlé"
             },
-            "initialDate": "2025-02-24",
-            "deadLine": "2025-03-02",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025/02/17",
-            "deadLine": "2025/03/03",
-            "desktop": "https://data.decoassets.com/festval/bce7e115-66c9-40f2-9282-265f0d311686/BBBEM-1920X490.jpg",
-            "mobile": "https://data.decoassets.com/festval/bd837333-d2b7-4173-a477-6951675948fa/BBBEM-1080X1500.jpg",
-            "alt": "bbem",
-            "action": {
-              "href": "https://www.festval.com/1602?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerLandingPage&utm_campaign=Faz+bbbem"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "0",
-            "deadLine": "0",
-            "alt": "kitkat",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/5baca24b-7907-47a3-a7e2-0f94b2eacebf/kitkat.gif",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/926a8f68-101a-4864-bbb4-865ff85823eb/kitkatmbl.gif",
-            "action": {
-              "href": "https://www.festval.com/1481?map=productClusterIds&sort=discount%3Adesc&page=1"
-            },
+            "desktop": "https://assets.decocache.com/festval/a9910220-77ed-45fa-89b3-18f821fe176f/banner-nestle.gif",
+            "mobile": "https://assets.decocache.com/festval/037ddf44-9b03-498f-8efb-f116a7c6c062/banner-nestlembl.gif",
+            "alt": "Nestleescolhacerta",
             "activeTerm": false
-          },
-          {
-            "initialDate": "0",
-            "deadLine": "0",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/a9d5ed19-ee29-432c-9c1d-89f2d8313b95/maggigenericodesk.jpg",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/f03094b3-11b9-458e-88fd-a9caff371d51/maggigenericombl.jpg",
-            "alt": "MAGGI",
-            "activeTerm": false,
-            "action": {
-              "href": "https://www.festval.com/1195?map=productClusterIds&sort=orders%3Adesc&page=1"
-            }
           }
         ],
         "interval": 0,
@@ -68,32 +36,23 @@
         "__resolveType": "site/sections/Category/categoryGridLp.tsx",
         "items": [
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2e2f6489-331a-47d3-8f4d-af4091418576/banner_desktop_554x554.png",
-            "href": "https://www.festval.com/1177?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "Bicoitos"
+            "image": "https://assets.decocache.com/festval/5ddf96e1-fefb-4bdb-ba6b-be4869a354e5/Prancheta-1.png",
+            "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/aa33cd73-3dfe-4ab1-b2bc-66aa68f46893/banner_desktop_554x554.jpg",
-            "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "chocolates"
+            "image": "https://assets.decocache.com/festval/fba996e5-8ad3-4844-9f21-f6309828616d/Prancheta-2.png",
+            "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/c4c6ee3e-fbd4-4946-a6b0-bff2ba5f43fb/banner_desktop_554x554-(4).jpg",
-            "label": "culinários",
-            "href": "https://www.festval.com/1168?map=productClusterIds&sort=orders%3Adesc&page=1"
+            "image": "https://assets.decocache.com/festval/1ec6d3dc-62bd-4432-beea-fdad7943cf47/Prancheta-3.png",
+            "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/0d54780e-6d86-436a-ba49-25e815193343/banner_desktop_554x554-(2).png",
-            "href": "https://www.festval.com/1170?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "label": "infantil"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/56f40c54-3db0-49cf-96de-466001ef9c41/banner_desktop_554x554-(3).png",
-            "href": "https://www.festval.com/1167?map=productClusterIds&page=1",
-            "label": "Nutriçao"
+            "image": "https://assets.decocache.com/festval/876c335b-3411-47cf-8b4d-d629d6078a46/Prancheta-4.png",
+            "href": "/"
           }
         ],
-        "itensGrid": "5"
+        "itensGrid": "4"
       }
     },
     {

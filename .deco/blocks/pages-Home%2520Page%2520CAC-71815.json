@@ -78,42 +78,29 @@
             "activeTerm": true
           },
           {
-            "initialDate": "2025-06-02",
-            "deadLine": "2025-06-08",
+            "initialDate": "2025-06-09",
+            "deadLine": "2025-06-15",
             "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/e4fa8998-f70d-42b4-ad11-46e63aad7489/FESTVAL-NOVOS-BANNERS-1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/9ffc4997-92ef-4482-a41a-1d45eb11cb99/FESTVAL-NOVOS-BANNERS-1080-1500.jpg",
-            "alt": "semana-do_leite",
+            "desktop": "https://assets.decocache.com/festval/732ac5ea-fdb5-4fa8-b6f2-1b22c0cecd03/FESTVAL-NOVOS-BANNERS-NAMORADOS.jpg",
+            "mobile": "https://assets.decocache.com/festval/4e388438-5350-44f1-825b-4ddc6ad16322/FESTVAL-NOVOS-BANNERS-1080-1500-NAMORADOS.jpg",
+            "alt": "namorados-nestlé",
             "action": {
-              "href": "https://www.festval.com/1667?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Semanadoleite",
+              "href": "7896806500133https://www.festval.com/mercearia/bombom-e-chocolate?sort=orders%3Adesc&filter.brand=nestle&filter.brand=garoto&filter.brand=kitkat&filter.brand=talento&filter.category-1=mercearia&filter.category-2=bombom-e-chocolate&filter.brand=prestigio&page=1&utm_source=BannerHome&utm_campaign=Namorados+Nestl%C3%A9",
               "target": "_blank"
             },
             "activeTerm": true
           },
           {
-            "initialDate": "02/06/2025",
-            "deadLine": "08/06/2025",
-            "mobile": "https://assets.decocache.com/festval/71d6f95d-282e-452e-9390-7a5ede4ebbaa/FESTVAL-NOVOS-BANNERS-1080-1500-Stela.jpg",
-            "alt": "stella",
+            "initialDate": "2025-06-09",
+            "deadLine": "2025-06-09",
+            "mobile": "https://assets.decocache.com/festval/3337a173-2513-4aeb-9551-70e7e9926635/FESTVAL-NOVOS-BANNERS-1080-1500-Tonica.jpg",
+            "alt": "tonica",
             "region": "Cascavel",
             "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/cerveja-puro-malte-pure-gold-stella-artois-long-neck-330ml/p?skuId=25821&utm_source=BannerHome&utm_campaign=stellaartois"
-            },
-            "desktop": "https://assets.decocache.com/festval/2dc14a36-b2ed-4761-b54c-9b199adbeaa1/FESTVAL-NOVOS-BANNERS.jpg",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "26/05/2025",
-            "deadLine": "01/06/2025",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/ca201ecb-4cff-427e-9d47-50dedbc0765e/FESTVAL-NOVOS-BANNERS---original.jpg",
-            "mobile": "https://assets.decocache.com/festval/9d2ef6e6-0143-4b6c-9664-0d51a394317b/FESTVAL-NOVOS-BANNERS-1080-1500---original.jpg",
-            "alt": "original",
-            "action": {
-              "href": "https://www.festval.com/cerveja-pilsen-antarctica-original-lata-269ml/p?skuId=7296&utm_source=BannerHome&utm_campaign=OriginalLeve8Pague6",
+              "href": "https://www.festval.com/s?q=%C3%81gua+T%C3%B4nica+Antarctica+Lata+350ml&page=1&utm_source=BannerHome&utm_campaign=T%C3%B4nica350ml",
               "target": "_blank"
             },
+            "desktop": "https://assets.decocache.com/festval/cc38b6fa-eabf-4b0b-9c78-615dccc9a052/FESTVAL-NOVOS-BANNERS-TONICA.jpg",
             "activeTerm": true
           },
           {
@@ -138,8 +125,8 @@
             },
             "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "activeTerm": true,
-            "alt": "happy-eggs"
+            "alt": "happy-eggs",
+            "activeTerm": true
           },
           {
             "initialDate": "05/05/2025",
@@ -152,6 +139,19 @@
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
             "activeTerm": false
+          },
+          {
+            "initialDate": "2025-06-01",
+            "deadLine": "2025-08-31",
+            "region": "Cascavel",
+            "action": {
+              "target": "_blank",
+              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025"
+            },
+            "desktop": "https://assets.decocache.com/festval/ba4510fc-5ccc-4c12-9b77-f8f8a73f0b26/1920X490px.png",
+            "mobile": "https://assets.decocache.com/festval/bd59f670-ac03-45c6-98a9-c07e7efe2893/1080X1500px.png",
+            "alt": "inverno-solidario",
+            "activeTerm": true
           }
         ],
         "preload": true,
