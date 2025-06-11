@@ -363,11 +363,11 @@
         {
           "positionBanner": "Left",
           "region": "Cascavel",
-          "mobile": "https://assets.decocache.com/festval/562d809b-f3ce-4069-8c68-aeb82bed5522/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-CAFE-500G.jpg",
-          "desktop": "https://assets.decocache.com/festval/b15ac01c-dc1b-4150-941c-d83e11068d39/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-CAFE-500G.jpg",
+          "mobile": "https://assets.decocache.com/festval/6bb359fc-8bbf-49d4-bbe0-55c7ce122cdf/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-proenergy.jpg",
+          "desktop": "https://assets.decocache.com/festval/c415b9fa-1178-4d61-b451-b9399c08cf03/FESTVAL-NOVOS-BANNERS-M-visibilidade-proenergy.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=3cora%C3%A7%C3%B5es+a+vacuo&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=3cora%C3%A7%C3%B5es+a+vacuo&page=1",
+          "href": "https://www.festval.com/s?q=Bebida+L%C3%A1ctea+Nescaf%C3%A9+Pro-Energy&page=1&utm_source=BannerVisibilidade&utm_campaign=proenergy",
+          "hrefMobile": "https://www.festval.com/s?q=Bebida+L%C3%A1ctea+Nescaf%C3%A9+Pro-Energy&page=1&utm_source=BannerVisibilidade&utm_campaign=proenergy",
           "initialDate": "2025-03-31",
           "activeTerm": false,
           "deadLine": "2025-04-01"
