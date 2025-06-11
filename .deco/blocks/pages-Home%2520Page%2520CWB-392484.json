@@ -292,10 +292,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/30493414-435d-4d64-86b0-9c5f30a21d41/SEG-E-TER.jpg",
+          "desktop": "https://assets.decocache.com/festval/f71ef318-3b0f-4ad6-9520-f998eefc187d/SEG-E-TER-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
-          "mobile": "https://assets.decocache.com/festval/f71ef318-3b0f-4ad6-9520-f998eefc187d/SEG-E-TER-DESK.jpg",
+          "mobile": "https://assets.decocache.com/festval/30493414-435d-4d64-86b0-9c5f30a21d41/SEG-E-TER.jpg",
           "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
@@ -383,7 +383,7 @@
           "activeTerm": false
         },
         {
-          "mobile": "https://assets.decocache.com/festval/c415b9fa-1178-4d61-b451-b9399c08cf03/FESTVAL-NOVOS-BANNERS-M-visibilidade-proenergy.jpg",
+          "mobile": "https://assets.decocache.com/festval/6bb359fc-8bbf-49d4-bbe0-55c7ce122cdf/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-proenergy.jpg",
           "href": "https://www.festval.com/s?q=Bebida+L%C3%A1ctea+Nescaf%C3%A9+Pro-Energy&page=1&utm_source=BannerVisibilidade&utm_campaign=proenergy",
           "hrefMobile": "https://www.festval.com/s?q=Bebida+L%C3%A1ctea+Nescaf%C3%A9+Pro-Energy&page=1&utm_source=BannerVisibilidade&utm_campaign=proenergy",
           "region": "Mostrar em ambas",
@@ -391,7 +391,7 @@
           "initialDate": "2024-12-05",
           "deadLine": "2024-12-06",
           "activeTerm": false,
-          "desktop": "https://assets.decocache.com/festval/6bb359fc-8bbf-49d4-bbe0-55c7ce122cdf/FESTVAL-NOVOS-BANNERS-528x465-visibilidade-proenergy.jpg",
+          "desktop": "https://assets.decocache.com/festval/c415b9fa-1178-4d61-b451-b9399c08cf03/FESTVAL-NOVOS-BANNERS-M-visibilidade-proenergy.jpg",
           "alt": "Visibilidade_1"
         },
         {
