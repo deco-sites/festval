@@ -18,7 +18,7 @@
             "deadLine": "01/01/2024",
             "action": {
               "target": "_blank",
-              "href": "/nestlé"
+              "href": "/Nestlé"
             },
             "desktop": "https://assets.decocache.com/festval/a9910220-77ed-45fa-89b3-18f821fe176f/banner-nestle.gif",
             "mobile": "https://assets.decocache.com/festval/037ddf44-9b03-498f-8efb-f116a7c6c062/banner-nestlembl.gif",
@@ -125,7 +125,8 @@
             "alt": "café1",
             "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
             "hrefMobile": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/63589c1f-6902-44a1-bad6-d4c4a3622e69/20241010_td_ecom_lp_festval_1136X554-1.gif"
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/63589c1f-6902-44a1-bad6-d4c4a3622e69/20241010_td_ecom_lp_festval_1136X554-1.gif",
+            "activeTerm": false
           },
           {
             "positionBanner": "Right",
@@ -136,7 +137,8 @@
             "href": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/2f7ae53f-0832-473d-8c34-2b646f910233/20241010_td_ecom_lp_festval_528X465-2.gif",
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/785da525-713c-4882-8c60-cffa75f558b3/20241010_td_ecom_lp_festval_1136X554-2.gif",
-            "hrefMobile": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1"
+            "hrefMobile": "https://www.festval.com/1165?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "activeTerm": false
           }
         ],
         "inverted": true

@@ -28,17 +28,6 @@
           {
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
-            "desktop": "https://assets.decocache.com/festval/4342c753-adf0-44eb-b01e-7beb08e90849/Lindt---Brinde---Generico-1---1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/54c314ba-b16c-43ec-8588-a42c2b54ceb0/Lindt---Brinde---Generico-1---1080x1500.png",
-            "alt": "LindtBrinde",
-            "activeTerm": false,
-            "action": {
-              "href": "https://www.festval.com/Lindt?utm_source=BannerLP&utm_campaign=BrindesLindt"
-            }
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/9f13ed17-2715-4f84-9bf9-db9f5baa9298/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1920x490-3.jpg",
             "mobile": "https://assets.decocache.com/festval/211515e5-cc29-4460-b677-520a5cb0779a/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1080x1500-3.jpg",
             "alt": "Experiencia",
@@ -61,13 +50,13 @@
           {
             "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
-            "action": {
-              "href": "/"
-            },
             "desktop": "https://assets.decocache.com/festval/eb1b4ad3-d8a6-4639-9a94-a1627ce8296a/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1920x490-2.jpg",
             "mobile": "https://assets.decocache.com/festval/cf434857-fdb5-42cd-be68-d41670b9d41e/LINDT-LANDING-PAGE-FESTVAL-BANNER-PRINCIPAL-1080x1500-2.jpg",
             "alt": "Qualidade",
-            "activeTerm": false
+            "activeTerm": false,
+            "action": {
+              "href": "/"
+            }
           }
         ],
         "preload": false,
