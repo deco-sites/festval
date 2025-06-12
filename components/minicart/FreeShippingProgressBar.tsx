@@ -28,5 +28,5 @@ function FreeShippingProgressBar({ target, total, currency, locale }: Props) {
     </div>
   );   
 }
- 
+  
 export default FreeShippingProgressBar;
