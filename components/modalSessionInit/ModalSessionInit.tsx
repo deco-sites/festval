@@ -96,21 +96,43 @@ const saveSegmentToCookie = (ctx: AppContext, segment: string) => {
   });
 };
 
-export const viaCep = async (cep: string): Promise<Address> => {
-  try {
-    const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
-    //const response = await fetch(`https://brasilapi.com.br/api/cep/v1/${cep}`);
+export const viaCep = async (
+  cep: string,
+  maxRetries = 3,
+  retryDelay = 1000,
+  timeoutMs = 5000
+): Promise<Address> => {
+  let lastError: Error | null = null;
 
-    if (!response.ok) {
-      throw new Error(`Erro na requisição: ${response.status}`);
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+
+      const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
+        signal: controller.signal,
+      });
+
+      clearTimeout(timeoutId);
+
+      if (!response.ok) {
+        throw new Error(`Erro na requisição: ${response.status}`);
+      }
+
+      const result = await response.json();
+      if (result.erro) {
+        throw new Error("CEP inválido ou não encontrado");
+      }
+      return result;
+    } catch (error) {
+      lastError = error instanceof Error ? error : new Error(String(error));s
+      if (attempt < maxRetries) {
+        await new Promise(resolve => setTimeout(resolve, retryDelay));
+      }
     }
-
-    const result = await response.json();
-    return result;
-  } catch (error) {
-    console.error("Erro ao consultar o ViaCep:", error);
-    throw error; // Repropaga o erro para tratamento superior
   }
+
+  throw lastError || new Error("Falha ao consultar o ViaCep após tentativas");
 };
 
 export const action = async (
@@ -268,7 +290,7 @@ const onLoad = (id: string) => {
 };
 
 
-const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
+const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
   let attempts = 0;
 
   function getCookie(name: string): string | null {
@@ -309,7 +331,7 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
     );
   }
 
-  function attemptSubmit() {
+  const attemptSubmit = async () => {
     const modal = document.getElementById(id);
     if (!modal) return;
 
@@ -318,14 +340,31 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
     const btnSubmit = modal.querySelector(".btn-submit");
     const loading = modal.querySelector(".loading");
 
-    hideElement(btnSubmit);
-    showElement(loading);
+    if (attempts === 0) {
+      hideElement(redText); // Esconde erro ao iniciar tentativas
+      hideElement(btnSubmit);
+      showElement(loading);
+    }
 
-    const cep = getCookie("vtex_last_session_cep");
+    let cep = getCookie("vtex_last_session_cep");
     const vtex_segment_cookie = getCookie("vtex_last_segment");
     const region = getCookie("region");
+    let regionId: string | null = null;
+
+    // Caso cep ou segmento não existam nos cookies, tenta buscar do orderForm VTEX
+    if (!cep || !vtex_segment_cookie) {
+      try {
+        const orderForm = await (window as any).vtexjs?.checkout.getOrderForm();
+        const address = orderForm?.shippingData?.address;
+        cep = address?.postalCode || cep;
+        regionId = orderForm?.storePreferencesData?.countryCode || regionId;
+      } catch (err) {
+        console.error("Erro ao consultar orderForm:", err);
+      }
+    }
+
     const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
-    const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
+    regionId = regionId || (vtex_segment ? JSON.parse(vtex_segment)?.regionId : null);
 
     if (cep && regionId) {
       showElement(limeText);
@@ -342,12 +381,14 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
         const targetPath = region ? regionPaths[region] : null;
         const currentPath = window.location.pathname;
         const searchParams = window.location.search;
+
         console.log("Redirection Info:", {
           currentPath,
           targetPath,
           searchParams,
           shouldAddPrefix: shouldAddRegionPrefix(currentPath),
         });
+
         const isCategoryPage = currentPath.startsWith("/pascoa");
 
         let newUrl = window.location.href;
@@ -357,11 +398,10 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
         } else if (isCategoryPage) {
           newUrl = `${window.location.origin}${currentPath}${searchParams}`;
         }
-        console.log("New URL:", newUrl);
 
         localStorage.setItem("redirected", "true");
         if (region) localStorage.setItem("lastRegion", region);
-        
+
         const isHomePage = window.location.pathname === "/";
         if (isHomePage) {
           window.location.replace(newUrl);
@@ -370,15 +410,16 @@ const onSubmit = (id: string, maxAttempts = 5, delay = 1000) => {
         }
       }, 1000);
     } else if (attempts < maxAttempts) {
-      attempts += 1;
-      setTimeout(attemptSubmit, delay);
+      attempts++;
+      setTimeout(() => attemptSubmit(), delay);
     } else {
       showElement(redText);
       hideElement(limeText);
       showElement(btnSubmit);
       hideElement(loading);
+      redText!.textContent = "Erro ao consultar o CEP. Tente novamente.";
     }
-  }
+  };
 
   attemptSubmit();
 };
