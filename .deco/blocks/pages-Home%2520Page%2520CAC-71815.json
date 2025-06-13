@@ -444,14 +444,14 @@
         "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
         "props": {
           "sort": "",
-          "collection": "1670",
+          "collection": "1067",
           "count": 12,
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "title": "Dia dos namorados é com Lindt",
-      "cta": "/1670?map=productClusterIds"
+      "cta": "/1067?map=productClusterIds",
+      "title": "Exclusivos"
     },
     {
       "__resolveType": "site/sections/Category/CategoryGrid.tsx",
