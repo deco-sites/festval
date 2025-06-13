@@ -337,11 +337,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/1ce9544f-b37b-41ca-b032-06b3cafb6941/QUA-E-QUI-DESK.jpg",
+          "desktop": "https://assets.decocache.com/festval/43b7b0fd-7e20-45ef-910b-955dd78e7e14/FDS-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1608?map=productClusterIds",
-          "mobile": "https://assets.decocache.com/festval/c10b7889-9814-4483-9cff-a097cdd3713f/QUA-E-QUI.jpg",
-          "hrefMobile": "https://www.festval.com/1608?map=productClusterIds",
+          "href": "https://www.festval.com/1605?map=productClusterIds",
+          "mobile": "https://assets.decocache.com/festval/d0433006-27e4-4215-a2e2-95a03d3b8223/FDS.jpg",
+          "hrefMobile": "https://www.festval.com/1605?map=productClusterIds",
           "region": "Cascavel",
           "positionBanner": "Full",
           "initialDate": "31/03/2025",
