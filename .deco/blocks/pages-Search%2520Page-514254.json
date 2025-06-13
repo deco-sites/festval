@@ -11,34 +11,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Category/CategoryBanner.tsx",
-        "banners": [
-          {
-            "matcher": [
-              "Chocolate",
-              "Chocolates",
-              "Bombom"
-            ],
-            "images": [
-              {
-                "desktop": "https://assets.decocache.com/festval/91bf3036-f4d2-4ecf-8501-ee1c233624c3/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--Desktop---1920x490.png",
-                "mobile": "https://assets.decocache.com/festval/9950ca63-4733-410b-9dc1-7fbf2cd57331/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Busca-_--Mobile---1080x490.png",
-                "href": "https://www.festval.com/Lindt?utm_source=BannerSearch&utm_campaign=NamoradosLindt",
-                "hrefMobile": "https://www.festval.com/Lindt?utm_source=BannerSearch&utm_campaign=NamoradosLindt",
-                "alt": "NamoradosLindt",
-                "activeTerm": true,
-                "initialDate": "2025-06-06",
-                "deadLine": "2025-06-12"
-              },
-              {
-                "desktop": "https://assets.decocache.com/festval/edd0454a-35a6-4422-a2c2-42a892d6307d/LINDT-BANNER-HOME-NOVO-KV-2.0.jpg",
-                "mobile": "https://assets.decocache.com/festval/60796764-c5d5-4afd-8b24-0b694b4ea32b/LINDT-BANNER-HOME-NOVO-KV-MBL-search.jpg",
-                "alt": "brindeslindt",
-                "href": "https://www.festval.com/Lindt?utm_source=BannerSearch&utm_campaign=BrindesLindt",
-                "hrefMobile": "https://www.festval.com/Lindt?utm_source=BannerSearch&utm_campaign=BrindesLindt"
-              }
-            ]
-          }
-        ]
+        "banners": []
       }
     },
     {

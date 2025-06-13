@@ -13,22 +13,11 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/edd0454a-35a6-4422-a2c2-42a892d6307d/LINDT-BANNER-HOME-NOVO-KV-2.0.jpg",
-            "mobile": "https://assets.decocache.com/festval/18b3ad36-febc-4309-b481-1b39c68ec8a8/LINDT-BANNER-HOME-NOVO-KV-MBL-2.0.jpg",
-            "alt": "BrindeLindt",
-            "activeTerm": true,
-            "deadLine": "2025-07-31",
-            "initialDate": "2025-05-12",
-            "action": {
-              "href": "https://www.festval.com/Lindt?utm_source=Bannerhome&utm_campaign=BrindesLindt"
-            }
-          },
-          {
-            "deadLine": "22/06/2025",
             "desktop": "https://assets.decocache.com/festval/3af37049-841a-47fa-ae75-c2146f7bf918/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1920x490.png",
             "mobile": "https://assets.decocache.com/festval/332be242-f12b-4df4-acc4-896e2072c862/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1080x1500.png",
             "alt": "queijo",
             "activeTerm": true,
+            "deadLine": "22/06/2025",
             "initialDate": "03/06/2025",
             "action": {
               "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025",
@@ -37,12 +26,12 @@
             "region": "Curitiba"
           },
           {
-            "initialDate": "01/01/2024",
             "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/f9ec4849-0933-4809-9914-12a202c209bb/Sou-Festval---Banner-Home---App---Desktop---1920x490.png",
             "mobile": "https://assets.decocache.com/festval/a2009e8c-5cc2-4bfe-9c7b-8aea861d6d4e/Sou-Festval---Banner-Home---App---Mobile---1080x1500.png",
             "alt": "soufestval",
             "activeTerm": false,
+            "initialDate": "01/01/2024",
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval",
               "target": "_blank"
@@ -67,11 +56,11 @@
             "desktop": "https://assets.decocache.com/festval/91bf3036-f4d2-4ecf-8501-ee1c233624c3/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--Desktop---1920x490.png",
             "mobile": "https://assets.decocache.com/festval/5028e299-20e7-414c-85af-f2cff087bae9/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--App---1080x1500.png",
             "alt": "NamoradosLindt",
+            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=NamoradosLindt",
               "target": "_blank"
-            },
-            "activeTerm": true
+            }
           },
           {
             "initialDate": "2025-06-09",
@@ -79,23 +68,23 @@
             "desktop": "https://assets.decocache.com/festval/732ac5ea-fdb5-4fa8-b6f2-1b22c0cecd03/FESTVAL-NOVOS-BANNERS-NAMORADOS.jpg",
             "mobile": "https://assets.decocache.com/festval/4e388438-5350-44f1-825b-4ddc6ad16322/FESTVAL-NOVOS-BANNERS-1080-1500-NAMORADOS.jpg",
             "alt": "NamoradosNestlé",
-            "activeTerm": true,
             "action": {
               "href": "https://www.festval.com/mercearia/bombom-e-chocolate?sort=orders%3Adesc&filter.brand=nestle&filter.brand=garoto&filter.brand=kitkat&filter.brand=talento&filter.category-1=mercearia&filter.category-2=bombom-e-chocolate&filter.brand=prestigio&page=1&utm_source=BannerHome&utm_campaign=Namorados+Nestl%C3%A9",
               "target": "_blank"
-            }
+            },
+            "activeTerm": true
           },
           {
             "initialDate": "2025-06-09",
             "deadLine": "2025-06-15",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/s?q=%C3%81gua+T%C3%B4nica+Antarctica+Lata+350ml&page=1&utm_source=BannerHome&utm_campaign=T%C3%B4nica350ml"
-            },
             "desktop": "https://assets.decocache.com/festval/cc38b6fa-eabf-4b0b-9c78-615dccc9a052/FESTVAL-NOVOS-BANNERS-TONICA.jpg",
             "mobile": "https://assets.decocache.com/festval/3337a173-2513-4aeb-9551-70e7e9926635/FESTVAL-NOVOS-BANNERS-1080-1500-Tonica.jpg",
             "alt": "Tônica",
-            "activeTerm": true
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/s?q=%C3%81gua+T%C3%B4nica+Antarctica+Lata+350ml&page=1&utm_source=BannerHome&utm_campaign=T%C3%B4nica350ml",
+              "target": "_blank"
+            }
           },
           {
             "initialDate": "2025-06-01",
