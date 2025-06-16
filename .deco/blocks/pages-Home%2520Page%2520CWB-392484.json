@@ -281,11 +281,11 @@
         },
         {
           "positionBanner": "Left",
-          "mobile": "https://assets.decocache.com/festval/562d809b-f3ce-4069-8c68-aeb82bed5522/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465-CAFE-500G.jpg",
-          "desktop": "https://assets.decocache.com/festval/b15ac01c-dc1b-4150-941c-d83e11068d39/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-(1)-CAFE-500G.jpg",
+          "mobile": "https://assets.decocache.com/festval/11da40fb-d408-4f2a-ac81-84f4d75e97b7/FESTVAL-NOVOS-BANNERS-M-PROMO-528x465ANFORA.jpg",
+          "desktop": "https://assets.decocache.com/festval/df3cff02-412f-4804-b78b-0b73e76a82e2/FESTVAL-NOVOS-BANNERS-M-PROMO-PODIUM-ANFORA-DESKTOP.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/s?q=3cora%C3%A7%C3%B5es+a+vacuo&page=1",
-          "hrefMobile": "https://www.festval.com/s?q=3cora%C3%A7%C3%B5es+a+vacuo&page=1",
+          "href": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522",
+          "hrefMobile": "https://www.festval.com/azeite-de-oliva-espanhol-extravirgem-mamma-bia-anfora-500ml/p?skuId=4522",
           "deadLine": "2025-12-06",
           "initialDate": "2025-01-06",
           "activeTerm": false,
@@ -317,19 +317,29 @@
       "title": "Ofertas Imperdíveis - Adega Festval"
     },
     {
-      "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "products": {
-        "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-        "props": {
-          "sort": "",
-          "collection": "1670",
-          "count": 12,
-          "hideUnavailableItems": true,
-          "similars": false
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/Product/ProductShelf.tsx",
+            "products": {
+              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+              "props": {
+                "sort": "",
+                "collection": "1670",
+                "count": 12,
+                "hideUnavailableItems": true,
+                "similars": false
+              }
+            },
+            "cta": "https://www.festval.com/1670?map=productClusterIds&sort=orders%3Adesc&page=1",
+            "title": "Dia dos Namorados é com Lindt"
+          },
+          "rule": {
+            "__resolveType": "website/matchers/never.ts"
+          }
         }
-      },
-      "cta": "https://www.festval.com/1670?map=productClusterIds&sort=orders%3Adesc&page=1",
-      "title": "Dia dos Namorados é com Lindt"
+      ]
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
