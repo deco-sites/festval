@@ -317,31 +317,6 @@
       "title": "Ofertas Imperdíveis - Adega Festval"
     },
     {
-      "__resolveType": "website/flags/multivariate/section.ts",
-      "variants": [
-        {
-          "value": {
-            "__resolveType": "site/sections/Product/ProductShelf.tsx",
-            "products": {
-              "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-              "props": {
-                "sort": "",
-                "collection": "1670",
-                "count": 12,
-                "hideUnavailableItems": true,
-                "similars": false
-              }
-            },
-            "cta": "https://www.festval.com/1670?map=productClusterIds&sort=orders%3Adesc&page=1",
-            "title": "Dia dos Namorados é com Lindt"
-          },
-          "rule": {
-            "__resolveType": "website/matchers/never.ts"
-          }
-        }
-      ]
-    },
-    {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
