@@ -38,53 +38,28 @@
             }
           },
           {
-            "initialDate": "03/06/2025",
-            "deadLine": "22/06/2025",
-            "desktop": "https://assets.decocache.com/festval/16726045-d47b-4e69-9ba0-2f5c752244a2/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/eaf7ec4d-8cb9-4e6e-a7d3-b4868c397bce/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1080x1500px.png",
-            "alt": "namorados",
+            "initialDate": "2025-06-16",
+            "deadLine": "2025-06-22",
+            "desktop": "https://assets.decocache.com/festval/857ea165-e8eb-4ebc-9490-8858abd6256b/REFRIGERANTE_200ML_1920X490.jpg",
+            "mobile": "https://assets.decocache.com/festval/21249994-c0bc-4daa-8fe9-0e0e867fc5f3/REFRIGERANTE_200ML_1080X1500.jpg",
+            "alt": "refrigerantes200ml",
             "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025",
-              "target": "_blank"
-            },
-            "region": "Curitiba"
-          },
-          {
-            "initialDate": "2025-06-06",
-            "deadLine": "2025-06-12",
-            "desktop": "https://assets.decocache.com/festval/91bf3036-f4d2-4ecf-8501-ee1c233624c3/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--Desktop---1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/5028e299-20e7-414c-85af-f2cff087bae9/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--App---1080x1500.png",
-            "alt": "NamoradosLindt",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=NamoradosLindt",
+              "href": "https://www.festval.com/1451?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LEVE12PAGUE10AMBEV",
               "target": "_blank"
             }
           },
           {
-            "initialDate": "2025-06-09",
-            "deadLine": "2025-06-15",
-            "desktop": "https://assets.decocache.com/festval/732ac5ea-fdb5-4fa8-b6f2-1b22c0cecd03/FESTVAL-NOVOS-BANNERS-NAMORADOS.jpg",
-            "mobile": "https://assets.decocache.com/festval/4e388438-5350-44f1-825b-4ddc6ad16322/FESTVAL-NOVOS-BANNERS-1080-1500-NAMORADOS.jpg",
-            "alt": "NamoradosNestlé",
+            "initialDate": "2025-06-16",
+            "deadLine": "2025-06-22",
             "action": {
-              "href": "https://www.festval.com/mercearia/bombom-e-chocolate?sort=orders%3Adesc&filter.brand=nestle&filter.brand=garoto&filter.brand=kitkat&filter.brand=talento&filter.category-1=mercearia&filter.category-2=bombom-e-chocolate&filter.brand=prestigio&page=1&utm_source=BannerHome&utm_campaign=Namorados+Nestl%C3%A9",
-              "target": "_blank"
+              "target": "_blank",
+              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=invernodeofertas"
             },
+            "desktop": "https://assets.decocache.com/festval/229b9b41-4e58-4ab6-ab03-57563001031d/INVERNO_DE_OFERTAS_1920X420.jpg",
+            "mobile": "https://assets.decocache.com/festval/ec589552-a011-4c1c-8e35-c1e5cfdc1707/INVERNO_DE_OFERTAS_1080X1500.jpg",
+            "alt": "INVERNODEOFERTAS",
             "activeTerm": true
-          },
-          {
-            "initialDate": "2025-06-09",
-            "deadLine": "2025-06-15",
-            "desktop": "https://assets.decocache.com/festval/cc38b6fa-eabf-4b0b-9c78-615dccc9a052/FESTVAL-NOVOS-BANNERS-TONICA.jpg",
-            "mobile": "https://assets.decocache.com/festval/3337a173-2513-4aeb-9551-70e7e9926635/FESTVAL-NOVOS-BANNERS-1080-1500-Tonica.jpg",
-            "alt": "Tônica",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/s?q=%C3%81gua+T%C3%B4nica+Antarctica+Lata+350ml&page=1&utm_source=BannerHome&utm_campaign=T%C3%B4nica350ml",
-              "target": "_blank"
-            }
           },
           {
             "initialDate": "2025-06-01",
@@ -281,11 +256,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/43b7b0fd-7e20-45ef-910b-955dd78e7e14/FDS-DESK.jpg",
+          "desktop": "https://assets.decocache.com/festval/f71ef318-3b0f-4ad6-9520-f998eefc187d/SEG-E-TER-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
-          "mobile": "https://assets.decocache.com/festval/d0433006-27e4-4215-a2e2-95a03d3b8223/FDS.jpg",
-          "hrefMobile": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://assets.decocache.com/festval/30493414-435d-4d64-86b0-9c5f30a21d41/SEG-E-TER.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2025-01-06",
