@@ -52,105 +52,53 @@
             "activeTerm": true
           },
           {
-            "initialDate": "03/06/2025",
-            "deadLine": "22/06/2025",
-            "desktop": "https://assets.decocache.com/festval/16726045-d47b-4e69-9ba0-2f5c752244a2/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/eaf7ec4d-8cb9-4e6e-a7d3-b4868c397bce/AF_V04_Dia_dos_Namorados_Festval_2025_Banner_1080x1500px.png",
-            "alt": "diadosnamorados",
-            "region": "Cascavel",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/1669?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=diadosnamorados"
-            },
-            "activeTerm": true
-          },
-          {
-            "deadLine": "2025-06-12",
-            "desktop": "https://assets.decocache.com/festval/91bf3036-f4d2-4ecf-8501-ee1c233624c3/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--Desktop---1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/5028e299-20e7-414c-85af-f2cff087bae9/2025.05.26-_-LINDT-_-C2M-_-Banners-_-Festval-_-Banner-Home-_--App---1080x1500.png",
-            "alt": "namorados-lindt",
-            "region": "Cascavel",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/Lindt?utm_source=BannerHome&utm_campaign=NamoradosLindt"
-            },
-            "initialDate": "2025-06-06",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-06-09",
-            "deadLine": "2025-06-15",
-            "region": "Cascavel",
-            "desktop": "https://assets.decocache.com/festval/732ac5ea-fdb5-4fa8-b6f2-1b22c0cecd03/FESTVAL-NOVOS-BANNERS-NAMORADOS.jpg",
-            "mobile": "https://assets.decocache.com/festval/4e388438-5350-44f1-825b-4ddc6ad16322/FESTVAL-NOVOS-BANNERS-1080-1500-NAMORADOS.jpg",
-            "alt": "namorados-nestlé",
-            "action": {
-              "href": "7896806500133https://www.festval.com/mercearia/bombom-e-chocolate?sort=orders%3Adesc&filter.brand=nestle&filter.brand=garoto&filter.brand=kitkat&filter.brand=talento&filter.category-1=mercearia&filter.category-2=bombom-e-chocolate&filter.brand=prestigio&page=1&utm_source=BannerHome&utm_campaign=Namorados+Nestl%C3%A9",
-              "target": "_blank"
-            },
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-06-09",
-            "deadLine": "2025-06-15",
-            "mobile": "https://assets.decocache.com/festval/3337a173-2513-4aeb-9551-70e7e9926635/FESTVAL-NOVOS-BANNERS-1080-1500-Tonica.jpg",
-            "alt": "tonica",
-            "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/s?q=%C3%81gua+T%C3%B4nica+Antarctica+Lata+350ml&page=1&utm_source=BannerHome&utm_campaign=T%C3%B4nica350ml",
-              "target": "_blank"
-            },
-            "desktop": "https://assets.decocache.com/festval/cc38b6fa-eabf-4b0b-9c78-615dccc9a052/FESTVAL-NOVOS-BANNERS-TONICA.jpg",
-            "activeTerm": true
-          },
-          {
             "initialDate": "15/04/2025",
             "deadLine": "31/07/2025",
-            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "alt": "Baly",
+            "region": "Cascavel",
             "action": {
-              "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly",
-              "target": "_self"
+              "target": "_self",
+              "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
             },
             "activeTerm": true
           },
           {
-            "initialDate": "17/04/2025",
             "deadLine": "01/06/2025",
+            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
+            "alt": "happy-eggs",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
-            "alt": "happy-eggs",
+            "initialDate": "17/04/2025",
             "activeTerm": true
           },
           {
             "initialDate": "05/05/2025",
             "deadLine": "01/06/2025",
             "region": "Cascavel",
-            "action": {
-              "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
-            },
             "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
             "alt": "frimesa",
+            "action": {
+              "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
+            },
             "activeTerm": false
           },
           {
             "initialDate": "2025-06-01",
             "deadLine": "2025-08-31",
-            "region": "Cascavel",
-            "action": {
-              "target": "_blank",
-              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025"
-            },
-            "desktop": "https://assets.decocache.com/festval/ba4510fc-5ccc-4c12-9b77-f8f8a73f0b26/1920X490px.png",
             "mobile": "https://assets.decocache.com/festval/bd59f670-ac03-45c6-98a9-c07e7efe2893/1080X1500px.png",
             "alt": "inverno-solidario",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025",
+              "target": "_blank"
+            },
+            "desktop": "https://assets.decocache.com/festval/ba4510fc-5ccc-4c12-9b77-f8f8a73f0b26/1920X490px.png",
             "activeTerm": true
           }
         ],
