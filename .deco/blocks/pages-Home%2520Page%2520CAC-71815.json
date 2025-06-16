@@ -100,6 +100,19 @@
             },
             "desktop": "https://assets.decocache.com/festval/ba4510fc-5ccc-4c12-9b77-f8f8a73f0b26/1920X490px.png",
             "activeTerm": true
+          },
+          {
+            "initialDate": "2025-06-16",
+            "deadLine": "2025-06-22",
+            "region": "Cascavel",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=invernodeofertas"
+            },
+            "desktop": "https://assets.decocache.com/festval/229b9b41-4e58-4ab6-ab03-57563001031d/INVERNO_DE_OFERTAS_1920X420.jpg",
+            "mobile": "https://assets.decocache.com/festval/ec589552-a011-4c1c-8e35-c1e5cfdc1707/INVERNO_DE_OFERTAS_1080X1500.jpg",
+            "alt": "inverno-de-ofertas",
+            "activeTerm": true
           }
         ],
         "preload": true,
