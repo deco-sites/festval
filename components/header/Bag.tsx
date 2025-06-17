@@ -18,7 +18,7 @@ const onLoad = (id: string) =>
     counter.innerText = count > 9 ? "9+" : count.toString();
   });
 function Bag() { 
-  const id = useId();
+  const id = useId(); 
   return (
     <>
       <label class="indicator mr-1.5" for={MINICART_DRAWER_ID} aria-label="open cart">
