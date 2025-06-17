@@ -291,29 +291,46 @@ function expandPromoText(promo: string, region: string): string | null {
   const isCuritiba = region.toLowerCase() === "curitiba";
   const isCascavel = region.toLowerCase() === "cascavel";
 
-  // Primeiro, verifica se é uma promoção global (somente FLAG, sem CWB/CAC)
-  if (
-    promo.includes("FLAG") &&
-    !promo.includes("CWB") &&
-    !promo.includes("CAC")
-  ) {
-    if (promo.includes("|")) {
-      return promo.split("|")[0].trim();
+  const words = promo.split(/\s+/).filter(word => word.trim() !== "");
+  const flagIndex = words.indexOf("FLAG");
+  if (flagIndex === -1) {
+    return null;
+  }
+
+  const isGlobalPromo = !promo.includes("CWB") && !promo.includes("CAC");
+  const isValidRegion = 
+    (isCuritiba && promo.includes("CWB")) ||
+    (isCascavel && promo.includes("CAC")) ||
+    isGlobalPromo;
+
+  if (!isValidRegion) {
+    return null; 
+  }
+  const isPromotionalText = (text: string): boolean => {
+    return text.split(/\s+/).length > 1 || text.toLowerCase().includes("leve") || text.toLowerCase().includes("pague");
+  };
+
+  let promotionalText = "";
+  let remainingWords = words.slice(flagIndex + 1);
+  let i = 0;
+
+  while (i < remainingWords.length) {
+    const currentSlice = remainingWords.slice(i).join(" ").trim();
+    if (isPromotionalText(currentSlice)) {
+      promotionalText = currentSlice;
+      break;
     }
-    return promo.replace("FLAG", "").trim();
+    i++;
   }
-
-  // Filtragem por região
-  if (isCuritiba && promo.includes("CWB")) {
-    return promo.split("|")[0].trim();
+  if (!promotionalText && flagIndex > 0) {
+    promotionalText = words.slice(0, flagIndex).join(" ").trim();
+    if (!isPromotionalText(promotionalText)) {
+      promotionalText = "";
+    }
   }
-
-  if (isCascavel && promo.includes("CAC")) {
-    return promo.split("|")[0].trim();
-  }
-
-  return null;
+  return promotionalText || null;
 }
+
 
 function ProductInfo({ page, region }: Props) {
   const id = useId();
