@@ -38,16 +38,28 @@
             }
           },
           {
+            "initialDate": "2025-06-19",
+            "deadLine": "2025-06-22",
+            "desktop": "https://assets.decocache.com/festval/ae67d959-dcac-4b7e-8018-de468fa0c176/destilados-site.jpg",
+            "mobile": "https://assets.decocache.com/festval/d77f13b8-8531-4057-8c08-3b671e763481/destilados-mbl.jpg",
+            "alt": "destiladosleveganhe",
+            "activeTerm": true,
+            "action": {
+              "href": "https://www.festval.com/1676?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DestiladosL3P2",
+              "target": "_blank"
+            }
+          },
+          {
             "initialDate": "2025-06-16",
             "deadLine": "2025-06-22",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1451?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LEVE12PAGUE10AMBEV"
+            },
             "desktop": "https://assets.decocache.com/festval/857ea165-e8eb-4ebc-9490-8858abd6256b/REFRIGERANTE_200ML_1920X490.jpg",
             "mobile": "https://assets.decocache.com/festval/21249994-c0bc-4daa-8fe9-0e0e867fc5f3/REFRIGERANTE_200ML_1080X1500.jpg",
             "alt": "refrigerantes200ml",
-            "activeTerm": true,
-            "action": {
-              "href": "https://www.festval.com/1451?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LEVE12PAGUE10AMBEV",
-              "target": "_blank"
-            }
+            "activeTerm": true
           },
           {
             "initialDate": "2025-06-16",
@@ -195,12 +207,12 @@
         "props": {
           "sort": "",
           "count": 12,
-          "collection": "1642",
+          "collection": "1677",
           "hideUnavailableItems": true,
           "similars": false
         }
       },
-      "cta": "/1642?map=productClusterIds",
+      "cta": "/1677?map=productClusterIds",
       "title": "Oportunidades "
     },
     {
