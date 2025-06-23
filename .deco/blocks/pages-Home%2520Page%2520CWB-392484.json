@@ -13,24 +13,11 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/3af37049-841a-47fa-ae75-c2146f7bf918/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/332be242-f12b-4df4-acc4-896e2072c862/AF_V03_Campanha_Queijos_e_Vinhos_II_Inverno_Festval_2025_Banner_GG_1080x1500.png",
-            "alt": "queijo",
-            "activeTerm": true,
-            "deadLine": "22/06/2025",
-            "initialDate": "03/06/2025",
-            "action": {
-              "href": "https://www.festval.com/1668?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=queijoevinho2025",
-              "target": "_blank"
-            },
-            "region": "Curitiba"
-          },
-          {
-            "deadLine": "01/01/2024",
             "desktop": "https://assets.decocache.com/festval/f9ec4849-0933-4809-9914-12a202c209bb/Sou-Festval---Banner-Home---App---Desktop---1920x490.png",
             "mobile": "https://assets.decocache.com/festval/a2009e8c-5cc2-4bfe-9c7b-8aea861d6d4e/Sou-Festval---Banner-Home---App---Mobile---1080x1500.png",
             "alt": "soufestval",
             "activeTerm": false,
+            "deadLine": "01/01/2024",
             "initialDate": "01/01/2024",
             "action": {
               "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval",
@@ -38,39 +25,39 @@
             }
           },
           {
-            "initialDate": "2025-06-19",
             "deadLine": "2025-06-22",
             "desktop": "https://assets.decocache.com/festval/ae67d959-dcac-4b7e-8018-de468fa0c176/destilados-site.jpg",
             "mobile": "https://assets.decocache.com/festval/d77f13b8-8531-4057-8c08-3b671e763481/destilados-mbl.jpg",
             "alt": "destiladosleveganhe",
             "activeTerm": true,
+            "initialDate": "2025-06-19",
             "action": {
               "href": "https://www.festval.com/1676?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=DestiladosL3P2",
               "target": "_blank"
             }
           },
           {
-            "initialDate": "2025-06-16",
-            "deadLine": "2025-06-22",
+            "initialDate": "2025-06-23",
+            "deadLine": "2025-06-29",
+            "desktop": "https://assets.decocache.com/festval/02811960-29e4-43c1-a18c-2ff926fd0cb2/FESTVAL-NOVOS-BANNERS-002-1920X490-DOLCE-GUSTO.jpg",
+            "mobile": "https://assets.decocache.com/festval/5df73f21-62e1-4770-8d55-0e612a789d3b/FESTVAL-NOVOS-BANNERS-1080-1500-002-DOLCE-GUSTO.jpg",
+            "alt": "DolceGusto40",
+            "activeTerm": true,
             "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/1451?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LEVE12PAGUE10AMBEV"
-            },
-            "desktop": "https://assets.decocache.com/festval/857ea165-e8eb-4ebc-9490-8858abd6256b/REFRIGERANTE_200ML_1920X490.jpg",
-            "mobile": "https://assets.decocache.com/festval/21249994-c0bc-4daa-8fe9-0e0e867fc5f3/REFRIGERANTE_200ML_1080X1500.jpg",
-            "alt": "refrigerantes200ml",
-            "activeTerm": true
+              "href": "https://www.festval.com/1577?sort=orders%3Adesc&filter.brand=dolce-gusto&filter.productClusterIds=1577&filter.brand=nescafe&page=1&utm_source=BannerHome&utm_campaign=DolceGusto40",
+              "target": "_blank"
+            }
           },
           {
-            "initialDate": "2025-06-16",
-            "deadLine": "2025-06-22",
+            "initialDate": "2025-06-23",
+            "deadLine": "2025-06-29",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerHome&utm_campaign=invernodeofertas"
+              "href": "https://www.festval.com/cerveja-budweiser-american-lager-long-neck-330ml/p?skuId=436&utm_source=BannerHome&utm_campaign=Budweiserl6p5"
             },
-            "desktop": "https://assets.decocache.com/festval/229b9b41-4e58-4ab6-ab03-57563001031d/INVERNO_DE_OFERTAS_1920X420.jpg",
-            "mobile": "https://assets.decocache.com/festval/ec589552-a011-4c1c-8e35-c1e5cfdc1707/INVERNO_DE_OFERTAS_1080X1500.jpg",
-            "alt": "INVERNODEOFERTAS",
+            "desktop": "https://assets.decocache.com/festval/e001cbd0-8242-4882-8870-9814fd689006/FESTVAL-NOVOS-BANNERS-002-1920X490-BUD.jpg",
+            "mobile": "https://assets.decocache.com/festval/d366be57-7643-4cfc-9570-eb97839b1e07/FESTVAL-NOVOS-BANNERS-1080-1500-BUD.jpg",
+            "alt": "BUDL6P5",
             "activeTerm": true
           },
           {
@@ -268,11 +255,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/43b7b0fd-7e20-45ef-910b-955dd78e7e14/FDS-DESK.jpg",
+          "desktop": "https://assets.decocache.com/festval/f71ef318-3b0f-4ad6-9520-f998eefc187d/SEG-E-TER-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
-          "mobile": "https://assets.decocache.com/festval/d0433006-27e4-4215-a2e2-95a03d3b8223/FDS.jpg",
-          "hrefMobile": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
+          "href": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
+          "mobile": "https://assets.decocache.com/festval/30493414-435d-4d64-86b0-9c5f30a21d41/SEG-E-TER.jpg",
+          "hrefMobile": "https://www.festval.com/1482?map=productClusterIds&sort=discount%3Adesc&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2025-01-06",
