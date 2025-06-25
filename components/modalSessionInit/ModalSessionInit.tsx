@@ -125,7 +125,7 @@ export const viaCep = async (
       }
       return result;
     } catch (error) {
-      lastError = error instanceof Error ? error : new Error(String(error));s
+      lastError = error instanceof Error ? error : new Error(String(error));
       if (attempt < maxRetries) {
         await new Promise(resolve => setTimeout(resolve, retryDelay));
       }
