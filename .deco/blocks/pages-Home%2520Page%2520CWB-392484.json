@@ -39,13 +39,13 @@
           {
             "initialDate": "2025-06-23",
             "deadLine": "2025-06-29",
-            "desktop": "https://assets.decocache.com/festval/02811960-29e4-43c1-a18c-2ff926fd0cb2/FESTVAL-NOVOS-BANNERS-002-1920X490-DOLCE-GUSTO.jpg",
-            "mobile": "https://assets.decocache.com/festval/5df73f21-62e1-4770-8d55-0e612a789d3b/FESTVAL-NOVOS-BANNERS-1080-1500-002-DOLCE-GUSTO.jpg",
-            "alt": "DolceGusto40",
+            "desktop": "https://assets.decocache.com/festval/0f6c22e3-5527-4d90-b303-b19cec8e42cc/FESTVAL-NOVOS-BANNERS-arraia.jpg",
+            "mobile": "https://assets.decocache.com/festval/ea0bf530-eaae-4640-a394-52c14cf7ce5c/FESTVAL-NOVOS-BANNERS-1080-1500-arraia.jpg",
+            "alt": "arraianestle",
             "activeTerm": true,
             "action": {
-              "href": "https://www.festval.com/1577?sort=orders%3Adesc&filter.brand=dolce-gusto&filter.productClusterIds=1577&filter.brand=nescafe&page=1&utm_source=BannerHome&utm_campaign=DolceGusto40",
-              "target": "_blank"
+              "target": "_blank",
+              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1"
             }
           },
           {
