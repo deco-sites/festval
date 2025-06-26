@@ -38,7 +38,9 @@
   "routes": [
     {
       "__resolveType": "vtex/loaders/proxy.ts",
-      "extraPathsToProxy": [],
+      "extraPathsToProxy": [
+        "/login-app"
+      ],
       "includeSiteMap": [],
       "excludePathsFromDecoSiteMap": [],
       "includeScriptsToHead": {
