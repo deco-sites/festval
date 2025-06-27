@@ -71,6 +71,18 @@
             "mobile": "https://assets.decocache.com/festval/bd59f670-ac03-45c6-98a9-c07e7efe2893/1080X1500px.png",
             "alt": "invernosolidario",
             "activeTerm": true
+          },
+          {
+            "initialDate": "2025-06-27",
+            "deadLine": "2025-07-27",
+            "action": {
+              "target": "_blank",
+              "href": "https://superfestval.com.br/sinergia-animal/?utm_source=BannerHome&utm_campaign=SinergiaAnimal"
+            },
+            "desktop": "https://assets.decocache.com/festval/3f8e4572-fe3d-41a7-aa6d-796a25967b37/athleticanos.jpg",
+            "mobile": "https://assets.decocache.com/festval/e894754d-856a-4727-aa47-a43693cc45f3/athleticanos-mbl.jpg",
+            "alt": "SinergiaAnimal",
+            "activeTerm": true
           }
         ],
         "preload": true
@@ -255,11 +267,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/1ce9544f-b37b-41ca-b032-06b3cafb6941/QUA-E-QUI-DESK.jpg",
+          "desktop": "https://assets.decocache.com/festval/43b7b0fd-7e20-45ef-910b-955dd78e7e14/FDS-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
-          "mobile": "https://assets.decocache.com/festval/c10b7889-9814-4483-9cff-a097cdd3713f/QUA-E-QUI.jpg",
-          "hrefMobile": "https://www.festval.com/hortifruti?sort=discount%3Adesc&page=1",
+          "href": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
+          "mobile": "https://assets.decocache.com/festval/d0433006-27e4-4215-a2e2-95a03d3b8223/FDS.jpg",
+          "hrefMobile": "https://www.festval.com/churrascofestval?sort=discount%3Adesc&filter.productClusterIds=159&filter.category-1=acougue&filter.category-1=bebidas-alcoolicas&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2025-01-06",
