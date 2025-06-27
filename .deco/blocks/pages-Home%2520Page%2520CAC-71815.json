@@ -39,53 +39,79 @@
             "activeTerm": false
           },
           {
+            "desktop": "https://assets.decocache.com/festval/ea0bf530-eaae-4640-a394-52c14cf7ce5c/FESTVAL-NOVOS-BANNERS-1080-1500-arraia.jpg",
+            "mobile": "https://assets.decocache.com/festval/0f6c22e3-5527-4d90-b303-b19cec8e42cc/FESTVAL-NOVOS-BANNERS-arraia.jpg",
+            "alt": "arraia-nestle",
+            "deadLine": "2025-06-29",
+            "initialDate": "2025-06-23",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1",
+              "target": "_blank"
+            },
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025-06-23",
+            "deadLine": "2025-06-29",
+            "desktop": "https://assets.decocache.com/festval/d366be57-7643-4cfc-9570-eb97839b1e07/FESTVAL-NOVOS-BANNERS-1080-1500-BUD.jpg",
+            "mobile": "https://assets.decocache.com/festval/e001cbd0-8242-4882-8870-9814fd689006/FESTVAL-NOVOS-BANNERS-002-1920X490-BUD.jpg",
+            "alt": "BUDL6P5",
+            "region": "Cascavel",
+            "action": {
+              "href": "https://www.festval.com/cerveja-budweiser-american-lager-long-neck-330ml/p?skuId=436&utm_source=BannerHome&utm_campaign=Budweiserl6p5",
+              "target": "_blank"
+            },
+            "activeTerm": true
+          },
+          {
+            "deadLine": "31/07/2025",
             "desktop": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "mobile": "https://assets.decocache.com/festval/c09330d7-0d9f-4c21-a03a-e46a1c3c9711/1920x490px-HORIZONTAL-2.png",
             "alt": "Baly",
-            "deadLine": "31/07/2025",
-            "initialDate": "15/04/2025",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly",
               "target": "_self"
             },
+            "initialDate": "15/04/2025",
             "activeTerm": true
           },
           {
             "initialDate": "17/04/2025",
             "deadLine": "01/06/2025",
+            "region": "Cascavel",
             "desktop": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "mobile": "https://assets.decocache.com/festval/4eea0edf-b632-41a9-89b6-61eba48c7d7b/Happy-eggs.jpg",
             "alt": "happy-eggs",
-            "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
             "activeTerm": true
           },
           {
+            "initialDate": "05/05/2025",
             "deadLine": "01/06/2025",
-            "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
-            "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
-            "alt": "frimesa",
             "region": "Cascavel",
             "action": {
               "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
             },
-            "initialDate": "05/05/2025",
+            "desktop": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/7fc3b9b5-14f8-4f6a-bb75-c7d57a534e55/Frimesa-1920x490.png",
+            "alt": "frimesa",
             "activeTerm": false
           },
           {
             "initialDate": "2025-06-01",
             "deadLine": "2025-08-31",
             "region": "Cascavel",
+            "action": {
+              "target": "_blank",
+              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025"
+            },
             "desktop": "https://assets.decocache.com/festval/ba4510fc-5ccc-4c12-9b77-f8f8a73f0b26/1920X490px.png",
             "mobile": "https://assets.decocache.com/festval/bd59f670-ac03-45c6-98a9-c07e7efe2893/1080X1500px.png",
             "alt": "inverno-solidario",
-            "action": {
-              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025",
-              "target": "_blank"
-            },
             "activeTerm": true
           }
         ],
@@ -272,11 +298,11 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/1ce9544f-b37b-41ca-b032-06b3cafb6941/QUA-E-QUI-DESK.jpg",
+          "desktop": "https://assets.decocache.com/festval/43b7b0fd-7e20-45ef-910b-955dd78e7e14/FDS-DESK.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1608?map=productClusterIds",
-          "mobile": "https://assets.decocache.com/festval/c10b7889-9814-4483-9cff-a097cdd3713f/QUA-E-QUI.jpg",
-          "hrefMobile": "https://www.festval.com/1608?map=productClusterIds",
+          "href": "https://www.festval.com/1604?map=productClusterIds",
+          "mobile": "https://assets.decocache.com/festval/d0433006-27e4-4215-a2e2-95a03d3b8223/FDS.jpg",
+          "hrefMobile": "https://www.festval.com/1604?map=productClusterIds",
           "region": "Cascavel",
           "positionBanner": "Full",
           "initialDate": "31/03/2025",
