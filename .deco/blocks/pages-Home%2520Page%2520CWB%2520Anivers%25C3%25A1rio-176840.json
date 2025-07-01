@@ -261,7 +261,7 @@
         }
       },
       "cta": "/acougue",
-      "title": "Açougue"
+      "title": "Açougue Festval"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -325,7 +325,7 @@
         }
       },
       "cta": "https://www.festval.com/rotulosimperdiveis",
-      "title": "Ofertas Imperdíveis - Adega Festval"
+      "title": "Ofertas Aniversário - Adega Festval"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",

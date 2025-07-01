@@ -1659,10 +1659,16 @@
       "children": []
     },
     {
-      "@type": "SiteNavigationElement",
+      "url": "/1686?map=productClusterIds&sort=orders%3Adesc&page=1",
+      "name": "Kits Prontos",
+      "children": [],
+      "image": []
+    },
+    {
       "url": "https://www.festval.com/1662?map=productClusterIds&page=1&utm_source=Bot%C3%A3oHeader&utm_campaign=Novidadesnofestvalcom",
       "name": "Novidades",
       "children": [],
+      "@type": "SiteNavigationElement",
       "image": null
     },
     {
@@ -1679,9 +1685,9 @@
       "@type": "SiteNavigationElement"
     },
     {
-      "url": "/bebidas/sucos-festval?page=1",
-      "name": "Sucos Festval",
       "children": [],
+      "name": "Sucos Festval",
+      "url": "/bebidas/sucos-festval?page=1",
       "image": []
     },
     {
@@ -1695,10 +1701,6 @@
       "image": [],
       "name": "Importados",
       "url": "/importados?sort=orders%3Adesc&page=1"
-    },
-    {
-      "children": [],
-      "image": []
     },
     {
       "children": [],

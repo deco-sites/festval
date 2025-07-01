@@ -24,6 +24,18 @@
             "mobile": "https://assets.decocache.com/festval/037ddf44-9b03-498f-8efb-f116a7c6c062/banner-nestlembl.gif",
             "alt": "Nestleescolhacerta",
             "activeTerm": false
+          },
+          {
+            "initialDate": "2025-07-01",
+            "deadLine": "2025-07-06",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerLP&utm_campaign=FeriasNestle"
+            },
+            "desktop": "https://assets.decocache.com/festval/972e21f1-e416-42a8-98f5-a19ea76c39e8/ferias_nestle_1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/aa9f5125-014a-4e26-85cc-8527e26d4945/ferias_nestle_1080x490.jpg",
+            "alt": "Feriasnestle",
+            "activeTerm": true
           }
         ],
         "interval": 0,
