@@ -20,19 +20,19 @@
             "deadLine": "2025-07-31",
             "initialDate": "2025-06-30",
             "action": {
-              "href": "https://www.festval.com/1678?map=productClusterIds&page=1",
+              "href": "https://www.festval.com/1678?map=productClusterIds&page=1&utm_source=BannerHome&utm_campaign=Anivers%C3%A1rioFestval",
               "target": "_blank"
             }
           },
           {
             "deadLine": "2025-07-15",
-            "desktop": "https://assets.decocache.com/festval/0fc47724-70dc-4b56-ad89-a4728a537091/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-nestle.jpg",
-            "mobile": "https://assets.decocache.com/festval/9366dda9-1f70-42c0-92e8-e1951308144a/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-nestle.jpg",
-            "alt": "Aniversário_nestlé",
+            "desktop": "https://assets.decocache.com/festval/eb12d055-bc55-41b7-869c-29d975400686/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-lindt.jpg",
+            "mobile": "https://assets.decocache.com/festval/7ec1a28f-1e86-4798-9736-fe048f964340/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-lindt.jpg",
+            "alt": "aniversário lindt",
             "activeTerm": true,
             "initialDate": "2025-06-30",
             "action": {
-              "href": "https://www.festval.com/1679?map=productClusterIds&sort=orders%3Adesc&page=1",
+              "href": "https://www.festval.com/1680?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LindtAnivers%C3%A1rio",
               "target": "_blank"
             }
           },
@@ -41,11 +41,11 @@
             "deadLine": "2025-07-15",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/1680?map=productClusterIds&sort=orders%3Adesc&page=1"
+              "href": "https://www.festval.com/1679?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Nestl%C3%A9anivers%C3%A1rio"
             },
-            "desktop": "https://assets.decocache.com/festval/eb12d055-bc55-41b7-869c-29d975400686/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-lindt.jpg",
-            "mobile": "https://assets.decocache.com/festval/7ec1a28f-1e86-4798-9736-fe048f964340/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-lindt.jpg",
-            "alt": "aniversário lindt",
+            "desktop": "https://assets.decocache.com/festval/0fc47724-70dc-4b56-ad89-a4728a537091/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-nestle.jpg",
+            "mobile": "https://assets.decocache.com/festval/9366dda9-1f70-42c0-92e8-e1951308144a/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-nestle.jpg",
+            "alt": "Aniversário_nestlé",
             "activeTerm": true
           },
           {
@@ -53,7 +53,7 @@
             "deadLine": "2025-07-15",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/1685?map=productClusterIds&sort=orders%3Adesc&page=1"
+              "href": "https://www.festval.com/1685?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Ambevanivers%C3%A1rio"
             },
             "desktop": "https://assets.decocache.com/festval/98142af1-5f5a-4ca7-a309-f517a0c9935b/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-ambev.jpg",
             "mobile": "https://assets.decocache.com/festval/04c6ae76-5522-455a-a076-627d7009a447/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-ambev.jpg",
@@ -192,7 +192,7 @@
           "collection": "1073"
         }
       },
-      "title": "Mais vendidos",
+      "title": "Os Mais vendidos",
       "cta": "/1073?map=productClusterIds"
     },
     {
@@ -212,7 +212,7 @@
         }
       },
       "cta": "/1677?map=productClusterIds",
-      "title": "Oportunidades "
+      "title": "Oportunidades de Aniversário"
     },
     {
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
@@ -418,5 +418,5 @@
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
-  "path": "/testeaniver"
+  "path": "/cwb"
 }
