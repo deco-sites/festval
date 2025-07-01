@@ -105,6 +105,8 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
     event: { name: "view_promotion", params },
   });
 
+  const isGif = desktop.toLowerCase().endsWith(".gif");
+
   return (
     <a
       {...selectPromotionEvent}
@@ -134,28 +136,38 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           </button>
         </div>
       )}
-      <Picture preload={lcp} {...viewPromotionEvent}>
-        <Source
-          media="(max-width: 767px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={mobile}
-          width={1080}
-          height={1500}
-        />
-        <Source
-          media="(min-width: 768px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={desktop}
-          width={1920}
-          height={490}
-        />
+      {isGif ? (
         <img
-          class="object-contain w-full h-full "
+          class="object-contain w-full h-full"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
+          {...viewPromotionEvent}
         />
-      </Picture>
+      ) : (
+        <Picture preload={lcp} {...viewPromotionEvent}>
+          <Source
+            media="(max-width: 767px)"
+            fetchPriority={lcp ? "high" : "auto"}
+            src={mobile}
+            width={1080}
+            height={1500}
+          />
+          <Source
+            media="(min-width: 768px)"
+            fetchPriority={lcp ? "high" : "auto"}
+            src={desktop}
+            width={1920}
+            height={490}
+          />
+          <img
+            class="object-contain w-full h-full "
+            loading={lcp ? "eager" : "lazy"}
+            src={desktop}
+            alt={alt}
+          />
+        </Picture>
+      )}
     </a>
   );
 }
