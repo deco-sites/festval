@@ -206,7 +206,7 @@
         "props": {
           "count": 12,
           "hideUnavailableItems": true,
-          "collection": "1073"
+          "collection": "1606"
         }
       },
       "title": "Os Mais vendidos",
@@ -223,7 +223,7 @@
         "props": {
           "sort": "",
           "count": 12,
-          "collection": "1677",
+          "collection": "1587",
           "hideUnavailableItems": true,
           "similars": false
         }
@@ -286,9 +286,9 @@
         {
           "desktop": "https://assets.decocache.com/festval/f9179fa7-fc8d-4685-a0aa-a7f44a2cccb7/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1700x400px-principal.jpg",
           "alt": "OFERTAS-SEMANAIS",
-          "href": "https://www.festval.com/1678?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "href": "https://www.festval.com/aniversariofestval?utm_source=BannerHome&utm_campaign=Anivers%C3%A1riofestval",
           "mobile": "https://assets.decocache.com/festval/8781b12d-eb0f-4dca-89de-9e2e5f424d47/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1080x465px-principal.jpg",
-          "hrefMobile": "https://www.festval.com/1678?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "hrefMobile": "https://www.festval.com/aniversariofestval?utm_source=BannerHome&utm_campaign=Anivers%C3%A1riofestval",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
           "initialDate": "2025-01-06",
@@ -370,13 +370,13 @@
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
           "props": {
             "sort": "",
-            "collection": "1662",
+            "collection": "1067",
             "count": 12,
             "hideUnavailableItems": true
           }
         },
-        "title": "Novidades no Festval.com",
-        "cta": "https://www.festval.com/1662?map=productClusterIds"
+        "title": "Exclusivos",
+        "cta": "https://www.festval.com/1067?map=productClusterIds"
       }
     },
     {
