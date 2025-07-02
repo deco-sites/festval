@@ -1,5 +1,10 @@
 {
-  "name": "Home Page CWB Aniversário",
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Home Page CAC Aniversário",
+  "path": "/cac",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -425,10 +430,5 @@
         "__resolveType": "Footer"
       }
     }
-  ],
-  "__resolveType": "website/pages/Page.tsx",
-  "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
-  },
-  "path": "/cwb"
+  ]
 }
