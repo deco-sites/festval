@@ -1,0 +1,79 @@
+{
+  "name": "Coffee++",
+  "path": "/coffeemais",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
+        "images": [
+          {
+            "desktop": "https://assets.decocache.com/festval/0b86a9f6-4571-495f-8f15-25ec42cf8eb6/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-coffee.jpg",
+            "mobile": "https://assets.decocache.com/festval/5170048f-b746-48cf-a796-98a003610a19/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_720x240px-coffee.jpg",
+            "alt": "coffeeprincipal",
+            "action": {
+              "href": "/coffeemais",
+              "target": "_blank"
+            },
+            "initialDate": "0",
+            "deadLine": "0",
+            "activeTerm": false
+          }
+        ],
+        "preload": false
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
+          "props": {
+            "sort": "",
+            "collection": "1692",
+            "count": 7,
+            "hideUnavailableItems": true
+          }
+        },
+        "title": "Leve 3 Pague 2",
+        "cta": "/1692?map=productClusterIds&page=1"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/SearchResult.tsx",
+        "page": {
+          "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+          "count": 12,
+          "sort": "orders:desc",
+          "fuzzy": "automatic",
+          "selectedFacets": [
+            {
+              "value": "1691",
+              "key": "productClusterIds"
+            }
+          ],
+          "hideUnavailableItems": true
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

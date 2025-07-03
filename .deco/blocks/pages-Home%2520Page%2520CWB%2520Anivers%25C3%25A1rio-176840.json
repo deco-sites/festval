@@ -37,6 +37,19 @@
             }
           },
           {
+            "initialDate": "2025-07-03",
+            "deadLine": "2025-07-11",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/coffeemais?utm_source=BannerHome&utm_campaign=coffeemaisl3p2"
+            },
+            "desktop": "https://assets.decocache.com/festval/0b86a9f6-4571-495f-8f15-25ec42cf8eb6/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-coffee.jpg",
+            "mobile": "https://assets.decocache.com/festval/4aa3d911-e89a-458f-91ea-fa1e844dcf7b/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-coffee.jpg",
+            "alt": "coffee++aniver",
+            "activeTerm": true,
+            "region": "Curitiba"
+          },
+          {
             "initialDate": "2025-06-30",
             "deadLine": "2025-07-15",
             "action": {
@@ -70,6 +83,18 @@
             "desktop": "https://assets.decocache.com/festval/bdccc0e5-9c07-473a-a027-b95bb6649dc4/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-amandita.jpg",
             "mobile": "https://assets.decocache.com/festval/d7b0b045-db6b-421c-be83-43e542a20baf/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-amandita.jpg",
             "alt": "AmanditaAniversário",
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025-07-03",
+            "deadLine": "2025-07-31",
+            "action": {
+              "target": "_blank",
+              "href": "https://festval.querovantagens.com/home?utm_source=BannerHome&utm_campaign=CadastroSouFestval"
+            },
+            "desktop": "https://assets.decocache.com/festval/f9ec4849-0933-4809-9914-12a202c209bb/Sou-Festval---Banner-Home---App---Desktop---1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/a2009e8c-5cc2-4bfe-9c7b-8aea861d6d4e/Sou-Festval---Banner-Home---App---Mobile---1080x1500.png",
+            "alt": "sou festval",
             "activeTerm": true
           },
           {
