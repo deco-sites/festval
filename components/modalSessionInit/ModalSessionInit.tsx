@@ -316,13 +316,6 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
     const isCategoryOrProduct = /\/[a-z0-9\-]+(\/[a-z0-9\-]+)?/.test(path);
     const hasMapParam = searchParams.has("map");
     const hasFilterParam = searchParams.has("filter.category-1");
-    console.log("shouldAddRegionPrefix:", {
-      path,
-      isCategoryOrProduct,
-      hasMapParam,
-      hasFilterParam,
-      noPrefixPathsMatch: noPrefixPaths.some(prefix => path.startsWith(prefix)),
-    });
     return (
       !noPrefixPaths.some(prefix => path.startsWith(prefix)) &&
       !isCategoryOrProduct &&
@@ -378,25 +371,23 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
           Curitiba: "/cwb",
         };
 
+        const utmSources: Record<string, string> = {
+          Cascavel: "cascavel",
+          Curitiba: "curitiba",
+        };
+        
+        if (region && utmSources[region]) {
+          localStorage.setItem("utm_source", utmSources[region]);
+        }
+
         const targetPath = region ? regionPaths[region] : null;
         const currentPath = window.location.pathname;
         const searchParams = window.location.search;
-
-        console.log("Redirection Info:", {
-          currentPath,
-          targetPath,
-          searchParams,
-          shouldAddPrefix: shouldAddRegionPrefix(currentPath),
-        });
-
-        const isCategoryPage = currentPath.startsWith("/pascoa");
 
         let newUrl = window.location.href;
 
         if (targetPath && shouldAddRegionPrefix(currentPath)) {
           newUrl = `${window.location.origin}${targetPath}${currentPath === "/" ? "" : currentPath}${searchParams}`;
-        } else if (isCategoryPage) {
-          newUrl = `${window.location.origin}${currentPath}${searchParams}`;
         }
 
         localStorage.setItem("redirected", "true");
