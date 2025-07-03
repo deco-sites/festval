@@ -106,8 +106,8 @@
             "deadLine": "2025-08-31",
             "region": "Cascavel",
             "action": {
-              "target": "_blank",
-              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025"
+              "href": "https://wa.me/5541998460016?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20as%20doa%C3%A7%C3%B5es%20do%20Inverno%20Solid%C3%A1rio&utm_source=BannerHome&utm_campaign=InvernoSolidario2025",
+              "target": "_blank"
             },
             "desktop": "https://assets.decocache.com/festval/ba4510fc-5ccc-4c12-9b77-f8f8a73f0b26/1920X490px.png",
             "mobile": "https://assets.decocache.com/festval/bd59f670-ac03-45c6-98a9-c07e7efe2893/1080X1500px.png",
