@@ -25,16 +25,29 @@
             }
           },
           {
+            "deadLine": "2025-07-07",
+            "desktop": "https://assets.decocache.com/festval/a0e746d8-b3d7-4698-910e-7a2d9ba1c7ad/Dia-do-Chocolate-festval.com.jpg",
+            "mobile": "https://assets.decocache.com/festval/4ae6d02b-0b98-4fa7-ad62-de2c5d2cb782/festval.com-chocolate.jpg",
+            "alt": "Superpromodechocolate",
+            "activeTerm": true,
+            "initialDate": "2025-07-04",
+            "action": {
+              "href": "https://www.festval.com/1693?map=productClusterIds&sort=orders%3Adesc&page=1&utm_medium=BannerHome&utm_campaign=Superpromodechocolate",
+              "target": "_blank"
+            },
+            "region": "Cascavel"
+          },
+          {
+            "initialDate": "2025-06-30",
             "deadLine": "2025-07-15",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1680?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LindtAnivers%C3%A1rio"
+            },
             "desktop": "https://assets.decocache.com/festval/eb12d055-bc55-41b7-869c-29d975400686/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-lindt.jpg",
             "mobile": "https://assets.decocache.com/festval/7ec1a28f-1e86-4798-9736-fe048f964340/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-lindt.jpg",
             "alt": "aniversário lindt",
-            "activeTerm": true,
-            "initialDate": "2025-06-30",
-            "action": {
-              "href": "https://www.festval.com/1680?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LindtAnivers%C3%A1rio",
-              "target": "_blank"
-            }
+            "activeTerm": true
           },
           {
             "initialDate": "2025-07-03",
