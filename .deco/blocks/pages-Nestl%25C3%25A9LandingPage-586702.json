@@ -26,16 +26,17 @@
             "activeTerm": false
           },
           {
-            "initialDate": "2025-07-01",
-            "deadLine": "2025-07-06",
+            "initialDate": "2025-07-07",
+            "deadLine": "2025-07-13",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/163?map=productClusterIds&sort=discount%3Adesc&page=1&utm_source=BannerLP&utm_campaign=FeriasNestle"
+              "href": "https://www.festval.com/1671?map=productClusterIds&sort=orders%3Adesc&page=1&utm_medium=BannerLandingPage&utm_campaign=diadochocolate_nestle"
             },
-            "desktop": "https://assets.decocache.com/festval/972e21f1-e416-42a8-98f5-a19ea76c39e8/ferias_nestle_1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/aa9f5125-014a-4e26-85cc-8527e26d4945/ferias_nestle_1080x490.jpg",
-            "alt": "Feriasnestle",
-            "activeTerm": true
+            "desktop": "https://assets.decocache.com/festval/f28a1df7-e8d9-463c-b1ff-73124d3bb495/kv_alternatico_dia_dos_avos_1920x490.jpg",
+            "mobile": "https://assets.decocache.com/festval/6f28d1d8-d2fe-4b9d-abe0-1a6c5c705daf/kv_alternatico_dia_dos_avos_1080x1500.jpg",
+            "alt": "diadochocolate",
+            "activeTerm": true,
+            "region": "Curitiba"
           }
         ],
         "interval": 0,

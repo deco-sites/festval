@@ -34,7 +34,8 @@
             "action": {
               "href": "https://www.festval.com/1693?map=productClusterIds&sort=orders%3Adesc&page=1&utm_medium=BannerHome&utm_campaign=Superpromodechocolate",
               "target": "_blank"
-            }
+            },
+            "region": "Curitiba"
           },
           {
             "initialDate": "2025-06-30",
