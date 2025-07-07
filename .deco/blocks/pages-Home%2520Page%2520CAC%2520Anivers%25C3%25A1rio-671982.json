@@ -18,11 +18,24 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
+            "desktop": "https://data.decoassets.com/festval/d0bebc6b-fab0-44b0-bd28-7db480c29910/Banner-Home-APP.png",
+            "mobile": "https://data.decoassets.com/festval/9138e0f7-e5fb-4fcd-a9b9-e9df2aad8cb8/Banner-Home.png",
+            "alt": "sorteio",
+            "activeTerm": false,
+            "deadLine": "01/01/2024",
+            "initialDate": "01/01/2024",
+            "action": {
+              "href": "https://www.superfestval.com.br/regulamentobmw/?utm_source=BannerHome&utm_campaign=RegulamentoSouFestval",
+              "target": "_blank"
+            },
+            "region": "Cascavel"
+          },
+          {
+            "deadLine": "2025-07-31",
             "desktop": "https://assets.decocache.com/festval/22b5f3a5-8e9f-45cb-9fd4-7e0635df310a/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px.jpg",
             "mobile": "https://assets.decocache.com/festval/05306a4e-4e00-4707-a593-3446d4079b52/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px.jpg",
             "alt": "aniversário",
             "activeTerm": true,
-            "deadLine": "2025-07-31",
             "initialDate": "2025-06-30",
             "action": {
               "href": "https://www.festval.com/aniversariofestval?utm_source=BannerHome&utm_campaign=Anivers%C3%A1riofestval",
@@ -30,16 +43,16 @@
             }
           },
           {
+            "initialDate": "2025-06-30",
             "deadLine": "2025-07-15",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1680?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LindtAnivers%C3%A1rio"
+            },
             "desktop": "https://assets.decocache.com/festval/eb12d055-bc55-41b7-869c-29d975400686/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-lindt.jpg",
             "mobile": "https://assets.decocache.com/festval/7ec1a28f-1e86-4798-9736-fe048f964340/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-lindt.jpg",
             "alt": "aniversário lindt",
-            "activeTerm": true,
-            "initialDate": "2025-06-30",
-            "action": {
-              "href": "https://www.festval.com/1680?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LindtAnivers%C3%A1rio",
-              "target": "_blank"
-            }
+            "activeTerm": true
           },
           {
             "initialDate": "2025-06-30",
@@ -78,6 +91,45 @@
             "activeTerm": true
           },
           {
+            "initialDate": "07-07-2025",
+            "deadLine": "31-07-2025",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1643?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Baly"
+            },
+            "desktop": "https://assets.decocache.com/festval/fbd2ee2e-d85a-4733-93c5-192d5208a33d/1920x490px-Baly.png",
+            "mobile": "https://assets.decocache.com/festval/fbd2ee2e-d85a-4733-93c5-192d5208a33d/1920x490px-Baly.png",
+            "alt": "baly",
+            "region": "Cascavel",
+            "activeTerm": true
+          },
+          {
+            "initialDate": "07-07-2025",
+            "deadLine": "31-07-2025",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1644?map=productClusterIds&sort=orders%3Adesc&page=1"
+            },
+            "desktop": "https://assets.decocache.com/festval/1667ed28-b705-40a1-8e4a-43bb565b5b7c/Happy-eggs.jpg",
+            "mobile": "https://assets.decocache.com/festval/1667ed28-b705-40a1-8e4a-43bb565b5b7c/Happy-eggs.jpg",
+            "alt": "happy-eggs",
+            "region": "Cascavel",
+            "activeTerm": true
+          },
+          {
+            "deadLine": "31-07-2025",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1654?map=productClusterIds&sort=orders%3Adesc&page=1"
+            },
+            "desktop": "https://assets.decocache.com/festval/1eb55ee7-2650-4b12-9b73-709e3eac2daf/Frimesa-1920x490.png",
+            "mobile": "https://assets.decocache.com/festval/1eb55ee7-2650-4b12-9b73-709e3eac2daf/Frimesa-1920x490.png",
+            "alt": "frimesa",
+            "initialDate": "07-07-2025",
+            "activeTerm": true,
+            "region": "Cascavel"
+          },
+          {
             "initialDate": "2025-06-01",
             "deadLine": "2025-08-31",
             "action": {
@@ -100,19 +152,6 @@
             "mobile": "https://assets.decocache.com/festval/ebc3a7f9-6b94-4cd7-8ac3-9f3b0e2a8b44/atletico.jpg",
             "alt": "SinergiaAnimal",
             "activeTerm": true
-          },
-          {
-            "initialDate": "01/01/2024",
-            "deadLine": "01/01/2024",
-            "region": "Cascavel",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.superfestval.com.br/regulamentobmw/?utm_source=BannerHome&utm_campaign=RegulamentoSouFestval"
-            },
-            "desktop": "https://data.decoassets.com/festval/d0bebc6b-fab0-44b0-bd28-7db480c29910/Banner-Home-APP.png",
-            "mobile": "https://data.decoassets.com/festval/9138e0f7-e5fb-4fcd-a9b9-e9df2aad8cb8/Banner-Home.png",
-            "alt": "sorteio",
-            "activeTerm": false
           }
         ],
         "preload": true
