@@ -1693,8 +1693,9 @@
     {
       "children": [],
       "name": "Adega",
-      "url": "/adega",
-      "@type": "SiteNavigationElement"
+      "url": "/adega?sort=release%3Adesc&page=1",
+      "@type": "SiteNavigationElement",
+      "image": null
     },
     {
       "children": [],
