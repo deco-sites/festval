@@ -25,14 +25,14 @@
             }
           },
           {
-            "deadLine": "2025-07-07",
-            "desktop": "https://assets.decocache.com/festval/a0e746d8-b3d7-4698-910e-7a2d9ba1c7ad/Dia-do-Chocolate-festval.com.jpg",
-            "mobile": "https://assets.decocache.com/festval/4ae6d02b-0b98-4fa7-ad62-de2c5d2cb782/festval.com-chocolate.jpg",
-            "alt": "Superpromodechocolate",
+            "deadLine": "2025-07-13",
+            "desktop": "https://assets.decocache.com/festval/22090a7b-27c1-48c8-af96-b5607f711dcd/AF_V01_Sub_Campanha_Aniversario_Semana_da_Pizza_2025_Festval_2025_Banner_GG_1920x490px.png",
+            "mobile": "https://assets.decocache.com/festval/1943f71b-ccae-4f83-bb7d-319ca34de6e5/V01_Sub_Campanha_Aniversario_Semana_da_Pizza_2025_Festval_2025_Banner_GG_1080x1500px.png",
+            "alt": "diadapizza",
             "activeTerm": true,
-            "initialDate": "2025-07-04",
+            "initialDate": "2025-07-08",
             "action": {
-              "href": "https://www.festval.com/1693?map=productClusterIds&sort=orders%3Adesc&page=1&utm_medium=BannerHome&utm_campaign=Superpromodechocolate",
+              "href": "https://www.festval.com/1694?map=productClusterIds&sort=orders%3Adesc&page=1&utm_medium=BannerHome&utm_campaign=semana_da_pizza",
               "target": "_blank"
             },
             "region": "Curitiba"
