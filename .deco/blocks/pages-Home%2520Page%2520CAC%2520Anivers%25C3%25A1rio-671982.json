@@ -18,8 +18,8 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://data.decoassets.com/festval/d0bebc6b-fab0-44b0-bd28-7db480c29910/Banner-Home-APP.png",
-            "mobile": "https://data.decoassets.com/festval/9138e0f7-e5fb-4fcd-a9b9-e9df2aad8cb8/Banner-Home.png",
+            "desktop": "https://data.decoassets.com/festval/9138e0f7-e5fb-4fcd-a9b9-e9df2aad8cb8/Banner-Home.png",
+            "mobile": "https://data.decoassets.com/festval/d0bebc6b-fab0-44b0-bd28-7db480c29910/Banner-Home-APP.png",
             "alt": "sorteio",
             "activeTerm": false,
             "deadLine": "01/01/2024",
