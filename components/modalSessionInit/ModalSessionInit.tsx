@@ -242,6 +242,35 @@ const onLoad = (id: string) => {
 
   type CurrentRegion = keyof typeof regionsList | null;
 
+  const defaultRegions = {
+    Cascavel: "cascavel",
+    Curitiba: "curitiba",
+  };
+
+  function addUtmSourceParamToUrl(region: CurrentRegion | null) {
+    const currentUrl = new URL(window.location.href);
+    const queryParam = currentUrl.searchParams.get("utm_source");
+
+    if (region && queryParam) {
+      const currentRegion = defaultRegions[region as "Cascavel" | "Curitiba"];
+
+      if (currentRegion !== queryParam) {
+        // window.location.search =
+        //   currentUrl.searchParams.size >= 1
+        //     ? `${window.location.search}&utm_source=${currentRegion}`
+        //     : `?utm_source=${currentRegion}`;
+        currentUrl.searchParams.set("utm_source", currentRegion);
+        window.location.search = currentUrl.search;
+      }
+    }
+
+    if (region && !queryParam) {
+      const currentRegion = defaultRegions[region as "Cascavel" | "Curitiba"];
+      currentUrl.searchParams.append("utm_source", currentRegion);
+      window.location.search = currentUrl.search;
+    }
+  }
+
   function redirect(region: CurrentRegion | null) {
     const url = new URL(window.location.href);
     const isHomePage = url.pathname === "/";
@@ -257,7 +286,11 @@ const onLoad = (id: string) => {
     const isSessionExpired = currentDate.getTime() > expiresAtDate.getTime();
 
     if (isHomePage && region && !isSessionExpired) {
-      window.location.replace(regionsList[region]);
+      window.location.replace(
+        `${regionsList[region]}?utm_source=${defaultRegions[region]}`
+      );
+    } else {
+      addUtmSourceParamToUrl(region);
     }
   }
 
