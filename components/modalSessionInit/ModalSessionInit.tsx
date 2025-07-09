@@ -387,7 +387,7 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
       } catch (err) {
         console.error("Erro ao consultar orderForm:", err);
       }
-    }
+    } 
 
     const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
     regionId =
