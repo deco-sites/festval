@@ -2154,13 +2154,13 @@
     "submitButtonText": "Salvar",
     "cepPlaceholder": "CEP 00000-000",
     "modalTitle": "Vamos conferir se atendemos a sua região:",
-    "welcomeMessage": "Seja bem vindo(a) ao",
+    "welcomeMessage": "Seja bem-vindo(a) ao",
     "modalInitProps": {
       "findCepText": "Não sei meu CEP",
       "submitButtonText": "Salvar",
       "cepPlaceholder": "CEP 00000-000",
       "modalTitle": "Vamos conferir se atendemos a sua região:",
-      "welcomeMessage": "Seja bem vindo(a) ao",
+      "welcomeMessage": "Seja bem-vindo(a) ao",
       "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9188f318-f9a3-4e57-81be-78087c260c9b/logo.svg"
     },
     "actionResult": {

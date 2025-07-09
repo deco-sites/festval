@@ -14,11 +14,11 @@ export interface Props {
    * @title Mensagem de boas vindas
    * @default Seja bem vindo(a) ao
    */
-  welcomeMessage?: string; 
+  welcomeMessage?: string;
   /**
    * @title Texto modal
    * @default Vamos conferir se atendemos a sua região:
-   */ 
+   */
   modalTitle?: string;
   /**
    * @title Placeholder
@@ -127,7 +127,7 @@ export const viaCep = async (
     } catch (error) {
       lastError = error instanceof Error ? error : new Error(String(error));
       if (attempt < maxRetries) {
-        await new Promise(resolve => setTimeout(resolve, retryDelay));
+        await new Promise((resolve) => setTimeout(resolve, retryDelay));
       }
     }
   }
@@ -171,7 +171,8 @@ export const action = async (
         const LIMIT_EXPIRE_HOURS = 23;
 
         const now = new Date();
-        const expirationTime = now.getTime() + LIMIT_EXPIRE_HOURS * 60 * 60 * 1000;
+        const expirationTime =
+          now.getTime() + LIMIT_EXPIRE_HOURS * 60 * 60 * 1000;
 
         setCookie(ctx.response.headers, {
           value: viaCepResponse.localidade,
@@ -239,24 +240,24 @@ const onLoad = (id: string) => {
     Curitiba: "/cwb",
   };
 
-  type CurrentRegion = keyof typeof regionsList | null
+  type CurrentRegion = keyof typeof regionsList | null;
 
   function redirect(region: CurrentRegion | null) {
-    const url = new URL(window.location.href)
-    const isHomePage = url.pathname === '/'
+    const url = new URL(window.location.href);
+    const isHomePage = url.pathname === "/";
 
-    const expiresAt = getCookie("expires_at")
+    const expiresAt = getCookie("expires_at");
 
     if (!expiresAt) {
-      return
+      return;
     }
 
-    const expiresAtDate = new Date(expiresAt)
-    const currentDate = new Date()
-    const isSessionExpired = currentDate.getTime() > expiresAtDate.getTime()
+    const expiresAtDate = new Date(expiresAt);
+    const currentDate = new Date();
+    const isSessionExpired = currentDate.getTime() > expiresAtDate.getTime();
 
     if (isHomePage && region && !isSessionExpired) {
-      window.location.replace(regionsList[region])
+      window.location.replace(regionsList[region]);
     }
   }
 
@@ -268,8 +269,8 @@ const onLoad = (id: string) => {
   const regionId = vtex_segment ? JSON.parse(vtex_segment)?.regionId : null;
   const modal = document.getElementById(id);
   const region = getCookie("region");
-  
-  redirect(region as CurrentRegion)
+
+  redirect(region as CurrentRegion);
 
   if (cep && regionId) {
     modal?.classList.remove("modal-open");
@@ -288,7 +289,6 @@ const onLoad = (id: string) => {
     deleteCookie("vtex_last_segment");
   }
 };
-
 
 const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
   let attempts = 0;
@@ -317,7 +317,7 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
     const hasMapParam = searchParams.has("map");
     const hasFilterParam = searchParams.has("filter.category-1");
     return (
-      !noPrefixPaths.some(prefix => path.startsWith(prefix)) &&
+      !noPrefixPaths.some((prefix) => path.startsWith(prefix)) &&
       !isCategoryOrProduct &&
       !hasMapParam &&
       !hasFilterParam
@@ -357,7 +357,8 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
     }
 
     const vtex_segment = vtex_segment_cookie ? atob(vtex_segment_cookie) : null;
-    regionId = regionId || (vtex_segment ? JSON.parse(vtex_segment)?.regionId : null);
+    regionId =
+      regionId || (vtex_segment ? JSON.parse(vtex_segment)?.regionId : null);
 
     if (cep && regionId) {
       showElement(limeText);
@@ -375,7 +376,7 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
           Cascavel: "cascavel",
           Curitiba: "curitiba",
         };
-        
+
         if (region && utmSources[region]) {
           localStorage.setItem("utm_source", utmSources[region]);
         }
@@ -387,7 +388,9 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
         let newUrl = window.location.href;
 
         if (targetPath && shouldAddRegionPrefix(currentPath)) {
-          newUrl = `${window.location.origin}${targetPath}${currentPath === "/" ? "" : currentPath}${searchParams}`;
+          newUrl = `${window.location.origin}${targetPath}${
+            currentPath === "/" ? "" : currentPath
+          }${searchParams}`;
         }
 
         localStorage.setItem("redirected", "true");
@@ -483,9 +486,7 @@ export function loader(props: ModalInitProps) {
 
 function ModalSessionInit({
   modalInitProps,
-
 }: ModalInitProps & SectionProps<typeof loader, typeof action>) {
-  
   const id = useId();
   const {
     welcomeMessage,
@@ -495,7 +496,7 @@ function ModalSessionInit({
     submitButtonText,
     findCepText,
   } = modalInitProps;
-  const finalWelcomeMessage = welcomeMessage ?? "Seja bem vindo(a) ao";
+  const finalWelcomeMessage = welcomeMessage ?? "Seja bem-vindo(a) ao";
   const finalLogo =
     logo ??
     "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/festval/9188f318-f9a3-4e57-81be-78087c260c9b/logo.svg";
