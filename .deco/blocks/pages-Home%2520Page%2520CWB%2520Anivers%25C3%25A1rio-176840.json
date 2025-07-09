@@ -121,18 +121,6 @@
             "mobile": "https://assets.decocache.com/festval/bd59f670-ac03-45c6-98a9-c07e7efe2893/1080X1500px.png",
             "alt": "invernosolidario",
             "activeTerm": true
-          },
-          {
-            "initialDate": "2025-06-27",
-            "deadLine": "2025-07-27",
-            "action": {
-              "target": "_blank",
-              "href": "https://superfestval.com.br/sinergia-animal/?utm_source=BannerHome&utm_campaign=SinergiaAnimal"
-            },
-            "desktop": "https://assets.decocache.com/festval/cc9197b5-4e92-44af-8382-09a809932a12/atletico-2.jpg",
-            "mobile": "https://assets.decocache.com/festval/ebc3a7f9-6b94-4cd7-8ac3-9f3b0e2a8b44/atletico.jpg",
-            "alt": "SinergiaAnimal",
-            "activeTerm": true
           }
         ],
         "preload": true
