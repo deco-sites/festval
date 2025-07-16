@@ -13,11 +13,23 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
+            "desktop": "https://assets.decocache.com/festval/9f2a840e-3223-41c5-ade7-79ec361cefba/AF_V01_Campanha_Superpromocao_de_Vinhos_com_ate_50_Festval_2025_Banner-GG_1920x490px.png",
+            "mobile": "https://assets.decocache.com/festval/07ec2124-0ca1-42e8-9c13-35b13c6dcd99/AF_V01_Campanha_Superpromocao_de_Vinhos_com_ate_50_Festval_2025_Banner-GG_1080x1500px.png",
+            "alt": "vinhos50off",
+            "activeTerm": true,
+            "deadLine": "2025-07-20",
+            "initialDate": "2025-07-17",
+            "action": {
+              "href": "https://www.festval.com/1699?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=curitiba&utm_medium=banner_home&utm_campaign=50offVinhos",
+              "target": "_blank"
+            }
+          },
+          {
+            "deadLine": "2025-07-31",
             "desktop": "https://assets.decocache.com/festval/a82fd379-3839-42b7-853a-3ed99bd25402/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1920x490_Geral.jpg",
             "mobile": "https://assets.decocache.com/festval/c6e7070a-7694-45b6-b352-f0e952054399/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1080x1500_Geral.jpg",
             "alt": "aniversário",
             "activeTerm": true,
-            "deadLine": "2025-07-31",
             "initialDate": "2025-07-16",
             "action": {
               "href": "https://www.festval.com/aniversariofestval?page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=AniversarioFestval2ºQ",
@@ -25,16 +37,16 @@
             }
           },
           {
+            "initialDate": "2025-07-16",
             "deadLine": "2025-07-31",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1680?map=productClusterIds&page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=LindtAniversario2Q"
+            },
             "desktop": "https://assets.decocache.com/festval/996c2fac-a725-4a77-a946-f8ebf3ccd3bb/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-lindt.jpg",
             "mobile": "https://assets.decocache.com/festval/082a33e0-3cf9-48b7-8c37-d7bf14ea024f/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-lindt.jpg",
             "alt": "aniversário lindt",
-            "activeTerm": true,
-            "initialDate": "2025-07-16",
-            "action": {
-              "href": "https://www.festval.com/1680?map=productClusterIds&page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=LindtAniversario2Q",
-              "target": "_blank"
-            }
+            "activeTerm": true
           },
           {
             "initialDate": "2025-07-16",
