@@ -343,8 +343,8 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "mobile": "https://assets.decocache.com/festval/397985de-69ff-4da8-8022-6006d7c57c81/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1080x465px-mamma.jpg",
-          "desktop": "https://assets.decocache.com/festval/b54daa70-8db5-4f72-9881-776ea993b3e2/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1700x400px-mamma.jpg",
+          "mobile": "https://assets.decocache.com/festval/a122a457-503d-4c08-974a-a2c329881dfc/Aberto_V07_Campanha_2QAniversario_Festval.com_2025_Banner_G_1080x465px-mamma.jpg",
+          "desktop": "https://assets.decocache.com/festval/adc2be88-5147-4e9b-b784-73981a94f9b3/Aberto_V07_Campanha_2QAniversario_Festval.com_2025_Banner_G_1700x400px-mamma.jpg",
           "alt": "mammabiagenerico",
           "href": "https://www.festval.com/1684?map=productClusterIds&sort=orders%3Adesc&page=1",
           "hrefMobile": "https://www.festval.com/1684?map=productClusterIds&sort=orders%3Adesc&page=1",
