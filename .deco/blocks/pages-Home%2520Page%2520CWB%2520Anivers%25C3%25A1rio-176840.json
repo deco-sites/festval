@@ -13,76 +13,50 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/22b5f3a5-8e9f-45cb-9fd4-7e0635df310a/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px.jpg",
-            "mobile": "https://assets.decocache.com/festval/05306a4e-4e00-4707-a593-3446d4079b52/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px.jpg",
+            "desktop": "https://assets.decocache.com/festval/a82fd379-3839-42b7-853a-3ed99bd25402/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1920x490_Geral.jpg",
+            "mobile": "https://assets.decocache.com/festval/c6e7070a-7694-45b6-b352-f0e952054399/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1080x1500_Geral.jpg",
             "alt": "aniversário",
             "activeTerm": true,
             "deadLine": "2025-07-31",
-            "initialDate": "2025-06-30",
+            "initialDate": "2025-07-16",
             "action": {
-              "href": "https://www.festval.com/aniversariofestval?utm_source=BannerHome&utm_campaign=Anivers%C3%A1riofestval",
+              "href": "https://www.festval.com/aniversariofestval?page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=AniversarioFestval2ºQ",
               "target": "_blank"
             }
           },
           {
-            "deadLine": "2025-07-13",
-            "desktop": "https://assets.decocache.com/festval/22090a7b-27c1-48c8-af96-b5607f711dcd/AF_V01_Sub_Campanha_Aniversario_Semana_da_Pizza_2025_Festval_2025_Banner_GG_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/1943f71b-ccae-4f83-bb7d-319ca34de6e5/V01_Sub_Campanha_Aniversario_Semana_da_Pizza_2025_Festval_2025_Banner_GG_1080x1500px.png",
-            "alt": "diadapizza",
-            "activeTerm": true,
-            "initialDate": "2025-07-08",
-            "action": {
-              "href": "https://www.festval.com/1694?map=productClusterIds&sort=orders%3Adesc&page=1&utm_medium=BannerHome&utm_campaign=semana_da_pizza",
-              "target": "_blank"
-            },
-            "region": "Curitiba"
-          },
-          {
-            "initialDate": "2025-06-30",
-            "deadLine": "2025-07-15",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/1680?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=LindtAnivers%C3%A1rio"
-            },
-            "desktop": "https://assets.decocache.com/festval/eb12d055-bc55-41b7-869c-29d975400686/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-lindt.jpg",
-            "mobile": "https://assets.decocache.com/festval/7ec1a28f-1e86-4798-9736-fe048f964340/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-lindt.jpg",
+            "deadLine": "2025-07-31",
+            "desktop": "https://assets.decocache.com/festval/996c2fac-a725-4a77-a946-f8ebf3ccd3bb/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-lindt.jpg",
+            "mobile": "https://assets.decocache.com/festval/082a33e0-3cf9-48b7-8c37-d7bf14ea024f/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-lindt.jpg",
             "alt": "aniversário lindt",
-            "activeTerm": true
-          },
-          {
-            "initialDate": "2025-07-03",
-            "deadLine": "2025-07-11",
-            "action": {
-              "target": "_blank",
-              "href": "https://www.festval.com/coffeemais?utm_source=BannerHome&utm_campaign=coffeemaisl3p2"
-            },
-            "desktop": "https://assets.decocache.com/festval/0b86a9f6-4571-495f-8f15-25ec42cf8eb6/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-coffee.jpg",
-            "mobile": "https://assets.decocache.com/festval/4aa3d911-e89a-458f-91ea-fa1e844dcf7b/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-coffee.jpg",
-            "alt": "coffee++aniver",
             "activeTerm": true,
-            "region": "Curitiba"
+            "initialDate": "2025-07-16",
+            "action": {
+              "href": "https://www.festval.com/1680?map=productClusterIds&page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=LindtAniversario2Q",
+              "target": "_blank"
+            }
           },
           {
-            "initialDate": "2025-06-30",
-            "deadLine": "2025-07-15",
+            "initialDate": "2025-07-16",
+            "deadLine": "2025-07-31",
             "action": {
               "target": "_blank",
               "href": "https://www.festval.com/1679?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Nestl%C3%A9anivers%C3%A1rio"
             },
-            "desktop": "https://assets.decocache.com/festval/0fc47724-70dc-4b56-ad89-a4728a537091/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-nestle.jpg",
-            "mobile": "https://assets.decocache.com/festval/9366dda9-1f70-42c0-92e8-e1951308144a/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-nestle.jpg",
+            "desktop": "https://assets.decocache.com/festval/85a8bd84-9f81-4176-848c-7eca7d5c5db4/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-nestle.jpg",
+            "mobile": "https://assets.decocache.com/festval/25afcb60-b506-420d-861a-0cd20a3c8ef5/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1080x1500_Nestle.jpg",
             "alt": "Aniversário_nestlé",
             "activeTerm": true
           },
           {
-            "initialDate": "2025-06-30",
-            "deadLine": "2025-07-15",
+            "initialDate": "2025-07-16",
+            "deadLine": "2025-07-31",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/1685?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=BannerHome&utm_campaign=Ambevanivers%C3%A1rio"
+              "href": "https://www.festval.com/refrigerante-pepsi-black-sem-acucar-lata-350ml/p?skuId=1401&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=Pepsi_l12p8"
             },
-            "desktop": "https://assets.decocache.com/festval/98142af1-5f5a-4ca7-a309-f517a0c9935b/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-ambev.jpg",
-            "mobile": "https://assets.decocache.com/festval/04c6ae76-5522-455a-a076-627d7009a447/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-ambev.jpg",
+            "desktop": "https://assets.decocache.com/festval/c6d5ceb5-df3d-4aac-b27e-f6fa487f6ad4/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-ambev.jpg",
+            "mobile": "https://assets.decocache.com/festval/7c2c0542-97ab-4417-a55b-4991f8b0f6bf/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1080x1500_Ambev.jpg",
             "alt": "Aniversário_Ambev",
             "activeTerm": true
           },
@@ -132,85 +106,85 @@
         {
           "label": "Hortifruti",
           "href": "/hortifruti?sort=orders%3Adesc&page=1",
-          "image": "https://assets.decocache.com/festval/5d893dc7-56be-400d-9075-d98ce42248b1/Hortifruti.png"
+          "image": "https://assets.decocache.com/festval/495195c4-0d1d-4446-b320-67fabddbf1de/hortifruti.png"
         },
         {
           "href": "/adega?sort=orders%3Adesc&page=1",
           "label": "Adega",
-          "image": "https://assets.decocache.com/festval/03041398-8370-4d3f-ae09-d09846306d15/Adega.png"
+          "image": "https://assets.decocache.com/festval/8b301b9e-c5d3-4a0a-9c17-8af6b3ae30bb/adega.png"
         },
         {
           "href": "/bebidas-alcoolicas?sort=orders%3Adesc&page=1",
           "label": "Bebidas Alcoólicas",
-          "image": "https://assets.decocache.com/festval/9e383ea6-fe5b-42d9-b58e-bb72e6781935/Bebidas-Alcooulicas.png"
+          "image": "https://assets.decocache.com/festval/13d7dd71-233e-44fd-9bf3-bd24689e5b54/alcoolics.png"
         },
         {
           "href": "/acougue?sort=orders%3Adesc&page=1",
           "label": "Açougue",
-          "image": "https://assets.decocache.com/festval/af1ef109-ed17-4490-a0f2-f759480e1a36/Acougue.png"
+          "image": "https://assets.decocache.com/festval/84e00e67-6220-478b-b878-5fd3010ff63e/acougue.png"
         },
         {
-          "image": "https://assets.decocache.com/festval/4ed49848-4622-4c4e-9680-d8f1697314bb/Mercearia.png",
+          "image": "https://assets.decocache.com/festval/e714d663-b28a-417f-a69a-f5075ded7887/merce.png",
           "href": "/mercearia?sort=orders%3Adesc&page=1",
           "label": "Mercearia"
         },
         {
-          "image": "https://assets.decocache.com/festval/e407d7c9-e18f-44c3-a6f5-83adb311efdc/Importados.png",
+          "image": "https://assets.decocache.com/festval/da0afc2d-62e3-40b4-9b92-034bf14695bb/importa.png",
           "href": "/importados?sort=orders%3Adesc&page=1",
           "label": "Importados"
         },
         {
-          "image": "https://assets.decocache.com/festval/ee160116-ea37-48e8-b5f0-8e929e361639/Sucos.png",
+          "image": "https://assets.decocache.com/festval/a1ebfb16-55a1-4675-8e2e-32b263413980/Sucos.png",
           "href": "/bebidas/suco?sort=orders%3Adesc&page=1",
           "label": "Sucos"
         },
         {
-          "image": "https://assets.decocache.com/festval/fcfddd43-eefa-4d73-bc4c-9174954c1212/Bebidas-Naao-Alcooulicas.png",
+          "image": "https://assets.decocache.com/festval/c2825034-d63a-466b-a89b-2f9bc324ae80/nao-alcoli.png",
           "href": "/bebidas?sort=orders%3Adesc&page=1",
           "label": "Bebidas"
         },
         {
-          "image": "https://assets.decocache.com/festval/465309d6-1d94-458f-951b-e993937ff1f5/Padaria.png",
+          "image": "https://assets.decocache.com/festval/850497ff-5936-4c20-aa34-f2d1e8ce3cb9/padaria.png",
           "href": "/padaria?sort=&page=1",
           "label": "Padaria"
         },
         {
-          "image": "https://assets.decocache.com/festval/a935b658-e2a9-47a9-b50a-a41979c7695d/Laticiunios.png",
+          "image": "https://assets.decocache.com/festval/f68416a8-f2fa-4026-ae30-c5a44d039831/frioselat.png",
           "href": "/frios-e-laticinios?sort=orders%3Adesc&page=1",
           "label": "Frios e Laticínios"
         },
         {
           "href": "/limpeza?sort=orders%3Adesc&page=1",
-          "image": "https://assets.decocache.com/festval/a64d67c9-ae66-4c8f-8de7-94e68703ff02/Limpeza.png",
+          "image": "https://assets.decocache.com/festval/32b0237b-320c-48d5-9d8e-30bef5a7750e/limpeza.png",
           "label": "Limpeza"
         },
         {
-          "image": "https://assets.decocache.com/festval/44bcb448-ef05-4b41-867d-2d366e8f03c5/Perfumaria.png",
+          "image": "https://assets.decocache.com/festval/f880b841-52a1-49da-946f-6209582758a9/perfumaria.png",
           "href": "/higiene-e-perfumaria?sort=orders%3Adesc&page=1",
           "label": "Higiene e Perfumaria"
         },
         {
-          "image": "https://assets.decocache.com/festval/6736ed97-bd36-48e6-b9f7-6342cd71c385/Diet--Light.png",
+          "image": "https://assets.decocache.com/festval/9f470b3c-26f1-4f03-bcd3-85d109cdf231/diet-e-light.png",
           "href": "/diet-light?sort=orders%3Adesc&page=1",
           "label": "Diet & Light"
         },
         {
           "href": "/sorvete?sort=discount%3Adesc&page=1",
-          "image": "https://assets.decocache.com/festval/f1633b7b-f51f-46e9-b60c-13421d0b1c74/Sorvetes.png",
+          "image": "https://assets.decocache.com/festval/73b5f814-6d5e-456e-b95d-8f971986a3c1/sorvete.png",
           "label": "Sorvetes"
         },
         {
-          "image": "https://assets.decocache.com/festval/29f7307d-ed61-4c03-96c5-545d6550db91/Floricultura-2.png",
+          "image": "https://assets.decocache.com/festval/e0b6b16a-f184-48bd-9b91-ae944ceca349/flor.png",
           "href": "/floricultura?sort=orders%3Adesc&page=1",
           "label": "Floricultura"
         },
         {
           "label": "Casa & Utilidades",
           "href": "/casa-e-utilidades?sort=orders%3Adesc&page=1",
-          "image": "https://assets.decocache.com/festval/7bbfee5c-5010-4225-a3d4-9c8a1c464f49/Casa--Utilidades.png"
+          "image": "https://assets.decocache.com/festval/c44cdf33-7f90-4a88-9500-f297ef4c3b83/casa-e-utili.png"
         },
         {
-          "image": "https://assets.decocache.com/festval/3e6f62df-f983-4768-9f18-c0cfa3642042/Pet-Shop.png",
+          "image": "https://assets.decocache.com/festval/0d150431-fd49-4c9b-9351-5675736139a4/petshop.png",
           "href": "/petshop?sort=orders%3Adesc&page=1",
           "label": "Pet Shop"
         }
@@ -256,10 +230,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/ddbcf6fa-3354-45f5-ad2a-0fef3984be01/Destilados-leve3pague2-site-2.0.jpg",
+          "desktop": "https://assets.decocache.com/festval/cb28ebf1-5412-473c-ade5-766c6fed5da0/Destilados-leve3pague2-site.jpg",
           "alt": "adega e destilados",
           "href": "https://www.festval.com/1681?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "mobile": "https://assets.decocache.com/festval/d9ffdaf8-5591-4dbc-a94e-ecb30b595621/Destilados-leve3pague2-2.0.jpg",
+          "mobile": "https://assets.decocache.com/festval/1e11938a-daac-4b12-b2f0-57d4499f635f/Destilados-leve3pague2-mbl.jpg",
           "hrefMobile": "https://www.festval.com/1681?map=productClusterIds&sort=orders%3Adesc&page=1",
           "positionBanner": "Left",
           "initialDate": "2024-12-07",
@@ -268,8 +242,8 @@
           "region": "Mostrar em ambas"
         },
         {
-          "mobile": "https://assets.decocache.com/festval/620534ae-087b-4754-a311-10016c02c80f/Limpeza-leve3pague2.jpg",
-          "desktop": "https://assets.decocache.com/festval/88b7488c-f0b6-422b-ab63-b3c04039bd54/Destilados-leve3pague2-site-2.0-LIMPEZA.jpg",
+          "mobile": "https://assets.decocache.com/festval/ac2464ae-f2eb-44d9-a8e0-b1635a655e3f/Limpeza-leve3pague2-mbl.jpg",
+          "desktop": "https://assets.decocache.com/festval/d858295d-5247-4625-95f3-c9fcf2d7e797/Limpeza-leve3pague2-site.jpg",
           "href": "https://www.festval.com/1682?map=productClusterIds&sort=orders%3Adesc&page=1",
           "alt": "Casa",
           "hrefMobile": "https://www.festval.com/1682?map=productClusterIds&sort=orders%3Adesc&page=1",
@@ -305,10 +279,10 @@
       "__resolveType": "site/sections/Images/ImageGallery.tsx",
       "banners": [
         {
-          "desktop": "https://assets.decocache.com/festval/f9179fa7-fc8d-4685-a0aa-a7f44a2cccb7/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1700x400px-principal.jpg",
+          "desktop": "https://assets.decocache.com/festval/f77b678a-9811-4d12-8467-e6d64dd5d094/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1700x400px-principal.jpg",
           "alt": "OFERTAS-SEMANAIS",
           "href": "https://www.festval.com/aniversariofestval?utm_source=BannerHome&utm_campaign=Anivers%C3%A1riofestval",
-          "mobile": "https://assets.decocache.com/festval/8781b12d-eb0f-4dca-89de-9e2e5f424d47/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1080x465px-principal.jpg",
+          "mobile": "https://assets.decocache.com/festval/ef739f79-e3f3-48f1-bc27-af4144cb3958/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_G_1080x465px-principal.jpg",
           "hrefMobile": "https://www.festval.com/aniversariofestval?utm_source=BannerHome&utm_campaign=Anivers%C3%A1riofestval",
           "region": "Mostrar em ambas",
           "positionBanner": "Full",
@@ -317,24 +291,24 @@
           "activeTerm": false
         },
         {
-          "desktop": "https://assets.decocache.com/festval/8ca05339-f057-4123-b568-1583993b5472/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_840x320px-coronita.jpg",
+          "desktop": "https://assets.decocache.com/festval/a96a46b2-587a-484e-8114-f5f70d22dccd/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_840x320px-bud.jpg",
           "alt": "OFERTAS-SEMANAIS-DIREITA",
-          "href": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418",
-          "mobile": "https://assets.decocache.com/festval/e2dcd61d-5a78-4499-99c0-2dfea2479087/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_528x465px-coronita.jpg",
-          "hrefMobile": "https://www.festval.com/cerveja-coronita-long-neck-210ml/p?skuId=418",
+          "href": "https://www.festval.com/s?q=budweiser+long+neck&utm_source=curitiba&page=1",
+          "mobile": "https://assets.decocache.com/festval/799bc198-8d87-49b1-a5d5-e6a262a5dd19/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_528x465px-bud.jpg",
+          "hrefMobile": "https://www.festval.com/s?q=budweiser+long+neck&utm_source=curitiba&page=1",
           "region": "Mostrar em ambas",
           "positionBanner": "Right",
           "initialDate": "2025-01-06",
           "deadLine": "2025-12-06",
-          "activeTerm": true
+          "activeTerm": false
         },
         {
           "positionBanner": "Left",
-          "mobile": "https://assets.decocache.com/festval/0c3a38f7-15ab-47c1-8839-3290cd4997eb/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_528x465px-starbucks.jpg",
-          "desktop": "https://assets.decocache.com/festval/054ac9eb-67a6-443c-91d0-342077ecbd10/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_840x320px-capsulas.jpg",
+          "mobile": "https://assets.decocache.com/festval/5591a898-7d09-471a-8d87-e504ee7180e4/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_528x465px-coffee.jpg",
+          "desktop": "https://assets.decocache.com/festval/4750e671-baf2-47c7-b29a-ee9d5ba05890/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_M_840x320px-coffee.jpg",
           "alt": "OFERTAS-SEMANAIS-ESQUERDA",
-          "href": "https://www.festval.com/1683?map=productClusterIds&sort=orders%3Adesc&page=1",
-          "hrefMobile": "https://www.festval.com/1683?map=productClusterIds&sort=orders%3Adesc&page=1",
+          "href": "https://www.festval.com/s?q=coffee+%2B%2B+c%C3%A1psula&utm_source=curitiba&page=1",
+          "hrefMobile": "https://www.festval.com/s?q=coffee+%2B%2B+c%C3%A1psula&utm_source=curitiba&page=1",
           "deadLine": "2025-12-06",
           "initialDate": "2025-01-06",
           "activeTerm": false,

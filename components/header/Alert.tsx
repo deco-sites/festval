@@ -33,5 +33,3 @@ function Alert({ alerts = [], interval = 5 }: Props) {
 
   
 export default Alert;
-
- 
