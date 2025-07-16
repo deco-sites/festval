@@ -109,9 +109,13 @@ export const viaCep = async (
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
 
-      const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
-        signal: controller.signal,
-      });
+      // const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`, {
+      //   signal: controller.signal,
+      // });
+
+      const formattedCep = cep?.replace('-', '')
+
+      const response = await fetch(`https://opencep.com/v1/${formattedCep}.json`);
 
       clearTimeout(timeoutId);
 
@@ -148,7 +152,7 @@ export const action = async (
 
   if (platform === "vtex") {
     const viaCepResponse: Address = await viaCep(cepFormatted);
-
+    
     if (
       (viaCepResponse && viaCepResponse.localidade === "Cascavel") ||
       (viaCepResponse && viaCepResponse.localidade === "Curitiba")
@@ -444,6 +448,7 @@ const onSubmit = (id: string, maxAttempts = 10, delay = 1000) => {
       hideElement(limeText);
       showElement(btnSubmit);
       hideElement(loading);
+      
       redText!.textContent = "Erro ao consultar o CEP. Tente novamente.";
     }
   };

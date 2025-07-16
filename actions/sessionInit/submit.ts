@@ -75,7 +75,7 @@ async function action(
         }
       );
 
-      return response;
+      return response ?? undefined;
     } catch (e) {
       console.error("Error initializing session:", e);
       throw e;
