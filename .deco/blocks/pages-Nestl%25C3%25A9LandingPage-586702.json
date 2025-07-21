@@ -26,17 +26,30 @@
             "activeTerm": false
           },
           {
-            "initialDate": "2025-07-07",
-            "deadLine": "2025-07-13",
+            "initialDate": "2025-07-21",
+            "deadLine": "2025-07-27",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/1671?map=productClusterIds&sort=orders%3Adesc&page=1&utm_medium=BannerLandingPage&utm_campaign=diadochocolate_nestle"
+              "href": "https://www.festval.com/1172?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=curitiba&utm_medium=BannerLandingPage&utm_campaign=FestivalNestleJulho"
             },
-            "desktop": "https://assets.decocache.com/festval/f28a1df7-e8d9-463c-b1ff-73124d3bb495/kv_alternatico_dia_dos_avos_1920x490.jpg",
-            "mobile": "https://assets.decocache.com/festval/6f28d1d8-d2fe-4b9d-abe0-1a6c5c705daf/kv_alternatico_dia_dos_avos_1080x1500.jpg",
-            "alt": "diadochocolate",
+            "desktop": "https://assets.decocache.com/festval/96eab3a9-741b-4017-83d6-14677fdeb15e/kv_festival_nestle_1920_490.jpg",
+            "mobile": "https://assets.decocache.com/festval/bf1d34d8-abaa-4632-97f5-f32c8662dd28/kv_festival_nestle_1080_1500.jpg",
+            "alt": "festivalnestle",
             "activeTerm": true,
             "region": "Curitiba"
+          },
+          {
+            "initialDate": "2025-07-27",
+            "deadLine": "2025-08-03",
+            "region": "Curitiba",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/1674?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=curitiba&utm_medium=BannerLandingPage&utm_campaign=ReceitasNestleJulho Se precisar gerar outro link, é só informar."
+            },
+            "desktop": "https://assets.decocache.com/festval/e1c4620a-e004-45ce-a588-db8d3d4a7b83/Receitas_Nestle_1920_490.jpg",
+            "mobile": "https://assets.decocache.com/festval/dab0281d-933f-4711-971c-8b6fbdd412dd/Receitas_Nestle_1080_1500.jpg",
+            "alt": "receitas",
+            "activeTerm": true
           }
         ],
         "interval": 0,
