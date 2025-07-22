@@ -1,6 +1,6 @@
 {
-  "name": "Coffee++",
-  "path": "/coffeemais",
+  "name": "Selinhos2025",
+  "path": "/campanhadeselinhos",
   "sections": [
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -14,11 +14,11 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/0b86a9f6-4571-495f-8f15-25ec42cf8eb6/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-coffee.jpg",
-            "mobile": "https://assets.decocache.com/festval/4aa3d911-e89a-458f-91ea-fa1e844dcf7b/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-coffee.jpg",
-            "alt": "coffeeprincipal",
+            "desktop": "https://assets.decocache.com/festval/6c17474b-4fac-481f-b152-9e30ac13a6c9/45908_Festval---Selinhos---Banner--1920x490_original.png",
+            "mobile": "https://assets.decocache.com/festval/87ca7a8d-e928-47f2-820e-cf0dc4c8739f/45888_Festval---Selinhos---Banner---1080x1500_original.png",
+            "alt": "Como participar",
             "action": {
-              "href": "/coffeemais",
+              "href": "/campanhadeselinhos",
               "target": "_blank"
             },
             "initialDate": "0",
@@ -32,23 +32,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts",
-          "props": {
-            "sort": "",
-            "collection": "1692",
-            "count": 7,
-            "hideUnavailableItems": true
-          }
-        },
-        "title": "Leve 3 Pague 2",
-        "cta": "/1692?map=productClusterIds&page=1"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/Product/SearchResult.tsx",
         "page": {
           "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
@@ -57,11 +40,12 @@
           "fuzzy": "automatic",
           "selectedFacets": [
             {
-              "value": "1691",
+              "value": "1712",
               "key": "productClusterIds"
             }
           ],
-          "hideUnavailableItems": true
+          "hideUnavailableItems": true,
+          "useCollectionName": true
         }
       }
     },

@@ -13,26 +13,26 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/9f2a840e-3223-41c5-ade7-79ec361cefba/AF_V01_Campanha_Superpromocao_de_Vinhos_com_ate_50_Festval_2025_Banner-GG_1920x490px.png",
-            "mobile": "https://assets.decocache.com/festval/07ec2124-0ca1-42e8-9c13-35b13c6dcd99/AF_V01_Campanha_Superpromocao_de_Vinhos_com_ate_50_Festval_2025_Banner-GG_1080x1500px.png",
-            "alt": "vinhos50off",
-            "activeTerm": true,
-            "deadLine": "2025-07-20",
-            "initialDate": "2025-07-17",
-            "action": {
-              "href": "https://www.festval.com/1699?map=productClusterIds&sort=orders%3Adesc&page=1&utm_source=curitiba&utm_medium=banner_home&utm_campaign=50offVinhos",
-              "target": "_blank"
-            }
-          },
-          {
-            "deadLine": "2025-07-31",
             "desktop": "https://assets.decocache.com/festval/a82fd379-3839-42b7-853a-3ed99bd25402/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1920x490_Geral.jpg",
             "mobile": "https://assets.decocache.com/festval/c6e7070a-7694-45b6-b352-f0e952054399/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1080x1500_Geral.jpg",
             "alt": "aniversário",
             "activeTerm": true,
+            "deadLine": "2025-07-31",
             "initialDate": "2025-07-16",
             "action": {
               "href": "https://www.festval.com/aniversariofestval?page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=AniversarioFestval2ºQ",
+              "target": "_blank"
+            }
+          },
+          {
+            "deadLine": "2025-11-02",
+            "desktop": "https://assets.decocache.com/festval/6c17474b-4fac-481f-b152-9e30ac13a6c9/45908_Festval---Selinhos---Banner--1920x490_original.png",
+            "mobile": "https://assets.decocache.com/festval/87ca7a8d-e928-47f2-820e-cf0dc4c8739f/45888_Festval---Selinhos---Banner---1080x1500_original.png",
+            "alt": "Selinhos2025",
+            "activeTerm": true,
+            "initialDate": "2025-07-22",
+            "action": {
+              "href": "https://www.festval.com/campanhadeselinhos?utm_source=curitiba",
               "target": "_blank"
             }
           },
@@ -73,15 +73,27 @@
             "activeTerm": true
           },
           {
-            "initialDate": "2025-07-02",
-            "deadLine": "2025-07-09",
+            "initialDate": "2025-07-22",
+            "deadLine": "2025-07-23",
             "action": {
               "target": "_blank",
-              "href": "https://www.festval.com/wafer-amandita-l3p2-1900921/p?skuId=27431&utm_source=BannerHome&utm_campaign=AmanditaAnivers%C3%A1rio"
+              "href": "https://www.festval.com/s?q=stella+long+neck&page=1&utm_source=curitiba&utm_medium=BannerHome&utm_campaign=stella_brinde"
             },
-            "desktop": "https://assets.decocache.com/festval/bdccc0e5-9c07-473a-a027-b95bb6649dc4/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1920x490px-amandita.jpg",
-            "mobile": "https://assets.decocache.com/festval/d7b0b045-db6b-421c-be83-43e542a20baf/Aberto_V07_Campanha_Aniversario_Festval.com_2025_Banner_GG_1080x1500px-amandita.jpg",
-            "alt": "AmanditaAniversário",
+            "desktop": "https://assets.decocache.com/festval/45c3c52c-1ae2-431b-8aea-c3396e064734/Festival---Stella-Taca-Brinde1920x496.jpg",
+            "mobile": "https://assets.decocache.com/festval/017565a1-4c7e-4e39-ad6d-a56323e664e4/Festival---Stella-Taca-Brinde1080x720.jpg",
+            "alt": "stellataça",
+            "activeTerm": true
+          },
+          {
+            "initialDate": "2025-07-22",
+            "deadLine": "2025-07-24",
+            "action": {
+              "target": "_blank",
+              "href": "https://www.festval.com/aperitivo-bitter-campari-garrafa-748ml/p?skuId=26106&utm_source=curitiba&utm_medium=BannerHome&utm_campaign=brinde-campari"
+            },
+            "desktop": "https://assets.decocache.com/festval/fec24354-71cf-4aae-a59b-4073ea66cf59/banner-camapri.jpg",
+            "mobile": "https://assets.decocache.com/festval/92c16652-f21c-4a7e-a5a3-ae01943edda2/banner-camapri-1080x1500.jpg",
+            "alt": "Campari",
             "activeTerm": true
           },
           {
