@@ -13,26 +13,26 @@
         "__resolveType": "site/sections/Images/CarouselGeoLocation.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/festval/a82fd379-3839-42b7-853a-3ed99bd25402/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1920x490_Geral.jpg",
-            "mobile": "https://assets.decocache.com/festval/c6e7070a-7694-45b6-b352-f0e952054399/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1080x1500_Geral.jpg",
-            "alt": "aniversário",
+            "desktop": "https://assets.decocache.com/festval/1287cecc-8e49-4430-aa07-746b7107997e/Festval---Selinhos---Banner--1920x490-Davi.jpg",
+            "mobile": "https://assets.decocache.com/festval/0429935f-2127-498e-8f42-f12d84e1ff08/Banner-(1080x1500).png",
+            "alt": "Selinhos2025",
             "activeTerm": true,
-            "deadLine": "2025-07-31",
-            "initialDate": "2025-07-16",
+            "deadLine": "2025-11-02",
+            "initialDate": "2025-07-22",
             "action": {
-              "href": "https://www.festval.com/aniversariofestval?page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=AniversarioFestval2ºQ",
+              "href": "https://www.festval.com/campanhadeselinhos?utm_source=curitiba",
               "target": "_blank"
             }
           },
           {
-            "deadLine": "2025-11-02",
-            "desktop": "https://assets.decocache.com/festval/6c17474b-4fac-481f-b152-9e30ac13a6c9/45908_Festval---Selinhos---Banner--1920x490_original.png",
-            "mobile": "https://assets.decocache.com/festval/87ca7a8d-e928-47f2-820e-cf0dc4c8739f/45888_Festval---Selinhos---Banner---1080x1500_original.png",
-            "alt": "Selinhos2025",
+            "deadLine": "2025-07-31",
+            "desktop": "https://assets.decocache.com/festval/a82fd379-3839-42b7-853a-3ed99bd25402/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1920x490_Geral.jpg",
+            "mobile": "https://assets.decocache.com/festval/c6e7070a-7694-45b6-b352-f0e952054399/ABERTO_V03_Campanha_Aniversario_II_Conceito_Festval_2025_1080x1500_Geral.jpg",
+            "alt": "aniversário",
             "activeTerm": true,
-            "initialDate": "2025-07-22",
+            "initialDate": "2025-07-16",
             "action": {
-              "href": "https://www.festval.com/campanhadeselinhos?utm_source=curitiba",
+              "href": "https://www.festval.com/aniversariofestval?page=1&utm_source=curitiba&utm_medium=bannerhome&utm_campaign=AniversarioFestval2ºQ",
               "target": "_blank"
             }
           },
